@@ -8,7 +8,7 @@
     <a href="https://github.com/marketplace/actions/action-accessibility"><img src="https://img.shields.io/badge/ACTION-ACCESSIBILITY-396baf.svg?style=for-the-badge&labelColor=f6d32e" alt="action accessibility" /></a>
     <a href="https://github.com/GeopJr/Hashbrown/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=for-the-badge&labelColor=f6d32e" alt="COC" /></a>
     <a href="https://github.com/GeopJr/Hashbrown/blob/main/LICENSE"><img src="https://img.shields.io/badge/LICENSE-AGPL--3.0-000000.svg?style=for-the-badge&labelColor=f6d32e" alt="AGPL-3.0" /></a>
-    <a href="https://github.com/GeopJr/Hashbrown/actions"><img src="https://img.shields.io/github/workflow/status/geopjr/Hashbrown/ci?labelColor=f6d32e&style=for-the-badge" alt="ci action status" /></a>
+    <a href="https://github.com/GeopJr/Hashbrown/actions"><img src="https://img.shields.io/github/workflow/status/geopjr/Hashbrown/Specs%20&%20Lint/main?labelColor=f6d32e&style=for-the-badge" alt="ci action status" /></a>
 </p>
 
 #
