@@ -1,0 +1,6 @@
+version: 2.0
+shards:
+  gobject:
+    git: https://github.com/jhass/crystal-gobject.git
+    version: 0.9.1+git.commit.5bc0cc7481a713b22e332d1bab80c132a819d20e
+

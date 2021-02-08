@@ -1,0 +1,18 @@
+name: hashbrown
+version: 1.0.0
+
+authors:
+  - GeopJr <geopjr@geopjr.xyz>
+
+targets:
+  hashbrown:
+    main: src/hashbrown.cr
+
+dependencies:
+  gobject:
+    github: jhass/crystal-gobject
+    branch: main
+
+crystal: 0.35.1
+
+license: AGPL-3.0-or-later
