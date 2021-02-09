@@ -46,7 +46,7 @@
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkButton" id="aboutBtn">
-            <property name="label" translatable="yes">About Hashbrown</property>
+            <property name="label" translatable="yes" context="This is a button in the menu dropdown." comments="Please don't translate &quot;Hashbrown&quot;.">About Hashbrown</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
@@ -81,7 +81,7 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label" translatable="yes">Pick a File</property>
+                <property name="label" translatable="yes" context="Big text in welcomer.">Pick a File</property>
                 <attributes>
                   <attribute name="size" value="30720"/>
                 </attributes>
@@ -96,9 +96,9 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label" translatable="yes">Generate, compare and verify MD5, SHA256 &amp; SHA1 hashes.</property>
+                <property name="label" translatable="yes" context="Subtext in welcomer.">Generate, compare and verify MD5, SHA256 &amp; SHA1 hashes.</property>
                 <attributes>
-                  <attribute name="weight" value="light"/>
+                  <attribute name="weight" value="semilight"/>
                   <attribute name="foreground" value="#c0c0bfbfbcbc"/>
                   <attribute name="size" value="11264"/>
                 </attributes>
@@ -149,7 +149,7 @@
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
                             <property name="halign">start</property>
-                            <property name="label" translatable="yes">Select a File</property>
+                            <property name="label" translatable="yes" context="Indicates the action that the user activate by clicking the button in welcomer.">Select a File</property>
                             <attributes>
                               <attribute name="size" value="14336"/>
                             </attributes>
@@ -165,7 +165,7 @@
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
                             <property name="halign">center</property>
-                            <property name="label" translatable="yes">Generate the hash of a file</property>
+                            <property name="label" translatable="yes" context="Indicates the next action that will happen after the user clicks the button and selects a file in welcomer. This text is subtext in the button in welcomer.">Generate the hash of a file</property>
                             <attributes>
                               <attribute name="foreground" value="#c0c0bfbfbcbc"/>
                             </attributes>
@@ -212,11 +212,12 @@
               <object class="GtkFileChooserButton" id="mainFile">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
+                <property name="tooltip-text" translatable="yes" context="Tooltip for the main file chooser.">Select a File</property>
                 <property name="halign">center</property>
                 <property name="valign">start</property>
                 <property name="margin-start">1</property>
                 <property name="filter">filefilter1</property>
-                <property name="title" translatable="yes">Choose a File</property>
+                <property name="title" translatable="yes" context="Title for the main file chooser dialog.">Choose a File</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -278,7 +279,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="copyBtn1">
-                        <property name="label" translatable="yes">Copy</property>
+                        <property name="label" translatable="yes" context="A copy text button.">Copy</property>
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
@@ -316,7 +317,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="copyBtn2">
-                        <property name="label" translatable="yes">Copy</property>
+                        <property name="label">Copy</property>
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
@@ -354,7 +355,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="copyBtn3">
-                        <property name="label" translatable="yes">Copy</property>
+                        <property name="label">Copy</property>
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
@@ -367,7 +368,7 @@
                   </object>
                   <packing>
                     <property name="name">page0</property>
-                    <property name="title" translatable="yes">Generate</property>
+                    <property name="title" translatable="yes" context="Header tab about generating hashes.">Generate</property>
                   </packing>
                 </child>
                 <child>
@@ -383,7 +384,8 @@
                       <object class="GtkFileChooserButton" id="compareFile">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="title" translatable="yes"/>
+                        <property name="tooltip-text" translatable="yes" context="Tooltip for the second file chooser under the compare tab.">Select Another File</property>
+                        <property name="title" translatable="yes" context="Title for the 'compare' file chooser dialog.">Choose Another File</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -393,7 +395,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="compareBtn">
-                        <property name="label" translatable="yes">Compare</property>
+                        <property name="label" translatable="yes" context="Label of a button that compares two files.">Compare</property>
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
@@ -422,7 +424,7 @@
                   </object>
                   <packing>
                     <property name="name">page1</property>
-                    <property name="title" translatable="yes">Compare</property>
+                    <property name="title" translatable="yes" context="Header tab about comparing files (their hashes).">Compare</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -440,6 +442,8 @@
                       <object class="GtkEntry" id="hashInput">
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
+                        <property name="tooltip-text" translatable="yes" context="Tooltip for the hash text input under the verify tab.">Insert a MD5/SHA1/SHA256 Hash</property>
+                        <property name="placeholder-text" translatable="yes" context="Placeholder text for an input box." comments="Only translate 'hash' if possible.">MD5/SHA1/SHA256 Hash</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -449,7 +453,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="verifyBtn">
-                        <property name="label" translatable="yes">Verify</property>
+                        <property name="label" translatable="yes" context="Label of a button that  verifies that a hash belongs to a selected file.">Verify</property>
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
@@ -477,7 +481,7 @@
                   </object>
                   <packing>
                     <property name="name">page2</property>
-                    <property name="title" translatable="yes">Verify</property>
+                    <property name="title" translatable="yes" context="Header tab about verifing that a hash belongs to a selected file.">Verify</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
@@ -539,6 +543,7 @@
             <property name="can-focus">True</property>
             <property name="focus-on-click">False</property>
             <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes" context="The headbar menu icon-button tooltip.">Menu</property>
             <property name="popover">popover1</property>
             <child>
               <object class="GtkImage">
