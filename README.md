@@ -26,9 +26,22 @@
 
 ## Building
 
+### Dependencies
+
+- `Crystal` - `~0.35.1`
+- `GTK`
+- `libgirepository1.0-dev`
+
+#### Manually
+
 1. Install crystal
 2. `$ shards install`
 3. `$ crystal build src/hashbrown.cr --release`
+
+#### Makefile
+
+1. `make`
+2. `# make install` # To install it
 
 #
 

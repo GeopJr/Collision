@@ -12,6 +12,9 @@ dependencies:
   gobject:
     github: jhass/crystal-gobject
     branch: main
+  compiled_license:
+    github: elorest/compiled_license
+    branch: master
 
 crystal: 0.35.1
 

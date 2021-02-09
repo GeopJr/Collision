@@ -1,4 +1,5 @@
 require "gobject/gtk/autorun"
+require "compiled_license"
 
 require "./modules/functions/*"
 require "./modules/views/*"
