@@ -1,8 +1,9 @@
 /docs/
-/lib/
+/lib/*
 /bin/
 /.shards/
 *.dwarf
 *~
 hashbrown
 .flatpak-builder/
+!/lib/.shards.info
