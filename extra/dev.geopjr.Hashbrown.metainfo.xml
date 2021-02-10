@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>dev.geopjr.Hashbrown</id>
+  <name>Hashbrown</name>
+  <project_license>AGPL-3.0-or-later</project_license>
+  <developer_name>GeopJr</developer_name>
+  <summary>Generate, compare and verify MD5, SHA256 &amp; SHA1 hashes</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <url type="homepage">https://github.com/GeopJr/Hashbrown</url>
+  <url type="bugtracker">https://github.com/GeopJr/Hashbrown/issues</url>
+  <description>
+    <p>
+      Verifying that a file you downloaded or received is actually the one you were
+      expecting is often overlooked or too time-consuming to do. At the same time, it
+      has become very easy to get your hands on a file that has been tampered with, due
+      to the mass increase of malicious webpages and other actors.
+    </p>
+    <p>
+      This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, allowing
+      anyone, from any age and experience group, to generate, compare and verify MD5,
+      SHA256 and SHA256 hashes.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://i.imgur.com/wAlkIyb.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://i.imgur.com/VudKxam.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://i.imgur.com/H5mGNpL.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://i.imgur.com/LVIddjA.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.0.1" date="2021-02-11"/>
+  </releases>
+  <content_rating type="oars-1.1" />
+</component>
