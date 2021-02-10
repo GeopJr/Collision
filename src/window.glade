@@ -9,7 +9,7 @@
     <property name="destroy-with-parent">True</property>
     <property name="type-hint">dialog</property>
     <property name="program-name">Hashbrown</property>
-    <property name="version">1.0.0</property>
+    <property name="version">1.0.1</property>
     <property name="copyright">© 2021 Evangelos Paterakis</property>
     <property name="website">https://github.com/GeopJr/Hashbrown</property>
     <property name="authors">Evangelos "GeopJr" Paterakis</property>
