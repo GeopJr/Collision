@@ -8,7 +8,8 @@ require "./modules/windows/*"
 module Hashbrown
   extend self
 
-  BUILDER = Gtk::Builder.new_from_file "#{__DIR__}/window.glade"
+  GLADE   = {{ read_file("./src/window.glade") }}
+  BUILDER = Gtk::Builder.new_from_string GLADE, GLADE.size
 
   COMPARE_STATUS = Gtk::Label.cast(BUILDER["compareStatus"])
 
