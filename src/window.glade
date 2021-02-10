@@ -14,7 +14,7 @@
     <property name="website">https://github.com/GeopJr/Hashbrown</property>
     <property name="authors">Evangelos "GeopJr" Paterakis</property>
     <property name="artists">Evangelos "GeopJr" Paterakis</property>
-    <property name="logo">../extra/icons/logo.svg</property>
+    <property name="logo">./extra/icons/logo.svg</property>
     <property name="license-type">agpl-3-0</property>
     <child internal-child="vbox">
       <object class="GtkBox">
