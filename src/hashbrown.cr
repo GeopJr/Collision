@@ -8,7 +8,7 @@ require "./modules/windows/*"
 module Hashbrown
   extend self
 
-  GLADE   = {{ read_file("./src/window.glade") }}
+  GLADE   = {{ read_file("./src/window.glade").gsub(/<property name=\"version\">0.0.0<\/property>/, "<property name=\"version\">" + read_file("./shard.yml").split("version: ")[1].split("\n")[0] + "</property>") }}
   BUILDER = Gtk::Builder.new_from_string GLADE, GLADE.size
 
   COMPARE_STATUS = Gtk::Label.cast(BUILDER["compareStatus"])
