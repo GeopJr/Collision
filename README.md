@@ -58,6 +58,13 @@
 
 ## Extra
 
+<p align="center">
+  <a href='https://flathub.org/apps/details/dev.geopjr.Hashbrown'>
+    <img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
+  </a>
+</p>
+
+### Contributors
 <a href="https://github.com/GeopJr/Hashbrown/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=GeopJr/Hashbrown" />
 </a>
