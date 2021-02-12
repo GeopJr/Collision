@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="templatge.svg"
+   sodipodi:docname="logo.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new"
@@ -156,10 +156,10 @@
      borderopacity="0.25490196"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8"
-     inkscape:cx="45.593452"
-     inkscape:cy="69.542507"
-     inkscape:current-layer="svg11300"
+     inkscape:zoom="4.1228501"
+     inkscape:cx="81.466332"
+     inkscape:cy="93.374346"
+     inkscape:current-layer="layer8"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
@@ -621,17 +621,15 @@
      id="layer8"
      inkscape:label="App Icon 5"
      style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:60.2174px;line-height:1.25;font-family:sans-serif;fill:#f6f5f4;fill-opacity:1;stroke:none;stroke-width:1.50544"
-       x="46.3144"
-       y="100.0418"
+    <g
+       aria-label="#"
+       transform="scale(0.96390038,1.0374516)"
        id="text923"
-       transform="scale(0.96390038,1.0374516)"><tspan
-         sodipodi:role="line"
-         id="tspan921"
-         x="46.3144"
-         y="100.0418"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#f6f5f4;fill-opacity:1;stroke-width:1.50544">#</tspan></text>
+       style="font-style:normal;font-weight:normal;font-size:60.2174px;line-height:1.25;font-family:sans-serif;fill:#f6f5f4;fill-opacity:1;stroke:none;stroke-width:1.50544">
+      <path
+         d="m 63.416141,69.330928 h 9.755219 l 2.107609,-11.019784 h 5.058261 l -2.107608,11.019784 h 5.299131 v 4.456087 H 77.326361 L 75.278969,84.56593 h 8.249784 v 4.456087 H 74.435925 L 72.328316,100.0418 H 67.270055 L 69.377664,89.022017 H 59.622445 L 57.514836,100.0418 H 52.456574 L 54.564183,89.022017 H 49.265052 V 84.56593 h 6.142175 L 57.454619,73.787015 H 49.265052 V 69.330928 H 58.35788 L 60.465489,58.311144 H 65.52375 Z M 60.465489,84.56593 h 9.755218 l 2.107609,-10.778915 h -9.755218 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#f6f5f4;fill-opacity:1;stroke-width:1.50544"
+         id="path232" />
+    </g>
   </g>
 </svg>
