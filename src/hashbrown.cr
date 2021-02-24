@@ -21,6 +21,7 @@ module Hashbrown
     Gtk::Button.cast(BUILDER["copyBtn1"]),
     Gtk::Button.cast(BUILDER["copyBtn2"]),
     Gtk::Button.cast(BUILDER["copyBtn3"]),
+    Gtk::Button.cast(BUILDER["copyBtn4"]),
   ]
 
   CLIPBOARD_HASH = Hash(Gtk::Button, String).new
@@ -29,5 +30,6 @@ module Hashbrown
     "md5sum"    => Gtk::TextView.cast(BUILDER["textField1"]),
     "sha1sum"   => Gtk::TextView.cast(BUILDER["textField2"]),
     "sha256sum" => Gtk::TextView.cast(BUILDER["textField3"]),
+    "sha512sum" => Gtk::TextView.cast(BUILDER["textField4"]),
   }
 end
