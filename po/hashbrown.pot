@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-06 01:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Please do not translate "Hashbrown".
+#: src/window.glade:49
+msgctxt "This is a button in the menu dropdown."
+msgid "About Hashbrown"
+msgstr ""
+
+#: src/window.glade:84
+msgctxt "Big text in welcomer."
+msgid "Pick a File"
+msgstr ""
+
+#: src/window.glade:99
+msgctxt "Subtext in welcomer."
+msgid "Generate, compare and verify MD5, SHA256 & SHA1 hashes."
+msgstr ""
+
+#: src/window.glade:152
+msgctxt ""
+"Indicates the action that the user activates by clicking the button in "
+"welcomer."
+msgid "Select a File"
+msgstr ""
+
+#: src/window.glade:168
+msgctxt ""
+"Indicates the next action that will happen after the user clicks the button "
+"and selects a file in welcomer. This text is subtext in the button in "
+"welcomer."
+msgid "Generate the hash of a file"
+msgstr ""
+
+#: src/window.glade:216
+msgctxt "Tooltip for the main file chooser."
+msgid "Select a File"
+msgstr ""
+
+#: src/window.glade:221
+msgctxt "Title for the main file chooser dialog."
+msgid "Choose a File"
+msgstr ""
+
+#: src/window.glade:283
+msgctxt "A copy text button."
+msgid "Copy"
+msgstr ""
+
+#: src/window.glade:372
+msgctxt "Header tab about generating hashes."
+msgid "Generate"
+msgstr ""
+
+#: src/window.glade:388
+msgctxt "Tooltip for the second file chooser under the compare tab."
+msgid "Select Another File"
+msgstr ""
+
+#: src/window.glade:389
+msgctxt "Title for the 'compare' file chooser dialog."
+msgid "Choose Another File"
+msgstr ""
+
+#: src/window.glade:399
+msgctxt "Label of a button that compares two files."
+msgid "Compare"
+msgstr ""
+
+#: src/window.glade:428
+msgctxt "Header tab about comparing files (their hashes)."
+msgid "Compare"
+msgstr ""
+
+#: src/window.glade:446
+msgctxt "Tooltip for the hash text input under the verify tab."
+msgid "Insert a MD5/SHA1/SHA256 Hash"
+msgstr ""
+
+#. Only translate 'hash' if possible.
+#: src/window.glade:448
+msgctxt "Placeholder text for an input box."
+msgid "MD5/SHA1/SHA256 Hash"
+msgstr ""
+
+#: src/window.glade:458
+msgctxt ""
+"Label of a button that  verifies that a hash belongs to a selected file."
+msgid "Verify"
+msgstr ""
+
+#: src/window.glade:486
+msgctxt "Header tab about verifing that a hash belongs to a selected file."
+msgid "Verify"
+msgstr ""
+
+#: src/window.glade:548
+msgctxt "The headbar menu icon-button tooltip."
+msgid "Menu"
+msgstr ""
