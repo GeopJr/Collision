@@ -62,6 +62,7 @@
   <a href='https://flathub.org/apps/details/dev.geopjr.Hashbrown'>
     <img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
   </a>
+  <img width='240' alt='Part of GNOME Circle' src='https://i.imgur.com/vyIKlW3.png'/>
 </p>
 
 ### Contributors
