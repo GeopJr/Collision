@@ -23,19 +23,20 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://i.imgur.com/wAlkIyb.png</image>
+      <image type="source">https://i.imgur.com/sD43psD.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/VudKxam.png</image>
+      <image type="source">https://i.imgur.com/snPTqGy.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/H5mGNpL.png</image>
+      <image type="source">https://i.imgur.com/i1MBz3F.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/LVIddjA.png</image>
+      <image type="source">https://i.imgur.com/w9s1i6a.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.2.0" date="2021-04-08"/>
     <release version="1.1.0" date="2021-03-04"/>
     <release version="1.0.3" date="2021-02-12"/>
     <release version="1.0.1" date="2021-02-11"/>
