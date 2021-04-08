@@ -1,8 +1,8 @@
 name: hashbrown
-version: 1.1.0
+version: 1.2.0
 
 authors:
-  - GeopJr <geopjr@geopjr.xyz>
+  - GeopJr <evan@geopjr.dev>
 
 targets:
   hashbrown:
@@ -16,6 +16,6 @@ dependencies:
     github: elorest/compiled_license
     branch: master
 
-crystal: 0.35.1
+crystal: 1.0.0
 
 license: AGPL-3.0-or-later

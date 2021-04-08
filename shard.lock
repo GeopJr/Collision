@@ -6,5 +6,5 @@ shards:
 
   gobject:
     git: https://github.com/jhass/crystal-gobject.git
-    version: 0.9.1+git.commit.5bc0cc7481a713b22e332d1bab80c132a819d20e
+    version: 0.10.0+git.commit.6468c57f8aa54b71c766d27b1e59e87a09ee8552
 
