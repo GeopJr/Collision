@@ -16,10 +16,10 @@
 ## Screenshots
 
 <p align="center">
-    <img alt="screenshot" width="768" src="https://i.imgur.com/wAlkIyb.png"><br />
-    <img alt="screenshot" width="768" src="https://i.imgur.com/VudKxam.png"><br />
-    <img alt="screenshot" width="768" src="https://i.imgur.com/H5mGNpL.png"><br />
-    <img alt="screenshot" width="768" src="https://i.imgur.com/LVIddjA.png">
+    <img alt="screenshot" width="768" src="https://i.imgur.com/sD43psD.png"><br />
+    <img alt="screenshot" width="768" src="https://i.imgur.com/snPTqGy.png"><br />
+    <img alt="screenshot" width="768" src="https://i.imgur.com/i1MBz3F.png"><br />
+    <img alt="screenshot" width="768" src="https://i.imgur.com/w9s1i6a.png">
 </p>
 
 #
