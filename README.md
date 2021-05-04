@@ -28,7 +28,7 @@
 
 ### Dependencies
 
-- `Crystal` - `~0.35.1`
+- `Crystal` - `~1.0.0`
 - `GTK`
 - `libgirepository1.0-dev`
 
