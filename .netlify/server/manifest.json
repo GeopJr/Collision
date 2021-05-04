@@ -1,0 +1,94 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-0ec74a11.js"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "entries/pages/__layout.svelte.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-0ec74a11.js",
+      "_stores-50073149.js"
+    ],
+    "css": [
+      "assets/entries/pages/__layout.svelte-a843e8ec.css"
+    ]
+  },
+  "src/routes/__error.svelte": {
+    "file": "entries/pages/__error.svelte.js",
+    "src": "src/routes/__error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-0ec74a11.js",
+      "_page-transitions-8d078565.js"
+    ],
+    "css": [
+      "assets/entries/pages/__error.svelte-8c6bde05.css"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "entries/pages/index.svelte.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-0ec74a11.js",
+      "_stores-50073149.js",
+      "_page-transitions-8d078565.js"
+    ],
+    "css": [
+      "assets/entries/pages/index.svelte-f14c0530.css"
+    ]
+  },
+  "src/routes/install.svelte": {
+    "file": "entries/pages/install.svelte.js",
+    "src": "src/routes/install.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-0ec74a11.js",
+      "_app-window-5936bdaa.js",
+      "_page-transitions-8d078565.js",
+      "_stores-50073149.js"
+    ]
+  },
+  "src/routes/code.svelte": {
+    "file": "entries/pages/code.svelte.js",
+    "src": "src/routes/code.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-0ec74a11.js",
+      "_app-window-5936bdaa.js",
+      "_page-transitions-8d078565.js",
+      "_stores-50073149.js"
+    ]
+  },
+  "_index-0ec74a11.js": {
+    "file": "chunks/index-0ec74a11.js"
+  },
+  "_stores-50073149.js": {
+    "file": "chunks/stores-50073149.js",
+    "imports": [
+      "_index-0ec74a11.js"
+    ]
+  },
+  "_page-transitions-8d078565.js": {
+    "file": "chunks/page-transitions-8d078565.js",
+    "imports": [
+      "_index-0ec74a11.js"
+    ]
+  },
+  "_app-window-5936bdaa.js": {
+    "file": "chunks/app-window-5936bdaa.js",
+    "imports": [
+      "_index-0ec74a11.js",
+      "_stores-50073149.js"
+    ],
+    "css": [
+      "assets/app-window-d4cf4ddf.css"
+    ]
+  }
+}
