@@ -9,9 +9,9 @@ module Hashbrown
     tmpHashes = CLIPBOARD_HASH.values.dup
     matches = tmpHashes.reject! { |x| x == input }.size != 3
     if matches
-      VERIFY_STATUS.label = "<span foreground=\"#2e2ec2c27e7e\">They match!</span>"
+      VERIFY_STATUS.visible_child_name = "page1"
     else
-      VERIFY_STATUS.label = "<span foreground=\"#c0c01c1c2828\">They don't match!</span>"
+      VERIFY_STATUS.visible_child_name = "page2"
     end
   end
 end

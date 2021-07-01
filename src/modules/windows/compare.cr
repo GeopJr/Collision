@@ -8,9 +8,9 @@ module Hashbrown
   compareBtn.on_clicked do |btn|
     compareFileMD5 = Hashbrown.run_cmd("md5sum", [compareFilePath]).split(" ")[0]
     if CLIPBOARD_HASH[COPY_BUTTONS[0]] == compareFileMD5
-      COMPARE_STATUS.label = "<span foreground=\"#2e2ec2c27e7e\">They match!</span>"
+      COMPARE_STATUS.visible_child_name = "page1"
     else
-      COMPARE_STATUS.label = "<span foreground=\"#c0c01c1c2828\">They don't match!</span>"
+      COMPARE_STATUS.visible_child_name = "page2"
     end
   end
 

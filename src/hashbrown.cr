@@ -1,19 +1,52 @@
 require "gobject/gtk/autorun"
 require "compiled_license"
+# rucksack won't be used for now
+# require "rucksack"
 
 require "./modules/functions/*"
 require "./modules/views/*"
 require "./modules/windows/*"
 
+# ENV["RUCKSACK_MODE"] ||= "2"
+
+# {% for name in `find ./src/translations -type f`.split('\n') %}
+#   rucksack({{name}})
+# {% end %}
+
 module Hashbrown
   extend self
 
-  GLADE   = {{ read_file("./src/window.glade").gsub(/<property name=\"version\">0.0.0<\/property>/, "<property name=\"version\">" + read_file("./shard.yml").split("version: ")[1].split("\n")[0] + "</property>") }}
-  BUILDER = Gtk::Builder.new_from_string GLADE, GLADE.size
+  VERSION = {{read_file("./shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
 
-  COMPARE_STATUS = Gtk::Label.cast(BUILDER["compareStatus"])
+  LANGS = {{`find ./translations -type f`.split('\n').map { |x| x.gsub(/.+\/|.js$/, "") }.reject { |x| x.downcase == "hashbrown" || x == "" || x.nil? }}}
 
-  VERIFY_STATUS = Gtk::Label.cast(BUILDER["verifyStatus"])
+  GLADES = begin
+    tmp = {
+      "en" => {{read_file("./src/translations/hashbrown.glade")}}.gsub(/<property name=\"version\">0.0.0<\/property>/, "<property name=\"version\">#{VERSION}</property>"),
+    }
+    {% for lang in `find ./translations -type f`.split('\n').map { |x| x.gsub(/.+\/|.js$/, "") }.reject { |x| x.downcase == "hashbrown" || x == "" || x.nil? } %}
+    tmp[{{lang}}] = {{read_file("./src/translations/hashbrown-" + lang + ".glade")}}.gsub(/<property name=\"version\">0.0.0<\/property>/, "<property name=\"version\">#{VERSION}</property>")
+  {% end %}
+    tmp
+  end
+
+  LANG = begin
+    current_lang = Hashbrown.current_language
+    current_lang = "en" unless LANGS.includes?(current_lang)
+    current_lang
+  end
+
+  # GLADE = begin
+  #   tmp = IO::Memory.new
+  #   rucksack("./src/translations/hashbrown#{LANG == "en" ? "" : "-" + LANG}.glade").read(tmp, false)
+  #   tmp.to_s.gsub(/<property name=\"version\">0.0.0<\/property>/, "<property name=\"version\">#{VERSION}</property>")
+  # end
+
+  BUILDER = Gtk::Builder.new_from_string(GLADES[LANG], -1)
+
+  COMPARE_STATUS = Gtk::Stack.cast(BUILDER["compareStatus"])
+
+  VERIFY_STATUS = Gtk::Stack.cast(BUILDER["verifyStatus"])
 
   MAIN_FILE = Gtk::FileChooserButton.cast(BUILDER["mainFile"])
 

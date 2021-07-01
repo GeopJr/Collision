@@ -8,8 +8,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: MeilCli/setup-crystal-action@v4.0.3
         with:
-          crystal_version: 0.35.1
-          shards_version: 0.13.0
+          crystal_version: 1.0.0
+          shards_version: 0.14.1
       - name: Shards install
         run: shards install
       - name: Spec
