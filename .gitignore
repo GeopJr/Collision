@@ -7,3 +7,4 @@
 hashbrown
 .flatpak-builder/
 !/lib/.shards.info
+**/node_modules/
