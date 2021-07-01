@@ -11,7 +11,7 @@ jobs:
           crystal_version: 0.35.1
           shards_version: 0.13.0
       - name: Shards install
-        run: shards install --ignore-crystal-version
+        run: shards install
       - name: Spec
         run: crystal spec
       - name: Check formatting

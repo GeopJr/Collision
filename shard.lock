@@ -2,9 +2,9 @@ version: 2.0
 shards:
   compiled_license:
     git: https://github.com/elorest/compiled_license.git
-    version: 0.1.3+git.commit.307ab40b4431f454facb832b4cec7986241c264d
+    version: 1.0.0+git.commit.ba052e31f8203c1db9997be3aba9dae62dc5f832
 
   gobject:
     git: https://github.com/jhass/crystal-gobject.git
-    version: 0.10.0+git.commit.6468c57f8aa54b71c766d27b1e59e87a09ee8552
+    version: 0.10.0+git.commit.1e546dd592e10f0f1394ec22765c10f6e91af6e7
 
