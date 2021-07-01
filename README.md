@@ -45,6 +45,14 @@
 
 #
 
+## Translations
+
+Hashbrown is using in-house translation. To translate it into another language, copy `./translations/hashbrown.js` to `./translations/{lang}.js` and fill in the info.
+
+If you are unsure, feel free to contact me!
+
+#
+
 ## Contributing
 
 1. Read the [Code of Conduct](https://github.com/GeopJr/Hashbrown/blob/main/CODE_OF_CONDUCT.md)
@@ -66,6 +74,7 @@
 </p>
 
 ### Contributors
+
 <a href="https://github.com/GeopJr/Hashbrown/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=GeopJr/Hashbrown" />
 </a>
