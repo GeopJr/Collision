@@ -70,7 +70,9 @@ If you are unsure, feel free to contact me!
   <a href='https://flathub.org/apps/details/dev.geopjr.Hashbrown'>
     <img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
   </a>
-  <img width='240' alt='Part of GNOME Circle' src='https://i.imgur.com/vyIKlW3.png'/>
+  <a href='https://circle.gnome.org/'>
+    <img width='240' alt='Part of GNOME Circle' src='https://i.imgur.com/vyIKlW3.png'/>
+  </a>
 </p>
 
 ### Contributors
