@@ -6,6 +6,5 @@
 *~
 hashbrown
 .flatpak-builder/
-!/lib/.shards.info
 **/node_modules/
 **/package-lock.json

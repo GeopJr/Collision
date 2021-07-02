@@ -64,11 +64,11 @@ module.exports = {
   },
   "They match!": {
     comment: "Message displayed when comparison or verification is successful.",
-    translation: "",
+    translation: "¡Concuerdan!",
   },
   "They don't match!": {
     comment:
       "Message displayed when comparison or verification is not successful.",
-    translation: "",
+    translation: "¡No coinciden!",
   },
 };
