@@ -2,8 +2,9 @@
 // Copyright (C) 2021 THE dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
 // This file is distributed under the same license as the dev.geopjr.Hashbrown package.
 // Philipp Kiemle <philipp.kiemle@gmail.com>, 2021.
+// Panagiotis Vasilopoulos <hello@alwayslivid.com>, 2021.
 
-// Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>
+// Last-Translator: Panagiotis Vasilopoulos <hello@alwayslivid.com>
 // Language: de
 
 module.exports = {
@@ -65,11 +66,11 @@ module.exports = {
   },
   "They match!": {
     comment: "Message displayed when comparison or verification is successful.",
-    translation: "",
+    translation: "Sie passen zusammen!",
   },
   "They don't match!": {
     comment:
       "Message displayed when comparison or verification is not successful.",
-    translation: "",
+    translation: "Sie passen nicht zusammen!",
   },
 };
