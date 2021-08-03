@@ -24,11 +24,24 @@
 
 #
 
+## Installing
+
+- [Flathub](https://flathub.org/apps/details/dev.geopjr.Hashbrown) [RECOMMENDED]
+- [AUR](https://aur.archlinux.org/packages/hashbrown/) <sup>[git](https://aur.archlinux.org/packages/hashbrown-git/)</sup>
+
+> Feel free to package Hashbrown for your favourite distro!
+
+> Don't forget to open an issue or a PR to have it included here.
+
+> If there are any issues with packaging caused by Hashbrown, please open an issue!
+
+#
+
 ## Building
 
 ### Dependencies
 
-- `Crystal` - `~1.0.0`
+- `Crystal` - `~1.1.1`
 - `GTK`
 - `libgirepository1.0-dev`
 
