@@ -14,7 +14,7 @@ module.exports = {
   "Generate, compare and verify MD5, SHA256 & SHA1 hashes.": {
     comment: "Subtext in welcomer",
     translation:
-      "Δημιούργησε, σύγκρινε και Επαλήθευσε MD5, SHA256 & SHA1 hashes.",
+      "Δημιούργησε, σύγκρινε και επαλήθευσε MD5, SHA256 & SHA1 hashes.",
   },
   "Select a File": {
     comment: "Tooltip for the main file chooser.",
