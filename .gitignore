@@ -8,3 +8,4 @@ hashbrown
 .flatpak-builder/
 **/node_modules/
 **/package-lock.json
+hashbrown-thanked.glade

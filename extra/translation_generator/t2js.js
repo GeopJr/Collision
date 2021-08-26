@@ -31,7 +31,16 @@ const langs = fs
     (x) => x.toLowerCase().endsWith(".js") && x.toLowerCase() !== "hashbrown.js"
   );
 
-const baseGlade = fs.readFileSync("./src/translations/hashbrown.glade", "utf8");
+const baseGlade = fs.readFileSync(
+  "./src/translations/hashbrown-thanked.glade",
+  "utf8"
+);
+
+fs.copyFileSync(
+  "./src/translations/hashbrown-thanked.glade",
+  "./src/translations/hashbrown-en.glade"
+);
+console.log("Done with: en");
 
 for (let i = 0; i < langs.length; i++) {
   const lang = require(`../../translations/${langs[i]}`);
@@ -53,4 +62,4 @@ for (let i = 0; i < langs.length; i++) {
   console.log("Done with: " + langCode);
 }
 
-console.log("Finished");
+console.log("Finished creating translations!");

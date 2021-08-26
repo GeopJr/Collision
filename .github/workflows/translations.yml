@@ -20,6 +20,7 @@ jobs:
           cd extra/translation_generator/
           npm install
           cd ../../
+          node extra/translation_generator/thankTranslators.js
           node extra/translation_generator/t2js.js
       - name: Commit files
         run: |

@@ -21,10 +21,8 @@ module Hashbrown
   LANGS = {{`find ./translations -type f`.split('\n').map { |x| x.gsub(/.+\/|.js$/, "") }.reject { |x| x.downcase == "hashbrown" || x == "" || x.nil? }}}
 
   GLADES = begin
-    tmp = {
-      "en" => {{read_file("./src/translations/hashbrown.glade")}}.gsub(/<property name=\"version\">0.0.0<\/property>/, "<property name=\"version\">#{VERSION}</property>"),
-    }
-    {% for lang in `find ./translations -type f`.split('\n').map { |x| x.gsub(/.+\/|.js$/, "") }.reject { |x| x.downcase == "hashbrown" || x == "" || x.nil? } %}
+    tmp = Hash(String, String).new
+    {% for lang in `find ./translations -type f`.split('\n').map { |x| x.gsub(/.+\/|.js$/, "") }.reject { |x| x.downcase == "hashbrown" || x == "" || x.nil? } << "en" %}
     tmp[{{lang}}] = {{read_file("./src/translations/hashbrown-" + lang + ".glade")}}.gsub(/<property name=\"version\">0.0.0<\/property>/, "<property name=\"version\">#{VERSION}</property>")
   {% end %}
     tmp
