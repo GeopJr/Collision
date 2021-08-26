@@ -4,7 +4,7 @@
   <name>Hashbrown</name>
   <project_license>AGPL-3.0-or-later</project_license>
   <developer_name>GeopJr</developer_name>
-  <summary>Generate, compare and verify MD5, SHA256 &amp; SHA1 hashes</summary>
+  <summary>Generate, compare and verify MD5, SHA-256 &amp; SHA-1 hashes</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://hashbrown.geopjr.dev/</url>
   <url type="bugtracker">https://github.com/GeopJr/Hashbrown/issues</url>
@@ -18,7 +18,7 @@
     <p>
       This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, allowing
       anyone, from any age and experience group, to generate, compare and verify MD5,
-      SHA256 and SHA256 hashes.
+      SHA-256 and SHA-1 hashes.
     </p>
   </description>
   <screenshots>

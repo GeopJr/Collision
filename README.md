@@ -2,7 +2,7 @@
   <img alt="branding" width="256" src="https://i.imgur.com/Wsm0XqN.png">
 </p>
 <h1 align="center">Hashbrown</h1>
-<h4 align="center">A simple GUI tool to generate, compare and verify MD5, SHA1 & SHA256 hashes.</h4>
+<h4 align="center">A simple GUI tool to generate, compare and verify MD5, SHA-1 & SHA-256 hashes.</h4>
 <p align="center">
   <br />
     <a href="https://github.com/marketplace/actions/action-accessibility"><img src="https://img.shields.io/badge/ACTION-ACCESSIBILITY-396baf.svg?style=for-the-badge&labelColor=f6d32e" alt="action accessibility" /></a>

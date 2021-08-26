@@ -1,19 +1,19 @@
-// SOME DESCRIPTIVE TITLE.
-// Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-// This file is distributed under the same license as the PACKAGE package.
-// FIRST AUTHOR <vistausss@fastmail.com>, 2021.
+// Dutch translations for dev.geopjr.Hashbrown package.
+// Copyright (C) 2021 dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
+// This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+// Heimen Stoffels <vistausss@fastmail.com>, 2021.
 
 // Last-Translator: Heimen Stoffels <vistausss@fastmail.com>
-// Language: Dutch
+// Language: nl
 
 module.exports = {
   "About Hashbrown": {
     comment: "This is a button in the menu dropdown.",
     translation: "Over Hashbrown",
   },
-  "Generate, compare and verify MD5, SHA256 & SHA1 hashes.": {
+  "Generate, compare and verify MD5, SHA-256 & SHA-1 hashes.": {
     comment: "Subtext in welcomer",
-    translation: "Genereer, vergelijk en verifieer md5-, sha256- en sha1-controlesommen.",
+    translation: "Genereer, vergelijk en verifieer md5-, sha-256- en sha-1-controlesommen.",
   },
   "Select a File": {
     comment: "Tooltip for the main file chooser.",
@@ -44,14 +44,14 @@ module.exports = {
       "Label of a button that compares two files. Also header tab about comparing files (their hashes).",
     translation: "Vergelijken",
   },
-  "Insert a MD5/SHA1/SHA256 Hash": {
+  "Insert a MD5/SHA-1/SHA-256 Hash": {
     comment: "Tooltip for the hash text input under the verify tab.",
-    translation: "Voer hier een md5-, sha1- of sha256-controlesom in",
+    translation: "Voer hier een md5-, sha-1- of sha-256-controlesom in",
   },
-  "MD5/SHA1/SHA256 Hash": {
+  "MD5/SHA-1/SHA-256 Hash": {
     comment:
       "Placeholder text for an input box. Only translate 'hash' if possible.",
-    translation: "md5-, sha1- of sha256-controlesom",
+    translation: "md5-, sha-1- of sha-256-controlesom",
   },
   Verify: {
     comment:

@@ -112,7 +112,7 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label" translatable="yes">Generate, compare and verify MD5, SHA256 &amp; SHA1 hashes.</property>
+                <property name="label" translatable="yes">Generate, compare and verify MD5, SHA-256 &amp; SHA-1 hashes.</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -219,7 +219,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">SHA1</property>
+                        <property name="label">SHA-1</property>
                       </object>
                       <packing>
                         <property name="left-attach">0</property>
@@ -257,7 +257,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">SHA256</property>
+                        <property name="label">SHA-256</property>
                       </object>
                       <packing>
                         <property name="left-attach">0</property>
@@ -407,9 +407,9 @@
                       <object class="GtkEntry" id="hashInput">
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
-                        <property name="tooltip-text" translatable="yes" context="Tooltip for the hash text input under the verify tab.">Insert a MD5/SHA1/SHA256 Hash</property>
+                        <property name="tooltip-text" translatable="yes" context="Tooltip for the hash text input under the verify tab.">Insert a MD5/SHA-1/SHA-256 Hash</property>
                         <property name="max-width-chars">30</property>
-                        <property name="placeholder-text" translatable="yes" context="Placeholder text for an input box." comments="Only translate 'hash' if possible.">MD5/SHA1/SHA256 Hash</property>
+                        <property name="placeholder-text" translatable="yes" context="Placeholder text for an input box." comments="Only translate 'hash' if possible.">MD5/SHA-1/SHA-256 Hash</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>

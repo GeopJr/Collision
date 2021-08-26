@@ -11,10 +11,10 @@ module.exports = {
     comment: "This is a button in the menu dropdown.",
     translation: "О приложении",
   },
-  "Generate, compare and verify MD5, SHA256 & SHA1 hashes.": {
+  "Generate, compare and verify MD5, SHA-256 & SHA-1 hashes.": {
     comment: "Subtext in welcomer",
     translation:
-      "Создавайте, сравнивайте и проверяйте хеши MD5, SHA256 & SHA1.",
+      "Создавайте, сравнивайте и проверяйте хеши MD5, SHA-256 & SHA-1.",
   },
   "Select a File": {
     comment: "Tooltip for the main file chooser.",
@@ -45,14 +45,14 @@ module.exports = {
       "Label of a button that compares two files. Also header tab about comparing files (their hashes).",
     translation: "Сравнить",
   },
-  "Insert a MD5/SHA1/SHA256 Hash": {
+  "Insert a MD5/SHA-1/SHA-256 Hash": {
     comment: "Tooltip for the hash text input under the verify tab.",
-    translation: "Вставьте MD5/SHA1/SHA256 хеш",
+    translation: "Вставьте MD5/SHA-1/SHA-256 хеш",
   },
-  "MD5/SHA1/SHA256 Hash": {
+  "MD5/SHA-1/SHA-256 Hash": {
     comment:
       "Placeholder text for an input box. Only translate 'hash' if possible.",
-    translation: "MD5/SHA1/SHA256 хеш",
+    translation: "MD5/SHA-1/SHA-256 хеш",
   },
   Verify: {
     comment:

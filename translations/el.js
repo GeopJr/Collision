@@ -11,10 +11,10 @@ module.exports = {
     comment: "This is a button in the menu dropdown.",
     translation: "Σχετικά με το Hashbrown",
   },
-  "Generate, compare and verify MD5, SHA256 & SHA1 hashes.": {
+  "Generate, compare and verify MD5, SHA-256 & SHA-1 hashes.": {
     comment: "Subtext in welcomer",
     translation:
-      "Δημιούργησε, σύγκρινε και επαλήθευσε MD5, SHA256 & SHA1 hashes.",
+      "Δημιούργησε, σύγκρινε και επαλήθευσε MD5, SHA-256 & SHA-1 hashes.",
   },
   "Select a File": {
     comment: "Tooltip for the main file chooser.",
@@ -45,14 +45,14 @@ module.exports = {
       "Label of a button that compares two files. Also header tab about comparing files (their hashes).",
     translation: "Σύγκρινε",
   },
-  "Insert a MD5/SHA1/SHA256 Hash": {
+  "Insert a MD5/SHA-1/SHA-256 Hash": {
     comment: "Tooltip for the hash text input under the verify tab.",
-    translation: "Είσαγε ένα MD5/SHA1/SHA256 Hash",
+    translation: "Είσαγε ένα MD5/SHA-1/SHA-256 Hash",
   },
-  "MD5/SHA1/SHA256 Hash": {
+  "MD5/SHA-1/SHA-256 Hash": {
     comment:
       "Placeholder text for an input box. Only translate 'hash' if possible.",
-    translation: "MD5/SHA1/SHA256 Hash",
+    translation: "MD5/SHA-1/SHA-256 Hash",
   },
   Verify: {
     comment:

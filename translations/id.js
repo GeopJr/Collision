@@ -11,9 +11,9 @@ module.exports = {
     comment: "This is a button in the menu dropdown.",
     translation: "Tentang Hashbrown",
   },
-  "Generate, compare and verify MD5, SHA256 & SHA1 hashes.": {
+  "Generate, compare and verify MD5, SHA-256 & SHA-1 hashes.": {
     comment: "Subtext in welcomer",
-    translation: "Hasilkan, bandingkan, dan verifikasi hash MD5, SHA256 & SHA1.",
+    translation: "Hasilkan, bandingkan, dan verifikasi hash MD5, SHA-256 & SHA-1.",
   },
   "Select a File": {
     comment: "Tooltip for the main file chooser.",
@@ -44,14 +44,14 @@ module.exports = {
       "Label of a button that compares two files. Also header tab about comparing files (their hashes).",
     translation: "Bandingkan",
   },
-  "Insert a MD5/SHA1/SHA256 Hash": {
+  "Insert a MD5/SHA-1/SHA-256 Hash": {
     comment: "Tooltip for the hash text input under the verify tab.",
-    translation: "Masukkan Hash MD5/SHA1/SHA256",
+    translation: "Masukkan Hash MD5/SHA-1/SHA-256",
   },
-  "MD5/SHA1/SHA256 Hash": {
+  "MD5/SHA-1/SHA-256 Hash": {
     comment:
       "Placeholder text for an input box. Only translate 'hash' if possible.",
-    translation: "Hash MD5/SHA1/SHA256",
+    translation: "Hash MD5/SHA-1/SHA-256",
   },
   Verify: {
     comment:
