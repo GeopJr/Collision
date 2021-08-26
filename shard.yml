@@ -14,7 +14,7 @@ dependencies:
     branch: main
   compiled_license:
     github: elorest/compiled_license
-    branch: master
+    version: ~> 1.0.0
 
 crystal: 1.0.0
 
