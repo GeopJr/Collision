@@ -13,6 +13,6 @@ jobs:
       - name: Shards install
         run: shards install
       - name: Spec
-        run: crystal spec
+        run: crystal spec || exit 1
       - name: Check formatting
         run: crystal tool format --check
