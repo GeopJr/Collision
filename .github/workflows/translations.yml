@@ -22,13 +22,18 @@ jobs:
           cd ../../
           node extra/translation_generator/thankTranslators.js
           node extra/translation_generator/t2js.js
+      - name: Check for modified translations
+        id: git-check-translations
+        run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
       - name: Commit files
+        if: steps.git-check-translations.outputs.modified == 'true'
         run: |
           git add ./src/translations/
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git commit -am "chore: compile translations"
       - name: Push changes
+        if: steps.git-check-translations.outputs.modified == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
