@@ -112,7 +112,7 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label" translatable="yes">Generate, compare and verify MD5, SHA-256 &amp; SHA-1 hashes.</property>
+                <property name="label" translatable="yes">Check hashes for your files</property>
               </object>
               <packing>
                 <property name="expand">False</property>

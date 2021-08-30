@@ -11,9 +11,9 @@ module.exports = {
     comment: "This is a button in the menu dropdown.",
     translation: "Acerca de Hashbrown",
   },
-  "Generate, compare and verify MD5, SHA-256 & SHA-1 hashes.": {
+  "Check hashes for your files": {
     comment: "Subtext in welcomer",
-    translation: "Generar, comparar y verificar hashes MD5, SHA-256 y SHA-1.",
+    translation: "",
   },
   "Select a File": {
     comment: "Tooltip for the main file chooser.",

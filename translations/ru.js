@@ -11,10 +11,9 @@ module.exports = {
     comment: "This is a button in the menu dropdown.",
     translation: "О приложении",
   },
-  "Generate, compare and verify MD5, SHA-256 & SHA-1 hashes.": {
+  "Check hashes for your files": {
     comment: "Subtext in welcomer",
-    translation:
-      "Создавайте, сравнивайте и проверяйте хеши MD5, SHA-256 & SHA-1.",
+    translation: "",
   },
   "Select a File": {
     comment: "Tooltip for the main file chooser.",
