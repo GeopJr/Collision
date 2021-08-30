@@ -5,7 +5,6 @@
 <h4 align="center">A simple GUI tool to generate, compare and verify MD5, SHA-1 & SHA-256 hashes.</h4>
 <p align="center">
   <br />
-    <a href="https://github.com/marketplace/actions/action-accessibility"><img src="https://img.shields.io/badge/ACTION-ACCESSIBILITY-396baf.svg?style=for-the-badge&labelColor=f6d32e" alt="action accessibility" /></a>
     <a href="https://github.com/GeopJr/Hashbrown/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=for-the-badge&labelColor=f6d32e" alt="COC" /></a>
     <a href="https://github.com/GeopJr/Hashbrown/blob/main/LICENSE"><img src="https://img.shields.io/badge/LICENSE-AGPL--3.0-000000.svg?style=for-the-badge&labelColor=f6d32e" alt="AGPL-3.0" /></a>
     <a href="https://github.com/GeopJr/Hashbrown/actions"><img src="https://img.shields.io/github/workflow/status/geopjr/Hashbrown/Specs%20&%20Lint/main?labelColor=f6d32e&style=for-the-badge" alt="ci action status" /></a>
@@ -16,10 +15,10 @@
 ## Screenshots
 
 <p align="center">
-    <img alt="screenshot" width="768" src="https://i.imgur.com/sD43psD.png"><br />
-    <img alt="screenshot" width="768" src="https://i.imgur.com/snPTqGy.png"><br />
-    <img alt="screenshot" width="768" src="https://i.imgur.com/i1MBz3F.png"><br />
-    <img alt="screenshot" width="768" src="https://i.imgur.com/w9s1i6a.png">
+    <img alt="screenshot" width="768" src="https://i.imgur.com/7tEhM0z.png"><br />
+    <img alt="screenshot" width="768" src="https://i.imgur.com/9KnlAd8.png"><br />
+    <img alt="screenshot" width="768" src="https://i.imgur.com/OOLY7Cn.png"><br />
+    <img alt="screenshot" width="768" src="https://i.imgur.com/iL20mHJ.png">
 </p>
 
 #
