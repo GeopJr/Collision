@@ -13,7 +13,7 @@ module.exports = {
   },
   "Check hashes for your files": {
     comment: "Subtext in welcomer",
-    translation: "",
+    translation: "Проверьте хеши ваших файлов",
   },
   "Select a File": {
     comment: "Tooltip for the main file chooser.",
