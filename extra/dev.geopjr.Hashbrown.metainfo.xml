@@ -5,6 +5,7 @@
   <project_license>AGPL-3.0-or-later</project_license>
   <developer_name>GeopJr</developer_name>
   <summary>Check hashes for your files</summary>
+  <summary xml:lang="hr">Provjeri hasheve za svoje datoteke<summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://hashbrown.geopjr.dev/</url>
   <url type="bugtracker">https://github.com/GeopJr/Hashbrown/issues</url>
@@ -20,6 +21,16 @@
       anyone, from any age and experience group, to generate, compare and verify MD5,
       SHA-256 and SHA-1 hashes.
     </p>
+    <p xml:lang="hr">
+      Provjeravanje autentičnosti preuzete ili primljene datoteke često se zanemaruje ili
+      oduzima previše vremena. Istovremeno je postalo sve jednostavnije manipulirati
+      datoteke zbog masovnog povećanja zlonamjernih web-stranica i drugih aktera.
+     </p>
+    <p xml:lang="hr">
+       Cilj ovog alata je riješiti taj problem. Hashbrown sadrźi jednostavno i čisto
+       korisničko sučelje koje omogućuje svima, bez obzira na dob i iskustvo, generirati,
+       usporediti i provjeriti MD5, SHA-256 i SHA-1 hasheve.
+     </p>
   </description>
   <screenshots>
     <screenshot type="default">
