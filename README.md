@@ -84,6 +84,9 @@ If you are unsure, feel free to contact me!
   </a><br />
   <a href='https://circle.gnome.org/'>
     <img width='240' alt='Part of GNOME Circle' src='https://i.imgur.com/vyIKlW3.png'/>
+  </a><br />
+  <a href='https://stopthemingmy.app'>
+    <img width='240' alt='Please do not theme this app' src='https://stopthemingmy.app/badge.svg'/>
   </a>
 </p>
 
