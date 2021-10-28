@@ -21,7 +21,8 @@ module Hashbrown
     MAIN_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
-      Hashbrown.reset(true)
+      # Hashbrown.reset(true)
+      Hashbrown.reset_feedback
       CLIPBOARD_HASH.merge!(generate_hashes(MAIN_FILE_CHOOSER_NATIVE.file.path.not_nil!.to_s, TEXT_FIELDS, COPY_BUTTONS))
     end
 
