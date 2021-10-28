@@ -2,7 +2,7 @@
 <component type="desktop">
   <id>dev.geopjr.Hashbrown</id>
   <name>Hashbrown</name>
-  <project_license>AGPL-3.0-or-later</project_license>
+  <project_license>BSD-2-Clause</project_license>
   <developer_name>GeopJr</developer_name>
   <summary>Check hashes for your files</summary>
   <summary xml:lang="hr">Provjeri hasheve za svoje datoteke<summary>
