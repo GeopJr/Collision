@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_HASHBROWN_(Compare Hash Functions)</attribute>
+        <attribute name="action">app.hashinfo</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_HASHBROWN_(About Hashbrown)</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+  <object class="GtkMenuButton" id="menuBtn">
+    <property name="menu-model">primary_menu</property>
+    <property name="icon-name">open-menu-symbolic</property>
+    <property name="tooltip-text" translatable="yes">HASHBROWN_(Menu)</property>
+    <style>
+      <class name="flat"/>
+    </style>
+  </object>
+</interface>
