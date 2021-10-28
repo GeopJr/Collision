@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkButton" id="openFileBtn">
+    <property name="child">
+      <object class="AdwButtonContent">
+        <property name="icon-name">document-open-symbolic</property>
+        <property name="label" translatable="yes">_HASHBROWN_(Open)</property>
+        <property name="tooltip-text" translatable="yes">HASHBROWN_(Open)...</property>
+        <property name="use-underline">True</property>
+      </object>
+    </property>
+    <style>
+        <class name="flat" />
+      </style>
+  </object>
+  <object class="GtkFileChooserNative" id="mainFileChooserNative">
+    <property name="title" translatable="yes">HASHBROWN_(Choose a File)</property>
+    <property name="modal">True</property>
+  </object>
+</interface>

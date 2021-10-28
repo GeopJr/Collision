@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="AdwViewSwitcherTitle" id="switcher_title">
+    <property name="stack">stack</property>
+    <property name="title">Hashbrown</property>
+  </object>
+  <object class="AdwViewStack" id="stack">
+    <property name="vexpand">True</property>
+  </object>
+  <object class="AdwViewSwitcherBar" id="switcher_bar">
+    <property name="stack">stack</property>
+    <property name="reveal" bind-source="switcher_title" bind-property="title-visible" bind-flags="sync-create"/>
+  </object>
+</interface>

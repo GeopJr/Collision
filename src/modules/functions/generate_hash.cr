@@ -10,11 +10,11 @@ module Hashbrown
     output
   end
 
-  def generate_hashes(filename : String, textFields : Hash(String, Gtk::TextView), copyBtns : Array(Gtk::Button)) : Hash(Gtk::Button, String)
+  def generate_hashes(filename : String, textFields : Hash(String, Gtk::Entry), copyBtns : Array(Gtk::Button)) : Hash(Gtk::Button, String)
     tempBtns = Hash(Gtk::Button, String).new
     i = 0
     textFields.each do |k, v|
-      output = Hashbrown.run_cmd("#{k}", [filename]).split(" ")[0]
+      output = Hashbrown.run_cmd("#{k}", [filename]).split(" ")[0].downcase
       v.buffer.set_text(output, output.size)
       tempBtns[copyBtns[i]] = output
       i = i.succ

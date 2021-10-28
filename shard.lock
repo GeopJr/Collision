@@ -2,9 +2,9 @@ version: 2.0
 shards:
   compiled_license:
     git: https://github.com/elorest/compiled_license.git
-    version: 1.0.0+git.commit.ba052e31f8203c1db9997be3aba9dae62dc5f832
+    version: 1.0.0
 
-  gobject:
-    git: https://github.com/jhass/crystal-gobject.git
-    version: 0.10.0+git.commit.1e546dd592e10f0f1394ec22765c10f6e91af6e7
+  libadwaita:
+    git: https://github.com/geopjr/libadwaita.cr.git
+    version: 1.0.0+git.commit.672c5d7a31eb3e59439b9d2c98673d5f7b8d1314
 
