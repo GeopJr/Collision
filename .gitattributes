@@ -1,3 +1,0 @@
-*.js linguist-vendored
-*.glade linguist-vendored
-**/hashbrown.glade -linguist-vendored
