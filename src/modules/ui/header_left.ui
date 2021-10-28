@@ -11,11 +11,11 @@
       </object>
     </property>
     <style>
-        <class name="flat" />
-      </style>
+      <class name="flat"/>
+    </style>
   </object>
   <object class="GtkFileChooserNative" id="mainFileChooserNative">
     <property name="title" translatable="yes">HASHBROWN_(Choose a File)</property>
-    <property name="modal">True</property>
+    <property name="modal">1</property>
   </object>
 </interface>
