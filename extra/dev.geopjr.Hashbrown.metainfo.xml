@@ -19,7 +19,7 @@
     <p>
       This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, allowing
       anyone, from any age and experience group, to generate, compare and verify MD5,
-      SHA-256 and SHA-1 hashes.
+      SHA-256, SHA-512 and SHA-1 hashes.
     </p>
     <p xml:lang="hr">
       Provjeravanje autentičnosti preuzete ili primljene datoteke često se zanemaruje ili
@@ -29,21 +29,21 @@
     <p xml:lang="hr">
        Cilj ovog alata je riješiti taj problem. Hashbrown sadrźi jednostavno i čisto
        korisničko sučelje koje omogućuje svima, bez obzira na dob i iskustvo, generirati,
-       usporediti i provjeriti MD5, SHA-256 i SHA-1 hasheve.
+       usporediti i provjeriti MD5, SHA-256, SHA-512 i SHA-1 hasheve.
      </p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://i.imgur.com/7tEhM0z.png</image>
+      <image type="source">https://i.imgur.com/96jhW14.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/9KnlAd8.png</image>
+      <image type="source">https://i.imgur.com/TxeJJuI.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/OOLY7Cn.png</image>
+      <image type="source">https://i.imgur.com/2SRnLC4.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/iL20mHJ.png</image>
+      <image type="source">https://i.imgur.com/C6vvJrb.png</image>
     </screenshot>
   </screenshots>
   <releases>
