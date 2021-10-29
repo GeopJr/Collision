@@ -3,12 +3,14 @@
   <id>dev.geopjr.Hashbrown</id>
   <name>Hashbrown</name>
   <project_license>BSD-2-Clause</project_license>
-  <developer_name>GeopJr</developer_name>
+  <developer_name>Evangelos "GeopJr" Paterakis</developer_name>
   <summary>Check hashes for your files</summary>
   <summary xml:lang="hr">Provjeri hasheve za svoje datoteke</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://hashbrown.geopjr.dev/</url>
   <url type="bugtracker">https://github.com/GeopJr/Hashbrown/issues</url>
+  <url type="translate">https://github.com/GeopJr/Hashbrown#translations</url>
+  <url type="donation">https://geopjr.dev/donate</url>
   <description>
     <p>
       Verifying that a file you downloaded or received is actually the one you were
