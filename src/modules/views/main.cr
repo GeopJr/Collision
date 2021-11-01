@@ -1,11 +1,17 @@
 module Hashbrown
+  @@main_window_id = 0_u32
+
   def activate(app : Adw::Application)
+    main_window = APP.window_by_id(@@main_window_id)
+    return main_window.present if main_window
+
     window = Adw::ApplicationWindow.new(app)
     window.name = "mainWindow"
     window.title = "Hashbrown"
     window.set_default_size(800, 432)
     window.width_request = 360
     window.height_request = 294
+    @@main_window_id = window.id
 
     header = Hashbrown.generate_headbar
     root = Gtk::Widget.cast(B_UI["welcomer"])
