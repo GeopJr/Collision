@@ -59,7 +59,7 @@
 
 Hashbrown is using in-house translation. There's multiple ways to translate it into a new language:
 
-- By using POEditor.
+- By using [POEditor](https://poeditor.com/join/project?hash=c2jen1tbbA).
 
 - By copying `./translations/hashbrown.yaml` to `./translations/{lang}.yaml` and fill in the info.
 
