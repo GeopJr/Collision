@@ -16,6 +16,6 @@ dependencies:
     github: elorest/compiled_license
     version: ~> 1.0.0
 
-crystal: 1.2.0
+crystal: 1.2.1
 
-license: AGPL-3.0-or-later
+license: BSD-2-Clause

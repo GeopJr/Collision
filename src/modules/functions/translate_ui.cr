@@ -7,7 +7,7 @@
 # # Why not <insert template engine>?
 # ## Don't want an extra dependency
 
-# # Why no compile them during compile time and then bundle them using rucksack?
+# # Why not compile them during compile time and then bundle them using rucksack?
 # ## I don't know. At the moment, doing the following during runtime seems fast
 # ## enough and there are not enough strings to have an impact in memory, speed
 # ## or size
