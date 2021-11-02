@@ -23,8 +23,10 @@
 
 ## Installing
 
-- [Flathub](https://flathub.org/apps/details/dev.geopjr.Hashbrown) [RECOMMENDED]
-- [AUR](https://aur.archlinux.org/packages/hashbrown/) <sup>[git](https://aur.archlinux.org/packages/hashbrown-git/)</sup>
+| Platform |                                                                 Links                                                                  |
+| :------: | :------------------------------------------------------------------------------------------------------------------------------------: |
+| Flathub  |                            [`dev.geopjr.Hashbrown`](https://flathub.org/apps/details/dev.geopjr.Hashbrown)                             |
+|   AUR    | [`hashbrown`](https://aur.archlinux.org/packages/hashbrown/)<br />[`hashbrown-git`](https://aur.archlinux.org/packages/hashbrown-git/) |
 
 > Feel free to package Hashbrown for your favourite distro!
 
