@@ -25,4 +25,6 @@ translations.each do |translation|
   end
 end
 
+thanks.sort! { |a, b| a.split(" ")[-1] <=> b.split(" ")[-1] }
+
 puts thanks.join("\n")
