@@ -36,19 +36,20 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://i.imgur.com/96jhW14.png</image>
+      <image type="source">https://i.imgur.com/c5uHsRo.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/TxeJJuI.png</image>
+      <image type="source">https://i.imgur.com/V0q6U2u.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/2SRnLC4.png</image>
+      <image type="source">https://i.imgur.com/GTn4kBK.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/C6vvJrb.png</image>
+      <image type="source">https://i.imgur.com/BKP7x1B.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.0.0" date="2021-11-03" />
     <release version="1.3.4" date="2021-08-30" />
     <release version="1.3.3" date="2021-08-27" />
     <release version="1.3.2" date="2021-07-02" />

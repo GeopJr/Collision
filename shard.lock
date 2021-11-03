@@ -6,5 +6,5 @@ shards:
 
   libadwaita:
     git: https://github.com/geopjr/libadwaita.cr.git
-    version: 1.0.0+git.commit.672c5d7a31eb3e59439b9d2c98673d5f7b8d1314
+    version: 1.0.0+git.commit.75bb4affac8350698eaba9fe39d6936e3cff8d7e
 

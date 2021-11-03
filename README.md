@@ -15,8 +15,8 @@
 ## Screenshots
 
 <p align="center">
-    <img alt="screenshot" width="768" src="https://i.imgur.com/96jhW14.png"><br />
-    <img alt="screenshot" width="768" src="https://i.imgur.com/TxeJJuI.png">
+    <img alt="screenshot" width="768" src="https://i.imgur.com/c5uHsRo.png"><br />
+    <img alt="screenshot" width="768" src="https://i.imgur.com/V0q6U2u.png">
 </p>
 
 #
