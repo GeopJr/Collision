@@ -1,5 +1,5 @@
 name: hashbrown
-version: 1.3.2
+version: 2.0.0
 
 authors:
   - GeopJr <evan@geopjr.dev>
@@ -9,13 +9,13 @@ targets:
     main: src/hashbrown.cr
 
 dependencies:
-  gobject:
-    github: jhass/crystal-gobject
-    branch: main
+  libadwaita:
+    github: GeopJr/libadwaita.cr
+    commit: 75bb4affac8350698eaba9fe39d6936e3cff8d7e
   compiled_license:
     github: elorest/compiled_license
-    branch: master
+    version: ~> 1.0.0
 
-crystal: 1.0.0
+crystal: 1.2.1
 
-license: AGPL-3.0-or-later
+license: BSD-2-Clause

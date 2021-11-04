@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="AdwClamp" id="tools">
+    <property name="tightening-threshold">100</property>
+    <child>
+      <object class="GtkListBox">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <child>
+          <object class="AdwActionRow" id="tool1Row">
+            <property name="selectable">0</property>
+            <property name="icon-name">dialog-password-symbolic</property>
+            <property name="title" translatable="yes">HASHBROWN_(Verify)</property>
+            <property name="subtitle" translatable="yes">HASHBROWN_(that a hash belongs to the file)</property>
+            <property name="focusable">0</property>
+            <child>
+              <object class="GtkEntry" id="hashInput">
+                <property name="valign">center</property>
+                <property name="tooltip-text" translatable="yes">HASHBROWN_(Insert a MD5/SHA-1/SHA-256/SHA-512 Hash)</property>
+                <property name="max-width-chars">30</property>
+                <property name="placeholder-text" translatable="yes">HASHBROWN_(MD5/SHA-1/SHA-256/SHA-512 Hash)</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="validateBtn">
+                <property name="tooltip-text" translatable="yes">HASHBROWN_(Verify)</property>
+                <property name="icon-name">auth-fingerprint-symbolic</property>
+                <property name="valign">center</property>
+                <style>
+                  <class name="circular"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="tool2Row">
+            <property name="selectable">0</property>
+            <property name="icon-name">dialog-password-symbolic</property>
+            <property name="title" translatable="yes">HASHBROWN_(Compare)</property>
+            <property name="subtitle" translatable="yes">HASHBROWN_(with another file)</property>
+            <property name="focusable">0</property>
+            <child>
+              <object class="GtkButton" id="compareBtn">
+                <property name="valign">center</property>
+                <property name="tooltip-text" translatable="yes">HASHBROWN_(Select Another File to Check Against)</property>
+                <property name="label" translatable="yes">_HASHBROWN_(Select a File)</property>
+                <property name="use-underline">1</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <style>
+          <class name="content"/>
+        </style>
+      </object>
+    </child>
+  </object>
+  <object class="GtkFileChooserNative" id="compareFileChooserNative">
+    <property name="title" translatable="yes">HASHBROWN_(Choose a File)</property>
+    <property name="modal">1</property>
+  </object>
+</interface>

@@ -2,12 +2,15 @@
 <component type="desktop">
   <id>dev.geopjr.Hashbrown</id>
   <name>Hashbrown</name>
-  <project_license>AGPL-3.0-or-later</project_license>
-  <developer_name>GeopJr</developer_name>
-  <summary>Generate, compare and verify MD5, SHA256 &amp; SHA1 hashes</summary>
+  <project_license>BSD-2-Clause</project_license>
+  <developer_name>Evangelos "GeopJr" Paterakis</developer_name>
+  <summary>Check hashes for your files</summary>
+  <summary xml:lang="hr">Provjeri hasheve za svoje datoteke</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://hashbrown.geopjr.dev/</url>
   <url type="bugtracker">https://github.com/GeopJr/Hashbrown/issues</url>
+  <url type="translate">https://github.com/GeopJr/Hashbrown#translations</url>
+  <url type="donation">https://geopjr.dev/donate</url>
   <description>
     <p>
       Verifying that a file you downloaded or received is actually the one you were
@@ -18,24 +21,37 @@
     <p>
       This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, allowing
       anyone, from any age and experience group, to generate, compare and verify MD5,
-      SHA256 and SHA256 hashes.
+      SHA-256, SHA-512 and SHA-1 hashes.
     </p>
+    <p xml:lang="hr">
+      Provjeravanje autentičnosti preuzete ili primljene datoteke često se zanemaruje ili
+      oduzima previše vremena. Istovremeno je postalo sve jednostavnije manipulirati
+      datoteke zbog masovnog povećanja zlonamjernih web-stranica i drugih aktera.
+     </p>
+    <p xml:lang="hr">
+       Cilj ovog alata je riješiti taj problem. Hashbrown sadrźi jednostavno i čisto
+       korisničko sučelje koje omogućuje svima, bez obzira na dob i iskustvo, generirati,
+       usporediti i provjeriti MD5, SHA-256, SHA-512 i SHA-1 hasheve.
+     </p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://i.imgur.com/sD43psD.png</image>
+      <image type="source">https://i.imgur.com/c5uHsRo.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/snPTqGy.png</image>
+      <image type="source">https://i.imgur.com/V0q6U2u.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/i1MBz3F.png</image>
+      <image type="source">https://i.imgur.com/GTn4kBK.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/w9s1i6a.png</image>
+      <image type="source">https://i.imgur.com/BKP7x1B.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.0.0" date="2021-11-03" />
+    <release version="1.3.4" date="2021-08-30" />
+    <release version="1.3.3" date="2021-08-27" />
     <release version="1.3.2" date="2021-07-02" />
     <release version="1.2.0" date="2021-04-08" />
     <release version="1.1.0" date="2021-03-04" />

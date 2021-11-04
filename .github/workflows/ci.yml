@@ -3,16 +3,15 @@ name: Specs & Lint
 on: [push, pull_request]
 jobs:
   ci:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: MeilCli/setup-crystal-action@v4.4.5
+      - uses: crystal-lang/install-crystal@v1
         with:
-          crystal_version: 1.1.1
-          shards_version: 0.15.0
+          crystal: 1.2.1
       - name: Shards install
         run: shards install
       - name: Spec
-        run: crystal spec
+        run: crystal spec || exit 1
       - name: Check formatting
         run: crystal tool format --check
