@@ -11,19 +11,19 @@
 # Description in status page
 # Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 # or "Check the hashes of your files"
-Check hashes for your files:
+Check hashes for your files: Provjeri hasheve tvojih datoteka
 # Title for the status page button.
-Open a File:
+Open a File: Otvori datoteku
 # Filechooser dialog title
-Choose a File: Odaberi Datoteku
+Choose a File: Odaberi datoteku
 # Tooltip for the copy buttons in hash list.
 Copy: Kopiraj
 # Button at the left of headbar that prompts to "open a file".
-Open:
+Open: Otvori
 # Tooltip for the menu button at the right of the headbar.
 Menu: Izbornik
 # Menu item that opens a browser window to a hash function comparison table.
-Compare Hash Functions:
+Compare Hash Functions: Usporedi hash funkcije
 # Menu item that opens the about dialog.
 # Don't translate "Hashbrown".
 About Hashbrown: Hashbrown informacije
@@ -32,7 +32,7 @@ Verify: Provjeri
 # Subtitle for row.
 # It extends the title,
 # so the full sentence is "Verify that a hash belongs to the file".
-that a hash belongs to the file:
+that a hash belongs to the file: da datoteci pripada jedan hash
 # Tooltip for text field in tools.
 # Don't translate the hash names if possible.
 Insert a MD5/SHA-1/SHA-256/SHA-512 Hash: Umetni MD5/SHA-1/SHA-256/SHA-512 hash
@@ -43,16 +43,16 @@ Compare: Usporedi
 # Subtitle for row.
 # It extends the title,
 # so the full sentence is "Compare with another file".
-with another file:
+with another file: s jednom drugom datotekom
 # Button that prompts to "open a file".
 # The same translation for "Open a file" can also be used here.
-Select a File: Odaberi Datoteku
+Select a File: Odaberi datoteku
 # Tooltip for the "Select a file" button.
-Select Another File to Check Against:
+Select Another File to Check Against: Odaberi jednu drugu datoteku za usporedbu
 # Stack title for the "Hashes" category.
-Hashes:
+Hashes: Hashevi
 # Stack title for the "Tools" category.
-Tools:
+Tools: Alati
 # Wikipedia article. If available, set it to the LANGUAGE's version.
 # Else leave it as is.
 https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions:
