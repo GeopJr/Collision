@@ -7,7 +7,7 @@ module Hashbrown
 
   def reset_feedback
     TOOL_COMPARE_ROW.icon_name = DEFAULT_FEEDBACK_ICON
-    TOOL_VALIDATE_ROW.icon_name = DEFAULT_FEEDBACK_ICON
+    TOOL_VERIFY_ROW.icon_name = DEFAULT_FEEDBACK_ICON
   end
 
   def icon(success : Bool? = false)

@@ -23,7 +23,7 @@
               </object>
             </child>
             <child>
-              <object class="GtkButton" id="validateBtn">
+              <object class="GtkButton" id="verifyBtn">
                 <property name="tooltip-text" translatable="yes">HASHBROWN_(Verify)</property>
                 <property name="icon-name">auth-fingerprint-symbolic</property>
                 <property name="valign">center</property>
