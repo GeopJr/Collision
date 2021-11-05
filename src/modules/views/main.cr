@@ -49,9 +49,8 @@ module Hashbrown
     end
 
     Hashbrown::Welcomer.init
-    # Hashbrown::Verify.init
     Hashbrown::Compare.init
-    Hashbrown::Validate.init
+    Hashbrown::Verify.init
 
     window.content = WINDOW_BOX
     window.present

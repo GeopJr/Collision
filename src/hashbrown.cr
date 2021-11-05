@@ -36,9 +36,9 @@ module Hashbrown
   BOTTOM_TABS                  = Adw::ViewSwitcherBar.cast(B_HT["switcher_bar"])
   STACK                        = Adw::ViewStack.cast(B_HT["stack"])
 
-  TOOL_VALIDATE_ROW    = Adw::ActionRow.cast(B_TL["tool1Row"])
-  TOOL_VALIDATE_BUTTON = Gtk::Button.cast(B_TL["validateBtn"])
-  TOOL_VALIDATE_INPUT  = Gtk::Entry.cast(B_TL["hashInput"])
+  TOOL_VERIFY_ROW    = Adw::ActionRow.cast(B_TL["tool1Row"])
+  TOOL_VERIFY_BUTTON = Gtk::Button.cast(B_TL["verifyBtn"])
+  TOOL_VERIFY_INPUT  = Gtk::Entry.cast(B_TL["hashInput"])
 
   TOOL_COMPARE_ROW                 = Adw::ActionRow.cast(B_TL["tool2Row"])
   TOOL_COMPARE_BUTTON              = Gtk::Button.cast(B_TL["compareBtn"])
