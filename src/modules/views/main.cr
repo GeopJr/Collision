@@ -13,10 +13,10 @@ module Hashbrown
     window.height_request = 294
     @@main_window_id = window.id
 
-    header = Hashbrown.generate_headbar
+    Hashbrown.generate_headbar
     root = Gtk::Widget.cast(B_UI["welcomer"])
 
-    WINDOW_BOX.append(header)
+    WINDOW_BOX.append(HEADERBAR)
     WINDOW_BOX.append(root)
 
     Hashbrown.about_action(app)
