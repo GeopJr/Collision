@@ -7,9 +7,10 @@ end
 module Hashbrown
   extend self
 
-  VERSION      = {{read_file("./shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
-  THANKS       = {{run("../../extra/scripts/thank_translators").stringify}}
-  TRANSLATIONS = Hash(String, Hash(String, String)).new
+  HASH_FUNCTIONS = ["MD5", "SHA1", "SHA256", "SHA512"]
+  VERSION        = {{read_file("./shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
+  THANKS         = {{run("../../extra/scripts/thank_translators").stringify}}
+  TRANSLATIONS   = Hash(String, Hash(String, String)).new
 
   # For each file in the translations folder, create a language => {key => translation} hash entry
   {% for filename in `find ./translations -type f`.split('\n').reject { |x| x.nil? || x.size == 0 } %}

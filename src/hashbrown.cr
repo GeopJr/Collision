@@ -6,6 +6,14 @@ require "./modules/functions/*"
 require "./modules/views/*"
 require "./modules/views/tools/*"
 
+macro gen_hash(buttons)
+  {
+  {% for hash, index in Hashbrown::HASH_FUNCTIONS %}
+    {{hash}} => {% if buttons %} Gtk::Button.cast(B_HS["copyBtn{{index + 1}}"]) {% else %} Gtk::Entry.cast(B_HS["textField{{index + 1}}"]) {% end %},
+  {% end %}
+  }
+end
+
 module Hashbrown
   extend self
 
@@ -36,21 +44,11 @@ module Hashbrown
   TOOL_COMPARE_BUTTON              = Gtk::Button.cast(B_TL["compareBtn"])
   TOOL_COMPARE_FILE_CHOOSER_NATIVE = Gtk::FileChooserNative.cast(B_TL["compareFileChooserNative"])
 
-  COPY_BUTTONS = [
-    Gtk::Button.cast(B_HS["copyBtn1"]),
-    Gtk::Button.cast(B_HS["copyBtn2"]),
-    Gtk::Button.cast(B_HS["copyBtn3"]),
-    Gtk::Button.cast(B_HS["copyBtn4"]),
-  ]
+  COPY_BUTTONS = gen_hash(true)
 
   CLIPBOARD_HASH = Hash(Gtk::Button, String).new
 
-  TEXT_FIELDS = {
-    "md5sum"    => Gtk::Entry.cast(B_HS["textField1"]),
-    "sha1sum"   => Gtk::Entry.cast(B_HS["textField2"]),
-    "sha256sum" => Gtk::Entry.cast(B_HS["textField3"]),
-    "sha512sum" => Gtk::Entry.cast(B_HS["textField4"]),
-  }
+  TEXT_FIELDS = gen_hash(false)
 
   APP = Adw::Application.new("dev.geopjr.Hashbrown", Gio::ApplicationFlags::None)
 end
