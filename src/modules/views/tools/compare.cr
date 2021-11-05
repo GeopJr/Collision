@@ -9,8 +9,13 @@ module Hashbrown
 
       TOOL_COMPARE_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
         next unless response == -3
-        compareFileMD5 = Hashbrown.run_cmd("md5sum", [TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.path.to_s]).split(" ")[0]
-        result = CLIPBOARD_HASH[COPY_BUTTONS[0]] == compareFileMD5
+
+        channel = Channel(Hash(String, String)).new
+        spawn(Hashbrown.calculate_hash("sha256", TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.path.to_s, channel))
+
+        compareFileSHA256 = channel.receive["SHA256"]
+        result = CLIPBOARD_HASH["SHA256"] == compareFileSHA256
+
         TOOL_COMPARE_ROW.icon_name = Hashbrown.icon(result)
       end
     end

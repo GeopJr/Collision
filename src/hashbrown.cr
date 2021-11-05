@@ -9,7 +9,7 @@ require "./modules/views/tools/*"
 macro gen_hash(buttons)
   {
   {% for hash, index in Hashbrown::HASH_FUNCTIONS %}
-    {{hash}} => {% if buttons %} Gtk::Button.cast(B_HS["copyBtn{{index + 1}}"]) {% else %} Gtk::Entry.cast(B_HS["textField{{index + 1}}"]) {% end %},
+    {{hash.upcase}} => {% if buttons %} Gtk::Button.cast(B_HS["copyBtn{{index + 1}}"]) {% else %} Gtk::Entry.cast(B_HS["textField{{index + 1}}"]) {% end %},
   {% end %}
   }
 end
@@ -46,7 +46,7 @@ module Hashbrown
 
   COPY_BUTTONS = gen_hash(true)
 
-  CLIPBOARD_HASH = Hash(Gtk::Button, String).new
+  CLIPBOARD_HASH = Hash(String, String).new
 
   TEXT_FIELDS = gen_hash(false)
 

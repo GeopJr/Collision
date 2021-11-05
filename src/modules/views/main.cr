@@ -29,7 +29,7 @@ module Hashbrown
       next unless response == -3
       # Hashbrown.reset(true)
       Hashbrown.reset_feedback
-      CLIPBOARD_HASH.merge!(generate_hashes(MAIN_FILE_CHOOSER_NATIVE.file.path.not_nil!.to_s, TEXT_FIELDS, COPY_BUTTONS))
+      generate_hashes(MAIN_FILE_CHOOSER_NATIVE.file.path.not_nil!.to_s)
     end
 
     OPEN_FILE_BUTTON.clicked_signal.connect do
@@ -41,9 +41,9 @@ module Hashbrown
 
     clipboard = window.clipboard
 
-    COPY_BUTTONS.each do |btn|
+    COPY_BUTTONS.each do |hash_type, btn|
       btn.clicked_signal.connect do
-        hash = CLIPBOARD_HASH[btn]
+        hash = CLIPBOARD_HASH[hash_type]
         clipboard.set(hash)
       end
     end
