@@ -17,6 +17,7 @@ module Hashbrown
   B_HT = Gtk::Builder.new_from_string(HT, HT.bytesize.to_i64)
 
   WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
+  HEADERBAR  = Adw::HeaderBar.new
 
   WELCOME_BUTTON               = Gtk::Button.cast(B_UI["welcomeBtn"])
   OPEN_FILE_BUTTON             = Gtk::Button.cast(B_HL["openFileBtn"])

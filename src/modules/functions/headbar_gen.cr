@@ -1,15 +1,11 @@
 module Hashbrown
   extend self
 
-  def generate_headbar(left : Bool? = false, original_header : Adw::HeaderBar? = nil) : Adw::HeaderBar
-    header = Adw::HeaderBar.new
-
+  def generate_headbar
     OPEN_FILE_BUTTON.visible = false
 
-    header.pack_start(OPEN_FILE_BUTTON)
-    header.pack_end(MENU_BUTTON)
-    header.title_widget = HEADER_TITLE
-
-    header
+    HEADERBAR.pack_start(OPEN_FILE_BUTTON)
+    HEADERBAR.pack_end(MENU_BUTTON)
+    HEADERBAR.title_widget = HEADER_TITLE
   end
 end
