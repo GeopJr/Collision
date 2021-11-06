@@ -11,11 +11,11 @@
 # Description in status page
 # Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 # or "Check the hashes of your files"
-Check hashes for your files:
+Check hashes for your files: Comprobar los hashes de sus archivos
 # Title for the status page button.
-Open a File: Abrir un Archivo
+Open a File: Abrir un archivo
 # Filechooser dialog title
-Choose a File: Elegir un Archivo
+Choose a File: Elegir un archivo
 # Tooltip for the copy buttons in hash list.
 Copy: Copiar
 # Button at the left of headbar that prompts to "open a file".
@@ -23,7 +23,7 @@ Open: Abrir
 # Tooltip for the menu button at the right of the headbar.
 Menu: Menú
 # Menu item that opens a browser window to a hash function comparison table.
-Compare Hash Functions:
+Compare Hash Functions: Comparar funciones hash
 # Menu item that opens the about dialog.
 # Don't translate "Hashbrown".
 About Hashbrown: Acerca de Hashbrown
@@ -32,7 +32,7 @@ Verify: Verificar
 # Subtitle for row.
 # It extends the title,
 # so the full sentence is "Verify that a hash belongs to the file".
-that a hash belongs to the file:
+that a hash belongs to the file: que un hash pertenece al archivo
 # Tooltip for text field in tools.
 # Don't translate the hash names if possible.
 Insert a MD5/SHA-1/SHA-256/SHA-512 Hash: Insertar un hash MD5/SHA-1/SHA-256/SHA-512
@@ -43,16 +43,16 @@ Compare: Comparar
 # Subtitle for row.
 # It extends the title,
 # so the full sentence is "Compare with another file".
-with another file:
+with another file: con otro archivo
 # Button that prompts to "open a file".
 # The same translation for "Open a file" can also be used here.
-Select a File: Seleccionar un Archivo
+Select a File: Seleccionar un archivo
 # Tooltip for the "Select a file" button.
-Select Another File to Check Against:
+Select Another File to Check Against: Seleccionar otro archivo para comparar
 # Stack title for the "Hashes" category.
-Hashes:
+Hashes: Hashes
 # Stack title for the "Tools" category.
-Tools:
+Tools: Herramientas
 # Wikipedia article. If available, set it to the LANGUAGE's version.
 # Else leave it as is.
-https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions:
+https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions: https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions
