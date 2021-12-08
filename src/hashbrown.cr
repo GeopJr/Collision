@@ -50,6 +50,7 @@ module Hashbrown
 
   ACTION_ROWS = gen_hash(false)
 
+  CSS = Gtk::CssProvider.new
 
   APP = Adw::Application.new("dev.geopjr.Hashbrown", Gio::ApplicationFlags::None)
 end

@@ -52,6 +52,9 @@ module Hashbrown
     Hashbrown::Compare.init
     Hashbrown::Verify.init
 
+    CSS.load_from_data({{read_file("./src/modules/ui/style.css")}}.bytes)
+    Gtk::StyleContext.add_provider_for_display(window.display, CSS, 600_u32)
+
     window.content = WINDOW_BOX
     window.present
   end
