@@ -10,7 +10,7 @@ module Hashbrown
     window.title = "Hashbrown"
     window.set_default_size(600, 460)
     window.width_request = 360
-    window.height_request = 294
+    window.height_request = 438
     @@main_window_id = window.id
 
     Hashbrown.generate_headbar

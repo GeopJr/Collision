@@ -8,22 +8,10 @@
         <property name="halign">center</property>
         <property name="valign">center</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwActionRow" id="hashRow1">
             <property name="title">MD5</property>
             <property name="selectable">0</property>
             <property name="focusable">0</property>
-            <child>
-              <object class="AdwClamp">
-                <property name="tightening-threshold">500</property>
-                <child>
-                  <object class="GtkEntry" id="textField1">
-                    <property name="valign">center</property>
-                    <property name="editable">0</property>
-                    <property name="max-width-chars">30</property>
-                  </object>
-                </child>
-              </object>
-            </child>
             <child>
               <object class="GtkButton" id="copyBtn1">
                 <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
@@ -34,20 +22,16 @@
                 </style>
               </object>
             </child>
+            <style>
+              <class name="hash-row"/>
+            </style>
           </object>
         </child>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwActionRow" id="hashRow2">
             <property name="title">SHA-1</property>
             <property name="selectable">0</property>
             <property name="focusable">0</property>
-            <child>
-              <object class="GtkEntry" id="textField2">
-                <property name="valign">center</property>
-                <property name="editable">0</property>
-                <property name="max-width-chars">30</property>
-              </object>
-            </child>
             <child>
               <object class="GtkButton" id="copyBtn2">
                 <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
@@ -58,20 +42,16 @@
                 </style>
               </object>
             </child>
+            <style>
+              <class name="hash-row"/>
+            </style>
           </object>
         </child>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwActionRow" id="hashRow3">
             <property name="title">SHA-256</property>
             <property name="selectable">0</property>
             <property name="focusable">0</property>
-            <child>
-              <object class="GtkEntry" id="textField3">
-                <property name="valign">center</property>
-                <property name="editable">0</property>
-                <property name="max-width-chars">30</property>
-              </object>
-            </child>
             <child>
               <object class="GtkButton" id="copyBtn3">
                 <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
@@ -82,20 +62,16 @@
                 </style>
               </object>
             </child>
+            <style>
+              <class name="hash-row"/>
+            </style>
           </object>
         </child>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwActionRow" id="hashRow4">
             <property name="title">SHA-512</property>
             <property name="selectable">0</property>
             <property name="focusable">0</property>
-            <child>
-              <object class="GtkEntry" id="textField4">
-                <property name="valign">center</property>
-                <property name="editable">0</property>
-                <property name="max-width-chars">30</property>
-              </object>
-            </child>
             <child>
               <object class="GtkButton" id="copyBtn4">
                 <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
@@ -106,6 +82,9 @@
                 </style>
               </object>
             </child>
+            <style>
+              <class name="hash-row"/>
+            </style>
           </object>
         </child>
         <style>

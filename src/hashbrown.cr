@@ -9,7 +9,7 @@ require "./modules/views/tools/*"
 macro gen_hash(buttons)
   {
   {% for hash, index in Hashbrown::HASH_FUNCTIONS %}
-    {{hash.upcase}} => {% if buttons %} Gtk::Button.cast(B_HS["copyBtn{{index + 1}}"]) {% else %} Gtk::Entry.cast(B_HS["textField{{index + 1}}"]) {% end %},
+    {{hash.upcase}} => {% if buttons %} Gtk::Button.cast(B_HS["copyBtn{{index + 1}}"]) {% else %} Adw::ActionRow.cast(B_HS["hashRow{{index + 1}}"]) {% end %},
   {% end %}
   }
 end
@@ -48,7 +48,8 @@ module Hashbrown
 
   CLIPBOARD_HASH = Hash(String, String).new
 
-  TEXT_FIELDS = gen_hash(false)
+  ACTION_ROWS = gen_hash(false)
+
 
   APP = Adw::Application.new("dev.geopjr.Hashbrown", Gio::ApplicationFlags::None)
 end
