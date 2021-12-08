@@ -8,7 +8,7 @@ module Hashbrown
     window = Adw::ApplicationWindow.new(app)
     window.name = "mainWindow"
     window.title = "Hashbrown"
-    window.set_default_size(800, 432)
+    window.set_default_size(600, 460)
     window.width_request = 360
     window.height_request = 294
     @@main_window_id = window.id
