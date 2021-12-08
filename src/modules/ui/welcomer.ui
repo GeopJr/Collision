@@ -4,26 +4,23 @@
   <object class="AdwStatusPage" id="welcomer">
     <property name="vexpand">true</property>
     <property name="hexpand">true</property>
-    <property name="icon-name">dev.geopjr.Hashbrown-symbolic</property>
+    <property name="icon-name">dev.geopjr.Hashbrown</property>
     <property name="title">Hashbrown</property>
     <property name="description" translatable="yes">HASHBROWN_(Check hashes for your files)</property>
     <child>
       <object class="GtkButton" id="welcomeBtn">
         <property name="halign">center</property>
-        <property name="child">
-          <object class="AdwButtonContent">
-            <property name="icon-name">document-open-symbolic</property>
-            <property name="label" translatable="yes">_HASHBROWN_(Open a File)</property>
-            <property name="tooltip-text" translatable="yes">HASHBROWN_(Open)...</property>
-            <property name="use-underline">True</property>
-          </object>
-        </property>
+        <property name="label" translatable="yes">_HASHBROWN_(Open a File)</property>
+	<property name="use-underline">True</property>
         <style>
           <class name="suggested-action"/>
           <class name="pill"/>
         </style>
       </object>
     </child>
+    <style>
+      <class name="icon-dropshadow"/>
+    </style>
   </object>
   <object class="GtkFileChooserNative" id="welcomerFileChooserNative">
     <property name="title" translatable="yes">HASHBROWN_(Choose a File)</property>
