@@ -32,16 +32,15 @@ module Hashbrown
     tempBtns = Hash(Gtk::Button, String).new
     channel = Channel(Hash(String, String)).new
 
-    TEXT_FIELDS.keys.each do |k|
+    ACTION_ROWS.keys.each do |k|
       spawn(calculate_hash("#{k}", filename, channel))
     end
 
-    (0..TEXT_FIELDS.size - 1).each do |x|
+    ACTION_ROWS.keys.each do |_|
       output = channel.receive
       hash_type = output.keys.first
       hash_value = output[hash_type]
-
-      TEXT_FIELDS[hash_type].buffer.set_text(hash_value, hash_value.size)
+      ACTION_ROWS[hash_type].subtitle = hash_value.gsub(/.{1,4}/) { |x| x + " " }[0..-2]
       CLIPBOARD_HASH[hash_type] = hash_value
     end
   end
