@@ -53,7 +53,7 @@ module Hashbrown
     Hashbrown::Verify.init
 
     CSS.load_from_data({{read_file("./src/modules/ui/style.css")}}.bytes)
-    Gtk::StyleContext.add_provider_for_display(window.display, CSS, 600_u32)
+    Gtk::StyleContext.add_provider_for_display(window.display, CSS, Gtk::STYLE_PROVIDER_PRIORITY_APPLICATION.to_u32)
 
     window.content = WINDOW_BOX
     window.present
