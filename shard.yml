@@ -11,11 +11,11 @@ targets:
 dependencies:
   libadwaita:
     github: GeopJr/libadwaita.cr
-    commit: 75bb4affac8350698eaba9fe39d6936e3cff8d7e
+    commit: 2c831e35f8e4fbd3333e9390f6e03abac58317b7
   compiled_license:
     github: elorest/compiled_license
-    version: ~> 1.0.0
+    version: ~> 1.2.1
 
-crystal: 1.2.1
+crystal: 1.2.2
 
 license: BSD-2-Clause

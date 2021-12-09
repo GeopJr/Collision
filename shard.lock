@@ -2,9 +2,9 @@ version: 2.0
 shards:
   compiled_license:
     git: https://github.com/elorest/compiled_license.git
-    version: 1.0.0
+    version: 1.2.1
 
   libadwaita:
     git: https://github.com/geopjr/libadwaita.cr.git
-    version: 1.0.0+git.commit.75bb4affac8350698eaba9fe39d6936e3cff8d7e
+    version: 1.0.0+git.commit.2c831e35f8e4fbd3333e9390f6e03abac58317b7
 
