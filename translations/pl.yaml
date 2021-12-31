@@ -1,0 +1,58 @@
+## Polish translations for Hashbrown.
+## Copyright (C) 2021 Hashbrown'S COPYRIGHT HOLDER
+## This file is distributed under the same license as the Hashbrown package.
+## Nikki <nikkehtine@int.pl>, 2021.
+
+## Last-Translator: Nikki <nikkehtine@int.pl>
+## Language: pl
+
+## Ignore the above if shown in your translation GUI.
+
+# Description in status page
+# Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
+# or "Check the hashes of your files"
+Check hashes for your files: Sprawdź sumy kontrolne swoich plików
+# Title for the status page button.
+Open a File: Otwórz plik
+# Filechooser dialog title
+Choose a File: Wybierz plik
+# Tooltip for the copy buttons in hash list.
+Copy: Kopiuj
+# Button at the left of headbar that prompts to "open a file".
+Open: Otwórz
+# Tooltip for the menu button at the right of the headbar.
+Menu: Menu
+# Menu item that opens a browser window to a hash function comparison table.
+Compare Hash Functions: Porównanie algorytmów haszujących
+# Menu item that opens the about dialog.
+# Don't translate "Hashbrown".
+About Hashbrown: O programie Hashbrown
+# Tooltip for button & title for row.
+Verify: Zweryfikuj
+# Subtitle for row.
+# It extends the title,
+# so the full sentence is "Verify that a hash belongs to the file".
+that a hash belongs to the file: czy suma kontrolna należy do pliku
+# Tooltip for text field in tools.
+# Don't translate the hash names if possible.
+Insert a MD5/SHA-1/SHA-256/SHA-512 Hash: Wklej sumę kontrolną MD5/SHA-1/SHA-256/SHA-512
+# Placeholder for text field in tools.
+MD5/SHA-1/SHA-256/SHA-512 Hash: Suma kontrolna MD5/SHA-1/SHA-256/SHA-512
+# Title for row.
+Compare: Porównaj
+# Subtitle for row.
+# It extends the title,
+# so the full sentence is "Compare with another file".
+with another file: z innym plikiem
+# Button that prompts to "open a file".
+# The same translation for "Open a file" can also be used here.
+Select a File: Wybierz plik
+# Tooltip for the "Select a file" button.
+Select Another File to Check Against: Wybierz drugi plik do porównania
+# Stack title for the "Hashes" category.
+Hashes: Sumy kontrolne
+# Stack title for the "Tools" category.
+Tools: Narzędzia
+# Wikipedia article. If available, set it to the LANGUAGE's version.
+# Else leave it as is.
+https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions:
