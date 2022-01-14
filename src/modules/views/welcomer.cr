@@ -11,7 +11,8 @@ module Hashbrown
         next unless response == -3
         WINDOW_BOX.remove(Gtk::Widget.cast(B_UI["welcomer"]))
         Hashbrown.reset
-        Hashbrown.generate_hashes(WELCOMER_FILE_CHOOSER_NATIVE.file.path.not_nil!.to_s)
+
+        Hashbrown.set_file(WELCOMER_FILE_CHOOSER_NATIVE.file.path.not_nil!)
       end
     end
   end

@@ -46,6 +46,8 @@ module Hashbrown
 
   COPY_BUTTONS = gen_hash(true)
 
+  HASH_LIST = Adw::StatusPage.cast(B_HS["hashList"])
+
   CLIPBOARD_HASH = Hash(String, String).new
 
   ACTION_ROWS = gen_hash(false)
