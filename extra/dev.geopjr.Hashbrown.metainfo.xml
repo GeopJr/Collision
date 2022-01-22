@@ -5,8 +5,9 @@
   <project_license>BSD-2-Clause</project_license>
   <developer_name>Evangelos "GeopJr" Paterakis</developer_name>
   <summary>Check hashes for your files</summary>
-  <summary xml:lang="hr">Provjeri hasheve za svoje datoteke</summary>
   <summary xml:lang="de">Prüfen Sie die Hashes Ihrer Dateien</summary>
+  <summary xml:lang="es">Compruebe los hashes de sus archivos</summary>
+  <summary xml:lang="hr">Provjeri hasheve za svoje datoteke</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://hashbrown.geopjr.dev/</url>
   <url type="bugtracker">https://github.com/GeopJr/Hashbrown/issues</url>
@@ -36,6 +37,17 @@
       Alter und Erfahrung), MD5, SHA-256, SHA-512 und SHA-1 Hashes zu generieren, zu
       vergleichen und zu verifizieren.
      </p>
+    <p xml:lang="es">
+      Verificar que un archivo que se ha descargado o recibido es realmente el que se
+      esperaba es algo que a menudo se pasa por alto o que lleva demasiado tiempo. Al
+      mismo tiempo, se ha vuelto muy fácil hacerse con un archivo que ha sido manipulado,
+      debido al aumento masivo de páginas web maliciosas y otros actores.
+    </p>
+    <p xml:lang="es">
+      Esta herramienta pretende resolverlo. Hashbrown viene con una interfaz de usuario
+      sencilla y limpia, que permite a cualquier persona, de cualquier edad y grupo de
+      experiencia, generar, comparar y verificar hashes MD5, SHA-256, SHA-512 y SHA-1.
+    </p>
     <p xml:lang="hr">
       Provjeravanje autentičnosti preuzete ili primljene datoteke često se zanemaruje ili
       oduzima previše vremena. Istovremeno je postalo sve jednostavnije manipulirati
