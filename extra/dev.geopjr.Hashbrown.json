@@ -80,7 +80,7 @@
       "buildsystem": "simple",
       "build-commands": [
       	"for i in ./lib/*/; do ln -snf \"..\" \"$i/lib\"; done",
-        "./crystal/bin/crystal build ./src/hashbrown.cr # --no-debug --release"
+        "./crystal/bin/crystal build -Dpreview_mt ./src/hashbrown.cr # --no-debug --release"
       ],
       "post-install": [
         "install -D -m 0755 hashbrown /app/bin/hashbrown",

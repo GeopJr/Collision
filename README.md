@@ -46,7 +46,7 @@
 
 1. Install crystal
 2. `$ shards install`
-3. `$ crystal build src/hashbrown.cr --release`
+3. `$ crystal build -Dpreview_mt src/hashbrown.cr --release`
 
 #### Makefile
 

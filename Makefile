@@ -2,7 +2,7 @@
 PREFIX ?= /usr
 
 all:
-	$(CRYSTAL_LOCATION)shards build --release --no-debug
+	$(CRYSTAL_LOCATION)shards build -Dpreview_mt --release --no-debug
 
 test:
 	$(CRYSTAL_LOCATION)crystal spec
