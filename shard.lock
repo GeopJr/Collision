@@ -4,7 +4,19 @@ shards:
     git: https://github.com/elorest/compiled_license.git
     version: 1.2.1
 
+  gi-crystal:
+    git: https://github.com/hugopl/gi-crystal.git
+    version: 0.2.0+git.commit.3e8c098855b96fedae6be6a002365a55004a4725
+
+  gtk4:
+    git: https://github.com/hugopl/gtk4.cr.git
+    version: 0.1.0+git.commit.e163e0204c7384ed85081313ad0c0ca5f396ba01
+
   libadwaita:
     git: https://github.com/geopjr/libadwaita.cr.git
-    version: 1.0.0+git.commit.bd0b20368f0d5936594ffb04ec6564acd45c3453
+    version: 1.0.0+git.commit.f96452f91780b356e5c33f2e48567920b8eac5b8
+
+  version_from_shard:
+    git: https://github.com/hugopl/version_from_shard.git
+    version: 1.2.5
 

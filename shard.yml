@@ -11,7 +11,7 @@ targets:
 dependencies:
   libadwaita:
     github: GeopJr/libadwaita.cr
-    commit: bd0b20368f0d5936594ffb04ec6564acd45c3453
+    commit: f96452f91780b356e5c33f2e48567920b8eac5b8
   compiled_license:
     github: elorest/compiled_license
     version: ~> 1.2.1
