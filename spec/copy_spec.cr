@@ -13,7 +13,7 @@ describe "run_cmd" do
     hashes = [] of String
     channel = Channel(Hash(String, String)).new
 
-    spawn do
+    Hashbrown.non_blocking_spawn do
       ["sha512", "sha256", "md5", "sha1"].each do |x|
         hashes << Hashbrown.calculate_hash(x, path.to_s)
       end
