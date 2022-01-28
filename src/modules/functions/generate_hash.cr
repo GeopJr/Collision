@@ -36,16 +36,12 @@ module Hashbrown
   #
   # https://crystal-lang.org/api/1.3.2/toplevel.html#spawn%28%2A%2Cname%3AString%3F%3Dnil%2Csame_thread%3Dfalse%2C%26block%29-class-method
   # https://github.com/crystal-lang/crystal/blob/932f193ae/src/concurrent.cr#L60-L67
-  def non_blocking_spawn(*, name : String? = nil, same_thread = false, &block)
+  def non_blocking_spawn(*, name : String? = nil, same_thread = false, &block) : Fiber
     fiber = Fiber.new(name, &block)
     if same_thread
       fiber.@current_thread.set(Thread.current)
     else
-      threads = [] of Thread
-      Thread.unsafe_each do |thread|
-        next if thread == Thread.current
-        threads << thread
-      end
+      threads = non_blocking_threads
       # If there are threads available other than the current one,
       # set fiber's thread as a random one from the array.
       fiber.@current_thread.set(threads.sample) unless threads.size == 0
@@ -54,9 +50,29 @@ module Hashbrown
     fiber
   end
 
+  # Get all threads that are not the current one.
+  def non_blocking_threads : Array(Thread)
+    threads = [] of Thread
+    Thread.unsafe_each do |thread|
+      next if thread == Thread.current
+      threads << thread
+    end
+    threads
+  end
+
+  # If there are more than one threads available (except the current one),
+  # spawn fibers else just run in sync.
+  def handle_spawning(&block)
+    if non_blocking_threads.size == 0
+      yield
+    else
+      non_blocking_spawn(same_thread: false, &block)
+    end
+  end
+
   def generate_hashes(filename : String)
     ACTION_ROWS.keys.each do |hash_type|
-      non_blocking_spawn(same_thread: false) do
+      handle_spawning do
         hash_value = calculate_hash(hash_type, filename)
         ACTION_ROWS[hash_type].subtitle = hash_value.gsub(/.{1,4}/) { |x| x + " " }[0..-2]
         CLIPBOARD_HASH[hash_type] = hash_value
