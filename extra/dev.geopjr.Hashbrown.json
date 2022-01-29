@@ -126,6 +126,12 @@
         },
         {
           "type": "git",
+          "url": "https://github.com/geopjr/non-blocking-spawn.git",
+          "tag": "v1.0.0",
+          "dest": "lib/non-blocking-spawn"
+        },
+        {
+          "type": "git",
           "url": "https://github.com/hugopl/version_from_shard.git",
           "tag": "v1.2.5",
           "dest": "lib/version_from_shard"
