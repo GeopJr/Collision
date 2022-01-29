@@ -18,7 +18,7 @@
                 <property name="focusable">0</property>
                 <child>
                   <object class="GtkButton" id="copyBtn1">
-                    <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
+                    <property name="tooltip-text" translatable="1">HASHBROWN_(Copy)</property>
                     <property name="icon-name">edit-copy-symbolic</property>
                     <property name="valign">center</property>
                     <style>
@@ -38,7 +38,7 @@
                 <property name="focusable">0</property>
                 <child>
                   <object class="GtkButton" id="copyBtn2">
-                    <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
+                    <property name="tooltip-text" translatable="1">HASHBROWN_(Copy)</property>
                     <property name="icon-name">edit-copy-symbolic</property>
                     <property name="valign">center</property>
                     <style>
@@ -58,7 +58,7 @@
                 <property name="focusable">0</property>
                 <child>
                   <object class="GtkButton" id="copyBtn3">
-                    <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
+                    <property name="tooltip-text" translatable="1">HASHBROWN_(Copy)</property>
                     <property name="icon-name">edit-copy-symbolic</property>
                     <property name="valign">center</property>
                     <style>
@@ -78,7 +78,7 @@
                 <property name="focusable">0</property>
                 <child>
                   <object class="GtkButton" id="copyBtn4">
-                    <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
+                    <property name="tooltip-text" translatable="1">HASHBROWN_(Copy)</property>
                     <property name="icon-name">edit-copy-symbolic</property>
                     <property name="valign">center</property>
                     <style>

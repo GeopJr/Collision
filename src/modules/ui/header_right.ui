@@ -16,7 +16,7 @@
   <object class="GtkMenuButton" id="menuBtn">
     <property name="menu-model">primary_menu</property>
     <property name="icon-name">open-menu-symbolic</property>
-    <property name="tooltip-text" translatable="yes">HASHBROWN_(Menu)</property>
+    <property name="tooltip-text" translatable="1">HASHBROWN_(Menu)</property>
     <style>
       <class name="flat"/>
     </style>
