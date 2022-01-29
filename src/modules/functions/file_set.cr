@@ -34,6 +34,15 @@ module Hashbrown
   def set_file(filepath : Path)
     HASH_LIST.title = filepath.basename.to_s
     HASH_LIST.description = filepath.dirname.to_s
-    Hashbrown.generate_hashes(filepath.to_s)
+
+    OPEN_FILE_BUTTON.visible = false
+    WINDOW_BOX.remove(STACK)
+    WINDOW_BOX.remove(BOTTOM_TABS)
+
+    Hashbrown.generate_hashes(filepath.to_s) do
+      OPEN_FILE_BUTTON.visible = true
+      WINDOW_BOX.append(STACK)
+      WINDOW_BOX.append(BOTTOM_TABS)
+    end
   end
 end

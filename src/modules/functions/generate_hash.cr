@@ -12,6 +12,7 @@ module Hashbrown
   extend self
 
   @@digest = gen_digest
+  @@finished_fibers = 0
 
   def run_cmd(cmd, args) : String
     stdout = IO::Memory.new
@@ -70,12 +71,19 @@ module Hashbrown
     end
   end
 
-  def generate_hashes(filename : String)
+  def on_finished(&block)
+    @@finished_fibers += 1
+    yield if @@finished_fibers == ACTION_ROWS.keys.size
+  end
+
+  def generate_hashes(filename : String, &block)
+    @@finished_fibers = 0
     ACTION_ROWS.keys.each do |hash_type|
       handle_spawning do
         hash_value = calculate_hash(hash_type, filename)
         ACTION_ROWS[hash_type].subtitle = hash_value.gsub(/.{1,4}/) { |x| x + " " }[0..-2]
         CLIPBOARD_HASH[hash_type] = hash_value
+        on_finished(&block)
       end
     end
   end
