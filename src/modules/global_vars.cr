@@ -27,4 +27,5 @@ module Hashbrown
   HS = Hashbrown.translate({{read_file("./src/modules/ui/hash_list.ui")}})
   TL = Hashbrown.translate({{read_file("./src/modules/ui/tools.ui")}})
   HT = Hashbrown.translate({{read_file("./src/modules/ui/switcher.ui")}})
+  SP = Hashbrown.translate({{read_file("./src/modules/ui/spinner.ui")}})
 end

@@ -23,6 +23,7 @@ module Hashbrown
   B_HS = Gtk::Builder.new_from_string(HS, HS.bytesize.to_i64)
   B_TL = Gtk::Builder.new_from_string(TL, TL.bytesize.to_i64)
   B_HT = Gtk::Builder.new_from_string(HT, HT.bytesize.to_i64)
+  B_SP = Gtk::Builder.new_from_string(SP, SP.bytesize.to_i64)
 
   WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
   HEADERBAR  = Adw::HeaderBar.new
@@ -35,6 +36,7 @@ module Hashbrown
   HEADER_TITLE                 = Adw::ViewSwitcherTitle.cast(B_HT["switcher_title"])
   BOTTOM_TABS                  = Adw::ViewSwitcherBar.cast(B_HT["switcher_bar"])
   STACK                        = Adw::ViewStack.cast(B_HT["stack"])
+  SPINNER                      = Gtk::Spinner.cast(B_SP["spinner"])
 
   TOOL_VERIFY_ROW    = Adw::ActionRow.cast(B_TL["tool1Row"])
   TOOL_VERIFY_BUTTON = Gtk::Button.cast(B_TL["verifyBtn"])

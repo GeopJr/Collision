@@ -39,8 +39,17 @@ module Hashbrown
     WINDOW_BOX.remove(STACK)
     WINDOW_BOX.remove(BOTTOM_TABS)
 
+    spinner = SPINNER
+    spinner.vexpand = true
+    spinner.width_request = 32
+    spinner.height_request = 32
+    spinner.start
+
+    WINDOW_BOX.append(spinner)
+
     Hashbrown.generate_hashes(filepath.to_s) do
       OPEN_FILE_BUTTON.visible = true
+      WINDOW_BOX.remove(spinner)
       WINDOW_BOX.append(STACK)
       WINDOW_BOX.append(BOTTOM_TABS)
     end
