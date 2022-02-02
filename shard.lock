@@ -6,15 +6,15 @@ shards:
 
   gi-crystal:
     git: https://github.com/hugopl/gi-crystal.git
-    version: 0.2.0+git.commit.3e8c098855b96fedae6be6a002365a55004a4725
+    version: 0.4.0+git.commit.b61e916abbeba8fb30a17c32117ebed3fadfe437
 
   gtk4:
     git: https://github.com/hugopl/gtk4.cr.git
-    version: 0.1.0+git.commit.e163e0204c7384ed85081313ad0c0ca5f396ba01
+    version: 0.3.0+git.commit.16a3b79866e0af18e95681ca2842d8428ac6e152
 
   libadwaita:
     git: https://github.com/geopjr/libadwaita.cr.git
-    version: 1.0.0+git.commit.f96452f91780b356e5c33f2e48567920b8eac5b8
+    version: 1.0.0+git.commit.a6d353530a72c869e1735ecb8cc1c02837fcaf32
 
   non-blocking-spawn:
     git: https://github.com/geopjr/non-blocking-spawn.git
