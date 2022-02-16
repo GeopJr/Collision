@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 StartupWMClass=hashbrown
-Exec=hashbrown
+Exec=hashbrown %F
 Name=Hashbrown
 GenericName=Hash Generator
 Comment=Check hashes for your files

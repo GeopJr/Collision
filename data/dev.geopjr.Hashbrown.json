@@ -79,20 +79,13 @@
       "name": "hashbrown",
       "buildsystem": "simple",
       "build-commands": [
-      	"for i in ./lib/*/; do ln -snf \"..\" \"$i/lib\"; done",
-        "./crystal/bin/crystal build -Dpreview_mt ./src/hashbrown.cr # --no-debug --release"
       ],
       "post-install": [
         "install -D -m 0755 hashbrown /app/bin/hashbrown",
-        "install -D -m 0644 extra/Hashbrown.desktop /app/share/applications/dev.geopjr.Hashbrown.desktop",
-        "install -D -m 0644 extra/icons/logo.svg /app/share/icons/hicolor/scalable/apps/dev.geopjr.Hashbrown.svg",
-        "install -D -m 0644 extra/icons/symbolic.svg /app/share/icons/hicolor/symbolic/apps/dev.geopjr.Hashbrown-symbolic.svg",
-        "install -D -m 0644 extra/dev.geopjr.Hashbrown.metainfo.xml /app/share/metainfo/dev.geopjr.Hashbrown.metainfo.xml"
       ],
       "sources": [
         {
           "type": "dir",
-          "path": ".."
         },
         {
           "type": "archive",
@@ -103,25 +96,21 @@
         {
           "type": "git",
           "url": "https://github.com/elorest/compiled_license.git",
-          "tag": "v1.2.1",
           "dest": "lib/compiled_license"
         },
         {
           "type": "git",
           "url": "https://github.com/hugopl/gi-crystal.git",
-          "commit": "3e8c098855b96fedae6be6a002365a55004a4725",
           "dest": "lib/gi-crystal"
         },
         {
           "type": "git",
           "url": "https://github.com/hugopl/gtk4.cr.git",
-          "commit": "e163e0204c7384ed85081313ad0c0ca5f396ba01",
           "dest": "lib/gtk4"
         },
         {
           "type": "git",
           "url": "https://github.com/geopjr/libadwaita.cr.git",
-          "commit": "f96452f91780b356e5c33f2e48567920b8eac5b8",
           "dest": "lib/libadwaita"
         },
         {
@@ -139,7 +128,6 @@
       ]
     },
     {
-      "name": "hack for Builder",
       "buildsystem": "simple",
       "build-commands": []
     }

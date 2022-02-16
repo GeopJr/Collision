@@ -1,17 +1,12 @@
 # Prints all translators (thanks!).
 
-TRANSLATION_DIR_NAME = "translations"
 
 translations_dir = Dir.open(TRANSLATION_DIR_NAME)
-translations = translations_dir.children.reject! { |x| x == "hashbrown.yaml" || !x.ends_with?(".yaml") }
 
 thanks = Hash(String, Array(String)).new
 
 regex = {
-  "lang"        => /## ?Language\: ?(.+)\n/,
-  "translators" => /## ?(.+) \<.+\>, [0-9]{4}.?\n/,
 }
-
 translations.each do |translation|
   translation_path = Path[TRANSLATION_DIR_NAME].join(translation)
   translation_content = File.read(translation_path)

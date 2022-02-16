@@ -6,11 +6,11 @@
     <property name="hexpand">true</property>
     <property name="icon-name">dev.geopjr.Hashbrown</property>
     <property name="title">Hashbrown</property>
-    <property name="description" translatable="1">HASHBROWN_(Check hashes for your files)</property>
+    <property name="description" translatable="yes">Check hashes for your files</property>
     <child>
       <object class="GtkButton" id="welcomeBtn">
         <property name="halign">center</property>
-        <property name="label" translatable="1">_HASHBROWN_(Open a File)</property>
+        <property name="label" translatable="yes">_Open a File</property>
         <property name="use-underline">1</property>
         <style>
           <class name="suggested-action"/>
@@ -23,7 +23,7 @@
     </style>
   </object>
   <object class="GtkFileChooserNative" id="welcomerFileChooserNative">
-    <property name="title" translatable="1">HASHBROWN_(Choose a File)</property>
+    <property name="title" translatable="yes">Choose a File</property>
     <property name="modal">1</property>
   </object>
 </interface>

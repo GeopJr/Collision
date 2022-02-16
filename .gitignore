@@ -6,3 +6,10 @@
 *~
 hashbrown
 .flatpak-builder/
+*.gresource
+.rucksack
+.rucksack.toc
+y2po.cr
+po/mo/
+*.mo
+data/*.desktop
