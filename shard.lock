@@ -2,7 +2,11 @@ version: 2.0
 shards:
   compiled_license:
     git: https://github.com/elorest/compiled_license.git
-    version: 1.2.1
+    version: 1.2.2
+
+  gettext:
+    git: https://github.com/geopjr/gettext.cr.git
+    version: 1.0.0
 
   gi-crystal:
     git: https://github.com/hugopl/gi-crystal.git

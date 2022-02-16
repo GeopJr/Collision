@@ -4,8 +4,8 @@
 module Hashbrown
   extend self
 
-  HASH_LIST_TITLE = TRANSLATIONS[CURRENT_LANGUAGE]["Hashes"]
-  TOOLS_TITLE     = TRANSLATIONS[CURRENT_LANGUAGE]["Tools"]
+  HASH_LIST_TITLE = Gettext.gettext("Hashes")
+  TOOLS_TITLE     = Gettext.gettext("Tools")
 
   def reset(clear : Bool? = false)
     OPEN_FILE_BUTTON.visible = true

@@ -1,0 +1,137 @@
+# German translations for dev.geopjr.Hashbrown package.
+# Copyright (C) 2021 THE dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+# Philipp Kiemle <philipp.kiemle@gmail.com>, 2021.
+# Panagiotis Vasilopoulos <hello@alwayslivid.com>, 2021.
+# Milo Ivir <mail@milotype.de>, 2021.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: dev.geopjr.Hashbrown\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-14 23:08+0200\n"
+"PO-Revision-Date: 2022-02-14 23:08+0200\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+#: data/dev.geopjr.Hashbrown.desktop.in:7
+msgid "Hash Generator"
+msgstr ""
+
+#. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
+#. or "Check the hashes of your files".
+#: data/dev.geopjr.Hashbrown.desktop.in:8
+#: data/dev.geopjr.Hashbrown.metainfo.xml:7 data/ui/welcomer.ui:9
+msgid "Check hashes for your files"
+msgstr "Prüfen Sie die Hashes Ihrer Dateien"
+
+#: data/dev.geopjr.Hashbrown.metainfo.xml:17
+msgid ""
+"Verifying that a file you downloaded or received is actually the one you "
+"were expecting is often overlooked or too time-consuming to do. At the same "
+"time, it has become very easy to get your hands on a file that has been "
+"tampered with, due to the mass increase of malicious webpages and other "
+"actors."
+msgstr ""
+"Die Überprüfung, ob eine heruntergeladene oder empfangene Datei tatsächlich die "
+"erwartete Datei ist, wird oft übersehen oder ist zu zeitaufwändig. Gleichzeitig ist "
+"es aufgrund der massiven Zunahme bösartiger Webseiten und anderer Akteure sehr "
+"einfach geworden, an Dateien zu gelangen die manipuliert wurden."
+
+#: data/dev.geopjr.Hashbrown.metainfo.xml:23
+msgid ""
+"This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, "
+"allowing anyone, from any age and experience group, to generate, compare and "
+"verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+msgstr ""
+"Dieses Werkzeug zielt darauf ab, dieses Problem zu lösen. Hashbrown hat eine "
+"einfache und aufgeräumte Benutzeroberfläche, die es jedem ermöglicht (unabhängig von "
+"Alter und Erfahrung), MD5, SHA-256, SHA-512 und SHA-1 Hashes zu generieren, zu "
+"vergleichen und zu verifizieren."
+
+#: data/ui/welcomer.ui:13
+msgid "_Open a File"
+msgstr "_Datei öffnen"
+
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:61 data/ui/header_left.ui:18
+msgid "Choose a File"
+msgstr "Datei wählen"
+
+#: data/ui/tools.ui:14 data/ui/tools.ui:27
+msgid "Verify"
+msgstr "Verifiziere"
+
+#. It extends the title, so the full sentence is "Verify that a hash belongs to the file".
+#: data/ui/tools.ui:15
+msgid "that a hash belongs to the file"
+msgstr "dass ein Hash zur Datei gehört"
+
+#. Don't translate the hash names if possible.
+#: data/ui/tools.ui:20
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "Fügen Sie einen MD5/SHA-1/SHA-256/SHA-512 Hash ein"
+
+#. Don't translate the hash names if possible.
+#: data/ui/tools.ui:22
+msgid "MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "MD5/SHA-1/SHA-256/SHA-512 Hash"
+
+#: data/ui/tools.ui:41
+msgid "Compare"
+msgstr "Vergleiche"
+
+#. It extends the title, so the full sentence is "Compare with another file".
+#: data/ui/tools.ui:42
+msgid "with another file"
+msgstr "mit einer anderen Datei"
+
+#: data/ui/tools.ui:47
+msgid "Select Another File to Check Against"
+msgstr "Wählen Sie eine Datei zum Prüfen aus"
+
+#. The same translation for "_Open a File" can also be used here.
+#: data/ui/tools.ui:48
+msgid "_Select a File"
+msgstr "_Datei Auswählen"
+
+#: data/ui/header_right.ui:7
+msgid "_Compare Hash Functions"
+msgstr "_Hash-Funktionen Vergleichen"
+
+# Don't translate "Hashbrown".
+#: data/ui/header_right.ui:11
+msgid "_About Hashbrown"
+msgstr "_Info zu Hashbrown"
+
+#: data/ui/header_right.ui:19
+msgid "Menu"
+msgstr "Menü"
+
+#: data/ui/header_left.ui:8
+msgid "_Open"
+msgstr "_Öffnen"
+
+#: data/ui/header_left.ui:9
+msgid "Open..."
+msgstr "Öffnen..."
+
+#: data/ui/hash_list.ui:21 data/ui/hash_list.ui:41 data/ui/hash_list.ui:61
+#: data/ui/hash_list.ui:81
+msgid "Copy"
+msgstr "Kopieren"
+
+#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
+#: src/modules/prerequisites.cr:22
+msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+
+#: src/modules/functions/file_set.cr:7
+msgid "Hashes"
+msgstr "Hashes"
+
+#: src/modules/functions/file_set.cr:8
+msgid "Tools"
+msgstr "Werkzeuge"

@@ -1,0 +1,127 @@
+# Dutch translations for dev.geopjr.Hashbrown package.
+# Copyright (C) 2021 dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+# Heimen Stoffels <vistausss@fastmail.com>, 2021.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: dev.geopjr.Hashbrown\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-14 23:08+0200\n"
+"PO-Revision-Date: 2022-02-14 23:08+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+#: data/dev.geopjr.Hashbrown.desktop.in:7
+msgid "Hash Generator"
+msgstr ""
+
+#. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
+#. or "Check the hashes of your files".
+#: data/dev.geopjr.Hashbrown.desktop.in:8
+#: data/dev.geopjr.Hashbrown.metainfo.xml:7 data/ui/welcomer.ui:9
+msgid "Check hashes for your files"
+msgstr "Controleer de controlesommen van bestanden"
+
+#: data/dev.geopjr.Hashbrown.metainfo.xml:17
+msgid ""
+"Verifying that a file you downloaded or received is actually the one you "
+"were expecting is often overlooked or too time-consuming to do. At the same "
+"time, it has become very easy to get your hands on a file that has been "
+"tampered with, due to the mass increase of malicious webpages and other "
+"actors."
+msgstr ""
+
+#: data/dev.geopjr.Hashbrown.metainfo.xml:23
+msgid ""
+"This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, "
+"allowing anyone, from any age and experience group, to generate, compare and "
+"verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+msgstr ""
+
+#: data/ui/welcomer.ui:13
+msgid "_Open a File"
+msgstr "_Bestand openen"
+
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:61 data/ui/header_left.ui:18
+msgid "Choose a File"
+msgstr "Kies een bestand"
+
+#: data/ui/tools.ui:14 data/ui/tools.ui:27
+msgid "Verify"
+msgstr "Verifiëren"
+
+#. It extends the title, so the full sentence is "Verify that a hash belongs to the file".
+#: data/ui/tools.ui:15
+msgid "that a hash belongs to the file"
+msgstr "dat een controlesom bij een bestand hoort"
+
+#. Don't translate the hash names if possible.
+#: data/ui/tools.ui:20
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "Voer hier een md5-, sha-1-, sha-256- of sha-512-controlesom in"
+
+#. Don't translate the hash names if possible.
+#: data/ui/tools.ui:22
+msgid "MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "md5-, sha-1-, sha-256 of sha-512-controlesom"
+
+#: data/ui/tools.ui:41
+msgid "Compare"
+msgstr "Vergelijken"
+
+#. It extends the title, so the full sentence is "Compare with another file".
+#: data/ui/tools.ui:42
+msgid "with another file"
+msgstr "met een ander bestand"
+
+#: data/ui/tools.ui:47
+msgid "Select Another File to Check Against"
+msgstr "Kies het te vergelijken bestand"
+
+#. The same translation for "_Open a File" can also be used here.
+#: data/ui/tools.ui:48
+msgid "_Select a File"
+msgstr "_Kies een bestand"
+
+#: data/ui/header_right.ui:7
+msgid "_Compare Hash Functions"
+msgstr "_Controlesomfucties vergelijken"
+
+# Don't translate "Hashbrown".
+#: data/ui/header_right.ui:11
+msgid "_About Hashbrown"
+msgstr "_Over Hashbrown"
+
+#: data/ui/header_right.ui:19
+msgid "Menu"
+msgstr "Menu"
+
+#: data/ui/header_left.ui:8
+msgid "_Open"
+msgstr "_Openen"
+
+#: data/ui/header_left.ui:9
+msgid "Open..."
+msgstr "Openen..."
+
+#: data/ui/hash_list.ui:21 data/ui/hash_list.ui:41 data/ui/hash_list.ui:61
+#: data/ui/hash_list.ui:81
+msgid "Copy"
+msgstr "Kopiëren"
+
+#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
+#: src/modules/prerequisites.cr:22
+msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+
+#: src/modules/functions/file_set.cr:7
+msgid "Hashes"
+msgstr "Controlesommen"
+
+#: src/modules/functions/file_set.cr:8
+msgid "Tools"
+msgstr "Hulpmiddelen"

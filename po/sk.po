@@ -1,0 +1,127 @@
+# Slovakia translation for dev.geopjr.Hashbrown.
+# Copyright (C) 2021 THE dev.geopjjr.Hashbrown'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+# MartionIIOT <42734508+MartinIIOT@users.noreply.github.com>, 2021.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: dev.geopjr.Hashbrown\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-14 23:08+0200\n"
+"PO-Revision-Date: 2022-02-14 23:08+0200\n"
+"Last-Translator: MartionIIOT <42734508+MartinIIOT@users.noreply.github.com>\n"
+"Language-Team: Slovakia\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+#: data/dev.geopjr.Hashbrown.desktop.in:7
+msgid "Hash Generator"
+msgstr ""
+
+#. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
+#. or "Check the hashes of your files".
+#: data/dev.geopjr.Hashbrown.desktop.in:8
+#: data/dev.geopjr.Hashbrown.metainfo.xml:7 data/ui/welcomer.ui:9
+msgid "Check hashes for your files"
+msgstr ""
+
+#: data/dev.geopjr.Hashbrown.metainfo.xml:17
+msgid ""
+"Verifying that a file you downloaded or received is actually the one you "
+"were expecting is often overlooked or too time-consuming to do. At the same "
+"time, it has become very easy to get your hands on a file that has been "
+"tampered with, due to the mass increase of malicious webpages and other "
+"actors."
+msgstr ""
+
+#: data/dev.geopjr.Hashbrown.metainfo.xml:23
+msgid ""
+"This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, "
+"allowing anyone, from any age and experience group, to generate, compare and "
+"verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+msgstr ""
+
+#: data/ui/welcomer.ui:13
+msgid "_Open a File"
+msgstr ""
+
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:61 data/ui/header_left.ui:18
+msgid "Choose a File"
+msgstr "Vyberte Súbor"
+
+#: data/ui/tools.ui:14 data/ui/tools.ui:27
+msgid "Verify"
+msgstr "Overiť"
+
+#. It extends the title, so the full sentence is "Verify that a hash belongs to the file".
+#: data/ui/tools.ui:15
+msgid "that a hash belongs to the file"
+msgstr ""
+
+#. Don't translate the hash names if possible.
+#: data/ui/tools.ui:20
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "Vložte hash MD5/SHA-1/SHA-256/SHA-512"
+
+#. Don't translate the hash names if possible.
+#: data/ui/tools.ui:22
+msgid "MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "MD5/SHA-1/SHA-256/SHA-512 Hash"
+
+#: data/ui/tools.ui:41
+msgid "Compare"
+msgstr "Porovnať"
+
+#. It extends the title, so the full sentence is "Compare with another file".
+#: data/ui/tools.ui:42
+msgid "with another file"
+msgstr ""
+
+#: data/ui/tools.ui:47
+msgid "Select Another File to Check Against"
+msgstr ""
+
+#. The same translation for "_Open a File" can also be used here.
+#: data/ui/tools.ui:48
+msgid "_Select a File"
+msgstr "_Vyberte Súbor"
+
+#: data/ui/header_right.ui:7
+msgid "_Compare Hash Functions"
+msgstr ""
+
+# Don't translate "Hashbrown".
+#: data/ui/header_right.ui:11
+msgid "_About Hashbrown"
+msgstr "_O Hashbrown"
+
+#: data/ui/header_right.ui:19
+msgid "Menu"
+msgstr "Menu"
+
+#: data/ui/header_left.ui:8
+msgid "_Open"
+msgstr ""
+
+#: data/ui/header_left.ui:9
+msgid "Open..."
+msgstr ""
+
+#: data/ui/hash_list.ui:21 data/ui/hash_list.ui:41 data/ui/hash_list.ui:61
+#: data/ui/hash_list.ui:81
+msgid "Copy"
+msgstr "Kopírovať"
+
+#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
+#: src/modules/prerequisites.cr:22
+msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+
+#: src/modules/functions/file_set.cr:7
+msgid "Hashes"
+msgstr ""
+
+#: src/modules/functions/file_set.cr:8
+msgid "Tools"
+msgstr ""

@@ -1,7 +1,8 @@
 require "libadwaita"
 require "compiled_license"
+require "gettext"
 
-require "./modules/global_vars.cr"
+require "./modules/prerequisites.cr"
 require "./modules/functions/*"
 require "./modules/views/*"
 require "./modules/views/tools/*"

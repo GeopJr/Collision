@@ -1,2 +1,5 @@
 require "spec"
-require "../src/modules/global_vars.cr"
+require "libadwaita"
+require "gettext"
+
+require "../src/modules/prerequisites.cr"

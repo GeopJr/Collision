@@ -18,6 +18,9 @@ dependencies:
   non-blocking-spawn:
     github: GeopJr/non-blocking-spawn
     version: ~> 1.0.0
+  gettext:
+    github: GeopJr/gettext.cr
+    version: ~> 1.0.0
 
 crystal: 1.3.2
 

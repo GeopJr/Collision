@@ -1,0 +1,10 @@
+data/dev.geopjr.Hashbrown.desktop.in
+data/dev.geopjr.Hashbrown.metainfo.xml
+data/dev.geopjr.Hashbrown.metainfo.xml
+data/ui/welcomer.ui
+data/ui/tools.ui
+data/ui/header_right.ui
+data/ui/header_left.ui
+data/ui/hash_list.ui
+data/ui/switcher.ui
+data/ui/spinner.ui
