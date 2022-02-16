@@ -14,7 +14,7 @@ module Hashbrown
     @@main_window_id = window.id
 
     Hashbrown.generate_headbar
-    root = Gtk::Widget.cast(B_UI["welcomer"])
+    root = Adw::StatusPage.cast(B_UI["welcomer"])
 
     WINDOW_BOX.append(HEADERBAR)
     WINDOW_BOX.append(root)

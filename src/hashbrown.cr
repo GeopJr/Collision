@@ -39,6 +39,8 @@ module Hashbrown
   STACK                        = Adw::ViewStack.cast(B_HT["stack"])
   SPINNER                      = Gtk::Spinner.cast(B_SP["spinner"])
 
+  FILE_SET_SPINNER = Gtk::Spinner.cast(B_SP["spinner"])
+
   TOOL_VERIFY_ROW    = Adw::ActionRow.cast(B_TL["tool1Row"])
   TOOL_VERIFY_BUTTON = Gtk::Button.cast(B_TL["verifyBtn"])
   TOOL_VERIFY_INPUT  = Gtk::Entry.cast(B_TL["hashInput"])
