@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Shards install
         run: shards install
+      - name: Generate gresource
+        run: make gresource
       - name: Spec
         run: crystal spec || exit 1
       - name: Check formatting
