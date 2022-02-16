@@ -20,7 +20,7 @@ module Hashbrown
     WINDOW_BOX.append(root)
 
     Hashbrown.about_action(app)
-    Hashbrown.hashinfo_action(app)
+    Hashbrown.hashinfo_action(app, @@main_window_id)
 
     WELCOMER_FILE_CHOOSER_NATIVE.transient_for = window
 

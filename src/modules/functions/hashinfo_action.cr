@@ -3,15 +3,13 @@
 module Hashbrown
   extend self
 
-  def hashinfo_action(app : Adw::Application)
+  def hashinfo_action(app : Adw::Application, window_id : UInt32)
     action = Gio::SimpleAction.new("hashinfo", nil)
     app.add_action(action)
 
     action.activate_signal.connect do
-      # Messes up memory, use xdg-open directly for now
-      # LibGio.g_app_info_launch_default_for_uri(ARTICLE, Pointer(Void).null)
-
-      Hashbrown.run_cmd("xdg-open", [ARTICLE])
+      parent = APP.active_window.nil? ? APP.window_by_id(window_id) : APP.active_window
+      LibGtk.gtk_show_uri(parent.not_nil!, ARTICLE, Gdk::CURRENT_TIME)
     end
   end
 end

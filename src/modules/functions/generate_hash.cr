@@ -15,15 +15,6 @@ module Hashbrown
   @@digest = gen_digest
   @@finished_fibers = 0
 
-  def run_cmd(cmd, args) : String
-    stdout = IO::Memory.new
-    stderr = IO::Memory.new
-    status = Process.run(cmd, args: args, output: stdout, error: stderr)
-
-    output = stderr.to_s.size == 0 ? stdout.to_s : stderr.to_s
-    output
-  end
-
   def calculate_hash(type : String, filename : String) : String
     hash = @@digest[type.downcase]
     hash.reset

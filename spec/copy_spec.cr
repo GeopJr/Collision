@@ -1,13 +1,7 @@
 require "./spec_helper"
 require "../src/modules/functions/generate_hash.cr"
 
-describe "run_cmd" do
-  it "runs a command in shell and returns the output" do
-    output = Hashbrown.run_cmd("echo", ["test"])
-
-    output.should eq("test\n")
-  end
-
+describe "hash generator" do
   it "gets hashes from file" do
     path = Path["./spec/test.txt"].expand(home: true)
     hashes = [] of String
