@@ -11,6 +11,6 @@ module Hashbrown
   end
 
   def icon(success : Bool? = false)
-    success ? "emblem-ok-symbolic" : "window-close-symbolic"
+    success ? "test-pass-symbolic" : "window-close-symbolic"
   end
 end

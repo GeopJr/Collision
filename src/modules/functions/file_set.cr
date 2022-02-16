@@ -22,9 +22,6 @@ module Hashbrown
     hash_list_page = STACK.add_titled(HASH_LIST, "hashes", HASH_LIST_TITLE)
     hash_list_page.icon_name = "view-list-bullet-symbolic"
     tools_page = STACK.add_titled(tools, "tools", TOOLS_TITLE)
-    # applications-utilities-symbolic
-    # applications-engineering-symbolic
-    # applications-system-symbolic / emblem-system-symbolic
     tools_page.icon_name = "preferences-system-symbolic"
 
     WINDOW_BOX.append(STACK)

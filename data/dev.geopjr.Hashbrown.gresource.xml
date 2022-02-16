@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/dev/geopjr/Hashbrown">
+    <file compressed="true">css/style.css</file>
+    <file compressed="true" preprocess="xml-stripblanks">icons/dev.geopjr.Hashbrown.svg</file>
+    <file compressed="true" preprocess="xml-stripblanks">icons/test-pass-symbolic.svg</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/hash_list.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/header_left.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/header_right.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/spinner.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/switcher.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/tools.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/welcomer.ui</file>
+  </gresource>
+</gresources>

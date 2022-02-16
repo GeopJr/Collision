@@ -18,13 +18,13 @@ end
 module Hashbrown
   extend self
 
-  B_UI = Gtk::Builder.new_from_string(UI, UI.bytesize.to_i64)
-  B_HL = Gtk::Builder.new_from_string(HL, HL.bytesize.to_i64)
-  B_HR = Gtk::Builder.new_from_string(HR, HR.bytesize.to_i64)
-  B_HS = Gtk::Builder.new_from_string(HS, HS.bytesize.to_i64)
-  B_TL = Gtk::Builder.new_from_string(TL, TL.bytesize.to_i64)
-  B_HT = Gtk::Builder.new_from_string(HT, HT.bytesize.to_i64)
-  B_SP = Gtk::Builder.new_from_string(SP, SP.bytesize.to_i64)
+  B_UI = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/welcomer.ui")
+  B_HL = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/header_left.ui")
+  B_HR = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/header_right.ui")
+  B_HS = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/hash_list.ui")
+  B_TL = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/tools.ui")
+  B_HT = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/switcher.ui")
+  B_SP = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/spinner.ui")
 
   WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
   HEADERBAR  = Adw::HeaderBar.new
