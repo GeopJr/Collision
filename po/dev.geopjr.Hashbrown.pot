@@ -45,7 +45,7 @@ msgid ""
 msgstr ""
 
 #: data/ui/welcomer.ui:13
-msgid "Open a File"
+msgid "_Open a File"
 msgstr ""
 
 #: data/ui/welcomer.ui:26 data/ui/tools.ui:61 data/ui/header_left.ui:18
@@ -84,18 +84,18 @@ msgstr ""
 msgid "Select Another File to Check Against"
 msgstr ""
 
-#. The same translation for "Open a file" can also be used here.
+#. The same translation for "_Open a file" can also be used here.
 #: data/ui/tools.ui:48
-msgid "Select a File"
+msgid "_Select a File"
 msgstr ""
 
 #: data/ui/header_right.ui:7
-msgid "Compare Hash Functions"
+msgid "_Compare Hash Functions"
 msgstr ""
 
 # Don't translate "Hashbrown".
 #: data/ui/header_right.ui:11
-msgid "About Hashbrown"
+msgid "_About Hashbrown"
 msgstr ""
 
 #: data/ui/header_right.ui:19
@@ -103,7 +103,7 @@ msgid "Menu"
 msgstr ""
 
 #: data/ui/header_left.ui:8
-msgid "Open"
+msgid "_Open"
 msgstr ""
 
 #: data/ui/header_left.ui:9
