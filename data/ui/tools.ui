@@ -22,16 +22,6 @@
                 <property name="placeholder-text" translatable="yes">MD5/SHA-1/SHA-256/SHA-512 Hash</property>
               </object>
             </child>
-            <child>
-              <object class="GtkButton" id="verifyBtn">
-                <property name="tooltip-text" translatable="yes">Verify</property>
-                <property name="icon-name">auth-fingerprint-symbolic</property>
-                <property name="valign">center</property>
-                <style>
-                  <class name="circular"/>
-                </style>
-              </object>
-            </child>
           </object>
         </child>
         <child>

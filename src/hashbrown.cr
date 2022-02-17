@@ -41,9 +41,8 @@ module Hashbrown
 
   FILE_SET_SPINNER = Gtk::Spinner.cast(B_SP["spinner"])
 
-  TOOL_VERIFY_ROW    = Adw::ActionRow.cast(B_TL["tool1Row"])
-  TOOL_VERIFY_BUTTON = Gtk::Button.cast(B_TL["verifyBtn"])
-  TOOL_VERIFY_INPUT  = Gtk::Entry.cast(B_TL["hashInput"])
+  TOOL_VERIFY_ROW   = Adw::ActionRow.cast(B_TL["tool1Row"])
+  TOOL_VERIFY_INPUT = Gtk::Entry.cast(B_TL["hashInput"])
 
   TOOL_COMPARE_ROW                 = Adw::ActionRow.cast(B_TL["tool2Row"])
   TOOL_COMPARE_BUTTON              = Gtk::Button.cast(B_TL["compareBtn"])
