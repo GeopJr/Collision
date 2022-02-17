@@ -17,11 +17,14 @@ gresource:
 mo:
 	mkdir -p $(PO_LOCATION)/mo
 	for lang in `cat "$(PO_LOCATION)/LINGUAS"`; do \
-		if [[ "$$lang" == 'en' ]]; then continue; fi; \
+		if [[ "$$lang" == 'en' || "$$lang" == '' ]]; then continue; fi; \
 		mkdir -p "$(PREFIX)$(LOCALE_LOCATION)/$$lang/LC_MESSAGES"; \
 		msgfmt "$(PO_LOCATION)/$$lang.po" -o "$(PO_LOCATION)/mo/$$lang.mo"; \
 		install -D -m 0644 "$(PO_LOCATION)/mo/$$lang.mo" "$(PREFIX)$(LOCALE_LOCATION)/$$lang/LC_MESSAGES/dev.geopjr.Hashbrown.mo"; \
 	done
+
+metainfo:
+	msgfmt --xml --template data/dev.geopjr.Hashbrown.metainfo.xml.in -d "$(PO_LOCATION)" -o data/dev.geopjr.Hashbrown.metainfo.xml
 
 desktop:
 	msgfmt --desktop --template data/dev.geopjr.Hashbrown.desktop.in -d "$(PO_LOCATION)" -o data/dev.geopjr.Hashbrown.desktop
