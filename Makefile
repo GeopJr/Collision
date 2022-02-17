@@ -9,7 +9,7 @@ build:
 	HASHBROWN_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards build -Dpreview_mt --release --no-debug
 
 test:
-	$(CRYSTAL_LOCATION)crystal spec
+	$(CRYSTAL_LOCATION)crystal spec -Dpreview_mt --order random
 
 gresource:
 	glib-compile-resources --sourcedir data --target data/dev.geopjr.Hashbrown.gresource data/dev.geopjr.Hashbrown.gresource.xml
