@@ -2,19 +2,22 @@
 # Copyright (C) 2021 THE dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Hashbrown package.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
+# Gabriel Gian <gabrielgian@protonmail.com>, 2022.
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Hashbrown\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-14 23:08+0200\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2022-02-18 01:30+0200\n"
+"Last-Translator: Gabriel Gian <gabrielgian@protonmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
 #: data/dev.geopjr.Hashbrown.desktop.in:7
 msgid "Hash Generator"
 msgstr ""
@@ -24,7 +27,7 @@ msgstr ""
 #: data/dev.geopjr.Hashbrown.desktop.in:8
 #: data/dev.geopjr.Hashbrown.metainfo.xml:7 data/ui/welcomer.ui:9
 msgid "Check hashes for your files"
-msgstr "Verifique os hashes dos seus arquivos"
+msgstr "Verificar os hashes dos seus arquivos"
 
 #: data/dev.geopjr.Hashbrown.metainfo.xml:17
 msgid ""
@@ -44,7 +47,7 @@ msgstr ""
 
 #: data/ui/welcomer.ui:13
 msgid "_Open a File"
-msgstr ""
+msgstr "_Abrir um arquivo"
 
 #: data/ui/welcomer.ui:26 data/ui/tools.ui:61 data/ui/header_left.ui:18
 msgid "Choose a File"
@@ -57,12 +60,12 @@ msgstr "Verificar"
 #. It extends the title, so the full sentence is "Verify that a hash belongs to the file".
 #: data/ui/tools.ui:15
 msgid "that a hash belongs to the file"
-msgstr ""
+msgstr "se um hash pertence ao arquivo"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:20
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Insere um Hash MD5/SHA-1/SHA-256/SHA-512"
+msgstr "Inserir um hash MD5/SHA-1/SHA-256/SHA-512"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:22
@@ -76,20 +79,20 @@ msgstr "Comparar"
 #. It extends the title, so the full sentence is "Compare with another file".
 #: data/ui/tools.ui:42
 msgid "with another file"
-msgstr ""
+msgstr "com outro arquivo"
 
 #: data/ui/tools.ui:47
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "Selecionar outro arquivo e checar contra ele"
 
 #. The same translation for "_Open a File" can also be used here.
 #: data/ui/tools.ui:48
 msgid "_Select a File"
-msgstr "_Selecione um Arquivo"
+msgstr "_Selecionar um arquivo"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_Comparar funções de hash"
 
 # Don't translate "Hashbrown".
 #: data/ui/header_right.ui:11
@@ -102,11 +105,11 @@ msgstr "Menu"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr ""
+msgstr "_Abrir"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
-msgstr ""
+msgstr "Abrir..."
 
 #: data/ui/hash_list.ui:21 data/ui/hash_list.ui:41 data/ui/hash_list.ui:61
 #: data/ui/hash_list.ui:81
@@ -116,12 +119,12 @@ msgstr "Copiar"
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:22
 msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr "https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash_criptogr%C3%A1fica"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hashes"
-msgstr ""
+msgstr "Hashes"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Tools"
-msgstr ""
+msgstr "Ferramentas"
