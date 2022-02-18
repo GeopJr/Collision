@@ -3,23 +3,25 @@
 # This file is distributed under the same license as the dev.geopjr.Hashbrown package.
 # Evangelos Paterakis <evan@geopjr.dev>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Hashbrown\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-14 23:08+0200\n"
+"PO-Revision-Date: 2022-02-18 00:32+0000\n"
 "Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
-"Language-Team: Greek\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/collision/"
+"collision/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: data/dev.geopjr.Hashbrown.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "Γεννήτρια Hash"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
@@ -36,6 +38,11 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Η επαλήθευση ότι ένα αρχείο που κατεβάσατε ή παραλάβατε είναι πράγματι αυτό "
+"που περιμένατε, συχνά παραβλέπεται ή είναι πολύ χρονοβόρα για να γίνει. "
+"Ταυτόχρονα, έχει γίνει πολύ εύκολο να πέσει στα χέρια σας ένα αρχείο που "
+"έχει αλλοιωθεί, λόγω της μαζικής αύξησης των κακόβουλων ιστοσελίδων και "
+"άλλων φορέων."
 
 #: data/dev.geopjr.Hashbrown.metainfo.xml:23
 msgid ""
@@ -43,6 +50,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"Αυτό το εργαλείο έχει ως στόχο να το λύσει. Το Hashbrown έρχεται με ένα απλό "
+"και καθαρό UI, επιτρέποντας σε οποιονδήποτε, από οποιαδήποτε ηλικιακή ομάδα "
+"και ομάδα εμπειρίας, να δημιουργήσει, να συγκρίνει και να επαληθεύσει MD5, "
+"SHA-256, SHA-512 και SHA-1 hashes."
 
 #: data/ui/welcomer.ui:13
 msgid "_Open a File"
