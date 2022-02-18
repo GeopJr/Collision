@@ -1,14 +1,13 @@
 # Greek translation for dev.geopjr.Collision.
 # Copyright (C) 2021 THE dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# Evangelos Paterakis <evan@geopjr.dev>, 2021.
-#
+# Evangelos Paterakis <evan@geopjr.dev>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-18 00:32+0000\n"
+"PO-Revision-Date: 2022-03-27 21:36+0000\n"
 "Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/collision/"
 "collision/el/>\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
