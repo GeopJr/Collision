@@ -2,24 +2,25 @@
 # Copyright (C) 2022 dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Hashbrown package.
 # lumingzh <lumingzh@qq.com>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Hashbrown\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-18 01:30+0200\n"
+"PO-Revision-Date: 2022-02-18 15:57+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
-"Language-Team: Chinese (Simplified)\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"collision/collision/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: data/dev.geopjr.Hashbrown.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "哈希值生成器"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
@@ -36,6 +37,8 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"校验您下载或接收的文件以确定与您的预期相符经常是被忽略或太耗费时间的事情。与此同时，由于大量增加的恶意网页和其它攻击者，让您经手被篡改文件已经变得非常容易"
+"。"
 
 #: data/dev.geopjr.Hashbrown.metainfo.xml:23
 msgid ""
@@ -43,6 +46,8 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"Hashbrown 具有简单且干净的用户界面，允许任何年龄和经验的任何人用来生成、对比和校验 MD5、SHA-256、SHA-512 和 SHA-1 "
+"哈希值。"
 
 #: data/ui/welcomer.ui:13
 msgid "_Open a File"
