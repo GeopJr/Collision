@@ -57,13 +57,15 @@
 
 ## Translations
 
-Hashbrown is using in-house translation. There's multiple ways to translate it into a new language:
+<p align="center">
+  <a href="https://hosted.weblate.org/engage/collision/">
+    <img src="https://hosted.weblate.org/widgets/collision/-/collision/multi-auto.svg" alt="Translation status" />
+  </a>
+</p>
 
-- By using [POEditor](https://poeditor.com/join/project?hash=c2jen1tbbA).
-
-- By copying `./translations/hashbrown.yaml` to `./translations/{lang}.yaml` and fill in the info.
-
-If you are unsure, feel free to contact me!
+<h3 align="center">
+  Contribute on <a href="https://hosted.weblate.org/engage/collision/">Weblate</a>!
+</h3>
 
 #
 
@@ -89,6 +91,9 @@ If you are unsure, feel free to contact me!
   </a><br />
   <a href='https://stopthemingmy.app'>
     <img width='240' alt='Please do not theme this app' src='https://stopthemingmy.app/badge.svg'/>
+  </a><br />
+  <a href="https://hosted.weblate.org/engage/collision/">
+    <img width='240' src="https://hosted.weblate.org/widgets/collision/-/collision/287x66-white.png" alt="Translation status" />
   </a>
 </p>
 
