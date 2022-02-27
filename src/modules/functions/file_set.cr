@@ -20,7 +20,7 @@ module Hashbrown
     end
 
     hash_list_page = STACK.add_titled(HASH_LIST, "hashes", HASH_LIST_TITLE)
-    hash_list_page.icon_name = "view-list-bullet-symbolic"
+    hash_list_page.icon_name = "octothorp-symbolic"
     tools_page = STACK.add_titled(tools, "tools", TOOLS_TITLE)
     tools_page.icon_name = "preferences-system-symbolic"
 

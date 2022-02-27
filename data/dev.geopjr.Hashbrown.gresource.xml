@@ -3,7 +3,8 @@
   <gresource prefix="/dev/geopjr/Hashbrown">
     <file compressed="true">css/style.css</file>
     <file compressed="true" preprocess="xml-stripblanks">icons/dev.geopjr.Hashbrown.svg</file>
-    <file compressed="true" preprocess="xml-stripblanks">icons/test-pass-symbolic.svg</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="icons/scalable/status/test-pass-symbolic.svg">icons/test-pass-symbolic.svg</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="icons/scalable/actions/octothorp-symbolic.svg">icons/octothorp-symbolic.svg</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/hash_list.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/header_left.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/header_right.ui</file>
