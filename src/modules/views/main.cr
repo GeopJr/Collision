@@ -1,6 +1,10 @@
 module Hashbrown
   @@main_window_id = 0_u32
 
+  def startup(app : Gtk::Application)
+    CSS.load_from_resource("/dev/geopjr/Hashbrown/css/style.css")
+  end
+
   def activate(app : Adw::Application)
     main_window = APP.window_by_id(@@main_window_id)
     return main_window.present if main_window
@@ -51,14 +55,13 @@ module Hashbrown
     Hashbrown::Compare.init
     Hashbrown::Verify.init
 
-    CSS.load_from_resource("/dev/geopjr/Hashbrown/css/style.css")
-
     Gtk::StyleContext.add_provider_for_display(window.display, CSS, Gtk::STYLE_PROVIDER_PRIORITY_APPLICATION.to_u32)
 
     window.content = WINDOW_BOX
     window.present
   end
 
+  APP.startup_signal.connect(->startup(Gtk::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
   exit(APP.run(ARGV))
 end
