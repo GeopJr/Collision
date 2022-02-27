@@ -24,7 +24,7 @@ module Hashbrown
   # If there are more than one threads available (except the current one),
   # spawn fibers else just run in sync.
   def handle_spawning(&block)
-    if Non::Blocking.threads.size <= 1
+    if Non::Blocking.threads.size == 0
       yield
     else
       Non::Blocking.spawn(same_thread: false, &block)

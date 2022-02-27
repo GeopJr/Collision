@@ -43,12 +43,14 @@ module Hashbrown
     STACK.visible = false
     BOTTOM_TABS.visible = false
     FILE_SET_SPINNER.visible = true
+    HEADER_TITLE.view_switcher_enabled = false
 
     Hashbrown.generate_hashes(filepath.to_s) do
       OPEN_FILE_BUTTON.visible = true
       STACK.visible = true
       BOTTOM_TABS.visible = true
       FILE_SET_SPINNER.visible = false
+      HEADER_TITLE.view_switcher_enabled = true
     end
   end
 end
