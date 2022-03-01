@@ -2,24 +2,26 @@
 # Copyright (C) 2021 THE dev.geopjjr.Hashbrown'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Hashbrown package.
 # MohammadSaleh Kamyab <mskf1383@protonmail.com>, 2021.
-#
-#, fuzzy
+# MSKF <walkingdeadstudio@outlook.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Hashbrown\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-14 23:08+0200\n"
-"Last-Translator: MohammadSaleh Kamyab <mskf1383@protonmail.com>\n"
-"Language-Team: Persian\n"
+"PO-Revision-Date: 2022-03-02 08:57+0000\n"
+"Last-Translator: MSKF <walkingdeadstudio@outlook.com>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/collision/"
+"collision/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.11.1-dev\n"
 
 #: data/dev.geopjr.Hashbrown.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "مولد هش"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
@@ -36,6 +38,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"اعتبارسنجی این که پرونده‌ای که بارگیری یا دریافت کرده‌اید، همانی است که "
+"انتظار دارید، معمولاً نادیده گرفته می‌شود یا بسیار زمان‌بر است. همزمان، دست‌"
+"یابی به پرونده‌ای که ناشی از افزایش صفحات وب مخرب و عوامل دیگر، دست‌کاری شده "
+"است، بسیار آسان می‌شود."
 
 #: data/dev.geopjr.Hashbrown.metainfo.xml:23
 msgid ""
@@ -43,14 +49,17 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"هدف این ابزار حل آن است. هش‌براون همراه با رابط کاربری ساده و تمیز، همه را، "
+"از هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های "
+"‏MD5، ‏SHA-356، ‏SHA-512 و SHA-1 می‌سازد."
 
 #: data/ui/welcomer.ui:13
 msgid "_Open a File"
-msgstr "باز کردن یک پرونده_"
+msgstr "باز کردن یک _پرونده"
 
 #: data/ui/welcomer.ui:26 data/ui/tools.ui:61 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr "انتخاب یک پرونده"
+msgstr "گزینش پرونده"
 
 #: data/ui/tools.ui:14 data/ui/tools.ui:27
 msgid "Verify"
@@ -59,7 +68,7 @@ msgstr "اعتبارسنجی"
 #. It extends the title, so the full sentence is "Verify that a hash belongs to the file".
 #: data/ui/tools.ui:15
 msgid "that a hash belongs to the file"
-msgstr "این هش متعلّق به پرونده است"
+msgstr "این هش متعلّق به این پرونده است"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:20
@@ -82,29 +91,29 @@ msgstr "با پرونده‌ای دیگر"
 
 #: data/ui/tools.ui:47
 msgid "Select Another File to Check Against"
-msgstr "انتخاب یک پروندهٔ دیگر برای بررسی متقابل"
+msgstr "گزینش یک پروندهٔ دیگر برای بررسی متقابل"
 
 #. The same translation for "_Open a File" can also be used here.
 #: data/ui/tools.ui:48
 msgid "_Select a File"
-msgstr "انتخاب یک پرونده_"
+msgstr "گزینش _یک پرونده"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr "توابع مقایسهٔ هش_"
+msgstr "مقایسهٔ _توابع هش"
 
 # Don't translate "Hashbrown".
 #: data/ui/header_right.ui:11
 msgid "_About Hashbrown"
-msgstr "دربارهٔ هش‌براون_"
+msgstr "_دربارهٔ هش‌براون"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
-msgstr "گزینه‌ها"
+msgstr "فهرست"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr "باز کردن_"
+msgstr "_باز کردن"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
