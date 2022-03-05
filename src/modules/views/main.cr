@@ -29,7 +29,7 @@ module Hashbrown
       next unless response == -3
       Hashbrown.reset_feedback
 
-      set_file(MAIN_FILE_CHOOSER_NATIVE.file.path.not_nil!)
+      set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
     end
 
     OPEN_FILE_BUTTON.clicked_signal.connect do

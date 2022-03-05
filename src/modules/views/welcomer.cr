@@ -12,7 +12,7 @@ module Hashbrown
         WINDOW_BOX.remove(Gtk::Widget.cast(B_UI["welcomer"]))
         Hashbrown.reset
 
-        Hashbrown.set_file(WELCOMER_FILE_CHOOSER_NATIVE.file.path.not_nil!)
+        Hashbrown.set_file(WELCOMER_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
       end
     end
   end

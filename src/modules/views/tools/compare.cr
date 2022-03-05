@@ -20,7 +20,7 @@ module Hashbrown
         TOOL_COMPARE_ROW.icon_name = "process-working-symbolic"
 
         Hashbrown.handle_spawning do
-          compareFileSHA256 = Hashbrown.calculate_hash("sha256", TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.path.to_s)
+          compareFileSHA256 = Hashbrown.calculate_hash("sha256", TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.not_nil!.path.to_s)
           result = CLIPBOARD_HASH["SHA256"] == compareFileSHA256
           # TOOL_COMPARE_ROW.remove(spinner)
           TOOL_COMPARE_ROW.icon_name = Hashbrown.icon(result)
