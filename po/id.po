@@ -24,11 +24,11 @@ msgstr ""
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Hashbrown.desktop.in:8
-#: data/dev.geopjr.Hashbrown.metainfo.xml:7 data/ui/welcomer.ui:9
+#: data/dev.geopjr.Hashbrown.metainfo.xml.in:7 data/ui/welcomer.ui:9
 msgid "Check hashes for your files"
 msgstr "Periksa hash untuk berkas Anda"
 
-#: data/dev.geopjr.Hashbrown.metainfo.xml:17
+#: data/dev.geopjr.Hashbrown.metainfo.xml.in:14
 msgid ""
 "Verifying that a file you downloaded or received is actually the one you "
 "were expecting is often overlooked or too time-consuming to do. At the same "
@@ -37,7 +37,7 @@ msgid ""
 "actors."
 msgstr ""
 
-#: data/dev.geopjr.Hashbrown.metainfo.xml:23
+#: data/dev.geopjr.Hashbrown.metainfo.xml.in:20
 msgid ""
 "This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, "
 "allowing anyone, from any age and experience group, to generate, compare and "
@@ -48,46 +48,31 @@ msgstr ""
 msgid "_Open a File"
 msgstr "_Buka Berkas"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:61 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:107 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "Pilih Berkas"
 
-#: data/ui/tools.ui:14 data/ui/tools.ui:27
+#: src/modules/functions/file_set.cr:8
 msgid "Verify"
 msgstr "Verifikasi"
 
-#. It extends the title, so the full sentence is "Verify that a hash belongs to the file".
-#: data/ui/tools.ui:15
-msgid "that a hash belongs to the file"
-msgstr "bahwa hash milik berkas"
-
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:20
+#: src/hashbrown.cr:55
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Masukkan Hash MD5/SHA-1/SHA-256/SHA-512"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:22
-msgid "MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Hash MD5/SHA-1/SHA-256/SHA-512"
+#: data/ui/tools.ui:30
+msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
+msgstr ""
 
-#: data/ui/tools.ui:41
-msgid "Compare"
-msgstr "Bandingkan"
-
-#. It extends the title, so the full sentence is "Compare with another file".
-#: data/ui/tools.ui:42
-msgid "with another file"
-msgstr "dengan berkas lain"
-
-#: data/ui/tools.ui:47
+#: data/ui/tools.ui:61
 msgid "Select Another File to Check Against"
 msgstr "Pilih Berkas Lain untuk Diperiksa"
 
-#. The same translation for "_Open a File" can also be used here.
-#: data/ui/tools.ui:48
-msgid "_Select a File"
-msgstr "_Pilih Berkas"
+#: data/ui/tools.ui:87 src/modules/functions/feedback.cr:12
+msgid "Choose File..."
+msgstr ""
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -121,9 +106,6 @@ msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #: src/modules/functions/file_set.cr:7
-msgid "Hashes"
-msgstr "Hash"
+msgid "Hash"
+msgstr ""
 
-#: src/modules/functions/file_set.cr:8
-msgid "Tools"
-msgstr "Perkakas"

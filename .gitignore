@@ -13,3 +13,4 @@ y2po.cr
 po/mo/
 *.mo
 data/*.desktop
+data/*.metainfo.xml
