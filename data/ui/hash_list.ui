@@ -1,102 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <object class="AdwStatusPage" id="hashList">
-    <property name="vexpand">true</property>
-    <property name="hexpand">true</property>
+  <object class="GtkListBox" id="hashList">
+    <property name="halign">center</property>
+    <property name="valign">center</property>
     <child>
-      <object class="AdwClamp">
-        <property name="tightening-threshold">100</property>
+      <object class="AdwActionRow" id="hashRow1">
+        <property name="title">MD5</property>
+        <property name="selectable">0</property>
+        <property name="focusable">0</property>
         <child>
-          <object class="GtkListBox">
-            <property name="halign">center</property>
+          <object class="GtkButton" id="copyBtn1">
+            <property name="tooltip-text" translatable="yes">Copy</property>
+            <property name="icon-name">edit-copy-symbolic</property>
             <property name="valign">center</property>
-            <child>
-              <object class="AdwActionRow" id="hashRow1">
-                <property name="title">MD5</property>
-                <property name="selectable">0</property>
-                <property name="focusable">0</property>
-                <child>
-                  <object class="GtkButton" id="copyBtn1">
-                    <property name="tooltip-text" translatable="yes">Copy</property>
-                    <property name="icon-name">edit-copy-symbolic</property>
-                    <property name="valign">center</property>
-                    <style>
-                      <class name="circular"/>
-                    </style>
-                  </object>
-                </child>
-                <style>
-                  <class name="hash-row"/>
-                </style>
-              </object>
-            </child>
-            <child>
-              <object class="AdwActionRow" id="hashRow2">
-                <property name="title">SHA-1</property>
-                <property name="selectable">0</property>
-                <property name="focusable">0</property>
-                <child>
-                  <object class="GtkButton" id="copyBtn2">
-                    <property name="tooltip-text" translatable="yes">Copy</property>
-                    <property name="icon-name">edit-copy-symbolic</property>
-                    <property name="valign">center</property>
-                    <style>
-                      <class name="circular"/>
-                    </style>
-                  </object>
-                </child>
-                <style>
-                  <class name="hash-row"/>
-                </style>
-              </object>
-            </child>
-            <child>
-              <object class="AdwActionRow" id="hashRow3">
-                <property name="title">SHA-256</property>
-                <property name="selectable">0</property>
-                <property name="focusable">0</property>
-                <child>
-                  <object class="GtkButton" id="copyBtn3">
-                    <property name="tooltip-text" translatable="yes">Copy</property>
-                    <property name="icon-name">edit-copy-symbolic</property>
-                    <property name="valign">center</property>
-                    <style>
-                      <class name="circular"/>
-                    </style>
-                  </object>
-                </child>
-                <style>
-                  <class name="hash-row"/>
-                </style>
-              </object>
-            </child>
-            <child>
-              <object class="AdwActionRow" id="hashRow4">
-                <property name="title">SHA-512</property>
-                <property name="selectable">0</property>
-                <property name="focusable">0</property>
-                <child>
-                  <object class="GtkButton" id="copyBtn4">
-                    <property name="tooltip-text" translatable="yes">Copy</property>
-                    <property name="icon-name">edit-copy-symbolic</property>
-                    <property name="valign">center</property>
-                    <style>
-                      <class name="circular"/>
-                    </style>
-                  </object>
-                </child>
-                <style>
-                  <class name="hash-row"/>
-                </style>
-              </object>
-            </child>
             <style>
-              <class name="content"/>
+              <class name="circular"/>
             </style>
           </object>
         </child>
+        <style>
+          <class name="hash-row"/>
+        </style>
       </object>
     </child>
+    <child>
+      <object class="AdwActionRow" id="hashRow2">
+        <property name="title">SHA-1</property>
+        <property name="selectable">0</property>
+        <property name="focusable">0</property>
+        <child>
+          <object class="GtkButton" id="copyBtn2">
+            <property name="tooltip-text" translatable="yes">Copy</property>
+            <property name="icon-name">edit-copy-symbolic</property>
+            <property name="valign">center</property>
+            <style>
+              <class name="circular"/>
+            </style>
+          </object>
+        </child>
+        <style>
+          <class name="hash-row"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="AdwActionRow" id="hashRow3">
+        <property name="title">SHA-256</property>
+        <property name="selectable">0</property>
+        <property name="focusable">0</property>
+        <child>
+          <object class="GtkButton" id="copyBtn3">
+            <property name="tooltip-text" translatable="yes">Copy</property>
+            <property name="icon-name">edit-copy-symbolic</property>
+            <property name="valign">center</property>
+            <style>
+              <class name="circular"/>
+            </style>
+          </object>
+        </child>
+        <style>
+          <class name="hash-row"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="AdwActionRow" id="hashRow4">
+        <property name="title">SHA-512</property>
+        <property name="selectable">0</property>
+        <property name="focusable">0</property>
+        <child>
+          <object class="GtkButton" id="copyBtn4">
+            <property name="tooltip-text" translatable="yes">Copy</property>
+            <property name="icon-name">edit-copy-symbolic</property>
+            <property name="valign">center</property>
+            <style>
+              <class name="circular"/>
+            </style>
+          </object>
+        </child>
+        <style>
+          <class name="hash-row"/>
+        </style>
+      </object>
+    </child>
+    <style>
+      <class name="content"/>
+    </style>
   </object>
 </interface>

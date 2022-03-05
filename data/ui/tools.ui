@@ -1,48 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <object class="AdwClamp" id="tools">
-    <property name="tightening-threshold">100</property>
+  <object class="GtkBox" id="tools">
+    <property name="homogeneous">1</property>
+    <property name="spacing">23</property>
     <child>
-      <object class="GtkListBox">
-        <property name="halign">center</property>
-        <property name="valign">center</property>
+      <object class="AdwStatusPage" id="checksumStatus">
+        <property name="vexpand">true</property>
+        <property name="hexpand">true</property>
+        <property name="title">Checksum</property>
         <child>
-          <object class="AdwActionRow" id="tool1Row">
-            <property name="selectable">0</property>
-            <property name="icon-name">dialog-password-symbolic</property>
-            <property name="title" translatable="yes">Verify</property>
-            <property name="subtitle" translatable="yes">that a hash belongs to the file</property>
-            <property name="focusable">0</property>
-            <child>
-              <object class="GtkEntry" id="hashInput">
-                <property name="valign">center</property>
-                <property name="tooltip-text" translatable="yes">Insert a MD5/SHA-1/SHA-256/SHA-512 Hash</property>
-                <property name="max-width-chars">30</property>
-                <property name="placeholder-text" translatable="yes">MD5/SHA-1/SHA-256/SHA-512 Hash</property>
+          <object class="GtkOverlay">
+            <child type="overlay">
+              <object class="GtkImage" id="verifyFeedback">
+                <property name="pixel-size">24</property>
+                <property name="icon-name">test-pass-symbolic</property>
+                <property name="halign">end</property>
+                <property name="valign">end</property>
+                <property name="margin-end">5</property>
+                <property name="margin-bottom">5</property>
+                <property name="sensitive">0</property>
+                <property name="visible">0</property>
               </object>
             </child>
-          </object>
-        </child>
-        <child>
-          <object class="AdwActionRow" id="tool2Row">
-            <property name="selectable">0</property>
-            <property name="icon-name">dialog-password-symbolic</property>
-            <property name="title" translatable="yes">Compare</property>
-            <property name="subtitle" translatable="yes">with another file</property>
-            <property name="focusable">0</property>
             <child>
-              <object class="GtkButton" id="compareBtn">
-                <property name="valign">center</property>
-                <property name="tooltip-text" translatable="yes">Select Another File to Check Against</property>
-                <property name="label" translatable="yes">_Select a File</property>
-                <property name="use-underline">1</property>
+              <object class="GtkOverlay" id="verifyOverlay">
+                <child type="overlay">
+                  <object class="GtkLabel" id="verifyOverlayLabel">
+                    <property name="label" translatable="yes">MD5,SHA-1,SHA-256 or SHA-512 Hash</property>
+                    <property name="halign">start</property>
+                    <property name="valign">start</property>
+                    <property name="justify">fill</property>
+                    <property name="margin-end">22</property>
+                    <property name="margin-start">14</property>
+                    <property name="margin-top">11</property>
+                    <property name="wrap-mode">char</property>
+                    <property name="wrap">1</property>
+                    <property name="sensitive">0</property>
+                    <style>
+                      <class name="monospace"/>
+                    </style>
+                  </object>
+                </child>
               </object>
             </child>
           </object>
         </child>
         <style>
-          <class name="content"/>
+          <class name="compact"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="AdwStatusPage" id="compareStatus">
+        <property name="vexpand">true</property>
+        <property name="hexpand">true</property>
+        <property name="title">File</property>
+        <child>
+          <object class="GtkButton" id="compareBtn">
+            <property name="tooltip-text" translatable="yes">Select Another File to Check Against</property>
+            <property name="height-request">125</property>
+            <property name="use-underline">1</property>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="halign">center</property>
+                <property name="spacing">12</property>
+                <property name="valign">center</property>
+                <child>
+                  <object class="GtkImage" id="compareBtnImage">
+                    <property name="pixel-size">36</property>
+                    <property name="icon-name">paper-symbolic</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSpinner" id="spinner">
+                    <property name="spinning">1</property>
+                    <property name="width-request">36</property>
+                    <property name="height-request">36</property>
+                    <property name="visible">0</property>
+                    <property name="halign">center</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="compareBtnLabel">
+                    <property name="label" translatable="yes">Choose File...</property>
+                    <property name="max-width-chars">15</property>
+                    <property name="ellipsize">end</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <style>
+              <class name="card-like"/>
+            </style>
+          </object>
+        </child>
+        <style>
+          <class name="compact"/>
         </style>
       </object>
     </child>

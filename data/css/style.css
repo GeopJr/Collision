@@ -1,3 +1,7 @@
 .hash-row .subtitle {
   font-family: monospace;
 }
+
+.card-like {
+  border-radius: 12px;
+}

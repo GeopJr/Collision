@@ -1,4 +1,4 @@
-.PHONY: all install uninstall test build mo desktop
+.PHONY: all install uninstall test build mo desktop gresource
 PREFIX ?= /usr
 PO_LOCATION ?= po
 LOCALE_LOCATION ?= /share/locale

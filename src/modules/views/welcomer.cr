@@ -13,6 +13,7 @@ module Hashbrown
         Hashbrown.reset
 
         Hashbrown.set_file(WELCOMER_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
+        LOGGER.debug { "Passed welcomer" }
       end
     end
   end

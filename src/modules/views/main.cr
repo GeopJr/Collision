@@ -24,6 +24,7 @@ module Hashbrown
 
     WELCOMER_FILE_CHOOSER_NATIVE.transient_for = window
 
+    TOOL_COMPARE_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
@@ -36,10 +37,7 @@ module Hashbrown
       MAIN_FILE_CHOOSER_NATIVE.show
     end
 
-    TOOL_COMPARE_FILE_CHOOSER_NATIVE.transient_for = window
-
     clipboard = window.clipboard
-
     COPY_BUTTONS.each do |hash_type, btn|
       btn.clicked_signal.connect do
         hash = CLIPBOARD_HASH[hash_type]
@@ -53,8 +51,32 @@ module Hashbrown
 
     window.content = WINDOW_BOX
     window.present
+
+    LOGGER.debug { "Window activated" }
   end
 
+  def startup(app : Adw::Application)
+    [CHECKSUM_PAGE.first_child, COMPARE_PAGE.first_child].each do |widget|
+      next if widget.nil?
+      Gtk::ScrolledWindow.cast(widget).vscrollbar_policy = Gtk::PolicyType::Never
+    end
+
+    BOTTOM_TABS.notify_signal["reveal"].connect do
+      TOOLS_BOX.orientation = BOTTOM_TABS.reveal ? Gtk::Orientation::Vertical : Gtk::Orientation::Horizontal
+      TOOLS_BOX.spacing = BOTTOM_TABS.reveal ? 0 : 23
+    end
+
+    TOOL_VERIFY_INPUT.remove_css_class("view")
+    TOOL_VERIFY_INPUT.cursor_visible = false
+    TOOL_VERIFY_INPUT.accepts_tab = false
+
+    scrolled_window = Gtk::ScrolledWindow.new(height_request: 125)
+    scrolled_window.child = TOOL_VERIFY_INPUT
+
+    TOOL_VERIFY_OVERLAY.child = scrolled_window
+  end
+
+  APP.startup_signal.connect(->startup(Adw::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
   exit(APP.run(ARGV))
 end

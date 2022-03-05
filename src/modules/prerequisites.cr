@@ -1,6 +1,8 @@
 module Hashbrown
   extend self
 
+  LOGGER = Log.for("Hashbrown", ARGV[0]? == "--debug" ? Log::Severity::Debug : Log::Severity::Warn)
+
   Gettext.setlocale(Gettext::LC::ALL, "")
   Gettext.bindtextdomain("dev.geopjr.Hashbrown", {{env("HASHBROWN_LOCALE_LOCATION").nil? ? "/usr/share/locale" : env("HASHBROWN_LOCALE_LOCATION")}})
   Gettext.textdomain("dev.geopjr.Hashbrown")

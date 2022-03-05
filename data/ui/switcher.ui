@@ -7,6 +7,7 @@
   </object>
   <object class="AdwViewStack" id="stack">
     <property name="vexpand">True</property>
+    <property name="vhomogeneous">False</property>
   </object>
   <object class="AdwViewSwitcherBar" id="switcher_bar">
     <property name="stack">stack</property>

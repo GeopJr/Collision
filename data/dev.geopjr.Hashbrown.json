@@ -129,19 +129,19 @@
         {
           "type": "git",
           "url": "https://github.com/hugopl/gi-crystal.git",
-          "commit": "b61e916abbeba8fb30a17c32117ebed3fadfe437",
+          "tag": "v0.6.0",
           "dest": "lib/gi-crystal"
         },
         {
           "type": "git",
           "url": "https://github.com/hugopl/gtk4.cr.git",
-          "commit": "16a3b79866e0af18e95681ca2842d8428ac6e152",
+          "commit": "2335dfeb232d2371c8e7f410cffa73e5dd1b3c75",
           "dest": "lib/gtk4"
         },
         {
           "type": "git",
           "url": "https://github.com/geopjr/libadwaita.cr.git",
-          "commit": "a6d353530a72c869e1735ecb8cc1c02837fcaf32",
+          "commit": "7f79b18f9b7701e9900b73f3de63df68ab6f4660",
           "dest": "lib/libadwaita"
         },
         {
