@@ -13,7 +13,7 @@
           <object class="GtkOverlay">
             <child type="overlay">
               <object class="GtkImage" id="verifyFeedback">
-                <property name="pixel-size">24</property>
+                <property name="pixel-size">16</property>
                 <property name="icon-name">test-pass-symbolic</property>
                 <property name="halign">end</property>
                 <property name="valign">end</property>

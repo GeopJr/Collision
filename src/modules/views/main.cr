@@ -49,6 +49,10 @@ module Hashbrown
     Hashbrown::Compare.init
     Hashbrown::Verify.init
 
+    {% if flag?(:debug) || !flag?(:release) %}
+      window.add_css_class("devel")
+    {% end %}
+
     window.content = WINDOW_BOX
     window.present
 
