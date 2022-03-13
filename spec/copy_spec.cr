@@ -9,8 +9,8 @@ describe "hash generator" do
     hash_functions = ["sha512", "sha256", "md5", "sha1"]
 
     hash_functions.each do |x|
-      Hashbrown.handle_spawning do
-        hashes[x] = Hashbrown.calculate_hash(x, path.to_s)
+      Collision.handle_spawning do
+        hashes[x] = Collision.calculate_hash(x, path.to_s)
       end
     end
 

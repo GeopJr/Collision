@@ -5,10 +5,10 @@
   xmlns:gnome="http://api.gnome.org/doap-extensions#"
   xmlns="http://usefulinc.com/ns/doap#"
 >
-  <name>Hashbrown</name>
+  <name>Collision</name>
   <shortdesc xml:lang="en">Check hashes for your files</shortdesc>
-  <homepage rdf:resource="https://github.com/GeopJr/Hashbrown/" />
-  <bug-database rdf:resource="https://github.com/GeopJr/Hashbrown/issues" />
+  <homepage rdf:resource="https://github.com/GeopJr/Collision/" />
+  <bug-database rdf:resource="https://github.com/GeopJr/Collision/issues" />
   <programming-language>Crystal</programming-language>
   <maintainer>
     <foaf:Person>

@@ -1,9 +1,9 @@
 {
-  "app-id": "dev.geopjr.Hashbrown",
+  "app-id": "dev.geopjr.Collision",
   "runtime": "org.gnome.Platform",
   "runtime-version": "master",
   "sdk": "org.gnome.Sdk",
-  "command": "hashbrown",
+  "command": "collision",
   "finish-args": [
     "--socket=wayland",
     "--socket=fallback-x11",
@@ -71,27 +71,27 @@
         {
           "type": "git",
           "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-          "tag": "1.0.1"
+          "tag": "1.0.2"
         }
       ]
     },
     {
-      "name": "hashbrown",
+      "name": "collision",
       "buildsystem": "simple",
       "build-commands": [
         "for i in ./lib/*/; do ln -snf \"..\" \"$i/lib\"; done",
-        "glib-compile-resources --sourcedir data --target data/dev.geopjr.Hashbrown.gresource data/dev.geopjr.Hashbrown.gresource.xml",
-        "HASHBROWN_LOCALE_LOCATION=\"/app/share/locale\" ./crystal/bin/crystal build -Dpreview_mt ./src/hashbrown.cr #--no-debug --release",
-        "msgfmt --xml --template data/dev.geopjr.Hashbrown.metainfo.xml.in -d \"./po\" -o data/dev.geopjr.Hashbrown.metainfo.xml",
-        "msgfmt --desktop --template data/dev.geopjr.Hashbrown.desktop.in -d \"./po\" -o data/dev.geopjr.Hashbrown.desktop",
-        "mkdir -p po/mo && for lang in `cat \"po/LINGUAS\"`; do if [[ \"$lang\" == 'en' || \"$lang\" == '' ]]; then continue; fi; mkdir -p \"/app/share/locale/$lang/LC_MESSAGES\"; msgfmt \"po/$lang.po\" -o \"po/mo/$lang.mo\";  install -D -m 0644 \"po/mo/$lang.mo\" \"/app/share/locale/$lang/LC_MESSAGES/dev.geopjr.Hashbrown.mo\"; done"
+        "glib-compile-resources --sourcedir data --target data/dev.geopjr.Collision.gresource data/dev.geopjr.Collision.gresource.xml",
+        "COLLISION_LOCALE_LOCATION=\"/app/share/locale\" ./crystal/bin/crystal build -Dpreview_mt ./src/collision.cr #--no-debug --release",
+        "msgfmt --xml --template data/dev.geopjr.Collision.metainfo.xml.in -d \"./po\" -o data/dev.geopjr.Collision.metainfo.xml",
+        "msgfmt --desktop --template data/dev.geopjr.Collision.desktop.in -d \"./po\" -o data/dev.geopjr.Collision.desktop",
+        "mkdir -p po/mo && for lang in `cat \"po/LINGUAS\"`; do if [[ \"$lang\" == 'en' || \"$lang\" == '' ]]; then continue; fi; mkdir -p \"/app/share/locale/$lang/LC_MESSAGES\"; msgfmt \"po/$lang.po\" -o \"po/mo/$lang.mo\";  install -D -m 0644 \"po/mo/$lang.mo\" \"/app/share/locale/$lang/LC_MESSAGES/dev.geopjr.Collision.mo\"; done"
       ],
       "post-install": [
-        "install -D -m 0755 hashbrown /app/bin/hashbrown",
-        "install -D -m 0644 data/dev.geopjr.Hashbrown.desktop /app/share/applications/dev.geopjr.Hashbrown.desktop",
-        "install -D -m 0644 data/icons/dev.geopjr.Hashbrown.svg /app/share/icons/hicolor/scalable/apps/dev.geopjr.Hashbrown.svg",
-        "install -D -m 0644 data/icons/dev.geopjr.Hashbrown-symbolic.svg /app/share/icons/hicolor/symbolic/apps/dev.geopjr.Hashbrown-symbolic.svg",
-        "install -D -m 0644 data/dev.geopjr.Hashbrown.metainfo.xml /app/share/metainfo/dev.geopjr.Hashbrown.metainfo.xml"
+        "install -D -m 0755 collision /app/bin/collision",
+        "install -D -m 0644 data/dev.geopjr.Collision.desktop /app/share/applications/dev.geopjr.Collision.desktop",
+        "install -D -m 0644 data/icons/dev.geopjr.Collision.svg /app/share/icons/hicolor/scalable/apps/dev.geopjr.Collision.svg",
+        "install -D -m 0644 data/icons/dev.geopjr.Collision-symbolic.svg /app/share/icons/hicolor/symbolic/apps/dev.geopjr.Collision-symbolic.svg",
+        "install -D -m 0644 data/dev.geopjr.Collision.metainfo.xml /app/share/metainfo/dev.geopjr.Collision.metainfo.xml"
       ],
       "sources": [
         {
@@ -101,10 +101,10 @@
             ".rucksack",
             ".rucksack.toc",
             "lib/",
-            "hashbrown",
+            "collision",
             "bin/",
-            "data/dev.geopjr.Hashbrown.desktop",
-            "data/dev.geopjr.Hashbrown.gresource",
+            "data/dev.geopjr.Collision.desktop",
+            "data/dev.geopjr.Collision.gresource",
             "po/mo/"
           ]
         },

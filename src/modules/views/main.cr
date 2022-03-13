@@ -1,4 +1,4 @@
-module Hashbrown
+module Collision
   @@main_window_id = 0_u32
 
   def activate(app : Adw::Application)
@@ -7,20 +7,20 @@ module Hashbrown
 
     window = Adw::ApplicationWindow.new(app)
     window.name = "mainWindow"
-    window.title = "Hashbrown"
+    window.title = "Collision"
     window.set_default_size(600, 460)
     window.width_request = 360
     window.height_request = 360
     @@main_window_id = window.id
 
-    Hashbrown.generate_headbar
+    Collision.generate_headbar
     root = Adw::StatusPage.cast(B_UI["welcomer"])
 
     WINDOW_BOX.append(HEADERBAR)
     WINDOW_BOX.append(root)
 
-    Hashbrown.about_action(app)
-    Hashbrown.hashinfo_action(app, @@main_window_id)
+    Collision.about_action(app)
+    Collision.hashinfo_action(app, @@main_window_id)
 
     WELCOMER_FILE_CHOOSER_NATIVE.transient_for = window
 
@@ -28,7 +28,7 @@ module Hashbrown
     MAIN_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
-      Hashbrown.reset_feedback
+      Collision.reset_feedback
 
       set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
     end
@@ -45,9 +45,9 @@ module Hashbrown
       end
     end
 
-    Hashbrown::Welcomer.init
-    Hashbrown::Compare.init
-    Hashbrown::Verify.init
+    Collision::Welcomer.init
+    Collision::Compare.init
+    Collision::Verify.init
 
     {% if flag?(:debug) || !flag?(:release) %}
       window.add_css_class("devel")

@@ -3,13 +3,13 @@ require "non-blocking-spawn"
 
 macro gen_digest
   {
-    {% for hash in Hashbrown::HASH_FUNCTIONS %}
+    {% for hash in Collision::HASH_FUNCTIONS %}
       {{hash.downcase}} => OpenSSL::Digest.new({{hash.upcase}}),
     {% end %}
   }
 end
 
-module Hashbrown
+module Collision
   extend self
 
   @@digest = gen_digest

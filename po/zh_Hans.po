@@ -1,10 +1,10 @@
-# Simplified Chinese translations for dev.geopjr.Hashbrown package.
-# Copyright (C) 2022 dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+# Simplified Chinese translations for dev.geopjr.Collision package.
+# Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dev.geopjr.Collision package.
 # lumingzh <lumingzh@qq.com>, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: dev.geopjr.Hashbrown\n"
+"Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
 "PO-Revision-Date: 2022-03-13 22:02+0000\n"
@@ -18,18 +18,18 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.12-dev\n"
 
-#: data/dev.geopjr.Hashbrown.desktop.in:7
+#: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
 msgstr "哈希值生成器"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
-#: data/dev.geopjr.Hashbrown.desktop.in:8
-#: data/dev.geopjr.Hashbrown.metainfo.xml.in:7 data/ui/welcomer.ui:9
+#: data/dev.geopjr.Collision.desktop.in:8
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:9
 msgid "Check hashes for your files"
 msgstr "检查您文件的哈希值"
 
-#: data/dev.geopjr.Hashbrown.metainfo.xml.in:14
+#: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
 "Verifying that a file you downloaded or received is actually the one you "
 "were expecting is often overlooked or too time-consuming to do. At the same "
@@ -40,13 +40,13 @@ msgstr ""
 "校验您下载或接收的文件以确定与您的预期相符经常是被忽略或太耗费时间的事情。与此同时，由于大量增加的恶意网页和其它攻击者，让您经手被篡改文件已经变得非常容易"
 "。"
 
-#: data/dev.geopjr.Hashbrown.metainfo.xml.in:20
+#: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
-"This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, "
+"This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"Hashbrown 具有简单且干净的用户界面，允许任何年龄和经验的任何人用来生成、对比和校验 MD5、SHA-256、SHA-512 和 SHA-1 "
+"Collision 具有简单且干净的用户界面，允许任何年龄和经验的任何人用来生成、对比和校验 MD5、SHA-256、SHA-512 和 SHA-1 "
 "哈希值。"
 
 #: data/ui/welcomer.ui:13
@@ -62,7 +62,7 @@ msgid "Verify"
 msgstr "校验"
 
 #. Don't translate the hash names if possible.
-#: src/hashbrown.cr:55
+#: src/collision.cr:55
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "插入 MD5/SHA-1/SHA-256/SHA-512 哈希值"
 
@@ -83,10 +83,10 @@ msgstr "选择文件…"
 msgid "_Compare Hash Functions"
 msgstr "_对比哈希函数"
 
-# Don't translate "Hashbrown".
+# Don't translate "Collision".
 #: data/ui/header_right.ui:11
-msgid "_About Hashbrown"
-msgstr "_关于 Hashbrown"
+msgid "_About Collision"
+msgstr "_关于 Collision"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
