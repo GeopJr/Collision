@@ -10,23 +10,23 @@ require "./modules/views/tools/*"
 
 macro gen_hash(buttons)
   {
-  {% for hash, index in Hashbrown::HASH_FUNCTIONS %}
+  {% for hash, index in Collision::HASH_FUNCTIONS %}
     {{hash.upcase}} => {% if buttons %} Gtk::Button.cast(B_HS["copyBtn{{index + 1}}"]) {% else %} Adw::ActionRow.cast(B_HS["hashRow{{index + 1}}"]) {% end %},
   {% end %}
   }
 end
 
-module Hashbrown
+module Collision
   extend self
 
-  B_UI = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/welcomer.ui")
-  B_HL = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/header_left.ui")
-  B_HR = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/header_right.ui")
-  B_HS = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/hash_list.ui")
-  B_TL = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/tools.ui")
-  B_HT = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/switcher.ui")
-  B_SP = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/spinner.ui")
-  B_FI = Gtk::Builder.new_from_resource("/dev/geopjr/Hashbrown/ui/file_info.ui")
+  B_UI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/welcomer.ui")
+  B_HL = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_left.ui")
+  B_HR = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_right.ui")
+  B_HS = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/hash_list.ui")
+  B_TL = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/tools.ui")
+  B_HT = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/switcher.ui")
+  B_SP = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/spinner.ui")
+  B_FI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/file_info.ui")
 
   WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
   HEADERBAR  = Adw::HeaderBar.new
@@ -76,5 +76,5 @@ module Hashbrown
   FILE_INFO = Adw::StatusPage.cast(B_FI["fileInfo"])
   HASH_LIST = Gtk::ListBox.cast(B_HS["hashList"])
 
-  APP = Adw::Application.new("dev.geopjr.Hashbrown", Gio::ApplicationFlags::None)
+  APP = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::None)
 end

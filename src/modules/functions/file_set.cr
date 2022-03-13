@@ -1,7 +1,7 @@
 # Resets the window after a main file set
 # Updates the filename in the StatusPage & calls generate_hashes
 
-module Hashbrown
+module Collision
   extend self
 
   HASH_LIST_TITLE = Gettext.gettext("Hash")
@@ -42,7 +42,7 @@ module Hashbrown
     HEADER_TITLE.view_switcher_enabled = false
 
     LOGGER.debug { "Begin generating hashes" }
-    Hashbrown.generate_hashes(filepath.to_s) do
+    Collision.generate_hashes(filepath.to_s) do
       OPEN_FILE_BUTTON.visible = true
       FILE_INFO.visible = true
       BOTTOM_TABS.visible = true

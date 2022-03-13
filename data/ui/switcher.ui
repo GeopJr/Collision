@@ -3,7 +3,7 @@
   <requires lib="gtk" version="4.0"/>
   <object class="AdwViewSwitcherTitle" id="switcher_title">
     <property name="stack">stack</property>
-    <property name="title">Hashbrown</property>
+    <property name="title">Collision</property>
   </object>
   <object class="AdwViewStack" id="stack">
     <property name="vexpand">True</property>

@@ -1,4 +1,4 @@
-module Hashbrown
+module Collision
   module Verify
     extend self
 
@@ -17,7 +17,7 @@ module Hashbrown
       TOOL_VERIFY_INPUT.add_css_class(result ? "success" : "error")
       TOOL_VERIFY_INPUT.remove_css_class(!result ? "success" : "error")
 
-      TOOL_VERIFY_FEEDBACK.icon_name = Hashbrown.icon(result)
+      TOOL_VERIFY_FEEDBACK.icon_name = Collision.icon(result)
       TOOL_VERIFY_FEEDBACK.add_css_class(result ? "success" : "error")
       TOOL_VERIFY_FEEDBACK.remove_css_class(!result ? "success" : "error")
     end

@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Did you find a bug in Hashbrown? Create a report to get it fixed!
+about: Did you find a bug in Collision? Create a report to get it fixed!
 title: ''
 labels: bug
 assignees: GeopJr

@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Do you think Hashbrown can improve? Create an issue!
+about: Do you think Collision can improve? Create an issue!
 title: ''
 labels: enhancement
 assignees: GeopJr

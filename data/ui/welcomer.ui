@@ -4,8 +4,8 @@
   <object class="AdwStatusPage" id="welcomer">
     <property name="vexpand">true</property>
     <property name="hexpand">true</property>
-    <property name="icon-name">dev.geopjr.Hashbrown</property>
-    <property name="title">Hashbrown</property>
+    <property name="icon-name">dev.geopjr.Collision</property>
+    <property name="title">Collision</property>
     <property name="description" translatable="yes">Check hashes for your files</property>
     <child>
       <object class="GtkButton" id="welcomeBtn">

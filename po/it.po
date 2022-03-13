@@ -1,10 +1,10 @@
-# Italian translations for dev.geopjr.Hashbrown package.
-# Copyright (C) 2022 dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+# Italian translations for dev.geopjr.Collision package.
+# Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dev.geopjr.Collision package.
 # musiclover382 <mattiagiovanni.borda@icloud.com>, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: dev.geopjr.Hashbrown\n"
+"Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
 "PO-Revision-Date: 2022-03-13 22:02+0000\n"
@@ -18,18 +18,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.12-dev\n"
 
-#: data/dev.geopjr.Hashbrown.desktop.in:7
+#: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
 msgstr "Generatore di hash"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
-#: data/dev.geopjr.Hashbrown.desktop.in:8
-#: data/dev.geopjr.Hashbrown.metainfo.xml.in:7 data/ui/welcomer.ui:9
+#: data/dev.geopjr.Collision.desktop.in:8
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:9
 msgid "Check hashes for your files"
 msgstr "Calcola le hash dei tuoi file"
 
-#: data/dev.geopjr.Hashbrown.metainfo.xml.in:14
+#: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
 "Verifying that a file you downloaded or received is actually the one you "
 "were expecting is often overlooked or too time-consuming to do. At the same "
@@ -42,13 +42,13 @@ msgstr ""
 "tuttavia, per vari motivi tra cui l'aumento dei siti maligni è diventato "
 "molto facile ritrovarsi in mano un file manomesso."
 
-#: data/dev.geopjr.Hashbrown.metainfo.xml.in:20
+#: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
-"This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, "
+"This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"Ed è qui che entra in scena Hashbrown. Questo strumento si presenta con "
+"Ed è qui che entra in scena Collision. Questo strumento si presenta con "
 "un'interfaccia semplice e pulita, permettendo a chiunque, senza distinzioni "
 "di età o esperienza, di generare, confrontare e verificare le funzioni di "
 "hash MD5, SHA-256, SHA-512 e SHA-1."
@@ -66,7 +66,7 @@ msgid "Verify"
 msgstr "Verifica"
 
 #. Don't translate the hash names if possible.
-#: src/hashbrown.cr:55
+#: src/collision.cr:55
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Inserire una hash MD5/SHA-1/SHA-256/SHA-512"
 
@@ -86,10 +86,10 @@ msgstr "Scegli file..."
 msgid "_Compare Hash Functions"
 msgstr "_Compara funzioni di hash"
 
-# Don't translate "Hashbrown".
+# Don't translate "Collision".
 #: data/ui/header_right.ui:11
-msgid "_About Hashbrown"
-msgstr "_Informazioni su Hashbrown"
+msgid "_About Collision"
+msgstr "_Informazioni su Collision"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"

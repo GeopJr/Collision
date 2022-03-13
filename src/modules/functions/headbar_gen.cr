@@ -1,4 +1,4 @@
-module Hashbrown
+module Collision
   extend self
 
   def generate_headbar

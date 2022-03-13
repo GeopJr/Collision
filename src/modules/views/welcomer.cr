@@ -1,4 +1,4 @@
-module Hashbrown
+module Collision
   module Welcomer
     extend self
 
@@ -10,9 +10,9 @@ module Hashbrown
       WELCOMER_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
         next unless response == -3
         WINDOW_BOX.remove(Gtk::Widget.cast(B_UI["welcomer"]))
-        Hashbrown.reset
+        Collision.reset
 
-        Hashbrown.set_file(WELCOMER_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
+        Collision.set_file(WELCOMER_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
         LOGGER.debug { "Passed welcomer" }
       end
     end

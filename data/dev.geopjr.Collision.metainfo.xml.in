@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>dev.geopjr.Hashbrown</id>
-  <name>Hashbrown</name>
+  <id>dev.geopjr.Collision</id>
+  <name>Collision</name>
   <project_license>BSD-2-Clause</project_license>
   <developer_name>Evangelos "GeopJr" Paterakis</developer_name>
   <summary>Check hashes for your files</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <url type="homepage">https://hashbrown.geopjr.dev/</url>
-  <url type="bugtracker">https://github.com/GeopJr/Hashbrown/issues</url>
-  <url type="translate">https://github.com/GeopJr/Hashbrown#translations</url>
+  <url type="homepage">https://collision.geopjr.dev/</url>
+  <url type="bugtracker">https://github.com/GeopJr/Collision/issues</url>
+  <url type="translate">https://hosted.weblate.org/engage/collision/</url>
   <url type="donation">https://geopjr.dev/donate</url>
   <description>
     <p>
@@ -18,23 +18,23 @@
       to the mass increase of malicious webpages and other actors.
     </p>
     <p>
-      This tool aims to solve that. Hashbrown comes with a simple &amp; clean UI, allowing
+      This tool aims to solve that. Collision comes with a simple &amp; clean UI, allowing
       anyone, from any age and experience group, to generate, compare and verify MD5,
       SHA-256, SHA-512 and SHA-1 hashes.
     </p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://i.imgur.com/5eHMuTz.png</image>
+      <image type="source">https://i.imgur.com/n7gE5OJ.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/hoRmub0.png</image>
+      <image type="source">https://i.imgur.com/8lk9z8v.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/guTHdFR.png</image>
+      <image type="source">https://i.imgur.com/q8HniyV.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/zKD8atC.png</image>
+      <image type="source">https://i.imgur.com/UCrHcHp.png</image>
     </screenshot>
   </screenshots>
   <releases>

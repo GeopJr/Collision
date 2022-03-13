@@ -1,6 +1,6 @@
 # Returns the correct symbolic icon for feedback based on whether or not the task was successful
 
-module Hashbrown
+module Collision
   extend self
 
   DEFAULT_FEEDBACK_ICON = "dialog-password-symbolic"

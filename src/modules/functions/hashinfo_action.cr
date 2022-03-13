@@ -1,6 +1,6 @@
 # Opens url in default browser
 
-module Hashbrown
+module Collision
   extend self
 
   def hashinfo_action(app : Adw::Application, window_id : UInt32)

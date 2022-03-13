@@ -1,12 +1,12 @@
-name: hashbrown
+name: collision
 version: 2.1.0
 
 authors:
   - GeopJr <evan@geopjr.dev>
 
 targets:
-  hashbrown:
-    main: src/hashbrown.cr
+  collision:
+    main: src/collision.cr
 
 dependencies:
   libadwaita:

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/dev/geopjr/Hashbrown">
+  <gresource prefix="/dev/geopjr/Collision">
     <file compressed="true" alias="style.css">css/style.css</file>
-    <file compressed="true" preprocess="xml-stripblanks">icons/dev.geopjr.Hashbrown.svg</file>
+    <file compressed="true" preprocess="xml-stripblanks">icons/dev.geopjr.Collision.svg</file>
     <file compressed="true" preprocess="xml-stripblanks" alias="icons/scalable/status/cross-large-symbolic.svg">icons/cross-large-symbolic.svg</file>
     <file compressed="true" preprocess="xml-stripblanks" alias="icons/scalable/status/test-pass-symbolic.svg">icons/test-pass-symbolic.svg</file>
     <file compressed="true" preprocess="xml-stripblanks" alias="icons/scalable/actions/octothorp-symbolic.svg">icons/octothorp-symbolic.svg</file>
