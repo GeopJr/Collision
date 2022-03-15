@@ -8,7 +8,7 @@
       <object class="AdwStatusPage" id="checksumStatus">
         <property name="vexpand">true</property>
         <property name="hexpand">true</property>
-        <property name="title">Checksum</property>
+        <property name="title" translatable="yes">Checksum</property>
         <child>
           <object class="GtkOverlay">
             <child type="overlay">
@@ -55,7 +55,7 @@
       <object class="AdwStatusPage" id="compareStatus">
         <property name="vexpand">true</property>
         <property name="hexpand">true</property>
-        <property name="title">File</property>
+        <property name="title" translatable="yes">File</property>
         <child>
           <object class="GtkButton" id="compareBtn">
             <property name="tooltip-text" translatable="yes">Select Another File to Check Against</property>
