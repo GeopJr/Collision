@@ -15,7 +15,7 @@ module Collision
         website: "https://github.com/GeopJr/Collision",
         authors: ["Evangelos \"GeopJr\" Paterakis"],
         artists: ["Tobias Bernard", "Evangelos \"GeopJr\" Paterakis"],
-        translator_credits: THANKS,
+        translator_credits: Gettext.gettext("translator-credits"),
         license_type: Gtk::License::Bsd)
     end
   end
