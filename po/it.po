@@ -114,6 +114,11 @@ msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
+#. Name <email@domain.com> or Name https://website.example
+#: src/modules/functions/about_action.cr:18
+msgid "translator-credits"
+msgstr "musiclover382"
+
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
 msgstr "Hash"
