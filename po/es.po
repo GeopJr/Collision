@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-27 00:54+0000\n"
+"PO-Revision-Date: 2022-03-16 12:55+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/collision/"
 "collision/es/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.1-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -72,7 +72,7 @@ msgstr "Insertar un hash MD5/SHA-1/SHA-256/SHA-512"
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:30
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "Hash MD5,SHA-1,SHA-256 o SHA-512"
 
 #: data/ui/tools.ui:61
 msgid "Select Another File to Check Against"
@@ -80,7 +80,7 @@ msgstr "Seleccionar otro archivo para comparar"
 
 #: data/ui/tools.ui:87 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "Elegir archivo…"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -115,4 +115,4 @@ msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
