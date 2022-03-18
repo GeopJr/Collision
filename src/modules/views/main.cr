@@ -7,7 +7,7 @@ module Collision
 
     window = Adw::ApplicationWindow.new(app)
     window.name = "mainWindow"
-    window.title = "Collision"
+    window.title = Gettext.gettext("Collision")
     window.set_default_size(600, 460)
     window.width_request = 360
     window.height_request = 360

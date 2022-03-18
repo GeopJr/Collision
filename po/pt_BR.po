@@ -106,6 +106,13 @@ msgstr "Copiar"
 msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr "https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash_criptogr%C3%A1fica"
 
+#. Name <email@domain.com> or Name https://website.example
+#: src/modules/functions/about_action.cr:18
+msgid "translator-credits"
+msgstr ""
+"Gabriel Gian\n"
+"Rafael Fontenelle"
+
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
 msgstr ""

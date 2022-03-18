@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 23:08+0200\n"
+"POT-Creation-Date: 2022-03-18 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
+#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+msgid "Collision"
+msgstr ""
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -48,22 +53,21 @@ msgstr ""
 msgid "_Open a File"
 msgstr ""
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:107 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:106 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr ""
 
-#: src/modules/functions/file_set.cr:8
-msgid "Verify"
-msgstr ""
-
-#. Don't translate the hash names if possible.
-#: src/collision.cr:55
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+#: data/ui/tools.ui:11
+msgid "Checksum"
 msgstr ""
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:30
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
+msgstr ""
+
+#: data/ui/tools.ui:58
+msgid "File"
 msgstr ""
 
 #: data/ui/tools.ui:61
@@ -78,7 +82,6 @@ msgstr ""
 msgid "_Compare Hash Functions"
 msgstr ""
 
-# Don't translate "Collision".
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
 msgstr ""
@@ -95,16 +98,31 @@ msgstr ""
 msgid "Open..."
 msgstr ""
 
-#: data/ui/hash_list.ui:21 data/ui/hash_list.ui:41 data/ui/hash_list.ui:61
-#: data/ui/hash_list.ui:81
+#: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
+#: data/ui/hash_list.ui:74
 msgid "Copy"
 msgstr ""
 
+#. Don't translate the hash names if possible.
+#: src/collision.cr:55
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr ""
+
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/modules/prerequisites.cr:22
-msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+#: src/modules/prerequisites.cr:14
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+
+#. Name <email@domain.com> or Name https://website.example
+#: src/modules/functions/about_action.cr:18
+msgid "translator-credits"
+msgstr ""
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
+msgstr ""
+
+#: src/modules/functions/file_set.cr:8
+msgid "Verify"
 msgstr ""
