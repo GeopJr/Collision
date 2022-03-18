@@ -8,7 +8,7 @@ module Collision
     action.activate_signal.connect do
       Gtk.show_about_dialog(APP.active_window, name: "About Collision",
         application: APP,
-        program_name: "Collision",
+        program_name: Gettext.gettext("Collision"),
         version: VERSION,
         logo_icon_name: "dev.geopjr.Collision",
         copyright: "© 2021 Evangelos Paterakis",
