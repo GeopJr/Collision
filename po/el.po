@@ -22,7 +22,7 @@ msgstr ""
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Σύγκρουση"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -131,8 +131,8 @@ msgstr "Hash"
 
 #: data/ui/tools.ui:11
 msgid "Checksum"
-msgstr ""
+msgstr "Checksum"
 
 #: data/ui/tools.ui:58
 msgid "File"
-msgstr ""
+msgstr "Αρχείο"
