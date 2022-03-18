@@ -17,6 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
+#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+msgid "Collision"
+msgstr ""
+
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
 msgstr ""
@@ -48,7 +53,7 @@ msgstr ""
 msgid "_Open a File"
 msgstr "_Buka Berkas"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:107 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:106 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "Pilih Berkas"
 
@@ -78,7 +83,6 @@ msgstr ""
 msgid "_Compare Hash Functions"
 msgstr "_Bandingkan Fungsi Hash"
 
-# Don't translate "Collision".
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
 msgstr "_Tentang Collision"
@@ -95,8 +99,8 @@ msgstr "_Buka"
 msgid "Open..."
 msgstr "Buka..."
 
-#: data/ui/hash_list.ui:21 data/ui/hash_list.ui:41 data/ui/hash_list.ui:61
-#: data/ui/hash_list.ui:81
+#: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
+#: data/ui/hash_list.ui:74
 msgid "Copy"
 msgstr "Salin"
 
@@ -114,3 +118,10 @@ msgstr "Kukuh Syafaat"
 msgid "Hash"
 msgstr ""
 
+#: data/ui/tools.ui:11
+msgid "Checksum"
+msgstr ""
+
+#: data/ui/tools.ui:58
+msgid "File"
+msgstr ""
