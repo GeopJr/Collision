@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.12-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:8
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -43,8 +43,9 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"校验您下载或接收的文件以确定与您的预期相符经常是被忽略或太耗费时间的事情。与此同时，由于大量增加的恶意网页和其它攻击者，让您经手被篡改文件已经变得非常容易"
-"。"
+"校验您下载或接收的文件以确定与您的预期相符经常是被忽略或太耗费时间的事情。与"
+"此同时，由于大量增加的恶意网页和其它攻击者，让您经手被篡改文件已经变得非常容"
+"易。"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -52,8 +53,8 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"Collision 具有简单且干净的用户界面，允许任何年龄和经验的任何人用来生成、对比和校验 MD5、SHA-256、SHA-512 和 SHA-1 "
-"哈希值。"
+"Collision 具有简单且干净的用户界面，允许任何年龄和经验的任何人用来生成、对比"
+"和校验 MD5、SHA-256、SHA-512 和 SHA-1 哈希值。"
 
 #: data/ui/welcomer.ui:13
 msgid "_Open a File"
@@ -112,8 +113,10 @@ msgstr "复制"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:22
-msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -126,8 +129,8 @@ msgstr "哈希"
 
 #: data/ui/tools.ui:11
 msgid "Checksum"
-msgstr ""
+msgstr "校验和"
 
 #: data/ui/tools.ui:58
 msgid "File"
-msgstr ""
+msgstr "文件"
