@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.12-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:8
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -116,8 +116,10 @@ msgstr "Kopiëren"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:22
-msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -130,8 +132,8 @@ msgstr "Controlesom"
 
 #: data/ui/tools.ui:11
 msgid "Checksum"
-msgstr ""
+msgstr "Controlesom"
 
 #: data/ui/tools.ui:58
 msgid "File"
-msgstr ""
+msgstr "Bestand"
