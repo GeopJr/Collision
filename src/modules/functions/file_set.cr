@@ -26,8 +26,9 @@ module Collision
   end
 
   def real_path(filepath : Path) : String | Nil
-    parts = filepath.parts
-    return nil if (parts - ["run", "user", "doc"]).size == parts.size - 3
+    {% if !env("FLATPAK_ID").nil? || file_exists?("/.flatpak-info") %}
+      return nil if filepath.parents.includes?(Path["/", "run", "user"])
+    {% end %}
     filepath.dirname.to_s
   end
 
