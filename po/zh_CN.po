@@ -60,7 +60,7 @@ msgstr ""
 msgid "_Open a File"
 msgstr "_打开文件"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:106 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:128 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "选择文件"
 
@@ -74,15 +74,15 @@ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "插入 MD5/SHA-1/SHA-256/SHA-512 哈希值"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:30
+#: data/ui/tools.ui:44
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "MD5、SHA-1、SHA-256 或 SHA-512 哈希"
 
-#: data/ui/tools.ui:61
+#: data/ui/tools.ui:86
 msgid "Select Another File to Check Against"
 msgstr "选择另一个文件来对照检查"
 
-#: data/ui/tools.ui:87 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
 msgstr "选择文件…"
 
@@ -127,10 +127,10 @@ msgstr "lumingzh"
 msgid "Hash"
 msgstr "哈希"
 
-#: data/ui/tools.ui:11
+#: data/ui/tools.ui:13
 msgid "Checksum"
 msgstr "校验和"
 
-#: data/ui/tools.ui:58
+#: data/ui/tools.ui:71
 msgid "File"
 msgstr "文件"
