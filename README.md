@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="branding" width="256" src="./data/icons/dev.geopjr.Collision.svg">
+  <img alt="branding" width="192" src="./data/icons/dev.geopjr.Collision.svg">
 </p>
 <h1 align="center">Collision</h1>
 <h4 align="center">Check hashes for your files</h4>
@@ -13,7 +13,7 @@
 <p align="center">
     <img alt="screenshot" width="640" src="https://i.imgur.com/n7gE5OJ.png"><br />
     <a href='https://flathub.org/apps/details/dev.geopjr.Collision'>
-      <img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
+      <img width='192' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
     </a>
 </p>
 
@@ -56,18 +56,6 @@
 
 #
 
-## Contributors
-
-<a href="https://github.com/GeopJr/Collision/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GeopJr/Collision" />
-</a>
-
-Made with [contributors-img](https://contrib.rocks).
-
-#
-
-## Thanks
-
 <p align="center">
   <a href='https://circle.gnome.org/'>
     <img width='240' alt='Part of GNOME Circle' src='https://i.imgur.com/vyIKlW3.png'/>
@@ -78,11 +66,15 @@ Made with [contributors-img](https://contrib.rocks).
   <a href="https://hosted.weblate.org/engage/collision/">
     <img width='240' src="https://hosted.weblate.org/widgets/collision/-/collision/287x66-white.png" alt="Translation status" />
   </a><br />
-  <a href="https://hosted.weblate.org/engage/collision/">
-    <img src="https://hosted.weblate.org/widgets/collision/-/collision/horizontal-auto.svg" alt="Translation status" />
   </a>
 </p>
 
-<h3 align="center">
-  Contribute on <a href="https://hosted.weblate.org/engage/collision/">Weblate</a>!
-</h3>
+#
+
+## Contributors
+
+<a href="https://github.com/GeopJr/Collision/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=GeopJr/Collision" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
