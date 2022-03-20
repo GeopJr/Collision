@@ -3,12 +3,26 @@
   <requires lib="gtk" version="4.0"/>
   <object class="GtkBox" id="tools">
     <property name="homogeneous">1</property>
-    <property name="spacing">23</property>
+    <property name="spacing">45</property>
     <child>
-      <object class="AdwStatusPage" id="checksumStatus">
-        <property name="vexpand">true</property>
-        <property name="hexpand">true</property>
-        <property name="title" translatable="yes">Checksum</property>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">20</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label" translatable="yes">Checksum</property>
+            <property name="wrap">1</property>
+            <property name="wrap-mode">word-char</property>
+            <property name="justify">center</property>
+            <property name="vexpand">1</property>
+            <property name="valign">center</property>
+            <style>
+              <class name="title"/>
+              <class name="title-1"/>
+              <class name="compact-title"/>
+            </style>
+          </object>
+        </child>
         <child>
           <object class="GtkOverlay">
             <child type="overlay">
@@ -23,7 +37,7 @@
                 <property name="visible">0</property>
               </object>
             </child>
-            <child>
+            <property name="child">
               <object class="GtkOverlay" id="verifyOverlay">
                 <child type="overlay">
                   <object class="GtkLabel" id="verifyOverlayLabel">
@@ -43,19 +57,30 @@
                   </object>
                 </child>
               </object>
-            </child>
+            </property>
           </object>
         </child>
-        <style>
-          <class name="compact"/>
-        </style>
       </object>
     </child>
     <child>
-      <object class="AdwStatusPage" id="compareStatus">
-        <property name="vexpand">true</property>
-        <property name="hexpand">true</property>
-        <property name="title" translatable="yes">File</property>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">20</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label" translatable="yes">File</property>
+            <property name="wrap">1</property>
+            <property name="wrap-mode">word-char</property>
+            <property name="justify">center</property>
+            <property name="vexpand">1</property>
+            <property name="valign">center</property>
+            <style>
+              <class name="title"/>
+              <class name="title-1"/>
+              <class name="compact-title"/>
+            </style>
+          </object>
+        </child>
         <child>
           <object class="GtkButton" id="compareBtn">
             <property name="tooltip-text" translatable="yes">Select Another File to Check Against</property>
@@ -96,9 +121,6 @@
             </style>
           </object>
         </child>
-        <style>
-          <class name="compact"/>
-        </style>
       </object>
     </child>
   </object>
