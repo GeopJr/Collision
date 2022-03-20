@@ -25,9 +25,15 @@ module Collision
     WINDOW_BOX.append(FILE_SET_SPINNER)
   end
 
+  def real_path(filepath : Path) : String | Nil
+    parts = filepath.parts
+    return nil if (parts - ["run", "user", "doc"]).size == parts.size - 3
+    filepath.dirname.to_s
+  end
+
   def set_file(filepath : Path)
     FILE_INFO.title = filepath.basename.to_s
-    FILE_INFO.description = filepath.dirname.to_s
+    FILE_INFO.description = real_path(filepath)
 
     FILE_SET_SPINNER.vexpand = true
     FILE_SET_SPINNER.visible = false
