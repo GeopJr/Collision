@@ -60,14 +60,9 @@ module Collision
   end
 
   def startup(app : Adw::Application)
-    [CHECKSUM_PAGE.first_child, COMPARE_PAGE.first_child].each do |widget|
-      next if widget.nil?
-      Gtk::ScrolledWindow.cast(widget).vscrollbar_policy = Gtk::PolicyType::Never
-    end
-
     BOTTOM_TABS.notify_signal["reveal"].connect do
       TOOLS_BOX.orientation = BOTTOM_TABS.reveal ? Gtk::Orientation::Vertical : Gtk::Orientation::Horizontal
-      TOOLS_BOX.spacing = BOTTOM_TABS.reveal ? 0 : 23
+      TOOLS_BOX.spacing = BOTTOM_TABS.reveal ? 32 : 45
     end
 
     TOOL_VERIFY_INPUT.remove_css_class("view")

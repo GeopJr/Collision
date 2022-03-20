@@ -55,9 +55,6 @@ module Collision
     tooltip_text: Gettext.gettext("Insert a MD5/SHA-1/SHA-256/SHA-512 Hash")
   )
 
-  CHECKSUM_PAGE = Adw::StatusPage.cast(B_TL["checksumStatus"])
-  COMPARE_PAGE  = Adw::StatusPage.cast(B_TL["compareStatus"])
-
   TOOLS_BOX                        = Gtk::Box.cast(B_TL["tools"])
   TOOL_VERIFY_OVERLAY              = Gtk::Overlay.cast(B_TL["verifyOverlay"])
   TOOL_VERIFY_OVERLAY_LABEL        = Gtk::Label.cast(B_TL["verifyOverlayLabel"])
