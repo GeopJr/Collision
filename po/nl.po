@@ -63,7 +63,7 @@ msgstr ""
 msgid "_Open a File"
 msgstr "_Bestand openen"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:106 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:128 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "Kies een bestand"
 
@@ -77,15 +77,15 @@ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Voer hier een md5-, sha-1-, sha-256- of sha-512-controlesom in"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:30
+#: data/ui/tools.ui:44
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "Md5-, sha-1-, sha-256- of sha-512-controlesom"
 
-#: data/ui/tools.ui:61
+#: data/ui/tools.ui:86
 msgid "Select Another File to Check Against"
 msgstr "Kies het te vergelijken bestand"
 
-#: data/ui/tools.ui:87 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
 msgstr "Kies een bestand…"
 
@@ -130,10 +130,10 @@ msgstr "Heimen Stoffels"
 msgid "Hash"
 msgstr "Controlesom"
 
-#: data/ui/tools.ui:11
+#: data/ui/tools.ui:13
 msgid "Checksum"
 msgstr "Controlesom"
 
-#: data/ui/tools.ui:58
+#: data/ui/tools.ui:71
 msgid "File"
 msgstr "Bestand"

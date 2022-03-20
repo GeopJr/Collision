@@ -63,7 +63,7 @@ msgstr ""
 msgid "_Open a File"
 msgstr "_Apri un file"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:106 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:128 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "Apri file"
 
@@ -76,15 +76,15 @@ msgstr "Verifica"
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Inserire una hash MD5/SHA-1/SHA-256/SHA-512"
 
-#: data/ui/tools.ui:30
+#: data/ui/tools.ui:44
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "Hash MD5, SHA-1, SHA-256 o SHA-512"
 
-#: data/ui/tools.ui:61
+#: data/ui/tools.ui:86
 msgid "Select Another File to Check Against"
 msgstr "Seleziona un altro file da confrontare"
 
-#: data/ui/tools.ui:87 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
 msgstr "Scegli file..."
 
@@ -128,10 +128,10 @@ msgstr "musiclover382"
 msgid "Hash"
 msgstr "Hash"
 
-#: data/ui/tools.ui:11
+#: data/ui/tools.ui:13
 msgid "Checksum"
 msgstr ""
 
-#: data/ui/tools.ui:58
+#: data/ui/tools.ui:71
 msgid "File"
 msgstr ""

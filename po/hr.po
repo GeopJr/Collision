@@ -62,7 +62,7 @@ msgstr ""
 msgid "_Open a File"
 msgstr "__Otvori datoteku"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:106 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:128 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "Odaberi datoteku"
 
@@ -76,15 +76,15 @@ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Umetni MD5/SHA-1/SHA-256/SHA-512 hash"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:30
+#: data/ui/tools.ui:44
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr ""
 
-#: data/ui/tools.ui:61
+#: data/ui/tools.ui:86
 msgid "Select Another File to Check Against"
 msgstr "Odaberi jednu drugu datoteku za usporedbu"
 
-#: data/ui/tools.ui:87 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
 msgstr ""
 
@@ -127,10 +127,10 @@ msgstr "Milo Ivir"
 msgid "Hash"
 msgstr ""
 
-#: data/ui/tools.ui:11
+#: data/ui/tools.ui:13
 msgid "Checksum"
 msgstr ""
 
-#: data/ui/tools.ui:58
+#: data/ui/tools.ui:71
 msgid "File"
 msgstr ""
