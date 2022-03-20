@@ -46,16 +46,6 @@
 
 #
 
-## Sponsors
-
-<div align="center">
-
-[![GeopJr Sponsors](https://cdn.jsdelivr.net/gh/GeopJr/GeopJr@main/sponsors.svg)](https://github.com/sponsors/GeopJr)
-
-</div>
-
-#
-
 <p align="center">
   <a href='https://circle.gnome.org/'>
     <img width='240' alt='Part of GNOME Circle' src='https://i.imgur.com/vyIKlW3.png'/>
@@ -68,6 +58,16 @@
   </a><br />
   </a>
 </p>
+
+#
+
+## Sponsors
+
+<div align="center">
+
+[![GeopJr Sponsors](https://cdn.jsdelivr.net/gh/GeopJr/GeopJr@main/sponsors.svg)](https://github.com/sponsors/GeopJr)
+
+</div>
 
 #
 
