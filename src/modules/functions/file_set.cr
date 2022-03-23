@@ -32,7 +32,9 @@ module Collision
     filepath.dirname.to_s
   end
 
-  def set_file(filepath : Path)
+  def set_file(filepath : Path, window : Adw::ApplicationWindow? = nil)
+    LOGGER.debug { "File set: #{filepath.to_s}" }
+
     FILE_INFO.title = filepath.basename.to_s
     FILE_INFO.description = real_path(filepath)
 
@@ -40,7 +42,6 @@ module Collision
     FILE_SET_SPINNER.visible = false
     FILE_SET_SPINNER.width_request = 32
     FILE_SET_SPINNER.height_request = 32
-    FILE_SET_SPINNER.start
 
     OPEN_FILE_BUTTON.visible = false
     FILE_INFO.visible = false
@@ -55,6 +56,7 @@ module Collision
       BOTTOM_TABS.visible = true
       FILE_SET_SPINNER.visible = false
       HEADER_TITLE.view_switcher_enabled = true
+      window.queue_draw if window
     end
   end
 end

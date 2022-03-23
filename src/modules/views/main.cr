@@ -30,7 +30,7 @@ module Collision
       next unless response == -3
       Collision.reset_feedback
 
-      set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
+      set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!, window)
     end
 
     OPEN_FILE_BUTTON.clicked_signal.connect do
@@ -45,7 +45,7 @@ module Collision
       end
     end
 
-    Collision::Welcomer.init
+    Collision::Welcomer.init(window)
     Collision::Compare.init
     Collision::Verify.init
 
