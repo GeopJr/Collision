@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-03-13 22:02+0000\n"
+"PO-Revision-Date: 2022-03-24 09:54+0000\n"
 "Last-Translator: musiclover382 <mattiagiovanni.borda@icloud.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/collision/"
 "collision/it/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:8
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -130,8 +130,8 @@ msgstr "Hash"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "Checksum"
 
 #: data/ui/tools.ui:71
 msgid "File"
-msgstr ""
+msgstr "File"
