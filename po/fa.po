@@ -1,15 +1,15 @@
 # Persian translation for dev.geopjr.Collision.
 # Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# MohammadSaleh Kamyab <mskf1383@protonmail.com>, 2021.
+# MohammadSaleh Kamyab <mskf1383@protonmail.com>, 2021, 2022.
 # MSKF <walkingdeadstudio@outlook.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-03-02 08:57+0000\n"
-"Last-Translator: MSKF <walkingdeadstudio@outlook.com>\n"
+"PO-Revision-Date: 2022-03-26 13:08+0000\n"
+"Last-Translator: MohammadSaleh Kamyab <mskf1383@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/collision/"
 "collision/fa/>\n"
 "Language: fa\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.11.1-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:8
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "تصادم"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -55,17 +55,17 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"هدف این ابزار حل آن است. Collision همراه با رابط کاربری ساده و تمیز، همه را، "
-"از هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های "
-"‏MD5، ‏SHA-356، ‏SHA-512 و SHA-1 می‌سازد."
+"هدف این ابزار حل آن است. تصادم، همراه با رابط کاربری ساده و تمیز، همه را، از "
+"هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏MD5،"
+" ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
 
 #: data/ui/welcomer.ui:13
 msgid "_Open a File"
-msgstr "باز کردن یک _پرونده"
+msgstr "گشودن یک _پرونده"
 
 #: data/ui/welcomer.ui:26 data/ui/tools.ui:128 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr "گزینش پرونده"
+msgstr "انتخاب یک پرونده"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
@@ -79,7 +79,7 @@ msgstr "افزودن یک هش MD5/SHA-1/SHA-256/SHA-512"
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:44
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "هش ‏MD5، ‏SHA-1،‏ SHA-256 یا SHA-512"
 
 #: data/ui/tools.ui:86
 msgid "Select Another File to Check Against"
@@ -87,7 +87,7 @@ msgstr "گزینش یک پروندهٔ دیگر برای بررسی متقابل
 
 #: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "انتخاب پرونده…"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -95,7 +95,7 @@ msgstr "مقایسهٔ _توابع هش"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_دربارهٔ Collision"
+msgstr "_دربارهٔ تصادم"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
@@ -103,11 +103,11 @@ msgstr "فهرست"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr "_باز کردن"
+msgstr "_گشودن"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
-msgstr "باز کردن..."
+msgstr "گشودن..."
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
@@ -122,13 +122,11 @@ msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr ""
-"MSKF\n"
-"MohammadSaleh Kamyab"
+msgstr "محمدصالح کامیاب <mskf1383@protonmail.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "هش"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
@@ -136,4 +134,4 @@ msgstr ""
 
 #: data/ui/tools.ui:71
 msgid "File"
-msgstr ""
+msgstr "پرونده"
