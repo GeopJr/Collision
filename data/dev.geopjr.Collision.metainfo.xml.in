@@ -50,4 +50,5 @@
     <release version="1.0.1" date="2021-02-11" />
   </releases>
   <content_rating type="oars-1.1" />
+  <translation type="gettext">dev.geopjr.Collision</translation>
 </component>
