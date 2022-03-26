@@ -19,11 +19,12 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.11.1-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:8 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Kolizija"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -33,6 +34,7 @@ msgstr "Hash generator"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
+#: data/ui/welcomer.ui:9
 msgid "Check hashes for your files"
 msgstr "Provjeri hasheve tvojih datoteka"
 
@@ -44,9 +46,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"Provjeravanje autentičnosti preuzete ili primljene datoteke često se zanemaruje ili "
-"oduzima previše vremena. Istovremeno je postalo sve jednostavnije manipulirati "
-"datoteke zbog masovnog povećanja zlonamjernih web-stranica i drugih aktera."
+"Provjeravanje autentičnosti preuzete ili primljene datoteke često se "
+"zanemaruje ili oduzima previše vremena. Istovremeno je postalo sve "
+"jednostavnije manipulirati datoteke zbog masovnog povećanja zlonamjernih web-"
+"stranica i drugih aktera."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -54,15 +57,16 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"Cilj ovog alata je riješiti taj problem. Collision sadrźi jednostavno i čisto "
-"korisničko sučelje koje omogućuje svima, bez obzira na dob i iskustvo, generirati, "
-"usporediti i provjeriti MD5, SHA-256, SHA-512 i SHA-1 hasheve."
+"Cilj ovog alata je riješiti taj problem. Collision sadrźi jednostavno i "
+"čisto korisničko sučelje koje omogućuje svima, bez obzira na dob i iskustvo, "
+"generirati, usporediti i provjeriti MD5, SHA-256, SHA-512 i SHA-1 hasheve."
 
-#: data/ui/welcomer.ui:12
+#: data/ui/welcomer.ui:12 data/ui/welcomer.ui:13
 msgid "_Open a File"
 msgstr "__Otvori datoteku"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:128
 msgid "Choose a File"
 msgstr "Odaberi datoteku"
 
@@ -71,22 +75,22 @@ msgid "Verify"
 msgstr "Provjeri"
 
 #. Don't translate the hash names if possible.
-#: src/collision.cr:69
+#: src/collision.cr:69 src/collision.cr:55
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Umetni MD5/SHA-1/SHA-256/SHA-512 hash"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:43
+#: data/ui/tools.ui:44
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "MD5,SHA-1,SHA-256 ili SHA-512 Hash"
 
-#: data/ui/tools.ui:84
+#: data/ui/tools.ui:84 data/ui/tools.ui:86
 msgid "Select Another File to Check Against"
 msgstr "Odaberi jednu drugu datoteku za usporedbu"
 
-#: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "Odaberi datoteku …"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -115,8 +119,10 @@ msgstr "Kopiraj"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:22
-msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -125,12 +131,12 @@ msgstr "Milo Ivir"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "Kontrolni zbroj"
 
-#: data/ui/tools.ui:70
+#: data/ui/tools.ui:71
 msgid "File"
-msgstr ""
+msgstr "Datoteka"
