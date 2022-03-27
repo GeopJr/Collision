@@ -61,7 +61,7 @@
         {
           "type": "git",
           "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-          "tag": "1.0.2"
+          "tag": "1.1.0"
         }
       ]
     },
@@ -131,7 +131,7 @@
         {
           "type": "git",
           "url": "https://github.com/geopjr/libadwaita.cr.git",
-          "commit": "7f79b18f9b7701e9900b73f3de63df68ab6f4660",
+          "commit": "984d6f93789f0e2f6bc1a50539ef884f2c82cdaf",
           "dest": "lib/libadwaita"
         },
         {
