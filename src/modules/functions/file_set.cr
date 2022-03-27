@@ -32,7 +32,7 @@ module Collision
     filepath.dirname.to_s
   end
 
-  def set_file(filepath : Path, window : Adw::ApplicationWindow? = nil)
+  def set_file(filepath : Path)
     LOGGER.debug { "File set: #{filepath.to_s}" }
 
     FILE_INFO.title = filepath.basename.to_s
@@ -46,12 +46,12 @@ module Collision
 
     LOGGER.debug { "Begin generating hashes" }
     Collision.generate_hashes(filepath.to_s) do
+      sleep 500.milliseconds
       OPEN_FILE_BUTTON.visible = true
       FILE_INFO.visible = true
       BOTTOM_TABS.visible = true
       SPINNER.visible = false
       HEADER_TITLE.view_switcher_enabled = true
-      window.queue_draw if window
     end
   end
 end
