@@ -2,6 +2,7 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <object class="AdwStatusPage" id="welcomer">
+    <property name="vexpand">1</property>
     <property name="icon-name">dev.geopjr.Collision</property>
     <property name="title" translatable="yes">Collision</property>
     <property name="description" translatable="yes">Check hashes for your files</property>
