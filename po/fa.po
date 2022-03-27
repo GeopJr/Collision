@@ -24,7 +24,7 @@ msgstr ""
 #: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
 #: src/modules/views/main.cr:10 data/ui/welcomer.ui:8
 msgid "Collision"
-msgstr "تصادم"
+msgstr "انطباق"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -57,9 +57,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"هدف این ابزار حل آن است. تصادم، همراه با رابط کاربری ساده و تمیز، همه را، از "
-"هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏MD5، ‏"
-"SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
+"هدف این ابزار حل آن است. انطباق، همراه با رابط کاربری ساده و تمیز، همه را، "
+"از هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏"
+"MD5، ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
 
 #: data/ui/welcomer.ui:12 data/ui/welcomer.ui:13
 msgid "_Open a File"
@@ -99,7 +99,7 @@ msgstr "مقایسهٔ _توابع هش"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_دربارهٔ تصادم"
+msgstr "_دربارهٔ انطباق"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
@@ -136,7 +136,7 @@ msgstr "هش"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "جمع‌آزما"
 
 #: data/ui/tools.ui:70 data/ui/tools.ui:71
 msgid "File"
