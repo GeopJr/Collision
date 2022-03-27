@@ -11,7 +11,6 @@ module Collision
         next unless response == -3
         LOGGER.debug { "Begin comparing tool" }
 
-        TOOL_COMPARE_BUTTON_SPINNER.start
         TOOL_COMPARE_BUTTON_SPINNER.visible = true
         TOOL_COMPARE_BUTTON_IMAGE.visible = false
         TOOL_COMPARE_BUTTON.remove_css_class("success")
@@ -22,6 +21,7 @@ module Collision
           compareFileSHA256 = Collision.calculate_hash("sha256", TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.not_nil!.path.to_s)
           result = CLIPBOARD_HASH["SHA256"] == compareFileSHA256
 
+          sleep 500.milliseconds
           TOOL_COMPARE_BUTTON_SPINNER.visible = false
           TOOL_COMPARE_BUTTON_IMAGE.visible = true
           TOOL_COMPARE_BUTTON_IMAGE.icon_name = Collision.icon(result)

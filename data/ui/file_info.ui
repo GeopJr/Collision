@@ -2,8 +2,7 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <object class="AdwStatusPage" id="fileInfo">
-    <property name="vexpand">true</property>
-    <property name="hexpand">true</property>
+    <property name="vexpand">1</property>
     <child>
       <object class="AdwClamp">
         <property name="tightening-threshold">100</property>

@@ -1,5 +1,5 @@
 name: collision
-version: 3.0.0
+version: 3.0.1
 
 authors:
   - GeopJr <evan@geopjr.dev>
@@ -11,7 +11,7 @@ targets:
 dependencies:
   libadwaita:
     github: GeopJr/libadwaita.cr
-    commit: 7f79b18f9b7701e9900b73f3de63df68ab6f4660
+    commit: 984d6f93789f0e2f6bc1a50539ef884f2c82cdaf
   compiled_license:
     github: elorest/compiled_license
     version: ~> 1.2.1

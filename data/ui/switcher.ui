@@ -6,7 +6,6 @@
     <property name="title" translatable="yes">Collision</property>
   </object>
   <object class="AdwViewStack" id="stack">
-    <property name="vexpand">True</property>
     <property name="vhomogeneous">False</property>
     <property name="hhomogeneous">False</property>
   </object>

@@ -30,42 +30,6 @@
       ]
     },
     {
-      "name": "libsass",
-      "buildsystem": "meson",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/lazka/libsass.git",
-          "branch": "meson",
-          "commit": "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
-        }
-      ]
-    },
-    {
-      "name": "sassc",
-      "buildsystem": "meson",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/lazka/sassc.git",
-          "branch": "meson",
-          "commit": "82803377c33247265d779af034eceb5949e78354"
-        }
-      ]
-    },
-    {
-      "name": "libadwaita",
-      "buildsystem": "meson",
-      "config-opts": ["-Dexamples=false", "-Dtests=false"],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-          "tag": "1.0.2"
-        }
-      ]
-    },
-    {
       "name": "collision",
       "buildsystem": "simple",
       "build-commands": [
@@ -131,7 +95,7 @@
         {
           "type": "git",
           "url": "https://github.com/geopjr/libadwaita.cr.git",
-          "commit": "7f79b18f9b7701e9900b73f3de63df68ab6f4660",
+          "commit": "984d6f93789f0e2f6bc1a50539ef884f2c82cdaf",
           "dest": "lib/libadwaita"
         },
         {

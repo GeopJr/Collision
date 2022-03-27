@@ -14,7 +14,6 @@
             <property name="wrap">1</property>
             <property name="wrap-mode">word-char</property>
             <property name="justify">center</property>
-            <property name="vexpand">1</property>
             <property name="valign">center</property>
             <style>
               <class name="title"/>
@@ -72,7 +71,6 @@
             <property name="wrap">1</property>
             <property name="wrap-mode">word-char</property>
             <property name="justify">center</property>
-            <property name="vexpand">1</property>
             <property name="valign">center</property>
             <style>
               <class name="title"/>
@@ -87,7 +85,7 @@
             <property name="height-request">125</property>
             <property name="use-underline">1</property>
             <child>
-              <object class="GtkBox">
+              <object class="GtkBox" id="compareBtnFeedback">
                 <property name="orientation">vertical</property>
                 <property name="halign">center</property>
                 <property name="spacing">12</property>
@@ -96,15 +94,6 @@
                   <object class="GtkImage" id="compareBtnImage">
                     <property name="pixel-size">36</property>
                     <property name="icon-name">paper-symbolic</property>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkSpinner" id="spinner">
-                    <property name="spinning">1</property>
-                    <property name="width-request">36</property>
-                    <property name="height-request">36</property>
-                    <property name="visible">0</property>
-                    <property name="halign">center</property>
                   </object>
                 </child>
                 <child>

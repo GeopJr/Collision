@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Weblate 4.12-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:8
+#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Colisión"
@@ -31,7 +31,7 @@ msgstr "Generador de hashes"
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
-#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:9
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
 msgstr "Comprobar los hashes de sus archivos"
 
@@ -60,11 +60,11 @@ msgstr ""
 "edad y grupo de experiencia, generar, comparar y verificar hashes MD5, "
 "SHA-256, SHA-512 y SHA-1."
 
-#: data/ui/welcomer.ui:13
+#: data/ui/welcomer.ui:12
 msgid "_Open a File"
 msgstr "_Abrir un archivo"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:128 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "Elegir un archivo"
 
@@ -73,20 +73,20 @@ msgid "Verify"
 msgstr "Verificar"
 
 #. Don't translate the hash names if possible.
-#: src/collision.cr:55
+#: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Insertar un hash MD5/SHA-1/SHA-256/SHA-512"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:44
+#: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "Hash MD5,SHA-1,SHA-256 o SHA-512"
 
-#: data/ui/tools.ui:86
+#: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
 msgstr "Seleccionar otro archivo para comparar"
 
-#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
 msgstr "Elegir archivo…"
 
@@ -135,6 +135,6 @@ msgstr "Hash"
 msgid "Checksum"
 msgstr "Suma de verificación"
 
-#: data/ui/tools.ui:71
+#: data/ui/tools.ui:70
 msgid "File"
 msgstr "Archivo"

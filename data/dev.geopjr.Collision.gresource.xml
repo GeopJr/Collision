@@ -11,7 +11,6 @@
     <file compressed="true" preprocess="xml-stripblanks">ui/hash_list.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/header_left.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/header_right.ui</file>
-    <file compressed="true" preprocess="xml-stripblanks">ui/spinner.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/switcher.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/tools.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/welcomer.ui</file>

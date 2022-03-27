@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 4.11-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:8
+#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Σύγκρουση"
@@ -32,7 +32,7 @@ msgstr "Γεννήτρια Hash"
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
-#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:9
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
 msgstr "Ελέγξτε hashes για τα αρχεία σας"
 
@@ -61,11 +61,11 @@ msgstr ""
 "και ομάδα εμπειρίας, να δημιουργήσει, να συγκρίνει και να επαληθεύσει MD5, "
 "SHA-256, SHA-512 και SHA-1 hashes."
 
-#: data/ui/welcomer.ui:13
+#: data/ui/welcomer.ui:12
 msgid "_Open a File"
 msgstr "_Ανοίξτε ένα Αρχείο"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:128 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "Επιλέξτε ένα Αρχείο"
 
@@ -74,20 +74,20 @@ msgid "Verify"
 msgstr "Επαληθεύστε"
 
 #. Don't translate the hash names if possible.
-#: src/collision.cr:55
+#: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Εισάγετε ένα MD5/SHA-1/SHA-256/SHA-512 Hash"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:44
+#: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "MD5,SHA-1,SHA-256 ή SHA-512 Hash"
 
-#: data/ui/tools.ui:86
+#: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
 msgstr "Επιλέξτε ένα Άλλο Αρχείο για Έλεγχο"
 
-#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
 msgstr "Επιλέξτε Αρχείο..."
 
@@ -134,6 +134,6 @@ msgstr "Hash"
 msgid "Checksum"
 msgstr "Checksum"
 
-#: data/ui/tools.ui:71
+#: data/ui/tools.ui:70
 msgid "File"
 msgstr "Αρχείο"

@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Weblate 4.12-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:8
+#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Collision"
@@ -31,7 +31,7 @@ msgstr "哈希值生成器"
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
-#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:9
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
 msgstr "检查您文件的哈希值"
 
@@ -56,11 +56,11 @@ msgstr ""
 "Collision 具有简单且干净的用户界面，允许任何年龄和经验的任何人用来生成、对比"
 "和校验 MD5、SHA-256、SHA-512 和 SHA-1 哈希值。"
 
-#: data/ui/welcomer.ui:13
+#: data/ui/welcomer.ui:12
 msgid "_Open a File"
 msgstr "_打开文件"
 
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:128 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
 msgstr "选择文件"
 
@@ -69,20 +69,20 @@ msgid "Verify"
 msgstr "校验"
 
 #. Don't translate the hash names if possible.
-#: src/collision.cr:55
+#: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "插入 MD5/SHA-1/SHA-256/SHA-512 哈希值"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:44
+#: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "MD5、SHA-1、SHA-256 或 SHA-512 哈希"
 
-#: data/ui/tools.ui:86
+#: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
 msgstr "选择另一个文件来对照检查"
 
-#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
 msgstr "选择文件…"
 
@@ -131,6 +131,6 @@ msgstr "哈希"
 msgid "Checksum"
 msgstr "校验和"
 
-#: data/ui/tools.ui:71
+#: data/ui/tools.ui:70
 msgid "File"
 msgstr "文件"

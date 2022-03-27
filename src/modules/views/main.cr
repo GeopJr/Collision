@@ -30,7 +30,7 @@ module Collision
       next unless response == -3
       Collision.reset_feedback
 
-      set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!, window)
+      set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
     end
 
     OPEN_FILE_BUTTON.clicked_signal.connect do
@@ -45,7 +45,7 @@ module Collision
       end
     end
 
-    Collision::Welcomer.init(window)
+    Collision::Welcomer.init
     Collision::Compare.init
     Collision::Verify.init
 
@@ -65,6 +65,8 @@ module Collision
       TOOLS_BOX.spacing = BOTTOM_TABS.reveal ? 32 : 45
     end
 
+    TOOL_COMPARE_BUTTON_SPINNER.visible = false
+    TOOL_COMPARE_BUTTON_FEEDBACK.prepend(TOOL_COMPARE_BUTTON_SPINNER)
     TOOL_VERIFY_INPUT.remove_css_class("view")
     TOOL_VERIFY_INPUT.cursor_visible = false
     TOOL_VERIFY_INPUT.accepts_tab = false
