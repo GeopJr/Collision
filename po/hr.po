@@ -19,10 +19,9 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.11.1-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6
-#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
-#: data/ui/welcomer.ui:8 src/modules/functions/about_action.cr:11
-#: src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
+#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
+#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Kolizija"
 
@@ -34,7 +33,6 @@ msgstr "Hash generator"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
-#: data/ui/welcomer.ui:9
 msgid "Check hashes for your files"
 msgstr "Provjeri hasheve tvojih datoteka"
 
@@ -61,7 +59,7 @@ msgstr ""
 "čisto korisničko sučelje koje omogućuje svima, bez obzira na dob i iskustvo, "
 "generirati, usporediti i provjeriti MD5, SHA-256, SHA-512 i SHA-1 hasheve."
 
-#: data/ui/welcomer.ui:12 data/ui/welcomer.ui:13
+#: data/ui/welcomer.ui:12
 msgid "_Open a File"
 msgstr "__Otvori datoteku"
 
@@ -75,20 +73,20 @@ msgid "Verify"
 msgstr "Provjeri"
 
 #. Don't translate the hash names if possible.
-#: src/collision.cr:69 src/collision.cr:55
+#: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "Umetni MD5/SHA-1/SHA-256/SHA-512 hash"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:44
+#: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "MD5,SHA-1,SHA-256 ili SHA-512 Hash"
 
-#: data/ui/tools.ui:84 data/ui/tools.ui:86
+#: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
 msgstr "Odaberi jednu drugu datoteku za usporedbu"
 
-#: data/ui/tools.ui:132 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
 msgstr "Odaberi datoteku …"
 
@@ -137,6 +135,6 @@ msgstr "Hash"
 msgid "Checksum"
 msgstr "Kontrolni zbroj"
 
-#: data/ui/tools.ui:71
+#: data/ui/tools.ui:70
 msgid "File"
 msgstr "Datoteka"
