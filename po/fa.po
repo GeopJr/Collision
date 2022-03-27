@@ -23,11 +23,11 @@ msgstr ""
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr "تصادم"
+msgstr "انطباق"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "مولد هش"
+msgstr "مولّد هش"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
@@ -44,10 +44,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"اعتبارسنجی این که پرونده‌ای که بارگیری یا دریافت کرده‌اید، همانی است که "
-"انتظار دارید، معمولاً نادیده گرفته می‌شود یا بسیار زمان‌بر است. همزمان، دست‌"
-"یابی به پرونده‌ای که ناشی از افزایش صفحات وب مخرب و عوامل دیگر، دست‌کاری شده "
-"است، بسیار آسان می‌شود."
+"اعتبارسنجی این که پرونده‌ای که بارگیری یا دریافت کرده‌اید، همانی است که انتظار "
+"دارید، معمولاً نادیده گرفته می‌شود یا بسیار زمان‌بر است. همزمان، دست‌یابی به "
+"پرونده‌ای که ناشی از افزایش صفحات وب مخرب و عوامل دیگر، دست‌کاری شده است، "
+"بسیار آسان می‌شود."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -55,15 +55,16 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"هدف این ابزار حل آن است. تصادم، همراه با رابط کاربری ساده و تمیز، همه را، از "
-"هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏MD5،"
-" ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
+"هدف این ابزار حل آن است. انطباق، همراه با رابط کاربری ساده و تمیز، همه را، "
+"از هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏"
+"MD5، ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
 msgstr "گشودن یک _پرونده"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:128
 msgid "Choose a File"
 msgstr "انتخاب یک پرونده"
 
@@ -95,7 +96,7 @@ msgstr "مقایسهٔ _توابع هش"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_دربارهٔ تصادم"
+msgstr "_دربارهٔ انطباق"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
@@ -116,8 +117,10 @@ msgstr "رونوشت"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:22
-msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -130,7 +133,7 @@ msgstr "هش"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "جمع‌آزما"
 
 #: data/ui/tools.ui:70
 msgid "File"
