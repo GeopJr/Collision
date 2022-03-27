@@ -19,20 +19,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.12-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10 data/ui/welcomer.ui:8
 msgid "Collision"
 msgstr "تصادم"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "مولد هش"
+msgstr "مولّد هش"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
+#: data/ui/welcomer.ui:9
 msgid "Check hashes for your files"
 msgstr "هش پرونده‌هایتان را بررسی کنید"
 
@@ -44,10 +46,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"اعتبارسنجی این که پرونده‌ای که بارگیری یا دریافت کرده‌اید، همانی است که "
-"انتظار دارید، معمولاً نادیده گرفته می‌شود یا بسیار زمان‌بر است. همزمان، دست‌"
-"یابی به پرونده‌ای که ناشی از افزایش صفحات وب مخرب و عوامل دیگر، دست‌کاری شده "
-"است، بسیار آسان می‌شود."
+"اعتبارسنجی این که پرونده‌ای که بارگیری یا دریافت کرده‌اید، همانی است که انتظار "
+"دارید، معمولاً نادیده گرفته می‌شود یا بسیار زمان‌بر است. همزمان، دست‌یابی به "
+"پرونده‌ای که ناشی از افزایش صفحات وب مخرب و عوامل دیگر، دست‌کاری شده است، "
+"بسیار آسان می‌شود."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -56,14 +58,15 @@ msgid ""
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
 "هدف این ابزار حل آن است. تصادم، همراه با رابط کاربری ساده و تمیز، همه را، از "
-"هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏MD5،"
-" ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
+"هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏MD5، ‏"
+"SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
 
-#: data/ui/welcomer.ui:12
+#: data/ui/welcomer.ui:12 data/ui/welcomer.ui:13
 msgid "_Open a File"
 msgstr "گشودن یک _پرونده"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
+#: data/ui/welcomer.ui:26 data/ui/tools.ui:128
 msgid "Choose a File"
 msgstr "انتخاب یک پرونده"
 
@@ -72,20 +75,21 @@ msgid "Verify"
 msgstr "اعتبارسنجی"
 
 #. Don't translate the hash names if possible.
-#: src/collision.cr:69
+#: src/collision.cr:69 src/collision.cr:55
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "افزودن یک هش MD5/SHA-1/SHA-256/SHA-512"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:43
+#: data/ui/tools.ui:43 data/ui/tools.ui:44
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "هش ‏MD5، ‏SHA-1،‏ SHA-256 یا SHA-512"
 
-#: data/ui/tools.ui:84
+#: data/ui/tools.ui:84 data/ui/tools.ui:86
 msgid "Select Another File to Check Against"
 msgstr "گزینش یک پروندهٔ دیگر برای بررسی متقابل"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:132
 msgid "Choose File..."
 msgstr "انتخاب پرونده…"
 
@@ -116,8 +120,10 @@ msgstr "رونوشت"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:22
-msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -132,6 +138,6 @@ msgstr "هش"
 msgid "Checksum"
 msgstr ""
 
-#: data/ui/tools.ui:70
+#: data/ui/tools.ui:70 data/ui/tools.ui:71
 msgid "File"
 msgstr "پرونده"
