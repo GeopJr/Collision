@@ -22,7 +22,7 @@ module Collision
 
     WINDOW_BOX.append(FILE_INFO)
     WINDOW_BOX.append(BOTTOM_TABS)
-    WINDOW_BOX.append(FILE_SET_SPINNER)
+    WINDOW_BOX.append(SPINNER)
   end
 
   def real_path(filepath : Path) : String | Nil
@@ -38,15 +38,10 @@ module Collision
     FILE_INFO.title = filepath.basename.to_s
     FILE_INFO.description = real_path(filepath)
 
-    FILE_SET_SPINNER.vexpand = true
-    FILE_SET_SPINNER.visible = false
-    FILE_SET_SPINNER.width_request = 32
-    FILE_SET_SPINNER.height_request = 32
-
     OPEN_FILE_BUTTON.visible = false
     FILE_INFO.visible = false
     BOTTOM_TABS.visible = false
-    FILE_SET_SPINNER.visible = true
+    SPINNER.visible = true
     HEADER_TITLE.view_switcher_enabled = false
 
     LOGGER.debug { "Begin generating hashes" }
@@ -54,7 +49,7 @@ module Collision
       OPEN_FILE_BUTTON.visible = true
       FILE_INFO.visible = true
       BOTTOM_TABS.visible = true
-      FILE_SET_SPINNER.visible = false
+      SPINNER.visible = false
       HEADER_TITLE.view_switcher_enabled = true
       window.queue_draw if window
     end

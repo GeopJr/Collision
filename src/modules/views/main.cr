@@ -65,6 +65,8 @@ module Collision
       TOOLS_BOX.spacing = BOTTOM_TABS.reveal ? 32 : 45
     end
 
+    TOOL_COMPARE_BUTTON_SPINNER.visible = false
+    TOOL_COMPARE_BUTTON_FEEDBACK.prepend(TOOL_COMPARE_BUTTON_SPINNER)
     TOOL_VERIFY_INPUT.remove_css_class("view")
     TOOL_VERIFY_INPUT.cursor_visible = false
     TOOL_VERIFY_INPUT.accepts_tab = false

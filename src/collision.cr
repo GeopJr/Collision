@@ -39,8 +39,22 @@ module Collision
   HEADER_TITLE                 = Adw::ViewSwitcherTitle.cast(B_HT["switcher_title"])
   BOTTOM_TABS                  = Adw::ViewSwitcherBar.cast(B_HT["switcher_bar"])
   STACK                        = Adw::ViewStack.cast(B_HT["stack"])
-  SPINNER                      = Gtk::Spinner.cast(B_SP["spinner"])
 
+  SPINNER = Gtk::Spinner.new(
+    spinning: true,
+    halign: Gtk::Align::Center,
+    vexpand: true,
+    hexpand: true,
+    width_request: 32,
+    height_request: 32
+  )
+  TOOL_COMPARE_BUTTON_SPINNER = Gtk::Spinner.new(
+    spinning: true,
+    halign: Gtk::Align::Center,
+    width_request: 36,
+    height_request: 36,
+    visible: false
+  )
   TOOL_VERIFY_INPUT = Gtk::TextView.new(
     pixels_above_lines: 11,
     pixels_below_lines: 11,
@@ -62,13 +76,12 @@ module Collision
   TOOL_COMPARE_BUTTON              = Gtk::Button.cast(B_TL["compareBtn"])
   TOOL_COMPARE_BUTTON_IMAGE        = Gtk::Image.cast(B_TL["compareBtnImage"])
   TOOL_COMPARE_BUTTON_LABEL        = Gtk::Label.cast(B_TL["compareBtnLabel"])
-  TOOL_COMPARE_BUTTON_SPINNER      = Gtk::Spinner.cast(B_TL["spinner"])
+  TOOL_COMPARE_BUTTON_FEEDBACK     = Gtk::Box.cast(B_TL["compareBtnFeedback"])
   TOOL_COMPARE_FILE_CHOOSER_NATIVE = Gtk::FileChooserNative.cast(B_TL["compareFileChooserNative"])
 
-  COPY_BUTTONS     = gen_hash(true)
-  FILE_SET_SPINNER = Gtk::Spinner.cast(B_SP["spinner"])
-  CLIPBOARD_HASH   = Hash(String, String).new
-  ACTION_ROWS      = gen_hash(false)
+  COPY_BUTTONS   = gen_hash(true)
+  CLIPBOARD_HASH = Hash(String, String).new
+  ACTION_ROWS    = gen_hash(false)
 
   FILE_INFO = Adw::StatusPage.cast(B_FI["fileInfo"])
   HASH_LIST = Gtk::ListBox.cast(B_HS["hashList"])
