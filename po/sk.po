@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # MartionIIOT <42734508+MartinIIOT@users.noreply.github.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-14 23:08+0200\n"
-"Last-Translator: MartionIIOT <42734508+MartinIIOT@users.noreply.github.com>\n"
-"Language-Team: Slovakia\n"
+"PO-Revision-Date: 2022-03-27 21:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/collision/"
+"collision/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
@@ -108,7 +110,8 @@ msgstr "Kopírovať"
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:22
 msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
