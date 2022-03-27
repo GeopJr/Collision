@@ -19,9 +19,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.12-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10 data/ui/welcomer.ui:8
 msgid "Collision"
 msgstr "انطباق"
 
@@ -33,6 +34,7 @@ msgstr "مولّد هش"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
+#: data/ui/welcomer.ui:9
 msgid "Check hashes for your files"
 msgstr "هش پرونده‌هایتان را بررسی کنید"
 
@@ -59,7 +61,7 @@ msgstr ""
 "از هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏"
 "MD5، ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
 
-#: data/ui/welcomer.ui:12
+#: data/ui/welcomer.ui:12 data/ui/welcomer.ui:13
 msgid "_Open a File"
 msgstr "گشودن یک _پرونده"
 
@@ -73,20 +75,21 @@ msgid "Verify"
 msgstr "اعتبارسنجی"
 
 #. Don't translate the hash names if possible.
-#: src/collision.cr:69
+#: src/collision.cr:69 src/collision.cr:55
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 msgstr "افزودن یک هش MD5/SHA-1/SHA-256/SHA-512"
 
 #. Don't translate the hash names if possible.
-#: data/ui/tools.ui:43
+#: data/ui/tools.ui:43 data/ui/tools.ui:44
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "هش ‏MD5، ‏SHA-1،‏ SHA-256 یا SHA-512"
 
-#: data/ui/tools.ui:84
+#: data/ui/tools.ui:84 data/ui/tools.ui:86
 msgid "Select Another File to Check Against"
 msgstr "گزینش یک پروندهٔ دیگر برای بررسی متقابل"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
+#: data/ui/tools.ui:132
 msgid "Choose File..."
 msgstr "انتخاب پرونده…"
 
@@ -135,6 +138,6 @@ msgstr "هش"
 msgid "Checksum"
 msgstr "جمع‌آزما"
 
-#: data/ui/tools.ui:70
+#: data/ui/tools.ui:70 data/ui/tools.ui:71
 msgid "File"
 msgstr "پرونده"
