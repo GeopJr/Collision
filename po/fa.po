@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # MohammadSaleh Kamyab <mskf1383@protonmail.com>, 2021, 2022.
 # MSKF <walkingdeadstudio@outlook.com>, 2022.
+# Eshagh Shahedany <eshagh094@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
 "PO-Revision-Date: 2022-03-27 21:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/collision/"
 "collision/fa/>\n"
 "Language: fa\n"
