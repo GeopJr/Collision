@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-03-26 13:08+0000\n"
+"PO-Revision-Date: 2022-03-30 09:06+0000\n"
 "Last-Translator: MohammadSaleh Kamyab <mskf1383@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/collision/"
 "collision/fa/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr "انطباق"
+msgstr "تداخل"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -55,9 +55,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"هدف این ابزار حل آن است. انطباق، همراه با رابط کاربری ساده و تمیز، همه را، "
-"از هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏"
-"MD5، ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
+"هدف این ابزار حل آن است. تداخل، همراه با رابط کاربری ساده و تمیز، همه را، از "
+"هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏MD5،"
+" ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -96,7 +96,7 @@ msgstr "مقایسهٔ _توابع هش"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_دربارهٔ انطباق"
+msgstr "_دربارهٔ تداخل"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
