@@ -41,7 +41,20 @@ module Collision
     COPY_BUTTONS.each do |hash_type, btn|
       btn.clicked_signal.connect do
         hash = CLIPBOARD_HASH[hash_type]
-        clipboard.set(hash)
+        success = true
+        begin
+          clipboard.set(hash)
+        rescue
+          success = false
+        end
+
+        btn.icon_name = Collision.icon(success)
+        btn.add_css_class(success ? "success" : "error")
+        Non::Blocking.spawn do
+          sleep 1.1.seconds # 1 feels fast, 1.5 feels slow
+          btn.icon_name = "edit-copy-symbolic"
+          btn.remove_css_class(success ? "success" : "error")
+        end
       end
     end
 
