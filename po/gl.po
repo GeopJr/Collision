@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Fran Diéguez <fran.dieguez@mabishu.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-18 01:30+0200\n"
-"Last-Translator: Fran Diéguez <fran.dieguez@mabishu.com>\n"
-"Language-Team: Galician <LL@li.org>\n"
+"PO-Revision-Date: 2022-04-15 23:43+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Galician <https://hosted.weblate.org/projects/collision/"
+"collision/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
@@ -108,7 +110,8 @@ msgstr "Copiar"
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:22
 msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
