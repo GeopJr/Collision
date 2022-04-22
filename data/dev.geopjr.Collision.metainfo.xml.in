@@ -38,6 +38,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.0.2" date="2022-04-22">
+      <description>
+        <ul>
+          <li>Feedback on copy</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.1" date="2022-03-27">
       <description>
         <ul>
