@@ -40,6 +40,8 @@ module Collision
     clipboard = window.clipboard
     COPY_BUTTONS.each do |hash_type, btn|
       btn.clicked_signal.connect do
+        LOGGER.debug { "Copied #{hash_type} hash" }
+
         hash = CLIPBOARD_HASH[hash_type]
         success = true
         begin
@@ -49,11 +51,14 @@ module Collision
         end
 
         btn.icon_name = Collision.icon(success)
-        btn.add_css_class(success ? "success" : "error")
+        feedback_class = success ? "success" : "error"
+        btn.add_css_class(feedback_class)
         Non::Blocking.spawn do
           sleep 1.1.seconds # 1 feels fast, 1.5 feels slow
           btn.icon_name = "edit-copy-symbolic"
-          btn.remove_css_class(success ? "success" : "error")
+          btn.remove_css_class(feedback_class)
+
+          LOGGER.debug { "Copy button feedback reset" }
         end
       end
     end
@@ -92,5 +97,5 @@ module Collision
 
   APP.startup_signal.connect(->startup(Adw::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
-  exit(APP.run(ARGV))
+  exit(APP.run(nil))
 end
