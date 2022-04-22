@@ -10,7 +10,7 @@ jobs:
       - name: Shards install
         run: shards install
       - name: Generate gresource
-        run: make gresource || wget "https://raw.githubusercontent.com/GeopJr/GeopJr/main/collision.gresource" -O data/dev.geopjr.Collision.gresource
+        run: make gresource || curl "https://raw.githubusercontent.com/GeopJr/GeopJr/main/collision.gresource" -o data/dev.geopjr.Collision.gresource
       - name: Spec
         run: crystal spec -Dpreview_mt --order random || exit 1
       - name: Check formatting
