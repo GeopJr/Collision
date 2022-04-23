@@ -3,30 +3,32 @@
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 # Gabriel Gian <gabrielgian@protonmail.com>, 2022.
-#
-#, fuzzy
+# Gustavo Costa <xfgusta@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-18 01:30+0200\n"
-"Last-Translator: Gabriel Gian <gabrielgian@protonmail.com>\n"
-"Language-Team: Brazilian Portuguese\n"
+"PO-Revision-Date: 2022-04-24 00:57+0000\n"
+"Last-Translator: Gustavo Costa <xfgusta@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"collision/collision/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.12.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "Gerador de hash"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
@@ -43,6 +45,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Verificar se um arquivo que você baixou ou recebeu é realmente aquele que "
+"você esperava é muitas vezes esquecido ou demorado demais. Ao mesmo tempo, "
+"tornou-se muito fácil colocar as mãos em um arquivo que foi adulterado, "
+"devido ao aumento em massa de páginas da Web maliciosas e outros atores."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -50,6 +56,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"Esta ferramenta visa resolver isso. Collision vem com um UI simples e limpa, "
+"permitindo que qualquer pessoa, de qualquer idade e grupo de experiência, "
+"gere, compare e verifique hashes MD5, SHA-256, SHA-512 e SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -57,7 +66,7 @@ msgstr "_Abrir um arquivo"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr "Escolher um Arquivo"
+msgstr "Escolher um arquivo"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
@@ -71,15 +80,15 @@ msgstr "Inserir um hash MD5/SHA-1/SHA-256/SHA-512"
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "Hash MD5, SHA-1, SHA-256 ou SHA-512"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr "Selecionar outro arquivo e checar contra ele"
+msgstr "Selecionar outro arquivo para verificar"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "Escolher arquivo..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -116,16 +125,17 @@ msgstr "https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash_criptogr%C3%A1fica"
 msgid "translator-credits"
 msgstr ""
 "Gabriel Gian\n"
-"Rafael Fontenelle"
+"Rafael Fontenelle\n"
+"Gustavo Costa <xfgusta@gmail.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "Soma de verificação"
 
 #: data/ui/tools.ui:70
 msgid "File"
-msgstr ""
+msgstr "Arquivo"
