@@ -39,6 +39,7 @@ module Collision
 
     clipboard = window.clipboard
     COPY_BUTTONS.each do |hash_type, btn|
+      soft_locked = false
       btn.clicked_signal.connect do
         LOGGER.debug { "Copied #{hash_type} hash" }
 
@@ -50,6 +51,9 @@ module Collision
           success = false
         end
 
+        next if soft_locked
+        soft_locked = true
+
         btn.icon_name = Collision.icon(success)
         feedback_class = success ? "success" : "error"
         btn.add_css_class(feedback_class)
@@ -57,6 +61,7 @@ module Collision
           sleep 1.1.seconds # 1 feels fast, 1.5 feels slow
           btn.icon_name = "edit-copy-symbolic"
           btn.remove_css_class(feedback_class)
+          soft_locked = false
 
           LOGGER.debug { "Copy button feedback reset" }
         end
