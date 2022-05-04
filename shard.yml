@@ -1,5 +1,5 @@
 name: collision
-version: 3.0.2
+version: 3.0.3
 
 authors:
   - GeopJr <evan@geopjr.dev>
@@ -11,17 +11,17 @@ targets:
 dependencies:
   libadwaita:
     github: GeopJr/libadwaita.cr
-    commit: 4b9842eae67e3641dea511349a664efaf7d04a3e
+    commit: 2cf4d8bfb7cbae62cb107ac6a238b636696ca38b
   compiled_license:
     github: elorest/compiled_license
-    version: ~> 1.2.1
+    version: ~> 1.2.2
   non-blocking-spawn:
     github: GeopJr/non-blocking-spawn
-    version: ~> 1.0.1
+    version: ~> 1.0.2
   gettext:
     github: GeopJr/gettext.cr
     version: ~> 1.0.0
 
-crystal: 1.4.0
+crystal: 1.4.1
 
 license: BSD-2-Clause
