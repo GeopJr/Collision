@@ -2,6 +2,7 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <object class="GtkBox" id="tools">
+    <property name="orientation">vertical</property>
     <property name="homogeneous">1</property>
     <property name="spacing">45</property>
     <child>

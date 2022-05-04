@@ -84,7 +84,7 @@ module Collision
 
   def startup(app : Adw::Application)
     BOTTOM_TABS.notify_signal["reveal"].connect do
-      TOOLS_BOX.orientation = BOTTOM_TABS.reveal ? Gtk::Orientation::Vertical : Gtk::Orientation::Horizontal
+      # TOOLS_BOX.orientation = BOTTOM_TABS.reveal ? Gtk::Orientation::Vertical : Gtk::Orientation::Horizontal
       TOOLS_BOX.spacing = BOTTOM_TABS.reveal ? 32 : 45
     end
 

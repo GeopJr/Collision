@@ -16,6 +16,6 @@ module Collision
 
   ARTICLE = Gettext.gettext("https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions")
 
-  RESOURCE = Gio::Resource.new_from_data(GLib::Bytes.new({{read_file("./data/dev.geopjr.Collision.gresource")}}.bytes))
+  RESOURCE = Gio::Resource.new_from_data(GLib::Bytes.new_take({{read_file("./data/dev.geopjr.Collision.gresource")}}.bytes))
   RESOURCE._register
 end
