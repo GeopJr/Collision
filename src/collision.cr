@@ -3,10 +3,9 @@ require "compiled_license"
 require "gettext"
 require "log"
 
-require "./modules/prerequisites.cr"
-require "./modules/functions/*"
-require "./modules/views/*"
-require "./modules/views/tools/*"
+require "./collision/functions/*"
+require "./collision/views/*"
+require "./collision/views/tools/*"
 
 macro gen_hash(buttons)
   {
