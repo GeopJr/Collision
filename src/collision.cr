@@ -95,7 +95,7 @@ module Collision
     tooltip_text: Gettext.gettext("Insert a MD5/SHA-1/SHA-256/SHA-512 Hash")
   )
 
-  TOOLS_GRID                        = Gtk::Grid.cast(B_TL["tools"])
+  TOOLS_GRID                       = Gtk::Grid.cast(B_TL["tools"])
   TOOL_VERIFY_OVERLAY              = Gtk::Overlay.cast(B_TL["verifyOverlay"])
   TOOL_VERIFY_OVERLAY_LABEL        = Gtk::Label.cast(B_TL["verifyOverlayLabel"])
   TOOL_VERIFY_FEEDBACK             = Gtk::Image.cast(B_TL["verifyFeedback"])
