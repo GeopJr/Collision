@@ -3,6 +3,11 @@ require "compiled_license"
 require "gettext"
 require "log"
 
+if Non::Blocking.threads.size == 0
+  STDERR.puts "App is running in single-threaded mode. Exiting."
+  exit(1)
+end
+
 module Collision
   extend self
 
