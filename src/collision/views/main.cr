@@ -83,9 +83,19 @@ module Collision
   end
 
   def startup(app : Adw::Application)
+    tools_grid_first_child = TOOLS_GRID.first_child
+    tools_grid_last_child = TOOLS_GRID.last_child
     BOTTOM_TABS.notify_signal["reveal"].connect do
-      # TOOLS_BOX.orientation = BOTTOM_TABS.reveal ? Gtk::Orientation::Vertical : Gtk::Orientation::Horizontal
-      TOOLS_BOX.spacing = BOTTOM_TABS.reveal ? 32 : 45
+      next if tools_grid_last_child.nil? || tools_grid_first_child.nil?
+      row = 0
+      column = 1
+      if BOTTOM_TABS.reveal
+        row = 1
+        column = 0
+      end
+
+      TOOLS_GRID.remove(tools_grid_last_child)
+      TOOLS_GRID.attach(tools_grid_last_child, column, row, 1, 1)
     end
 
     TOOL_COMPARE_BUTTON_SPINNER.visible = false

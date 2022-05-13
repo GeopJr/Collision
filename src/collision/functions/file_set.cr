@@ -14,7 +14,7 @@ module Collision
 
     hash_list_page = STACK.add_titled(HASH_LIST, "hashes", HASH_LIST_TITLE)
     hash_list_page.icon_name = "octothorp-symbolic"
-    tools_page = STACK.add_titled(TOOLS_BOX, "verify", TOOLS_TITLE)
+    tools_page = STACK.add_titled(TOOLS_GRID, "verify", TOOLS_TITLE)
     tools_page.icon_name = "test-pass-symbolic"
 
     clamp = Adw::Clamp.cast(FILE_INFO.child.not_nil!)
