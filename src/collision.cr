@@ -9,8 +9,6 @@ if Non::Blocking.threads.size == 0
 end
 
 module Collision
-  extend self
-
   LOGGER = Log.for("Collision", ARGV[0]? == "--debug" ? Log::Severity::Debug : Log::Severity::Warn)
 
   begin
@@ -43,8 +41,6 @@ macro gen_hash(buttons)
 end
 
 module Collision
-  extend self
-
   B_UI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/welcomer.ui")
   B_HL = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_left.ui")
   B_HR = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_right.ui")
