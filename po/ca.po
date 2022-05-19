@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-05-19 14:38+0000\n"
+"PO-Revision-Date: 2022-05-19 22:05+0000\n"
 "Last-Translator: Maite Guix <maite.guix@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/collision/"
 "collision/ca/>\n"
@@ -22,18 +22,18 @@ msgstr ""
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Col·lisió"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "Generador de hash"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "Comprovar els hashes dels teus fitxers"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -43,6 +43,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Verificar que un fitxer que has descarregat o rebut és realment el que "
+"s'esperaves és una cosa que sovint es passa per alt o que porta massa temps. "
+"Alhora, s'ha tornat molt fàcil aconseguir un arxiu que ha estat manipulat, a "
+"causa de l'augment massiu de pàgines web malicioses i altres actors."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -50,39 +54,43 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"Aquesta eina té com a objectiu solucionar-ho. Col·lisió ve amb una "
+"interfície d'usuari senzilla i neta, permetent a qualsevol persona, de "
+"qualsevol edat i experiència, generar, comparar i verificar els hashes MD5, "
+"SHA-256, SHA-512 i SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
-msgstr ""
+msgstr "_Obrir un fitxer"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr ""
+msgstr "Triar un fitxer"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "Suma de control"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "Hash MD5, SHA-1, SHA-256 o SHA-512"
 
 #: data/ui/tools.ui:70
 msgid "File"
-msgstr ""
+msgstr "Fitxer"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "Seleccionar un altre fitxer a comprovar"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "Triar el fitxer..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_Comparar funcions hash"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
@@ -90,41 +98,42 @@ msgstr "_Sobre Col·lisió"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
-msgstr ""
+msgstr "Menú"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr ""
+msgstr "_Obrir"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
-msgstr ""
+msgstr "Obrir..."
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #. Don't translate the hash names if possible.
 #: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr ""
+msgstr "Inserir un hash MD5/SHA-1/SHA-256/SHA-512"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:14
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr ""
+msgstr "Maite Guix"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
-msgstr ""
+msgstr "Verificar"
