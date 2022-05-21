@@ -3,7 +3,7 @@ module Collision
     extend self
 
     def handle_input_change(text : String)
-      result = CLIPBOARD_HASH.values.includes?(text)
+      result = CLIPBOARD_HASH.values.includes?(text.downcase)
       if text.size == 0
         TOOL_VERIFY_OVERLAY_LABEL.visible = true
         TOOL_VERIFY_FEEDBACK.visible = false

@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Shards install
-        run: shards install
+        run: shards install --skip-postinstall --skip-executables
       - name: Generate gresource
         run: make gresource || curl "https://raw.githubusercontent.com/GeopJr/GeopJr/main/collision.gresource" -o data/dev.geopjr.Collision.gresource
       - name: Spec

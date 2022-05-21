@@ -3,10 +3,34 @@ require "compiled_license"
 require "gettext"
 require "log"
 
-require "./modules/prerequisites.cr"
-require "./modules/functions/*"
-require "./modules/views/*"
-require "./modules/views/tools/*"
+if Non::Blocking.threads.size == 0
+  STDERR.puts "App is running in single-threaded mode. Exiting."
+  exit(1)
+end
+
+module Collision
+  LOGGER = Log.for("Collision", ARGV[0]? == "--debug" ? Log::Severity::Debug : Log::Severity::Warn)
+
+  begin
+    Gettext.setlocale(Gettext::LC::ALL, "")
+    Gettext.bindtextdomain("dev.geopjr.Collision", {{env("COLLISION_LOCALE_LOCATION").nil? ? "/usr/share/locale" : env("COLLISION_LOCALE_LOCATION")}})
+    Gettext.textdomain("dev.geopjr.Collision")
+  rescue ex
+    LOGGER.debug { ex }
+  end
+
+  HASH_FUNCTIONS = ["MD5", "SHA1", "SHA256", "SHA512"]
+  VERSION        = {{read_file("./shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
+
+  ARTICLE = Gettext.gettext("https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions")
+
+  RESOURCE = Gio::Resource.new_from_data(GLib::Bytes.new_take({{read_file("./data/dev.geopjr.Collision.gresource")}}.bytes))
+  RESOURCE._register
+end
+
+require "./collision/functions/*"
+require "./collision/views/*"
+require "./collision/views/tools/*"
 
 macro gen_hash(buttons)
   {
@@ -17,8 +41,6 @@ macro gen_hash(buttons)
 end
 
 module Collision
-  extend self
-
   B_UI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/welcomer.ui")
   B_HL = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_left.ui")
   B_HR = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_right.ui")
@@ -69,7 +91,7 @@ module Collision
     tooltip_text: Gettext.gettext("Insert a MD5/SHA-1/SHA-256/SHA-512 Hash")
   )
 
-  TOOLS_BOX                        = Gtk::Box.cast(B_TL["tools"])
+  TOOLS_GRID                       = Gtk::Grid.cast(B_TL["tools"])
   TOOL_VERIFY_OVERLAY              = Gtk::Overlay.cast(B_TL["verifyOverlay"])
   TOOL_VERIFY_OVERLAY_LABEL        = Gtk::Label.cast(B_TL["verifyOverlayLabel"])
   TOOL_VERIFY_FEEDBACK             = Gtk::Image.cast(B_TL["verifyFeedback"])

@@ -5,6 +5,7 @@
 *.dwarf
 *~
 collision
+!collision/
 .flatpak-builder/
 *.gresource
 .rucksack

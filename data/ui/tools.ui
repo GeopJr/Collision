@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <object class="GtkBox" id="tools">
-    <property name="homogeneous">1</property>
-    <property name="spacing">45</property>
+  <object class="GtkGrid" id="tools">
+    <property name="row-homogeneous">1</property>
+    <property name="row-spacing">32</property>
+    <property name="column-homogeneous">1</property>
+    <property name="column-spacing">45</property>
     <child>
       <object class="GtkBox">
         <property name="orientation">vertical</property>
