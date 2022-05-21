@@ -12,6 +12,7 @@ dependencies:
   libadwaita:
     github: GeopJr/libadwaita.cr
     branch: stable
+    commit: ebf5b221d3dbcc5852dc1433b440f99a8b7f094b
   compiled_license:
     github: elorest/compiled_license
     version: ~> 1.2.2
