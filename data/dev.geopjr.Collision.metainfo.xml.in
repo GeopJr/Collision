@@ -38,6 +38,17 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.0.3" date="2022-05-21">
+      <description>
+        <ul>
+          <li>Handle feedback on buttons when spammed</li>
+          <li>Hash comparison is now case-insensitive</li>
+          <li>Fixed some memory related issues</li>
+          <li>Added Swedish and Catalan translations</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.2" date="2022-04-22">
       <description>
         <ul>
