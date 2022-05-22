@@ -2,20 +2,22 @@
 # Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Fran Diéguez <fran.dieguez@mabishu.com>, 2022.
-#
-#, fuzzy
+# antonpaidoslalin <anton.paidoslalin@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-02-18 01:30+0200\n"
-"Last-Translator: Fran Diéguez <fran.dieguez@mabishu.com>\n"
-"Language-Team: Galician <LL@li.org>\n"
+"PO-Revision-Date: 2022-05-23 20:14+0000\n"
+"Last-Translator: antonpaidoslalin <anton.paidoslalin@gmail.com>\n"
+"Language-Team: Galician <https://hosted.weblate.org/projects/collision/"
+"collision/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
@@ -25,7 +27,7 @@ msgstr ""
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "Xerador de resumo (hash)"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
@@ -42,6 +44,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Adóitase omitir ou levar moito tempo verificar que un arquivo que baixaches "
+"ou recibiches é realmente o único que agardabas. Ao tempo, é doado conseguir "
+"arquivos manipulados debido ao masivo aumento das páxinas web maliciosas e "
+"outras fontes deste tipo de arquivos."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -49,6 +55,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"Esta ferramenta pretende solucionalo. Collision ven con unha interface "
+"simple e limpa permitindo a calquera, de calquera idade ou grupo de "
+"experiencia, xerar, comparar e verificar resumos SHA-256, SHA-512 e SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -70,7 +79,7 @@ msgstr "Insira un hash MD5/SHA-1/SHA-256/SHA-512"
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "Resumos MD5,SHA-1,SHA-256 ou SHA-512"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
@@ -78,7 +87,7 @@ msgstr "Seleccione outro ficheiro para comprobar"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "Escoller Ficheiro..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -117,12 +126,12 @@ msgstr "Fran Diéguez"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "Resumo"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "Suma de verificación"
 
 #: data/ui/tools.ui:70
 msgid "File"
-msgstr ""
+msgstr "Ficheiro"
