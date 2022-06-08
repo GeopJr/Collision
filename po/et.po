@@ -18,9 +18,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.13-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Collision"
 
@@ -54,8 +55,8 @@ msgid ""
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
 "See tööriist aitab seda lahendada. Collision on lihtne programm, mis aitab "
-"igaühel genereerida, võrrelda ning kontrollida MD5, SHA-256, SHA-512 ja SHA-"
-"1 räsiväärtuseid (hash)."
+"igaühel genereerida, võrrelda ning kontrollida MD5, SHA-256, SHA-512 ja "
+"SHA-1 räsiväärtuseid (hash)."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
