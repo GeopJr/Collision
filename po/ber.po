@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-06-18 17:19+0000\n"
+"PO-Revision-Date: 2022-06-19 18:14+0000\n"
 "Last-Translator: assemer_layase <myworldanonymouse@gmail.com>\n"
 "Language-Team: Berber <https://hosted.weblate.org/projects/collision/"
 "collision/ber/>\n"
@@ -74,11 +74,11 @@ msgstr ""
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "dmed a fichier niden iwaken anwali ma kifkif-iten"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "xttired yiwen fichier..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -103,12 +103,12 @@ msgstr ""
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
 msgid "Copy"
-msgstr ""
+msgstr "gme3"
 
 #. Don't translate the hash names if possible.
 #: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr ""
+msgstr "sekcem yiwen MD5/SHA-1/SHA-256/SHA-512 Hash"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:14
