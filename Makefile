@@ -1,9 +1,13 @@
-.PHONY: all install uninstall test build mo desktop gresource
+.PHONY: all install uninstall test build mo desktop gresource bindings
 PREFIX ?= /usr
 PO_LOCATION ?= po
 LOCALE_LOCATION ?= /share/locale
 
-all: gresource desktop build
+all: desktop bindings build
+
+bindings: 
+	$(CRYSTAL_LOCATION)shards install
+	./bin/gi-crystal
 
 build:
 	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards build -Dpreview_mt --release --no-debug
