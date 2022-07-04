@@ -7,10 +7,8 @@ jobs:
     container: ghcr.io/geopjr/crystal-gtk:latest
     steps:
       - uses: actions/checkout@v2
-      - name: Shards install
-        run: shards install --skip-postinstall --skip-executables
-      - name: Generate gresource
-        run: make gresource || curl "https://raw.githubusercontent.com/GeopJr/GeopJr/main/collision.gresource" -o data/dev.geopjr.Collision.gresource
+      - name: Shards install & Generate bindings
+        run: make bindings
       - name: Spec
         run: crystal spec -Dpreview_mt --order random || exit 1
       - name: Check formatting
