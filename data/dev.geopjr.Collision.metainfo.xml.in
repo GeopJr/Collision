@@ -38,6 +38,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.0.4" date="2022-07-04">
+      <description>
+        <ul>
+          <li>Updated dependencies</li>
+          <li>Added Estonian, Czech and Berber translations</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.3" date="2022-05-21">
       <description>
         <ul>
