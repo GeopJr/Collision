@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# assemer_layase <myworldanonymouse@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: dev.geopjr.Collision\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-18 21:34+0200\n"
+"PO-Revision-Date: 2022-06-19 18:14+0000\n"
+"Last-Translator: assemer_layase <myworldanonymouse@gmail.com>\n"
+"Language-Team: Berber <https://hosted.weblate.org/projects/collision/"
+"collision/ber/>\n"
+"Language: ber\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13.1-dev\n"
+
+#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
+#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
+#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+msgid "Collision"
+msgstr ""
+
+#: data/dev.geopjr.Collision.desktop.in:7
+msgid "Hash Generator"
+msgstr ""
+
+#. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
+#. or "Check the hashes of your files".
+#: data/dev.geopjr.Collision.desktop.in:8
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
+msgid "Check hashes for your files"
+msgstr ""
+
+#: data/dev.geopjr.Collision.metainfo.xml.in:14
+msgid ""
+"Verifying that a file you downloaded or received is actually the one you "
+"were expecting is often overlooked or too time-consuming to do. At the same "
+"time, it has become very easy to get your hands on a file that has been "
+"tampered with, due to the mass increase of malicious webpages and other "
+"actors."
+msgstr ""
+
+#: data/dev.geopjr.Collision.metainfo.xml.in:20
+msgid ""
+"This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
+"allowing anyone, from any age and experience group, to generate, compare and "
+"verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+msgstr ""
+
+#: data/ui/welcomer.ui:12
+msgid "_Open a File"
+msgstr "_liḍ a fichier"
+
+#: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
+msgid "Choose a File"
+msgstr "dmed yiwen fichier"
+
+#: data/ui/tools.ui:13
+msgid "Checksum"
+msgstr "Checksum"
+
+#. Don't translate the hash names if possible.
+#: data/ui/tools.ui:43
+msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
+msgstr ""
+
+#: data/ui/tools.ui:70
+msgid "File"
+msgstr ""
+
+#: data/ui/tools.ui:84
+msgid "Select Another File to Check Against"
+msgstr "dmed a fichier niden iwaken anwali ma kifkif-iten"
+
+#: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
+msgid "Choose File..."
+msgstr "xttired yiwen fichier..."
+
+#: data/ui/header_right.ui:7
+msgid "_Compare Hash Functions"
+msgstr ""
+
+#: data/ui/header_right.ui:11
+msgid "_About Collision"
+msgstr ""
+
+#: data/ui/header_right.ui:19
+msgid "Menu"
+msgstr ""
+
+#: data/ui/header_left.ui:8
+msgid "_Open"
+msgstr ""
+
+#: data/ui/header_left.ui:9
+msgid "Open..."
+msgstr ""
+
+#: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
+#: data/ui/hash_list.ui:74
+msgid "Copy"
+msgstr "gme3"
+
+#. Don't translate the hash names if possible.
+#: src/collision.cr:69
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "sekcem yiwen MD5/SHA-1/SHA-256/SHA-512 Hash"
+
+#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
+#: src/modules/prerequisites.cr:14
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+
+#. Name <email@domain.com> or Name https://website.example
+#: src/modules/functions/about_action.cr:18
+msgid "translator-credits"
+msgstr ""
+
+#: src/modules/functions/file_set.cr:7
+msgid "Hash"
+msgstr ""
+
+#: src/modules/functions/file_set.cr:8
+msgid "Verify"
+msgstr ""
