@@ -7,30 +7,34 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-07-28 21:53+0000\n"
+"Last-Translator: Ibrahim Muhammad <ebraheem010@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/collision/"
+"collision/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "كوليجن"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "مولد هاش"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "التحقق من الهاش لملفاتك"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -40,6 +44,9 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"غالبا ما يتم تجاهل التحقق من أن الملفات المستلمة أو المحملة هي فعلا الملفات "
+"المتوقعة أو تستغرق تلك العملية وقتا طويلا. وفي نفس الوقت قد صار من السهل "
+"الوصول إلى ملف تم التلاعب به بسبب الزيادة الهائلة في المواقع الخبيثة."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -47,81 +54,85 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"الهدف من هذه الأداة هو إصلاح هذا الأمر. يأتي كوليجن بواجهة سهلة ونظيفة، مما "
+"يسمح لأي شخص من أي فئة عمرية أو مستوى خبرة بإنشاء ومقارنة والتحقق من ملفات "
+"الهاش من نوع MD5 و SHA-256 و SHA-512 و SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
-msgstr ""
+msgstr "_فتح ملف"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr ""
+msgstr "اختيار ملف"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "المجموع الاختباري"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "هاش من نوع MD5 أوSHA-1 أو SHA-256 أو SHA-512"
 
 #: data/ui/tools.ui:70
 msgid "File"
-msgstr ""
+msgstr "ملف"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "يرجى اختيار ملف آخر لمقارنته معه"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "اختيار ملف..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_مقارنة وظائف الهاش"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr ""
+msgstr "_عن كوليجن"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
-msgstr ""
+msgstr "القائمة"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr ""
+msgstr "فتح"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
-msgstr ""
+msgstr "فتح..."
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
 msgid "Copy"
-msgstr ""
+msgstr "نسخ"
 
 #. Don't translate the hash names if possible.
 #: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr ""
+msgstr "إضافة هاش MD5/SHA-1/SHA-256/SHA-512"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:14
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr ""
+msgstr "Ibrahim Muhammad <ibrahim.muhammad.mu@outlook.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "الهاش"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
-msgstr ""
+msgstr "تحقق"
