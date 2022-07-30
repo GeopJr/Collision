@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-07-30 11:44+0000\n"
+"PO-Revision-Date: 2022-07-30 11:57+0000\n"
 "Last-Translator: Kaz Sibuya <sibuyakazokuu@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/collision/"
 "collision/ja/>\n"
@@ -65,20 +65,20 @@ msgstr ""
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr ""
+msgstr "ファイルを選択"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "チェックサム"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "MD5、SHA-1、SHA-256、SHA-512 ハッシュ"
 
 #: data/ui/tools.ui:70
 msgid "File"
-msgstr ""
+msgstr "ファイル"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "ファイルを選択..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -116,7 +116,7 @@ msgstr ""
 #. Don't translate the hash names if possible.
 #: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr ""
+msgstr "MD5/SHA-1/SHA-256/SHA-512 のハッシュ値を入力"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:14
@@ -127,11 +127,11 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr ""
+msgstr "Sibuya Kaz <sibuyakazokuu@gmail.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "ハッシュ値"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
