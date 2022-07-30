@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-07-30 11:57+0000\n"
+"PO-Revision-Date: 2022-07-30 12:39+0000\n"
 "Last-Translator: Kaz Sibuya <sibuyakazokuu@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/collision/"
 "collision/ja/>\n"
@@ -32,7 +32,6 @@ msgstr "ハッシュジェネレーター"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
-#, fuzzy
 msgid "Check hashes for your files"
 msgstr "ファイルのハッシュを確認する"
 
@@ -61,7 +60,7 @@ msgstr ""
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
-msgstr ""
+msgstr "ファイルを開く(_O)"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
@@ -82,7 +81,7 @@ msgstr "ファイル"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "照合する他のファイルを選択"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
@@ -90,28 +89,28 @@ msgstr "ファイルを選択..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "ハッシュ関数の比較"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr ""
+msgstr "Collisionについて(_A)"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
-msgstr ""
+msgstr "メニュー"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr ""
+msgstr "開く(_O)"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
-msgstr ""
+msgstr "開く..."
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
 msgid "Copy"
-msgstr ""
+msgstr "コピー"
 
 #. Don't translate the hash names if possible.
 #: src/collision.cr:69
@@ -123,6 +122,7 @@ msgstr "MD5/SHA-1/SHA-256/SHA-512 のハッシュ値を入力"
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -131,8 +131,8 @@ msgstr "Sibuya Kaz <sibuyakazokuu@gmail.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr "ハッシュ値"
+msgstr "ハッシュ"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
-msgstr ""
+msgstr "確認"
