@@ -19,8 +19,8 @@ module Collision
     LOGGER.debug { ex }
   end
 
-  HASH_FUNCTIONS = ["MD5", "SHA1", "SHA256", "SHA512"]
-  VERSION        = {{read_file("./shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
+  HASH_FUNCTIONS = {"MD5", "SHA1", "SHA256", "SHA512"}
+  VERSION        = {{read_file("#{__DIR__}/../shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
 
   ARTICLE = Gettext.gettext("https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions")
 
