@@ -22,7 +22,7 @@ shards:
 
   non-blocking-spawn:
     git: https://github.com/geopjr/non-blocking-spawn.git
-    version: 1.0.2
+    version: 1.0.3
 
   version_from_shard:
     git: https://github.com/hugopl/version_from_shard.git
