@@ -1,9 +1,5 @@
 version: 2.0
 shards:
-  compiled_license:
-    git: https://github.com/elorest/compiled_license.git
-    version: 1.2.2
-
   gettext:
     git: https://github.com/geopjr/gettext.cr.git
     version: 1.0.0
@@ -18,7 +14,7 @@ shards:
 
   libadwaita:
     git: https://github.com/geopjr/libadwaita.cr.git
-    version: 1.0.0+git.commit.b427ad9172450095087ea1a456d554fe528624e0
+    version: 1.0.0+git.commit.7f2ca9795dec771e75163bcaf880a3ac1335324c
 
   non-blocking-spawn:
     git: https://github.com/geopjr/non-blocking-spawn.git

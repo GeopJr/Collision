@@ -11,10 +11,7 @@ targets:
 dependencies:
   libadwaita:
     github: GeopJr/libadwaita.cr
-    commit: b427ad9172450095087ea1a456d554fe528624e0
-  compiled_license:
-    github: elorest/compiled_license
-    version: ~> 1.2.2
+    commit: 7f2ca9795dec771e75163bcaf880a3ac1335324c
   non-blocking-spawn:
     github: GeopJr/non-blocking-spawn
     version: ~> 1.0.3

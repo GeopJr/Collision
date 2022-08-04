@@ -79,14 +79,8 @@
         {
           "type": "archive",
           "dest": "crystal/",
-          "url": "https://github.com/crystal-lang/crystal/releases/download/1.4.1/crystal-1.4.1-1-linux-x86_64.tar.gz",
-          "sha256": "a5bdf1b78897b3cdc7d715b5f7adff79e84401d39b7ab546ab3249dc17fc770c"
-        },
-        {
-          "type": "git",
-          "url": "https://github.com/elorest/compiled_license.git",
-          "tag": "v1.2.2",
-          "dest": "lib/compiled_license"
+          "url": "https://github.com/crystal-lang/crystal/releases/download/1.5.0/crystal-1.5.0-1-linux-x86_64.tar.gz",
+          "sha256": "627360f0fc805202d80310007d503c7a2fc0745b1db2211537d7f54e9a994347"
         },
         {
           "type": "git",
@@ -109,13 +103,13 @@
         {
           "type": "git",
           "url": "https://github.com/geopjr/libadwaita.cr.git",
-          "commit": "b427ad9172450095087ea1a456d554fe528624e0",
+          "commit": "7f2ca9795dec771e75163bcaf880a3ac1335324c",
           "dest": "lib/libadwaita"
         },
         {
           "type": "git",
           "url": "https://github.com/geopjr/non-blocking-spawn.git",
-          "tag": "v1.0.2",
+          "tag": "v1.0.3",
           "dest": "lib/non-blocking-spawn"
         },
         {

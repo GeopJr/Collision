@@ -1,5 +1,5 @@
+require "./license.cr"
 require "libadwaita"
-require "compiled_license"
 require "gettext"
 require "log"
 
