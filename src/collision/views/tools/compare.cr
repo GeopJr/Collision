@@ -20,13 +20,14 @@ module Collision
         Collision.handle_spawning do
           compareFileSHA256 = Collision.calculate_hash("sha256", TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.not_nil!.path.to_s)
           result = CLIPBOARD_HASH["SHA256"] == compareFileSHA256
+          classes = Collision.class(result)
 
           sleep 500.milliseconds
           TOOL_COMPARE_BUTTON_SPINNER.visible = false
           TOOL_COMPARE_BUTTON_IMAGE.visible = true
           TOOL_COMPARE_BUTTON_IMAGE.icon_name = Collision.icon(result)
-          TOOL_COMPARE_BUTTON.add_css_class(result ? "success" : "error")
-          TOOL_COMPARE_BUTTON.remove_css_class(!result ? "success" : "error")
+          TOOL_COMPARE_BUTTON.add_css_class(classes[:add])
+          TOOL_COMPARE_BUTTON.remove_css_class(classes[:remove])
 
           LOGGER.debug { "Finished comparing tool" }
         end

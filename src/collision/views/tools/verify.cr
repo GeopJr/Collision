@@ -14,12 +14,14 @@ module Collision
       TOOL_VERIFY_OVERLAY_LABEL.visible = false
       TOOL_VERIFY_FEEDBACK.visible = true
 
-      TOOL_VERIFY_INPUT.add_css_class(result ? "success" : "error")
-      TOOL_VERIFY_INPUT.remove_css_class(!result ? "success" : "error")
+      classes = Collision.class(result)
+
+      TOOL_VERIFY_INPUT.add_css_class(classes[:add])
+      TOOL_VERIFY_INPUT.remove_css_class(classes[:remove])
 
       TOOL_VERIFY_FEEDBACK.icon_name = Collision.icon(result)
-      TOOL_VERIFY_FEEDBACK.add_css_class(result ? "success" : "error")
-      TOOL_VERIFY_FEEDBACK.remove_css_class(!result ? "success" : "error")
+      TOOL_VERIFY_FEEDBACK.add_css_class(classes[:add])
+      TOOL_VERIFY_FEEDBACK.remove_css_class(classes[:remove])
     end
 
     def init
