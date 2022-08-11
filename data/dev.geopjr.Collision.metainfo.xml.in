@@ -38,6 +38,17 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.0.5" date="2022-08-11">
+      <description>
+        <ul>
+          <li>Optimized performance and memory usage of CSS class toggling</li>
+          <li>Minor bug fixes</li>
+          <li>Updated dependencies</li>
+          <li>Added Arabic and Japanese translations</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.4" date="2022-07-04">
       <description>
         <ul>
