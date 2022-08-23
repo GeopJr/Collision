@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2021.
 # Reza Almanda <rezaalmanda27@gmail.com>, 2022.
+# Evangelos Paterakis <evan@geopjr.dev>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-05-26 04:15+0000\n"
-"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
+"PO-Revision-Date: 2022-08-25 02:22+0000\n"
+"Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/collision/"
 "collision/id/>\n"
 "Language: id\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
@@ -128,11 +129,11 @@ msgstr "Kukuh Syafaat"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "Checksum"
 
 #: data/ui/tools.ui:70
 msgid "File"
