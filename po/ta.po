@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-08-20 15:13+0000\n"
+"PO-Revision-Date: 2022-08-23 00:15+0000\n"
 "Last-Translator: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/collision/"
 "collision/ta/>\n"
@@ -129,7 +129,7 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr "மொழிபெயர்ப்பாளர்-வரவுகள்"
+msgstr "K.B.Dharun Krishna <kbdharunkrishna@gmail.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"

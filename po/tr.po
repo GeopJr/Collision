@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-08-20 21:54+0000\n"
+"PO-Revision-Date: 2022-08-23 00:15+0000\n"
 "Last-Translator: ugurcansayan <uxurcansayan@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
@@ -21,10 +21,12 @@ msgstr ""
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#, fuzzy
 msgid "Collision"
 msgstr "Çarpışma"
 
 #: data/dev.geopjr.Collision.desktop.in:7
+#, fuzzy
 msgid "Hash Generator"
 msgstr "Karılmış Değer Oluşturucu"
 
@@ -73,7 +75,7 @@ msgstr "Sağlama Toplamı"
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "MD5,SHA-1,SHA-256 veya SHA-512 Değeri"
+msgstr "MD5, SHA-1, SHA-256 veya SHA-512 Değeri"
 
 #: data/ui/tools.ui:70
 msgid "File"
@@ -130,6 +132,7 @@ msgid "translator-credits"
 msgstr "Uğurcan SAYAN <ugurcansayan@proton.me>"
 
 #: src/modules/functions/file_set.cr:7
+#, fuzzy
 msgid "Hash"
 msgstr "Karma Değeri"
 
