@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # ugurcansayan <uxurcansayan@gmail.com>, 2022.
+# Evangelos Paterakis <evan@geopjr.dev>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-08-23 00:15+0000\n"
-"Last-Translator: ugurcansayan <uxurcansayan@gmail.com>\n"
+"PO-Revision-Date: 2022-08-25 02:22+0000\n"
+"Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
 "Language: tr\n"
@@ -21,12 +22,10 @@ msgstr ""
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
-#, fuzzy
 msgid "Collision"
 msgstr "Çarpışma"
 
 #: data/dev.geopjr.Collision.desktop.in:7
-#, fuzzy
 msgid "Hash Generator"
 msgstr "Karılmış Değer Oluşturucu"
 
@@ -132,7 +131,6 @@ msgid "translator-credits"
 msgstr "Uğurcan SAYAN <ugurcansayan@proton.me>"
 
 #: src/modules/functions/file_set.cr:7
-#, fuzzy
 msgid "Hash"
 msgstr "Karma Değeri"
 

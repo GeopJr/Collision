@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Fran Diéguez <fran.dieguez@mabishu.com>, 2022.
 # antonpaidoslalin <anton.paidoslalin@gmail.com>, 2022.
+# Evangelos Paterakis <evan@geopjr.dev>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-05-23 20:14+0000\n"
-"Last-Translator: antonpaidoslalin <anton.paidoslalin@gmail.com>\n"
+"PO-Revision-Date: 2022-08-25 02:22+0000\n"
+"Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/collision/"
 "collision/gl/>\n"
 "Language: gl\n"
@@ -17,13 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
