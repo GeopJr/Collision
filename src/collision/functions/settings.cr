@@ -21,9 +21,11 @@ module Collision
 
   def settings_available?(settings : Gio::Settings) : Bool
     diff = SETTINGS_KEYS - settings.list_keys
-    LOGGER.debug { "Missing settings: #{diff}" }
+    missing = diff.empty?
 
-    diff.empty?
+    LOGGER.debug { "Missing settings: #{diff}" } unless missing
+
+    missing
   end
 
   def get_settings
