@@ -11,6 +11,16 @@ end
 module Collision
   LOGGER = Log.for("Collision", ARGV[0]? == "--debug" ? Log::Severity::Debug : Log::Severity::Warn)
 
+  # We want to __not__ load settings on dev/debug mode or when -Ddisable_gschema is passed or when
+  # -Denable_gschema is __not__ passed.
+  # -Denable_gschema is used for when you are in dev/debug mode and want to enable it.
+  # -Ddisable_gschema is used for when you are in prod mode and want to disable it (for package maintainers).
+  SETTINGS = {% if (flag?(:debug) || !flag?(:release) || flag?(:disable_gschema)) && !flag?(:enable_gschema) %}
+               nil
+             {% else %}
+               Gio::Settings.new("dev.geopjr.Collision")
+             {% end %}
+
   begin
     Gettext.setlocale(Gettext::LC::ALL, "")
     Gettext.bindtextdomain("dev.geopjr.Collision", {{env("COLLISION_LOCALE_LOCATION").nil? ? "/usr/share/locale" : env("COLLISION_LOCALE_LOCATION")}})

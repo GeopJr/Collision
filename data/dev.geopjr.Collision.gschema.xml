@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemalist gettext-domain="dev.geopjr.Collision">
+	<schema id="dev.geopjr.Collision" path="/dev/geopjr/Collision/">
+		<key name="window-width" type="i">
+			<default>600</default>
+			<summary>Default window width</summary>
+		</key>
+		<key name="window-height" type="i">
+			<default>460</default>
+			<summary>Default window height</summary>
+		</key>
+		<key name="is-maximized" type="b">
+			<default>false</default>
+			<summary>Default window maximized state</summary>
+		</key>
+	</schema>
+</schemalist>
