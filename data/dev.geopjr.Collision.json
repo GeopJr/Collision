@@ -49,7 +49,7 @@
         "for i in ./lib/*/; do ln -snf \"..\" \"$i/lib\"; done",
         "cd lib/gi-crystal && crystal build src/generator/main.cr && cd ../.. && mkdir ./bin && cp lib/gi-crystal/main ./bin/gi-crystal",
         "./bin/gi-crystal",
-        "COLLISION_LOCALE_LOCATION=\"/app/share/locale\" crystal build -Dpreview_mt ./src/collision.cr #--no-debug --release",
+        "COLLISION_LOCALE_LOCATION=\"/app/share/locale\" crystal build -Dpreview_mt ./src/collision.cr -Denable_gschema #--no-debug --release",
         "msgfmt --xml --template data/dev.geopjr.Collision.metainfo.xml.in -d \"./po\" -o data/dev.geopjr.Collision.metainfo.xml",
         "msgfmt --desktop --template data/dev.geopjr.Collision.desktop.in -d \"./po\" -o data/dev.geopjr.Collision.desktop",
         "mkdir -p po/mo && for lang in `cat \"po/LINGUAS\"`; do if [[ \"$lang\" == 'en' || \"$lang\" == '' ]]; then continue; fi; mkdir -p \"/app/share/locale/$lang/LC_MESSAGES\"; msgfmt \"po/$lang.po\" -o \"po/mo/$lang.mo\";  install -D -m 0644 \"po/mo/$lang.mo\" \"/app/share/locale/$lang/LC_MESSAGES/dev.geopjr.Collision.mo\"; done"
@@ -59,7 +59,9 @@
         "install -D -m 0644 data/dev.geopjr.Collision.desktop /app/share/applications/dev.geopjr.Collision.desktop",
         "install -D -m 0644 data/icons/dev.geopjr.Collision.svg /app/share/icons/hicolor/scalable/apps/dev.geopjr.Collision.svg",
         "install -D -m 0644 data/icons/dev.geopjr.Collision-symbolic.svg /app/share/icons/hicolor/symbolic/apps/dev.geopjr.Collision-symbolic.svg",
-        "install -D -m 0644 data/dev.geopjr.Collision.metainfo.xml /app/share/metainfo/dev.geopjr.Collision.metainfo.xml"
+        "install -D -m 0644 data/dev.geopjr.Collision.metainfo.xml /app/share/metainfo/dev.geopjr.Collision.metainfo.xml",
+        "install -D -m 0644 data/dev.geopjr.Collision.gschema.xml /app/share/glib-2.0/schemas/dev.geopjr.Collision.gschema.xml",
+        "glib-compile-schemas /app/share/glib-2.0/schemas"
       ],
       "sources": [
         {

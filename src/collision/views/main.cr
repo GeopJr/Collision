@@ -6,12 +6,18 @@ module Collision
     return main_window.present if main_window
 
     window = Adw::ApplicationWindow.new(app)
+    window_settings = Collision.get_settings
+
     window.name = "mainWindow"
     window.title = Gettext.gettext("Collision")
-    window.set_default_size(600, 460)
+    window.close_request_signal.connect(->Collision.save_settings(Gtk::Window))
     window.width_request = 360
     window.height_request = 360
+    window.set_default_size(window_settings[:window_width], window_settings[:window_height])
+
     @@main_window_id = window.id
+
+    window.maximize if window_settings[:window_maximized]
 
     Collision.generate_headbar
     root = Adw::StatusPage.cast(B_UI["welcomer"])
@@ -80,6 +86,7 @@ module Collision
     window.present
 
     LOGGER.debug { "Window activated" }
+    LOGGER.debug { "Settings: #{window_settings}" }
   end
 
   def startup(app : Adw::Application)
@@ -112,5 +119,6 @@ module Collision
 
   APP.startup_signal.connect(->startup(Adw::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
+
   exit(APP.run(nil))
 end

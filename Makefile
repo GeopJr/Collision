@@ -35,15 +35,18 @@ desktop:
 
 install: mo
 	install -D -m 0755 bin/collision $(PREFIX)/bin/collision
+	install -D -m 0644 data/dev.geopjr.Collision.gschema.xml $(PREFIX)/share/glib-2.0/schemas/dev.geopjr.Collision.gschema.xml
 	install -D -m 0644 data/dev.geopjr.Collision.desktop $(PREFIX)/share/applications/dev.geopjr.Collision.desktop
 	install -D -m 0644 data/icons/dev.geopjr.Collision.svg $(PREFIX)/share/icons/hicolor/scalable/apps/dev.geopjr.Collision.svg
 	install -D -m 0644 data/icons/dev.geopjr.Collision-symbolic.svg $(PREFIX)/share/icons/hicolor/symbolic/apps/dev.geopjr.Collision-symbolic.svg
-	gtk-update-icon-cache /usr/share/icons/hicolor
+	gtk-update-icon-cache $(PREFIX)/share/icons/hicolor
+	glib-compile-schemas $(PREFIX)/share/glib-2.0/schemas/
 
 uninstall:
 	rm -f $(PREFIX)/bin/collision
+	rm -f $(PREFIX)/share/glib-2.0/schemas/dev.geopjr.Collision.gschema.xml
 	rm -f $(PREFIX)/share/applications/dev.geopjr.Collision.desktop
 	rm -f $(PREFIX)/share/icons/hicolor/scalable/apps/dev.geopjr.Collision.svg
 	rm -f $(PREFIX)/share/icons/hicolor/symbolic/apps/dev.geopjr.Collision-symbolic.svg
 	rm -rf $(PREFIX)$(LOCALE_LOCATION)/*/*/dev.geopjr.Collision.mo
-	gtk-update-icon-cache /usr/share/icons/hicolor
+	gtk-update-icon-cache $(PREFIX)/share/icons/hicolor
