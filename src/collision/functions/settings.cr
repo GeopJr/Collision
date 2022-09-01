@@ -29,9 +29,9 @@ module Collision
   end
 
   def get_settings
-    LOGGER.debug { "Loading settings" }
-
     return DEFAULT_SETTINGS if (settings = SETTINGS).nil? || !settings_available?(settings)
+
+    LOGGER.debug { "Loading settings" }
 
     begin
       {
@@ -47,9 +47,9 @@ module Collision
   end
 
   def save_settings(window : Gtk::Window) : Bool
-    LOGGER.debug { "Saving settings" }
-
     return false if (settings = SETTINGS).nil? || !settings_available?(settings)
+
+    LOGGER.debug { "Saving settings" }
 
     unless window.maximized?
       settings.set_int("window-width", window.width)
