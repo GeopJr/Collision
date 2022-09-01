@@ -14,10 +14,9 @@ module Collision
     window.width_request = 360
     window.height_request = 360
     window.set_default_size(window_settings[:window_width], window_settings[:window_height])
+    window.maximize if window_settings[:window_maximized]
 
     @@main_window_id = window.id
-
-    window.maximize if window_settings[:window_maximized]
 
     Collision.generate_headbar
     root = Adw::StatusPage.cast(B_UI["welcomer"])
