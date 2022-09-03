@@ -14,6 +14,9 @@
     <img alt="screenshot" width="640" src="https://i.imgur.com/n7gE5OJ.png"><br />
     <a href='https://flathub.org/apps/details/dev.geopjr.Collision'>
       <img width='192' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
+    </a><br />
+    <a href='https://aur.archlinux.org/packages/collision'>
+      <img width='192' alt='Available on AUR' src='https://img.shields.io/badge/Available_on_aur-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white'/>
     </a>
 </p>
 
