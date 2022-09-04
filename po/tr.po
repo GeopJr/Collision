@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-08-25 02:22+0000\n"
-"Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
+"PO-Revision-Date: 2022-09-04 10:22+0000\n"
+"Last-Translator: ugurcansayan <uxurcansayan@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
 "Language: tr\n"
@@ -17,24 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr "Çarpışma"
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Karılmış Değer Oluşturucu"
+msgstr "Hash Oluşturucu"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr "Dosyalarınızın karma değerlerini kontrol edin"
+msgstr "Dosyalarınızın hash değerlerini kontrol edin"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -55,7 +55,7 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"Bu araç bu sorunu çözmeyi amaçlıyor. Çarpışma; temiz ve sade arayüzü "
+"Bu araç bu sorunu çözmeyi amaçlıyor. Collision; temiz ve sade arayüzü "
 "sayesinde, her kesimden kullanıcının MD5, SHA-256 SHA-512 ve SHA-1 değerleri "
 "oluşturup karşılaştırma ve onaylamasını sağlar."
 
@@ -90,11 +90,11 @@ msgstr "Dosya Seç..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr "Karma İşlevlerini _Karşılaştır"
+msgstr "Hash Fonksiyonlarını _Karşılaştır"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "Çarpışma _Hakkında"
+msgstr "Collision _Hakkında"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
@@ -132,8 +132,8 @@ msgstr "Uğurcan SAYAN <ugurcansayan@proton.me>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr "Karma Değeri"
+msgstr "Hash"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
-msgstr "Onayla"
+msgstr "Doğrula"
