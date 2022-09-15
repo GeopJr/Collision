@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-09-04 10:22+0000\n"
+"PO-Revision-Date: 2022-09-16 18:19+0000\n"
 "Last-Translator: Vik <xasertop@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/collision/"
 "collision/ru/>\n"
@@ -69,7 +69,7 @@ msgstr "_Открыть файл"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr "Выбрать Файл"
+msgstr "Выбрать файл"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
