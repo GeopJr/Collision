@@ -26,14 +26,14 @@
 
 ### Dependencies
 
-- `Crystal` - `~1.4.1`
+- `Crystal` - `~1.5.1`
 - `GTK`
 - `libadwaita`
 - `gettext`
 
 #### Makefile
 
-1. `make`
+1. `$ make`
 2. `# make install` # To install it
 
 #
