@@ -38,6 +38,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.1.0" date="2022-09-15">
+      <description>
+        <ul>
+          <li>Added gschema support so Collision remembers window size and maximized state</li>
+          <li>Updated dependencies</li>
+          <li>Added Tamil and Turkish translations</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.5" date="2022-08-11">
       <description>
         <ul>
