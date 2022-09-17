@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # ugurcansayan <uxurcansayan@gmail.com>, 2022.
 # Evangelos Paterakis <evan@geopjr.dev>, 2022.
+# Sabri Ünal <libreajans@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-09-04 10:22+0000\n"
-"Last-Translator: ugurcansayan <uxurcansayan@gmail.com>\n"
+"PO-Revision-Date: 2022-09-17 01:08+0000\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
 "Language: tr\n"
@@ -61,11 +62,11 @@ msgstr ""
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
-msgstr "Bir Dosya _Aç"
+msgstr "Dosya _Aç"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr "Bir Dosya Seç"
+msgstr "Dosya Seç"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
