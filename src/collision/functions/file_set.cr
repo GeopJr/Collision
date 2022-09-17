@@ -32,7 +32,7 @@ module Collision
     filepath.dirname.to_s
   end
 
-  def set_file(filepath : Path)
+  def file=(filepath : Path)
     LOGGER.debug { "File set: #{filepath.to_s}" }
 
     FILE_INFO.title = filepath.basename.to_s
@@ -53,5 +53,12 @@ module Collision
       SPINNER.visible = false
       HEADER_TITLE.view_switcher_enabled = true
     end
+  end
+
+  # For Gio::File
+  def file=(file : Gio::File)
+    Collision.reset_feedback
+
+    Collision.file = file.not_nil!.path.not_nil!
   end
 end

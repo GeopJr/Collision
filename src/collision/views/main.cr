@@ -33,9 +33,8 @@ module Collision
     MAIN_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
-      Collision.reset_feedback
 
-      set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
+      Collision.file = MAIN_FILE_CHOOSER_NATIVE.file.not_nil!
     end
 
     OPEN_FILE_BUTTON.clicked_signal.connect do
@@ -80,6 +79,7 @@ module Collision
     {% if flag?(:debug) || !flag?(:release) %}
       window.add_css_class("devel")
     {% end %}
+    window.add_controller(DnD)
 
     window.content = WINDOW_BOX
     window.present
@@ -118,6 +118,10 @@ module Collision
 
   APP.startup_signal.connect(->startup(Adw::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
+
+  DnD.drop_signal.connect(->Collision::DragNDrop.dnd_drop(GObject::Value, Float64, Float64))
+  DnD.enter_signal.connect(->Collision::DragNDrop.dnd_enter(Float64, Float64))
+  DnD.leave_signal.connect(->Collision::DragNDrop.dnd_leave)
 
   exit(APP.run(nil))
 end
