@@ -17,7 +17,11 @@ module Collision::DragNDrop
     LOGGER.debug { "DnD Dropped" }
 
     begin
-      (Collision::Welcomer.passed? ? Collision : Collision::Welcomer).file = Gio::File.new_for_uri(value.as_s.gsub(/\r|\n/, ""))
+      filepath = value.as_s.split(/\r|\n/).reject { |x| !x.downcase.starts_with?("file://") }
+      raise "No files starting with 'file://' given, instead got: #{value.as_s}" unless filepath.size > 0
+
+      file = Gio::File.new_for_uri(filepath[0])
+      (Collision::Welcomer.passed? ? Collision : Collision::Welcomer).file = file
 
       true
     rescue ex
