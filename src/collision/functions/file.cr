@@ -45,7 +45,7 @@ module Collision
     HEADER_TITLE.view_switcher_enabled = false
 
     LOGGER.debug { "Begin generating hashes" }
-    Collision.generate_hashes(filepath.to_s) do
+    Collision::Checksum.generate(filepath.to_s) do
       sleep 500.milliseconds
       OPEN_FILE_BUTTON.visible = true
       FILE_INFO.visible = true

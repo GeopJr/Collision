@@ -1,7 +1,7 @@
-module Collision
+module Collision::Headbar
   extend self
 
-  def generate_headbar
+  def generate
     OPEN_FILE_BUTTON.visible = false
 
     HEADERBAR.pack_start(OPEN_FILE_BUTTON)

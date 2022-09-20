@@ -6,7 +6,7 @@ module Collision
     return main_window.present if main_window
 
     window = Adw::ApplicationWindow.new(app)
-    window_settings = Collision.get_settings
+    window_settings = Collision.settings
 
     window.name = "mainWindow"
     window.title = Gettext.gettext("Collision")
@@ -18,7 +18,7 @@ module Collision
 
     @@main_window_id = window.id
 
-    Collision.generate_headbar
+    Collision::Headbar.generate
     root = Adw::StatusPage.cast(B_UI["welcomer"])
 
     WINDOW_BOX.append(HEADERBAR)
@@ -33,7 +33,7 @@ module Collision
     MAIN_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
-      Collision.reset_feedback
+      Collision::Feedback.reset
 
       set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
     end
@@ -59,7 +59,7 @@ module Collision
         next if soft_locked
         soft_locked = true
 
-        btn.icon_name = Collision.icon(success)
+        btn.icon_name = Collision::Feedback.icon(success)
         feedback_class = success ? "success" : "error"
         btn.add_css_class(feedback_class)
         Non::Blocking.spawn do

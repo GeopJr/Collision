@@ -1,20 +1,18 @@
-module Collision
-  module Welcomer
-    extend self
+module Collision::Welcomer
+  extend self
 
-    def init
-      WELCOME_BUTTON.clicked_signal.connect do
-        WELCOMER_FILE_CHOOSER_NATIVE.show
-      end
+  def init
+    WELCOME_BUTTON.clicked_signal.connect do
+      WELCOMER_FILE_CHOOSER_NATIVE.show
+    end
 
-      WELCOMER_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
-        next unless response == -3
-        WINDOW_BOX.remove(Gtk::Widget.cast(B_UI["welcomer"]))
-        Collision.reset
+    WELCOMER_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
+      next unless response == -3
+      WINDOW_BOX.remove(Gtk::Widget.cast(B_UI["welcomer"]))
+      Collision.reset
 
-        Collision.set_file(WELCOMER_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
-        LOGGER.debug { "Passed welcomer" }
-      end
+      Collision.set_file(WELCOMER_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
+      LOGGER.debug { "Passed welcomer" }
     end
   end
 end

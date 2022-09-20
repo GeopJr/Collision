@@ -1,7 +1,7 @@
 require "./spec_helper"
 require "../src/collision/functions/checksum.cr"
 
-describe "hash generator" do
+describe Collision::Checksum do
   it "gets hashes from file" do
     path = Path["./spec/test.txt"].expand(home: true)
     hashes = Hash(String, String).new
@@ -9,8 +9,8 @@ describe "hash generator" do
     hash_functions = ["sha512", "sha256", "md5", "sha1"]
 
     hash_functions.each do |x|
-      Collision.handle_spawning do
-        hashes[x] = Collision.calculate_hash(x, path.to_s)
+      Collision::Checksum.spawn do
+        hashes[x] = Collision::Checksum.calculate(x, path.to_s)
       end
     end
 
