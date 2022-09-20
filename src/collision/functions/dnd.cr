@@ -10,7 +10,7 @@ module Collision
     def initialize(parent : DropClasses)
       @parent = parent
 
-      connect_dnd_signals(@controller)
+      connect_dnd_signals
     end
 
     private def dnd_enter(x, y)
@@ -41,12 +41,10 @@ module Collision
       end
     end
 
-    def connect_dnd_signals(dnd : Gtk::DropTarget) : Gtk::DropTarget
-      dnd.drop_signal.connect(->dnd_drop(GObject::Value, Float64, Float64))
-      dnd.enter_signal.connect(->dnd_enter(Float64, Float64))
-      dnd.leave_signal.connect(->dnd_leave)
-
-      dnd
+    private def connect_dnd_signals
+      @controller.drop_signal.connect(->dnd_drop(GObject::Value, Float64, Float64))
+      @controller.enter_signal.connect(->dnd_enter(Float64, Float64))
+      @controller.leave_signal.connect(->dnd_leave)
     end
   end
 end
