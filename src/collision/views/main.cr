@@ -82,14 +82,9 @@ module Collision
       window.add_css_class("devel")
     {% end %}
 
-    # Adding the controller to the window
-    # won't show the border on hover...
-    # window.add_controller(Collision::DragNDrop.controller)
-
-    # ... so instead add it to the children,
-    # welcomer and fileinfo.
-    root.add_controller(Collision::DragNDrop.controller)
-    FILE_INFO.add_controller(Collision::DragNDrop.controller)
+    # DnD controllers
+    root.add_controller(Collision::DragNDrop.new(Collision::Welcomer).controller)
+    FILE_INFO.add_controller(Collision::DragNDrop.new(Collision).controller)
 
     window.content = WINDOW_BOX
     window.present
