@@ -1,5 +1,5 @@
 require "./spec_helper"
-require "../src/collision/functions/generate_hash.cr"
+require "../src/collision/functions/checksum.cr"
 
 describe "hash generator" do
   it "gets hashes from file" do
