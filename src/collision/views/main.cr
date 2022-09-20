@@ -35,6 +35,8 @@ module Collision
       next unless response == -3
 
       Collision.file = MAIN_FILE_CHOOSER_NATIVE.file.not_nil!
+    rescue ex
+      LOGGER.debug { ex }
     end
 
     OPEN_FILE_BUTTON.clicked_signal.connect do

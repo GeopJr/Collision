@@ -33,7 +33,7 @@ module Collision
   end
 
   def file=(filepath : Path)
-    LOGGER.debug { "File set: #{filepath.to_s}" }
+    LOGGER.debug { "File set: \"#{filepath}\"" }
 
     FILE_INFO.title = filepath.basename.to_s
     FILE_INFO.description = real_path(filepath)
@@ -55,10 +55,30 @@ module Collision
     end
   end
 
-  # For Gio::File
+  # For Gio::File.
+  # Should be used instead of Collision#file=(filepath : Path)
+  # unless path is a File and exists.
   def file=(file : Gio::File)
+    Collision.file?(file.path.not_nil!)
+
     Collision.reset_feedback
 
-    Collision.file = file.not_nil!.path.not_nil!
+    Collision.file = file.path.not_nil!
+  end
+
+  # Checks if path is a File and exists.
+  # If it doesn't, it will either raise an exception
+  # or just log an error based on the `exception` param.
+  def file?(file : Path | String, exception : Bool = true) : Bool
+    return true if File.file?(file)
+
+    msg = "\"#{file}\" does not exist or is not a File"
+    if exception
+      raise msg
+    else
+      LOGGER.debug { msg }
+    end
+
+    false
   end
 end
