@@ -60,7 +60,6 @@ module Collision
   B_SP = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/spinner.ui")
   B_FI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/file_info.ui")
 
-  DnD        = Gtk::DropTarget.new(String.g_type, Gdk::DragAction::Copy)
   WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
   HEADERBAR  = Adw::HeaderBar.new
 

@@ -79,7 +79,15 @@ module Collision
     {% if flag?(:debug) || !flag?(:release) %}
       window.add_css_class("devel")
     {% end %}
-    window.add_controller(DnD)
+
+    # Adding the controller to the window
+    # won't show the border on hover...
+    # window.add_controller(Collision::DragNDrop.controller)
+
+    # ... so instead add it to the children,
+    # welcomer and fileinfo.
+    root.add_controller(Collision::DragNDrop.controller)
+    FILE_INFO.add_controller(Collision::DragNDrop.controller)
 
     window.content = WINDOW_BOX
     window.present
@@ -118,10 +126,6 @@ module Collision
 
   APP.startup_signal.connect(->startup(Adw::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
-
-  DnD.drop_signal.connect(->Collision::DragNDrop.dnd_drop(GObject::Value, Float64, Float64))
-  DnD.enter_signal.connect(->Collision::DragNDrop.dnd_enter(Float64, Float64))
-  DnD.leave_signal.connect(->Collision::DragNDrop.dnd_leave)
 
   exit(APP.run(nil))
 end
