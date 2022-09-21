@@ -62,7 +62,6 @@ module Collision
   B_FI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/file_info.ui")
 
   WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
-  HEADERBAR  = Adw::HeaderBar.new
 
   WELCOME_BUTTON               = Gtk::Button.cast(B_UI["welcomeBtn"])
   OPEN_FILE_BUTTON             = Gtk::Button.cast(B_HL["openFileBtn"])

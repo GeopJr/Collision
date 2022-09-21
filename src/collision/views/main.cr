@@ -20,10 +20,11 @@ module Collision
 
     @@main_window_id = window.id
 
-    Collision::Headbar.generate
+    # Initial layout.
     root = Adw::StatusPage.cast(B_UI["welcomer"])
+    headerbar = Collision::Headerbar.new
 
-    WINDOW_BOX.append(HEADERBAR)
+    WINDOW_BOX.append(headerbar.widget)
     WINDOW_BOX.append(root)
 
     # Setup file choosers.
