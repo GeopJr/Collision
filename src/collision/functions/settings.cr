@@ -61,6 +61,6 @@ module Collision
     end
     settings.set_boolean("is-maximized", window.maximized?)
 
-    false
+    false # It has to return false so the window closes.
   end
 end

@@ -2,9 +2,11 @@ module Collision
   @@main_window_id = 0_u32
 
   def activate(app : Adw::Application)
+    # Put window on focus if already exists.
     main_window = APP.window_by_id(@@main_window_id)
     return main_window.present if main_window
 
+    # Setup window.
     window = Adw::ApplicationWindow.new(app)
     window_settings = Collision.settings
 
@@ -24,13 +26,11 @@ module Collision
     WINDOW_BOX.append(HEADERBAR)
     WINDOW_BOX.append(root)
 
-    Collision.about_action(app)
-    Collision.hashinfo_action(app, @@main_window_id)
-
+    # Setup file choosers.
     WELCOMER_FILE_CHOOSER_NATIVE.transient_for = window
-
     TOOL_COMPARE_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.transient_for = window
+
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
       Collision::Feedback.reset
@@ -42,37 +42,14 @@ module Collision
       MAIN_FILE_CHOOSER_NATIVE.show
     end
 
-    clipboard = window.clipboard
-    COPY_BUTTONS.each do |hash_type, btn|
-      soft_locked = false
-      btn.clicked_signal.connect do
-        LOGGER.debug { "Copied #{hash_type} hash" }
+    # Setup actions.
+    Collision::Action::About.new(app)
+    Collision::Action::HashInfo.new(app, window.id)
 
-        hash = CLIPBOARD_HASH[hash_type]
-        success = true
-        begin
-          clipboard.set(hash)
-        rescue
-          success = false
-        end
+    # Setup clipboard.
+    Collision::Clipboard.new(window, COPY_BUTTONS)
 
-        next if soft_locked
-        soft_locked = true
-
-        btn.icon_name = Collision::Feedback.icon(success)
-        feedback_class = success ? "success" : "error"
-        btn.add_css_class(feedback_class)
-        Non::Blocking.spawn do
-          sleep 1.1.seconds # 1 feels fast, 1.5 feels slow
-          btn.icon_name = "edit-copy-symbolic"
-          btn.remove_css_class(feedback_class)
-          soft_locked = false
-
-          LOGGER.debug { "Copy button feedback reset" }
-        end
-      end
-    end
-
+    # Setup views.
     Collision::Welcomer.init
     Collision::Compare.init
     Collision::Verify.init
@@ -88,6 +65,9 @@ module Collision
     LOGGER.debug { "Settings: #{window_settings}" }
   end
 
+  # Sets up the verify tab so it's responsive
+  # on window size change as well as its initial
+  # state.
   def startup(app : Adw::Application)
     tools_grid_first_child = TOOLS_GRID.first_child
     tools_grid_last_child = TOOLS_GRID.last_child
