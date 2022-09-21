@@ -30,6 +30,20 @@ module Collision
 
       missing
     end
+
+    def save(window : Gtk::Window) : Bool
+      return false if (settings = SETTINGS).nil? || !Collision::Settings.available?(settings)
+
+      LOGGER.debug { "Saving settings" }
+
+      unless window.maximized?
+        settings.set_int("window-width", window.width)
+        settings.set_int("window-height", window.height)
+      end
+      settings.set_boolean("is-maximized", window.maximized?)
+
+      false # It has to return false so the window closes.
+    end
   end
 
   def settings
@@ -48,19 +62,5 @@ module Collision
 
       Collision::Settings::DEFAULT_SETTINGS
     end
-  end
-
-  def save_settings(window : Gtk::Window) : Bool
-    return false if (settings = SETTINGS).nil? || !Collision::Settings.available?(settings)
-
-    LOGGER.debug { "Saving settings" }
-
-    unless window.maximized?
-      settings.set_int("window-width", window.width)
-      settings.set_int("window-height", window.height)
-    end
-    settings.set_boolean("is-maximized", window.maximized?)
-
-    false # It has to return false so the window closes.
   end
 end

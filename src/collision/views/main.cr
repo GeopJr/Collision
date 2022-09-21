@@ -12,7 +12,7 @@ module Collision
 
     window.name = "mainWindow"
     window.title = Gettext.gettext("Collision")
-    window.close_request_signal.connect(->Collision.save_settings(Gtk::Window))
+    window.close_request_signal.connect(->Collision::Settings.save(Gtk::Window))
     window.width_request = 360
     window.height_request = 360
     window.set_default_size(window_settings[:window_width], window_settings[:window_height])
