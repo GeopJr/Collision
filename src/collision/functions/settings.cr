@@ -3,33 +3,51 @@
 module Collision
   extend self
 
-  DEFAULT_SETTINGS = {
-    window_width:     600,
-    window_height:    460,
-    window_maximized: false,
-  }
+  module Settings
+    extend self
 
-  # Used to avoid a GLib error on runtime
-  # when a key doesn't exist for whatever
-  # reason.
-  # Settings keys used/required.
-  SETTINGS_KEYS = [
-    "window-width",
-    "window-height",
-    "is-maximized",
-  ]
+    DEFAULT_SETTINGS = {
+      window_width:     600,
+      window_height:    460,
+      window_maximized: false,
+    }
 
-  def settings_available?(settings : Gio::Settings) : Bool
-    diff = SETTINGS_KEYS - settings.list_keys
-    missing = diff.empty?
+    # Used to avoid a GLib error on runtime
+    # when a key doesn't exist for whatever
+    # reason.
+    # Settings keys used/required.
+    SETTINGS_KEYS = [
+      "window-width",
+      "window-height",
+      "is-maximized",
+    ]
 
-    LOGGER.debug { "Missing settings: #{diff}" } unless missing
+    def available?(settings : Gio::Settings) : Bool
+      diff = SETTINGS_KEYS - settings.list_keys
+      missing = diff.empty?
 
-    missing
+      LOGGER.debug { "Missing settings: #{diff}" } unless missing
+
+      missing
+    end
+
+    def save(window : Gtk::Window) : Bool
+      return false if (settings = SETTINGS).nil? || !Collision::Settings.available?(settings)
+
+      LOGGER.debug { "Saving settings" }
+
+      unless window.maximized?
+        settings.set_int("window-width", window.width)
+        settings.set_int("window-height", window.height)
+      end
+      settings.set_boolean("is-maximized", window.maximized?)
+
+      false # It has to return false so the window closes.
+    end
   end
 
-  def get_settings
-    return DEFAULT_SETTINGS if (settings = SETTINGS).nil? || !settings_available?(settings)
+  def settings
+    return Collision::Settings::DEFAULT_SETTINGS if (settings = SETTINGS).nil? || !Collision::Settings.available?(settings)
 
     LOGGER.debug { "Loading settings" }
 
@@ -42,21 +60,7 @@ module Collision
     rescue ex
       LOGGER.debug { ex }
 
-      DEFAULT_SETTINGS
+      Collision::Settings::DEFAULT_SETTINGS
     end
-  end
-
-  def save_settings(window : Gtk::Window) : Bool
-    return false if (settings = SETTINGS).nil? || !settings_available?(settings)
-
-    LOGGER.debug { "Saving settings" }
-
-    unless window.maximized?
-      settings.set_int("window-width", window.width)
-      settings.set_int("window-height", window.height)
-    end
-    settings.set_boolean("is-maximized", window.maximized?)
-
-    false
   end
 end

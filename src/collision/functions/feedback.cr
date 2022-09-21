@@ -1,12 +1,12 @@
 # Returns the correct symbolic icon for feedback based on whether or not the task was successful
 
-module Collision
+module Collision::Feedback
   extend self
 
   DEFAULT_FEEDBACK_ICON = "dialog-password-symbolic"
   CLASSES               = {"success", "error"}
 
-  def reset_feedback
+  def reset
     TOOL_VERIFY_INPUT.buffer.text = ""
     TOOL_VERIFY_FEEDBACK.visible = false
 

@@ -2,15 +2,17 @@ module Collision
   @@main_window_id = 0_u32
 
   def activate(app : Adw::Application)
+    # Put window on focus if already exists.
     main_window = APP.window_by_id(@@main_window_id)
     return main_window.present if main_window
 
+    # Setup window.
     window = Adw::ApplicationWindow.new(app)
-    window_settings = Collision.get_settings
+    window_settings = Collision.settings
 
     window.name = "mainWindow"
     window.title = Gettext.gettext("Collision")
-    window.close_request_signal.connect(->Collision.save_settings(Gtk::Window))
+    window.close_request_signal.connect(->Collision::Settings.save(Gtk::Window))
     window.width_request = 360
     window.height_request = 360
     window.set_default_size(window_settings[:window_width], window_settings[:window_height])
@@ -18,19 +20,18 @@ module Collision
 
     @@main_window_id = window.id
 
-    Collision.generate_headbar
+    # Initial layout.
     root = Adw::StatusPage.cast(B_UI["welcomer"])
+    headerbar = Collision::Headerbar.new
 
-    WINDOW_BOX.append(HEADERBAR)
+    WINDOW_BOX.append(headerbar.widget)
     WINDOW_BOX.append(root)
 
-    Collision.about_action(app)
-    Collision.hashinfo_action(app, @@main_window_id)
-
+    # Setup file choosers.
     WELCOMER_FILE_CHOOSER_NATIVE.transient_for = window
-
     TOOL_COMPARE_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.transient_for = window
+
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
 
@@ -43,37 +44,14 @@ module Collision
       MAIN_FILE_CHOOSER_NATIVE.show
     end
 
-    clipboard = window.clipboard
-    COPY_BUTTONS.each do |hash_type, btn|
-      soft_locked = false
-      btn.clicked_signal.connect do
-        LOGGER.debug { "Copied #{hash_type} hash" }
+    # Setup actions.
+    Collision::Action::About.new(app)
+    Collision::Action::HashInfo.new(app, window.id)
 
-        hash = CLIPBOARD_HASH[hash_type]
-        success = true
-        begin
-          clipboard.set(hash)
-        rescue
-          success = false
-        end
+    # Setup clipboard.
+    Collision::Clipboard.new(window, COPY_BUTTONS)
 
-        next if soft_locked
-        soft_locked = true
-
-        btn.icon_name = Collision.icon(success)
-        feedback_class = success ? "success" : "error"
-        btn.add_css_class(feedback_class)
-        Non::Blocking.spawn do
-          sleep 1.1.seconds # 1 feels fast, 1.5 feels slow
-          btn.icon_name = "edit-copy-symbolic"
-          btn.remove_css_class(feedback_class)
-          soft_locked = false
-
-          LOGGER.debug { "Copy button feedback reset" }
-        end
-      end
-    end
-
+    # Setup views.
     Collision::Welcomer.init
     Collision::Compare.init
     Collision::Verify.init
@@ -82,7 +60,7 @@ module Collision
       window.add_css_class("devel")
     {% end %}
 
-    # DnD controllers
+    # Setup DnD controllers.
     root.add_controller(Collision::DragNDrop.new(Collision::Welcomer).controller)
     FILE_INFO.add_controller(Collision::DragNDrop.new(Collision).controller)
 
@@ -93,6 +71,9 @@ module Collision
     LOGGER.debug { "Settings: #{window_settings}" }
   end
 
+  # Sets up the verify tab so it's responsive
+  # on window size change as well as its initial
+  # state.
   def startup(app : Adw::Application)
     tools_grid_first_child = TOOLS_GRID.first_child
     tools_grid_last_child = TOOLS_GRID.last_child

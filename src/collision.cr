@@ -9,7 +9,8 @@ if Non::Blocking.threads.size == 0
 end
 
 module Collision
-  LOGGER = Log.for("Collision", ARGV[0]? == "--debug" ? Log::Severity::Debug : Log::Severity::Warn)
+  # Enable debug logs if debug build or --debug is passed.
+  LOGGER = Log.for("Collision", ({{ flag?(:debug) || !flag?(:release) }} || ARGV[0]? == "--debug") ? Log::Severity::Debug : Log::Severity::Warn)
 
   # We want to __not__ load settings on dev/debug mode or when -Ddisable_gschema is passed or when
   # -Denable_gschema is __not__ passed.
@@ -61,7 +62,6 @@ module Collision
   B_FI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/file_info.ui")
 
   WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
-  HEADERBAR  = Adw::HeaderBar.new
 
   WELCOME_BUTTON               = Gtk::Button.cast(B_UI["welcomeBtn"])
   OPEN_FILE_BUTTON             = Gtk::Button.cast(B_HL["openFileBtn"])
