@@ -20,7 +20,9 @@ module Collision::Action
           artists: {"Tobias Bernard"},
           designers: {"Tobias Bernard", "Evangelos \"GeopJr\" Paterakis"},
           translator_credits: Gettext.gettext("translator-credits"),
-          license_type: Gtk::License::Bsd
+          license_type: Gtk::License::Bsd,
+          debug_info: TROUBLESHOOTING.to_s.gsub(/File set: .+\n/, "File set: REDACTED\n"), # Attempt to redact file paths.
+          debug_info_filename: "Collision-#{Time.utc.to_unix_ms}.txt"
         )
       end
 
