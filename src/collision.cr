@@ -14,16 +14,19 @@ module Collision
   # section.
   TROUBLESHOOTING = IO::Memory.new
 
-  if {{ flag?(:debug) || !flag?(:release) }} || ARGV[0]? == "--debug"
-    # Some basic info
-    TROUBLESHOOTING << <<-DEBUG
-    flatpak: #{{{!env("FLATPAK_ID").nil? || file_exists?("/.flatpak-info")}}}
-    release: #{{{flag?(:release)}}}
-    debug: #{{{flag?(:debug)}}}
-    version: #{VERSION}
-    crystal: #{Crystal::VERSION}
+  # Some basic info
+  TROUBLESHOOTING << <<-DEBUG
+  flatpak: #{{{!env("FLATPAK_ID").nil? || file_exists?("/.flatpak-info")}}}
+  release: #{{{flag?(:release)}}}
+  debug: #{{{flag?(:debug)}}}
+  version: #{VERSION}
+  crystal: #{Crystal::VERSION}
+  gtk: #{Gtk.major_version}.#{Gtk.minor_version}.#{Gtk.micro_version} (#{Gtk::MAJOR_VERSION}.#{Gtk::MINOR_VERSION}.#{Gtk::MICRO_VERSION})
+  libadwaita: #{Adw.major_version}.#{Adw.minor_version}.#{Adw.micro_version} (#{Adw::MAJOR_VERSION}.#{Adw::MINOR_VERSION}.#{Adw::MICRO_VERSION})
+  DEBUG
 
-    DEBUG
+  if {{ flag?(:debug) || !flag?(:release) }} || ARGV[0]? == "--debug"
+    TROUBLESHOOTING << "\n\n"
 
     Log.setup do |c|
       backend = Log::IOBackend.new
