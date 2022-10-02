@@ -105,7 +105,7 @@
         {
           "type": "git",
           "url": "https://github.com/geopjr/libadwaita.cr.git",
-          "commit": "840e2a37c606c6970fbe299f53ee080c75fc09fa",
+          "commit": "72f2e42c7dafbf7a427fb24db5dce4e66199d680",
           "dest": "lib/libadwaita"
         },
         {
