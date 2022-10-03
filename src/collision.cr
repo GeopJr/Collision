@@ -10,6 +10,33 @@ end
 
 module Collision
   # Enable debug logs if debug build or --debug is passed.
+  # Also save a copy in memory for the About window troubleshooting
+  # section.
+  TROUBLESHOOTING = IO::Memory.new
+
+  # Some basic info
+  TROUBLESHOOTING << <<-DEBUG
+  flatpak: #{{{!env("FLATPAK_ID").nil? || file_exists?("/.flatpak-info")}}}
+  release: #{{{flag?(:release)}}}
+  debug: #{{{flag?(:debug)}}}
+  version: #{VERSION}
+  crystal: #{Crystal::VERSION}
+  gtk: #{Gtk.major_version}.#{Gtk.minor_version}.#{Gtk.micro_version} (#{Gtk::MAJOR_VERSION}.#{Gtk::MINOR_VERSION}.#{Gtk::MICRO_VERSION})
+  libadwaita: #{Adw.major_version}.#{Adw.minor_version}.#{Adw.micro_version} (#{Adw::MAJOR_VERSION}.#{Adw::MINOR_VERSION}.#{Adw::MICRO_VERSION})
+  DEBUG
+
+  if {{ flag?(:debug) || !flag?(:release) }} || ARGV[0]? == "--debug"
+    TROUBLESHOOTING << "\n\n"
+
+    Log.setup do |c|
+      backend = Log::IOBackend.new
+
+      c.bind "Collision", :debug, backend
+      c.bind "Collision", :debug, Log::IOBackend.new(TROUBLESHOOTING)
+      c.bind "Collision", :warn, backend
+    end
+  end
+
   LOGGER = Log.for("Collision", ({{ flag?(:debug) || !flag?(:release) }} || ARGV[0]? == "--debug") ? Log::Severity::Debug : Log::Severity::Warn)
 
   # We want to __not__ load settings on dev/debug mode or when -Ddisable_gschema is passed or when

@@ -14,7 +14,7 @@ shards:
 
   libadwaita:
     git: https://github.com/geopjr/libadwaita.cr.git
-    version: 1.0.0+git.commit.840e2a37c606c6970fbe299f53ee080c75fc09fa
+    version: 1.0.0+git.commit.72f2e42c7dafbf7a427fb24db5dce4e66199d680
 
   non-blocking-spawn:
     git: https://github.com/geopjr/non-blocking-spawn.git

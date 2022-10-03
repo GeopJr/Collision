@@ -11,7 +11,7 @@ targets:
 dependencies:
   libadwaita:
     github: GeopJr/libadwaita.cr
-    commit: 840e2a37c606c6970fbe299f53ee080c75fc09fa
+    commit: 72f2e42c7dafbf7a427fb24db5dce4e66199d680
   non-blocking-spawn:
     github: GeopJr/non-blocking-spawn
     version: ~> 1.0.5
