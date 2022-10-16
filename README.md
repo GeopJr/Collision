@@ -26,7 +26,7 @@
 
 ### Dependencies
 
-- `Crystal` - `~1.5.1`
+- `Crystal` - `~1.6.0`
 - `GTK`
 - `libadwaita`
 - `gettext`
