@@ -4,13 +4,14 @@
 # BigmenPixel <73637218+BigmenPixel0@users.noreply.github.com>, 2021.
 # Sergey Shavin <Seriy-sh@yandex.ru>, 2022.
 # Vik <xasertop@gmail.com>, 2022.
+# Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-14 23:08+0200\n"
-"PO-Revision-Date: 2022-09-16 18:19+0000\n"
-"Last-Translator: Vik <xasertop@gmail.com>\n"
+"PO-Revision-Date: 2022-11-01 15:43+0000\n"
+"Last-Translator: Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/collision/"
 "collision/ru/>\n"
 "Language: ru\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
@@ -47,10 +48,9 @@ msgid ""
 "actors."
 msgstr ""
 "Проверка того, что файл, который вы загрузили или получили, действительно "
-"является тем, который вы ожидали, часто упускается из виду или требует "
-"слишком много времени. Вместе с тем стало очень легко получить доступ к "
-"подделанному файлу, из-за массового увеличения числа вредоносных веб-страниц "
-"и других субъектов."
+"является тем, что вы ожидали, часто игнорируетя или требует слишком много "
+"времени. Вместе с тем стало очень легко нарваться на подделаный файл, из-за "
+"массового увеличения числа вредоносных веб-страниц и другого вредоносного ПО."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -95,7 +95,7 @@ msgstr "Выбрать файл..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr "_Сравнить хеш-функции"
+msgstr "_Функции сравнения хешей"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
@@ -126,7 +126,9 @@ msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr "BigmenPixel, ViktorOn https://github.com/viktoron"
+msgstr ""
+"BigmenPixel, ViktorOn https://github.com/viktoron, Andrew Nitrogenesis "
+"https://github.com/nitrogenez"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
