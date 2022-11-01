@@ -98,10 +98,14 @@ module Collision
     TOOL_VERIFY_OVERLAY.child = scrolled_window
   end
 
+  # Handles the open signal. It first calls activate and then
+  # if there are files passed (that exist and are not dirs)
+  # it sets the first one (since multiple can be passed)
+  # as the Collision::Welcomer's file.
   def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
     activate(app)
 
-    if files.size >= 0 && Collision.file?(files[0].path.not_nil!, false)
+    if files.size > 0 && Collision.file?(files[0].path.not_nil!, false)
       Collision::Welcomer.file = files[0]
     end
 
