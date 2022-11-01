@@ -145,5 +145,5 @@ module Collision
   FILE_INFO = Adw::StatusPage.cast(B_FI["fileInfo"])
   HASH_LIST = Gtk::ListBox.cast(B_HS["hashList"])
 
-  APP = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::None)
+  APP = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
 end

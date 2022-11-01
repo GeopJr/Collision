@@ -98,8 +98,21 @@ module Collision
     TOOL_VERIFY_OVERLAY.child = scrolled_window
   end
 
+  def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
+    activate(app)
+
+    if files.size >= 0 && Collision.file?(files[0].path.not_nil!, false)
+      Collision::Welcomer.file = files[0]
+    end
+
+    nil
+  end
+
   APP.startup_signal.connect(->startup(Adw::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
+  APP.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), String))
 
-  exit(APP.run(nil))
+  # ARGV but without flags, passed to Application.
+  clean_argv = [PROGRAM_NAME].concat(ARGV.reject { |x| x.starts_with?('-') })
+  exit(APP.run(clean_argv))
 end
