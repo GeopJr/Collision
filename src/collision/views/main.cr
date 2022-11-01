@@ -34,9 +34,10 @@ module Collision
 
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
-      Collision::Feedback.reset
 
-      set_file(MAIN_FILE_CHOOSER_NATIVE.file.not_nil!.path.not_nil!)
+      Collision.file = MAIN_FILE_CHOOSER_NATIVE.file.not_nil!
+    rescue ex
+      LOGGER.debug { ex }
     end
 
     OPEN_FILE_BUTTON.clicked_signal.connect do
