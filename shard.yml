@@ -1,5 +1,5 @@
 name: collision
-version: 3.2.0
+version: 3.3.0
 
 authors:
   - GeopJr <evan@geopjr.dev>
@@ -19,6 +19,6 @@ dependencies:
     github: GeopJr/gettext.cr
     version: ~> 1.0.0
 
-crystal: 1.6.0
+crystal: 1.6.2
 
 license: BSD-2-Clause
