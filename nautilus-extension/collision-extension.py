@@ -31,7 +31,7 @@ class NautilusCollision(Nautilus.MenuProvider, GObject.GObject):
         return menu_item,
 
     def get_file_items(self, files):
-        if len(files) > 1:  # The option doesn't appear when there is more than 1 file selected (because Collision doesn't handle it yet)
+        if len(files) > 1 or files[0].is_directory():  # The option doesn't appear when there is more than 1 file selected (because Collision doesn't handle it yet) or when a folder is selected
             return ()
 
         menu_item = Nautilus.MenuItem(
