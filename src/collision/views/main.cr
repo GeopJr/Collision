@@ -1,5 +1,6 @@
 module Collision
   @@main_window_id = 0_u32
+  @@activated = false
 
   def activate(app : Adw::Application)
     # Put window on focus if already exists.
@@ -62,6 +63,7 @@ module Collision
 
     window.content = WINDOW_BOX
     window.present
+    @@activated = true
 
     LOGGER.debug { "Window activated" }
     LOGGER.debug { "Settings: #{window_settings}" }
@@ -103,10 +105,10 @@ module Collision
   # it sets the first one (since multiple can be passed)
   # as the Collision::Welcomer's file.
   def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
-    activate(app)
+    activate(app) unless @@activated
 
     if files.size > 0 && Collision.file?(files[0].path.not_nil!, false)
-      Collision::Welcomer.file = files[0]
+      (Collision::Welcomer.passed? ? Collision : Collision::Welcomer).file = files[0]
     end
 
     nil
