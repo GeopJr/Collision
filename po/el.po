@@ -137,3 +137,7 @@ msgstr "Checksum"
 #: data/ui/tools.ui:70
 msgid "File"
 msgstr "Αρχείο"
+
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr "Ελέγξτε Hashes"
