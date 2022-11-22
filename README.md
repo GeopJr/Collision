@@ -38,6 +38,21 @@
 
 #
 
+## Nautilus Extension
+
+Collision offers a nautilus / GNOME Files extension that adds a "Check Hashes" context menu item.
+
+### Dependencies
+
+- `nautilus`
+- [`nautilus-python`](https://repology.org/project/nautilus-python/versions)
+
+### Makefile
+
+`$ make install_nautilus_extension`
+
+#
+
 ## Contributing
 
 1. Read the [Code of Conduct](https://github.com/GeopJr/Collision/blob/main/CODE_OF_CONDUCT.md)
