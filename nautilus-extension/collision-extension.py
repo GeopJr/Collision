@@ -6,6 +6,10 @@ from subprocess import Popen, check_call  # In order to open Collision on a new 
 from urllib.parse import urlparse, unquote  # Necessary to parse file URI
 from shutil import which
 from gi import require_version
+from gettext import textdomain, gettext
+
+textdomain('dev.geopjr.Collision')
+_ = gettext
 
 require_version('Gtk', '4.0')
 require_version('Nautilus', '4.0')
@@ -46,7 +50,7 @@ class NautilusCollision(Nautilus.MenuProvider, GObject.GObject):
 
         menu_item = Nautilus.MenuItem(
                         name="NautilusCollision::CheckHashes",
-                        label="Check Hashes")  # TODO : Add the ability to make this label translated with the .po files
+                        label=_("Check Hashes"))
 
         menu_item.connect('activate', self.openWithCollision, files)
 
