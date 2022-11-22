@@ -36,6 +36,8 @@ class NautilusCollision(Nautilus.MenuProvider, GObject.GObject):
             file_path = "@@ " + file_path + " @@"
         Popen(self.collision + " " + file_path, shell=True)  # Collision need to be in your PATH
     
+    def get_background_items(self, files):
+        return
 
     def get_file_items(self, files):
         # The option doesn't appear when there is more than 1 file selected (because Collision doesn't handle it yet) or when a folder is selected
