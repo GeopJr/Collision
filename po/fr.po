@@ -137,3 +137,7 @@ msgstr "Somme de contrôle"
 #: data/ui/tools.ui:70
 msgid "File"
 msgstr "Fichier"
+
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr "Sommes de contrôle"
