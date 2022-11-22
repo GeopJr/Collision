@@ -1,4 +1,4 @@
-.PHONY: all install uninstall test build mo desktop gresource bindings
+.PHONY: all install uninstall test build mo desktop gresource bindings install_nautilus_extension
 PREFIX ?= /usr
 PO_LOCATION ?= po
 LOCALE_LOCATION ?= /share/locale
@@ -32,6 +32,11 @@ metainfo:
 
 desktop:
 	msgfmt --desktop --template data/dev.geopjr.Collision.desktop.in -d "$(PO_LOCATION)" -o data/dev.geopjr.Collision.desktop
+
+install_nautilus_extension:
+	mkdir -p  ~/.local/share/nautilus-python/extensions/
+	cp nautilus-extension/collision-extension.py ~/.local/share/nautilus-python/extensions/
+	nautilus -q || true
 
 install: mo
 	install -D -m 0755 bin/collision $(PREFIX)/bin/collision
