@@ -18,9 +18,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.14-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Collision"
 
@@ -54,9 +55,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"このツールはそれを解決することを目的としています。Collisionはシンプルかつクリ"
-"ーンなUIで、年齢や経験を問わず、誰でもMD5、SHA-256、SHA-512、SHA-1のハッシュ"
-"を生成、比較、検証することができます。"
+"このツールはそれを解決することを目的としています。Collisionはシンプルかつク"
+"リーンなUIで、年齢や経験を問わず、誰でもMD5、SHA-256、SHA-512、SHA-1のハッ"
+"シュを生成、比較、検証することができます。"
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -136,3 +137,9 @@ msgstr "ハッシュ"
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
 msgstr "確認"
+
+#: nautilus-extension/collision-extension.py:54
+#, fuzzy
+#| msgid "Checksum"
+msgid "Check Hashes"
+msgstr "チェックサム"

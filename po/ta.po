@@ -18,9 +18,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.14-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "கொலிஸன்"
 
@@ -43,11 +44,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"நீங்கள் பதிவிறக்கம் செய்த அல்லது பெற்ற கோப்பு உண்மையில் நீங்கள் "
-"எதிர்பார்த்ததுதானா என்பதைச் சரிபார்ப்பது பெரும்பாலும் கவனிக்கப்படுவதில்லை "
-"அல்லது செய்ய அதிக நேரத்தை எடுத்துக்கொள்ளும். அதே நேரத்தில், தீங்கிழைக்கும் "
-"வலைப்பக்கங்கள் மற்றும் பிற நடிகர்களின் பெருமளவிலான அதிகரிப்பு காரணமாக, "
-"சிதைக்கப்பட்ட கோப்பை உங்கள் கைகளில் பெறுவது மிகவும் எளிதானது."
+"நீங்கள் பதிவிறக்கம் செய்த அல்லது பெற்ற கோப்பு உண்மையில் நீங்கள் எதிர்பார்த்ததுதானா என்பதைச் "
+"சரிபார்ப்பது பெரும்பாலும் கவனிக்கப்படுவதில்லை அல்லது செய்ய அதிக நேரத்தை எடுத்துக்கொள்ளும். "
+"அதே நேரத்தில், தீங்கிழைக்கும் வலைப்பக்கங்கள் மற்றும் பிற நடிகர்களின் பெருமளவிலான அதிகரிப்பு "
+"காரணமாக, சிதைக்கப்பட்ட கோப்பை உங்கள் கைகளில் பெறுவது மிகவும் எளிதானது."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -55,10 +55,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"இந்தக் கருவி அதைத் தீர்ப்பதை நோக்கமாகக் கொண்டுள்ளது. கொலிஸன் ஒரு எளிய &amp; "
-"சுத்தமான UI, MD5, SHA-256, SHA-512 மற்றும் SHA-1 ஹாஷ்களை உருவாக்க, ஒப்பிட்டு "
-"மற்றும் சரிபார்க்க, எந்த வயது மற்றும் அனுபவக் குழுவைச் சேர்ந்த எவரையும் "
-"அனுமதிக்கிறது."
+"இந்தக் கருவி அதைத் தீர்ப்பதை நோக்கமாகக் கொண்டுள்ளது. கொலிஸன் ஒரு எளிய &amp; சுத்தமான UI, "
+"MD5, SHA-256, SHA-512 மற்றும் SHA-1 ஹாஷ்களை உருவாக்க, ஒப்பிட்டு மற்றும் சரிபார்க்க, "
+"எந்த வயது மற்றும் அனுபவக் குழுவைச் சேர்ந்த எவரையும் அனுமதிக்கிறது."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -138,3 +137,9 @@ msgstr "ஹாஷ்"
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
 msgstr "சரிபார்க்கவும்"
+
+#: nautilus-extension/collision-extension.py:54
+#, fuzzy
+#| msgid "Checksum"
+msgid "Check Hashes"
+msgstr "செக்சம்"

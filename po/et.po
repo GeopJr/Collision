@@ -136,3 +136,9 @@ msgstr "Räsiväärtus"
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
 msgstr "Kontrolli"
+
+#: nautilus-extension/collision-extension.py:54
+#, fuzzy
+#| msgid "Checksum"
+msgid "Check Hashes"
+msgstr "Kontrollsumma"

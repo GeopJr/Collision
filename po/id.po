@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 23:08+0200\n"
+"POT-Creation-Date: 2022-03-18 21:34+0200\n"
 "PO-Revision-Date: 2022-08-25 02:22+0000\n"
 "Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/collision/"
@@ -20,9 +20,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.14-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Collision"
 
@@ -59,8 +60,8 @@ msgid ""
 msgstr ""
 "Alat ini bisa menyelesaikannya. Collision hadir dengan UI yang sederhana dan "
 "bersih, memungkinkan siapa saja, dari segala usia dan kelompok pengalaman, "
-"untuk menghasilkan, membandingkan, dan memverifikasi hash MD5, SHA-256, SHA-"
-"512, dan SHA-1."
+"untuk menghasilkan, membandingkan, dan memverifikasi hash MD5, SHA-256, "
+"SHA-512, dan SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -70,19 +71,18 @@ msgstr "_Buka Berkas"
 msgid "Choose a File"
 msgstr "Pilih Berkas"
 
-#: src/modules/functions/file_set.cr:8
-msgid "Verify"
-msgstr "Verifikasi"
-
-#. Don't translate the hash names if possible.
-#: src/collision.cr:69
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Masukkan Hash MD5/SHA-1/SHA-256/SHA-512"
+#: data/ui/tools.ui:13
+msgid "Checksum"
+msgstr "Checksum"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "MD5,SHA-1,SHA-256 atau SHA-512 Hash"
+
+#: data/ui/tools.ui:70
+msgid "File"
+msgstr "File"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
@@ -117,10 +117,17 @@ msgstr "Buka..."
 msgid "Copy"
 msgstr "Salin"
 
+#. Don't translate the hash names if possible.
+#: src/collision.cr:69
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "Masukkan Hash MD5/SHA-1/SHA-256/SHA-512"
+
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/modules/prerequisites.cr:22
-msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+#: src/modules/prerequisites.cr:14
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -131,10 +138,12 @@ msgstr "Kukuh Syafaat"
 msgid "Hash"
 msgstr "Hash"
 
-#: data/ui/tools.ui:13
-msgid "Checksum"
-msgstr "Checksum"
+#: src/modules/functions/file_set.cr:8
+msgid "Verify"
+msgstr "Verifikasi"
 
-#: data/ui/tools.ui:70
-msgid "File"
-msgstr "File"
+#: nautilus-extension/collision-extension.py:54
+#, fuzzy
+#| msgid "Checksum"
+msgid "Check Hashes"
+msgstr "Checksum"

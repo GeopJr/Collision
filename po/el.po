@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 23:08+0200\n"
+"POT-Creation-Date: 2022-03-18 21:34+0200\n"
 "PO-Revision-Date: 2022-02-18 00:32+0000\n"
 "Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/collision/"
@@ -19,9 +19,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.11-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Σύγκρουση"
 
@@ -69,19 +70,18 @@ msgstr "_Ανοίξτε ένα Αρχείο"
 msgid "Choose a File"
 msgstr "Επιλέξτε ένα Αρχείο"
 
-#: src/modules/functions/file_set.cr:8
-msgid "Verify"
-msgstr "Επαληθεύστε"
-
-#. Don't translate the hash names if possible.
-#: src/collision.cr:69
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Εισάγετε ένα MD5/SHA-1/SHA-256/SHA-512 Hash"
+#: data/ui/tools.ui:13
+msgid "Checksum"
+msgstr "Checksum"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "MD5,SHA-1,SHA-256 ή SHA-512 Hash"
+
+#: data/ui/tools.ui:70
+msgid "File"
+msgstr "Αρχείο"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
@@ -116,10 +116,17 @@ msgstr "Ανοίξτε..."
 msgid "Copy"
 msgstr "Αντιγραφή"
 
+#. Don't translate the hash names if possible.
+#: src/collision.cr:69
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "Εισάγετε ένα MD5/SHA-1/SHA-256/SHA-512 Hash"
+
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/modules/prerequisites.cr:22
-msgid "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+#: src/modules/prerequisites.cr:14
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -130,13 +137,9 @@ msgstr "Evangelos Paterakis"
 msgid "Hash"
 msgstr "Hash"
 
-#: data/ui/tools.ui:13
-msgid "Checksum"
-msgstr "Checksum"
-
-#: data/ui/tools.ui:70
-msgid "File"
-msgstr "Αρχείο"
+#: src/modules/functions/file_set.cr:8
+msgid "Verify"
+msgstr "Επαληθεύστε"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
