@@ -38,6 +38,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.3.1" date="2022-11-24">
+      <description>
+        <ul>
+          <li>Added aarch64 support</li>
+          <li>Added nautilus / GNOME Files extension by DodoLeDev</li>
+          <li>Fixed issue with infinite spinner when opening small files</li>
+          <li>Fixed issue with open signal occurring when Collision is already running</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.3.0" date="2022-11-15">
       <description>
         <ul>
