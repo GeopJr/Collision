@@ -90,8 +90,8 @@
         {
           "type": "archive",
           "dest": "crystal/",
-          "url": "https://dev.alpinelinux.org/archive/crystal/crystal-1.5.1-aarch64-alpine-linux-musl.tar.gz",
-          "sha256": "49d8077777b947efe017b398cf7304682edecc8fe37327e9096999dea3de4412",
+          "url": "https://github.com/geopjr-forks/crystal-aarch64/releases/download/v1.6.2/crystal-1.6.2-1-linux-aarch64.tar.xz",
+          "sha256": "b5bc533ccb2d9df3c9947d33d56c9fecf03675096a3d915fcf6d9b2180b7b637",
           "only_arches": [
             "aarch64"
           ]
