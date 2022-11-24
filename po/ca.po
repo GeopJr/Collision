@@ -138,3 +138,7 @@ msgstr "Hash"
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
 msgstr "Verificar"
+
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr ""

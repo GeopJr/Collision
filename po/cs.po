@@ -18,9 +18,10 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 4.13.1-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Kolize"
 
@@ -56,8 +57,8 @@ msgid ""
 msgstr ""
 "Tento nástroj se to snaží vyřešit. Collision (Kolize) přichází s jednoduchým "
 "&amp; čistým uživatelským rozhraním, které umožňuje komukoli bez ohledu na "
-"věk a zkušenosti generovat, porovnávat a ověřovat hashe MD5, SHA-256, SHA-"
-"512 a SHA-1."
+"věk a zkušenosti generovat, porovnávat a ověřovat hashe MD5, SHA-256, "
+"SHA-512 a SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -136,3 +137,7 @@ msgstr "Kontrolní součet"
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
 msgstr "Ověřit"
+
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr ""

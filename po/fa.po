@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 23:08+0200\n"
+"POT-Creation-Date: 2022-03-18 21:34+0200\n"
 "PO-Revision-Date: 2022-05-03 07:13+0000\n"
 "Last-Translator: MohammadSaleh Kamyab <mskf1383@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/collision/"
@@ -19,9 +19,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.12.1\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "تصادم"
 
@@ -56,31 +57,29 @@ msgid ""
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
 "هدف این ابزار حل آن است. تصادم، همراه با رابط کاربری ساده و تمیز، همه را، از "
-"هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏MD5،"
-" ‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
+"هر گروه سنی و هر مقدار تجربه، قادر به تولید، مقایسه و اعتبارسنجی هش‌های ‏MD5، "
+"‏SHA-256، ‏SHA-512 و SHA-1 می‌سازد."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
 msgstr "گشودن یک _پرونده"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
-#: data/ui/welcomer.ui:26 data/ui/tools.ui:128
 msgid "Choose a File"
 msgstr "انتخاب یک پرونده"
 
-#: src/modules/functions/file_set.cr:8
-msgid "Verify"
-msgstr "اعتبارسنجی"
-
-#. Don't translate the hash names if possible.
-#: src/collision.cr:69
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "افزودن یک هش MD5/SHA-1/SHA-256/SHA-512"
+#: data/ui/tools.ui:13
+msgid "Checksum"
+msgstr "جمع‌آزما"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
 msgstr "هش ‏MD5، ‏SHA-1،‏ SHA-256 یا SHA-512"
+
+#: data/ui/tools.ui:70
+msgid "File"
+msgstr "پرونده"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
@@ -115,8 +114,13 @@ msgstr "گشودن..."
 msgid "Copy"
 msgstr "رونوشت"
 
+#. Don't translate the hash names if possible.
+#: src/collision.cr:69
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "افزودن یک هش MD5/SHA-1/SHA-256/SHA-512"
+
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/modules/prerequisites.cr:22
+#: src/modules/prerequisites.cr:14
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
@@ -131,10 +135,10 @@ msgstr "محمدصالح کامیاب <mskf1383@protonmail.com>"
 msgid "Hash"
 msgstr "هش"
 
-#: data/ui/tools.ui:13
-msgid "Checksum"
-msgstr "جمع‌آزما"
+#: src/modules/functions/file_set.cr:8
+msgid "Verify"
+msgstr "اعتبارسنجی"
 
-#: data/ui/tools.ui:70
-msgid "File"
-msgstr "پرونده"
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr ""

@@ -20,9 +20,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.14.1-dev\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
-#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
-#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
+#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
+#: src/modules/views/main.cr:10
 msgid "Collision"
 msgstr "Collision"
 
@@ -138,3 +139,7 @@ msgstr "Hash"
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
 msgstr "Doğrula"
+
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr ""
