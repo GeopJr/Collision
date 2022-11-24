@@ -13,7 +13,7 @@ module Collision::Checksum
   extend self
 
   @@digest = gen_digest
-  @@finished_fibers = 0
+  @@channel = Channel(Nil).new
 
   def calculate(type : String, filename : String) : String
     hash = @@digest[type.downcase]
@@ -26,24 +26,33 @@ module Collision::Checksum
   end
 
   def on_finished(&block)
-    LOGGER.debug { "Finished fiber #{@@finished_fibers}/#{ACTION_ROWS.keys.size}" }
-
-    yield if @@finished_fibers == ACTION_ROWS.keys.size
+    yield
   end
 
   def generate(filename : String, &block)
-    @@finished_fibers = 0
-    ACTION_ROWS.keys.each do |hash_type|
-      Collision::Checksum.spawn do
-        LOGGER.debug { "Spawned fiber #{hash_type}" }
+    hash_amount = ACTION_ROWS.keys.size
+    ACTION_ROWS.keys.each_with_index do |hash_type, i|
+      proc = ->(fiber_no : Int32) do
+        Collision::Checksum.spawn do
+          LOGGER.debug { "Spawned fiber #{hash_type}" }
 
-        hash_value = calculate(hash_type, filename)
-        ACTION_ROWS[hash_type].subtitle = hash_value.gsub(/.{1,4}/) { |x| x + " " }[0..-2]
-        CLIPBOARD_HASH[hash_type] = hash_value
-        @@finished_fibers += 1
+          hash_value = calculate(hash_type, filename)
+          ACTION_ROWS[hash_type].subtitle = hash_value.gsub(/.{1,4}/) { |x| x + " " }[0..-2]
+          CLIPBOARD_HASH[hash_type] = hash_value
+          LOGGER.debug { "Finished fiber #{fiber_no + 1}/#{hash_amount}" }
 
-        on_finished(&block)
+          @@channel.send(nil)
+        end
       end
+      proc.call(i)
+    end
+
+    Collision::Checksum.spawn do
+      hash_amount.times do |i|
+        @@channel.receive
+      end
+
+      on_finished(&block)
     end
   end
 end
