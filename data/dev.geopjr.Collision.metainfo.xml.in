@@ -131,4 +131,12 @@
   </releases>
   <content_rating type="oars-1.1" />
   <translation type="gettext">dev.geopjr.Collision</translation>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </recommends>
 </component>
