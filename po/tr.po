@@ -4,13 +4,14 @@
 # ugurcansayan <uxurcansayan@gmail.com>, 2022.
 # Evangelos Paterakis <evan@geopjr.dev>, 2022.
 # Sabri Ünal <libreajans@gmail.com>, 2022.
+# Ramazan SANCAR <ramazansancar4545@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-09-17 01:08+0000\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"PO-Revision-Date: 2022-11-27 02:48+0000\n"
+"Last-Translator: Ramazan SANCAR <ramazansancar4545@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
 "Language: tr\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -142,4 +143,4 @@ msgstr "Doğrula"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Hash'leri Kontrol Et"
