@@ -48,6 +48,10 @@ module Collision
     # Setup actions.
     Collision::Action::About.new(app)
     Collision::Action::HashInfo.new(app, window.id)
+    Collision::Action::Quit.new(app, window.id)
+
+    # Setup accelerators.
+    app.set_accels_for_action("app.quit", {"<Control>q", "<Control>w"})
 
     # Setup clipboard.
     Collision::Clipboard.new(window, COPY_BUTTONS)
