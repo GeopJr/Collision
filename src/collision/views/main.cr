@@ -45,6 +45,9 @@ module Collision
       MAIN_FILE_CHOOSER_NATIVE.show
     end
 
+    # Setup shortcuts window.
+    window.help_overlay = SHORTCUT_WINDOW
+
     # Setup actions.
     Collision::Action::About.new(app)
     Collision::Action::HashInfo.new(app, window.id)
@@ -54,6 +57,7 @@ module Collision
     # Setup accelerators.
     app.set_accels_for_action("app.quit", {"<Control>q", "<Control>w"})
     app.set_accels_for_action("app.open-file", {"<Control>o"})
+    app.set_accels_for_action("win.show-help-overlay", {"<Control>question"})
 
     # Setup clipboard.
     Collision::Clipboard.new(window, COPY_BUTTONS)

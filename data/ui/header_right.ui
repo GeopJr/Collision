@@ -4,6 +4,10 @@
   <menu id="primary_menu">
     <section>
       <item>
+        <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
+        <attribute name="action">win.show-help-overlay</attribute>
+      </item>
+      <item>
         <attribute name="label" translatable="yes">_Compare Hash Functions</attribute>
         <attribute name="action">app.hashinfo</attribute>
       </item>

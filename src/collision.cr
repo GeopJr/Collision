@@ -87,6 +87,7 @@ module Collision
   B_HT = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/switcher.ui")
   B_SP = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/spinner.ui")
   B_FI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/file_info.ui")
+  B_SW = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/shortcuts_window.ui")
 
   WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
 
@@ -98,6 +99,7 @@ module Collision
   HEADER_TITLE                 = Adw::ViewSwitcherTitle.cast(B_HT["switcher_title"])
   BOTTOM_TABS                  = Adw::ViewSwitcherBar.cast(B_HT["switcher_bar"])
   STACK                        = Adw::ViewStack.cast(B_HT["stack"])
+  SHORTCUT_WINDOW              = Gtk::ShortcutsWindow.cast(B_SW["shortcuts_window"])
 
   SPINNER = Gtk::Spinner.new(
     spinning: true,
