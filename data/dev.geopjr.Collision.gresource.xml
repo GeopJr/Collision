@@ -14,6 +14,6 @@
     <file compressed="true" preprocess="xml-stripblanks">ui/switcher.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/tools.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/welcomer.ui</file>
-    <file compressed="true" preprocess="xml-stripblanks">ui/shortcuts_window.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="gtk/help-overlay.ui">ui/shortcuts_window.ui</file>
   </gresource>
 </gresources>
