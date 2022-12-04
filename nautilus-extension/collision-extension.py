@@ -2,7 +2,7 @@
 Add a Collision shortcut button to the right-click menu (Nautilus GTK4)
 """
 
-from subprocess import Popen, check_call
+from subprocess import Popen, check_call, CalledProcessError
 from urllib.parse import urlparse, unquote
 from shutil import which
 from gi import require_version
@@ -20,7 +20,7 @@ def get_collision():
     try:
         check_call("flatpak list --columns=application | grep \"dev.geopjr.Collision\" &> /dev/null", shell=True)
         return "flatpak run --file-forwarding dev.geopjr.Collision"
-    except subprocess.CalledProcessError:
+    except CalledProcessError:
         if which("collision") is not None:
             return "collision"
         else:
