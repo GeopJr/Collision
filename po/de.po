@@ -149,4 +149,4 @@ msgstr "Verifiziere"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Hases überprüfen"
+msgstr "Hashes prüfen"
