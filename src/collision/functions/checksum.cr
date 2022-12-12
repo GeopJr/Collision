@@ -15,6 +15,17 @@ module Collision::Checksum
   @@digest = gen_digest
   @@channel = Channel(Nil).new
 
+  def split_by_4(hash_str : String)
+    io = IO::Memory.new(hash_str)
+
+    res = [] of String
+    while !(str = io.gets(4)).nil?
+      res << str
+    end
+
+    res.join(' ')
+  end
+
   def calculate(type : String, filename : String) : String
     hash = @@digest[type.downcase]
     hash.reset
@@ -37,7 +48,7 @@ module Collision::Checksum
           LOGGER.debug { "Spawned fiber #{hash_type}" }
 
           hash_value = calculate(hash_type, filename)
-          ACTION_ROWS[hash_type].subtitle = hash_value.gsub(/.{1,4}/) { |x| x + " " }[0..-2]
+          ACTION_ROWS[hash_type].subtitle = split_by_4(hash_value)
           CLIPBOARD_HASH[hash_type] = hash_value
           LOGGER.debug { "Finished fiber #{fiber_no + 1}/#{hash_amount}" }
 
