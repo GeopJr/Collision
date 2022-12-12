@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-11-27 02:48+0000\n"
+"PO-Revision-Date: 2022-12-12 20:24+0000\n"
 "Last-Translator: Maite Guix <maite.guix@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/collision/"
 "collision/ca/>\n"
@@ -145,11 +145,11 @@ msgstr "Comprovar els hashes"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Dreceres de teclat"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -157,8 +157,8 @@ msgstr "Obrir un fitxer"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Mostra les dreceres de teclat"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Sortir"
