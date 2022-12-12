@@ -144,3 +144,23 @@ msgstr "Επαληθεύστε"
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
 msgstr "Ελέγξτε Hashes"
+
+#: data/ui/header_right.ui:7
+msgid "_Keyboard Shortcuts"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:11
+msgid "General"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:14
+msgid "Open a File"
+msgstr "Ανοίξτε ένα Αρχείο"
+
+#: data/ui/shortcuts_window.ui:20
+msgid "Show Keyboard Shortcuts"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:26
+msgid "Quit"
+msgstr ""

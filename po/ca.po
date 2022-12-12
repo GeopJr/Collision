@@ -142,3 +142,23 @@ msgstr "Verificar"
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
 msgstr "Comprovar els hashes"
+
+#: data/ui/header_right.ui:7
+msgid "_Keyboard Shortcuts"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:11
+msgid "General"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:14
+msgid "Open a File"
+msgstr "Obrir un fitxer"
+
+#: data/ui/shortcuts_window.ui:20
+msgid "Show Keyboard Shortcuts"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:26
+msgid "Quit"
+msgstr ""
