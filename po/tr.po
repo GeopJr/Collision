@@ -5,13 +5,14 @@
 # Evangelos Paterakis <evan@geopjr.dev>, 2022.
 # Sabri Ünal <libreajans@gmail.com>, 2022.
 # Ramazan SANCAR <ramazansancar4545@gmail.com>, 2022.
+# Oğuz Ersen <oguz@ersen.moe>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-11-27 02:48+0000\n"
-"Last-Translator: Ramazan SANCAR <ramazansancar4545@gmail.com>\n"
+"PO-Revision-Date: 2022-12-13 20:50+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
 "Language: tr\n"
@@ -37,7 +38,7 @@ msgstr "Hash Oluşturucu"
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr "Dosyalarınızın hash değerlerini kontrol edin"
+msgstr "Dosyalarınızın hash değerlerini denetleyin"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -48,9 +49,9 @@ msgid ""
 "actors."
 msgstr ""
 "İndirdiğiniz veya edindiğiniz bir dosyanın, olması gerektiği gibi olduğunu "
-"kontrol etmek bazen göz ardı edilir veya uzun zaman alır. Aynı zamanda, "
-"zararlı web sayfaları gibi kötü niyetlilerin artan sayısı sebebiyle, "
-"oynanmış dosyalara temas etmeniz çok olasıdır."
+"denetlemek bazen göz ardı edilir veya uzun zaman alır. Aynı zamanda, zararlı "
+"web sayfaları gibi kötü niyetlilerin artan sayısı sebebiyle, oynanmış "
+"dosyalara temas etmeniz çok olasıdır."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -60,7 +61,7 @@ msgid ""
 msgstr ""
 "Bu araç bu sorunu çözmeyi amaçlıyor. Collision; temiz ve sade arayüzü "
 "sayesinde, her kesimden kullanıcının MD5, SHA-256 SHA-512 ve SHA-1 değerleri "
-"oluşturup karşılaştırma ve onaylamasını sağlar."
+"oluşturup karşılaştırmasını ve onaylamasını sağlar."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -85,7 +86,7 @@ msgstr "Dosya"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr "Kontrol Edilecek Başka Bir Dosya Seç"
+msgstr "Denetlenecek Başka Bir Dosya Seç"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
@@ -131,7 +132,9 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr "Uğurcan SAYAN <ugurcansayan@proton.me>"
+msgstr ""
+"Uğurcan SAYAN <ugurcansayan@proton.me>\n"
+"Oğuz Ersen <oguz@ersen.moe>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
@@ -143,15 +146,15 @@ msgstr "Doğrula"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Hash'leri Kontrol Et"
+msgstr "Hash'leri Denetle"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Klavye Kısayolları"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Genel"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -159,8 +162,8 @@ msgstr "Dosya Aç"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Klavye Kısayollarını Göster"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Çıkış"

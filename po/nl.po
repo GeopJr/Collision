@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-11-27 02:48+0000\n"
+"PO-Revision-Date: 2022-12-12 20:24+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/collision/"
 "collision/nl/>\n"
@@ -145,11 +145,11 @@ msgstr "Controlesommen controleren"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Sneltoetsen"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Algemeen"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -157,8 +157,8 @@ msgstr "Bestand openen"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Sneltoetsen tonen"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Afsluiten"
