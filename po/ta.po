@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-11-27 02:48+0000\n"
+"PO-Revision-Date: 2022-12-16 22:09+0000\n"
 "Last-Translator: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/collision/"
 "collision/ta/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -144,11 +144,11 @@ msgstr "ஹாஷ்களை சரிபார்க்கவும்"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_விசைப்பலகை குறுக்குவழிகள்"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "பொது"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -156,8 +156,8 @@ msgstr "ஒரு கோப்பைத் திறக்கவும்"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "விசைப்பலகை குறுக்குவழிகளைக் காட்டு"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "வெளியேறு"
