@@ -137,7 +137,8 @@ msgstr ""
 "Milo Ivir\n"
 "Panagiotis Vasilopoulos\n"
 "Philipp Kiemle\n"
-"Maximilian Salomon"
+"Maximilian Salomon\n"
+"gregorni"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
