@@ -153,11 +153,11 @@ msgstr "Hashes prüfen"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Tastenkürzel"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -165,8 +165,8 @@ msgstr "Datei öffnen"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Tastenkürzel anzeigen"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Schließen"
