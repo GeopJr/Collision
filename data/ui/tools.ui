@@ -17,6 +17,7 @@
             <property name="wrap-mode">word-char</property>
             <property name="justify">center</property>
             <property name="valign">center</property>
+            <property name="vexpand">1</property>
             <style>
               <class name="title"/>
               <class name="title-1"/>
@@ -74,6 +75,7 @@
             <property name="wrap-mode">word-char</property>
             <property name="justify">center</property>
             <property name="valign">center</property>
+            <property name="vexpand">1</property>
             <style>
               <class name="title"/>
               <class name="title-1"/>
