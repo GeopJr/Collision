@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-12-12 20:24+0000\n"
+"PO-Revision-Date: 2022-12-20 19:47+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/collision/"
 "collision/cs/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -91,15 +91,15 @@ msgstr "Vyberte soubor..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr "_Porovnejte funkce kontrolního součtu"
+msgstr "_Porovnat funkce kontrolního součtu"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_O programu Collision"
+msgstr "_O programu"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
-msgstr "Menu"
+msgstr "Nabídka"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
@@ -160,4 +160,4 @@ msgstr "Zobrazit klávesové zkratky"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr "Opustit"
+msgstr "Ukončit"
