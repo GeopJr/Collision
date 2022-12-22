@@ -4,13 +4,14 @@
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 # Gabriel Gian <gabrielgian@protonmail.com>, 2022.
 # Gustavo Costa <xfgusta@gmail.com>, 2022.
+# Fúlvio Alves <fga.fulvio@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-04-24 00:57+0000\n"
-"Last-Translator: Gustavo Costa <xfgusta@gmail.com>\n"
+"PO-Revision-Date: 2022-12-23 03:47+0000\n"
+"Last-Translator: Fúlvio Alves <fga.fulvio@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "collision/collision/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.12.1-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -132,7 +133,8 @@ msgid "translator-credits"
 msgstr ""
 "Gabriel Gian\n"
 "Rafael Fontenelle\n"
-"Gustavo Costa <xfgusta@gmail.com>"
+"Gustavo Costa <xfgusta@gmail.com>\n"
+"Fúlvio Alves <fga.fulvio@gmail.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
@@ -144,15 +146,15 @@ msgstr "Verificar"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Verificar hashes"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "Atalhos de teclado"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -160,8 +162,8 @@ msgstr "Abrir um arquivo"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Mostrar atalhos de teclado"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Sair"
