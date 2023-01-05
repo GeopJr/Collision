@@ -9,3 +9,5 @@ Terminal=false
 Icon=dev.geopjr.Collision
 Categories=Utility;
 Keywords=md5;sha1;sha256;sha512;hash;
+# Translators: Do NOT translate or transliterate this text (these are enum types)!
+X-Purism-FormFactor=Workstation;Mobile;
