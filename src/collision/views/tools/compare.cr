@@ -1,7 +1,11 @@
 module Collision::Compare
   extend self
 
-  MAX_COMPARE_READ_SIZE = 1000000
+  # We want to only check the file contents
+  # IF the file is smaller than the size below.
+  # We want to avoid loading a huge file in
+  # memory but also avoid false-positives.
+  MAX_COMPARE_READ_SIZE = 10000 # in bytes
 
   def init
     TOOL_COMPARE_BUTTON.clicked_signal.connect do
