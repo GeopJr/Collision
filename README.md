@@ -7,7 +7,7 @@
   <br />
     <a href="https://github.com/GeopJr/Collision/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.1-3584e4.svg?style=for-the-badge&labelColor=f6d32e" alt="COC" /></a>
     <a href="https://github.com/GeopJr/Collision/blob/main/LICENSE"><img src="https://img.shields.io/badge/LICENSE-BSD--2--Clause-000000.svg?style=for-the-badge&labelColor=f6d32e" alt="BSD-2-Clause" /></a>
-    <a href="https://github.com/GeopJr/Collision/actions"><img src="https://img.shields.io/github/workflow/status/geopjr/Collision/Specs%20&%20Lint/main?labelColor=f6d32e&style=for-the-badge" alt="ci action status" /></a>
+    <a href="https://github.com/GeopJr/Collision/actions"><img src="https://img.shields.io/github/actions/workflow/status/geopjr/Collision/ci.yml?branch=main&labelColor=f6d32e&style=for-the-badge" alt="ci action status" /></a>
 </p>
 
 <p align="center">
