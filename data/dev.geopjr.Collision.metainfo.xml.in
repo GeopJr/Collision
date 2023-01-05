@@ -38,6 +38,17 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.4.0" date="2023-01-06">
+      <description>
+        <ul>
+          <li>Added keyboard shortcuts</li>
+          <li>Added ability to search for hashes in file content</li>
+          <li>Fixed hash format performance (regex => IO)</li>
+          <li>Fixed title alignment on narrow window in certain languages</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.3.1" date="2022-11-24">
       <description>
         <ul>
