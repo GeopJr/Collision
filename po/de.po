@@ -5,13 +5,14 @@
 # Panagiotis Vasilopoulos <hello@alwayslivid.com>, 2021.
 # Milo Ivir <mail@milotype.de>, 2021.
 # sal0max <msal.coding@gmail.com>, 2022.
+# gregorni <gregorniehl@web.de>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-04-19 14:08+0000\n"
-"Last-Translator: sal0max <msal.coding@gmail.com>\n"
+"PO-Revision-Date: 2023-01-2 12:14+0100\n"
+"Last-Translator: gregorni <gregorniehl@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/collision/"
 "collision/de/>\n"
 "Language: de\n"
@@ -128,7 +129,7 @@ msgstr "Fügen Sie einen MD5/SHA-1/SHA-256/SHA-512 Hash ein"
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
-"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+"https://de.wikipedia.org/wiki/Kryptographische_Hashfunktion#%C3%9Cbersicht_von_Hashfunktionen"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
