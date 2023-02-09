@@ -16,14 +16,17 @@ module Collision::Checksum
   @@channel = Channel(Nil).new
 
   def split_by_4(hash_str : String)
-    io = IO::Memory.new(hash_str)
-
-    res = [] of String
-    while !(str = io.gets(4)).nil?
-      res << str
+    i = 0
+    input = hash_str.byte_slice?(i * 4, 4)
+    String.build do |str|
+      loop do
+        str << input
+        i = i + 1
+        input = hash_str.byte_slice?(i * 4, 4)
+        break if input.nil? || input.empty?
+        str << ' '
+      end
     end
-
-    res.join(' ')
   end
 
   def calculate(type : String, filename : String) : String

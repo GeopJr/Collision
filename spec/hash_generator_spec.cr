@@ -21,4 +21,9 @@ describe Collision::Checksum do
 
     hashes.should eq(Collision::CLIPBOARD_HASH)
   end
+
+  it "splits strings by 4" do
+    input_by_4 = "Wait ingf orso meth ingt ohap pen?"
+    Collision::Checksum.split_by_4(input_by_4.split(' ').join).should eq(input_by_4)
+  end
 end
