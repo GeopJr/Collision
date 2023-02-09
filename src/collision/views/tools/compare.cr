@@ -8,6 +8,8 @@ module Collision::Compare
   MAX_COMPARE_READ_SIZE = 10000 # in bytes
 
   def init
+    TOOL_COMPARE_BUTTON.add_controller(Collision::DragNDrop.new(Collision::Compare).controller)
+
     TOOL_COMPARE_BUTTON.clicked_signal.connect do
       TOOL_COMPARE_FILE_CHOOSER_NATIVE.show
     end
