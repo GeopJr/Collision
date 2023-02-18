@@ -9,7 +9,7 @@ module Collision::Action
 
       @action.activate_signal.connect do
         parent = app.active_window.nil? ? app.window_by_id(window_id) : app.active_window
-        LibGtk.gtk_show_uri(parent.not_nil!, ARTICLE, Gdk::CURRENT_TIME)
+        LibGtk.gtk_show_uri(parent, ARTICLE, Gdk::CURRENT_TIME) if !(parent).nil?
       end
 
       app.add_action(action)

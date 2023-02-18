@@ -3,19 +3,16 @@ require "non-blocking-spawn"
 
 macro gen_digest
   {
-    {% for hash in Collision::HASH_FUNCTIONS %}
-      {{hash.downcase}} => OpenSSL::Digest.new({{hash.upcase}}),
+    {% for hash in Collision::HashFunction.constants %}
+      Collision::HashFunction::{{hash}} => OpenSSL::Digest.new("{{hash.downcase}}"),
     {% end %}
   }
 end
 
-module Collision::Checksum
-  extend self
+module Collision::Functions
+  HASH_FUNCTIONS_SIZE = {{HashFunction.constants.size}}
 
-  @@digest = gen_digest
-  @@channel = Channel(Tuple(String, String)).new
-
-  def split_by_4(hash_str : String)
+  def self.split_by_4(hash_str : String)
     i = 0
     input = hash_str.byte_slice?(i * 4, 4)
     String.build do |str|
@@ -29,45 +26,51 @@ module Collision::Checksum
     end
   end
 
-  def calculate(type : String, filename : String) : String
-    hash = @@digest[type.downcase]
-    hash.reset
-    hash.file(filename).final.hexstring.downcase
-  end
-
-  def spawn(&block)
+  def self.spawn(&block)
     Non::Blocking.spawn(same_thread: false, &block)
   end
 
-  def on_finished(res : Hash(String, String), &block)
-    yield res
-  end
+  class Checksum
+    @digest : Hash(Collision::HashFunction, OpenSSL::Digest) = gen_digest
+    @channel = Channel(Tuple(HashFunction, String, String)).new
 
-  def generate(filename : String, &block : Hash(String, String) ->)
-    hash_amount = HASH_FUNCTIONS.size
-    HASH_FUNCTIONS.each_with_index do |hash_type, i|
-      proc = ->(fiber_no : Int32) do
-        Collision::Checksum.spawn do
-          LOGGER.debug { "Spawned fiber #{hash_type}" }
-
-          hash_value = calculate(hash_type, filename)
-          # hash_list.set_hash(hash_type, split_by_4(hash_value))
-          LOGGER.debug { "Finished fiber #{fiber_no + 1}/#{hash_amount}" }
-
-          @@channel.send({hash_type, split_by_4(hash_value)})
-        end
-      end
-      proc.call(i)
+    def initialize
     end
 
-    Collision::Checksum.spawn do
-      hash_hash = Hash(String, String).new
-      hash_amount.times do |i|
-        res = @@channel.receive
-        hash_hash[res[0]] = res[1]
+    def calculate(type : HashFunction, filename : String) : String
+      hash = @digest[type]
+      hash.reset
+      hash.file(filename).final.hexstring.downcase
+    end
+
+    def on_finished(res : Hash(HashFunction, Tuple(String, String)), &block)
+      yield res
+    end
+
+    def generate(filename : String, &block : Hash(HashFunction, Tuple(String, String)) ->)
+      HashFunction.values.each_with_index do |hash_type, i|
+        proc = ->(fiber_no : Int32) do
+          Collision::Functions.spawn do
+            LOGGER.debug { "Spawned fiber #{hash_type}" }
+
+            hash_value = calculate(hash_type, filename)
+            LOGGER.debug { "Finished fiber #{fiber_no + 1}/#{HASH_FUNCTIONS_SIZE}" }
+
+            @channel.send({hash_type, Collision::Functions.split_by_4(hash_value), hash_value})
+          end
+        end
+        proc.call(i)
       end
 
-      on_finished(hash_hash, &block)
+      Collision::Functions.spawn do
+        hash_hash = Hash(HashFunction, Tuple(String, String)).new
+        HASH_FUNCTIONS_SIZE.times do |i|
+          res = @channel.receive
+          hash_hash[res[0]] = {res[1], res[2]}
+        end
+
+        on_finished(hash_hash, &block)
+      end
     end
   end
 end

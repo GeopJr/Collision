@@ -1,65 +1,121 @@
-module Collision::Compare
-  extend self
+module Collision
+  class Tools::Compare < Tool
+    # We want to only check the file contents
+    # IF the file is smaller than the size below.
+    # We want to avoid loading a huge file in
+    # memory but also avoid false-positives.
+    MAX_COMPARE_READ_SIZE = 10000 # in bytes
 
-  # We want to only check the file contents
-  # IF the file is smaller than the size below.
-  # We want to avoid loading a huge file in
-  # memory but also avoid false-positives.
-  MAX_COMPARE_READ_SIZE = 10000 # in bytes
+    getter widget : Gtk::Button
+    @compare_feedback_spinner : Gtk::Spinner
+    @compare_feedback_image : Gtk::Image
+    @compare_feedback_label : Gtk::Label
 
-  def init
-    TOOL_COMPARE_BUTTON.clicked_signal.connect do
-      TOOL_COMPARE_FILE_CHOOSER_NATIVE.show
-    end
+    def initialize(@hash_list : HashList)
+      @widget = Gtk::Button.new(
+        tooltip_text: Gettext.gettext("Select Another File to Check Against"),
+        height_request: 125,
+        use_underline: true,
+        css_classes: {"card-like"}
+      )
 
-    TOOL_COMPARE_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
-      next unless response == -3
+      compare_feedback_container = Gtk::Box.new(
+        orientation: Gtk::Orientation::Vertical,
+        halign: Gtk::Align::Center,
+        spacing: 12,
+        valign: Gtk::Align::Center
+      )
 
-      Collision::Compare.file = TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.not_nil!
-    rescue ex
-      LOGGER.debug { ex }
-    end
-  end
+      @compare_feedback_image = Gtk::Image.new(
+        icon_name: "paper-symbolic",
+        pixel_size: 36
+      )
 
-  def file=(file : Gio::File)
-    LOGGER.debug { "Begin comparing tool" }
-    file_path = file.path.not_nil!
-    Collision.file?(file_path)
+      @compare_feedback_label = Gtk::Label.new(
+        label: Gettext.gettext("Choose File..."),
+        max_width_chars: 15,
+        ellipsize: Pango::EllipsizeMode::End
+      )
 
-    TOOL_COMPARE_BUTTON_SPINNER.visible = true
-    TOOL_COMPARE_BUTTON_IMAGE.visible = false
-    TOOL_COMPARE_BUTTON.remove_css_class("success")
-    TOOL_COMPARE_BUTTON.remove_css_class("error")
+      @compare_feedback_spinner = Gtk::Spinner.new(
+        spinning: true,
+        halign: Gtk::Align::Center,
+        width_request: 36,
+        height_request: 36,
+        visible: false
+      )
 
-    TOOL_COMPARE_BUTTON_LABEL.label = file_path.basename.to_s
-    Collision::Checksum.spawn do
-      compareFileSHA256 = Collision::Checksum.calculate("sha256", file.path.to_s)
-      result = CLIPBOARD_HASH["SHA256"] == compareFileSHA256
-      result = compare_content(file_path) if !result && File.size(file_path) < MAX_COMPARE_READ_SIZE
-      classes = Collision::Feedback.class(result)
+      compare_feedback_container.append(@compare_feedback_spinner)
+      compare_feedback_container.append(@compare_feedback_image)
+      compare_feedback_container.append(@compare_feedback_label)
+      @widget.child = compare_feedback_container
 
-      sleep 500.milliseconds
-      TOOL_COMPARE_BUTTON_SPINNER.visible = false
-      TOOL_COMPARE_BUTTON_IMAGE.visible = true
-      TOOL_COMPARE_BUTTON_IMAGE.icon_name = Collision::Feedback.icon(result)
-      TOOL_COMPARE_BUTTON.add_css_class(classes[:add])
-      TOOL_COMPARE_BUTTON.remove_css_class(classes[:remove])
+      compare_file_chooser_native = Gtk::FileChooserNative.new(
+        title: Gettext.gettext("Choose a File"),
+        modal: true
+      )
+      compare_file_chooser_native.transient_for = APP.active_window
 
-      LOGGER.debug { "Finished comparing tool" }
-    end
-  end
+      @widget.clicked_signal.connect do
+        compare_file_chooser_native.show
+      end
 
-  def compare_content(file_path : Path | String) : Bool
-    LOGGER.debug { "Begin comparing content" }
-    res = false
+      compare_file_chooser_native.response_signal.connect do |response|
+        next unless response == -3 && !(gio_file = compare_file_chooser_native.file).nil?
 
-    File.open(file_path) do |file_io|
-      file_io.each_line do |line|
-        break res = true if line.split(' ').any? { |word| CLIPBOARD_HASH.values.includes?(word.downcase) }
+        self.file = gio_file
+      rescue ex
+        LOGGER.debug { ex }
       end
     end
 
-    LOGGER.debug { "Finished comparing content" }
-    res
+    def file=(file : Gio::File)
+      return if (file_path = file.path).nil?
+      LOGGER.debug { "Begin comparing tool" }
+      Collision.file?(file_path)
+
+      @compare_feedback_spinner.visible = true
+      @compare_feedback_image.visible = false
+      @widget.remove_css_class("success")
+      @widget.remove_css_class("error")
+
+      @compare_feedback_label.label = file_path.basename.to_s
+      Collision::Functions.spawn do
+        compare_file_SHA256 = (Collision::Functions::Checksum.new).calculate(HashFunction::SHA256, file.path.to_s)
+        result = @hash_list.includes?(compare_file_SHA256)
+        result = compare_content(file_path) if !result && File.size(file_path) < MAX_COMPARE_READ_SIZE
+        classes = Collision::Feedback.class(result)
+
+        sleep 500.milliseconds
+        @compare_feedback_spinner.visible = false
+        @compare_feedback_image.visible = true
+        @compare_feedback_image.icon_name = Collision::Feedback.icon(result)
+        @widget.add_css_class(classes[:add])
+        @widget.remove_css_class(classes[:remove])
+
+        LOGGER.debug { "Finished comparing tool" }
+      end
+    end
+
+    def compare_content(file_path : Path | String) : Bool
+      LOGGER.debug { "Begin comparing content" }
+      res = false
+
+      File.open(file_path) do |file_io|
+        file_io.each_line do |line|
+          break res = true if line.split(' ').any? { |word| @hash_list.includes?(word.downcase) }
+        end
+      end
+
+      LOGGER.debug { "Finished comparing content" }
+      res
+    end
+
+    def clear
+      @compare_feedback_label.label = Gettext.gettext("Choose File...")
+      @widget.remove_css_class("success")
+      @widget.remove_css_class("error")
+      @compare_feedback_image.icon_name = "paper-symbolic"
+    end
   end
 end

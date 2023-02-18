@@ -1,8 +1,6 @@
 # Handles gschema settings
 
 module Collision
-  extend self
-
   module Settings
     extend self
 
@@ -46,7 +44,7 @@ module Collision
     end
   end
 
-  def settings
+  def self.settings
     return Collision::Settings::DEFAULT_SETTINGS if (settings = SETTINGS).nil? || !Collision::Settings.available?(settings)
 
     LOGGER.debug { "Loading settings" }

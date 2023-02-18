@@ -6,11 +6,11 @@ require "option_parser"
 
 PATH = Path["lib"]
 
-toJson = false
+to_json = false
 
 OptionParser.parse do |parser|
   parser.on "-j", "--json", "Whether it should export json instead of yaml" do
-    toJson = true
+    to_json = true
   end
 end
 
@@ -52,8 +52,8 @@ commands += postinstall_scripts if postinstall_scripts.size > 0
 
 # The following loop will go through all libs and symlink their libs to the parent folder.
 puts "Place the following snippet inside the 'build-commands' of your config:"
-puts toJson ? commands.to_pretty_json : commands.to_yaml
+puts to_json ? commands.to_pretty_json : commands.to_yaml
 puts "Keep in mind that postinstall scripts might need to be modified and audited."
 puts ""
 puts "Place the following snippet inside the 'sources' of your config:"
-puts toJson ? sources.to_pretty_json : sources.to_yaml
+puts to_json ? sources.to_pretty_json : sources.to_yaml

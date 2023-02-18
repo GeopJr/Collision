@@ -1,14 +1,14 @@
 # Opens a new main file
 
 module Collision::Action
-  class Open
+  class NewWindow
     getter action : Gio::SimpleAction
 
-    def initialize(app : Adw::Application, file_chooser : Gtk::FileChooserNative)
-      @action = Gio::SimpleAction.new("open-file", nil)
+    def initialize(app : Adw::Application)
+      @action = Gio::SimpleAction.new("new-window", nil)
 
       @action.activate_signal.connect do
-        file_chooser.show
+        app.activate
       end
 
       app.add_action(action)

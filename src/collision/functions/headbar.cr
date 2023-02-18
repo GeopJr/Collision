@@ -1,14 +1,17 @@
 module Collision
   class Headerbar
-    getter widget : Adw::HeaderBar = Adw::HeaderBar.new
+    getter widget : Adw::HeaderBar
     getter open_file_button : Gtk::Button
     getter menu_button : Gtk::MenuButton
+    getter open_file_file_chooser_native : Gtk::FileChooserNative
 
     def initialize(
       file_util : FileUtil,
       title : Adw::ViewSwitcherTitle
     )
-      @widget = Adw::HeaderBar.new
+      @widget = Adw::HeaderBar.new(css_classes: {"flat"})
+
+      b_hr = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_right.ui")
 
       @open_file_button = Gtk::Button.new(
         visible: false,
@@ -21,24 +24,24 @@ module Collision
         )
       )
 
-      @menu_button = Gtk::MenuButton.cast(B_HR["menuBtn"])
+      @menu_button = Gtk::MenuButton.cast(b_hr["menuBtn"])
 
-      open_file_file_chooser_native = Gtk::FileChooserNative.new(
+      @open_file_file_chooser_native = Gtk::FileChooserNative.new(
         title: Gettext.gettext("Choose a File"),
         modal: true
       )
-      open_file_file_chooser_native.transient_for = APP.active_window
+      @open_file_file_chooser_native.transient_for = APP.active_window
 
-      open_file_file_chooser_native.response_signal.connect do |response|
-        next unless response == -3
+      @open_file_file_chooser_native.response_signal.connect do |response|
+        next unless response == -3 && !(gio_file = @open_file_file_chooser_native.file).nil?
 
-        file_util.file = open_file_file_chooser_native.file.not_nil!
+        file_util.file = gio_file
       rescue ex
         LOGGER.debug { ex }
       end
 
       @open_file_button.clicked_signal.connect do
-        open_file_file_chooser_native.show
+        @open_file_file_chooser_native.show
       end
 
       @widget.pack_start(@open_file_button)
