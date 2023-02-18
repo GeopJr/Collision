@@ -7,30 +7,33 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-02-19 23:42+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/collision/"
+"collision/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
 #: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
 #: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "Gerador de hash"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "Verificar os hashes dos seus ficheiros"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -40,6 +43,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Verificar se um ficheiro que descarregou ou recebeu é realmente aquele que "
+"esperava é muitas vezes esquecido ou demorado demais. Ao mesmo tempo, tornou-"
+"se muito fácil pôr as mãos num ficheiro que foi adulterado, devido ao "
+"aumento em massa de páginas da Web maliciosas e outros atores."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -47,71 +54,74 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"Esta ferramenta visa resolver isso. Collision vem com um UI simples e limpa, "
+"permitindo que qualquer pessoa, de qualquer idade e grupo de experiência, "
+"gere, compare e verifique hashes MD5, SHA-256, SHA-512 e SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
-msgstr ""
+msgstr "_Abrir um ficheiro"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr ""
+msgstr "Escolher um ficheiro"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "Soma de verificação"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "Hash de MD5, SHA-1, SHA-256 ou SHA-512"
 
 #: data/ui/tools.ui:70
 msgid "File"
-msgstr ""
+msgstr "Ficheiro"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "Selecionar outro ficheiro para verificar"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "Escolher ficheiro..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_Comparar funções de hash"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr ""
+msgstr "_Sobre o Collision"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr ""
+msgstr "_Abrir"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
-msgstr ""
+msgstr "Abrir..."
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #. Don't translate the hash names if possible.
 #: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr ""
+msgstr "Insire um hash de MD5/SHA-1/SHA-256/SHA-512"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:14
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr ""
+msgstr "https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash_criptogr%C3%A1fica"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
@@ -120,32 +130,32 @@ msgstr ""
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
-msgstr ""
+msgstr "Verificar"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Verificar hashes"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "Atalhos de teclado"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr ""
+msgstr "Abrir um ficheiro"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Mostrar atalhos de teclado"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Sair"
