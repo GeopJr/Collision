@@ -79,34 +79,27 @@ macro gen_hash(buttons)
 end
 
 module Collision
-  B_UI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/welcomer.ui")
+  # B_UI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/welcomer.ui")
   B_HL = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_left.ui")
   B_HR = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_right.ui")
   B_HS = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/hash_list.ui")
   B_TL = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/tools.ui")
   B_HT = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/switcher.ui")
-  B_SP = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/spinner.ui")
   B_FI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/file_info.ui")
 
-  WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
+  # WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
+  ROOOT = Adw::ViewStack.new
 
-  WELCOME_BUTTON               = Gtk::Button.cast(B_UI["welcomeBtn"])
-  OPEN_FILE_BUTTON             = Gtk::Button.cast(B_HL["openFileBtn"])
-  MENU_BUTTON                  = Gtk::MenuButton.cast(B_HR["menuBtn"])
-  MAIN_FILE_CHOOSER_NATIVE     = Gtk::FileChooserNative.cast(B_HL["mainFileChooserNative"])
-  WELCOMER_FILE_CHOOSER_NATIVE = Gtk::FileChooserNative.cast(B_UI["welcomerFileChooserNative"])
-  HEADER_TITLE                 = Adw::ViewSwitcherTitle.cast(B_HT["switcher_title"])
-  BOTTOM_TABS                  = Adw::ViewSwitcherBar.cast(B_HT["switcher_bar"])
-  STACK                        = Adw::ViewStack.cast(B_HT["stack"])
+  # WELCOME_BUTTON               = Gtk::Button.cast(B_UI["welcomeBtn"])
+  # OPEN_FILE_BUTTON             = Gtk::Button.cast(B_HL["openFileBtn"])
+  # MENU_BUTTON                  = Gtk::MenuButton.cast(B_HR["menuBtn"])
+  # MAIN_FILE_CHOOSER_NATIVE     = Gtk::FileChooserNative.cast(B_HL["mainFileChooserNative"])
+  # WELCOMER_FILE_CHOOSER_NATIVE = Gtk::FileChooserNative.cast(B_UI["welcomerFileChooserNative"])
+  # HEADER_TITLE                 = Adw::ViewSwitcherTitle.cast(B_HT["switcher_title"])
+  # BOTTOM_TABS                  = Adw::ViewSwitcherBar.cast(B_HT["switcher_bar"])
+  # STACK                        = Adw::ViewStack.cast(B_HT["stack"])
 
-  SPINNER = Gtk::Spinner.new(
-    spinning: true,
-    halign: Gtk::Align::Center,
-    vexpand: true,
-    hexpand: true,
-    width_request: 32,
-    height_request: 32
-  )
+  # SPINNER = 
   TOOL_COMPARE_BUTTON_SPINNER = Gtk::Spinner.new(
     spinning: true,
     halign: Gtk::Align::Center,
@@ -138,12 +131,12 @@ module Collision
   TOOL_COMPARE_BUTTON_FEEDBACK     = Gtk::Box.cast(B_TL["compareBtnFeedback"])
   TOOL_COMPARE_FILE_CHOOSER_NATIVE = Gtk::FileChooserNative.cast(B_TL["compareFileChooserNative"])
 
-  COPY_BUTTONS   = gen_hash(true)
+  # COPY_BUTTONS   = gen_hash(true)
   CLIPBOARD_HASH = Hash(String, String).new
-  ACTION_ROWS    = gen_hash(false)
+  # ACTION_ROWS    = gen_hash(false)
 
-  FILE_INFO = Adw::StatusPage.cast(B_FI["fileInfo"])
-  HASH_LIST = Gtk::ListBox.cast(B_HS["hashList"])
+  # FILE_INFO = Adw::StatusPage.cast(B_FI["fileInfo"])
+  # HASH_LIST = Gtk::ListBox.cast(B_HS["hashList"])
 
   APP = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
 end

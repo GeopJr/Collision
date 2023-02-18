@@ -8,7 +8,7 @@ module Collision::Action
       @action = Gio::SimpleAction.new("hashinfo", nil)
 
       @action.activate_signal.connect do
-        parent = APP.active_window.nil? ? APP.window_by_id(window_id) : APP.active_window
+        parent = app.active_window.nil? ? app.window_by_id(window_id) : app.active_window
         LibGtk.gtk_show_uri(parent.not_nil!, ARTICLE, Gdk::CURRENT_TIME)
       end
 

@@ -8,9 +8,9 @@ module Collision::Action
       @action = Gio::SimpleAction.new("quit", nil)
 
       @action.activate_signal.connect do
-        main_window = APP.active_window.nil? ? APP.window_by_id(window_id) : APP.active_window
+        main_window = app.active_window.nil? ? app.window_by_id(window_id) : app.active_window
         main_window.close if main_window
-        APP.quit
+        app.quit
       end
 
       app.add_action(action)

@@ -13,7 +13,7 @@ module Collision::Checksum
   extend self
 
   @@digest = gen_digest
-  @@channel = Channel(Nil).new
+  @@channel = Channel(Tuple(String, String)).new
 
   def split_by_4(hash_str : String)
     i = 0
@@ -39,34 +39,35 @@ module Collision::Checksum
     Non::Blocking.spawn(same_thread: false, &block)
   end
 
-  def on_finished(&block)
-    yield
+  def on_finished(res : Hash(String, String), &block)
+    yield res
   end
 
-  def generate(filename : String, &block)
-    hash_amount = ACTION_ROWS.keys.size
-    ACTION_ROWS.keys.each_with_index do |hash_type, i|
+  def generate(filename : String, &block : Hash(String, String) ->)
+    hash_amount = HASH_FUNCTIONS.size
+    HASH_FUNCTIONS.each_with_index do |hash_type, i|
       proc = ->(fiber_no : Int32) do
         Collision::Checksum.spawn do
           LOGGER.debug { "Spawned fiber #{hash_type}" }
 
           hash_value = calculate(hash_type, filename)
-          ACTION_ROWS[hash_type].subtitle = split_by_4(hash_value)
-          CLIPBOARD_HASH[hash_type] = hash_value
+          # hash_list.set_hash(hash_type, split_by_4(hash_value))
           LOGGER.debug { "Finished fiber #{fiber_no + 1}/#{hash_amount}" }
 
-          @@channel.send(nil)
+          @@channel.send({hash_type, split_by_4(hash_value)})
         end
       end
       proc.call(i)
     end
 
     Collision::Checksum.spawn do
+      hash_hash = Hash(String, String).new
       hash_amount.times do |i|
-        @@channel.receive
+        res = @@channel.receive
+        hash_hash[res[0]] = res[1]
       end
 
-      on_finished(&block)
+      on_finished(hash_hash, &block)
     end
   end
 end

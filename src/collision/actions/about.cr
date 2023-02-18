@@ -7,9 +7,9 @@ module Collision::Action
 
       @action.activate_signal.connect do
         Adw.show_about_window(
-          APP.active_window,
+          app.active_window,
           # name: "About Collision",
-          application: APP,
+          application: app,
           application_name: Gettext.gettext("Collision"),
           application_icon: "dev.geopjr.Collision",
           version: VERSION,

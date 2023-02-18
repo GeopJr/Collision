@@ -22,44 +22,51 @@ module Collision
     @@main_window_id = window.id
 
     # Initial layout.
-    root = Adw::StatusPage.cast(B_UI["welcomer"])
-    headerbar = Collision::Headerbar.new
+    # root =
+    main2 = Collision::Main.new
 
-    WINDOW_BOX.append(headerbar.widget)
-    WINDOW_BOX.append(root)
+    headerbar = Collision::Headerbar.new(main2.file_util, main2.switcher_title)
+    ROOOT.notify_signal["visible-child-name"].connect do
+      is_main = ROOOT.visible_child_name == "main"
+      headerbar.open_file_button.visible = is_main
+      main2.switcher_title.view_switcher_enabled = is_main
+    end
+
+    window_box = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
+    window_box.append(headerbar.widget)
+    window_box.append(ROOOT)
 
     # Setup file choosers.
-    WELCOMER_FILE_CHOOSER_NATIVE.transient_for = window
     TOOL_COMPARE_FILE_CHOOSER_NATIVE.transient_for = window
-    MAIN_FILE_CHOOSER_NATIVE.transient_for = window
+    # MAIN_FILE_CHOOSER_NATIVE.transient_for = window
 
-    MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
-      next unless response == -3
+    # MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
+    #   next unless response == -3
 
-      Collision.file = MAIN_FILE_CHOOSER_NATIVE.file.not_nil!
-    rescue ex
-      LOGGER.debug { ex }
-    end
+    #   main2.file_util.file = MAIN_FILE_CHOOSER_NATIVE.file.not_nil!
+    # rescue ex
+    #   LOGGER.debug { ex }
+    # end
 
-    OPEN_FILE_BUTTON.clicked_signal.connect do
-      MAIN_FILE_CHOOSER_NATIVE.show
-    end
+    # OPEN_FILE_BUTTON.clicked_signal.connect do
+    #   MAIN_FILE_CHOOSER_NATIVE.show
+    # end
 
     # Setup actions.
     Collision::Action::About.new(app)
     Collision::Action::HashInfo.new(app, window.id)
     Collision::Action::Quit.new(app, window.id)
-    Collision::Action::Open.new(app)
+    # Collision::Action::Open.new(app)
 
     # Setup accelerators.
     app.set_accels_for_action("app.quit", {"<Control>q", "<Control>w"})
     app.set_accels_for_action("app.open-file", {"<Control>o"})
 
     # Setup clipboard.
-    Collision::Clipboard.new(window, COPY_BUTTONS)
+    # Collision::Clipboard.new(window, COPY_BUTTONS)
 
     # Setup views.
-    Collision::Welcomer.init
+    # Collision::Welcomer.init
     Collision::Compare.init
     Collision::Verify.init
 
@@ -67,12 +74,16 @@ module Collision
       window.add_css_class("devel")
     {% end %}
 
-    window.content = WINDOW_BOX
+    window.content = window_box
     window.present
     @@activated = true
 
     LOGGER.debug { "Window activated" }
     LOGGER.debug { "Settings: #{window_settings}" }
+
+    ROOOT.add_named((Collision::Welcomer.new(main2.file_util)).widget, "welcomer")
+    ROOOT.add_named((Collision::Loading.new).widget, "loading")
+    ROOOT.add_named(main2.widget, "main")
   end
 
   # Sets up the verify tab so it's responsive
@@ -81,18 +92,18 @@ module Collision
   def startup(app : Adw::Application)
     tools_grid_first_child = TOOLS_GRID.first_child
     tools_grid_last_child = TOOLS_GRID.last_child
-    BOTTOM_TABS.notify_signal["reveal"].connect do
-      next if tools_grid_last_child.nil? || tools_grid_first_child.nil?
-      row = 0
-      column = 1
-      if BOTTOM_TABS.reveal
-        row = 1
-        column = 0
-      end
+    # BOTTOM_TABS.notify_signal["reveal"].connect do
+    #   next if tools_grid_last_child.nil? || tools_grid_first_child.nil?
+    #   row = 0
+    #   column = 1
+    #   if BOTTOM_TABS.reveal
+    #     row = 1
+    #     column = 0
+    #   end
 
-      TOOLS_GRID.remove(tools_grid_last_child)
-      TOOLS_GRID.attach(tools_grid_last_child, column, row, 1, 1)
-    end
+    #   TOOLS_GRID.remove(tools_grid_last_child)
+    #   TOOLS_GRID.attach(tools_grid_last_child, column, row, 1, 1)
+    # end
 
     TOOL_COMPARE_BUTTON_SPINNER.visible = false
     TOOL_COMPARE_BUTTON_FEEDBACK.prepend(TOOL_COMPARE_BUTTON_SPINNER)
@@ -110,19 +121,19 @@ module Collision
   # if there are files passed (that exist and are not dirs)
   # it sets the first one (since multiple can be passed)
   # as the Collision::Welcomer's file.
-  def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
-    activate(app) unless @@activated
+  # def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
+  #   activate(app) unless @@activated
 
-    if files.size > 0 && Collision.file?(files[0].path.not_nil!, false)
-      (Collision::Welcomer.passed? ? Collision : Collision::Welcomer).file = files[0]
-    end
+  #   if files.size > 0 && Collision.file?(files[0].path.not_nil!, false)
+  #     (Collision::Welcomer.passed? ? Collision : Collision::Welcomer).file = files[0]
+  #   end
 
-    nil
-  end
+  #   nil
+  # end
 
   APP.startup_signal.connect(->startup(Adw::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
-  APP.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), String))
+  # APP.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), String))
 
   # ARGV but without flags, passed to Application.
   clean_argv = [PROGRAM_NAME].concat(ARGV.reject { |x| x.starts_with?('-') })

@@ -1,34 +1,56 @@
-module Collision::Welcomer
-  extend self
-  @@passed = false
+module Collision
+  class Welcomer
+    getter widget : Adw::StatusPage
+    @passed : Bool = false
 
-  def init
-    WELCOME_BUTTON.clicked_signal.connect do
-      WELCOMER_FILE_CHOOSER_NATIVE.show
+    def initialize(@file_util : Collision::FileUtil)
+      welcome_button = Gtk::Button.new_with_mnemonic(Gettext.gettext("_Open a File"))
+      welcome_button.halign = Gtk::Align::Center
+      welcome_button.add_css_class("suggested-action")
+      welcome_button.add_css_class("pill")
+
+      @widget = Adw::StatusPage.new(
+        vexpand: true,
+        icon_name: "dev.geopjr.Collision",
+        title: Gettext.gettext("Collision"),
+        description: Gettext.gettext("Check hashes for your files"),
+        child: welcome_button
+      )
+      @widget.add_css_class("icon-dropshadow")
+
+      welcome_file_chooser_native = Gtk::FileChooserNative.new(
+        title: Gettext.gettext("Choose a File"),
+        modal: true
+      )
+      welcome_file_chooser_native.transient_for = APP.active_window
+
+      welcome_button.clicked_signal.connect do
+        welcome_file_chooser_native.show
+      end
+
+      welcome_file_chooser_native.response_signal.connect do |response|
+        next unless response == -3
+
+        self.file = welcome_file_chooser_native.file.not_nil!
+      rescue ex
+        LOGGER.debug { ex }
+      end
     end
 
-    WELCOMER_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
-      next unless response == -3
-
-      Collision::Welcomer.file = WELCOMER_FILE_CHOOSER_NATIVE.file.not_nil!
-    rescue ex
-      LOGGER.debug { ex }
+    def passed? : Bool
+      @passed
     end
-  end
 
-  def file=(file : Gio::File)
-    Collision.file?(file.path.not_nil!)
+    def file=(file : Gio::File)
+      Collision.file?(file.path.not_nil!)
 
-    WINDOW_BOX.remove(Gtk::Widget.cast(B_UI["welcomer"]))
-    Collision.reset
+      # WINDOW_BOX.remove(@widget)
+      # Collision.reset
 
-    Collision.file = file.path.not_nil!
-    @@passed = true
+      @file_util.file = file.path.not_nil!
+      @passed = true
 
-    LOGGER.debug { "Passed welcomer" }
-  end
-
-  def passed? : Bool
-    @@passed
+      LOGGER.debug { "Passed welcomer" }
+    end
   end
 end
