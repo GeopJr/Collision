@@ -2,12 +2,12 @@ module Collision::Action
   class About
     getter action : Gio::SimpleAction
 
-    def initialize(app : Adw::Application)
+    def initialize(app : Adw::Application, window_id : UInt32)
       @action = Gio::SimpleAction.new("about", nil)
 
       @action.activate_signal.connect do
         Adw.show_about_window(
-          app.active_window,
+          app.active_window.nil? ? app.window_by_id(window_id) : app.active_window,
           # name: "About Collision",
           application: app,
           application_name: Gettext.gettext("Collision"),

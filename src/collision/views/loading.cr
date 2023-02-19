@@ -1,4 +1,6 @@
-module Collision
+# Loading view visible when hashes are being calculated.
+
+module Collision::Views
   class Loading
     getter widget : Gtk::Spinner = Gtk::Spinner.new(
       spinning: true,

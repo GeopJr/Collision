@@ -71,8 +71,8 @@ module Collision
   Gio.register_resource("data/dev.geopjr.Collision.gresource.xml", "data")
 end
 
+require "./collision/*"
 require "./collision/actions/*"
 require "./collision/functions/*"
+require "./collision/widgets/*"
 require "./collision/views/*"
-require "./collision/views/tools/*"
-

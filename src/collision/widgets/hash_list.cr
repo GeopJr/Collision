@@ -1,5 +1,5 @@
 module Collision
-  class HashList
+  class Widgets::HashList
     class Entry
       getter widget : Adw::ActionRow
       getter value : String = ""

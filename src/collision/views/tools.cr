@@ -1,12 +1,11 @@
-module Collision
-  abstract class Tool
-  end
+# The tools sub-view.
 
+module Collision::Views
   class Tools
     getter widget : Gtk::Grid
     @tools : Array(Tool) = Array(Tool).new
 
-    def initialize(@hash_list : HashList)
+    def initialize(@hash_list : Widgets::HashList)
       @widget = Gtk::Grid.new(
         row_homogeneous: true,
         row_spacing: 32,
@@ -14,7 +13,7 @@ module Collision
         column_spacing: 45
       )
 
-      [{"Checksum", Collision::Tools::Verify}, {"File", Collision::Tools::Compare}].each_with_index do |tool_info, i|
+      [{"Checksum", Collision::Widgets::Tools::Verify}, {"File", Collision::Widgets::Tools::Compare}].each_with_index do |tool_info, i|
         container = generate_tool_container(tool_info)
         @widget.attach(container, i, 0, 1, 1)
       end

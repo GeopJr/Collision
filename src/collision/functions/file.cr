@@ -1,11 +1,11 @@
-# Resets the window after a main file set
 # Updates the filename in the StatusPage & calls generate_hashes
 
 module Collision
   class FileUtil
-    def initialize(@hash_list : HashList, @file_info_page : Adw::StatusPage, @root : Adw::ViewStack)
+    def initialize(@hash_list : Collision::Widgets::HashList, @file_info_page : Adw::StatusPage, @root : Adw::ViewStack)
     end
 
+    # Don't show the path if it's in flatpak and doesn't have access to it.
     def real_path(filepath : Path) : String | Nil
       {% if !env("FLATPAK_ID").nil? || file_exists?("/.flatpak-info") %}
         return nil if filepath.parents.includes?(Path["/", "run", "user"])

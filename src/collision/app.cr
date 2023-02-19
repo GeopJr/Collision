@@ -2,22 +2,25 @@ module Collision
   APP = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
 
   def self.activate(app : Adw::Application, file : Gio::File? = nil)
-    # Setup window.
-    window = Adw::ApplicationWindow.new(app)
     window_settings = Collision.settings
 
-    window.name = "mainWindow"
-    window.title = Gettext.gettext("Collision")
+    # Setup window.
+    window = Adw::ApplicationWindow.new(
+      application: app,
+      name: "mainWindow",
+      title: Gettext.gettext("Collision"),
+      width_request: 360,
+      height_request: 360,
+      default_width: window_settings[:window_width],
+      default_height: window_settings[:window_height],
+      maximized: window_settings[:window_maximized]
+    )
     window.close_request_signal.connect(->Collision::Settings.save(Gtk::Window))
-    window.width_request = 360
-    window.height_request = 360
-    window.set_default_size(window_settings[:window_width], window_settings[:window_height])
-    window.maximize if window_settings[:window_maximized]
 
     root = Adw::ViewStack.new
-    main_view = Collision::Main.new(root)
+    main_view = Collision::Views::Main.new(root)
+    headerbar = Collision::Widgets::Headerbar.new(main_view.file_util, main_view.switcher_title)
 
-    headerbar = Collision::Headerbar.new(main_view.file_util, main_view.switcher_title)
     root.notify_signal["visible-child-name"].connect do
       is_main = root.visible_child_name == "main"
       headerbar.open_file_button.visible = is_main
@@ -30,7 +33,7 @@ module Collision
     window_box.append(root)
 
     # Setup actions.
-    Collision::Action::About.new(app)
+    Collision::Action::About.new(app, window.id)
     Collision::Action::HashInfo.new(app, window.id)
     Collision::Action::Quit.new(app, window.id)
     Collision::Action::Open.new(app, headerbar.open_file_file_chooser_native)
@@ -48,14 +51,13 @@ module Collision
 
     window.content = window_box
     window.present
-    # @@activated = true
 
     LOGGER.debug { "Window activated" }
     LOGGER.debug { "Settings: #{window_settings}" }
 
-    welcomer = Collision::Welcomer.new(main_view.file_util)
+    welcomer = Collision::Views::Welcomer.new(main_view.file_util)
     root.add_named(welcomer.widget, "welcomer")
-    root.add_named((Collision::Loading.new).widget, "loading")
+    root.add_named((Collision::Views::Loading.new).widget, "loading")
     root.add_named(main_view.widget, "main")
 
     welcomer.file = file unless file.nil?
@@ -66,11 +68,15 @@ module Collision
   # it sets the first one (since multiple can be passed)
   # as the Collision::Welcomer's file.
   def self.open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
-    if files.size > 0 && !(file_path = files[0].path).nil? && Collision.file?(file_path, false)
-      activate(app, files[0])
-    else
-      activate(app)
+    activated = false
+    files.each do |file|
+      next unless !(file_path = files[0].path).nil? && Collision.file?(file_path, false)
+
+      activate(app, file)
+      activated = true
     end
+
+    activate(app) unless activated
 
     nil
   end

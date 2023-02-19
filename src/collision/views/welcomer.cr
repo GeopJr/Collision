@@ -1,4 +1,6 @@
-module Collision
+# The welcomer.
+
+module Collision::Views
   class Welcomer
     getter widget : Adw::StatusPage
     @passed : Bool = false

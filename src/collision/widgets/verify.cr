@@ -1,5 +1,5 @@
-module Collision
-  class Tools::Verify < Tool
+module Collision::Widgets
+  class Tools::Verify < Collision::Tool
     getter widget : Gtk::Overlay
     @verify_input : Gtk::TextView
     @verify_input_placeholder : Gtk::Label

@@ -12,6 +12,7 @@ end
 module Collision::Functions
   HASH_FUNCTIONS_SIZE = {{HashFunction.constants.size}}
 
+  # Splits a string every 4 characters (fast).
   def self.split_by_4(hash_str : String)
     i = 0
     input = hash_str.byte_slice?(i * 4, 4)

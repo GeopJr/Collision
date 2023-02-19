@@ -1,4 +1,6 @@
-module Collision
+# The headerbar
+
+module Collision::Widgets
   class Headerbar
     getter widget : Adw::HeaderBar
     getter open_file_button : Gtk::Button

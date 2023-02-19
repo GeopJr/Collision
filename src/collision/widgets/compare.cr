@@ -1,5 +1,5 @@
-module Collision
-  class Tools::Compare < Tool
+module Collision::Widgets
+  class Tools::Compare < Collision::Tool
     # We want to only check the file contents
     # IF the file is smaller than the size below.
     # We want to avoid loading a huge file in

@@ -1,12 +1,15 @@
-module Collision
+# The main view.
+
+module Collision::Views
   class Main
     getter widget : Gtk::Box = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
     getter switcher_bar : Adw::ViewSwitcherBar
     getter switcher_title : Adw::ViewSwitcherTitle
     getter file_info : Adw::StatusPage
-    getter hash_list : Collision::HashList = Collision::HashList.new(APP.active_window.not_nil!.clipboard)
+    getter hash_list : Collision::Widgets::HashList = Collision::Widgets::HashList.new(APP.active_window.not_nil!.clipboard)
     getter file_util : Collision::FileUtil
-    @tools : Collision::Tools
+
+    @tools : Collision::Views::Tools
     @stack : Adw::ViewStack
 
     def initialize(@root : Adw::ViewStack)
@@ -15,7 +18,7 @@ module Collision
         hhomogeneous: false
       )
 
-      @tools = Collision::Tools.new(@hash_list)
+      @tools = Collision::Views::Tools.new(@hash_list)
       @stack.add_titled_with_icon(@hash_list.widget, "hashes", Gettext.gettext("Hash"), "octothorp-symbolic")
       @stack.add_titled_with_icon(@tools.widget, "verify", Gettext.gettext("Verify"), "test-pass-symbolic")
 
