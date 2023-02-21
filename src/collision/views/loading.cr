@@ -1,4 +1,4 @@
-# Loading view visible when hashes are being calculated.
+# Loading view visible when hashes are being calculated
 
 module Collision::Views
   class Loading

@@ -1,5 +1,7 @@
 module Collision
   class Widgets::HashList
+    # Generic class for a single
+    # action row of the hashlist
     class Entry
       getter widget : Adw::ActionRow
       getter value : String = ""

@@ -58,13 +58,17 @@ module Collision::Widgets
       verify_input_overlay.add_overlay(@verify_input_placeholder)
       verify_input_overlay.child = scrolled_window
 
+      @widget.child = verify_input_overlay
+
+      bind_input
+    end
+
+    private def bind_input
       @verify_input.buffer.notify_signal["text"].connect do
         LOGGER.debug { "Verify tool notify event" }
 
         handle_input_change
       end
-
-      @widget.child = verify_input_overlay
     end
 
     private def handle_input_change

@@ -5,10 +5,13 @@ module Collision::Widgets
     getter widget : Adw::HeaderBar
     getter open_file_button : Gtk::Button
     getter menu_button : Gtk::MenuButton
-    getter open_file_file_chooser_native : Gtk::FileChooserNative
+    getter open_file_file_chooser_native : Gtk::FileChooserNative = Gtk::FileChooserNative.new(
+      title: Gettext.gettext("Choose a File"),
+      modal: true
+    )
 
     def initialize(
-      file_util : FileUtil,
+      @file_util : FileUtil,
       title : Adw::ViewSwitcherTitle
     )
       @widget = Adw::HeaderBar.new(css_classes: {"flat"})
@@ -28,19 +31,7 @@ module Collision::Widgets
 
       @menu_button = Gtk::MenuButton.cast(b_hr["menuBtn"])
 
-      @open_file_file_chooser_native = Gtk::FileChooserNative.new(
-        title: Gettext.gettext("Choose a File"),
-        modal: true
-      )
-      @open_file_file_chooser_native.transient_for = APP.active_window
-
-      @open_file_file_chooser_native.response_signal.connect do |response|
-        next unless response == -3 && !(gio_file = @open_file_file_chooser_native.file).nil?
-
-        file_util.file = gio_file
-      rescue ex
-        LOGGER.debug { ex }
-      end
+      setup_file_chooser
 
       @open_file_button.clicked_signal.connect do
         @open_file_file_chooser_native.show
@@ -49,6 +40,18 @@ module Collision::Widgets
       @widget.pack_start(@open_file_button)
       @widget.pack_end(@menu_button)
       @widget.title_widget = title
+    end
+
+    private def setup_file_chooser
+      @open_file_file_chooser_native.transient_for = APP.active_window
+
+      @open_file_file_chooser_native.response_signal.connect do |response|
+        next unless response == -3 && !(gio_file = @open_file_file_chooser_native.file).nil?
+
+        @file_util.file = gio_file
+      rescue ex
+        LOGGER.debug { ex }
+      end
     end
 
     def title=(title : Adw::ViewSwitcherTitle)

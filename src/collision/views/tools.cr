@@ -1,4 +1,4 @@
-# The tools sub-view.
+# The tools sub-view
 
 module Collision::Views
   class Tools

@@ -35,17 +35,18 @@ class NautilusCollision(Nautilus.MenuProvider, GObject.GObject):
     
     # Executed method when the right-click entry is clicked
     def openWithCollision(self, menu, files):
-        file_path = repr(unquote(urlparse(files[0].get_uri()).path))
-        if self.collision != "collision":
-            file_path = "@@ " + file_path + " @@"
-        Popen(self.collision + " " + file_path, shell=True)  # Collision need to be in your PATH
+        for file in files:
+            file_path = repr(unquote(urlparse(file.get_uri()).path))
+            if self.collision != "collision":
+                file_path = "@@ " + file_path + " @@"
+            Popen(self.collision + " " + file_path, shell=True)  # Collision need to be in your PATH
     
     def get_background_items(self, files):
         return
 
     def get_file_items(self, files):
         # The option doesn't appear when there is more than 1 file selected or when a folder is selected
-        if len(files) > 1 or (len(files) == 1 and files[0].is_directory()) or self.collision == False: 
+        if any(file.is_directory() for file in files) or self.collision == False: 
             return ()
 
         menu_item = Nautilus.MenuItem(

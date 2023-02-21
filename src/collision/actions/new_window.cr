@@ -1,4 +1,4 @@
-# Opens a new main file
+# Creates a new window
 
 module Collision::Action
   class NewWindow
@@ -7,6 +7,7 @@ module Collision::Action
     def initialize(app : Adw::Application)
       @action = Gio::SimpleAction.new("new-window", nil)
 
+      # Call Adw::Application#activate
       @action.activate_signal.connect do
         app.activate
       end

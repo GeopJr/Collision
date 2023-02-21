@@ -1,6 +1,9 @@
+# Hash related functions
+
 require "openssl"
 require "non-blocking-spawn"
 
+# Generates a { HashFunction => OpenSSL::Digest }
 macro gen_digest
   {
     {% for hash in Collision::HashFunction.constants %}
@@ -12,7 +15,7 @@ end
 module Collision::Functions
   HASH_FUNCTIONS_SIZE = {{HashFunction.constants.size}}
 
-  # Splits a string every 4 characters (fast).
+  # Splits a string every 4 characters (fast)
   def self.split_by_4(hash_str : String)
     i = 0
     input = hash_str.byte_slice?(i * 4, 4)
@@ -27,6 +30,7 @@ module Collision::Functions
     end
   end
 
+  # Spawns a non-blocking thread
   def self.spawn(&block)
     Non::Blocking.spawn(same_thread: false, &block)
   end
@@ -38,18 +42,26 @@ module Collision::Functions
     def initialize
     end
 
+    # Calculates the hash of `type` for file `filename`
     def calculate(type : HashFunction, filename : String) : String
       hash = @digest[type]
       hash.reset
       hash.file(filename).final.hexstring.downcase
     end
 
+    # Hack-ish way to yield inside a thread
     def on_finished(res : Hash(HashFunction, Tuple(String, String)), &block)
       yield res
     end
 
+    # Calculates all HashFunctions of `filename` and yields them as
+    # {HashFunction => { value_split_by_4, values } }
+    # We need the split_by_4 version for the row subtitle
+    # and the non-split_by_4 one for the comparison functions
     def generate(filename : String, &block : Hash(HashFunction, Tuple(String, String)) ->)
       HashFunction.values.each_with_index do |hash_type, i|
+        # We want to keep track of the current fiber
+        # so we are passing it in a proc
         proc = ->(fiber_no : Int32) do
           Collision::Functions.spawn do
             LOGGER.debug { "Spawned fiber #{hash_type}" }

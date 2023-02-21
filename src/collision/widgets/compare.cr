@@ -3,13 +3,17 @@ module Collision::Widgets
     # We want to only check the file contents
     # IF the file is smaller than the size below.
     # We want to avoid loading a huge file in
-    # memory but also avoid false-positives.
+    # memory but also avoid false-positives
     MAX_COMPARE_READ_SIZE = 10000 # in bytes
 
     getter widget : Gtk::Button
     @compare_feedback_spinner : Gtk::Spinner
     @compare_feedback_image : Gtk::Image
     @compare_feedback_label : Gtk::Label
+    @compare_file_chooser_native : Gtk::FileChooserNative = Gtk::FileChooserNative.new(
+      title: Gettext.gettext("Choose a File"),
+      modal: true
+    )
 
     def initialize(@hash_list : HashList)
       @widget = Gtk::Button.new(
@@ -50,18 +54,21 @@ module Collision::Widgets
       compare_feedback_container.append(@compare_feedback_label)
       @widget.child = compare_feedback_container
 
-      compare_file_chooser_native = Gtk::FileChooserNative.new(
-        title: Gettext.gettext("Choose a File"),
-        modal: true
-      )
-      compare_file_chooser_native.transient_for = APP.active_window
+      setup_file_chooser
+      bind
+    end
 
+    private def bind
       @widget.clicked_signal.connect do
-        compare_file_chooser_native.show
+        @compare_file_chooser_native.show
       end
+    end
 
-      compare_file_chooser_native.response_signal.connect do |response|
-        next unless response == -3 && !(gio_file = compare_file_chooser_native.file).nil?
+    private def setup_file_chooser
+      @compare_file_chooser_native.transient_for = APP.active_window
+
+      @compare_file_chooser_native.response_signal.connect do |response|
+        next unless response == -3 && !(gio_file = @compare_file_chooser_native.file).nil?
 
         self.file = gio_file
       rescue ex

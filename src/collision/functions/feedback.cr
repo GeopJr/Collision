@@ -1,4 +1,4 @@
-# Returns the correct symbolic icon for feedback based on whether or not the task was successful
+# Returns the correct symbolic icon or class name for feedback based on whether the task was successful
 
 module Collision::Feedback
   extend self

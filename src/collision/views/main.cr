@@ -1,4 +1,4 @@
-# The main view.
+# The main view
 
 module Collision::Views
   class Main
@@ -19,27 +19,10 @@ module Collision::Views
       )
 
       @tools = Collision::Views::Tools.new(@hash_list)
-      @stack.add_titled_with_icon(@hash_list.widget, "hashes", Gettext.gettext("Hash"), "octothorp-symbolic")
-      @stack.add_titled_with_icon(@tools.widget, "verify", Gettext.gettext("Verify"), "test-pass-symbolic")
 
       b_ht = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/switcher.ui")
       @switcher_bar = Adw::ViewSwitcherBar.cast(b_ht["switcher_bar"])
       @switcher_bar.stack = @stack
-
-      tools_grid_first_child = @tools.widget.first_child
-      tools_grid_last_child = @tools.widget.last_child
-      @switcher_bar.notify_signal["reveal"].connect do
-        next if tools_grid_last_child.nil? || tools_grid_first_child.nil?
-        row = 0
-        column = 1
-        if @switcher_bar.reveal
-          row = 1
-          column = 0
-        end
-
-        @tools.widget.remove(tools_grid_last_child)
-        @tools.widget.attach(tools_grid_last_child, column, row, 1, 1)
-      end
 
       @switcher_title = Adw::ViewSwitcherTitle.cast(b_ht["switcher_title"])
       @switcher_title.stack = @stack
@@ -57,7 +40,31 @@ module Collision::Views
       @widget.append(@file_info)
       @widget.append(@switcher_bar)
 
+      populate_stack
+      bind_adaptive_grid
       self.switcher_visible = false
+    end
+
+    private def populate_stack
+      @stack.add_titled_with_icon(@hash_list.widget, "hashes", Gettext.gettext("Hash"), "octothorp-symbolic")
+      @stack.add_titled_with_icon(@tools.widget, "verify", Gettext.gettext("Verify"), "test-pass-symbolic")
+    end
+
+    private def bind_adaptive_grid
+      tools_grid_first_child = @tools.widget.first_child
+      tools_grid_last_child = @tools.widget.last_child
+      @switcher_bar.notify_signal["reveal"].connect do
+        next if tools_grid_last_child.nil? || tools_grid_first_child.nil?
+        row = 0
+        column = 1
+        if @switcher_bar.reveal
+          row = 1
+          column = 0
+        end
+
+        @tools.widget.remove(tools_grid_last_child)
+        @tools.widget.attach(tools_grid_last_child, column, row, 1, 1)
+      end
     end
 
     def switcher_visible=(visible : Bool)

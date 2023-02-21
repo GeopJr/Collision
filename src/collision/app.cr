@@ -1,5 +1,6 @@
 module Collision
-  APP = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
+  APP   = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
+  QUEUE = [] of Gio::File
 
   def self.activate(app : Adw::Application, file : Gio::File? = nil)
     window_settings = Collision.settings
@@ -55,12 +56,17 @@ module Collision
     LOGGER.debug { "Window activated" }
     LOGGER.debug { "Settings: #{window_settings}" }
 
-    welcomer = Collision::Views::Welcomer.new(main_view.file_util)
-    root.add_named(welcomer.widget, "welcomer")
+    root.add_named((Collision::Views::Welcomer.new(main_view.file_util, headerbar.open_file_file_chooser_native)).widget, "welcomer")
     root.add_named((Collision::Views::Loading.new).widget, "loading")
     root.add_named(main_view.widget, "main")
 
-    welcomer.file = file unless file.nil?
+    main_view.file_util.file = file unless file.nil?
+  end
+
+  EMIT_QUEUE = ->do
+    return if (file = QUEUE.shift?).nil?
+
+    activate(APP, file)
   end
 
   # Handles the open signal. It first calls activate and then
@@ -70,10 +76,14 @@ module Collision
   def self.open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
     activated = false
     files.each do |file|
-      next unless !(file_path = files[0].path).nil? && Collision.file?(file_path, false)
+      next unless !(file_path = file.path).nil? && Collision.file?(file_path, false)
 
-      activate(app, file)
-      activated = true
+      unless activated
+        activate(app, file)
+        activated = true
+      else
+        QUEUE << file
+      end
     end
 
     activate(app) unless activated
@@ -81,7 +91,6 @@ module Collision
     nil
   end
 
-  # APP.startup_signal.connect(->startup(Adw::Application))
   APP.activate_signal.connect(->activate(Adw::Application))
   APP.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), String))
 
