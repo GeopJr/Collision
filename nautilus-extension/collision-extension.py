@@ -35,11 +35,17 @@ class NautilusCollision(Nautilus.MenuProvider, GObject.GObject):
     
     # Executed method when the right-click entry is clicked
     def openWithCollision(self, menu, files):
+        file_paths = []
         for file in files:
             file_path = repr(unquote(urlparse(file.get_uri()).path))
+            file_paths.append(file_path)
+
+        file_paths_by_4 = [file_paths[n:n+4] for n in range(0, len(file_paths), 4)]
+        for file_path_group in file_paths_by_4:
+            arg = " ".join(file_path_group)
             if self.collision != "collision":
-                file_path = "@@ " + file_path + " @@"
-            Popen(self.collision + " " + file_path, shell=True)  # Collision need to be in your PATH
+                arg = "@@ " + arg + " @@"
+            Popen(self.collision + " " + arg, shell=True)  # Collision needs to be in your PATH
     
     def get_background_items(self, files):
         return

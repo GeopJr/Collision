@@ -1,3 +1,23 @@
+# compare_content is a macro
+# for the sake of having it
+# available on tests without
+# initializing Gtk
+macro compare_content_macro
+  def compare_content(file_path : Path | String) : Bool
+    Collision::LOGGER.debug { "Begin comparing content" }
+    res = false
+
+    File.open(file_path) do |file_io|
+      file_io.each_line do |line|
+        break res = true if line.split(' ').any? { |word| @hash_list.includes?(word.downcase) }
+      end
+    end
+
+    Collision::LOGGER.debug { "Finished comparing content" }
+    res
+  end
+end
+
 module Collision::Widgets
   class Tools::Compare < Collision::Tool
     # We want to only check the file contents
@@ -91,12 +111,12 @@ module Collision::Widgets
         compare_file_SHA256 = (Collision::Functions::Checksum.new).calculate(HashFunction::SHA256, file.path.to_s)
         result = @hash_list.includes?(compare_file_SHA256)
         result = compare_content(file_path) if !result && File.size(file_path) < MAX_COMPARE_READ_SIZE
-        classes = Collision::Feedback.class(result)
+        classes = Collision::Functions::Feedback.class(result)
 
         sleep 500.milliseconds
         @compare_feedback_spinner.visible = false
         @compare_feedback_image.visible = true
-        @compare_feedback_image.icon_name = Collision::Feedback.icon(result)
+        @compare_feedback_image.icon_name = Collision::Functions::Feedback.icon(result)
         @widget.add_css_class(classes[:add])
         @widget.remove_css_class(classes[:remove])
 
@@ -104,19 +124,7 @@ module Collision::Widgets
       end
     end
 
-    def compare_content(file_path : Path | String) : Bool
-      LOGGER.debug { "Begin comparing content" }
-      res = false
-
-      File.open(file_path) do |file_io|
-        file_io.each_line do |line|
-          break res = true if line.split(' ').any? { |word| @hash_list.includes?(word.downcase) }
-        end
-      end
-
-      LOGGER.debug { "Finished comparing content" }
-      res
-    end
+    compare_content_macro
 
     def clear
       @compare_feedback_label.label = Gettext.gettext("Choose File...")

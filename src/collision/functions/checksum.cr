@@ -51,6 +51,8 @@ module Collision::Functions
 
     # Hack-ish way to yield inside a thread
     def on_finished(res : Hash(HashFunction, Tuple(String, String)), &block)
+      @channel.close
+
       yield res
     end
 

@@ -85,12 +85,12 @@ module Collision::Widgets
       @verify_input_placeholder.visible = false
       @verify_feedback.visible = true
 
-      classes = Collision::Feedback.class(result)
+      classes = Collision::Functions::Feedback.class(result)
 
       @verify_input.add_css_class(classes[:add])
       @verify_input.remove_css_class(classes[:remove])
 
-      @verify_feedback.icon_name = Collision::Feedback.icon(result)
+      @verify_feedback.icon_name = Collision::Functions::Feedback.icon(result)
       @verify_feedback.add_css_class(classes[:add])
       @verify_feedback.remove_css_class(classes[:remove])
     end

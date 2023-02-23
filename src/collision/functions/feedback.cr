@@ -1,6 +1,6 @@
 # Returns the correct symbolic icon or class name for feedback based on whether the task was successful
 
-module Collision::Feedback
+module Collision::Functions::Feedback
   extend self
 
   CLASSES = {"success", "error"}

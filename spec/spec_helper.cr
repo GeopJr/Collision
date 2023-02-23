@@ -2,10 +2,28 @@ require "spec"
 require "libadwaita"
 require "gettext"
 require "log"
+require "../src/collision/tool.cr"
 
 module Collision
-  LOGGER         = Log.for("Collision", Log::Severity::None)
-  HASH_FUNCTIONS = {"MD5", "SHA1", "SHA256", "SHA512"}
+  LOGGER = Log.for("Collision", Log::Severity::None)
+
+  class MockApplication
+    def initialize
+    end
+
+    def active_window
+    end
+  end
+
+  APP = MockApplication.new
+
+  enum HashFunction
+    MD5
+    SHA1
+    SHA256
+    SHA512
+  end
+
   CLIPBOARD_HASH = {
     "md5"    => "f7e3f382f0382147661c82af20e274e8",
     "sha1"   => "c8f0b71214e8164aa69419b7ac0bcd8a74f529a6",

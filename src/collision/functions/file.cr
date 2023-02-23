@@ -29,19 +29,16 @@ module Collision
       LOGGER.debug { "Begin generating hashes" }
 
       (Collision::Functions::Checksum.new).generate(filepath.to_s) do |hash_hash|
-        sleep 500.milliseconds
-
         # Updating non-visible widgets
         GLib.idle_add do
           hash_hash.each do |k, v|
             @hash_list.set_hash(k, v)
           end
           @root.visible_child_name = "main"
+          EMIT_QUEUE.call
 
           false
         end
-
-        EMIT_QUEUE.call
       end
     end
 

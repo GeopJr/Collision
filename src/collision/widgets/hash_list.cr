@@ -97,8 +97,8 @@ module Collision
         next if soft_locked
         soft_locked = true
 
-        button.icon_name = Collision::Feedback.icon(success)
-        feedback_class = Collision::Feedback.class(success)
+        button.icon_name = Collision::Functions::Feedback.icon(success)
+        feedback_class = Collision::Functions::Feedback.class(success)
         button.add_css_class(feedback_class[:add])
         Non::Blocking.spawn do
           sleep 1.1.seconds # 1 feels fast, 1.5 feels slow

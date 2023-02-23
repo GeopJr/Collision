@@ -1,8 +1,8 @@
 module Collision
-  APP   = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
+  APP   = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen | Gio::ApplicationFlags::NonUnique)
   QUEUE = [] of Gio::File
 
-  def self.activate(app : Adw::Application, file : Gio::File? = nil)
+  def self.activate(app : Adw::Application)
     window_settings = Collision.settings
 
     # Setup window.
@@ -60,13 +60,15 @@ module Collision
     root.add_named((Collision::Views::Loading.new).widget, "loading")
     root.add_named(main_view.widget, "main")
 
-    main_view.file_util.file = file unless file.nil?
+    if QUEUE.size > 0 && !(file = QUEUE.shift?).nil?
+      main_view.file_util.file = file
+    end
   end
 
   EMIT_QUEUE = ->do
-    return if (file = QUEUE.shift?).nil?
+    return unless QUEUE.size > 0
 
-    activate(APP, file)
+    APP.activate_signal.emit
   end
 
   # Handles the open signal. It first calls activate and then
@@ -74,19 +76,14 @@ module Collision
   # it sets the first one (since multiple can be passed)
   # as the Collision::Welcomer's file.
   def self.open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
-    activated = false
     files.each do |file|
       next unless !(file_path = file.path).nil? && Collision.file?(file_path, false)
 
-      unless activated
-        activate(app, file)
-        activated = true
-      else
-        QUEUE << file
-      end
+      QUEUE << file
+      break if QUEUE.size >= 4
     end
 
-    activate(app) unless activated
+    APP.activate_signal.emit
 
     nil
   end
