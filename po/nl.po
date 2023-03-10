@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2023-02-18 11:40+0000\n"
+"PO-Revision-Date: 2023-02-24 17:41+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/collision/"
 "collision/nl/>\n"
@@ -28,14 +28,14 @@ msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Hashgenerator"
+msgstr "Hash­generator"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr "Controleer de controlesommen van bestanden"
+msgstr "Controleer controle­sommen van bestanden"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -76,7 +76,7 @@ msgstr "Controlesom"
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "Md5-, sha-1-, sha-256- of sha-512-controlesom"
+msgstr "Controlesom in formaat: MD5, SHA-1, SHA-256 of SHA-512"
 
 #: data/ui/tools.ui:70
 msgid "File"
@@ -88,11 +88,11 @@ msgstr "Kies het te vergelijken bestand"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr "Kies een bestand…"
+msgstr "Bestand kiezen…"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr "_Controlesomfucties vergelijken"
+msgstr "_Controle­som­fucties vergelijken"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
@@ -130,7 +130,9 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr "Heimen Stoffels"
+msgstr ""
+"Heimen Stoffels\n"
+"Philip Goto <philip.goto@gmail.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
@@ -142,7 +144,7 @@ msgstr "Verifiëren"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Controlesommen controleren"
+msgstr "Controle­sommen controleren"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
@@ -162,4 +164,4 @@ msgstr "Sneltoetsen tonen"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr "Afsluiten"
+msgstr "Sluiten"
