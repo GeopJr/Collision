@@ -19,6 +19,6 @@ dependencies:
     github: GeopJr/gettext.cr
     version: ~> 1.0.0
 
-crystal: 1.7.1
+crystal: 1.7.3
 
 license: BSD-2-Clause
