@@ -2,31 +2,34 @@
 # Copyright (C) 2021 Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the Collision package.
 # Nikki <nikkehtine@int.pl>, 2021.
-#
-#, fuzzy
+# gnu-ewm <gnu.ewm@protonmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-02-14 23:08+0200\n"
-"Last-Translator: Nikki <nikkehtine@int.pl>\n"
-"Language-Team: Polish\n"
+"PO-Revision-Date: 2023-03-25 15:41+0000\n"
+"Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/collision/"
+"collision/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
 #: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
 #: src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "Generator haszy"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
@@ -43,6 +46,11 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Sprawdzenie, czy pobrany lub otrzymany plik jest rzeczywiście tym, którego "
+"się spodziewaliśmy, jest często pomijane lub zbyt czasochłonne, aby to "
+"zrobić. Jednocześnie, z powodu masowego wzrostu liczby złośliwych stron "
+"internetowych i innych podmiotów, bardzo łatwo jest dostać w swoje ręce "
+"plik, który został podmieniony."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -50,6 +58,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"To narzędzie ma na celu rozwiązanie tego problemu. Collision przychodzi z "
+"prostym i czystym UI, pozwalając każdemu, z każdej grupy wiekowej i "
+"doświadczenia, do generowania, porównywania i weryfikacji haszy MD5, SHA-"
+"256, SHA-512 i SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -61,16 +73,16 @@ msgstr "Wybierz plik"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr ""
+msgstr "Suma kontrolna"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "Hasz MD5,SHA-1,SHA-256 or SHA-512"
 
 #: data/ui/tools.ui:70
 msgid "File"
-msgstr ""
+msgstr "Plik"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
@@ -78,7 +90,7 @@ msgstr "Wybierz drugi plik do porównania"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr ""
+msgstr "Wybierz plik..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -124,7 +136,7 @@ msgstr "Nikki"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr ""
+msgstr "Hasz"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
@@ -132,15 +144,15 @@ msgstr "Zweryfikuj"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Sprawdź hasze"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "Skróty _klawiszowe"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Ogólne"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -148,8 +160,8 @@ msgstr "Otwórz plik"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Pokaż skróty klawiszowe"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Wyjdź"
