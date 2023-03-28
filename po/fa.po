@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # MohammadSaleh Kamyab <mskf1383@protonmail.com>, 2021, 2022.
 # MSKF <walkingdeadstudio@outlook.com>, 2022.
+# MohammadSaleh Kamyab <mskf1383@envs.net>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-05-03 07:13+0000\n"
-"Last-Translator: MohammadSaleh Kamyab <mskf1383@protonmail.com>\n"
+"PO-Revision-Date: 2023-03-29 12:41+0000\n"
+"Last-Translator: MohammadSaleh Kamyab <mskf1383@envs.net>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/collision/"
 "collision/fa/>\n"
 "Language: fa\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.12.1\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -141,15 +142,15 @@ msgstr "اعتبارسنجی"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "بررسی هش‌ها"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_میان‌برهای صفحه‌کلید"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "عمومی"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -157,8 +158,8 @@ msgstr "گشودن یک پرونده"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "نمایش میان‌برهای صفحه‌کلید"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "ترک"
