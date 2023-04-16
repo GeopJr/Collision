@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022.
 # Dan <denqwerta@gmail.com>, 2023.
+# CakesTwix <cakestwix1@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2023-01-20 22:10+0000\n"
-"Last-Translator: Dan <denqwerta@gmail.com>\n"
+"PO-Revision-Date: 2023-04-13 19:48+0000\n"
+"Last-Translator: CakesTwix <cakestwix1@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/collision/"
 "collision/uk/>\n"
 "Language: uk\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -144,15 +145,15 @@ msgstr "Перевірити"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Перевірити хеші"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Комбінації клавіш"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Загальне"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -160,8 +161,8 @@ msgstr "Відкрити файл"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Показати комбінації клавіш"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Вийти"
