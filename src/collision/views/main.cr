@@ -67,6 +67,10 @@ module Collision
       window.add_css_class("devel")
     {% end %}
 
+    # Setup DnD controllers.
+    root.add_controller(Collision::DragNDrop.new(Collision::Welcomer).controller)
+    FILE_INFO.add_controller(Collision::DragNDrop.new(Collision).controller)
+
     window.content = WINDOW_BOX
     window.present
     @@activated = true
