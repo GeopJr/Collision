@@ -81,8 +81,8 @@
         {
           "type": "archive",
           "dest": "crystal/",
-          "url": "https://github.com/crystal-lang/crystal/releases/download/1.7.1/crystal-1.7.1-1-linux-x86_64.tar.gz",
-          "sha256": "5b6acd0abe59f5e77557cf5ce510705f698c06cf5c9c4641d3dd2ec23344d27b",
+          "url": "https://github.com/crystal-lang/crystal/releases/download/1.8.0/crystal-1.8.0-1-linux-x86_64.tar.gz",
+          "sha256": "000b1b301fc81fc706a67758204c201cb620c108fa0b32d97eb1265dd7f94177",
           "only_arches": [
             "x86_64"
           ]
@@ -90,8 +90,8 @@
         {
           "type": "archive",
           "dest": "crystal/",
-          "url": "https://github.com/geopjr-forks/crystal-aarch64/releases/download/v1.7.1/crystal-1.7.1-1-linux-aarch64.tar.xz",
-          "sha256": "feafe440d580edb8e0cb32e8f491398fb60a7067ae2588ae00cc63ec2ef6ffc8",
+          "url": "https://github.com/geopjr-forks/crystal-aarch64/releases/download/v1.8.0/crystal-1.8.0-1-linux-aarch64.tar.xz",
+          "sha256": "a9088c9a7c93a0a3e95d530ebe95fb15b089a1cf06e4ff6bff0eecf804cdf42d",
           "only_arches": [
             "aarch64"
           ]
@@ -105,19 +105,31 @@
         {
           "type": "git",
           "url": "https://github.com/hugopl/gi-crystal.git",
-          "tag": "v0.14.0",
+          "tag": "v0.15.2",
           "dest": "lib/gi-crystal"
         },
         {
           "type": "git",
+          "url": "https://github.com/hugopl/gio.cr.git",
+          "tag": "v0.1.0",
+          "dest": "lib/gio"
+        },
+        {
+          "type": "git",
           "url": "https://github.com/hugopl/gtk4.cr.git",
-          "tag": "v0.12.0",
+          "tag": "v0.13.0",
           "dest": "lib/gtk4"
         },
         {
           "type": "git",
+          "url": "https://github.com/hugopl/harfbuzz.cr.git",
+          "tag": "v0.1.0",
+          "dest": "lib/harfbuzz"
+        },
+        {
+          "type": "git",
           "url": "https://github.com/geopjr/libadwaita.cr.git",
-          "commit": "72f2e42c7dafbf7a427fb24db5dce4e66199d680",
+          "commit": "203737fc96bb48e1a710cb68e896d2c5b9c1a6e5",
           "dest": "lib/libadwaita"
         },
         {
@@ -125,6 +137,12 @@
           "url": "https://github.com/geopjr/non-blocking-spawn.git",
           "tag": "v1.0.5",
           "dest": "lib/non-blocking-spawn"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/hugopl/pango.cr.git",
+          "tag": "v0.2.0",
+          "dest": "lib/pango"
         },
         {
           "type": "git",

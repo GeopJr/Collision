@@ -2,13 +2,14 @@
 # Copyright (C) 2021 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Heimen Stoffels <vistausss@fastmail.com>, 2021, 2022.
+# Philip Goto <philip.goto@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-12-12 20:24+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"PO-Revision-Date: 2023-04-05 19:52+0000\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/collision/"
 "collision/nl/>\n"
 "Language: nl\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -27,14 +28,14 @@ msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Hashgenerator"
+msgstr "Hash­generator"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr "Controleer de controlesommen van bestanden"
+msgstr "Controleer controle­sommen van bestanden"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -55,10 +56,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"Deze toepassing probeert hierin een gulden middenweg te vinden. Collision "
-"beschikt over een eenvoudige vormgeving, waardoor iedereen (ongeacht "
-"leeftijd en/of ervaring) md5-, sha-1-, sha-256- en sha-512-controlesommen "
-"kan genereren, vergelijken en verifiëren."
+"Deze app probeert hierin een gulden middenweg te vinden. Collision beschikt "
+"over een eenvoudige vormgeving, waardoor iedereen (ongeacht leeftijd en/of "
+"ervaring) md5-, sha-1-, sha-256- en sha-512-controlesommen kan genereren, "
+"vergelijken en verifiëren."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -75,7 +76,7 @@ msgstr "Controlesom"
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "Md5-, sha-1-, sha-256- of sha-512-controlesom"
+msgstr "Controlesom in formaat: MD5, SHA-1, SHA-256 of SHA-512"
 
 #: data/ui/tools.ui:70
 msgid "File"
@@ -87,11 +88,11 @@ msgstr "Kies het te vergelijken bestand"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr "Kies een bestand…"
+msgstr "Bestand kiezen…"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr "_Controlesomfucties vergelijken"
+msgstr "_Controle­som­fucties vergelijken"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
@@ -129,7 +130,9 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr "Heimen Stoffels"
+msgstr ""
+"Heimen Stoffels\n"
+"Philip Goto https://flipflop97.github.io/"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
@@ -141,7 +144,7 @@ msgstr "Verifiëren"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Controlesommen controleren"
+msgstr "Controle­sommen controleren"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
@@ -161,4 +164,4 @@ msgstr "Sneltoetsen tonen"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr "Afsluiten"
+msgstr "Sluiten"
