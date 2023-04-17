@@ -38,6 +38,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.5.0" date="2023-04-17">
+      <description>
+        <ul>
+          <li>Added drag and drop support for files</li>
+          <li>Improved keyboard navigation</li>
+          <li>Fixed a memory issue with IO in multithreaded mode</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.4.0" date="2023-01-06">
       <description>
         <ul>
