@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2023-04-28 09:52+0000\n"
+"PO-Revision-Date: 2023-05-11 16:50+0000\n"
 "Last-Translator: Ali Aljishi <ahj696@hotmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/collision/"
 "collision/ar/>\n"
@@ -57,8 +57,8 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"هدف هذه الأداة حلُّ ذلك. واجهة كولجن سهلة ومرتَّبة، وهذا يتيح لأيِّ أحد أكان "
-"خبيرًا أم مبتدئًا، كبيرًا أم صغيرًا، بأن يولِّد ويقارن هاشات إم‌دي٥ "
+"هدف هذه الأداة حلُّ ذلك. واجهة «تصادم» سهلة ومرتَّبة، وهذا يتيح لأيِّ أحد "
+"أكان خبيرًا أم مبتدئًا، كبيرًا أم صغيرًا، بأن يولِّد ويقارن هاشات إم‌دي٥ "
 "وإس‌إتش‌أي-٢٥٦ وإس‌إتش‌أي-٥١٢ وإس‌إتش‌أي-١."
 
 #: data/ui/welcomer.ui:12
@@ -96,7 +96,7 @@ msgstr "_قارن وظائف هاش"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_عن كولجن"
+msgstr "_عن «تصادم»"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
