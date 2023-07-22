@@ -19,7 +19,7 @@
       <img width='192' alt='Available on AUR' src='https://img.shields.io/badge/Available_on_aur-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white'/>
     </a><br />
     <a href='https://search.nixos.org/packages?channel=unstable&show=collision&from=0&size=50&sort=relevance&type=packages&query=collision'>
-      <img width='192' alt='Available on AUR' src='https://img.shields.io/badge/Available_on_Nixpkgs-white?style=for-the-badge&logo=nixos&logoColor=5277C3'/>
+      <img width='192' alt='Available in Nixpkgs' src='https://img.shields.io/badge/Available_in_Nixpkgs-white?style=for-the-badge&logo=nixos&logoColor=5277C3'/>
     </a>
 </p>
 
