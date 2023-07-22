@@ -1,43 +1,40 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Ibrahim Muhammad <ebraheem010@gmail.com>, 2022.
-# bonbonboi <hamzah.abusamak@gmail.com>, 2022.
-# Ali Aljishi <ahj696@hotmail.com>, 2023.
+# Maksim <maxklezovich@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2023-05-11 16:50+0000\n"
-"Last-Translator: Ali Aljishi <ahj696@hotmail.com>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/collision/"
-"collision/ar/>\n"
-"Language: ar\n"
+"PO-Revision-Date: 2023-06-21 03:04+0000\n"
+"Last-Translator: Maksim <maxklezovich@gmail.com>\n"
+"Language-Team: Belarusian <https://hosted.weblate.org/projects/collision/"
+"collision/be/>\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.18.1\n"
 
-#: data/dev.geopjr.Collision.desktop.in:6
-#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
-#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
-#: src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.desktop.in:6 data/dev.geopjr.Collision.metainfo.xml.in:4
+#: data/ui/switcher.ui:6 data/ui/welcomer.ui:7
+#: src/modules/functions/about_action.cr:11 src/modules/views/main.cr:10
 msgid "Collision"
-msgstr "تصادم"
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "مولِّد هاش"
+msgstr "Генератар хэшаў"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr "تحقَّق من هاش ملفَّاتك"
+msgstr "Праверце хэшы сваіх файлаў"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -47,9 +44,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"يشيع التغافل عن التحقُّق من أن الملفَّات التي نزَّلتها هي حقًّا ما تريد، "
-"ولعلَّ سبب ذلك هو استغراقه وقتًا كثيرًا، ويتزامن هذا مع سهولة الحصول على "
-"ملفَّات معدَّلة، وذلك لأن أعداد الصفحات الخبيثة وغيرهم من جهات يزداد تزايدًا."
+"Правяраць тое, што файл, які вы загрузілі ці атрымалі - гэта сапраўды той "
+"файл, які вам патрэбен, займае шмат часу. У той жа час, стала вельмі лёгка "
+"атрымаць файл, які быў падроблены, з-за масавага павелічэння шкоднасных вэб-"
+"старонак і іншага ПЗ."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -57,111 +55,113 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"هدف هذه الأداة حلُّ ذلك. واجهة «تصادم» سهلة ومرتَّبة، وهذا يتيح لأيِّ أحد "
-"أكان خبيرًا أم مبتدئًا، كبيرًا أم صغيرًا، بأن يولِّد ويقارن هاشات إم‌دي٥ "
-"وإس‌إتش‌أي-٢٥٦ وإس‌إتش‌أي-٥١٢ وإس‌إتش‌أي-١."
+"Гэты інструмент закліканы вырашыць гэтую праблему. Collision пастаўляецца з "
+"простым &amp; чысты UI, які дазваляе любому чалавеку любога ўзросту і "
+"досведу генераваць, параўноўваць і правяраць хэшы MD5, SHA-256, SHA-512 і "
+"SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
-msgstr "ا_فتح ملفًّا"
+msgstr "_Адкрыць файл"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
-msgstr "اختر ملفًّا"
+msgstr "Выбраць файл"
 
 #: data/ui/tools.ui:13
 msgid "Checksum"
-msgstr "المجموع الاختباري"
+msgstr "Кантрольная сума"
 
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "هاش إم‌دي٥ أو إس‌إتش‌أي-٢٥٦ أو إس‌إتش‌أي-٥١٢ أو إس‌إتش‌أي-١"
+msgstr "MD5, SHA-1, SHA-256 ці SHA-512 хэш"
 
 #: data/ui/tools.ui:70
 msgid "File"
-msgstr "ملف"
+msgstr "Файл"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr "اختر ملفًّا آخر لتقارنه"
+msgstr "Абярыце іншы файл, каб параўноўваць"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
-msgstr "اختر ملفًّا..."
+msgstr "Абярыце файл..."
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr "_قارن وظائف هاش"
+msgstr "_Функцыі параўнання хэшаў"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_عن «تصادم»"
+msgstr "_Пра Collision"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
-msgstr "القائمة"
+msgstr "Меню"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr "ا_فتح"
+msgstr "_Адкрыць"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
-msgstr "افتح..."
+msgstr "Адкрыць..."
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
 msgid "Copy"
-msgstr "انسخ"
+msgstr "Скапіяваць"
 
 #. Don't translate the hash names if possible.
 #: src/collision.cr:69
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "أدرج هاش إم‌دي٥\\إس‌إتش‌أي-٢٥٦\\إس‌إتش‌أي-٥١٢\\إس‌إتش‌أي-١"
+msgstr "Устаўце хэш MD5/SHA-1/SHA-256/SHA-512"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/modules/prerequisites.cr:14
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
-"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+"https://be.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D1%9E%D0%BD%D0%B0%D0%B"
+"D%D0%BD%D0%B5_%D0%BA%D1%80%D1%8B%D0%BF%D1%82%D0%B0%D0%B3%D1%80%D0%B0%D1%84%D1"
+"%96%D1%87%D0%BD%D1%8B%D1%85_%D1%85%D1%8D%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86"
+"%D1%8B%D0%B9"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr ""
-"Ibrahim Muhammad <ibrahim.muhammad.mu@outlook.com>\n"
-"Ali Aljishi <ahj696@hotmail.com>"
+msgstr "Maks"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
-msgstr "الهاش"
+msgstr "Хэш"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
-msgstr "تحقَّق"
+msgstr "Праверыць"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "تحقَّق من الهاشات"
+msgstr "Праверыць хешы"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr "ا_ختصارات لوح المفاتيح"
+msgstr "_Камбінацыі клавіш"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr "عام"
+msgstr "Агульная"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "افتح ملفًّا"
+msgstr "Адкрыць файл"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr "أظهر اختصارات لوح المفاتيح"
+msgstr "Паказаць камбінацыі клавіш"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr "أنهِ"
+msgstr "Выйсці"

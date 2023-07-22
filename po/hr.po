@@ -1,13 +1,13 @@
 # Croatian translation for dev.geopjr.Collision.
 # Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# Milo Ivir <mail@milotype.de>, 2021, 2022.
+# Milo Ivir <mail@milotype.de>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-12-14 22:49+0000\n"
+"PO-Revision-Date: 2023-05-22 09:50+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/collision/"
 "collision/hr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -56,7 +56,7 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"Cilj ovog alata je riješiti taj problem. Collision sadrźi jednostavno i "
+"Cilj ovog alata je riješiti taj problem. „Kolizija” sadrźi jednostavno i "
 "čisto korisničko sučelje koje omogućuje svima, bez obzira na dob i iskustvo, "
 "generirati, usporediti i provjeriti MD5, SHA-256, SHA-512 i SHA-1 hasheve."
 
@@ -95,7 +95,7 @@ msgstr "_Usporedi hash funkcije"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_Collision informacije"
+msgstr "O _aplikaciji Kolizija"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
@@ -137,11 +137,11 @@ msgstr "Hash"
 
 #: src/modules/functions/file_set.cr:8
 msgid "Verify"
-msgstr "Provjeri"
+msgstr "Potvrdi"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Potvrdi hasheve"
+msgstr "Provjeri hasheve"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
