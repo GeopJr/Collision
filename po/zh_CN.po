@@ -1,13 +1,13 @@
 # Simplified Chinese translations for dev.geopjr.Collision package.
 # Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# lumingzh <lumingzh@qq.com>, 2022.
+# lumingzh <lumingzh@qq.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-03-13 22:02+0000\n"
+"PO-Revision-Date: 2023-08-15 07:54+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "collision/collision/zh_Hans/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
@@ -59,7 +59,7 @@ msgstr ""
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
-msgstr "_打开文件"
+msgstr "打开文件(_O)"
 
 #: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
 msgid "Choose a File"
@@ -88,11 +88,11 @@ msgstr "选择文件…"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
-msgstr "_对比哈希函数"
+msgstr "对比哈希函数(_C)"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_关于 Collision"
+msgstr "关于 Collision(_A)"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
@@ -100,11 +100,11 @@ msgstr "菜单"
 
 #: data/ui/header_left.ui:8
 msgid "_Open"
-msgstr "_打开"
+msgstr "打开(_O)"
 
 #: data/ui/header_left.ui:9
 msgid "Open..."
-msgstr "打开..."
+msgstr "打开…"
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
@@ -126,7 +126,7 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr "lumingzh"
+msgstr "lumingzh <lumingzh@qq.com>"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
@@ -138,15 +138,15 @@ msgstr "校验"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "检查哈希"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "键盘快捷键(_K)"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "常规"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -154,8 +154,8 @@ msgstr "打开文件"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "显示键盘快捷键"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "退出"
