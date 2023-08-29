@@ -1,7 +1,7 @@
 # Galician translations for dev.geopjr.Collision package.
 # Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# Fran Diéguez <fran.dieguez@mabishu.com>, 2022.
+# Fran Diéguez <fran.dieguez@mabishu.com>, 2022, 2023.
 # antonpaidoslalin <anton.paidoslalin@gmail.com>, 2022.
 # Evangelos Paterakis <evan@geopjr.dev>, 2022.
 msgid ""
@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-08-25 02:22+0000\n"
-"Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
+"PO-Revision-Date: 2023-08-30 23:04+0000\n"
+"Last-Translator: Fran Diéguez <fran.dieguez@mabishu.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/collision/"
 "collision/gl/>\n"
 "Language: gl\n"
@@ -18,25 +18,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
 #: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
 #: src/modules/views/main.cr:10
 msgid "Collision"
-msgstr "Collision"
+msgstr "Colisión"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Xerador de resumo (hash)"
+msgstr "Xerador de hashes"
 
 #. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
 #. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
 msgid "Check hashes for your files"
-msgstr "Comproba os hash dos teus ficheiros"
+msgstr "Comprobe os hash dos seus ficheiros"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -46,10 +46,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"Adóitase omitir ou levar moito tempo verificar que un arquivo que baixaches "
-"ou recibiches é realmente o único que agardabas. Ao tempo, é doado conseguir "
-"arquivos manipulados debido ao masivo aumento das páxinas web maliciosas e "
-"outras fontes deste tipo de arquivos."
+"Verificar un ficheiro que se descargou ou recibido é realmente é algo que a "
+"miúdo se pasa por alto ou que leva demasiado tempo. Ao mesmo tempo, voltouse "
+"moi fácil facerse con un ficheiro que foi manipulado, debido ao aumento "
+"masivo de páxinas web maliciosas e outros actores."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -57,9 +57,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
-"Esta ferramenta pretende solucionalo. Collision ven con unha interface "
-"simple e limpa permitindo a calquera, de calquera idade ou grupo de "
-"experiencia, xerar, comparar e verificar resumos SHA-256, SHA-512 e SHA-1."
+"Esta ferramenta pretende solucionalo. Colisión ven con unha interface simple "
+"e limpa permitíndolle a calquera, de calquera idade ou grupo de experiencia, "
+"xerar, comparar e verificar resumos MD5, SHA-256, SHA-512 e SHA-1."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
@@ -76,7 +76,7 @@ msgstr "Suma de verificación"
 #. Don't translate the hash names if possible.
 #: data/ui/tools.ui:43
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "Resumos MD5,SHA-1,SHA-256 ou SHA-512"
+msgstr "Resumo MD5,SHA-1,SHA-256 ou SHA-512"
 
 #: data/ui/tools.ui:70
 msgid "File"
@@ -84,7 +84,7 @@ msgstr "Ficheiro"
 
 #: data/ui/tools.ui:84
 msgid "Select Another File to Check Against"
-msgstr "Seleccione outro ficheiro para comprobar"
+msgstr "Seleccione outro ficheiro contra o que comprobar"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
 msgid "Choose File..."
@@ -96,7 +96,7 @@ msgstr "_Comparar funcións hash"
 
 #: data/ui/header_right.ui:11
 msgid "_About Collision"
-msgstr "_Sobre Collision"
+msgstr "_Sobre Colisión"
 
 #: data/ui/header_right.ui:19
 msgid "Menu"
@@ -130,7 +130,7 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/modules/functions/about_action.cr:18
 msgid "translator-credits"
-msgstr "Fran Diéguez"
+msgstr "Fran Diéguez <frandieguez@gnome.org>, 2023"
 
 #: src/modules/functions/file_set.cr:7
 msgid "Hash"
@@ -142,15 +142,15 @@ msgstr "Verificar"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Comprobar hashes"
 
 #: data/ui/header_right.ui:7
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "Atallos de _teclado"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Xeral"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -158,8 +158,8 @@ msgstr "Abrir un ficheiro"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Mostrar os atallos de teclado"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "Quit"
-msgstr ""
+msgstr "Saír"
