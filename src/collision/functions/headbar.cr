@@ -13,6 +13,7 @@ module Collision
       headerbar.pack_start(open_file_button)
       headerbar.pack_end(menu_button)
       headerbar.title_widget = title
+      headerbar.centering_policy = Adw::CenteringPolicy::Strict
 
       @widget = headerbar
     end
