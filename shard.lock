@@ -6,7 +6,7 @@ shards:
 
   gi-crystal:
     git: https://github.com/hugopl/gi-crystal.git
-    version: 0.15.2
+    version: 0.17.0
 
   gio:
     git: https://github.com/hugopl/gio.cr.git
@@ -18,7 +18,7 @@ shards:
 
   harfbuzz:
     git: https://github.com/hugopl/harfbuzz.cr.git
-    version: 0.1.0
+    version: 0.2.0
 
   libadwaita:
     git: https://github.com/geopjr/libadwaita.cr.git
@@ -31,8 +31,4 @@ shards:
   pango:
     git: https://github.com/hugopl/pango.cr.git
     version: 0.2.0
-
-  version_from_shard:
-    git: https://github.com/hugopl/version_from_shard.git
-    version: 1.2.5
 

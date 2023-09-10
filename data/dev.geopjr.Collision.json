@@ -105,7 +105,7 @@
         {
           "type": "git",
           "url": "https://github.com/hugopl/gi-crystal.git",
-          "tag": "v0.15.2",
+          "tag": "v0.17.0",
           "dest": "lib/gi-crystal"
         },
         {
@@ -123,7 +123,7 @@
         {
           "type": "git",
           "url": "https://github.com/hugopl/harfbuzz.cr.git",
-          "tag": "v0.1.0",
+          "tag": "v0.2.0",
           "dest": "lib/harfbuzz"
         },
         {
@@ -143,12 +143,6 @@
           "url": "https://github.com/hugopl/pango.cr.git",
           "tag": "v0.2.0",
           "dest": "lib/pango"
-        },
-        {
-          "type": "git",
-          "url": "https://github.com/hugopl/version_from_shard.git",
-          "tag": "v1.2.5",
-          "dest": "lib/version_from_shard"
         }
       ]
     },
