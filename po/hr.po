@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-18 21:34+0200\n"
+"POT-Creation-Date: 2023-09-23 21:06+0300\n"
 "PO-Revision-Date: 2023-05-22 09:50+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/collision/"
@@ -20,9 +20,8 @@ msgstr ""
 "X-Generator: Weblate 4.18-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
-#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
-#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
-#: src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
+#: data/ui/application.ui:76 data/ui/application.ui:113
 msgid "Collision"
 msgstr "Kolizija"
 
@@ -30,12 +29,14 @@ msgstr "Kolizija"
 msgid "Hash Generator"
 msgstr "Hash generator"
 
-#. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
-#. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
-#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:114
 msgid "Check hashes for your files"
 msgstr "Provjeri hasheve tvojih datoteka"
+
+#: data/dev.geopjr.Collision.desktop.in:12
+msgid "md5;sha1;sha256;sha512;hash;"
+msgstr ""
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -60,92 +61,78 @@ msgstr ""
 "čisto korisničko sučelje koje omogućuje svima, bez obzira na dob i iskustvo, "
 "generirati, usporediti i provjeriti MD5, SHA-256, SHA-512 i SHA-1 hasheve."
 
-#: data/ui/welcomer.ui:12
-msgid "_Open a File"
-msgstr "_Otvori datoteku"
+#: data/ui/application.ui:6
+msgid "_New Window"
+msgstr ""
 
-#: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
-msgid "Choose a File"
-msgstr "Odaberi datoteku"
-
-#: data/ui/tools.ui:13
-msgid "Checksum"
-msgstr "Kontrolni zbroj"
-
-#. Don't translate the hash names if possible.
-#: data/ui/tools.ui:43
-msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "MD5,SHA-1,SHA-256 ili SHA-512 Hash"
-
-#: data/ui/tools.ui:70
-msgid "File"
-msgstr "Datoteka"
-
-#: data/ui/tools.ui:84
-msgid "Select Another File to Check Against"
-msgstr "Odaberi jednu drugu datoteku za usporedbu"
-
-#: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
-msgid "Choose File…"
-msgstr "Odaberi datoteku …"
-
-#: data/ui/header_right.ui:7
+#: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
 msgstr "_Usporedi hash funkcije"
 
-#: data/ui/header_right.ui:11
+#: data/ui/application.ui:14
+msgid "_Keyboard Shortcuts"
+msgstr "_Tipkovni prečaci"
+
+#: data/ui/application.ui:18
 msgid "_About Collision"
 msgstr "O _aplikaciji Kolizija"
 
-#: data/ui/header_right.ui:19
-msgid "Menu"
-msgstr "Izbornik"
+#: data/ui/application.ui:23 data/ui/application.ui:27
+msgid "Choose a File"
+msgstr "Odaberi datoteku"
 
-#: data/ui/header_left.ui:8
+#: data/ui/application.ui:59
 msgid "_Open"
 msgstr "_Otvori"
 
-#: data/ui/header_left.ui:9
+#: data/ui/application.ui:60
 msgid "Open…"
 msgstr "Otvori …"
 
-#: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
-#: data/ui/hash_list.ui:74
-msgid "Copy"
-msgstr "Kopiraj"
+#: data/ui/application.ui:97
+msgid "Menu"
+msgstr "Izbornik"
 
-#. Don't translate the hash names if possible.
-#: src/collision.cr:69
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Umetni MD5/SHA-1/SHA-256/SHA-512 hash"
+#: data/ui/application.ui:118
+msgid "_Open a File"
+msgstr "_Otvori datoteku"
 
-#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/modules/prerequisites.cr:14
-msgid ""
-"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr ""
-"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-
-#. Name <email@domain.com> or Name https://website.example
-#: src/modules/functions/about_action.cr:18
-msgid "translator-credits"
-msgstr "Milo Ivir"
-
-#: src/modules/functions/file_set.cr:7
+#: data/ui/application.ui:165
 msgid "Hash"
 msgstr "Hash"
 
-#: src/modules/functions/file_set.cr:8
+#: data/ui/application.ui:178 data/ui/application.ui:198
+#: data/ui/application.ui:218 data/ui/application.ui:238
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: data/ui/application.ui:261
 msgid "Verify"
 msgstr "Potvrdi"
 
-#: nautilus-extension/collision-extension.py:54
-msgid "Check Hashes"
-msgstr "Provjeri hasheve"
+#: data/ui/application.ui:274
+msgid "Checksum"
+msgstr "Kontrolni zbroj"
 
-#: data/ui/header_right.ui:7
-msgid "_Keyboard Shortcuts"
-msgstr "_Tipkovni prečaci"
+#: data/ui/application.ui:303
+msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
+msgstr "MD5,SHA-1,SHA-256 ili SHA-512 Hash"
+
+#: data/ui/application.ui:332
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "Umetni MD5/SHA-1/SHA-256/SHA-512 hash"
+
+#: data/ui/application.ui:354
+msgid "File"
+msgstr "Datoteka"
+
+#: data/ui/application.ui:369
+msgid "Select Another File to Check Against"
+msgstr "Odaberi jednu drugu datoteku za usporedbu"
+
+#: data/ui/application.ui:411
+msgid "Choose File…"
+msgstr "Odaberi datoteku …"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
@@ -160,5 +147,29 @@ msgid "Show Keyboard Shortcuts"
 msgstr "Pokaži tipkovne prečace"
 
 #: data/ui/shortcuts_window.ui:26
+msgid "New Window"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:32
+msgid "Close Window"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:38
 msgid "Quit"
 msgstr "Zatvori program"
+
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr "Provjeri hasheve"
+
+#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
+#: src/collision.cr:64
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+
+#. Name <email@domain.com> or Name https://website.example
+#: src/collision/actions/about.cr:22
+msgid "translator-credits"
+msgstr "Milo Ivir"
