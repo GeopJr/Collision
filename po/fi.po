@@ -1,13 +1,13 @@
 # Finnish translation for dev.geopjr.Collision.
 # Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-18 21:34+0200\n"
-"PO-Revision-Date: 2022-12-28 19:48+0000\n"
+"PO-Revision-Date: 2023-09-20 07:54+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/collision/"
 "collision/fi/>\n"
@@ -16,14 +16,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
 #: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
 #: src/modules/views/main.cr:10
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -44,6 +44,11 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Lataamasi tai vastaanottamasi tiedoston vahvistaminen, että se todella on "
+"mitä sen oletat olevan, jää usein huomiotta tai vie liian paljon aikaa. "
+"Samanaikaisesti peukaloitujen tiedostojen leviäminen haitallisten "
+"verkkosivustojen ja muiden pahantahtoisten toimijoiden toimesta on aiempaa "
+"yleisempää."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -51,6 +56,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"Tämä työkalu pyrkii vastaamaan haasteeseen. Collisionissa on yksinkertainen "
+"ja helppokäyttöinen käyttöliittymä, joka mahdollista kenen tahansa ikään tai "
+"kokemukseen katsomatta luoda, vertailla ja vahvistaa MD5-, SHA-256-, SHA-512-"
+" ja SHA-1-tiivisteitä."
 
 #: data/ui/welcomer.ui:12
 msgid "_Open a File"
