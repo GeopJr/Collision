@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-18 21:34+0200\n"
+"POT-Creation-Date: 2023-09-23 21:06+0300\n"
 "PO-Revision-Date: 2023-08-15 07:54+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -19,9 +19,8 @@ msgstr ""
 "X-Generator: Weblate 5.0-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
-#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/switcher.ui:6
-#: data/ui/welcomer.ui:7 src/modules/functions/about_action.cr:11
-#: src/modules/views/main.cr:10
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
+#: data/ui/application.ui:76 data/ui/application.ui:113
 msgid "Collision"
 msgstr "Collision"
 
@@ -29,12 +28,14 @@ msgstr "Collision"
 msgid "Hash Generator"
 msgstr "哈希值生成器"
 
-#. Note: If it's difficult to translate, the meaning can be changed to "Check your files' hashes"
-#. or "Check the hashes of your files".
 #: data/dev.geopjr.Collision.desktop.in:8
-#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/welcomer.ui:8
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:114
 msgid "Check hashes for your files"
 msgstr "检查您文件的哈希值"
+
+#: data/dev.geopjr.Collision.desktop.in:12
+msgid "md5;sha1;sha256;sha512;hash;"
+msgstr ""
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -57,92 +58,78 @@ msgstr ""
 "Collision 具有简单且干净的用户界面，允许任何年龄和经验的任何人用来生成、对比"
 "和校验 MD5、SHA-256、SHA-512 和 SHA-1 哈希值。"
 
-#: data/ui/welcomer.ui:12
-msgid "_Open a File"
-msgstr "打开文件(_O)"
+#: data/ui/application.ui:6
+msgid "_New Window"
+msgstr ""
 
-#: data/ui/welcomer.ui:25 data/ui/tools.ui:117 data/ui/header_left.ui:18
-msgid "Choose a File"
-msgstr "选择文件"
-
-#: data/ui/tools.ui:13
-msgid "Checksum"
-msgstr "校验和"
-
-#. Don't translate the hash names if possible.
-#: data/ui/tools.ui:43
-msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "MD5、SHA-1、SHA-256 或 SHA-512 哈希"
-
-#: data/ui/tools.ui:70
-msgid "File"
-msgstr "文件"
-
-#: data/ui/tools.ui:84
-msgid "Select Another File to Check Against"
-msgstr "选择另一个文件来对照检查"
-
-#: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
-msgid "Choose File…"
-msgstr "选择文件…"
-
-#: data/ui/header_right.ui:7
+#: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
 msgstr "对比哈希函数(_C)"
 
-#: data/ui/header_right.ui:11
+#: data/ui/application.ui:14
+msgid "_Keyboard Shortcuts"
+msgstr "键盘快捷键(_K)"
+
+#: data/ui/application.ui:18
 msgid "_About Collision"
 msgstr "关于 Collision(_A)"
 
-#: data/ui/header_right.ui:19
-msgid "Menu"
-msgstr "菜单"
+#: data/ui/application.ui:23 data/ui/application.ui:27
+msgid "Choose a File"
+msgstr "选择文件"
 
-#: data/ui/header_left.ui:8
+#: data/ui/application.ui:59
 msgid "_Open"
 msgstr "打开(_O)"
 
-#: data/ui/header_left.ui:9
+#: data/ui/application.ui:60
 msgid "Open…"
 msgstr "打开…"
 
-#: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
-#: data/ui/hash_list.ui:74
-msgid "Copy"
-msgstr "复制"
+#: data/ui/application.ui:97
+msgid "Menu"
+msgstr "菜单"
 
-#. Don't translate the hash names if possible.
-#: src/collision.cr:69
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "插入 MD5/SHA-1/SHA-256/SHA-512 哈希值"
+#: data/ui/application.ui:118
+msgid "_Open a File"
+msgstr "打开文件(_O)"
 
-#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/modules/prerequisites.cr:14
-msgid ""
-"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr ""
-"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-
-#. Name <email@domain.com> or Name https://website.example
-#: src/modules/functions/about_action.cr:18
-msgid "translator-credits"
-msgstr "lumingzh <lumingzh@qq.com>"
-
-#: src/modules/functions/file_set.cr:7
+#: data/ui/application.ui:165
 msgid "Hash"
 msgstr "哈希"
 
-#: src/modules/functions/file_set.cr:8
+#: data/ui/application.ui:178 data/ui/application.ui:198
+#: data/ui/application.ui:218 data/ui/application.ui:238
+msgid "Copy"
+msgstr "复制"
+
+#: data/ui/application.ui:261
 msgid "Verify"
 msgstr "校验"
 
-#: nautilus-extension/collision-extension.py:54
-msgid "Check Hashes"
-msgstr "检查哈希"
+#: data/ui/application.ui:274
+msgid "Checksum"
+msgstr "校验和"
 
-#: data/ui/header_right.ui:7
-msgid "_Keyboard Shortcuts"
-msgstr "键盘快捷键(_K)"
+#: data/ui/application.ui:303
+msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
+msgstr "MD5、SHA-1、SHA-256 或 SHA-512 哈希"
+
+#: data/ui/application.ui:332
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+msgstr "插入 MD5/SHA-1/SHA-256/SHA-512 哈希值"
+
+#: data/ui/application.ui:354
+msgid "File"
+msgstr "文件"
+
+#: data/ui/application.ui:369
+msgid "Select Another File to Check Against"
+msgstr "选择另一个文件来对照检查"
+
+#: data/ui/application.ui:411
+msgid "Choose File…"
+msgstr "选择文件…"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
@@ -157,5 +144,29 @@ msgid "Show Keyboard Shortcuts"
 msgstr "显示键盘快捷键"
 
 #: data/ui/shortcuts_window.ui:26
+msgid "New Window"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:32
+msgid "Close Window"
+msgstr ""
+
+#: data/ui/shortcuts_window.ui:38
 msgid "Quit"
 msgstr "退出"
+
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr "检查哈希"
+
+#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
+#: src/collision.cr:64
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+
+#. Name <email@domain.com> or Name https://website.example
+#: src/collision/actions/about.cr:22
+msgid "translator-credits"
+msgstr "lumingzh <lumingzh@qq.com>"
