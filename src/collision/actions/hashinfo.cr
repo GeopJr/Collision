@@ -1,18 +1,13 @@
-# Opens url in default browser
+class Collision::Action::HashInfo < Collision::Action
+  def initialize(app : Adw::Application)
+    super(app, "hashinfo")
+  end
 
-module Collision::Action
-  class HashInfo
-    getter action : Gio::SimpleAction
-
-    def initialize(app : Adw::Application, window_id : UInt32)
-      @action = Gio::SimpleAction.new("hashinfo", nil)
-
-      @action.activate_signal.connect do
-        parent = APP.active_window.nil? ? APP.window_by_id(window_id) : APP.active_window
-        LibGtk.gtk_show_uri(parent.not_nil!, ARTICLE, Gdk::CURRENT_TIME)
-      end
-
-      app.add_action(action)
+  def on_activate
+    begin
+      Gio.app_info_launch_default_for_uri(ARTICLE, nil)
+    rescue ex
+      LOGGER.debug { ex }
     end
   end
 end

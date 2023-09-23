@@ -1,8 +1,8 @@
 require "./spec_helper"
-require "../src/collision/views/tools/compare.cr"
+require "../src/collision/functions/file_utils.cr"
 
-describe Collision::Compare do
+describe Collision::FileUtils do
   it "returns whether the file contains one of the hashes" do
-    Collision::Compare.compare_content(Path[__DIR__] / "test_content.txt").should be_true
+    Collision::FileUtils.compare_content(Path[__DIR__] / "test_content.txt", Collision::CLIPBOARD_HASH.values).should be_true
   end
 end

@@ -86,8 +86,8 @@ msgid "Select Another File to Check Against"
 msgstr "Vyberte jiný soubor ke kontrole"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
-msgid "Choose File..."
-msgstr "Vyberte soubor..."
+msgid "Choose File…"
+msgstr "Vyberte soubor…"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -106,8 +106,8 @@ msgid "_Open"
 msgstr "_Otevřít"
 
 #: data/ui/header_left.ui:9
-msgid "Open..."
-msgstr "Otevřete..."
+msgid "Open…"
+msgstr "Otevřete…"
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74

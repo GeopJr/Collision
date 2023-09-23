@@ -2,6 +2,7 @@ require "./license.cr"
 require "libadwaita"
 require "gettext"
 require "log"
+require "non-blocking-spawn"
 
 if Non::Blocking.threads.size == 0
   STDERR.puts "App is running in single-threaded mode. Exiting."
@@ -65,85 +66,72 @@ module Collision
   Gio.register_resource("data/dev.geopjr.Collision.gresource.xml", "data")
 end
 
-require "./collision/actions/*"
-require "./collision/functions/*"
-require "./collision/views/*"
-require "./collision/views/tools/*"
+require "./collision/*"
 
-macro gen_hash(buttons)
-  {
-  {% for hash, index in Collision::HASH_FUNCTIONS %}
-    {{hash.upcase}} => {% if buttons %} Gtk::Button.cast(B_HS["copyBtn{{index + 1}}"]) {% else %} Adw::ActionRow.cast(B_HS["hashRow{{index + 1}}"]) {% end %},
+# Creates and setups a window. If a file is passed it will attempt to open it.
+def activate_with_file(app : Adw::Application, file : Gio::File? = nil)
+  window = CollisionWindow.new
+  window.application = app
+
+  # Save settings on close
+  window.close_request_signal.connect(->Collision::Settings.save(Gtk::Window))
+  # Load settings
+  window_settings = Collision.settings
+  window.set_default_size(window_settings[:window_width], window_settings[:window_height])
+  window.maximize if window_settings[:window_maximized]
+
+  # Devel styling
+  {% if flag?(:debug) || !flag?(:release) %}
+    window.add_css_class("devel")
   {% end %}
-  }
+
+  window.present
+
+  # Setup actions
+  Collision::Action::HashInfo.new(app)
+  Collision::Action::About.new(app)
+  Collision::Action::NewWindow.new(app)
+  Collision::Action::Quit.new(app)
+  Collision::Action::OpenFile.new(app).cb = ->window.on_open_btn_clicked
+  app.set_accels_for_action("window.close", {"<Ctrl>W"})
+
+  Collision::LOGGER.debug { "Window activated" }
+  Collision::LOGGER.debug { "Settings: #{window_settings}" }
+
+  unless file.nil?
+    Collision::LOGGER.debug { "Activating with file" }
+
+    window.file = file
+  end
 end
 
-module Collision
-  B_UI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/welcomer.ui")
-  B_HL = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_left.ui")
-  B_HR = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/header_right.ui")
-  B_HS = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/hash_list.ui")
-  B_TL = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/tools.ui")
-  B_HT = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/switcher.ui")
-  B_SP = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/spinner.ui")
-  B_FI = Gtk::Builder.new_from_resource("/dev/geopjr/Collision/ui/file_info.ui")
-
-  WINDOW_BOX = Gtk::Box.new(Gtk::Orientation::Vertical, 0)
-
-  WELCOME_BUTTON               = Gtk::Button.cast(B_UI["welcomeBtn"])
-  OPEN_FILE_BUTTON             = Gtk::Button.cast(B_HL["openFileBtn"])
-  MENU_BUTTON                  = Gtk::MenuButton.cast(B_HR["menuBtn"])
-  MAIN_FILE_CHOOSER_NATIVE     = Gtk::FileChooserNative.cast(B_HL["mainFileChooserNative"])
-  WELCOMER_FILE_CHOOSER_NATIVE = Gtk::FileChooserNative.cast(B_UI["welcomerFileChooserNative"])
-  HEADER_TITLE                 = Adw::ViewSwitcherTitle.cast(B_HT["switcher_title"])
-  BOTTOM_TABS                  = Adw::ViewSwitcherBar.cast(B_HT["switcher_bar"])
-  STACK                        = Adw::ViewStack.cast(B_HT["stack"])
-
-  SPINNER = Gtk::Spinner.new(
-    spinning: true,
-    halign: Gtk::Align::Center,
-    vexpand: true,
-    hexpand: true,
-    width_request: 32,
-    height_request: 32
-  )
-  TOOL_COMPARE_BUTTON_SPINNER = Gtk::Spinner.new(
-    spinning: true,
-    halign: Gtk::Align::Center,
-    width_request: 36,
-    height_request: 36,
-    visible: false
-  )
-  TOOL_VERIFY_INPUT = Gtk::TextView.new(
-    pixels_above_lines: 11,
-    pixels_below_lines: 11,
-    left_margin: 5,
-    right_margin: 5,
-    cursor_visible: false,
-    height_request: 125,
-    wrap_mode: Gtk::WrapMode::Char,
-    accepts_tab: false,
-    css_name: "entry",
-    css_classes: ["card-like", "monospace"],
-    tooltip_text: Gettext.gettext("Insert a MD5/SHA-1/SHA-256/SHA-512 Hash")
-  )
-
-  TOOLS_GRID                       = Gtk::Grid.cast(B_TL["tools"])
-  TOOL_VERIFY_OVERLAY              = Gtk::Overlay.cast(B_TL["verifyOverlay"])
-  TOOL_VERIFY_OVERLAY_LABEL        = Gtk::Label.cast(B_TL["verifyOverlayLabel"])
-  TOOL_VERIFY_FEEDBACK             = Gtk::Image.cast(B_TL["verifyFeedback"])
-  TOOL_COMPARE_BUTTON              = Gtk::Button.cast(B_TL["compareBtn"])
-  TOOL_COMPARE_BUTTON_IMAGE        = Gtk::Image.cast(B_TL["compareBtnImage"])
-  TOOL_COMPARE_BUTTON_LABEL        = Gtk::Label.cast(B_TL["compareBtnLabel"])
-  TOOL_COMPARE_BUTTON_FEEDBACK     = Gtk::Box.cast(B_TL["compareBtnFeedback"])
-  TOOL_COMPARE_FILE_CHOOSER_NATIVE = Gtk::FileChooserNative.cast(B_TL["compareFileChooserNative"])
-
-  COPY_BUTTONS   = gen_hash(true)
-  CLIPBOARD_HASH = Hash(String, String).new
-  ACTION_ROWS    = gen_hash(false)
-
-  FILE_INFO = Adw::StatusPage.cast(B_FI["fileInfo"])
-  HASH_LIST = Gtk::ListBox.cast(B_HS["hashList"])
-
-  APP = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
+# Wrapper around activate_with_file
+# but without a file
+def activate(app : Adw::Application)
+  activate_with_file(app)
 end
+
+# Handles the open signal.
+# If there are no files passed, it calls activate,
+# else it calls activate_with_file for each file
+def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
+  if files.size == 0
+    activate(app)
+  else
+    files.each do |file|
+      next unless !(file_path = file.path).nil? && Collision::FileUtils.file?(file_path)
+      activate_with_file(app, file)
+    end
+  end
+
+  nil
+end
+
+app = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
+
+app.activate_signal.connect(->activate(Adw::Application))
+app.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), String))
+
+# ARGV but without flags, passed to Application.
+clean_argv = [PROGRAM_NAME].concat(ARGV.reject { |x| x.starts_with?('-') })
+exit(app.run(clean_argv))

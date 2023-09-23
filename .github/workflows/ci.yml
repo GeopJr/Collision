@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/geopjr/crystal-gtk:latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Shards install & Generate bindings
         run: make bindings
       - name: Spec

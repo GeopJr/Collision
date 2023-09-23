@@ -83,7 +83,7 @@ msgid "Select Another File to Check Against"
 msgstr "选择另一个文件来对照检查"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
-msgid "Choose File..."
+msgid "Choose File…"
 msgstr "选择文件…"
 
 #: data/ui/header_right.ui:7
@@ -103,7 +103,7 @@ msgid "_Open"
 msgstr "打开(_O)"
 
 #: data/ui/header_left.ui:9
-msgid "Open..."
+msgid "Open…"
 msgstr "打开…"
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
