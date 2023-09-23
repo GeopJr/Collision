@@ -17,34 +17,30 @@
     </a>
 </p>
 
-#
+# Building
 
-## Building
-
-### Dependencies
+## Dependencies
 
 - `Crystal` - `~1.9.2`
 - `GTK`
 - `libadwaita`
 - `gettext`
 
-#### Makefile
+### Makefile
 
 1. `$ make`
 2. `# make install` # To install it
 
-#
-
-## Nautilus Extension
+# Nautilus Extension
 
 Collision offers a nautilus / GNOME Files extension that adds a "Check Hashes" context menu item.
 
-### Dependencies
+## Dependencies
 
 - `nautilus`
 - [`nautilus-python`](https://repology.org/project/nautilus-python/versions)
 
-### Makefile
+## Makefile
 
 `$ make install_nautilus_extension`
 
