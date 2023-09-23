@@ -15,3 +15,4 @@ po/mo/
 *.mo
 data/*.desktop
 data/*.metainfo.xml
+build/

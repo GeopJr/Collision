@@ -86,7 +86,7 @@ msgid "Select Another File to Check Against"
 msgstr "Odaberi jednu drugu datoteku za usporedbu"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
-msgid "Choose File..."
+msgid "Choose File…"
 msgstr "Odaberi datoteku …"
 
 #: data/ui/header_right.ui:7
@@ -106,7 +106,7 @@ msgid "_Open"
 msgstr "_Otvori"
 
 #: data/ui/header_left.ui:9
-msgid "Open..."
+msgid "Open…"
 msgstr "Otvori …"
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54

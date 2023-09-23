@@ -2,29 +2,25 @@
 
 module Collision
   class DragNDrop
-    alias DropClasses = Collision | Collision::Welcomer | Collision::Compare
-
-    getter parent : DropClasses
+    @on_dropped : Proc(Gio::File, Nil)
     getter controller : Gtk::DropTarget = Gtk::DropTarget.new(Gdk::FileList.g_type, Gdk::DragAction::Copy)
 
-    def initialize(parent : DropClasses)
-      @parent = parent
-
+    def initialize(@on_dropped)
       connect_dnd_signals
     end
 
     private def dnd_enter(x, y)
-      LOGGER.debug { "DnD Entered #{@parent}" }
+      LOGGER.debug { "DnD Entered" }
 
       Gdk::DragAction::Copy
     end
 
     private def dnd_leave
-      LOGGER.debug { "DnD Left #{@parent}" }
+      LOGGER.debug { "DnD Left" }
     end
 
     private def dnd_drop(value, x, y)
-      LOGGER.debug { "DnD Dropped #{@parent}" }
+      LOGGER.debug { "DnD Dropped" }
 
       begin
         object_ptr = LibGObject.g_value_get_boxed(value.to_unsafe)
@@ -36,7 +32,7 @@ module Collision
         end
         raise "No files starting with 'file://' given" if file.nil?
 
-        @parent.file = file
+        @on_dropped.call(file)
 
         true
       rescue ex

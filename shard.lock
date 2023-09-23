@@ -6,7 +6,7 @@ shards:
 
   gi-crystal:
     git: https://github.com/hugopl/gi-crystal.git
-    version: 0.15.2
+    version: 0.18.0
 
   gio:
     git: https://github.com/hugopl/gio.cr.git
@@ -14,15 +14,15 @@ shards:
 
   gtk4:
     git: https://github.com/hugopl/gtk4.cr.git
-    version: 0.13.0
+    version: 0.15.0
 
   harfbuzz:
     git: https://github.com/hugopl/harfbuzz.cr.git
-    version: 0.1.0
+    version: 0.2.0
 
   libadwaita:
     git: https://github.com/geopjr/libadwaita.cr.git
-    version: 1.0.0+git.commit.203737fc96bb48e1a710cb68e896d2c5b9c1a6e5
+    version: 1.0.0+git.commit.cffabb56e911d2a90c53c2fd14d6bd08bf5ac446
 
   non-blocking-spawn:
     git: https://github.com/geopjr/non-blocking-spawn.git
@@ -31,8 +31,4 @@ shards:
   pango:
     git: https://github.com/hugopl/pango.cr.git
     version: 0.2.0
-
-  version_from_shard:
-    git: https://github.com/hugopl/version_from_shard.git
-    version: 1.2.5
 

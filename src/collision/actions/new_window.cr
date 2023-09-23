@@ -1,12 +1,12 @@
-class Collision::Action::Quit < Collision::Action
+class Collision::Action::NewWindow < Collision::Action
   @app : Adw::Application
 
   def initialize(app : Adw::Application)
     @app = app
-    super(app, "quit", {"<Ctrl>Q"})
+    super(app, "new-window", {"<Ctrl>N"})
   end
 
   def on_activate
-    @app.quit
+    @app.activate
   end
 end

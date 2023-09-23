@@ -1,9 +1,4 @@
 data/dev.geopjr.Collision.desktop.in
 data/dev.geopjr.Collision.metainfo.xml.in
-data/ui/welcomer.ui
-data/ui/tools.ui
-data/ui/header_right.ui
-data/ui/header_left.ui
-data/ui/hash_list.ui
+data/ui/application.ui
 data/ui/shortcuts_window.ui
-data/ui/switcher.ui

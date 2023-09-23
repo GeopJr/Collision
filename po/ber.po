@@ -78,8 +78,8 @@ msgid "Select Another File to Check Against"
 msgstr "dmed a fichier niden iwaken anwali ma kifkif-iten"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
-msgid "Choose File..."
-msgstr "xttired yiwen fichier..."
+msgid "Choose File…"
+msgstr "xttired yiwen fichier…"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -98,7 +98,7 @@ msgid "_Open"
 msgstr ""
 
 #: data/ui/header_left.ui:9
-msgid "Open..."
+msgid "Open…"
 msgstr ""
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54

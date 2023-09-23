@@ -10,7 +10,7 @@
   <url type="bugtracker">https://github.com/GeopJr/Collision/issues</url>
   <url type="translate">https://hosted.weblate.org/engage/collision/</url>
   <url type="donation">https://geopjr.dev/donate</url>
-  <description>
+  <description translatable="no">
     <p>
       Verifying that a file you downloaded or received is actually the one you were
       expecting is often overlooked or too time-consuming to do. At the same time, it
@@ -25,21 +25,31 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://i.imgur.com/TMwCOWY.png</image>
+      <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-1.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/pmIdbwf.png</image>
+      <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-2.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/n9HNuEp.png</image>
+      <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-3.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.imgur.com/21com71.png</image>
+      <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-4.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.6.0" date="2023-09-23">
+      <description translatable="no">
+        <ul>
+          <li>Visual refinements to match the state of the art of GNOME apps</li>
+          <li>Improved keyboard navigation</li>
+          <li>Fixed a memory issue with IO in multithreaded mode</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.5.0" date="2023-04-17">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added drag and drop support for files</li>
           <li>Improved keyboard navigation</li>
@@ -49,7 +59,7 @@
       </description>
     </release>
     <release version="3.4.0" date="2023-01-06">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added keyboard shortcuts</li>
           <li>Added ability to search for hashes in file content</li>
@@ -60,7 +70,7 @@
       </description>
     </release>
     <release version="3.3.1" date="2022-11-24">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added aarch64 support</li>
           <li>Added nautilus / GNOME Files extension by DodoLeDev</li>
@@ -70,7 +80,7 @@
       </description>
     </release>
     <release version="3.3.0" date="2022-11-15">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added open signal handling (you can now open files with Collision)</li>
           <li>Minor bug fixes</li>
@@ -81,7 +91,7 @@
       </description>
     </release>
     <release version="3.2.0" date="2022-10-16">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Switched to AdwAboutWindow</li>
           <li>Minor bug fixes</li>
@@ -91,7 +101,7 @@
       </description>
     </release>
     <release version="3.1.0" date="2022-09-15">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added gschema support so Collision remembers window size and maximized state</li>
           <li>Updated dependencies</li>
@@ -101,7 +111,7 @@
       </description>
     </release>
     <release version="3.0.5" date="2022-08-11">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Optimized performance and memory usage of CSS class toggling</li>
           <li>Minor bug fixes</li>
@@ -112,7 +122,7 @@
       </description>
     </release>
     <release version="3.0.4" date="2022-07-04">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Updated dependencies</li>
           <li>Added Estonian, Czech and Berber translations</li>
@@ -121,7 +131,7 @@
       </description>
     </release>
     <release version="3.0.3" date="2022-05-21">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Handle feedback on buttons when spammed</li>
           <li>Hash comparison is now case-insensitive</li>
@@ -132,7 +142,7 @@
       </description>
     </release>
     <release version="3.0.2" date="2022-04-22">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Feedback on copy</li>
           <li>Updated translations</li>
@@ -140,7 +150,7 @@
       </description>
     </release>
     <release version="3.0.1" date="2022-03-27">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Bug fixes</li>
           <li>Hide filepath on flatpak</li>

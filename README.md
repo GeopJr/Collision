@@ -5,8 +5,8 @@
 <h4 align="center">Check hashes for your files</h4>
 <p align="center">
   <br />
-    <a href="https://github.com/GeopJr/Collision/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.1-3584e4.svg?style=for-the-badge&labelColor=f6d32e" alt="COC" /></a>
-    <a href="https://github.com/GeopJr/Collision/blob/main/LICENSE"><img src="https://img.shields.io/badge/LICENSE-BSD--2--Clause-000000.svg?style=for-the-badge&labelColor=f6d32e" alt="BSD-2-Clause" /></a>
+    <a href="https://github.com/GeopJr/Collision/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Code%20of%20Conduct-GNOME-26a269.svg?style=for-the-badge&labelColor=f6d32e" alt="Code of Conduct - GNOME" /></a>
+    <a href="https://github.com/GeopJr/Collision/blob/main/LICENSE"><img src="https://img.shields.io/badge/LICENSE-BSD--2--Clause-26a269.svg?style=for-the-badge&labelColor=f6d32e" alt="BSD-2-Clause" /></a>
     <a href="https://github.com/GeopJr/Collision/actions"><img src="https://img.shields.io/github/actions/workflow/status/geopjr/Collision/ci.yml?branch=main&labelColor=f6d32e&style=for-the-badge" alt="ci action status" /></a>
 </p>
 
@@ -14,12 +14,6 @@
     <img alt="screenshot" width="640" src="https://i.imgur.com/n7gE5OJ.png"><br />
     <a href='https://flathub.org/apps/details/dev.geopjr.Collision'>
       <img width='192' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
-    </a><br />
-    <a href='https://aur.archlinux.org/packages/collision'>
-      <img width='192' alt='Available on AUR' src='https://img.shields.io/badge/Available_on_aur-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white'/>
-    </a><br />
-    <a href='https://search.nixos.org/packages?channel=unstable&show=collision&from=0&size=50&sort=relevance&type=packages&query=collision'>
-      <img width='192' alt='Available in Nixpkgs' src='https://img.shields.io/badge/Available_in_Nixpkgs-white?style=for-the-badge&logo=nixos&logoColor=5277C3'/>
     </a>
 </p>
 
@@ -29,7 +23,7 @@
 
 ### Dependencies
 
-- `Crystal` - `~1.7.1`
+- `Crystal` - `~1.9.2`
 - `GTK`
 - `libadwaita`
 - `gettext`
@@ -54,18 +48,15 @@ Collision offers a nautilus / GNOME Files extension that adds a "Check Hashes" c
 
 `$ make install_nautilus_extension`
 
-#
+# Sponsors
 
-## Contributing
+<div align="center">
 
-1. Read the [Code of Conduct](https://github.com/GeopJr/Collision/blob/main/CODE_OF_CONDUCT.md)
-2. Fork it ( https://github.com/GeopJr/Collision/fork )
-3. Create your feature branch (git checkout -b my-new-feature)
-4. Commit your changes (git commit -am 'Add some feature')
-5. Push to the branch (git push origin my-new-feature)
-6. Create a new Pull Request
+[![GeopJr Sponsors](https://cdn.jsdelivr.net/gh/GeopJr/GeopJr@main/sponsors.svg)](https://github.com/sponsors/GeopJr)
 
-#
+</div>
+
+<hr />
 
 <p align="center">
   <a href='https://circle.gnome.org/'>
@@ -80,22 +71,11 @@ Collision offers a nautilus / GNOME Files extension that adds a "Check Hashes" c
   </a>
 </p>
 
-#
+# Contributing
 
-## Sponsors
-
-<div align="center">
-
-[![GeopJr Sponsors](https://cdn.jsdelivr.net/gh/GeopJr/GeopJr@main/sponsors.svg)](https://github.com/sponsors/GeopJr)
-
-</div>
-
-#
-
-## Contributors
-
-<a href="https://github.com/GeopJr/Collision/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GeopJr/Collision" />
-</a>
-
-Made with [contributors-img](https://contrib.rocks).
+1. Read the [Code of Conduct](https://github.com/GeopJr/Collision/blob/main/CODE_OF_CONDUCT.md)
+2. Fork it ( https://github.com/GeopJr/Collision/fork )
+3. Create your feature branch (git checkout -b my-new-feature)
+4. Commit your changes (git commit -am 'Add some feature')
+5. Push to the branch (git push origin my-new-feature)
+6. Create a new Pull Request

@@ -89,8 +89,8 @@ msgid "Select Another File to Check Against"
 msgstr "Wybierz drugi plik do porównania"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
-msgid "Choose File..."
-msgstr "Wybierz plik..."
+msgid "Choose File…"
+msgstr "Wybierz plik…"
 
 #: data/ui/header_right.ui:7
 msgid "_Compare Hash Functions"
@@ -109,8 +109,8 @@ msgid "_Open"
 msgstr "_Otwórz"
 
 #: data/ui/header_left.ui:9
-msgid "Open..."
-msgstr "Otwórz..."
+msgid "Open…"
+msgstr "Otwórz…"
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74

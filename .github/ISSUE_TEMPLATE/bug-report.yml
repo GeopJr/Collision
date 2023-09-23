@@ -1,0 +1,63 @@
+name: Bug Report
+description: Report a problem you encountered while using the app
+title: "[Bug]: "
+labels: bug
+body:
+- type: textarea
+  attributes:
+    label: Describe the bug
+    description: A clear and concise description of what the bug is.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: Steps to reproduce the behavior.
+    placeholder: |
+      1. Go to '...'
+      2. Click on '...'
+      3. Scroll down to '...'
+      4. See error
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Logs and/or Screenshots
+    description: Terminal logs are often invaluable. If you can, launch the app from terminal and paste the output here. Run `flatpak run dev.geopjr.Collision --debug` for a verbose output. Please remove any filenames before creating this issue for privacy reasons (if you copy the logs from About > Troubleshooting > Debugging Information, they will be redacted).
+    value: |
+      ```
+      <paste your logs here>
+      ```
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Operating System
+    description: Please include its version if available.
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Package
+    description: How did you install the app?
+    multiple: false
+    options:
+      - Flatpak
+      - Snap
+      - OS repositories
+      - Compiled manually
+      - I'm not sure
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Troubleshooting information
+    description: You can find this info under About > Troubleshooting > Debugging Information.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional Context
+    description: Add any other relevant information about the problem here.
+  validations:
+    required: false

@@ -87,7 +87,7 @@ msgid "Select Another File to Check Against"
 msgstr "گزینش یک پروندهٔ دیگر برای بررسی متقابل"
 
 #: data/ui/tools.ui:101 src/modules/functions/feedback.cr:12
-msgid "Choose File..."
+msgid "Choose File…"
 msgstr "انتخاب پرونده…"
 
 #: data/ui/header_right.ui:7
@@ -107,8 +107,8 @@ msgid "_Open"
 msgstr "_گشودن"
 
 #: data/ui/header_left.ui:9
-msgid "Open..."
-msgstr "گشودن..."
+msgid "Open…"
+msgstr "گشودن…"
 
 #: data/ui/hash_list.ui:14 data/ui/hash_list.ui:34 data/ui/hash_list.ui:54
 #: data/ui/hash_list.ui:74
