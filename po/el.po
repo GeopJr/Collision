@@ -1,14 +1,13 @@
 # Greek translation for dev.geopjr.Collision.
 # Copyright (C) 2021 THE dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# Evangelos Paterakis <evan@geopjr.dev>, 2021.
-#
+# Evangelos Paterakis <evan@geopjr.dev>, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2022-02-18 00:32+0000\n"
+"PO-Revision-Date: 2023-09-23 20:23+0000\n"
 "Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/collision/"
 "collision/el/>\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
@@ -35,8 +34,9 @@ msgid "Check hashes for your files"
 msgstr "Ελέγξτε hashes για τα αρχεία σας"
 
 #: data/dev.geopjr.Collision.desktop.in:12
+#, fuzzy
 msgid "md5;sha1;sha256;sha512;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -65,7 +65,7 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Νέο Παράθυρο"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -150,11 +150,11 @@ msgstr "Εμφάνιση Συντομεύσεων Πληκτρολογίου"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Νέο Παράθυρο"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Κλείστε το Παράθυρο"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
