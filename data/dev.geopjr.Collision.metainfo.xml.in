@@ -42,8 +42,8 @@
       <description translatable="no">
         <ul>
           <li>Visual refinements to match the state of the art of GNOME apps</li>
-          <li>Improved keyboard navigation</li>
-          <li>Fixed a memory issue with IO in multithreaded mode</li>
+          <li>Major codebase rewrite</li>
+          <li>Added support for multiple open windows</li>
           <li>Updated translations</li>
         </ul>
       </description>
