@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-    <img alt="screenshot" width="640" src="https://i.imgur.com/n7gE5OJ.png"><br />
+    <img alt="screenshot" width="640" src="https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-1.png"><br />
     <a href='https://flathub.org/apps/details/dev.geopjr.Collision'>
       <img width='192' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
     </a>
