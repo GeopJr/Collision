@@ -6,7 +6,7 @@ LOCALE_LOCATION ?= /share/locale
 all: desktop bindings build
 
 bindings: 
-	./bin/gi-crystal
+	./bin/gi-crystal || $(CRYSTAL_LOCATION)shards install && ./bin/gi-crystal
 
 build:
 	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards build -Dpreview_mt --release --no-debug
