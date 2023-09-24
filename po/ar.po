@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2023-05-11 16:50+0000\n"
+"PO-Revision-Date: 2023-09-27 12:01+0000\n"
 "Last-Translator: Ali Aljishi <ahj696@hotmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/collision/"
 "collision/ar/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
@@ -38,7 +38,7 @@ msgstr "تحقَّق من هاش ملفَّاتك"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;هاش;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "نافذة _جديدة"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -149,11 +149,11 @@ msgstr "أظهر اختصارات لوح المفاتيح"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "نافذة جديدة"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "أغلق النافذة"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
