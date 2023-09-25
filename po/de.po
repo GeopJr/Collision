@@ -6,13 +6,14 @@
 # Milo Ivir <mail@milotype.de>, 2021.
 # sal0max <msal.coding@gmail.com>, 2022.
 # gregorni <gregorniehl@web.de>, 2023.
+# Vri 🌈 <weblate@vrifox.cc>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2023-01-2 12:14+0100\n"
-"Last-Translator: gregorni <gregorniehl@web.de>\n"
+"PO-Revision-Date: 2023-09-27 12:01+0000\n"
+"Last-Translator: Vri 🌈 <weblate@vrifox.cc>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/collision/"
 "collision/de/>\n"
 "Language: de\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
@@ -39,7 +40,7 @@ msgstr "Prüfen Sie die Hashes Ihrer Dateien"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -50,9 +51,9 @@ msgid ""
 "actors."
 msgstr ""
 "Die Überprüfung, ob eine heruntergeladene oder empfangene Datei tatsächlich "
-"die erwartete Datei ist, wird oft übersehen oder ist zu zeitaufwändig. "
+"die erwartete Datei ist, wird oft übersehen oder ist zu zeitaufwendig. "
 "Gleichzeitig ist es aufgrund der massiven Zunahme bösartiger Webseiten und "
-"anderer Akteure sehr einfach geworden, an Dateien zu gelangen die "
+"anderer Akteure sehr einfach geworden, an Dateien zu gelangen, die "
 "manipuliert wurden."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
@@ -68,11 +69,11 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Neues Fenster"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "_Hash-Funktionen Vergleichen"
+msgstr "_Hash-Funktionen vergleichen"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
@@ -80,7 +81,7 @@ msgstr "_Tastenkürzel"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_Info zu Collision"
+msgstr "_Über Collision"
 
 #: data/ui/application.ui:23 data/ui/application.ui:27
 msgid "Choose a File"
@@ -92,7 +93,7 @@ msgstr "_Öffnen"
 
 #: data/ui/application.ui:60
 msgid "Open…"
-msgstr "Öffnen…"
+msgstr "Öffnen …"
 
 #: data/ui/application.ui:97
 msgid "Menu"
@@ -137,7 +138,7 @@ msgstr "Wählen Sie eine Datei zum Prüfen aus"
 
 #: data/ui/application.ui:411
 msgid "Choose File…"
-msgstr "Datei auswählen…"
+msgstr "Datei auswählen …"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
@@ -153,11 +154,11 @@ msgstr "Tastenkürzel anzeigen"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Neues Fenster"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Fenster schließen"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
