@@ -10,7 +10,7 @@
   <url type="bugtracker">https://github.com/GeopJr/Collision/issues</url>
   <url type="translate">https://hosted.weblate.org/engage/collision/</url>
   <url type="donation">https://geopjr.dev/donate</url>
-  <description translatable="no">
+  <description>
     <p>
       Verifying that a file you downloaded or received is actually the one you were
       expecting is often overlooked or too time-consuming to do. At the same time, it
