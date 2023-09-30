@@ -119,11 +119,11 @@ msgstr "Sağlama Toplamı"
 
 #: data/ui/application.ui:303
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "MD5, SHA-1, SHA-256 veya SHA-512 Değeri"
+msgstr "MD5, SHA-1, SHA-256 veya SHA-512 Özeti"
 
 #: data/ui/application.ui:332
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Bir MD5/SHA-1/SHA-256/SHA-512 Değeri Girin"
+msgstr "Bir MD5/SHA-1/SHA-256/SHA-512 Özeti Girin"
 
 #: data/ui/application.ui:354
 msgid "File"
