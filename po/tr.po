@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2023-09-27 12:01+0000\n"
+"PO-Revision-Date: 2023-09-30 14:51+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
@@ -30,16 +30,16 @@ msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Hash Oluşturucu"
+msgstr "Özet Oluşturucu"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:114
 msgid "Check hashes for your files"
-msgstr "Dosyalarınızın hash değerlerini denetleyin"
+msgstr "Dosyalarınızın özet değerlerini denetleyin"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;hash;"
-msgstr "md5;sha1;sha256;sha512;hash;"
+msgstr "md5;sha1;sha256;sha512;hash;özet;sağlama;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -70,7 +70,7 @@ msgstr "_Yeni Pencere"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "Hash Fonksiyonlarını _Karşılaştır"
+msgstr "Özet Fonksiyonlarını _Karşılaştır"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
@@ -159,11 +159,11 @@ msgstr "Pencereyi Kapat"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr "Çıkış"
+msgstr "Çık"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Hash'leri Denetle"
+msgstr "Özetleri Denetle"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:64
