@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2023-09-20 07:54+0000\n"
+"PO-Revision-Date: 2023-10-04 18:11+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/collision/"
 "collision/fi/>\n"
@@ -35,7 +35,7 @@ msgstr "Tarkista tiedostojesi tiivisteet"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;hash;tiiviste;tarkistussumma;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Uusi ikkuna"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -149,11 +149,11 @@ msgstr "Näytä pikanäppäimet"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Uusi ikkuna"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Sulje ikkuna"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
