@@ -2,39 +2,41 @@
 # Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # MartionIIOT <42734508+MartinIIOT@users.noreply.github.com>, 2021.
-#
-#, fuzzy
+# Milan Šalka <salka.milan@googlemail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2022-02-14 23:08+0200\n"
-"Last-Translator: MartionIIOT <42734508+MartinIIOT@users.noreply.github.com>\n"
-"Language-Team: Slovakia\n"
+"PO-Revision-Date: 2023-10-07 07:12+0000\n"
+"Last-Translator: Milan Šalka <salka.milan@googlemail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/collision/"
+"collision/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
 #: data/ui/application.ui:76 data/ui/application.ui:113
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "Hash generátor"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:114
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "Skontrolujte hashes pre vaše súbory"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -44,6 +46,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Overenie, že súbor, ktorý ste si stiahli alebo dostal, je vlastne ten, ktorý "
+"ste očakávali, je často prehliadaný alebo príliš časovo náročné. Zároveň sa "
+"stalo veľmi ľahké získať ruky na súbore, ktorý bol stvorený, kvôli "
+"hromadnému zvýšeniu škodlivých webových stránok a iných hercov."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:20
 msgid ""
@@ -51,18 +57,21 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
+"Tento nástroj má za cieľ vyriešiť. Collision prichádza s jednoduchým & čistý "
+"UI, čo umožňuje každému, z akéhokoľvek veku a skúseností skupiny, vytvárať, "
+"porovnať a overiť MD5, SHA-256, SHA-512 a SHA-1 hashes."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Nové okno"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_Compare Hash funkcie"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Klávesové skratky"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
@@ -74,11 +83,11 @@ msgstr "Vyberte Súbor"
 
 #: data/ui/application.ui:59
 msgid "_Open"
-msgstr ""
+msgstr "Otvoriť"
 
 #: data/ui/application.ui:60
 msgid "Open…"
-msgstr ""
+msgstr "Otvoriť…"
 
 #: data/ui/application.ui:97
 msgid "Menu"
@@ -86,11 +95,11 @@ msgstr "Menu"
 
 #: data/ui/application.ui:118
 msgid "_Open a File"
-msgstr ""
+msgstr "_Otvorte súbor"
 
 #: data/ui/application.ui:165
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
 
 #: data/ui/application.ui:178 data/ui/application.ui:198
 #: data/ui/application.ui:218 data/ui/application.ui:238
@@ -103,11 +112,11 @@ msgstr "Overiť"
 
 #: data/ui/application.ui:274
 msgid "Checksum"
-msgstr ""
+msgstr "Kontrolný súčet"
 
 #: data/ui/application.ui:303
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr ""
+msgstr "MD5,SHA-1, SHA-256 alebo SHA-512 Hash"
 
 #: data/ui/application.ui:332
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
@@ -115,43 +124,43 @@ msgstr "Vložte hash MD5/SHA-1/SHA-256/SHA-512"
 
 #: data/ui/application.ui:354
 msgid "File"
-msgstr ""
+msgstr "Súbor"
 
 #: data/ui/application.ui:369
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "Vyberte ďalší súbor pre kontrolu proti"
 
 #: data/ui/application.ui:411
 msgid "Choose File…"
-msgstr ""
+msgstr "Vyberte súbor…"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr ""
+msgstr "Otvorte súbor"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Zobraziť klávesnica skratky"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Nové okno"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Zatvoriť okno"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "Ukončenie"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Skontrolujte Hashes"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:64
