@@ -1,12 +1,16 @@
 version: 2.0
 shards:
+  blake3:
+    git: https://github.com/didactic-drunk/blake3.cr.git
+    version: 1.1.0
+
   gettext:
     git: https://github.com/geopjr/gettext.cr.git
     version: 1.0.0
 
   gi-crystal:
     git: https://github.com/hugopl/gi-crystal.git
-    version: 0.18.0
+    version: 0.19.0
 
   gio:
     git: https://github.com/hugopl/gio.cr.git
@@ -30,5 +34,5 @@ shards:
 
   pango:
     git: https://github.com/hugopl/pango.cr.git
-    version: 0.2.0
+    version: 0.3.0
 

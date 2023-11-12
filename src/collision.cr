@@ -58,8 +58,16 @@ module Collision
     LOGGER.debug { ex }
   end
 
-  HASH_FUNCTIONS = {"MD5", "SHA1", "SHA256", "SHA512"}
-  VERSION        = {{read_file("#{__DIR__}/../shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
+  HASH_FUNCTIONS = {
+    md5:     "MD5",
+    sha1:    "SHA1",
+    sha256:  "SHA256",
+    sha512:  "SHA512",
+    blake3:  "Blake3",
+    crc32:   "CRC32",
+    adler32: "Adler32",
+  }
+  VERSION = {{read_file("#{__DIR__}/../shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
 
   ARTICLE = Gettext.gettext("https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions")
 
@@ -70,7 +78,7 @@ require "./collision/*"
 
 # Creates and setups a window. If a file is passed it will attempt to open it.
 def activate_with_file(app : Adw::Application, file : Gio::File? = nil)
-  window = CollisionWindow.new
+  window = Collision::Window.new
   window.application = app
 
   # Save settings on close

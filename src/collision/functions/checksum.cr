@@ -1,10 +1,16 @@
-require "openssl"
 require "non-blocking-spawn"
+require "digest/md5"
+require "digest/sha1"
+require "digest/sha256"
+require "digest/sha512"
+require "digest/crc32"
+require "digest/adler32"
+require "blake3"
 
 macro gen_digest
   {
-    {% for hash in Collision::HASH_FUNCTIONS %}
-      {{hash.downcase}} => OpenSSL::Digest.new({{hash.upcase}}),
+    {% for title, digest in Collision::HASH_FUNCTIONS %}
+      :{{title}} => Digest::{{digest.id}}.new,
     {% end %}
   }
 end
@@ -13,7 +19,7 @@ module Collision::Checksum
   extend self
 
   @@digest = gen_digest
-  @@channel = Channel(Tuple(String, String)).new
+  @@channel = Channel(Tuple(Symbol, String)).new
 
   def split_by_4(hash_str : String)
     i = 0
@@ -29,8 +35,8 @@ module Collision::Checksum
     end
   end
 
-  def calculate(type : String, filename : String) : String
-    hash = @@digest[type.downcase]
+  def calculate(type : Symbol, filename : String) : String
+    hash = @@digest[type]
     hash.reset
     hash.file(filename).final.hexstring.downcase
   end
@@ -39,28 +45,28 @@ module Collision::Checksum
     Non::Blocking.spawn(same_thread: false, &block)
   end
 
-  def on_finished(res : Hash(String, String), &block)
+  def on_finished(res : Hash(Symbol, String), &block)
     yield res
   end
 
-  def generate(filename : String, &block : Hash(String, String) ->)
+  def generate(filename : String, &block : Hash(Symbol, String) ->)
     hash_amount = Collision::HASH_FUNCTIONS.size
-    Collision::HASH_FUNCTIONS.each_with_index do |hash_type, i|
+    Collision::HASH_FUNCTIONS.each_with_index do |hash_key, hash_value, i|
       proc = ->(fiber_no : Int32) do
         Collision::Checksum.spawn do
-          LOGGER.debug { "Spawned fiber #{hash_type}" }
+          LOGGER.debug { "Spawned fiber #{hash_value}" }
 
-          hash_value = calculate(hash_type, filename)
+          hash_value = calculate(hash_key, filename)
           LOGGER.debug { "Finished fiber #{fiber_no + 1}/#{hash_amount}" }
 
-          @@channel.send({hash_type, hash_value})
+          @@channel.send({hash_key, hash_value})
         end
       end
       proc.call(i)
     end
 
     Collision::Checksum.spawn do
-      res = Hash(String, String).new
+      res = Hash(Symbol, String).new
       hash_amount.times do |i|
         t_res = @@channel.receive
         res[t_res[0]] = t_res[1]
