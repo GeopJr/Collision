@@ -18,7 +18,9 @@ describe Collision::Checksum do
       break if Collision::CLIPBOARD_HASH.size == hashes.size || Time.utc.to_unix_ms - safe_stop > 3000
     end
 
-    hashes.should eq(Collision::CLIPBOARD_HASH.to_h)
+    Collision::CLIPBOARD_HASH.each do |k, v|
+      {k, hashes[k]}.should eq({k, v})
+    end
   end
 
   it "splits strings by 4" do
