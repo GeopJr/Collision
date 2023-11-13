@@ -49,7 +49,7 @@ module Collision::Checksum
     yield res
   end
 
-  def generate(filename : String, &block : Hash(Symbol, String) ->)
+  def generate(filename : String, progressbar : Gtk::ProgressBar? = nil, &block : Hash(Symbol, String) ->)
     hash_amount = Collision::HASH_FUNCTIONS.size
     Collision::HASH_FUNCTIONS.each_with_index do |hash_key, hash_value, i|
       proc = ->(fiber_no : Int32) do
@@ -67,9 +67,15 @@ module Collision::Checksum
 
     Collision::Checksum.spawn do
       res = Hash(Symbol, String).new
+      step = 1/hash_amount
       hash_amount.times do |i|
         t_res = @@channel.receive
         res[t_res[0]] = t_res[1]
+
+        unless progressbar.nil?
+          progressbar.fraction = Math.min(progressbar.fraction + step, 1.0)
+          progressbar.text = sprintf(Gettext.gettext("%d of %d hashes calculated"), {i + 1, hash_amount})
+        end
       end
 
       on_finished(res, &block)

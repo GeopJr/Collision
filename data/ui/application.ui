@@ -134,14 +134,23 @@
 							<object class="GtkStackPage">
 								<property name="name">spinner</property>
 								<property name="child">
-									<object class="GtkSpinner">
-										<property name="valign">center</property>
-										<property name="halign">center</property>
-										<property name="hexpand">1</property>
-										<property name="vexpand">1</property>
-										<property name="spinning">1</property>
-										<property name="width-request">32</property>
-										<property name="height-request">32</property>
+									<object class="AdwStatusPage">
+										<property name="title" translatable="yes">Calculating Hashes</property>
+										<property name="description" translatable="yes">This might take a while</property>
+										<child>
+											<object class="AdwClamp">
+												<property name="tightening-threshold">100</property>
+												<property name="maximum-size">400</property>
+												<child>
+													<object class="GtkProgressBar" id="progressbar">
+														<property name="show-text">1</property>
+														<property name="valign">center</property>
+														<property name="hexpand">1</property>
+														<property name="vexpand">1</property>
+													</object>
+												</child>
+											</object>
+										</child>
 									</object>
 								</property>
 							</object>

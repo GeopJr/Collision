@@ -21,6 +21,7 @@ module Collision
       "compareBtnStack",
       "switcher_bar",
       "hash_row_container",
+      "progressbar",
     }
   )]
   class Window < Adw::ApplicationWindow
@@ -39,6 +40,7 @@ module Collision
     @mainStack : Gtk::Stack
     @fileInfo : Adw::StatusPage
     @switcher_bar : Adw::ViewSwitcherBar
+    @progressbar : Gtk::ProgressBar
 
     @verifyOverlayLabel : Gtk::Label
     @verifyTextView : Gtk::TextView
@@ -53,7 +55,7 @@ module Collision
       @fileInfo.description = Collision::FileUtils.real_path(filepath)
 
       Collision::LOGGER.debug { "Begin generating hashes" }
-      Collision::Checksum.generate(filepath.to_s) do |res|
+      Collision::Checksum.generate(filepath.to_s, @progressbar) do |res|
         sleep 500.milliseconds
         GLib.idle_add do
           res.each do |hash_type, hash_value|
@@ -89,6 +91,7 @@ module Collision
     end
 
     def loading
+      @progressbar.fraction = 0.0
       @mainStack.visible_child_name = "spinner"
       @headerbarStack.visible_child_name = "empty"
       @openFileBtn.visible = false
@@ -208,6 +211,7 @@ module Collision
       @compareBtnImage = Gtk::Image.cast(template_child("compareBtnImage"))
       @compareBtnLabel = Gtk::Label.cast(template_child("compareBtnLabel"))
       @compareBtnStack = Gtk::Stack.cast(template_child("compareBtnStack"))
+      @progressbar = Gtk::ProgressBar.cast(template_child("progressbar"))
 
       @mainFileChooserNative = Gtk::FileChooserNative.cast(template_child("mainFileChooserNative"))
       @compareBtnFileChooserNative = Gtk::FileChooserNative.cast(template_child("compareBtnFileChooserNative"))
