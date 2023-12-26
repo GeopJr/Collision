@@ -109,6 +109,7 @@ def activate_with_file(app : Adw::Application, file : Gio::File? = nil)
   unless file.nil?
     Collision::LOGGER.debug { "Activating with file" }
 
+    window.loading
     window.file = file
   end
 end
@@ -133,10 +134,10 @@ def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : Stri
 end
 
 def open_files(app : Adw::Application, files : Enumerable(Gio::File))
-    files.each do |file|
-      next unless !(file_path = file.path).nil? && Collision::FileUtils.file?(file_path)
-      activate_with_file(app, file)
-    end
+  files.each do |file|
+    next unless !(file_path = file.path).nil? && Collision::FileUtils.file?(file_path)
+    activate_with_file(app, file)
+  end
 end
 
 app = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
