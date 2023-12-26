@@ -216,6 +216,7 @@
 																				</child>
 																				<child>
 																					<object class="GtkOverlay">
+																						<property name="overflow">hidden</property>
 																						<child type="overlay">
 																							<object class="GtkImage" id="verifyFeedback">
 																								<property name="pixel-size">16</property>
@@ -230,7 +231,7 @@
 																						</child>
 																						<child type="overlay">
 																							<object class="GtkLabel" id="verifyOverlayLabel">
-																								<property name="label" translatable="yes">MD5,SHA-1,SHA-256 or SHA-512 Hash</property>
+																								<property name="label" translatable="yes">MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash</property>
 																								<property name="halign">start</property>
 																								<property name="valign">start</property>
 																								<property name="justify">fill</property>
@@ -259,7 +260,7 @@
 																										<property name="wrap-mode">char</property>
 																										<property name="accepts-tab">0</property>
 																										<property name="css-name">entry</property>
-																										<property name="tooltip-text" translatable="yes">Insert a MD5/SHA-1/SHA-256/SHA-512 Hash</property>
+																										<property name="tooltip-text" translatable="yes">Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash</property>
 																										<style>
 																											<class name="card-like" />
 																											<class name="monospace" />

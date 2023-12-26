@@ -8,6 +8,6 @@ Comment=Check hashes for your files
 Terminal=false
 Icon=dev.geopjr.Collision
 Categories=Utility;
-Keywords=md5;sha1;sha256;sha512;hash;
+Keywords=md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;
 # Translators: Do NOT translate or transliterate this text (these are enum types)!
 X-Purism-FormFactor=Workstation;Mobile;

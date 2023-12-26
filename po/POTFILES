@@ -1,4 +1,5 @@
 data/dev.geopjr.Collision.desktop.in
 data/dev.geopjr.Collision.metainfo.xml.in
 data/ui/application.ui
+data/ui/hash_row.ui
 data/ui/shortcuts_window.ui

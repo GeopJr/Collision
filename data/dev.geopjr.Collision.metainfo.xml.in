@@ -22,7 +22,7 @@
     <p>
       This tool aims to solve that. Collision comes with a simple &amp; clean UI, allowing
       anyone, from any age and experience group, to generate, compare and verify MD5,
-      SHA-256, SHA-512 and SHA-1 hashes.
+      SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes.
     </p>
   </description>
   <screenshots>
