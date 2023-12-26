@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<requires lib="gtk" version="4.0" />
+	<template class="Collision-Widgets-HashRow" parent="AdwActionRow">
+		<property name="selectable">0</property>
+		<property name="subtitle-lines">100</property>
+		<child>
+			<object class="GtkButton" id="copy_btn">
+				<property name="tooltip-text" translatable="yes">Copy</property>
+				<property name="icon-name">edit-copy-symbolic</property>
+				<property name="valign">center</property>
+				<style>
+					<class name="circular" />
+				</style>
+			</object>
+		</child>
+		<style>
+			<class name="hash-row" />
+		</style>
+	</template>
+</interface>

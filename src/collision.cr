@@ -58,8 +58,16 @@ module Collision
     LOGGER.debug { ex }
   end
 
-  HASH_FUNCTIONS = {"MD5", "SHA1", "SHA256", "SHA512"}
-  VERSION        = {{read_file("#{__DIR__}/../shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
+  HASH_FUNCTIONS = {
+    md5:     "MD5",
+    sha1:    "SHA1",
+    sha256:  "SHA256",
+    sha512:  "SHA512",
+    blake3:  "Blake3",
+    crc32:   "CRC32",
+    adler32: "Adler32",
+  }
+  VERSION = {{read_file("#{__DIR__}/../shard.yml").split("version: ")[1].split("\n")[0]}} # Shards binary might not be in PATH, reading yml is safer
 
   ARTICLE = Gettext.gettext("https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions")
 
@@ -70,7 +78,7 @@ require "./collision/*"
 
 # Creates and setups a window. If a file is passed it will attempt to open it.
 def activate_with_file(app : Adw::Application, file : Gio::File? = nil)
-  window = CollisionWindow.new
+  window = Collision::Window.new
   window.application = app
 
   # Save settings on close
@@ -101,6 +109,7 @@ def activate_with_file(app : Adw::Application, file : Gio::File? = nil)
   unless file.nil?
     Collision::LOGGER.debug { "Activating with file" }
 
+    window.loading
     window.file = file
   end
 end
@@ -115,16 +124,20 @@ end
 # If there are no files passed, it calls activate,
 # else it calls activate_with_file for each file
 def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
-  if files.size == 0
+  if files.empty?
     activate(app)
   else
-    files.each do |file|
-      next unless !(file_path = file.path).nil? && Collision::FileUtils.file?(file_path)
-      activate_with_file(app, file)
-    end
+    open_files(app, files)
   end
 
   nil
+end
+
+def open_files(app : Adw::Application, files : Enumerable(Gio::File))
+  files.each do |file|
+    next unless !(file_path = file.path).nil? && Collision::FileUtils.file?(file_path)
+    activate_with_file(app, file)
+  end
 end
 
 app = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)

@@ -8,6 +8,7 @@
     <file compressed="true" preprocess="xml-stripblanks" alias="icons/scalable/actions/octothorp-symbolic.svg">icons/octothorp-symbolic.svg</file>
     <file compressed="true" preprocess="xml-stripblanks" alias="icons/scalable/actions/paper-symbolic.svg">icons/paper-symbolic.svg</file>
     <file compressed="true" preprocess="xml-stripblanks">ui/application.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/hash_row.ui</file>
     <file compressed="true" preprocess="xml-stripblanks" alias="gtk/help-overlay.ui">ui/shortcuts_window.ui</file>
   </gresource>
 </gresources>
