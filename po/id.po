@@ -2,15 +2,15 @@
 # Copyright (C) 2021 Collision
 # This file is distributed under the same license as the PACKAGE package.
 # Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2021.
-# Reza Almanda <rezaalmanda27@gmail.com>, 2022.
+# Reza Almanda <rezaalmanda27@gmail.com>, 2022, 2023.
 # Evangelos Paterakis <evan@geopjr.dev>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2022-08-25 02:22+0000\n"
-"Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
+"PO-Revision-Date: 2023-11-16 03:03+0000\n"
+"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/collision/"
 "collision/id/>\n"
 "Language: id\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
@@ -37,7 +37,7 @@ msgstr "Periksa hash untuk berkas Anda"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -66,7 +66,7 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Jendela Baru"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -74,7 +74,7 @@ msgstr "_Bandingkan Fungsi Hash"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Pintasan Keyboard"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
@@ -139,7 +139,7 @@ msgstr "Pilih File…"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Umum"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -147,23 +147,23 @@ msgstr "Buka Berkas"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Tampilkan pintasan keyboard"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Jendela Baru"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Tutup Jendela"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "Keluar"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Cek Hashes"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:64

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2023-09-30 14:51+0000\n"
+"PO-Revision-Date: 2023-09-30 14:52+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
@@ -61,8 +61,8 @@ msgid ""
 "verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
 msgstr ""
 "Bu araç bu sorunu çözmeyi amaçlıyor. Collision; temiz ve sade arayüzü "
-"sayesinde, her kesimden kullanıcının MD5, SHA-256 SHA-512 ve SHA-1 değerleri "
-"oluşturup karşılaştırmasını ve onaylamasını sağlar."
+"sayesinde, her kesimden kullanıcının MD5, SHA-256 SHA-512 ve SHA-1 "
+"özetlerini oluşturup karşılaştırmasını ve doğrulamasını sağlar."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -102,7 +102,7 @@ msgstr "Dosya _Aç"
 
 #: data/ui/application.ui:165
 msgid "Hash"
-msgstr "Hash"
+msgstr "Özet"
 
 #: data/ui/application.ui:178 data/ui/application.ui:198
 #: data/ui/application.ui:218 data/ui/application.ui:238
@@ -119,11 +119,11 @@ msgstr "Sağlama Toplamı"
 
 #: data/ui/application.ui:303
 msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "MD5, SHA-1, SHA-256 veya SHA-512 Değeri"
+msgstr "MD5, SHA-1, SHA-256 veya SHA-512 Özeti"
 
 #: data/ui/application.ui:332
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Bir MD5/SHA-1/SHA-256/SHA-512 Değeri Girin"
+msgstr "Bir MD5/SHA-1/SHA-256/SHA-512 Özeti Girin"
 
 #: data/ui/application.ui:354
 msgid "File"

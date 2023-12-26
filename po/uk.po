@@ -4,13 +4,14 @@
 # Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022.
 # Dan <denqwerta@gmail.com>, 2023.
 # CakesTwix <cakestwix1@gmail.com>, 2023.
+# volkov <d2oo1dle2x@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2023-04-13 19:48+0000\n"
-"Last-Translator: CakesTwix <cakestwix1@gmail.com>\n"
+"PO-Revision-Date: 2023-11-07 19:34+0000\n"
+"Last-Translator: volkov <d2oo1dle2x@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/collision/"
 "collision/uk/>\n"
 "Language: uk\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
@@ -34,11 +35,13 @@ msgstr "Хеш-генератор"
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:114
 msgid "Check hashes for your files"
-msgstr "Перевірте хеши своїх файлів"
+msgstr "Перевірте хеши ваших файлів"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;hash;"
 msgstr ""
+"md5;sha1;sha256;sha512;hash;мд5;хеш;сума;сша1;сша256;сша512;порівняти;зрівнят"
+"и;перевірити;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -65,7 +68,7 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "Нове _вікно"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -73,11 +76,11 @@ msgstr "_Функції порівняння хешів"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr "_Комбінації клавіш"
+msgstr "_Клавіатурні скорочення"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_Про Collision"
+msgstr "_Про Колізію"
 
 #: data/ui/application.ui:23 data/ui/application.ui:27
 msgid "Choose a File"
@@ -138,7 +141,7 @@ msgstr "Оберіть файл…"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr "Загальне"
+msgstr "Загальні"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -146,15 +149,15 @@ msgstr "Відкрити файл"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr "Показати комбінації клавіш"
+msgstr "Показати клавіатурні скорочення"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Нове вікно"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Закрити вікно"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
@@ -176,4 +179,6 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr "Andrew Nitrogenesis https://github.com/nitrogenez"
+msgstr ""
+"Andrew Nitrogenesis https://github.com/nitrogenez\n"
+"volkov <volkovissocool@gmail.com>"

@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # K.B.Dharun Krishna <kbdharunkrishna@gmail.com>, 2022.
+# "K.B.Dharun Krishna" <kbdharunkrishna@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2022-12-16 22:09+0000\n"
-"Last-Translator: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>\n"
+"PO-Revision-Date: 2023-10-30 05:09+0000\n"
+"Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/collision/"
 "collision/ta/>\n"
 "Language: ta\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
@@ -35,7 +36,7 @@ msgstr "உங்கள் கோப்புகளுக்கான ஹாஷ�
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;ஹாஷ்;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:14
 msgid ""
@@ -62,7 +63,7 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "புதிய சாளரம் (_N)"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -147,11 +148,11 @@ msgstr "விசைப்பலகை குறுக்குவழிகள�
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "புதிய சாளரம்"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "சாளரத்தை மூடு"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
