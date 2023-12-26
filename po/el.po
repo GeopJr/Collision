@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-23 21:06+0300\n"
+"POT-Creation-Date: 2023-12-26 04:15+0200\n"
 "PO-Revision-Date: 2023-09-23 20:23+0000\n"
 "Last-Translator: Evangelos Paterakis <evan@geopjr.dev>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/collision/"
@@ -19,8 +19,8 @@ msgstr ""
 "X-Generator: Weblate 5.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
-#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
-#: data/ui/application.ui:76 data/ui/application.ui:113
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
+#: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
 msgstr "Σύγκρουση"
 
@@ -29,16 +29,15 @@ msgid "Hash Generator"
 msgstr "Γεννήτρια Hash"
 
 #: data/dev.geopjr.Collision.desktop.in:8
-#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:114
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
 msgstr "Ελέγξτε hashes για τα αρχεία σας"
 
 #: data/dev.geopjr.Collision.desktop.in:12
-#, fuzzy
-msgid "md5;sha1;sha256;sha512;hash;"
-msgstr "md5;sha1;sha256;sha512;hash;"
+msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
+msgstr ""
 
-#: data/dev.geopjr.Collision.metainfo.xml.in:14
+#: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
 "Verifying that a file you downloaded or received is actually the one you "
 "were expecting is often overlooked or too time-consuming to do. At the same "
@@ -52,16 +51,12 @@ msgstr ""
 "έχει αλλοιωθεί, λόγω της μαζικής αύξησης των κακόβουλων ιστοσελίδων και "
 "άλλων φορέων."
 
-#: data/dev.geopjr.Collision.metainfo.xml.in:20
+#: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
 "This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
 "allowing anyone, from any age and experience group, to generate, compare and "
-"verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+"verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Αυτό το εργαλείο έχει ως στόχο να το λύσει. Το Collision έρχεται με ένα απλό "
-"και καθαρό UI, επιτρέποντας σε οποιονδήποτε, από οποιαδήποτε ηλικιακή ομάδα "
-"και ομάδα εμπειρίας, να δημιουργήσει, να συγκρίνει και να επαληθεύσει MD5, "
-"SHA-256, SHA-512 και SHA-1 hashes."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -79,62 +74,69 @@ msgstr "_Συντομεύσεις Πληκτρολογίου"
 msgid "_About Collision"
 msgstr "Σχετικά με το _Collision"
 
-#: data/ui/application.ui:23 data/ui/application.ui:27
+#: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
 msgstr "Επιλέξτε ένα Αρχείο"
 
-#: data/ui/application.ui:59
+#: data/ui/application.ui:60
 msgid "_Open"
 msgstr "_Ανοίξτε"
 
-#: data/ui/application.ui:60
+#: data/ui/application.ui:61
 msgid "Open…"
 msgstr "Ανοίξτε…"
 
-#: data/ui/application.ui:97
+#: data/ui/application.ui:98
 msgid "Menu"
 msgstr "Μενού"
 
-#: data/ui/application.ui:118
+#: data/ui/application.ui:119
 msgid "_Open a File"
 msgstr "_Ανοίξτε ένα Αρχείο"
 
-#: data/ui/application.ui:165
+#: data/ui/application.ui:139
+msgid "Calculating Hashes"
+msgstr ""
+
+#: data/ui/application.ui:140
+msgid "This might take a while"
+msgstr ""
+
+#: data/ui/application.ui:175
 msgid "Hash"
 msgstr "Hash"
 
-#: data/ui/application.ui:178 data/ui/application.ui:198
-#: data/ui/application.ui:218 data/ui/application.ui:238
-msgid "Copy"
-msgstr "Αντιγραφή"
-
-#: data/ui/application.ui:261
+#: data/ui/application.ui:191
 msgid "Verify"
 msgstr "Επαληθεύστε"
 
-#: data/ui/application.ui:274
+#: data/ui/application.ui:204
 msgid "Checksum"
 msgstr "Checksum"
 
-#: data/ui/application.ui:303
-msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "MD5,SHA-1,SHA-256 ή SHA-512 Hash"
+#: data/ui/application.ui:234
+msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
+msgstr ""
 
-#: data/ui/application.ui:332
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Εισάγετε ένα MD5/SHA-1/SHA-256/SHA-512 Hash"
+#: data/ui/application.ui:263
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
+msgstr ""
 
-#: data/ui/application.ui:354
+#: data/ui/application.ui:285
 msgid "File"
 msgstr "Αρχείο"
 
-#: data/ui/application.ui:369
+#: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
 msgstr "Επιλέξτε ένα Άλλο Αρχείο για Έλεγχο"
 
-#: data/ui/application.ui:411
+#: data/ui/application.ui:342
 msgid "Choose File…"
 msgstr "Επιλέξτε Αρχείο…"
+
+#: data/ui/hash_row.ui:9
+msgid "Copy"
+msgstr "Αντιγραφή"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
@@ -165,7 +167,7 @@ msgid "Check Hashes"
 msgstr "Ελέγξτε Hashes"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/collision.cr:64
+#: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
@@ -175,3 +177,29 @@ msgstr ""
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
 msgstr "Evangelos Paterakis"
+
+#. The variables are numbers
+#: src/collision/functions/checksum.cr:79
+#, c-format
+msgid "%d of %d hashes calculated"
+msgstr ""
+
+#, fuzzy
+#~ msgid "md5;sha1;sha256;sha512;hash;"
+#~ msgstr "md5;sha1;sha256;sha512;hash;"
+
+#~ msgid ""
+#~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
+#~ "UI, allowing anyone, from any age and experience group, to generate, "
+#~ "compare and verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+#~ msgstr ""
+#~ "Αυτό το εργαλείο έχει ως στόχο να το λύσει. Το Collision έρχεται με ένα "
+#~ "απλό και καθαρό UI, επιτρέποντας σε οποιονδήποτε, από οποιαδήποτε "
+#~ "ηλικιακή ομάδα και ομάδα εμπειρίας, να δημιουργήσει, να συγκρίνει και να "
+#~ "επαληθεύσει MD5, SHA-256, SHA-512 και SHA-1 hashes."
+
+#~ msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
+#~ msgstr "MD5,SHA-1,SHA-256 ή SHA-512 Hash"
+
+#~ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+#~ msgstr "Εισάγετε ένα MD5/SHA-1/SHA-256/SHA-512 Hash"
