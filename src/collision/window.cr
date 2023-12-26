@@ -227,8 +227,15 @@ module Collision
       @mainFileChooserNative.response_signal.connect do |response|
         next unless response == -3
 
-        self.file = @mainFileChooserNative.file.not_nil!
+        gio_files = [] of Gio::File
+        files = @mainFileChooserNative.files
+        files.n_items.times do |i|
+          gio_files << Gio::File.cast(files.item(i).not_nil!)
+        end
+
         loading
+        self.file = gio_files.shift
+        open_files(Adw::Application.cast(self.application.not_nil!), gio_files) unless gio_files.empty? || self.application.nil?
       rescue ex
         Collision::LOGGER.debug { ex }
       end

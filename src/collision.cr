@@ -123,16 +123,20 @@ end
 # If there are no files passed, it calls activate,
 # else it calls activate_with_file for each file
 def open_with(app : Adw::Application, files : Enumerable(Gio::File), hint : String)
-  if files.size == 0
+  if files.empty?
     activate(app)
   else
+    open_files(app, files)
+  end
+
+  nil
+end
+
+def open_files(app : Adw::Application, files : Enumerable(Gio::File))
     files.each do |file|
       next unless !(file_path = file.path).nil? && Collision::FileUtils.file?(file_path)
       activate_with_file(app, file)
     end
-  end
-
-  nil
 end
 
 app = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)

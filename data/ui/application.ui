@@ -22,6 +22,7 @@
 	<object class="GtkFileChooserNative" id="mainFileChooserNative">
 		<property name="title" translatable="yes">Choose a File</property>
 		<property name="modal">1</property>
+		<property name="select-multiple">1</property>
 	</object>
 	<object class="GtkFileChooserNative" id="compareBtnFileChooserNative">
 		<property name="title" translatable="yes">Choose a File</property>
