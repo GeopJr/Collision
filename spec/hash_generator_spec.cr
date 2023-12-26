@@ -8,8 +8,8 @@ describe Collision::Checksum do
     channel = Channel(Hash(String, String)).new
 
     Collision::CLIPBOARD_HASH.keys.each do |x|
-      Collision::Checksum.spawn do
-        hashes[x] = Collision::Checksum.calculate(x, path.to_s)
+      Collision.spawn do
+        hashes[x] = Collision::Checksum.new.calculate(x, path.to_s)
       end
     end
 
@@ -25,6 +25,6 @@ describe Collision::Checksum do
 
   it "splits strings by 4" do
     input_by_4 = "Wait ingf orso meth ingt ohap pen?"
-    Collision::Checksum.split_by_4(input_by_4.split(' ').join).should eq(input_by_4)
+    Collision.split_by_4(input_by_4.split(' ').join).should eq(input_by_4)
   end
 end

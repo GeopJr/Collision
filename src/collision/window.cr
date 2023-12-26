@@ -55,12 +55,12 @@ module Collision
       @fileInfo.description = Collision::FileUtils.real_path(filepath)
 
       Collision::LOGGER.debug { "Begin generating hashes" }
-      Collision::Checksum.generate(filepath.to_s, @progressbar) do |res|
+      Collision::Checksum.new.generate(filepath.to_s, @progressbar) do |res|
         sleep 500.milliseconds
         GLib.idle_add do
           res.each do |hash_type, hash_value|
             @hash_results[hash_type] = hash_value
-            @hash_rows[hash_type].subtitle = hash_value.size < 8 ? hash_value : Collision::Checksum.split_by_4(hash_value)
+            @hash_rows[hash_type].subtitle = hash_value.size < 8 ? hash_value : Collision.split_by_4(hash_value)
           end
 
           @mainStack.visible_child_name = "results"
@@ -147,8 +147,8 @@ module Collision
       @compareBtn.remove_css_class("error")
 
       @compareBtnLabel.label = file_path.basename.to_s
-      Collision::Checksum.spawn do
-        compareFileSHA256 = Collision::Checksum.calculate(:sha256, file.path.to_s)
+      Collision.spawn do
+        compareFileSHA256 = Collision::Checksum.new.calculate(:sha256, file.path.to_s)
         result = @hash_results[:sha256] == compareFileSHA256
         result = Collision::FileUtils.compare_content(file_path, @hash_results.values) if !result && File.size(file_path) < MAX_COMPARE_READ_SIZE
         classes = Collision::Feedback.class(result)
