@@ -7,28 +7,31 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-12-28 00:12+0000\n"
+"Last-Translator: Kinten Le <kinten108101@protonmail.com>\n"
+"Language-Team: Vietnamese <https://hosted.weblate.org/projects/collision/"
+"collision/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
 #: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
-msgstr ""
+msgstr "Trùng Khóa"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "Thuật toán băm"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "Kiểm băm cho tập tin"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
@@ -52,43 +55,43 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "Cửa sổ _mới"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_So sánh hàm băm"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Phím tắt"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr ""
+msgstr "_Thông tin về Trùng Khóa"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr ""
+msgstr "Chọn tập tin"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr ""
+msgstr "_Mở"
 
 #: data/ui/application.ui:61
 msgid "Open…"
-msgstr ""
+msgstr "Mở…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr ""
+msgstr "_Mở tập tin"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Đang tính giá trị băm"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
@@ -96,67 +99,68 @@ msgstr ""
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr ""
+msgstr "Băm"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr ""
+msgstr "Kiểm tra"
 
 #: data/ui/application.ui:204
+#, fuzzy
 msgid "Checksum"
-msgstr ""
+msgstr "Checksum"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "Băm MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 hoặc Adler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Điền băm MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr ""
+msgstr "Tập tin"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "Chọn một tập tin khác để đối chiếu"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
-msgstr ""
+msgstr "Chọn tập tin…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr ""
+msgstr "Sao chép"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Chung"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr ""
+msgstr "Mở tập tin"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Xem phím tắt"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Cửa sổ mới"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Đóng cửa sổ"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "Thoát"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Kiểm băm"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
@@ -167,10 +171,10 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr ""
+msgstr "Kinten Le <kinten108101@protonmail.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "Tính xong %d băm trong tổng số %d"
