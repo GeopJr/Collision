@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-27 04:50+0000\n"
+"PO-Revision-Date: 2023-12-27 13:10+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
@@ -60,6 +60,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Bu araç bunu çözmeyi amaçlamaktadır. Collision, her yaş ve deneyim grubundan "
+"herkesin MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 ve Adler32 özetleri "
+"oluşturmasına, karşılaştırmasına ve doğrulamasını sağlayan basit ve temiz "
+"kullanıcı arayüzü ile birlikte gelir."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -99,11 +103,11 @@ msgstr "Dosya _Aç"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Özetler Hesaplanıyor"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Biraz zaman alabilir"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -119,11 +123,11 @@ msgstr "Sağlama Toplamı"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 ya da Adler32 Özeti"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Özeti Ekle"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -187,7 +191,7 @@ msgstr ""
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d / %d özet hesaplandı"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;özet;sağlama;"
