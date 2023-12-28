@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-28 00:12+0000\n"
+"PO-Revision-Date: 2023-12-28 19:09+0000\n"
 "Last-Translator: Kinten Le <kinten108101@protonmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/collision/"
 "collision/vi/>\n"
@@ -35,7 +35,7 @@ msgstr "Kiểm băm cho tập tin"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;băm;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -45,6 +45,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"Sau khi tải xong hay nhận được tập tin, người dùng thường bỏ qua khâu kiểm "
+"tra xem tập tin có còn nguyên vẹn hay không. Khi cần kiểm, họ phải tốn rất "
+"nhiều thì giờ và công sức. Đồng thời, khả năng tải về những tập tin đã bị "
+"can thiệp ngày càng cao do số lượng website và hacker ngày một gia tăng."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -52,6 +56,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Công cụ này là nhằm giải quyết vấn đề trên. Trùng Khóa là một ứng dụng tiện "
+"lợi &amp; đẹp mắt, tạo điều kiện cho mọi người từ mọi lứa tuổi và chuyên "
+"ngành dễ dàng tạo, so sánh và kiểm tra tập tin thông qua các thuật toán băm "
+"như MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 hay Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -95,7 +103,7 @@ msgstr "Đang tính giá trị băm"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Có thể mất một lúc"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -103,20 +111,19 @@ msgstr "Băm"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr "Kiểm tra"
+msgstr "Kiểm"
 
 #: data/ui/application.ui:204
-#, fuzzy
 msgid "Checksum"
-msgstr "Checksum"
+msgstr "Băm tổng kiểm"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr "Băm MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 hoặc Adler32"
+msgstr "Băm loại MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 hay Adler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr "Điền băm MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
+msgstr "Điền băm loại MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
