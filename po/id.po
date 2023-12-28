@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-11-16 03:03+0000\n"
+"PO-Revision-Date: 2023-12-29 17:07+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/collision/"
 "collision/id/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -37,7 +37,7 @@ msgstr "Periksa hash untuk berkas Anda"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -59,6 +59,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Alat ini bertujuan untuk mengatasinya. Collision hadir dengan UI yang "
+"sederhana dan bersih, memungkinkan siapa saja, dari berbagai usia dan "
+"kelompok pengalaman, untuk menghasilkan, membandingkan, dan memverifikasi "
+"hash MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32, dan Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -98,11 +102,11 @@ msgstr "_Buka Berkas"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Menghitung Hash"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Mohon tunggu"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -118,11 +122,11 @@ msgstr "Checksum"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 atau Adler32 Hash"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Masukkan MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -184,7 +188,7 @@ msgstr "Kukuh Syafaat"
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d dari %d hash yang dihitung"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
