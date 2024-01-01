@@ -54,3 +54,6 @@ uninstall:
 	rm -f $(PREFIX)/share/icons/hicolor/symbolic/apps/dev.geopjr.Collision-symbolic.svg
 	rm -rf $(PREFIX)$(LOCALE_LOCATION)/*/*/dev.geopjr.Collision.mo
 	gtk-update-icon-cache $(PREFIX)/share/icons/hicolor
+
+validate-appstream:
+	appstreamcli validate ./data/dev.geopjr.Collision.metainfo.xml.in

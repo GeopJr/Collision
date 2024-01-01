@@ -7,6 +7,8 @@ jobs:
     container: ghcr.io/geopjr/crystal-gtk:latest
     steps:
       - uses: actions/checkout@v3
+      - name: Validate AppStream
+        run: make validate-appstream
       - name: Shards install & Generate bindings
         run: make bindings
       - name: Spec
