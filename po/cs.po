@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2023-09-27 12:01+0000\n"
+"POT-Creation-Date: 2023-12-26 04:15+0200\n"
+"PO-Revision-Date: 2023-12-28 19:09+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/collision/"
 "collision/cs/>\n"
@@ -15,12 +15,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
-#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
-#: data/ui/application.ui:76 data/ui/application.ui:113
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
+#: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
 msgstr "Kolize"
 
@@ -29,15 +29,15 @@ msgid "Hash Generator"
 msgstr "Generátor Kontrolních součtů"
 
 #: data/dev.geopjr.Collision.desktop.in:8
-#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:114
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
 msgstr "Zkontrolujte kontrolní součty vašich souborů"
 
 #: data/dev.geopjr.Collision.desktop.in:12
-msgid "md5;sha1;sha256;sha512;hash;"
-msgstr "md5;sha1;sha256;sha512;hash;"
+msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
-#: data/dev.geopjr.Collision.metainfo.xml.in:14
+#: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
 "Verifying that a file you downloaded or received is actually the one you "
 "were expecting is often overlooked or too time-consuming to do. At the same "
@@ -50,16 +50,16 @@ msgstr ""
 "masovému nárůstu škodlivých webových stránek a dalších aktérů stalo velmi "
 "snadné dostat do rukou soubor, který byl zfalšován."
 
-#: data/dev.geopjr.Collision.metainfo.xml.in:20
+#: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
 "This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
 "allowing anyone, from any age and experience group, to generate, compare and "
-"verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+"verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Tento nástroj se to snaží vyřešit. Collision (Kolize) přichází s jednoduchým "
-"&amp; čistým uživatelským rozhraním, které umožňuje komukoli bez ohledu na "
-"věk a zkušenosti generovat, porovnávat a ověřovat hashe MD5, SHA-256, "
-"SHA-512 a SHA-1."
+"Tento nástroj se to snaží vyřešit. Kolize přichází s jednoduchým a čistým "
+"uživatelským rozhraním, poskytující každému, jakéhokoliv věku a skupiny, "
+"generovat, porovnávat a ověřovat kontrolní součty MD5, SHA-256, SHA-512, SHA-"
+"1, Blake3, CRC32 a Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -77,62 +77,69 @@ msgstr "_Klávesové zkratky"
 msgid "_About Collision"
 msgstr "_O programu"
 
-#: data/ui/application.ui:23 data/ui/application.ui:27
+#: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
 msgstr "Vybrat soubor"
 
-#: data/ui/application.ui:59
+#: data/ui/application.ui:60
 msgid "_Open"
 msgstr "_Otevřít"
 
-#: data/ui/application.ui:60
+#: data/ui/application.ui:61
 msgid "Open…"
 msgstr "Otevřete…"
 
-#: data/ui/application.ui:97
+#: data/ui/application.ui:98
 msgid "Menu"
 msgstr "Nabídka"
 
-#: data/ui/application.ui:118
+#: data/ui/application.ui:119
 msgid "_Open a File"
 msgstr "_Otevřít soubor"
 
-#: data/ui/application.ui:165
+#: data/ui/application.ui:139
+msgid "Calculating Hashes"
+msgstr "Výpočet kontrolních součtů"
+
+#: data/ui/application.ui:140
+msgid "This might take a while"
+msgstr "Chvílí to potrvá"
+
+#: data/ui/application.ui:175
 msgid "Hash"
 msgstr "Kontrolní součet"
 
-#: data/ui/application.ui:178 data/ui/application.ui:198
-#: data/ui/application.ui:218 data/ui/application.ui:238
-msgid "Copy"
-msgstr "Kopírovat"
-
-#: data/ui/application.ui:261
+#: data/ui/application.ui:191
 msgid "Verify"
 msgstr "Ověřit"
 
-#: data/ui/application.ui:274
+#: data/ui/application.ui:204
 msgid "Checksum"
 msgstr "Kontrolní součet"
 
-#: data/ui/application.ui:303
-msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "Kontrolní součet MD5, SHA-1, SHA-256 nebo SHA-512"
+#: data/ui/application.ui:234
+msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
+msgstr "Kontrolní součet MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 nebo Adler32"
 
-#: data/ui/application.ui:332
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Vložte kontrolní součet MD5/SHA-1/SHA-256/SHA-512"
+#: data/ui/application.ui:263
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
+msgstr "Vložte kontrolní součet MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
-#: data/ui/application.ui:354
+#: data/ui/application.ui:285
 msgid "File"
 msgstr "Soubor"
 
-#: data/ui/application.ui:369
+#: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
 msgstr "Vyberte jiný soubor ke kontrole"
 
-#: data/ui/application.ui:411
+#: data/ui/application.ui:342
 msgid "Choose File…"
 msgstr "Vyberte soubor…"
+
+#: data/ui/hash_row.ui:9
+msgid "Copy"
+msgstr "Kopírovat"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
@@ -163,7 +170,7 @@ msgid "Check Hashes"
 msgstr "Zkontrolovat hashe"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/collision.cr:64
+#: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr "https://cs.wikipedia.org/wiki/Kryptografická_hašovací_funkce"
@@ -172,3 +179,28 @@ msgstr "https://cs.wikipedia.org/wiki/Kryptografická_hašovací_funkce"
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
 msgstr "vikdevelop <super-vik1@protonmail.com>"
+
+#. The variables are numbers
+#: src/collision/functions/checksum.cr:79
+#, c-format
+msgid "%d of %d hashes calculated"
+msgstr "%d z %d vypočtených kontrolních součtů"
+
+#~ msgid "md5;sha1;sha256;sha512;hash;"
+#~ msgstr "md5;sha1;sha256;sha512;hash;"
+
+#~ msgid ""
+#~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
+#~ "UI, allowing anyone, from any age and experience group, to generate, "
+#~ "compare and verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+#~ msgstr ""
+#~ "Tento nástroj se to snaží vyřešit. Collision (Kolize) přichází s "
+#~ "jednoduchým &amp; čistým uživatelským rozhraním, které umožňuje komukoli "
+#~ "bez ohledu na věk a zkušenosti generovat, porovnávat a ověřovat hashe "
+#~ "MD5, SHA-256, SHA-512 a SHA-1."
+
+#~ msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
+#~ msgstr "Kontrolní součet MD5, SHA-1, SHA-256 nebo SHA-512"
+
+#~ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+#~ msgstr "Vložte kontrolní součet MD5/SHA-1/SHA-256/SHA-512"

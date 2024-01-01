@@ -1,42 +1,41 @@
-# Croatian translation for dev.geopjr.Collision.
-# Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the dev.geopjr.Collision package.
-# Milo Ivir <mail@milotype.de>, 2021, 2022, 2023.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Kinten Le <kinten108101@protonmail.com>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: dev.geopjr.Collision\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-09-27 12:01+0000\n"
-"Last-Translator: Milo Ivir <mail@milotype.de>\n"
-"Language-Team: Croatian <https://hosted.weblate.org/projects/collision/"
-"collision/hr/>\n"
-"Language: hr\n"
+"PO-Revision-Date: 2023-12-28 19:09+0000\n"
+"Last-Translator: Kinten Le <kinten108101@protonmail.com>\n"
+"Language-Team: Vietnamese <https://hosted.weblate.org/projects/collision/"
+"collision/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
 #: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
-msgstr "Kolizija"
+msgstr "Trùng Khóa"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Hash generator"
+msgstr "Thuật toán băm"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "Provjeri hasheve tvojih datoteka"
+msgstr "Kiểm băm cho tập tin"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;băm;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -46,10 +45,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"Provjeravanje autentičnosti preuzete ili primljene datoteke često se "
-"zanemaruje ili oduzima previše vremena. Istovremeno je postalo sve "
-"jednostavnije manipulirati datoteke zbog masovnog povećanja zlonamjernih web-"
-"stranica i drugih aktera."
+"Sau khi tải xong hay nhận được tập tin, người dùng thường bỏ qua khâu kiểm "
+"tra xem tập tin có còn nguyên vẹn hay không. Khi cần kiểm, họ phải tốn rất "
+"nhiều thì giờ và công sức. Đồng thời, khả năng tải về những tập tin đã bị "
+"can thiệp ngày càng cao do số lượng website và hacker ngày một gia tăng."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -57,148 +56,132 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Công cụ này là nhằm giải quyết vấn đề trên. Trùng Khóa là một ứng dụng tiện "
+"lợi &amp; đẹp mắt, tạo điều kiện cho mọi người từ mọi lứa tuổi và chuyên "
+"ngành dễ dàng tạo, so sánh và kiểm tra tập tin thông qua các thuật toán băm "
+"như MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 hay Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr "_Novi prozor"
+msgstr "Cửa sổ _mới"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "_Usporedi hash funkcije"
+msgstr "_So sánh hàm băm"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr "_Tipkovni prečaci"
+msgstr "_Phím tắt"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "O _aplikaciji Kolizija"
+msgstr "_Thông tin về Trùng Khóa"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr "Odaberi datoteku"
+msgstr "Chọn tập tin"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr "_Otvori"
+msgstr "_Mở"
 
 #: data/ui/application.ui:61
 msgid "Open…"
-msgstr "Otvori …"
+msgstr "Mở…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
-msgstr "Izbornik"
+msgstr "Menu"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr "_Otvori datoteku"
+msgstr "_Mở tập tin"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Đang tính giá trị băm"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Có thể mất một lúc"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr "Hash"
+msgstr "Băm"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr "Potvrdi"
+msgstr "Kiểm"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr "Kontrolni zbroj"
+msgstr "Băm tổng kiểm"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "Băm loại MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 hay Adler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Điền băm loại MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr "Datoteka"
+msgstr "Tập tin"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr "Odaberi jednu drugu datoteku za usporedbu"
+msgstr "Chọn một tập tin khác để đối chiếu"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
-msgstr "Odaberi datoteku …"
+msgstr "Chọn tập tin…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr "Kopiraj"
+msgstr "Sao chép"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr "Opće"
+msgstr "Chung"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "Otvori datoteku"
+msgstr "Mở tập tin"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr "Pokaži tipkovne prečace"
+msgstr "Xem phím tắt"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr "Novi prozor"
+msgstr "Cửa sổ mới"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr "Zatvori prozor"
+msgstr "Đóng cửa sổ"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr "Zatvori program"
+msgstr "Thoát"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Provjeri hasheve"
+msgstr "Kiểm băm"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
-"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr "Milo Ivir"
+msgstr "Kinten Le <kinten108101@protonmail.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
-
-#~ msgid "md5;sha1;sha256;sha512;hash;"
-#~ msgstr "md5;sha1;sha256;sha512;hash;"
-
-#~ msgid ""
-#~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
-#~ "UI, allowing anyone, from any age and experience group, to generate, "
-#~ "compare and verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
-#~ msgstr ""
-#~ "Cilj ovog alata je riješiti taj problem. „Kolizija” sadrźi jednostavno i "
-#~ "čisto korisničko sučelje koje omogućuje svima, bez obzira na dob i "
-#~ "iskustvo, generirati, usporediti i provjeriti MD5, SHA-256, SHA-512 i "
-#~ "SHA-1 hasheve."
-
-#~ msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-#~ msgstr "MD5,SHA-1,SHA-256 ili SHA-512 Hash"
-
-#~ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-#~ msgstr "Umetni MD5/SHA-1/SHA-256/SHA-512 hash"
+msgstr "Tính xong %d băm trong tổng số %d"

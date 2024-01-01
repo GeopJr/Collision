@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-23 21:06+0300\n"
-"PO-Revision-Date: 2023-09-30 14:52+0000\n"
+"POT-Creation-Date: 2023-12-26 04:15+0200\n"
+"PO-Revision-Date: 2023-12-27 13:10+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/collision/"
 "collision/tr/>\n"
@@ -20,11 +20,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
-#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:33
-#: data/ui/application.ui:76 data/ui/application.ui:113
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
+#: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
 msgstr "Collision"
 
@@ -33,15 +33,15 @@ msgid "Hash Generator"
 msgstr "Özet Oluşturucu"
 
 #: data/dev.geopjr.Collision.desktop.in:8
-#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:114
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
 msgstr "Dosyalarınızın özet değerlerini denetleyin"
 
 #: data/dev.geopjr.Collision.desktop.in:12
-msgid "md5;sha1;sha256;sha512;hash;"
-msgstr "md5;sha1;sha256;sha512;hash;özet;sağlama;"
+msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
-#: data/dev.geopjr.Collision.metainfo.xml.in:14
+#: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
 "Verifying that a file you downloaded or received is actually the one you "
 "were expecting is often overlooked or too time-consuming to do. At the same "
@@ -54,15 +54,16 @@ msgstr ""
 "web sayfaları gibi kötü niyetlilerin artan sayısı sebebiyle, oynanmış "
 "dosyalara temas etmeniz çok olasıdır."
 
-#: data/dev.geopjr.Collision.metainfo.xml.in:20
+#: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
 "This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
 "allowing anyone, from any age and experience group, to generate, compare and "
-"verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+"verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Bu araç bu sorunu çözmeyi amaçlıyor. Collision; temiz ve sade arayüzü "
-"sayesinde, her kesimden kullanıcının MD5, SHA-256 SHA-512 ve SHA-1 "
-"özetlerini oluşturup karşılaştırmasını ve doğrulamasını sağlar."
+"Bu araç bunu çözmeyi amaçlamaktadır. Collision, her yaş ve deneyim grubundan "
+"herkesin MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 ve Adler32 özetleri "
+"oluşturmasına, karşılaştırmasına ve doğrulamasını sağlayan basit ve temiz "
+"kullanıcı arayüzü ile birlikte gelir."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -80,62 +81,69 @@ msgstr "_Klavye Kısayolları"
 msgid "_About Collision"
 msgstr "Collision _Hakkında"
 
-#: data/ui/application.ui:23 data/ui/application.ui:27
+#: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
 msgstr "Dosya Seç"
 
-#: data/ui/application.ui:59
+#: data/ui/application.ui:60
 msgid "_Open"
 msgstr "_Aç"
 
-#: data/ui/application.ui:60
+#: data/ui/application.ui:61
 msgid "Open…"
 msgstr "Aç…"
 
-#: data/ui/application.ui:97
+#: data/ui/application.ui:98
 msgid "Menu"
 msgstr "Menü"
 
-#: data/ui/application.ui:118
+#: data/ui/application.ui:119
 msgid "_Open a File"
 msgstr "Dosya _Aç"
 
-#: data/ui/application.ui:165
+#: data/ui/application.ui:139
+msgid "Calculating Hashes"
+msgstr "Özetler Hesaplanıyor"
+
+#: data/ui/application.ui:140
+msgid "This might take a while"
+msgstr "Biraz zaman alabilir"
+
+#: data/ui/application.ui:175
 msgid "Hash"
 msgstr "Özet"
 
-#: data/ui/application.ui:178 data/ui/application.ui:198
-#: data/ui/application.ui:218 data/ui/application.ui:238
-msgid "Copy"
-msgstr "Kopyala"
-
-#: data/ui/application.ui:261
+#: data/ui/application.ui:191
 msgid "Verify"
 msgstr "Doğrula"
 
-#: data/ui/application.ui:274
+#: data/ui/application.ui:204
 msgid "Checksum"
 msgstr "Sağlama Toplamı"
 
-#: data/ui/application.ui:303
-msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-msgstr "MD5, SHA-1, SHA-256 veya SHA-512 Özeti"
+#: data/ui/application.ui:234
+msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 ya da Adler32 Özeti"
 
-#: data/ui/application.ui:332
-msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-msgstr "Bir MD5/SHA-1/SHA-256/SHA-512 Özeti Girin"
+#: data/ui/application.ui:263
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
+msgstr "MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Özeti Ekle"
 
-#: data/ui/application.ui:354
+#: data/ui/application.ui:285
 msgid "File"
 msgstr "Dosya"
 
-#: data/ui/application.ui:369
+#: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
 msgstr "Denetlenecek Başka Bir Dosya Seç"
 
-#: data/ui/application.ui:411
+#: data/ui/application.ui:342
 msgid "Choose File…"
 msgstr "Dosya Seç…"
+
+#: data/ui/hash_row.ui:9
+msgid "Copy"
+msgstr "Kopyala"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
@@ -166,7 +174,7 @@ msgid "Check Hashes"
 msgstr "Özetleri Denetle"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
-#: src/collision.cr:64
+#: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
@@ -178,3 +186,27 @@ msgid "translator-credits"
 msgstr ""
 "Uğurcan SAYAN <ugurcansayan@proton.me>\n"
 "Oğuz Ersen <oguz@ersen.moe>"
+
+#. The variables are numbers
+#: src/collision/functions/checksum.cr:79
+#, c-format
+msgid "%d of %d hashes calculated"
+msgstr "%d / %d özet hesaplandı"
+
+#~ msgid "md5;sha1;sha256;sha512;hash;"
+#~ msgstr "md5;sha1;sha256;sha512;hash;özet;sağlama;"
+
+#~ msgid ""
+#~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
+#~ "UI, allowing anyone, from any age and experience group, to generate, "
+#~ "compare and verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
+#~ msgstr ""
+#~ "Bu araç bu sorunu çözmeyi amaçlıyor. Collision; temiz ve sade arayüzü "
+#~ "sayesinde, her kesimden kullanıcının MD5, SHA-256 SHA-512 ve SHA-1 "
+#~ "özetlerini oluşturup karşılaştırmasını ve doğrulamasını sağlar."
+
+#~ msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
+#~ msgstr "MD5, SHA-1, SHA-256 veya SHA-512 Özeti"
+
+#~ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
+#~ msgstr "Bir MD5/SHA-1/SHA-256/SHA-512 Özeti Girin"
