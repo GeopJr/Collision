@@ -1,4 +1,4 @@
-.PHONY: all install uninstall test build mo desktop gresource bindings install_nautilus_extension
+.PHONY: all install uninstall test check build mo desktop gresource bindings install_nautilus_extension
 PREFIX ?= /usr
 PO_LOCATION ?= po
 LOCALE_LOCATION ?= /share/locale
@@ -11,7 +11,7 @@ bindings:
 build:
 	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards build -Dpreview_mt --release --no-debug
 
-test:
+check test:
 	$(CRYSTAL_LOCATION)crystal spec -Dpreview_mt --order random
 
 gresource:

@@ -2,16 +2,48 @@ name: Specs & Lint
 
 on: [push, pull_request]
 jobs:
-  ci:
+  lint:
     runs-on: ubuntu-latest
-    container: ghcr.io/geopjr/crystal-gtk:latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Validate AppStream
-        run: make validate-appstream
-      - name: Shards install & Generate bindings
-        run: make bindings
-      - name: Spec
-        run: crystal spec -Dpreview_mt --order random || exit 1
+      - uses: actions/checkout@v4
+      - name: Install Crystal
+        uses: crystal-lang/install-crystal@v1
       - name: Check formatting
         run: crystal tool format --check
+  flatpak-builder:
+    name: "Flatpak Builder"
+    runs-on: ubuntu-latest
+    needs: [ lint ]
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:gnome-45
+      options: --privileged
+    strategy:
+      matrix:
+        arch:
+          - x86_64
+          # - aarch64
+      # Don't fail the whole workflow if one architecture fails
+      # fail-fast: false
+    steps:
+    - uses: actions/checkout@v4
+    - name: Validate AppStream
+        run: make validate-appstream
+    # Docker is required by the docker/setup-qemu-action which enables emulation
+    # - name: Install deps
+    #   if: matrix.arch == 'aarch64'
+    #   run: dnf -y install docker
+    # - name: Set up QEMU
+    #   if: matrix.arch == 'aarch64'
+    #   id: qemu
+    #   uses: docker/setup-qemu-action@v2
+    #   with:
+    #     platforms: arm64
+    - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
+      with:
+        bundle: "dev.geopjr.Collision.Devel.flatpak"
+        run-tests: true
+        manifest-path: "data/dev.geopjr.Collision.json"
+        cache-key: flatpak-builder-${{ github.sha }}
+        arch: ${{ matrix.arch }}
+        repository-name: flathub-beta
+        repository-url: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
