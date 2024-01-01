@@ -15,7 +15,7 @@ describe Collision::Checksum do
 
     safe_stop = Time.utc.to_unix_ms
     loop do
-      break if Collision::CLIPBOARD_HASH.size == hashes.size || Time.utc.to_unix_ms - safe_stop > 3000
+      break if Collision::CLIPBOARD_HASH.size == hashes.size || Time.utc.to_unix_ms - safe_stop > Collision::CLIPBOARD_HASH.size * 1000
     end
 
     Collision::CLIPBOARD_HASH.each do |k, v|

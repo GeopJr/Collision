@@ -1,7 +1,7 @@
 {
   "app-id": "dev.geopjr.Collision",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45",
+  "runtime-version": "45beta",
   "sdk": "org.gnome.Sdk",
   "command": "collision",
   "finish-args": [
@@ -50,6 +50,7 @@
         "cd lib/blake3/blake3c && make -f ../build/Makefile && cd ../../..",
         "cd lib/gi-crystal && crystal build src/generator/main.cr && cd ../.. && mkdir ./bin && cp lib/gi-crystal/main ./bin/gi-crystal",
         "./bin/gi-crystal",
+        "crystal spec -Dpreview_mt --order random || exit 1",
         "COLLISION_LOCALE_LOCATION=\"/app/share/locale\" crystal build -Dpreview_mt ./src/collision.cr -Denable_gschema --release #--no-debug",
         "msgfmt --xml --template data/dev.geopjr.Collision.metainfo.xml.in -d \"./po\" -o data/dev.geopjr.Collision.metainfo.xml",
         "msgfmt --desktop --template data/dev.geopjr.Collision.desktop.in -d \"./po\" -o data/dev.geopjr.Collision.desktop",

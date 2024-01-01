@@ -1,4 +1,4 @@
-.PHONY: all install uninstall test build mo desktop gresource bindings install_nautilus_extension
+.PHONY: all install uninstall test check build mo desktop gresource bindings install_nautilus_extension
 PREFIX ?= /usr
 PO_LOCATION ?= po
 LOCALE_LOCATION ?= /share/locale
@@ -11,7 +11,7 @@ bindings:
 build:
 	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards build -Dpreview_mt --release --no-debug
 
-test:
+check test:
 	$(CRYSTAL_LOCATION)crystal spec -Dpreview_mt --order random
 
 gresource:
@@ -54,3 +54,6 @@ uninstall:
 	rm -f $(PREFIX)/share/icons/hicolor/symbolic/apps/dev.geopjr.Collision-symbolic.svg
 	rm -rf $(PREFIX)$(LOCALE_LOCATION)/*/*/dev.geopjr.Collision.mo
 	gtk-update-icon-cache $(PREFIX)/share/icons/hicolor
+
+validate-appstream:
+	appstreamcli validate ./data/dev.geopjr.Collision.metainfo.xml.in
