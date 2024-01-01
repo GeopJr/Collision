@@ -27,7 +27,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Validate AppStream
-        run: make validate-appstream
+      run: make validate-appstream
     # Docker is required by the docker/setup-qemu-action which enables emulation
     # - name: Install deps
     #   if: matrix.arch == 'aarch64'
