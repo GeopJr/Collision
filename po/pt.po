@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# ssantos <ssantos@web.de>, 2023.
+# ssantos <ssantos@web.de>, 2023, 2024.
 # João Alves <joao.2003.couto@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-21 14:06+0000\n"
+"PO-Revision-Date: 2024-01-09 08:06+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/collision/"
 "collision/pt/>\n"
@@ -36,7 +36,7 @@ msgstr "Verificar os hashes dos seus ficheiros"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -96,11 +96,11 @@ msgstr "_Abrir um ficheiro"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "A calcular hashes"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Isto pode demorar um pouco"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -116,11 +116,11 @@ msgstr "Soma de verificação"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "Hash de MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 ou Adler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Insira um Hash de MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -181,7 +181,7 @@ msgstr "créditos-tradução"
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d de %d hashes calculados"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
