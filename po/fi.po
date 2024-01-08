@@ -1,13 +1,13 @@
 # Finnish translation for dev.geopjr.Collision.
 # Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022, 2023.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-10-04 18:11+0000\n"
+"PO-Revision-Date: 2024-01-09 08:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/collision/"
 "collision/fi/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -36,6 +36,7 @@ msgstr "Tarkista tiedostojesi tiivisteet"
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 msgstr ""
+"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;tiiviste;tarkistussumma;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -57,6 +58,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Tämän työnkalun on tarkoitus vastata haasteeseen. Collision tarjoaa "
+"yksinkertaisen ja selkeän käyttöliittymän, joka mahdollistaa kenen tahansa "
+"ikään tai kokemukseen katsomatta, vertailla ja vahvistaa MD5-, SHA-256-, "
+"SHA-512-, SHA-1-, Blake3-, CRC32- ja Adler32-tiivisteitä."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -96,11 +101,11 @@ msgstr "_Avaa tiedosto"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Lasketaan tiivisteitä"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Tämä saattaa kestää hetken"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -116,11 +121,11 @@ msgstr "Tarkistussumma"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5-, SHA-1-, SHA-256-, SHA-512-, Blake3-, CRC32- tai Adler32-tiiviste"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Syötä MD5-/SHA-1-/SHA-256-/SHA-512-/Blake3-/CRC32-/Adler32-tiiviste"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -182,7 +187,7 @@ msgstr "Jiri Grönroos"
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d/%d tiivistettä laskettu"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;tiiviste;tarkistussumma;"
