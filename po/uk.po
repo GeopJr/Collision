@@ -4,15 +4,15 @@
 # Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022.
 # Dan <denqwerta@gmail.com>, 2023.
 # CakesTwix <cakestwix1@gmail.com>, 2023.
-# volkov <d2oo1dle2x@gmail.com>, 2023.
+# volkov <d2oo1dle2x@gmail.com>, 2023, 2024.
 # Сергій <sergiy.goncharuk.1@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-01-09 08:06+0000\n"
-"Last-Translator: Сергій <sergiy.goncharuk.1@gmail.com>\n"
+"PO-Revision-Date: 2024-01-25 23:01+0000\n"
+"Last-Translator: volkov <d2oo1dle2x@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/collision/"
 "collision/uk/>\n"
 "Language: uk\n"
@@ -36,11 +36,13 @@ msgstr "Хеш-генератор"
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "Перевірте хеши ваших файлів"
+msgstr "Перевіряйте хеш-суми ваших файлів"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
+msgstr ""
+"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;п"
+"орівняти;перевірити;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -61,7 +63,7 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Цей інструмент покликаний вирішити цю проблему. Collision має простий і "
+"Цей інструмент покликаний вирішити цю проблему. Колізія має простий і "
 "зрозумілий інтерфейс, що дозволяє будь-кому, незалежно від віку і досвіду, "
 "генерувати, порівнювати і перевіряти хеші MD5, SHA-256, SHA-512, SHA-1, "
 "Blake3, CRC32 і Adler32."
@@ -128,7 +130,7 @@ msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 або Adler32 хеш-сума"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr "Вставте хеш MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
+msgstr "Вставте MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 хеш-суму"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -156,7 +158,7 @@ msgstr "Відкрити файл"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr "Показувати комбінації клавіш"
+msgstr "Показати клавіатурні скорочення"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
