@@ -44,6 +44,13 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.7.1" date="2024-01-24">
+      <description translatable="no">
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.7.0" date="2024-01-02">
       <description translatable="no">
         <ul>
