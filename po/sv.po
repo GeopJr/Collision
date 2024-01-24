@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Gustav Hagland <gustav.hagland@gmail.com>, 2022.
 # Luna Jernberg <droidbittin@gmail.com>, 2023.
-# bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023.
+# bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-30 23:17+0000\n"
+"PO-Revision-Date: 2024-01-24 06:01+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/collision/"
 "collision/sv/>\n"
@@ -58,6 +58,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Detta verktyg syftar till att lösa det. Kollision kommer med ett enkelt &amp;"
+" rent användargränssnitt, så att alla, från alla åldrar och "
+"erfarenhetsgrupper, kan generera, jämföra och verifiera MD5, SHA-256, SHA-"
+"512, SHA-1, Blake3, CRC32 och Adler32 hashar."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -97,11 +101,11 @@ msgstr "_Öppna en fil"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Beräknar hashar"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Det här kan ta ett tag"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -117,11 +121,11 @@ msgstr "Kontrollsumma"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 eller Adler32 Hash"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Infoga en MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -183,7 +187,7 @@ msgstr "Gustav Hagland <gustav.hagland@gmail.com>"
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d av %d hashar beräknade"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

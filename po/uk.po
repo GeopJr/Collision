@@ -5,22 +5,23 @@
 # Dan <denqwerta@gmail.com>, 2023.
 # CakesTwix <cakestwix1@gmail.com>, 2023.
 # volkov <d2oo1dle2x@gmail.com>, 2023.
+# Сергій <sergiy.goncharuk.1@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-11-07 19:34+0000\n"
-"Last-Translator: volkov <d2oo1dle2x@gmail.com>\n"
+"PO-Revision-Date: 2024-01-09 08:06+0000\n"
+"Last-Translator: Сергій <sergiy.goncharuk.1@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/collision/"
 "collision/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -39,7 +40,7 @@ msgstr "Перевірте хеши ваших файлів"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -60,6 +61,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Цей інструмент покликаний вирішити цю проблему. Collision має простий і "
+"зрозумілий інтерфейс, що дозволяє будь-кому, незалежно від віку і досвіду, "
+"генерувати, порівнювати і перевіряти хеші MD5, SHA-256, SHA-512, SHA-1, "
+"Blake3, CRC32 і Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -99,11 +104,11 @@ msgstr "_Відкрити файл"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Обчислення хеш-сум"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Це може зайняти певний час"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -119,11 +124,11 @@ msgstr "Контрольна сума"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 або Adler32 хеш-сума"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Вставте хеш MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -151,7 +156,7 @@ msgstr "Відкрити файл"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr "Показати клавіатурні скорочення"
+msgstr "Показувати комбінації клавіш"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
@@ -173,10 +178,7 @@ msgstr "Перевірити хеші"
 #: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
-msgstr ""
-"https://uk.wikipedia.org/wiki/"
-"%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%96%D1%87%D0%BD%D0%B0_%D0%B3%D0%B5%D1%88-"
-"%D1%84%D1%83%D0%BD%D0%BA%D1%86%D1%96%D1%8F"
+msgstr "https://uk.wikipedia.org/wiki/Криптографічна_геш-функція"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
@@ -189,7 +191,7 @@ msgstr ""
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "Обчислено %d з %d хешів"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr ""
