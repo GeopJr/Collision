@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-02-10 07:02+0000\n"
+"PO-Revision-Date: 2024-02-11 13:01+0000\n"
 "Last-Translator: Nitin Khalia <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/collision/"
 "collision/hi/>\n"
@@ -31,7 +31,7 @@ msgstr "हैश जेनरेटर"
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "अपनी फ़ाइलों के लिए हैश जांचें"
+msgstr "अपनी फाइलों के लिए हैश जांचें"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
@@ -45,11 +45,11 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"यह सत्यापित करना कि आपके द्वारा डाउनलोड की गई या प्राप्त की गई फ़ाइल वास्तव "
+"यह सत्यापित करना कि आपके द्वारा डाउनलोड की गई या प्राप्त की गई फाइल वास्तव "
 "में वही है जिसकी आप अपेक्षा कर रहे थे, अक्सर अनदेखा कर दिया जाता है या ऐसा "
 "करने में बहुत समय लगता है। साथ ही, दुर्भावनापूर्ण वेबपेजों और अन्य तत्वों की "
-"बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी फ़ाइल को प्राप्त करना बहुत आसान हो "
-"गया है जिसके साथ छेड़छाड़ की गई है।"
+"बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी फाइल को प्राप्त करना बहुत आसान हो गया"
+" है जिसके साथ छेड़छाड़ की गई है।"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -57,10 +57,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"इस टूल का लक्ष्य उसे हल करना है. Collision एक सरल & amp के साथ आता है; स्वच्"
-"छ UI, किसी भी उम्र और अनुभव समूह से किसी को भी MD5, SHA-256, SHA-512, SHA-1, "
-"Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने की "
-"अनुमति देता है।"
+"इस टूल का लक्ष्य उसे हल करना है. Collision एक सरल &amp; साफ UI के साथ आता है"
+", जो किसी भी उम्र और अनुभव समूह के किसी भी व्यक्ति को MD5, SHA-256, SHA-512, "
+"SHA-1, Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने"
+" की अनुमति देता है।"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -76,11 +76,11 @@ msgstr "_कीबोर्ड शॉर्टकट"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "Collision के बारे में"
+msgstr "_Collision के बारे में"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr "एक फ़ाइल चुनें"
+msgstr "एक फाइल चुनें"
 
 #: data/ui/application.ui:60
 msgid "_Open"
@@ -128,15 +128,15 @@ msgstr "MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 हैश डालें
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr "फ़ाइल"
+msgstr "फाइल"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr "जाँच करने के लिए किसी अन्य फ़ाइल का चयन करें"
+msgstr "जाँच के लिए दूसरी फाइल का चयन करें"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
-msgstr "फ़ाइल चुनें…"
+msgstr "फाइल चुनें…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
@@ -148,7 +148,7 @@ msgstr "जनरल"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "एक फ़ाइल खोलें"
+msgstr "एक फाइल खोलें"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
