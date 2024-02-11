@@ -1,19 +1,21 @@
 # German translations for dev.geopjr.Collision package.
 # Copyright (C) 2021 THE dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# Philipp Kiemle <philipp.kiemle@gmail.com>, 2021.
+#
+# Philipp Kiemle <philipp.kiemle@gmail.com>, 2021, 2024.
 # Panagiotis Vasilopoulos <hello@alwayslivid.com>, 2021.
 # Milo Ivir <mail@milotype.de>, 2021.
 # sal0max <msal.coding@gmail.com>, 2022.
 # gregorni <gregorniehl@web.de>, 2023.
 # Vri 🌈 <weblate@vrifox.cc>, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-09-27 12:01+0000\n"
-"Last-Translator: Vri 🌈 <weblate@vrifox.cc>\n"
+"PO-Revision-Date: 2024-02-10 16:23+0100\n"
+"Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/collision/"
 "collision/de/>\n"
 "Language: de\n"
@@ -21,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -31,16 +33,16 @@ msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Hash-Generator"
+msgstr "Prüfsummengenerator"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "Prüfen Sie die Hashes Ihrer Dateien"
+msgstr "Prüfen Sie die Prüfsummen Ihrer Dateien"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;Prüfsumme;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -53,8 +55,8 @@ msgstr ""
 "Die Überprüfung, ob eine heruntergeladene oder empfangene Datei tatsächlich "
 "die erwartete Datei ist, wird oft übersehen oder ist zu zeitaufwendig. "
 "Gleichzeitig ist es aufgrund der massiven Zunahme bösartiger Webseiten und "
-"anderer Akteure sehr einfach geworden, an Dateien zu gelangen, die "
-"manipuliert wurden."
+"anderer Akteure sehr einfach geworden, an böswillig manipulierte Dateien zu "
+"gelangen."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -62,6 +64,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Diese Anwendung versucht, das Problem zu lösen. Collision hat eine einfache "
+"Benutzeroberfläche, die es jedem ermöglicht, Prüfsummen (MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 und Adler32) zu generieren und zu vergleichen "
+"- egal wie alt oder welcher Kenntnisstand."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -69,7 +75,7 @@ msgstr "_Neues Fenster"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "_Hash-Funktionen vergleichen"
+msgstr "Prüfsummen-Funktionen verglei_chen"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
@@ -77,11 +83,11 @@ msgstr "_Tastenkürzel"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_Über Collision"
+msgstr "_Info zu Collision"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr "Datei wählen"
+msgstr "Eine Datei wählen"
 
 #: data/ui/application.ui:60
 msgid "_Open"
@@ -97,23 +103,23 @@ msgstr "Menü"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr "_Datei öffnen"
+msgstr "Eine Datei _öffnen"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Prüfsummen werden berechnet"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Das könnte eine Weile dauern"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr "Hash"
+msgstr "Prüfsumme"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr "Verifiziere"
+msgstr "Verifizieren"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
@@ -121,11 +127,12 @@ msgstr "Prüfsumme"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5, SHA-1, SHA-256, SHA-512, Blake3, CRC32 oder Adler32-Prüfsumme"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
 msgstr ""
+"Fügen Sie eine MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32-Prüfsumme ein"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -133,7 +140,7 @@ msgstr "Datei"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr "Wählen Sie eine Datei zum Prüfen aus"
+msgstr "Wählen Sie eine weitere Datei zum Prüfen aus"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
@@ -149,7 +156,7 @@ msgstr "Allgemein"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "Datei öffnen"
+msgstr "Eine Datei öffnen"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
@@ -165,19 +172,19 @@ msgstr "Fenster schließen"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr "Schließen"
+msgstr "Beenden"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Hashes prüfen"
+msgstr "Prüfsummen prüfen"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
-"https://de.wikipedia.org/wiki/"
-"Kryptographische_Hashfunktion#%C3%9Cbersicht_von_Hashfunktionen"
+"https://de.wikipedia.org/wiki/Kryptographische_Hashfunktion#"
+"%C3%9Cbersicht_von_Hashfunktionen"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
@@ -193,7 +200,7 @@ msgstr ""
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d von %d Prüfsummen berechnet"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
