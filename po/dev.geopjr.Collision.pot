@@ -176,3 +176,11 @@ msgstr ""
 #, c-format
 msgid "%d of %d hashes calculated"
 msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
