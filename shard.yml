@@ -14,7 +14,7 @@ dependencies:
     commit: cffabb56e911d2a90c53c2fd14d6bd08bf5ac446
   non-blocking-spawn:
     github: GeopJr/non-blocking-spawn
-    version: ~> 1.0.5
+    version: ~> 1.1.0
   gettext:
     github: GeopJr/gettext.cr
     version: ~> 1.0.0
