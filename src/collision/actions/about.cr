@@ -7,14 +7,12 @@ class Collision::Action::About < Collision::Action
   end
 
   def on_activate
-    Adw.show_about_window(
-      @app.active_window,
-      application: @app,
+    Adw::AboutDialog.new(
       application_name: Gettext.gettext("Collision"),
       application_icon: "dev.geopjr.Collision",
       version: VERSION,
       copyright: "© 2021 Evangelos Paterakis",
-      # website: "https://github.com/GeopJr/Collision",
+      website: "https://collision.geopjr.dev",
       issue_url: "https://github.com/GeopJr/Collision/issues",
       developer_name: "Evangelos \"GeopJr\" Paterakis",
       artists: {"Tobias Bernard"},
@@ -23,6 +21,6 @@ class Collision::Action::About < Collision::Action
       license_type: Gtk::License::Bsd,
       debug_info: TROUBLESHOOTING.to_s.gsub(/File set: .+\n/, "File set: REDACTED\n"), # Attempt to redact file paths.
       debug_info_filename: "Collision-#{Time.utc.to_unix_ms}.txt"
-    )
+    ).present(@app.active_window)
   end
 end
