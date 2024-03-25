@@ -95,7 +95,7 @@
 						<child type="end">
 							<object class="GtkMenuButton">
 								<property name="icon-name">open-menu-symbolic</property>
-								<property name="tooltip-text" translatable="yes">Menu</property>
+								<property name="tooltip-text" translatable="yes">Main Menu</property>
 								<property name="menu-model">primary-menu</property>
 								<property name="primary">True</property>
 							</object>
@@ -260,6 +260,8 @@
 																										<property name="wrap-mode">char</property>
 																										<property name="accepts-tab">0</property>
 																										<property name="css-name">entry</property>
+																										<property name="input-purpose">free-form</property>
+																										<property name="input-hints">no-spellcheck | no-emoji</property>
 																										<property name="tooltip-text" translatable="yes">Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash</property>
 																										<style>
 																											<class name="card-like" />

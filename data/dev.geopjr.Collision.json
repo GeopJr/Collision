@@ -1,7 +1,7 @@
 {
   "app-id": "dev.geopjr.Collision",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45beta",
+  "runtime-version": "46beta",
   "sdk": "org.gnome.Sdk",
   "command": "collision",
   "finish-args": [
@@ -91,8 +91,8 @@
         {
           "type": "archive",
           "dest": "crystal/",
-          "url": "https://github.com/geopjr-forks/crystal-aarch64/releases/download/v1.9.2/crystal-1.9.2-1-linux-aarch64.tar.xz",
-          "sha256": "b27042a5b421174dfe14ab4295b3ac90ebc0b915ce8e04b4c435228c31a4624a",
+          "url": "https://github.com/geopjr-forks/crystal-aarch64/releases/download/v1.11.2/crystal-1.11.2-1-linux-aarch64.tar.xz",
+          "sha256": "4d5d8035c3ff5b7418daf0f77e2fbd437420c122a3836ca9def1533db62fe6a1",
           "only_arches": [
             "aarch64"
           ]
@@ -112,13 +112,13 @@
         {
           "type": "git",
           "url": "https://github.com/hugopl/gi-crystal.git",
-          "tag": "v0.21.0",
+          "tag": "v0.22.2",
           "dest": "lib/gi-crystal"
         },
         {
           "type": "git",
           "url": "https://github.com/hugopl/gtk4.cr.git",
-          "tag": "v0.16.0",
+          "tag": "v0.16.1",
           "dest": "lib/gtk4"
         },
         {
@@ -136,7 +136,7 @@
         {
           "type": "git",
           "url": "https://github.com/geopjr/non-blocking-spawn.git",
-          "tag": "v1.0.5",
+          "tag": "v1.1.0",
           "dest": "lib/non-blocking-spawn"
         },
         {

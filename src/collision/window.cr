@@ -106,6 +106,7 @@ module Collision
       @compareBtn.remove_css_class("success")
       @compareBtn.remove_css_class("error")
       @compareBtnImage.icon_name = "paper-symbolic"
+      @compareBtnImage.tooltip_text = ""
     end
 
     def handle_input_change(text : String)
@@ -115,6 +116,7 @@ module Collision
         @verifyFeedback.visible = false
         @verifyTextView.remove_css_class("success")
         @verifyTextView.remove_css_class("error")
+        @verifyTextView.tooltip_text = Gettext.gettext("Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash")
         return
       end
 
@@ -129,6 +131,7 @@ module Collision
       @verifyFeedback.icon_name = Collision::Feedback.icon(result)
       @verifyFeedback.add_css_class(classes[:add])
       @verifyFeedback.remove_css_class(classes[:remove])
+      @verifyTextView.tooltip_text = Collision::Feedback.title(result)
     end
 
     # We want to only check the file contents
@@ -147,11 +150,13 @@ module Collision
       @compareBtn.remove_css_class("error")
 
       @compareBtnLabel.label = file_path.basename.to_s
+      @compareBtnLabel.tooltip_text = file_path.basename.to_s
       Collision.spawn do
         compareFileSHA256 = Collision::Checksum.new.calculate(:sha256, file.path.to_s)
         result = @hash_results[:sha256] == compareFileSHA256
         result = Collision::FileUtils.compare_content(file_path, @hash_results.values) if !result && File.size(file_path) < MAX_COMPARE_READ_SIZE
         classes = Collision::Feedback.class(result)
+        title = Collision::Feedback.title(result)
 
         sleep 500.milliseconds
 
@@ -161,6 +166,7 @@ module Collision
           @compareBtnImage.icon_name = Collision::Feedback.icon(result)
           @compareBtn.add_css_class(classes[:add])
           @compareBtn.remove_css_class(classes[:remove])
+          @compareBtnImage.tooltip_text = title
 
           false
         end
