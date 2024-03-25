@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Óscar Fernández Díaz <oscfdezdz@tuta.io>, 2021, 2022.
 # Óscar Fernández Díaz <oscfdezdz@users.noreply.hosted.weblate.org>, 2023.
+# gallegonovato <fran-carro@hotmail.es>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-26 18:13+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@users.noreply.hosted."
-"weblate.org>\n"
+"PO-Revision-Date: 2024-03-26 18:15+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/collision/"
 "collision/es/>\n"
 "Language: es\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -192,11 +192,11 @@ msgstr "%d de %d hashes calculados"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Coinciden"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "No coinciden"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
