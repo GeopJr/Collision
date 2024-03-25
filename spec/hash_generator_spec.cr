@@ -8,6 +8,7 @@ describe Collision::Checksum do
     channel = Channel(Hash(String, String)).new
 
     Collision::CLIPBOARD_HASH.keys.each do |x|
+      hashes[x] = ""
       Collision.spawn do
         hashes[x] = Collision::Checksum.new.calculate(x, path.to_s)
       end
@@ -15,7 +16,7 @@ describe Collision::Checksum do
 
     safe_stop = Time.utc.to_unix_ms
     loop do
-      break if Collision::CLIPBOARD_HASH.size == hashes.size || Time.utc.to_unix_ms - safe_stop > Collision::CLIPBOARD_HASH.size * 5000
+      break if Collision::CLIPBOARD_HASH.keys.size == hashes.reject { |k, v| v == "" }.keys.size || Time.utc.to_unix_ms - safe_stop > Collision::CLIPBOARD_HASH.size * 5000
     end
 
     Collision::CLIPBOARD_HASH.each do |k, v|
