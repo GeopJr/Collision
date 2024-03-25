@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# vikdevelop <super-vik1@protonmail.com>, 2022, 2023.
+# vikdevelop <super-vik1@protonmail.com>, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-28 19:09+0000\n"
+"PO-Revision-Date: 2024-03-25 12:22+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/collision/"
 "collision/cs/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -188,11 +188,11 @@ msgstr "%d z %d vypočtených kontrolních součtů"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Shodují se"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Neshodují se"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
