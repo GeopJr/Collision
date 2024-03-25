@@ -41,8 +41,8 @@ msgstr "Перевіряйте хеш-суми ваших файлів"
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 msgstr ""
-"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;п"
-"орівняти;перевірити;"
+"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;"
+"порівняти;перевірити;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -194,6 +194,14 @@ msgstr ""
 #, c-format
 msgid "%d of %d hashes calculated"
 msgstr "Обчислено %d з %d хешів"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr ""

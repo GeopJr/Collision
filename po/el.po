@@ -188,6 +188,14 @@ msgstr "Evangelos Paterakis"
 msgid "%d of %d hashes calculated"
 msgstr "Υπολογίστηκαν %d από τα %d hashes"
 
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
+
 #, fuzzy
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

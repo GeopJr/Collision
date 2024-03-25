@@ -183,6 +183,14 @@ msgstr "créditos-tradução"
 msgid "%d of %d hashes calculated"
 msgstr "%d de %d hashes calculados"
 
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
+
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
 

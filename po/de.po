@@ -183,8 +183,8 @@ msgstr "Prüfsummen prüfen"
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
-"https://de.wikipedia.org/wiki/Kryptographische_Hashfunktion#"
-"%C3%9Cbersicht_von_Hashfunktionen"
+"https://de.wikipedia.org/wiki/"
+"Kryptographische_Hashfunktion#%C3%9Cbersicht_von_Hashfunktionen"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
@@ -201,6 +201,14 @@ msgstr ""
 #, c-format
 msgid "%d of %d hashes calculated"
 msgstr "%d von %d Prüfsummen berechnet"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

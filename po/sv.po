@@ -58,10 +58,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Detta verktyg syftar till att lösa det. Kollision kommer med ett enkelt &amp;"
-" rent användargränssnitt, så att alla, från alla åldrar och "
-"erfarenhetsgrupper, kan generera, jämföra och verifiera MD5, SHA-256, SHA-"
-"512, SHA-1, Blake3, CRC32 och Adler32 hashar."
+"Detta verktyg syftar till att lösa det. Kollision kommer med ett enkelt "
+"&amp; rent användargränssnitt, så att alla, från alla åldrar och "
+"erfarenhetsgrupper, kan generera, jämföra och verifiera MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 och Adler32 hashar."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -188,6 +188,14 @@ msgstr "Gustav Hagland <gustav.hagland@gmail.com>"
 #, c-format
 msgid "%d of %d hashes calculated"
 msgstr "%d av %d hashar beräknade"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

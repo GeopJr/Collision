@@ -58,8 +58,8 @@ msgid ""
 msgstr ""
 "Tento nástroj se to snaží vyřešit. Kolize přichází s jednoduchým a čistým "
 "uživatelským rozhraním, poskytující každému, jakéhokoliv věku a skupiny, "
-"generovat, porovnávat a ověřovat kontrolní součty MD5, SHA-256, SHA-512, SHA-"
-"1, Blake3, CRC32 a Adler32."
+"generovat, porovnávat a ověřovat kontrolní součty MD5, SHA-256, SHA-512, "
+"SHA-1, Blake3, CRC32 a Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -185,6 +185,14 @@ msgstr "vikdevelop <super-vik1@protonmail.com>"
 #, c-format
 msgid "%d of %d hashes calculated"
 msgstr "%d z %d vypočtených kontrolních součtů"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

@@ -9,8 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
 "PO-Revision-Date: 2023-12-26 18:13+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@users.noreply.hosted.weblate"
-".org>\n"
+"Last-Translator: Óscar Fernández Díaz <oscfdezdz@users.noreply.hosted."
+"weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/collision/"
 "collision/es/>\n"
 "Language: es\n"
@@ -189,6 +189,14 @@ msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 #, c-format
 msgid "%d of %d hashes calculated"
 msgstr "%d de %d hashes calculados"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
