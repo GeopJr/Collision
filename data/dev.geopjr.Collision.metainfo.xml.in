@@ -43,6 +43,10 @@
       <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-4.png</image>
     </screenshot>
   </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#8cdbb6</color>
+    <color type="primary" scheme_preference="dark">#148f55</color>
+  </branding>
   <releases>
     <release version="3.7.1" date="2024-01-24">
       <description translatable="no">
