@@ -15,4 +15,8 @@ module Collision::Feedback
     # If result == 1 => add: CLASSES[1], remove: CLASSES[0]
     {add: CLASSES[result], remove: CLASSES[result - 1]}
   end
+
+  def title(success : Bool? = false) : String
+    success ? Gettext.gettext("They Match") : Gettext.gettext("They Don't Match")
+  end
 end
