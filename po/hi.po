@@ -1,40 +1,41 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Nitin Khalia <weblate.scrambled777@simplelogin.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-02-11 13:01+0000\n"
+"Last-Translator: Nitin Khalia <weblate.scrambled777@simplelogin.com>\n"
+"Language-Team: Hindi <https://hosted.weblate.org/projects/collision/"
+"collision/hi/>\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
 #: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "हैश जेनरेटर"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "अपनी फाइलों के लिए हैश जांचें"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -44,6 +45,11 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"यह सत्यापित करना कि आपके द्वारा डाउनलोड की गई या प्राप्त की गई फाइल वास्तव "
+"में वही है जिसकी आप अपेक्षा कर रहे थे, अक्सर अनदेखा कर दिया जाता है या ऐसा "
+"करने में बहुत समय लगता है। साथ ही, दुर्भावनापूर्ण वेबपेजों और अन्य तत्वों की "
+"बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी फाइल को प्राप्त करना बहुत आसान हो गया"
+" है जिसके साथ छेड़छाड़ की गई है।"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -51,136 +57,133 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"इस टूल का लक्ष्य उसे हल करना है. Collision एक सरल &amp; साफ UI के साथ आता है"
+", जो किसी भी उम्र और अनुभव समूह के किसी भी व्यक्ति को MD5, SHA-256, SHA-512, "
+"SHA-1, Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने"
+" की अनुमति देता है।"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_नई विंडो"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_हैश फ़ंक्शंस की तुलना करें"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_कीबोर्ड शॉर्टकट"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr ""
+msgstr "_Collision के बारे में"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr ""
+msgstr "एक फाइल चुनें"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr ""
+msgstr "_खोलें"
 
 #: data/ui/application.ui:61
 msgid "Open…"
-msgstr ""
+msgstr "खोलें…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
-msgstr ""
+msgstr "मेन्यू"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr ""
+msgstr "_एक फाइल खोलें"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "हैश की गणना"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "इसमें कुछ समय लग सकता है"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr ""
+msgstr "हैश"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr ""
+msgstr "सत्यापित करें"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr ""
+msgstr "Checksum"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 या Adler32 हैश"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 हैश डालें"
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr ""
+msgstr "फाइल"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "जाँच के लिए दूसरी फाइल का चयन करें"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
-msgstr ""
+msgstr "फाइल चुनें…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr ""
+msgstr "कॉपी"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "जनरल"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr ""
+msgstr "एक फाइल खोलें"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "कीबोर्ड शॉर्टकट दिखाएं"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "नई विंडो"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "विंडो बंद"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "छोड़ें"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "हैश की जाँच करें"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr ""
+msgstr "Scrambled777 <weblate.scrambled777@simplelogin.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
-
-#: src/collision/functions/feedback.cr:204
-msgid "They Match"
-msgstr ""
-
-#: src/collision/functions/feedback.cr:204
-msgid "They Don't Match"
-msgstr ""
+msgstr "%d हैश के %d की गणना की गई"
