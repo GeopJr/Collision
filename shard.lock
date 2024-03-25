@@ -10,11 +10,11 @@ shards:
 
   gi-crystal:
     git: https://github.com/hugopl/gi-crystal.git
-    version: 0.21.0
+    version: 0.22.2
 
   gtk4:
     git: https://github.com/hugopl/gtk4.cr.git
-    version: 0.16.0
+    version: 0.16.1
 
   harfbuzz:
     git: https://github.com/hugopl/harfbuzz.cr.git
@@ -26,7 +26,7 @@ shards:
 
   non-blocking-spawn:
     git: https://github.com/geopjr/non-blocking-spawn.git
-    version: 1.0.5
+    version: 1.1.0
 
   pango:
     git: https://github.com/hugopl/pango.cr.git
