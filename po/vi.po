@@ -185,3 +185,11 @@ msgstr "Kinten Le <kinten108101@protonmail.com>"
 #, c-format
 msgid "%d of %d hashes calculated"
 msgstr "Tính xong %d băm trong tổng số %d"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""

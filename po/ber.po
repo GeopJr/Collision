@@ -178,5 +178,13 @@ msgstr ""
 msgid "%d of %d hashes calculated"
 msgstr ""
 
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
+
 #~ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
 #~ msgstr "sekcem yiwen MD5/SHA-1/SHA-256/SHA-512 Hash"

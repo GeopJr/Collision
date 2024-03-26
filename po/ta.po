@@ -57,10 +57,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"இந்தக் கருவி அதைத் தீர்ப்பதை நோக்கமாகக் கொண்டுள்ளது. கொலிஸன் ஒரு எளிய &amp; "
-"சுத்தமான UI, MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 மற்றும் Adler32 "
-"ஹாஷ்களை உருவாக்க, ஒப்பிட்டு மற்றும் சரிபார்க்க, எந்த வயது மற்றும் அனுபவக் "
-"குழுவைச் சேர்ந்தவர்களையும் அனுமதிக்கிறது."
+"இந்தக் கருவி அதைத் தீர்ப்பதை நோக்கமாகக் கொண்டுள்ளது. கொலிஸன் ஒரு எளிய &amp; சுத்தமான UI, "
+"MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 மற்றும் Adler32 ஹாஷ்களை உருவாக்க, "
+"ஒப்பிட்டு மற்றும் சரிபார்க்க, எந்த வயது மற்றும் அனுபவக் குழுவைச் சேர்ந்தவர்களையும் "
+"அனுமதிக்கிறது."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -187,6 +187,14 @@ msgstr "K.B.Dharun Krishna <kbdharunkrishna@gmail.com>"
 #, c-format
 msgid "%d of %d hashes calculated"
 msgstr "%d இல் %d ஹாஷ்கள் கணக்கிடப்பட்டன"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;ஹாஷ்;"

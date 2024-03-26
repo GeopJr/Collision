@@ -190,6 +190,14 @@ msgstr ""
 msgid "%d of %d hashes calculated"
 msgstr ""
 
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr ""
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr ""
+
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
 #~ "UI, allowing anyone, from any age and experience group, to generate, "
