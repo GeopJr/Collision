@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-03-25 12:22+0000\n"
+"PO-Revision-Date: 2024-03-28 18:01+0000\n"
 "Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/collision/"
 "collision/hi/>\n"
@@ -64,19 +64,19 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr "_नई विंडो"
+msgstr "नई विंडो (_N)"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "_हैश फ़ंक्शंस की तुलना करें"
+msgstr "हैश फ़ंक्शंस की तुलना करें (_C)"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr "_कीबोर्ड शॉर्टकट"
+msgstr "कीबोर्ड शॉर्टकट (_K)"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_Collision के बारे में"
+msgstr "Collision के बारे में (_A)"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
@@ -84,7 +84,7 @@ msgstr "एक फाइल चुनें"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr "_खोलें"
+msgstr "खोलें (_O)"
 
 #: data/ui/application.ui:61
 msgid "Open…"
@@ -96,7 +96,7 @@ msgstr "मेन्यू"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr "_एक फाइल खोलें"
+msgstr "एक फाइल खोलें (_O)"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
