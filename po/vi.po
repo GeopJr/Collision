@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Kinten Le <kinten108101@protonmail.com>, 2023.
+# Kinten Le <kinten108101@protonmail.com>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-28 19:09+0000\n"
+"PO-Revision-Date: 2024-04-01 01:00+0000\n"
 "Last-Translator: Kinten Le <kinten108101@protonmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/collision/"
 "collision/vi/>\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
 #: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
-msgstr "Trùng Khóa"
+msgstr "Trùng khóa"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -56,7 +56,7 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Công cụ này là nhằm giải quyết vấn đề trên. Trùng Khóa là một ứng dụng tiện "
+"Công cụ này là nhằm giải quyết vấn đề trên. Trùng khóa là một ứng dụng tiện "
 "lợi &amp; đẹp mắt, tạo điều kiện cho mọi người từ mọi lứa tuổi và chuyên "
 "ngành dễ dàng tạo, so sánh và kiểm tra tập tin thông qua các thuật toán băm "
 "như MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 hay Adler32."
@@ -75,7 +75,7 @@ msgstr "_Phím tắt"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_Thông tin về Trùng Khóa"
+msgstr "_Giới thiệu Trùng khóa"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
