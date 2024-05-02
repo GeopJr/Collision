@@ -6,22 +6,23 @@
 # Vik <xasertop@gmail.com>, 2022.
 # Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022.
 # Vin <k3kelm4vw@mozmail.com>, 2023.
+# Himmel <anonymous.colt330@aleeas.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-01-19 17:51+0000\n"
-"Last-Translator: Vin <k3kelm4vw@mozmail.com>\n"
+"PO-Revision-Date: 2024-04-02 02:01+0000\n"
+"Last-Translator: Himmel <anonymous.colt330@aleeas.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/collision/"
 "collision/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -40,7 +41,7 @@ msgstr "Проверьте хеши ваших файлов"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -61,10 +62,14 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Этот инструмент призван решить эту проблему. Collision поставляется с "
+"простым и чистым пользовательским интерфейсом, позволяющим любому человеку, "
+"любого возраста и опыта, генерировать, сравнивать и проверять хэши MD5, SHA-"
+"256, SHA-512, SHA-1, Blake3, CRC32 и Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Новое окно"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -100,11 +105,11 @@ msgstr "_Открыть файл"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Вычисление хэшей"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Это может занять некоторое время"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -120,11 +125,11 @@ msgstr "Контрольная сумма"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "Хеш MD5, SHA-1, SHA-256, SHA-512, Blake3, CRC32 или Adler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Вставьте хэш MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -156,11 +161,11 @@ msgstr "Показать горячие клавиши"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Новое окно"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Закрыть окно"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
@@ -188,15 +193,15 @@ msgstr ""
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d вычисленных хэшей %d"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Они совпадают"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Они не совпадают"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

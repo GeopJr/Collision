@@ -6,13 +6,14 @@
 # CakesTwix <cakestwix1@gmail.com>, 2023.
 # volkov <d2oo1dle2x@gmail.com>, 2023, 2024.
 # Сергій <sergiy.goncharuk.1@gmail.com>, 2024.
+# Himmel <anonymous.colt330@aleeas.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-01-25 23:01+0000\n"
-"Last-Translator: volkov <d2oo1dle2x@gmail.com>\n"
+"PO-Revision-Date: 2024-04-02 02:01+0000\n"
+"Last-Translator: Himmel <anonymous.colt330@aleeas.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/collision/"
 "collision/uk/>\n"
 "Language: uk\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -197,11 +198,11 @@ msgstr "Обчислено %d з %d хешів"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "збігаються"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "не збігаються"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr ""
