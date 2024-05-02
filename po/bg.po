@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# twlvnn <kraft_werk@tutanota.com>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-26 04:15+0200\n"
+"PO-Revision-Date: 2024-04-13 17:01+0000\n"
+"Last-Translator: twlvnn <kraft_werk@tutanota.com>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/collision/"
+"collision/bg/>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
+
+#: data/dev.geopjr.Collision.desktop.in:6
+#: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
+#: data/ui/application.ui:77 data/ui/application.ui:114
+msgid "Collision"
+msgstr "Сблъсък"
+
+#: data/dev.geopjr.Collision.desktop.in:7
+msgid "Hash Generator"
+msgstr "Генератор на хешове"
+
+#: data/dev.geopjr.Collision.desktop.in:8
+#: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
+msgid "Check hashes for your files"
+msgstr "Проверете хешовете за вашите файлове"
+
+#: data/dev.geopjr.Collision.desktop.in:12
+msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;хеш;"
+
+#: data/dev.geopjr.Collision.metainfo.xml.in:16
+msgid ""
+"Verifying that a file you downloaded or received is actually the one you "
+"were expecting is often overlooked or too time-consuming to do. At the same "
+"time, it has become very easy to get your hands on a file that has been "
+"tampered with, due to the mass increase of malicious webpages and other "
+"actors."
+msgstr ""
+"Проверявайки дали изтегленият или полученият файл действително е този, който "
+"сте очаквали, често се пропуска или отнема твърде много време. В същото "
+"време стана много лесно да се сдобиете с файл, който е бил подправен, поради "
+"масовото увеличаване на броя на злонамерени Интернет страници и лица."
+
+#: data/dev.geopjr.Collision.metainfo.xml.in:22
+msgid ""
+"This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
+"allowing anyone, from any age and experience group, to generate, compare and "
+"verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
+msgstr ""
+"Този инструмент има за цел да реши този проблем. Сблъсък идва с прост и "
+"изчистен потребителски интерфейс, позволяващ на всеки, от всяка възрастова "
+"група и опит, да генерира, сравнява и потвръждава хешове MD5, SHA-256, SHA-"
+"512, SHA-1, Blake3, CRC32 и Adler32."
+
+#: data/ui/application.ui:6
+msgid "_New Window"
+msgstr "_Нов прозорец"
+
+#: data/ui/application.ui:10
+msgid "_Compare Hash Functions"
+msgstr "Сравняване на хеш функции"
+
+#: data/ui/application.ui:14
+msgid "_Keyboard Shortcuts"
+msgstr "_Клавишни комбинации"
+
+#: data/ui/application.ui:18
+msgid "_About Collision"
+msgstr "_Относно „Сблъсък“"
+
+#: data/ui/application.ui:23 data/ui/application.ui:28
+msgid "Choose a File"
+msgstr "Избор на файл"
+
+#: data/ui/application.ui:60
+msgid "_Open"
+msgstr "_Отваряне"
+
+#: data/ui/application.ui:61
+msgid "Open…"
+msgstr "Отваряне…"
+
+#: data/ui/application.ui:98
+msgid "Menu"
+msgstr "Меню"
+
+#: data/ui/application.ui:119
+msgid "_Open a File"
+msgstr "_Отваряне на файл"
+
+#: data/ui/application.ui:139
+msgid "Calculating Hashes"
+msgstr "Изчисляване на хешовете"
+
+#: data/ui/application.ui:140
+msgid "This might take a while"
+msgstr "Това може да отнеме повече време"
+
+#: data/ui/application.ui:175
+msgid "Hash"
+msgstr "Хеш"
+
+#: data/ui/application.ui:191
+msgid "Verify"
+msgstr "Потвърждаване"
+
+#: data/ui/application.ui:204
+msgid "Checksum"
+msgstr "Контролна сума"
+
+#: data/ui/application.ui:234
+msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 или Adler32 хеш"
+
+#: data/ui/application.ui:263
+msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
+msgstr "Вмъкване на MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 хеш"
+
+#: data/ui/application.ui:285
+msgid "File"
+msgstr "Файл"
+
+#: data/ui/application.ui:300
+msgid "Select Another File to Check Against"
+msgstr "Избиране на друг файл за проверка"
+
+#: data/ui/application.ui:342
+msgid "Choose File…"
+msgstr "Избор на файл…"
+
+#: data/ui/hash_row.ui:9
+msgid "Copy"
+msgstr "Копиране"
+
+#: data/ui/shortcuts_window.ui:11
+msgid "General"
+msgstr "Общи"
+
+#: data/ui/shortcuts_window.ui:14
+msgid "Open a File"
+msgstr "Отваряне на файл"
+
+#: data/ui/shortcuts_window.ui:20
+msgid "Show Keyboard Shortcuts"
+msgstr "Показване на клавишните комбинации"
+
+#: data/ui/shortcuts_window.ui:26
+msgid "New Window"
+msgstr "Нов прозорец"
+
+#: data/ui/shortcuts_window.ui:32
+msgid "Close Window"
+msgstr "Затваряне на прозореца"
+
+#: data/ui/shortcuts_window.ui:38
+msgid "Quit"
+msgstr "Спиране на програмата"
+
+#: nautilus-extension/collision-extension.py:54
+msgid "Check Hashes"
+msgstr "Проверяване на хешовете"
+
+#. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
+#: src/collision.cr:72
+msgid ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
+
+#. Name <email@domain.com> or Name https://website.example
+#: src/collision/actions/about.cr:22
+msgid "translator-credits"
+msgstr "twlvnn <kraft_werk@tutanota.com>"
+
+#. The variables are numbers
+#: src/collision/functions/checksum.cr:79
+#, c-format
+msgid "%d of %d hashes calculated"
+msgstr "%d от %d изчислени хешове"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Match"
+msgstr "Съвпадат"
+
+#: src/collision/functions/feedback.cr:204
+msgid "They Don't Match"
+msgstr "Не съвпадат"
