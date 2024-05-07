@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-03-28 18:01+0000\n"
+"PO-Revision-Date: 2024-05-08 05:07+0000\n"
 "Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/collision/"
 "collision/hi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.4-rc\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -46,10 +46,11 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"यह सत्यापित करना कि आपके द्वारा डाउनलोड की गई या प्राप्त की गई फाइल वास्तव में वही है "
-"जिसकी आप अपेक्षा कर रहे थे, अक्सर अनदेखा कर दिया जाता है या ऐसा करने में बहुत समय लगता "
-"है। साथ ही, दुर्भावनापूर्ण वेबपेजों और अन्य तत्वों की बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी "
-"फाइल को प्राप्त करना बहुत आसान हो गया है जिसके साथ छेड़छाड़ की गई है।"
+"यह सत्यापित करना कि आपके द्वारा डाउनलोड की गई या प्राप्त की गई फाइल वास्तव "
+"में वही है जिसकी आप अपेक्षा कर रहे थे, अक्सर अनदेखा कर दिया जाता है या ऐसा "
+"करने में बहुत समय लगता है। साथ ही, दुर्भावनापूर्ण वेबपृष्ठों और अन्य तत्वों "
+"की बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी फाइल को प्राप्त करना बहुत आसान हो "
+"गया है जिसके साथ छेड़छाड़ की गई है।"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -57,10 +58,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"इस टूल का लक्ष्य उसे हल करना है. Collision एक सरल &amp; साफ UI के साथ आता है, जो "
-"किसी भी उम्र और अनुभव समूह के किसी भी व्यक्ति को MD5, SHA-256, SHA-512, SHA-1, "
-"Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने की अनुमति देता "
-"है।"
+"इस टूल का लक्ष्य उसे हल करना है। Collision एक सरल &amp; साफ UI के साथ आता है"
+", जो किसी भी उम्र और अनुभव समूह के किसी भी व्यक्ति को MD5, SHA-256, SHA-512, "
+"SHA-1, Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने"
+" की अनुमति देता है।"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -68,7 +69,7 @@ msgstr "नई विंडो (_N)"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "हैश फ़ंक्शंस की तुलना करें (_C)"
+msgstr "हैश प्रकार्यों की तुलना करें (_C)"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
@@ -80,7 +81,7 @@ msgstr "Collision के बारे में (_A)"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr "एक फाइल चुनें"
+msgstr "फाइल चुनें"
 
 #: data/ui/application.ui:60
 msgid "_Open"
@@ -92,11 +93,11 @@ msgstr "खोलें…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
-msgstr "मेन्यू"
+msgstr "मेनू"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr "एक फाइल खोलें (_O)"
+msgstr "फाइल खोलें (_O)"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
@@ -116,7 +117,7 @@ msgstr "सत्यापित करें"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr "Checksum"
+msgstr "चेकसम"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
@@ -132,7 +133,7 @@ msgstr "फाइल"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr "जाँच के लिए दूसरी फाइल का चयन करें"
+msgstr "जांच के लिए दूसरी फाइल चुनें"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
@@ -140,15 +141,15 @@ msgstr "फाइल चुनें…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr "कॉपी"
+msgstr "कॉपी करें"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr "जनरल"
+msgstr "सामान्य"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "एक फाइल खोलें"
+msgstr "फाइल खोलें"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
@@ -168,7 +169,7 @@ msgstr "छोड़ें"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "हैश की जाँच करें"
+msgstr "हैश जांचे"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
@@ -186,12 +187,12 @@ msgstr "Scrambled777 <weblate.scrambled777@simplelogin.com>"
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr "%d हैश के %d की गणना की गई"
+msgstr "%2$d में से %1$d हैश की गणना की गई"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr "उनका मेल होता है"
+msgstr "वे मेल खाते हैं"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr "उनका मेल नहीं होता है"
+msgstr "वे मेल नहीं खाते"
