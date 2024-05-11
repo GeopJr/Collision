@@ -2,14 +2,14 @@
 # Copyright (C) 2021 Collision
 # This file is distributed under the same license as the PACKAGE package.
 # Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2021.
-# Reza Almanda <rezaalmanda27@gmail.com>, 2022, 2023.
+# Reza Almanda <rezaalmanda27@gmail.com>, 2022, 2023, 2024.
 # Evangelos Paterakis <evan@geopjr.dev>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-29 17:07+0000\n"
+"PO-Revision-Date: 2024-05-12 10:00+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/collision/"
 "collision/id/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5.4\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -192,11 +192,11 @@ msgstr "%d dari %d hash yang dihitung"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Mereka Cocok"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Mereka Tidak Cocok"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
