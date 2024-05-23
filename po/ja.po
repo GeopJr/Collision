@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Kaz Sibuya <sibuyakazokuu@gmail.com>, 2022.
 # Himmel <anonymous.colt330@aleeas.com>, 2024.
+# Ryo Nakano <ryonakaknock3@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-05-23 04:02+0000\n"
-"Last-Translator: Himmel <anonymous.colt330@aleeas.com>\n"
+"PO-Revision-Date: 2024-05-24 13:09+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/collision/"
 "collision/ja/>\n"
 "Language: ja\n"
@@ -64,19 +65,19 @@ msgstr ""
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr "_新しいウィンドウ"
+msgstr "新しいウィンドウ(_N)"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "_ハッシュ関数の比較"
+msgstr "ハッシュ関数の比較(_C)"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr "_キーボードショートカット"
+msgstr "キーボードショートカット(_K)"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_Collision について"
+msgstr "Collision について(_A)"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
@@ -84,7 +85,7 @@ msgstr "ファイルを選択"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr "_開く"
+msgstr "開く(_O)"
 
 #: data/ui/application.ui:61
 msgid "Open…"
@@ -96,7 +97,7 @@ msgstr "メニュー"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr "_ファイルを開く"
+msgstr "ファイルを開く(_O)"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
