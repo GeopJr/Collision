@@ -2,13 +2,13 @@
 # Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # musiclover382 <mattiagiovanni.borda@icloud.com>, 2022.
-# albanobattistella <albano_battistella@hotmail.com>, 2022, 2023.
+# albanobattistella <albano_battistella@hotmail.com>, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-12-28 00:12+0000\n"
+"PO-Revision-Date: 2024-04-01 01:00+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/collision/"
 "collision/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -190,11 +190,11 @@ msgstr "%d di %d hash calcolati"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Corrispondono"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Non corrispondono"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

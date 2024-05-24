@@ -3,22 +3,24 @@
 # This file is distributed under the same license as the Collision package.
 # Nikki <nikkehtine@int.pl>, 2021.
 # gnu-ewm <gnu.ewm@protonmail.com>, 2023.
+# polswert1 <igorpopowicz12@gmail.com>, 2024.
+# polswert1 <polswert1@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-03-25 15:41+0000\n"
-"Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
+"PO-Revision-Date: 2024-04-13 17:06+0000\n"
+"Last-Translator: polswert1 <polswert1@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/collision/"
 "collision/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -37,7 +39,7 @@ msgstr "Sprawdź sumy kontrolne swoich plików"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -59,10 +61,13 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"To narzędzie może to rozwiązać. Collision ma czysty interfejs, prosty do "
+"zrozumienia dla każdego, może generować, porównywać i weryfikować hasze MD5, "
+"SHA-256, SHA-512, SHA-1, Blake3, CRC32 oraz Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Nowe Okno"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -70,7 +75,7 @@ msgstr "_Porównanie algorytmów haszujących"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr "Skróty _klawiszowe"
+msgstr "_Skróty klawiszowe"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
@@ -98,11 +103,11 @@ msgstr "_Otwórz plik"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Kalkulowanie Haszów"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "To może chwilę potrwać"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -118,11 +123,11 @@ msgstr "Suma kontrolna"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "Hasz MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 albo Adler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Wstaw Hasz MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -154,11 +159,11 @@ msgstr "Pokaż skróty klawiszowe"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Nowe Okno"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Zamknij Okno"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
@@ -184,15 +189,15 @@ msgstr "Nikki"
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d z %d haszów przekalkulowane"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Zgadzają się"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Nie zgadzają się"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

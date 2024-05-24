@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-01-14 12:31+0000\n"
+"PO-Revision-Date: 2024-05-24 13:09+0000\n"
 "Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/collision/"
 "collision/ta/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -190,11 +190,11 @@ msgstr "%d இல் %d ஹாஷ்கள் கணக்கிடப்பட�
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "அவை பொருந்துகின்றன"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "அவை பொருந்தவில்லை"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;ஹாஷ்;"

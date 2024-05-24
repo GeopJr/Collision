@@ -4,13 +4,13 @@
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 # Gabriel Gian <gabrielgian@protonmail.com>, 2022.
 # Gustavo Costa <xfgusta@gmail.com>, 2022.
-# Fúlvio Alves <fga.fulvio@gmail.com>, 2022, 2023.
+# Fúlvio Alves <fga.fulvio@gmail.com>, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-09-30 14:51+0000\n"
+"PO-Revision-Date: 2024-04-11 09:01+0000\n"
 "Last-Translator: Fúlvio Alves <fga.fulvio@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "collision/collision/pt_BR/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -38,7 +38,7 @@ msgstr "Verifique os hashes dos seus arquivos"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -59,6 +59,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Esta ferramenta visa resolver isso. Collision vem com uma interface de "
+"usuário simples e limpa, permitindo que qualquer pessoa, de qualquer idade e "
+"experiência, gere, compare e verifique hashes MD5, SHA-256, SHA-512, SHA-1, "
+"Blake3, CRC32 e Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -98,11 +102,11 @@ msgstr "_Abrir um arquivo"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Calculando hashes"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Isso pode demorar um pouco"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -118,11 +122,11 @@ msgstr "Soma de verificação"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "Hash MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 ou Adler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Insira um hash MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -187,15 +191,15 @@ msgstr ""
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d de %d hashes calculados"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Correspondem"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Não correspondem"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

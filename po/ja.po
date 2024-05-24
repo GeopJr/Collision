@@ -2,13 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Kaz Sibuya <sibuyakazokuu@gmail.com>, 2022.
+# Himmel <anonymous.colt330@aleeas.com>, 2024.
+# Ryo Nakano <ryonakaknock3@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2022-07-30 12:39+0000\n"
-"Last-Translator: Kaz Sibuya <sibuyakazokuu@gmail.com>\n"
+"PO-Revision-Date: 2024-05-24 13:09+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/collision/"
 "collision/ja/>\n"
 "Language: ja\n"
@@ -16,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -35,7 +37,7 @@ msgstr "ファイルのハッシュを確認する"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -45,10 +47,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"あなたがダウンロードした、または受け取ったファイルが本当に期待したものである"
-"かどうかの検証は、見落としがちであったり、時間がかかりすぎたりすることがあり"
-"ます。一方、悪意のあるWebページや他の攻撃者の大量増加により、改ざんされたファ"
-"イルを手に入れることは非常に容易になっています。"
+"あなたがダウンロードした、または受信したファイルが本当に意図したものであるか"
+"を検証するには、しばしば見逃してしまったり、時間がかかりすぎたりすることがあ"
+"ります。一方、悪意のあるウェブページや他の攻撃者の急増により、改竄されたファ"
+"イルを入手することは珍しくありません。"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -56,22 +58,26 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"このツールはこうした問題を解決することを目的としています。Collision "
+"はシンプル・クリーンな UI で、誰でも簡単に "
+"MD5、SHA-256、SHA-512、SHA-1、Blake3、CRC32、Adler32 "
+"ハッシュを生成、比較、検証することができます。"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "新しいウィンドウ(_N)"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "ハッシュ関数の比較"
+msgstr "ハッシュ関数の比較(_C)"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "キーボードショートカット(_K)"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "Collisionについて(_A)"
+msgstr "Collision について(_A)"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
@@ -95,11 +101,11 @@ msgstr "ファイルを開く(_O)"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "ハッシュの計算"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "いましばらくお待ち下さい"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -107,7 +113,7 @@ msgstr "ハッシュ"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr "確認"
+msgstr "検証"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
@@ -115,11 +121,11 @@ msgstr "チェックサム"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5、SHA-1、SHA-256、SHA-512、Blake3、CRC32 または Adler32 ハッシュ"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "MD 5/SHA-1/SHA-256/SHA-512/Blake 3/CRC 32/Adler 32 ハッシュを挿入する"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -139,31 +145,31 @@ msgstr "コピー"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "ファイルを開く(O)"
+msgstr "ファイルを開く"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "キーボードショートカットを表示"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "新しいウィンドウ"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "ウィンドウを閉じる"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "終了"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "ハッシュの確認"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
@@ -175,21 +181,23 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr "Sibuya Kaz <sibuyakazokuu@gmail.com>"
+msgstr ""
+"Himmel https://hosted.weblate.org/user/Himmel/\n"
+"Sibuya Kaz <sibuyakazokuu@gmail.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d個のうち%d個のハッシュが計算されました"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "一致します"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "一致しません"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
