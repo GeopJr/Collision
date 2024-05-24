@@ -131,7 +131,12 @@ module Collision
       @verifyFeedback.icon_name = Collision::Feedback.icon(result)
       @verifyFeedback.add_css_class(classes[:add])
       @verifyFeedback.remove_css_class(classes[:remove])
-      @verifyTextView.tooltip_text = Collision::Feedback.title(result)
+
+      feedback_result = Collision::Feedback.title(result)
+      @verifyTextView.tooltip_text = feedback_result
+      {% if compare_versions("#{Gtk::MAJOR_VERSION}.#{Gtk::MINOR_VERSION}.#{Gtk::MICRO_VERSION}", "4.14.0") >= 0 %}
+        @verifyTextView.announce(feedback_result, Gtk::AccessibleAnnouncementPriority::High)
+      {% end %}
     end
 
     # We want to only check the file contents
@@ -167,6 +172,9 @@ module Collision
           @compareBtn.add_css_class(classes[:add])
           @compareBtn.remove_css_class(classes[:remove])
           @compareBtnImage.tooltip_text = title
+          {% if compare_versions("#{Gtk::MAJOR_VERSION}.#{Gtk::MINOR_VERSION}.#{Gtk::MICRO_VERSION}", "4.14.0") >= 0 %}
+            @compareBtn.announce(title, Gtk::AccessibleAnnouncementPriority::High)
+          {% end %}
 
           false
         end
