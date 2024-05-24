@@ -131,7 +131,10 @@ module Collision
       @verifyFeedback.icon_name = Collision::Feedback.icon(result)
       @verifyFeedback.add_css_class(classes[:add])
       @verifyFeedback.remove_css_class(classes[:remove])
-      @verifyTextView.tooltip_text = Collision::Feedback.title(result)
+
+      feedback_result = Collision::Feedback.title(result)
+      @verifyTextView.tooltip_text = feedback_result
+      @verifyTextView.announce(feedback_result, Gtk::AccessibleAnnouncementPriority::High)
     end
 
     # We want to only check the file contents
@@ -167,6 +170,7 @@ module Collision
           @compareBtn.add_css_class(classes[:add])
           @compareBtn.remove_css_class(classes[:remove])
           @compareBtnImage.tooltip_text = title
+          @compareBtn.announce(title, Gtk::AccessibleAnnouncementPriority::High)
 
           false
         end
