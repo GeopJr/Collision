@@ -45,5 +45,3 @@ jobs:
         manifest-path: "data/dev.geopjr.Collision.json"
         cache-key: flatpak-builder-${{ github.sha }}
         arch: ${{ matrix.arch }}
-        repository-name: flathub-beta
-        repository-url: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
