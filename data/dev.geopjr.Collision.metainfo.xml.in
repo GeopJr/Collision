@@ -48,6 +48,15 @@
     <color type="primary" scheme_preference="dark">#26a269</color>
   </branding>
   <releases>
+    <release version="3.8.1" date="2024-06-23">
+      <description translate="no">
+        <ul>
+          <li>Improved accessibility</li>
+          <li>Updated dependencies</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.8.0" date="2024-03-26">
       <description translate="no">
         <ul>
