@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-05-04 03:34+0000\n"
+"PO-Revision-Date: 2024-07-06 08:09+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/collision/"
 "collision/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.3\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -47,9 +47,9 @@ msgid ""
 "actors."
 msgstr ""
 "Het verifiëren van een gedownload of ontvangen bestand is doorgaans iets wat "
-"je negeert of wat teveel tijd in beslag neemt. Echter, het is tegenwoordig "
-"erg makkelijk om een kwaadaardig bestand in handen te krijgen door de "
-"toename van nepsites en dergelijke."
+"je negeert of wat teveel tĳd in beslag neemt. Echter, het is tegenwoordig "
+"erg makkelĳk om een kwaadaardig bestand in handen te krĳgen door de toename "
+"van nepsites en dergelĳke."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -57,6 +57,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Deze app is bedoeld om dat op te lossen. Collision wordt geleverd met een "
+"eenvoudige en schone gebruikers­interface, waardoor iedereen, van elke "
+"leeftĳd en ervarings­groep, controlesommen van type MD5, SHA-256, SHA-512, "
+"SHA-1, Blake3, CRC32 en Adler32 kan genereren, vergelĳken en verifiëren."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -64,7 +68,7 @@ msgstr "_Nieuw venster"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "_Controle­som­fucties vergelijken"
+msgstr "_Controlesom­functies vergelĳken"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
@@ -100,7 +104,7 @@ msgstr "Hashes uitrekenen"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Dit kan even duren"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -121,6 +125,8 @@ msgstr "Hash in formaat MD5, SHA-1, SHA-256, SHA-512, Blake3, CRC32 of Adler32"
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
 msgstr ""
+"Voer een controle­som in van type MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/"
+"Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -128,7 +134,7 @@ msgstr "Bestand"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr "Kies het te vergelijken bestand"
+msgstr "Kies het te vergelĳken bestand"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
@@ -184,7 +190,7 @@ msgstr ""
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d van %d controle­sommen berekend"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
