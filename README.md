@@ -13,7 +13,7 @@
 <p align="center">
     <img alt="screenshot" width="640" src="https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-1.png"><br />
     <a href='https://flathub.org/apps/details/dev.geopjr.Collision'>
-      <img width='192' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-i-en.png'/>
+      <img alt='Download on Flathub' src='https://flathub.org/api/badge?svg&locale=en'/>
     </a>
 </p>
 
