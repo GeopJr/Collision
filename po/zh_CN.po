@@ -1,15 +1,15 @@
 # Simplified Chinese translations for dev.geopjr.Collision package.
 # Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# lumingzh <lumingzh@qq.com>, 2022, 2023.
+# lumingzh <lumingzh@qq.com>, 2022, 2023, 2024.
 # Himmel <anonymous.colt330@aleeas.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-04-02 02:01+0000\n"
-"Last-Translator: Himmel <anonymous.colt330@aleeas.com>\n"
+"PO-Revision-Date: 2024-08-02 12:09+0000\n"
+"Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "collision/collision/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -184,7 +184,7 @@ msgstr "lumingzh <lumingzh@qq.com>"
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr "计算了 %d 个哈希值中的 %d 个"
+msgstr "计算了 %2$d 个哈希值中的 %1$d 个"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
