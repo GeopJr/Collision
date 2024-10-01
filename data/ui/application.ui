@@ -19,15 +19,6 @@
 			<attribute name="action">app.about</attribute>
 		</item>
 	</menu>
-	<object class="GtkFileChooserNative" id="mainFileChooserNative">
-		<property name="title" translatable="yes">Choose a File</property>
-		<property name="modal">1</property>
-		<property name="select-multiple">1</property>
-	</object>
-	<object class="GtkFileChooserNative" id="compareBtnFileChooserNative">
-		<property name="title" translatable="yes">Choose a File</property>
-		<property name="modal">1</property>
-	</object>
 	<template class="Collision-Window" parent="AdwApplicationWindow">
 		<property name="width-request">360</property>
 		<property name="height-request">360</property>

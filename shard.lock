@@ -10,11 +10,11 @@ shards:
 
   gi-crystal:
     git: https://github.com/hugopl/gi-crystal.git
-    version: 0.22.3
+    version: 0.24.0
 
   gtk4:
     git: https://github.com/hugopl/gtk4.cr.git
-    version: 0.16.1
+    version: 0.17.0
 
   harfbuzz:
     git: https://github.com/hugopl/harfbuzz.cr.git
