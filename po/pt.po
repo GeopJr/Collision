@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # ssantos <ssantos@web.de>, 2023, 2024.
 # João Alves <joao.2003.couto@gmail.com>, 2023.
+# Tiago Lucas Flach <tiagolucas9830@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-01-09 08:06+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2024-08-04 22:09+0000\n"
+"Last-Translator: Tiago Lucas Flach <tiagolucas9830@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/collision/"
 "collision/pt/>\n"
 "Language: pt\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -57,6 +58,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Esta ferramenta visa resolver isso. O Collision vem com uma UI simples e "
+"limpa, permitindo que qualquer pessoa, de qualquer idade e grupo de "
+"experiência, gere, compare e verifique hashes MD5, SHA-256, SHA-512, SHA-1, "
+"Blake3, CRC32 e Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -175,7 +180,7 @@ msgstr "https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash_criptogr%C3%A1fica"
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr "créditos-tradução"
+msgstr "Tiago Lucas Flach https://github.com/tiagoFlach"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
@@ -185,11 +190,11 @@ msgstr "%d de %d hashes calculados"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Eles Correspondem"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Eles Não Correspondem"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"
