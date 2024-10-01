@@ -6,8 +6,6 @@ module Collision
     resource: "/dev/geopjr/Collision/ui/application.ui",
     children: {
       "welcomeBtn",
-      "mainFileChooserNative",
-      "compareBtnFileChooserNative",
       "mainStack",
       "fileInfo",
       "headerbarStack",
@@ -35,8 +33,6 @@ module Collision
     @compareBtnLabel : Gtk::Label
     @compareBtnStack : Gtk::Stack
     @openFileBtn : Gtk::Button
-    @mainFileChooserNative : Gtk::FileChooserNative
-    @compareBtnFileChooserNative : Gtk::FileChooserNative
     @mainStack : Gtk::Stack
     @fileInfo : Adw::StatusPage
     @switcher_bar : Adw::ViewSwitcherBar
@@ -82,7 +78,23 @@ module Collision
     end
 
     def on_open_btn_clicked
-      @mainFileChooserNative.show
+      Gtk::FileDialog.new(
+        title: Gettext.gettext("Choose a File"),
+        modal: true
+      ).open_multiple(self, nil) do |obj, result|
+        next if (files = obj.as(Gtk::FileDialog).open_multiple_finish(result)).nil?
+
+        gio_files = [] of Gio::File
+        files.n_items.times do |i|
+          gio_files << Gio::File.cast(files.item(i).not_nil!)
+        end
+
+        loading
+        self.file = gio_files.shift
+        open_files(Adw::Application.cast(self.application.not_nil!), gio_files) unless gio_files.empty? || self.application.nil?
+      rescue ex
+        Collision::LOGGER.debug { ex }
+      end
     end
 
     def on_drop(file : Gio::File)
@@ -227,39 +239,10 @@ module Collision
       @compareBtnStack = Gtk::Stack.cast(template_child("compareBtnStack"))
       @progressbar = Gtk::ProgressBar.cast(template_child("progressbar"))
 
-      @mainFileChooserNative = Gtk::FileChooserNative.cast(template_child("mainFileChooserNative"))
-      @compareBtnFileChooserNative = Gtk::FileChooserNative.cast(template_child("compareBtnFileChooserNative"))
-      @mainFileChooserNative.transient_for = self
-      @compareBtnFileChooserNative.transient_for = self
-
       @verifyTextView.buffer.notify_signal["text"].connect do
         Collision::LOGGER.debug { "Verify tool notify event" }
 
         handle_input_change(@verifyTextView.buffer.text)
-      end
-
-      @mainFileChooserNative.response_signal.connect do |response|
-        next unless response == -3
-
-        gio_files = [] of Gio::File
-        files = @mainFileChooserNative.files
-        files.n_items.times do |i|
-          gio_files << Gio::File.cast(files.item(i).not_nil!)
-        end
-
-        loading
-        self.file = gio_files.shift
-        open_files(Adw::Application.cast(self.application.not_nil!), gio_files) unless gio_files.empty? || self.application.nil?
-      rescue ex
-        Collision::LOGGER.debug { ex }
-      end
-
-      @compareBtnFileChooserNative.response_signal.connect do |response|
-        next unless response == -3
-
-        self.comparefile = @compareBtnFileChooserNative.file.not_nil!
-      rescue ex
-        Collision::LOGGER.debug { ex }
       end
 
       @welcomeBtn.clicked_signal.connect(->on_open_btn_clicked)
@@ -269,7 +252,16 @@ module Collision
       @compareBtn.add_controller(Collision::DragNDrop.new(->comparefile=(Gio::File)).controller)
 
       @compareBtn.clicked_signal.connect do
-        @compareBtnFileChooserNative.show
+        Gtk::FileDialog.new(
+          title: Gettext.gettext("Choose a File"),
+          modal: true
+        ).open(self, nil) do |obj, result|
+          next if (file = obj.as(Gtk::FileDialog).open_finish(result)).nil?
+
+          self.comparefile = file
+        rescue ex
+          Collision::LOGGER.debug { ex }
+        end
       end
     end
   end
