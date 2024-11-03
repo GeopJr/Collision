@@ -4,13 +4,14 @@
 # Kaz Sibuya <sibuyakazokuu@gmail.com>, 2022.
 # Himmel <anonymous.colt330@aleeas.com>, 2024.
 # Ryo Nakano <ryonakaknock3@gmail.com>, 2024.
+# Himmel <Himmel@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-05-24 13:09+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"PO-Revision-Date: 2024-11-03 16:09+0000\n"
+"Last-Translator: Himmel <Himmel@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/collision/"
 "collision/ja/>\n"
 "Language: ja\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -182,7 +183,7 @@ msgstr ""
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
 msgstr ""
-"Himmel https://hosted.weblate.org/user/Himmel/\n"
+"Himmel\n"
 "Sibuya Kaz <sibuyakazokuu@gmail.com>"
 
 #. The variables are numbers
