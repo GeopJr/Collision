@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Henri <contact@hen.ee>, 2022.
+# Priit Jõerüüt <hwlate@joeruut.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2022-06-08 15:27+0000\n"
-"Last-Translator: Henri <contact@hen.ee>\n"
+"PO-Revision-Date: 2024-12-04 08:53+0000\n"
+"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/collision/"
 "collision/et/>\n"
 "Language: et\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -35,7 +36,7 @@ msgstr "Kontrolli failide räsiväärtuseid"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;räsi;kontrollsumma;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -55,10 +56,14 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"See tarvik proovib antud probleemi lahendada. Collisionil on lihtne ja selge "
+"kasutajaliides ning kõik huvilised, sõltumata vanusest ja kogemusest, saavad "
+"luua ja võrrelda MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 ja Adler32 "
+"räsiväärtuseid."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Uus aken"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -66,11 +71,11 @@ msgstr "_Võrdle räsifunktsioone"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_Kiirklahvid"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_Collision'ist"
+msgstr "_Collisioni teave"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
@@ -94,11 +99,11 @@ msgstr "_Ava fail"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Arvutame räsiväärtuseid"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Natuke võib kuluda aega"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -114,11 +119,11 @@ msgstr "Kontrollsumma"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 või Adler32 räsiväärtus"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Lisa MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 räsiväärtus"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -138,7 +143,7 @@ msgstr "Kopeeri"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "Üldised seadistused"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
@@ -146,23 +151,23 @@ msgstr "Ava fail"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Näita kiirklahve"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Uus aken"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Sulge aken"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "Välju"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "Kontrolli räsiväärtuseid"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
@@ -174,21 +179,23 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr "Henri https://hen.ee"
+msgstr ""
+"Henri https://hen.ee\n"
+"Priit Jõerüüt"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "Räsiväärtuste arvutuse edenemine: %d / %d"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Nad klapivad omavahel"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Nad ei klapi omavahel"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
