@@ -7,32 +7,35 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-01-29 04:01+0000\n"
+"Last-Translator: reimu105 <peter112548@gmail.com>\n"
+"Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
+"projects/collision/collision/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
 #: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "雜湊值產生器"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "檢查您檔案的雜湊值"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -41,7 +44,8 @@ msgid ""
 "time, it has become very easy to get your hands on a file that has been "
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
-msgstr ""
+msgstr "驗證你下載或接收的文件是否確實是您所期望的文件經常被忽視或太耗時。同時，由於"
+"惡意網頁和其他行為者的大量增加，取得被篡改的文件也變得非常容易。"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -49,136 +53,140 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"這款工具旨在解決這一問題。 Collision "
+"的使用者介面簡潔明了，讓任何年齡和經驗的人可以產生、比較和驗證 "
+"MD5、SHA-256、SHA-512、SHA-1、Blake3、CRC32 和 Adler32 雜湊值。"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_新視窗"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_比較雜湊功能"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_鍵盤快捷鍵"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr ""
+msgstr "_關於Collision"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr ""
+msgstr "選擇一個檔案"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr ""
+msgstr "_打開"
 
 #: data/ui/application.ui:61
 msgid "Open…"
-msgstr ""
+msgstr "打開…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
-msgstr ""
+msgstr "選單"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr ""
+msgstr "_打開檔案"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "計算雜湊值"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "這可能需要一段時間"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr ""
+msgstr "雜湊值"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr ""
+msgstr "校驗"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr ""
+msgstr "校驗和"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5、SHA-1、SHA-256、SHA-512、Blake3、CRC32 或 Adler32 雜湊值"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "插入 MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 雜湊值"
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr ""
+msgstr "檔案"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "選擇另一個檔案來對照檢查"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
-msgstr ""
+msgstr "選擇檔案…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "一般的"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr ""
+msgstr "打開檔案"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "顯示鍵盤快捷鍵"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "新視窗"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "關閉視窗"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "退出"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "檢查雜湊值"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr ""
+msgstr "reimu105<https://hosted.weblate.org/user/reimu105/>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "已計算 %d 個雜湊值（共 %d 個）"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "匹配"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "不匹配"
