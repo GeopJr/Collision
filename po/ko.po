@@ -7,13 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-02-22 04:49+0000\n"
+"Last-Translator: Yonjae Lee <yjyj93@gmail.com>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/collision/"
+"collision/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -23,7 +26,7 @@ msgstr ""
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "해시 생성기"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
@@ -42,6 +45,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"받았거나 다운로드한 파일이 내가 기대했던 파일인지 확인하는 과정은 대부분 "
+"무시되거나 하는 데에 시간이 많이 걸립니다. 그와 동시에 악성 웹페이지들 및 "
+"기타 원인 제공자들이 크게 늘어남으로 인해 우리는 너무 쉽게 변조된 파일을 "
+"얻을 수 있게 되었습니다."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -49,6 +56,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"이 툴은 이 문제를 해결하고자 합니다. Collision은 간결한 UI를 제공하여 나이와 "
+"경험에 상관없이 누구나 MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 및 "
+"Adler32 해시를 생성, 비교 및 확인할 수 있게 합니다."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -80,7 +90,7 @@ msgstr ""
 
 #: data/ui/application.ui:98
 msgid "Menu"
-msgstr ""
+msgstr "메뉴"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
@@ -104,7 +114,7 @@ msgstr ""
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr ""
+msgstr "체크섬"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
@@ -116,11 +126,11 @@ msgstr ""
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr ""
+msgstr "파일"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "비교할 대상 파일을 선택하세요"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
@@ -128,7 +138,7 @@ msgstr ""
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr ""
+msgstr "복사"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
@@ -136,23 +146,23 @@ msgstr ""
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr ""
+msgstr "파일 열기"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "키보드 단축키 표시"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "새 창 열기"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "창 닫기"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "종료"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
@@ -167,18 +177,18 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr ""
+msgstr "Yonjae Lee <yonjae.lee.93@gmail.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d / %d 개의 해시 계산됨"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "일치함"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "일치하지 않음"
