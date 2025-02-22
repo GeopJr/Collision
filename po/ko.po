@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-02-22 04:49+0000\n"
+"PO-Revision-Date: 2025-02-22 20:44+0000\n"
 "Last-Translator: Yonjae Lee <yjyj93@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/collision/"
 "collision/ko/>\n"
@@ -102,7 +102,7 @@ msgstr ""
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "조금 시간이 걸릴 수 있습니다"
 
 #: data/ui/application.ui:175
 msgid "Hash"
