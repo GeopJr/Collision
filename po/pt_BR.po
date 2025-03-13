@@ -4,15 +4,15 @@
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 # Gabriel Gian <gabrielgian@protonmail.com>, 2022.
 # Gustavo Costa <xfgusta@gmail.com>, 2022.
-# Fúlvio Alves <fga.fulvio@gmail.com>, 2022, 2023, 2024.
+# Fúlvio Alves <fga.fulvio@gmail.com>, 2022, 2023, 2024, 2025.
 # Tiago Lucas Flach <tiagolucas9830@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-08-04 22:09+0000\n"
-"Last-Translator: Tiago Lucas Flach <tiagolucas9830@gmail.com>\n"
+"PO-Revision-Date: 2025-03-15 00:01+0000\n"
+"Last-Translator: Fúlvio Alves <fga.fulvio@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "collision/collision/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -185,8 +185,10 @@ msgid "translator-credits"
 msgstr ""
 "Gabriel Gian\n"
 "Rafael Fontenelle\n"
+"Gabriel Gian <gabrielgian@protonmail.com>\n"
 "Gustavo Costa <xfgusta@gmail.com>\n"
-"Fúlvio Alves <fga.fulvio@gmail.com>"
+"Fúlvio Alves <fga.fulvio@gmail.com>\n"
+"Tiago Lucas Flach <tiagolucas9830@gmail.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
