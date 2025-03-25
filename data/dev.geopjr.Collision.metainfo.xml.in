@@ -48,6 +48,18 @@
     <color type="primary" scheme_preference="dark">#26a269</color>
   </branding>
   <releases>
+    <release version="3.10.0" date="2025-03-25">
+      <description translate="no">
+        <ul>
+          <li>Visual refinements to match the state of the art of GNOME apps</li>
+          <li>Added StartupNotify to the desktop file</li>
+          <li>Fixed a crash due to accessing GTK widgets from another thread</li>
+          <li>Fixed progressbar not being accurate</li>
+          <li>Updated dependencies</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.9.0" date="2024-10-01">
       <description translate="no">
         <ul>
