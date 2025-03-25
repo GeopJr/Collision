@@ -7,7 +7,7 @@ class Collision::Action::About < Collision::Action
   end
 
   def on_activate
-    Adw::AboutDialog.new(
+    dialog = Adw::AboutDialog.new(
       application_name: Gettext.gettext("Collision"),
       application_icon: "dev.geopjr.Collision",
       version: VERSION,
@@ -21,6 +21,11 @@ class Collision::Action::About < Collision::Action
       license_type: Gtk::License::Bsd,
       debug_info: TROUBLESHOOTING.to_s.gsub(/File set: .+\n/, "File set: REDACTED\n"), # Attempt to redact file paths.
       debug_info_filename: "Collision-#{Time.utc.to_unix_ms}.txt"
-    ).present(@app.active_window)
+    )
+    dialog.add_other_app("dev.geopjr.Archives", Gettext.gettext("Archives"), Gettext.gettext("Create and view web archives"))
+    dialog.add_other_app("dev.geopjr.Calligraphy", Gettext.gettext("Calligraphy"), Gettext.gettext("Turn text into ASCII banners"))
+    dialog.add_other_app("dev.geopjr.Tuba", Gettext.gettext("Tuba"), Gettext.gettext("Browse the Fediverse"))
+
+    dialog.present(@app.active_window)
   end
 end
