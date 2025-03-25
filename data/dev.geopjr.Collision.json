@@ -46,6 +46,7 @@
         "append-path": "/run/build/collision/crystal/bin/"
       },
       "build-commands": [
+        "sed -i 's/{{ `shards version \"#{__DIR__}\"`.strip.stringify }}/{{read_file(\"#{__DIR__}\\/..\\/..\\/shard.yml\").split(\"version: \")[1].split(\"\\\\n\")[0]}}/' ./lib/gi-crystal/src/generator/main.cr",
         "for i in ./lib/*/; do ln -snf \"..\" \"$i/lib\"; done",
         "cd lib/gi-crystal && crystal build src/generator/main.cr && cd ../.. && mkdir ./bin && cp lib/gi-crystal/main ./bin/gi-crystal",
         "./bin/gi-crystal",
