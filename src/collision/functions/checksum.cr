@@ -53,6 +53,9 @@ module Collision
 
     def generate(filename : String, progressbar : Gtk::ProgressBar? = nil, &block : Hash(Symbol, String) ->)
       hash_amount = Collision::HASH_FUNCTIONS.size
+      progressbar.fraction = 0.0
+      progressbar.text = sprintf(Gettext.gettext("%d of %d hashes calculated"), {0, hash_amount})
+
       Collision::HASH_FUNCTIONS.each_with_index do |hash_key, hash_value, i|
         proc = ->(fiber_no : Int32) do
           Collision.spawn do
@@ -74,9 +77,12 @@ module Collision
           t_res = @channel.receive
           res[t_res[0]] = t_res[1]
 
-          unless progressbar.nil?
-            progressbar.fraction = Math.min(progressbar.fraction + step, 1.0)
-            progressbar.text = sprintf(Gettext.gettext("%d of %d hashes calculated"), {i + 1, hash_amount})
+          GLib.idle_add do
+            unless progressbar.nil?
+              progressbar.fraction = Math.min(progressbar.fraction + step, 1.0)
+              progressbar.text = sprintf(Gettext.gettext("%d of %d hashes calculated"), {i + 1, hash_amount})
+            end
+            false
           end
         end
 
