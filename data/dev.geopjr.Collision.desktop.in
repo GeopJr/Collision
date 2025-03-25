@@ -1,5 +1,6 @@
 [Desktop Entry]
 Type=Application
+StartupNotify=true
 StartupWMClass=collision
 Exec=collision %F
 Name=Collision
