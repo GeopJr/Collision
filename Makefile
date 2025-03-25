@@ -14,6 +14,9 @@ build:
 check test:
 	$(CRYSTAL_LOCATION)crystal spec -Dpreview_mt --order random
 
+run:
+	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards run -Dpreview_mt
+
 gresource:
 	glib-compile-resources --sourcedir data --target data/dev.geopjr.Collision.gresource data/dev.geopjr.Collision.gresource.xml
 

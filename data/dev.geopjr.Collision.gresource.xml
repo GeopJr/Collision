@@ -11,4 +11,10 @@
     <file compressed="true" preprocess="xml-stripblanks">ui/hash_row.ui</file>
     <file compressed="true" preprocess="xml-stripblanks" alias="gtk/help-overlay.ui">ui/shortcuts_window.ui</file>
   </gresource>
+
+  <gresource prefix="/dev/geopjr/Collision/icons/scalable/apps/">
+    <file alias="dev.geopjr.Archives.svg" preprocess="xml-stripblanks">icons/dev.geopjr.Archives.svg</file>
+    <file alias="dev.geopjr.Calligraphy.svg" preprocess="xml-stripblanks">icons/dev.geopjr.Calligraphy.svg</file>
+    <file alias="dev.geopjr.Tuba.svg" preprocess="xml-stripblanks">icons/dev.geopjr.Tuba.svg</file>
+  </gresource>
 </gresources>
