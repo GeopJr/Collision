@@ -62,7 +62,7 @@ uninstall:
 validate-appstream:
 	appstreamcli validate ./data/dev.geopjr.Collision.metainfo.xml.in
 
-windows:
+windows: bindings
 	rm -rf "collision_windows"
 	mkdir -p "collision_windows/bin"
 	mkdir -p "collision_windows/share/applications"
