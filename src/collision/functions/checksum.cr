@@ -1,4 +1,3 @@
-require "non-blocking-spawn"
 require "digest/md5"
 require "digest/sha1"
 require "digest/sha256"
@@ -30,11 +29,9 @@ module Collision
     end
   end
 
-  def self.spawn(&block)
-    Non::Blocking.spawn(same_thread: false, &block)
-  end
-
   class Checksum
+    @mt_context = Fiber::ExecutionContext::MultiThreaded.new("worker-threads", 4)
+    @s_context = Fiber::ExecutionContext::SingleThreaded.new("channel-receiver")
     @digest = gen_digest
     @channel = Channel(Tuple(Symbol, String)).new
 
@@ -58,7 +55,7 @@ module Collision
 
       Collision::HASH_FUNCTIONS.each_with_index do |hash_key, hash_value, i|
         proc = ->(fiber_no : Int32) do
-          Collision.spawn do
+          @mt_context.spawn do
             LOGGER.debug { "Spawned fiber #{hash_value}" }
 
             hash_value = calculate(hash_key, filename)
@@ -70,7 +67,7 @@ module Collision
         proc.call(i)
       end
 
-      Collision.spawn do
+      @s_context.spawn do
         res = Hash(Symbol, String).new
         step = 1/hash_amount
         hash_amount.times do |i|

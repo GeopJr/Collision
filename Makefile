@@ -9,13 +9,13 @@ bindings:
 	./bin/gi-crystal || $(CRYSTAL_LOCATION)shards install && ./bin/gi-crystal
 
 build:
-	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards build -Dpreview_mt --release --no-debug
+	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards build -Dpreview_mt -Dexecution_context --release --no-debug
 
 check test:
-	$(CRYSTAL_LOCATION)crystal spec -Dpreview_mt --order random
+	$(CRYSTAL_LOCATION)crystal spec -Dpreview_mt -Dexecution_context --order random
 
 run:
-	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards run -Dpreview_mt
+	COLLISION_LOCALE_LOCATION="$(PREFIX)$(LOCALE_LOCATION)" $(CRYSTAL_LOCATION)shards run -Dpreview_mt -Dexecution_context
 
 gresource:
 	glib-compile-resources --sourcedir data --target data/dev.geopjr.Collision.gresource data/dev.geopjr.Collision.gresource.xml

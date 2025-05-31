@@ -6,10 +6,11 @@ describe Collision::Checksum do
     path = Path["./spec/test.txt"].expand(home: true)
     hashes = Hash(Symbol, String).new
     channel = Channel(Hash(String, String)).new
+    mt_context = Fiber::ExecutionContext::MultiThreaded.new("worker-threads", 4)
 
     Collision::CLIPBOARD_HASH.keys.each do |x|
       hashes[x] = ""
-      Collision.spawn do
+      mt_context.spawn do
         hashes[x] = Collision::Checksum.new.calculate(x, path.to_s)
       end
     end
