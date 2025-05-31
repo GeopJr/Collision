@@ -12,9 +12,6 @@ dependencies:
   libadwaita:
     github: hugopl/libadwaita.cr
     version: ~> 0.1.0
-  non-blocking-spawn:
-    github: GeopJr/non-blocking-spawn
-    version: ~> 1.1.0
   gettext:
     github: GeopJr/gettext.cr
     version: ~> 1.0.0

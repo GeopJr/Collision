@@ -2,12 +2,6 @@ require "./license.cr"
 require "libadwaita"
 require "gettext"
 require "log"
-require "non-blocking-spawn"
-
-if Non::Blocking.threads.size == 0
-  STDERR.puts "App is running in single-threaded mode. Exiting."
-  exit(1)
-end
 
 module Collision
   # Enable debug logs if debug build or --debug is passed.
@@ -147,4 +141,7 @@ app.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), Str
 
 # ARGV but without flags, passed to Application.
 clean_argv = [PROGRAM_NAME].concat(ARGV.reject { |x| x.starts_with?('-') })
-exit(app.run(clean_argv))
+gtk = Fiber::ExecutionContext::Isolated.new("Gtk") do
+  app.run(clean_argv)
+end
+gtk.wait

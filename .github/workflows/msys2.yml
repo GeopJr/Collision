@@ -1,0 +1,45 @@
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+name: Windows
+jobs:
+  msys2:
+    name: "Windows Builder"
+    strategy:
+      matrix:
+        variant:
+          - arch: x86_64
+            runner: windows-latest
+            sys: mingw64
+            package: x86_64
+          # - arch: aarch64
+          #   runner: windows-11-arm
+          #   sys: CLANGARM64
+          #   package: clang-aarch64
+      # Don't fail the whole workflow if one architecture fails
+      fail-fast: false
+    runs-on: ${{ matrix.variant.runner }}
+    # if: ${{ false }}
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: 'true'
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: ${{ matrix.variant.sys }}
+          update: true
+          install: git make zip wget mingw-w64-${{ matrix.variant.package }}-desktop-file-utils mingw-w64-${{ matrix.variant.package }}-imagemagick mingw-w64-${{ matrix.variant.package }}-pkg-config mingw-w64-${{ matrix.variant.package }}-libblake3 mingw-w64-${{ matrix.variant.package }}-shards mingw-w64-${{ matrix.variant.package }}-gobject-introspection mingw-w64-${{ matrix.variant.package }}-crystal mingw-w64-${{ matrix.variant.package }}-gtk4 mingw-w64-${{ matrix.variant.package }}-libadwaita mingw-w64-${{ matrix.variant.package }}-gettext
+      - run: make windows ${{ (matrix.variant.arch == 'aarch64' && 'msys_sys=clangarm64') || '' }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: collision_windows_${{ matrix.variant.arch }}
+          path: collision_windows/
+

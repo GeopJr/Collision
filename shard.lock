@@ -24,10 +24,6 @@ shards:
     git: https://github.com/hugopl/libadwaita.cr.git
     version: 0.1.0
 
-  non-blocking-spawn:
-    git: https://github.com/geopjr/non-blocking-spawn.git
-    version: 1.1.0
-
   pango:
     git: https://github.com/hugopl/pango.cr.git
     version: 0.3.1

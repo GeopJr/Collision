@@ -16,3 +16,7 @@ po/mo/
 data/*.desktop
 data/*.metainfo.xml
 build/
+./collision_windows/
+./collision_windows.zip
+data/icons/*.ico
+data/icons/*.png
