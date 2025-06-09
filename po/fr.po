@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Irénée Thirion <irenee.thirion@outlook.fr>, 2022.
 # rene-coty <irenee.thirion@e.email>, 2022.
+# Zohir Tamda <120991635+tamdaz@users.noreply.github.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2022-12-16 22:09+0000\n"
-"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
+"PO-Revision-Date: 2025-06-09 13:01+0000\n"
+"Last-Translator: Zohir Tamda <120991635+tamdaz@users.noreply.github.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/collision/"
 "collision/fr/>\n"
 "Language: fr\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -36,7 +37,7 @@ msgstr "Vérifiez les hachages de vos fichiers"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5; sha1; sha256; sha512; blake3; crc32; adler32; hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -53,15 +54,20 @@ msgstr ""
 "mégarde sur un fichier altéré ou corrompu."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
+#, fuzzy
 msgid ""
 "This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Cet outil vise à résoudre ce problème. Collision vient avec une simple "
+"interface graphique, permettant à toute personne, quel que soit son âge ou "
+"son niveau d'expérience, de générer, comparer et vérifier les hachages MD5, "
+"SHA-256, SHA-512, SHA-1, Blake3, CRC32 et Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Nouvelle fenêtre"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
@@ -96,12 +102,13 @@ msgid "_Open a File"
 msgstr "_Ouvrir un fichier"
 
 #: data/ui/application.ui:139
+#, fuzzy
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Calcul des hachages"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Cela peut prendre du temps"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -116,12 +123,16 @@ msgid "Checksum"
 msgstr "Somme de contrôle"
 
 #: data/ui/application.ui:234
+#, fuzzy
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "Hachage MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 ou Adler32"
 
 #: data/ui/application.ui:263
+#, fuzzy
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
 msgstr ""
+"Insérer une hachage MD5 / SHA-1 / SHA-256 / SHA-512 / Blake3 / CRC32 / "
+"Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -153,11 +164,11 @@ msgstr "Afficher les raccourcis clavier"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Nouvelle fenêtre"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Fermer la fenêtre"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
@@ -176,22 +187,26 @@ msgstr ""
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
+#, fuzzy
 msgid "translator-credits"
-msgstr "Irénée Thirion"
+msgstr ""
+"Irénée Thirion\n"
+"Zohir Tamda"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d hachages sur %d calculés"
 
 #: src/collision/functions/feedback.cr:204
+#, fuzzy
 msgid "They Match"
-msgstr ""
+msgstr "Ceux-ci correspondent"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Ceux-ci ne correspondent pas"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

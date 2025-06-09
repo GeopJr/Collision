@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Henri <contact@hen.ee>, 2022.
-# Priit Jõerüüt <hwlate@joeruut.com>, 2024.
+# Priit Jõerüüt <hwlate@joeruut.com>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-12-04 08:53+0000\n"
+"PO-Revision-Date: 2025-04-01 12:55+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/collision/"
 "collision/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -32,11 +32,13 @@ msgstr "Räsiväärtuse generaator"
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "Kontrolli failide räsiväärtuseid"
+msgstr "Kontrolli failide räsiväärtusi"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;räsi;kontrollsumma;"
+msgstr ""
+"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;räsi;kontrollsumma;räsiväärtus;räsid;räsimine;"
+" kollisioon;collision;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -46,9 +48,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"Kontrollida faile, mida sa allalaadisid, on liiga aeganõutev. Samal ajal, on "
-"lihtne saada faili, mis on rikutud või kaaperdatud, kuna internet on täis "
-"pahatahtlikke veebisaite ja teisi pahatahtlikke."
+"On aeganõudev kontrollida sinu allalaaditud faile. Samal ajal on lihtne "
+"komistada faili otsa, mis on rikutud või kaaperdatud, internet on ju teadagi "
+"täis pahatahtlikke veebisaite ja teisi osapooli, kelle soovid pole kõige "
+"ausamad."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -167,7 +170,7 @@ msgstr "Välju"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Kontrolli räsiväärtuseid"
+msgstr "Kontrolli räsiväärtusi"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
