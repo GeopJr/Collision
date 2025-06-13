@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-06-09 13:01+0000\n"
+"PO-Revision-Date: 2025-06-14 20:02+0000\n"
 "Last-Translator: Zohir Tamda <120991635+tamdaz@users.noreply.github.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/collision/"
 "collision/fr/>\n"
@@ -54,14 +54,13 @@ msgstr ""
 "mégarde sur un fichier altéré ou corrompu."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
-#, fuzzy
 msgid ""
 "This tool aims to solve that. Collision comes with a simple &amp; clean UI, "
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
 "Cet outil vise à résoudre ce problème. Collision vient avec une simple "
-"interface graphique, permettant à toute personne, quel que soit son âge ou "
+"interface utilisateur, permettant à toute personne, quel que soit son âge ou "
 "son niveau d'expérience, de générer, comparer et vérifier les hachages MD5, "
 "SHA-256, SHA-512, SHA-1, Blake3, CRC32 et Adler32."
 
@@ -102,7 +101,6 @@ msgid "_Open a File"
 msgstr "_Ouvrir un fichier"
 
 #: data/ui/application.ui:139
-#, fuzzy
 msgid "Calculating Hashes"
 msgstr "Calcul des hachages"
 
@@ -123,12 +121,10 @@ msgid "Checksum"
 msgstr "Somme de contrôle"
 
 #: data/ui/application.ui:234
-#, fuzzy
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr "Hachage MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 ou Adler32"
+msgstr "Hachages MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 ou Adler32"
 
 #: data/ui/application.ui:263
-#, fuzzy
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
 msgstr ""
 "Insérer une hachage MD5 / SHA-1 / SHA-256 / SHA-512 / Blake3 / CRC32 / "
@@ -176,7 +172,7 @@ msgstr "Quitter"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Sommes de contrôle"
+msgstr "Vérifier les sommes de contrôle"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
@@ -187,7 +183,6 @@ msgstr ""
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
-#, fuzzy
 msgid "translator-credits"
 msgstr ""
 "Irénée Thirion\n"
@@ -200,7 +195,6 @@ msgid "%d of %d hashes calculated"
 msgstr "%d hachages sur %d calculés"
 
 #: src/collision/functions/feedback.cr:204
-#, fuzzy
 msgid "They Match"
 msgstr "Ceux-ci correspondent"
 
