@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Sergio Varela <sergitroll9@gmail.com>, 2022, 2023.
+# Ibai Oihanguren Sala <ibaios@disroot.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-09-15 11:06+0000\n"
-"Last-Translator: Sergio Varela <sergitroll9@gmail.com>\n"
+"PO-Revision-Date: 2025-06-18 12:03+0000\n"
+"Last-Translator: Ibai Oihanguren Sala <ibaios@disroot.org>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/collision/"
 "collision/eu/>\n"
 "Language: eu\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -26,16 +27,16 @@ msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Hashe-sorgailua"
+msgstr "Hash sorgailua"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "Egiaztatu zure artxiboetako hasheak"
+msgstr "Egiaztatu zure fitxategien hashak"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -45,7 +46,7 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"Egiaztatu deskargatu edo jaso den fitxategi bat benetan espero zena dela, "
+"Deskargatu edo jaso den fitxategi bat benetan espero zena dela egiaztatzea "
 "askotan oharkabean pasatzen den edo denbora gehiegi daraman zerbait da. Aldi "
 "berean, oso erraza bihurtu da manipulatu den fitxategi bat eskuratzea, web "
 "orri maltzurren eta beste eragile batzuen gorakada masiboaren ondorioz."
@@ -56,14 +57,18 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"Tresna honek arazo horri konponbidea eman nahi dio. Collisionek erabiltzaile-"
+"interfaze sinplea eta garbia dauka, edozein adin edo esperientziadunek "
+"sortu, alderatu eta egiazta ahal ditzan MD5, SHA-256, SHA-512, SHA-1, "
+"Blake3, CRC32 eta Adler32 hashak."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "_Leiho berria"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "_Konparatu hash funtzioak"
+msgstr "_Hash funtzioen alderaketa"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
@@ -71,11 +76,11 @@ msgstr "_Teklatuaren lasterbideak"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_Kolisioari buruz"
+msgstr "Collisioni _buruz"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr "Aukeratu fitxategi bat"
+msgstr "Aukeratu fitxategia"
 
 #: data/ui/application.ui:60
 msgid "_Open"
@@ -91,15 +96,15 @@ msgstr "Menua"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr "_Artxibo bat ireki"
+msgstr "_Ireki fitxategia"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "Hashak kalkulatzen"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "Honek denbora beharko du"
 
 #: data/ui/application.ui:175
 msgid "Hash"
@@ -115,15 +120,15 @@ msgstr "Egiaztapenaren batura (Checksum)"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 edo Adler32 hasha"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "Sartu MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 hasha"
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr "Artxiboa"
+msgstr "Fitxategia"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
@@ -143,7 +148,7 @@ msgstr "Orokorra"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "Artxibo bat ireki"
+msgstr "Ireki fitxategia"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
@@ -151,11 +156,11 @@ msgstr "Erakutsi teklatuaren lasterbideak"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "Leiho berria"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "Itxi leihoa"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
@@ -163,7 +168,7 @@ msgstr "Irten"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Hasheak egiaztatu"
+msgstr "Egiaztatu hashak"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
@@ -175,21 +180,23 @@ msgstr ""
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr "Sergio Varela <sergiovg01@outlook.com>"
+msgstr ""
+"Sergio Varela <sergiovg01@outlook.com>\n"
+"Ibai Oihanguren Sala"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "%d/%d hash kalkulatuta"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "Bat datoz"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "Ez datoz bat"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
