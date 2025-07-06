@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Yonjae Lee <yjyj93@gmail.com>, 2025.
+# Jason Son <weblate.sash858@passmail.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-02-22 20:44+0000\n"
-"Last-Translator: Yonjae Lee <yjyj93@gmail.com>\n"
+"PO-Revision-Date: 2025-07-07 08:03+0000\n"
+"Last-Translator: Jason Son <weblate.sash858@passmail.net>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/collision/"
 "collision/ko/>\n"
 "Language: ko\n"
@@ -16,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10.1-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
 #: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
@@ -30,12 +31,13 @@ msgstr "해시 생성기"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
+#, fuzzy
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "파일의 해시를 확인하세요"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -61,32 +63,33 @@ msgstr ""
 "Adler32 해시를 생성, 비교 및 확인할 수 있게 합니다."
 
 #: data/ui/application.ui:6
+#, fuzzy
 msgid "_New Window"
-msgstr ""
+msgstr "_새 창"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "_해시 함수 비교"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "_키보드 단축키"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr ""
+msgstr "_Collision에 대하여"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr ""
+msgstr "파일을 선택하세요"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr ""
+msgstr "_열기"
 
 #: data/ui/application.ui:61
 msgid "Open…"
-msgstr ""
+msgstr "열기…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
@@ -94,11 +97,11 @@ msgstr "메뉴"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr ""
+msgstr "_파일 열기"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "해시 연산 중입니다"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
@@ -106,11 +109,11 @@ msgstr "조금 시간이 걸릴 수 있습니다"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr ""
+msgstr "해시"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr ""
+msgstr "검증"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
