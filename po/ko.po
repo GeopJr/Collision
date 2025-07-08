@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-07-07 08:03+0000\n"
+"PO-Revision-Date: 2025-07-09 03:01+0000\n"
 "Last-Translator: Jason Son <weblate.sash858@passmail.net>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/collision/"
 "collision/ko/>\n"
@@ -31,7 +31,6 @@ msgstr "해시 생성기"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
-#, fuzzy
 msgid "Check hashes for your files"
 msgstr "파일의 해시를 확인하세요"
 
@@ -63,7 +62,6 @@ msgstr ""
 "Adler32 해시를 생성, 비교 및 확인할 수 있게 합니다."
 
 #: data/ui/application.ui:6
-#, fuzzy
 msgid "_New Window"
 msgstr "_새 창"
 
