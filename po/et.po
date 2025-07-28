@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Henri <contact@hen.ee>, 2022.
 # Priit Jõerüüt <hwlate@joeruut.com>, 2024, 2025.
+# Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-04-01 12:55+0000\n"
-"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
+"PO-Revision-Date: 2025-07-29 19:13+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/collision/"
 "collision/et/>\n"
 "Language: et\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -184,7 +185,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Henri https://hen.ee\n"
-"Priit Jõerüüt"
+"Priit Jõerüüt 2025"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
