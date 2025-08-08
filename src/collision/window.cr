@@ -73,7 +73,7 @@ module Collision
     # Should be used instead of Collision#file=(filepath : Path)
     # unless path is a File and exists.
     def file=(file : Gio::File)
-      Collision::FileUtils.file?(file.path.not_nil!)
+      return unless Collision::FileUtils.file?(file.path.not_nil!)
       self.file = file.path.not_nil!
     end
 
@@ -160,7 +160,7 @@ module Collision
     def comparefile=(file : Gio::File)
       Collision::LOGGER.debug { "Begin comparing tool" }
       file_path = file.path.not_nil!
-      Collision::FileUtils.file?(file_path)
+      return unless Collision::FileUtils.file?(file_path)
 
       @compareBtnStack.visible_child_name = "spinner"
       @compareBtn.remove_css_class("success")
