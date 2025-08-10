@@ -30,7 +30,7 @@ module Collision
   end
 
   class Checksum
-    @mt_context = Fiber::ExecutionContext::MultiThreaded.new("worker-threads", 4)
+    @mt_context : Fiber::ExecutionContext::MultiThreaded = Fiber::ExecutionContext::MultiThreaded.new("worker-threads", 4)
     @s_context = Fiber::ExecutionContext::SingleThreaded.new("channel-receiver")
     @digest = gen_digest
     @channel = Channel(Tuple(Symbol, String)).new
