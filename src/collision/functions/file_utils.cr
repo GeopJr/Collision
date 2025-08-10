@@ -14,16 +14,10 @@ module Collision::FileUtils
   # Checks if path is a File and exists.
   # If it doesn't, it will either raise an exception
   # or just log an error based on the `exception` param.
-  def file?(file : Path | String, exception : Bool = true) : Bool
+  def file?(file : Path | String) : Bool
     return true if File.file?(file)
 
-    msg = "\"#{file}\" does not exist or is not a File"
-    if exception
-      raise msg
-    else
-      Collision::LOGGER.debug { msg }
-    end
-
+    Collision::LOGGER.debug { "\"#{file}\" does not exist or is not a File" }
     false
   end
 
