@@ -15,7 +15,6 @@ jobs:
         run: crystal tool format --check
   flatpak-builder:
     name: "Flatpak Builder"
-    runs-on: ubuntu-latest
     needs: [ lint ]
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-48
