@@ -4,13 +4,14 @@
 # Ibrahim Muhammad <ebraheem010@gmail.com>, 2022.
 # bonbonboi <hamzah.abusamak@gmail.com>, 2022.
 # Ali Aljishi <ahj696@hotmail.com>, 2023.
+# Ahmed Najmawi <iramosu@protonmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2023-09-27 12:01+0000\n"
-"Last-Translator: Ali Aljishi <ahj696@hotmail.com>\n"
+"PO-Revision-Date: 2025-07-24 05:03+0000\n"
+"Last-Translator: Ahmed Najmawi <iramosu@protonmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/collision/"
 "collision/ar/>\n"
 "Language: ar\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -29,16 +30,16 @@ msgstr "تصادم"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "مولِّد هاش"
+msgstr "مولِّد تلبيد"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "تحقَّق من هاش ملفَّاتك"
+msgstr "تحقَّق من تلبيد ملفَّاتك"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;تلبيد;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -48,8 +49,8 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"يشيع التغافل عن التحقُّق من أن الملفَّات التي نزَّلتها هي حقًّا ما تريد، ولعلَّ سبب "
-"ذلك هو استغراقه وقتًا كثيرًا، ويتزامن هذا مع سهولة الحصول على ملفَّات معدَّلة، "
+"يشيع التغافل عن التحقق من أن الملفات التي نزَّلتها هي حقًا ما تريد، ولعل سبب "
+"ذلك هو استغراقه وقتًا كثيرًا، ويتزامن هذا مع سهولة الحصول على ملفات معدلة، "
 "وذلك لأن أعداد الصفحات الخبيثة وغيرهم من جهات يزداد تزايدًا."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
@@ -58,6 +59,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"تهدف هذه الأداة لإصلاح هذا. يأتي «تصادم» مع واجهة واضحة وبسيطة، مما يتيح لأي "
+"أحد بغض النظر عن عمره أو خبرته توليد ومقارنة تلبيدات MD5، وSHA-256، وSHA-512،"
+" وSHA-1، وBlake3، وCRC32، وAdler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -65,7 +69,7 @@ msgstr "نافذة _جديدة"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "_قارن وظائف هاش"
+msgstr "_قارن وظائف التلبيد"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
@@ -73,7 +77,7 @@ msgstr "ا_ختصارات لوح المفاتيح"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr "_عن «تصادم»"
+msgstr "_عَنْ «تصادم»"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
@@ -93,19 +97,19 @@ msgstr "القائمة"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr "ا_فتح ملفًّا"
+msgstr "ا_فتح ملفًا"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "يحسب التلبيدات"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "سيستغرق هذا فترة"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr "الهاش"
+msgstr "التلبيد"
 
 #: data/ui/application.ui:191
 msgid "Verify"
@@ -113,15 +117,15 @@ msgstr "تحقَّق"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr "المجموع الاختباري"
+msgstr "تدقيق المجموع"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "تلبيد MD5، وSHA-1، وSHA-256، وSHA-512، وBlake3، وCRC32، وAdler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
+msgstr "أدرِج تلبيد MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -129,11 +133,11 @@ msgstr "ملف"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr "اختر ملفًّا آخر لتقارنه"
+msgstr "اختر ملفًا آخر لتقارنه"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
-msgstr "اختر ملفًّا…"
+msgstr "اختر ملفًا…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
@@ -145,11 +149,11 @@ msgstr "عام"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "افتح ملفًّا"
+msgstr "افتح ملفًا"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr "أظهر اختصارات لوح المفاتيح"
+msgstr "أظهِر اختصارات لوحة المفاتيح"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
@@ -157,15 +161,15 @@ msgstr "نافذة جديدة"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr "أغلق النافذة"
+msgstr "أغلِق النافذة"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr "أنهِ"
+msgstr "غادِر"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "تحقَّق من الهاشات"
+msgstr "تحقَّق من التلبيدات"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
@@ -179,21 +183,22 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Ibrahim Muhammad <ibrahim.muhammad.mu@outlook.com>\n"
-"Ali Aljishi <ahj696@hotmail.com>"
+"Ali Aljishi <ahj696@hotmail.com>\n"
+"أحمد النجماوي <iramosu@protonmail.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "حُسِب %d من أصل %d تلبيد"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "يتطابقان"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "لا يتطابقان"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;هاش;"
