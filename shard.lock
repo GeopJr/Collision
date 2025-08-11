@@ -18,7 +18,7 @@ shards:
 
   harfbuzz:
     git: https://github.com/hugopl/harfbuzz.cr.git
-    version: 0.2.0
+    version: 0.2.1
 
   libadwaita:
     git: https://github.com/hugopl/libadwaita.cr.git
