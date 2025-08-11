@@ -36,7 +36,7 @@ module Collision::Widgets
       @copy_btn.icon_name = Collision::Feedback.icon(success)
       feedback_class = success ? "success" : "error"
       @copy_btn.add_css_class(feedback_class)
-      Non::Blocking.spawn do
+      ::spawn do
         sleep 1.1.seconds # 1 feels fast, 1.5 feels slow
         GLib.idle_add do
           @copy_btn.icon_name = "edit-copy-symbolic"

@@ -1,3 +1,5 @@
+{% skip_file if flag?(:windows) %}
+
 module Collision
   LICENSE      = {{run("#{__DIR__}/../data/scripts/licenses.cr").stringify}}
   LICENSE_ARGS = {"--licenses", "--license", "--legal", "--licence", "--licences"}
