@@ -19,6 +19,6 @@ dependencies:
     github: GeopJr/blake3.cr
     version: ~> 1.4.0
 
-crystal: 1.15.1
+crystal: 1.18.0
 
 license: BSD-2-Clause
