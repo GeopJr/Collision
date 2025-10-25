@@ -12,7 +12,11 @@ textdomain('dev.geopjr.Collision')
 _ = gettext
 
 require_version('Gtk', '4.0')
-require_version('Nautilus', '4.0')
+try:
+    require_version('Nautilus', '4.1')
+except ValueError:
+    # Fallback if only Nautilus 4.0 exists
+    require_version('Nautilus', '4.0')
 
 from gi.repository import Nautilus, GObject, Gtk, Gdk
 
