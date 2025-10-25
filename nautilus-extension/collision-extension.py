@@ -12,7 +12,11 @@ textdomain('dev.geopjr.Collision')
 _ = gettext
 
 require_version('Gtk', '4.0')
-require_version('Nautilus', '4.0')
+try:
+    require_version('Nautilus', '4.1')
+except ValueError:
+    # Fallback if only Nautilus 4.0 exists
+    require_version('Nautilus', '4.0')
 
 from gi.repository import Nautilus, GObject, Gtk, Gdk
 
@@ -35,18 +39,20 @@ class NautilusCollision(Nautilus.MenuProvider, GObject.GObject):
     
     # Executed method when the right-click entry is clicked
     def openWithCollision(self, menu, files):
+        args = [self.collision]
         for file in files:
             file_path = repr(unquote(urlparse(file.get_uri()).path))
             if self.collision != "collision":
                 file_path = "@@ " + file_path + " @@"
-            Popen(self.collision + " " + file_path, shell=True)  # Collision need to be in your PATH
+            args.append(file_path)
+        Popen(" ".join(args), shell=True)  # Collision need to be in your PATH
     
     def get_background_items(self, files):
         return
 
     def get_file_items(self, files):
         # The option doesn't appear when a folder is selected
-        if any(x.is_directory() for x in files) or self.collision == False: 
+        if self.collision == False or any(x.is_directory() for x in files): 
             return ()
 
         menu_item = Nautilus.MenuItem(
