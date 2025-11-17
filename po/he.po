@@ -7,34 +7,36 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-18 11:51+0000\n"
+"Last-Translator: \"Omer I.S.\" <omeritzicschwartz@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/collision/"
+"collision/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : "
 "((n > 10 && n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
 #: data/ui/application.ui:77 data/ui/application.ui:114
 msgid "Collision"
-msgstr ""
+msgstr "סתירות"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr ""
+msgstr "מייצר גיבובי קבצים"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr ""
+msgstr "בדיקת גיבובי הקבצים"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;גיבוב;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -44,6 +46,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"כנראה חשבת שפעולת האימות שהקובץ שהורדת או קיבלת הוא אכן מה שציפית לו היא "
+"זניחה לרוב או שלוקח יותר מדי זמן לבצע אותה. יחד עם זאת, בימינו אין זה נדיר "
+"לקבל קובץ שהוכנסו בו שינויים, בשל העלייה ההמונית בכמות של עמודי אינטרנט "
+"זדוניים וגורמים אחרים."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -51,136 +57,142 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"הכלי הזה נועד לפתור בעיה זו. יישום „סתירות” מגיע עם ממשק משתמש קל לשימוש "
+"שנועד לאפשר לכל אחד ואחת, מכל גיל או קבוצת ניסיון, ליצור, להשוות ולאמת "
+"גיבובי קבצים מסוג MD5,‏ SHA-256,‏ SHA-512,‏ SHA-1,‏ Blake3,‏ CRC32 ו־Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr ""
+msgstr "חלון _חדש"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr ""
+msgstr "ה_שוואה בין תכונות גיבוב (אנגלית)"
 
 #: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
-msgstr ""
+msgstr "קיצורי _מקשים"
 
 #: data/ui/application.ui:18
 msgid "_About Collision"
-msgstr ""
+msgstr "על _אודות „סתירות”"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr ""
+msgstr "נא לבחור קובץ"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr ""
+msgstr "_פתיחה"
 
 #: data/ui/application.ui:61
 msgid "Open…"
-msgstr ""
+msgstr "פתיחה…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
-msgstr ""
+msgstr "תפריט"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr ""
+msgstr "_פתיחת קובץ"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr ""
+msgstr "מתבצע חישוב של גיבובי הקבצים"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr ""
+msgstr "זה עשוי לקחת זמן"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr ""
+msgstr "גיבוב"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr ""
+msgstr "אימות"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr ""
+msgstr "סכום ביקורת"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr ""
+msgstr "גיבוב מסוג MD5,‏ SHA-1,‏ SHA-256,‏ SHA-512,‏ Blake3,‏ CRC32 או Adler32"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
 msgstr ""
+"נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr ""
+msgstr "קובץ"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr ""
+msgstr "בחירת קובץ אחר להשוואה"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
-msgstr ""
+msgstr "בחירת קובץ…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr ""
+msgstr "העתקה"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr ""
+msgstr "כללי"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr ""
+msgstr "פתיחת קובץ"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "הצגת קיצורי מקשים"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr ""
+msgstr "חלון חדש"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr ""
+msgstr "סגירת חלון"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr ""
+msgstr "יציאה"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr ""
+msgstr "בדיקת גיבובי קבצים"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
+#, fuzzy
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr ""
+msgstr "עומר א״ש <omeritzicschwartz@gmail.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr ""
+msgstr "חושבו %d מתוך %d גיבובי קבצים"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr ""
+msgstr "הם תואמים"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr ""
+msgstr "הם לא תואמים"
