@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Flynn <cirilla@tuta.io>, 2025.
+# Flynn <cirilla@tuta.io>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-12-24 19:00+0000\n"
+"PO-Revision-Date: 2026-01-05 20:01+0000\n"
 "Last-Translator: Flynn <cirilla@tuta.io>\n"
 "Language-Team: Cornish <https://hosted.weblate.org/projects/collision/"
 "collision/kw/>\n"
@@ -51,7 +51,7 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"Gwirhow unn restren dre hwi iskargys po recevys yw an restren hwi gwaytyasys "
+"Gwirhow unn restren dre ty iskargys po recevys yw an restren ty gwaytyasys "
 "yw fyllis gweles yn fenowgh po maga ta hir y gows dhe gul. Yn kettermyn, y "
 "yw pur es dhe iskarga unn restren mayth yw chanjys, drefen gwiasva "
 "drogbrederys."
