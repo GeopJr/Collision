@@ -54,7 +54,9 @@ module Collision
       Collision::HASH_FUNCTIONS.each_with_index do |hash_key, hash_value, i|
         @mt_context.spawn do
           LOGGER.debug { "Spawned fiber #{hash_value}" }
+          calculated_hash = calculate(hash_key, filename)
           LOGGER.debug { "Finished fiber #{i + 1}/#{hash_amount}" }
+
           atomic.add(1)
           GLib.idle_add do
             unless progressbar.nil?
@@ -64,7 +66,7 @@ module Collision
             false
           end
 
-          channel.send({hash_key, calculate(hash_key, filename)})
+          channel.send({hash_key, calculated_hash})
         end
       end
 
