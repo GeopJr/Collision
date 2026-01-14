@@ -100,7 +100,7 @@ def activate_with_file(app : Adw::Application, file : Gio::File? = nil)
   window.present
   Collision::LOGGER.debug { "Window activated" }
   Collision::LOGGER.debug { "Settings: #{window_settings}" }
-  Collision.activated = true
+  # Collision.activated = true
 
   unless file.nil?
     Collision::LOGGER.debug { "Activating with file" }

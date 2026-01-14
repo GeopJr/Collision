@@ -20,6 +20,8 @@ module Collision
       "switcher_bar",
       "hash_row_container",
       "progressbar",
+      "mainDnd",
+      "compareDnd",
     }
   )]
   class Window < Adw::ApplicationWindow
@@ -39,6 +41,8 @@ module Collision
     @fileInfo : Adw::StatusPage
     @switcher_bar : Adw::ViewSwitcherBar
     @progressbar : Gtk::ProgressBar
+    @mainDnd : Gtk::DropTarget
+    @compareDnd : Gtk::DropTarget
 
     @verifyOverlayLabel : Gtk::Label
     @verifyTextView : Gtk::TextView
@@ -250,6 +254,8 @@ module Collision
       @mainStack = Gtk::Stack.cast(template_child("mainStack"))
       @headerbarStack = Gtk::Stack.cast(template_child("headerbarStack"))
       @switcher_bar = Adw::ViewSwitcherBar.cast(template_child("switcher_bar"))
+      @mainDnd = Gtk::DropTarget.cast(template_child("mainDnd"))
+      @compareDnd = Gtk::DropTarget.cast(template_child("compareDnd"))
 
       @welcomeBtn = Gtk::Button.cast(template_child("welcomeBtn"))
       @fileInfo = Adw::StatusPage.cast(template_child("fileInfo"))
@@ -274,8 +280,47 @@ module Collision
         on_open_btn_clicked()
       end
 
-      @mainStack.add_controller(Collision::DragNDrop.new(->on_drop(Gio::File)).controller)
-      @compareBtn.add_controller(Collision::DragNDrop.new(->comparefile=(Gio::File)).controller)
+      @mainDnd.drop_signal.connect do |value|
+        if LibGObject.g_type_check_value_holds(value, Gdk::FileList.g_type)
+          files = Gdk::FileList.new(LibGObject.g_value_get_boxed(value), GICrystal::Transfer::None).files
+          file = nil
+
+          files.each do |x|
+            break file = x if x.uri.downcase.starts_with?("file://")
+          end
+
+          if file.nil?
+            Collision::LOGGER.error { "No files starting with 'file://' given" }
+            next false
+          end
+
+          on_drop(file)
+          next true
+        end
+
+        false
+      end
+
+      @compareDnd.drop_signal.connect do |value|
+        if LibGObject.g_type_check_value_holds(value, Gdk::FileList.g_type)
+          files = Gdk::FileList.new(LibGObject.g_value_get_boxed(value), GICrystal::Transfer::None).files
+          file = nil
+
+          files.each do |x|
+            break file = x if x.uri.downcase.starts_with?("file://")
+          end
+
+          if file.nil?
+            Collision::LOGGER.error { "No files starting with 'file://' given" }
+            next false
+          end
+
+          self.comparefile = file
+          next true
+        end
+
+        false
+      end
 
       @compareBtn.clicked_signal.connect do
         Gtk::FileDialog.new(
