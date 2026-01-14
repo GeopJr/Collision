@@ -153,10 +153,10 @@ def startup(app : Adw::Application)
   app.set_accels_for_action("window.close", {"<Ctrl>W"})
 end
 
-app = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
 # ARGV but without flags, passed to Application.
-clean_argv = [PROGRAM_NAME].concat(ARGV.reject { |x| x.starts_with?('-') })
 gtk = Fiber::ExecutionContext::Isolated.new("Gtk") do
+  app = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
+  clean_argv = [PROGRAM_NAME].concat(ARGV.reject { |x| x.starts_with?('-') })
   app.startup_signal.connect(->startup(Adw::Application))
   app.activate_signal.connect(->activate(Adw::Application))
   app.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), String))

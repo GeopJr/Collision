@@ -224,7 +224,9 @@ module Collision
       {% for hash, digest in Collision::HASH_FUNCTIONS %}
         hashrow = Collision::Widgets::HashRow.new({{digest}}, {{hash.stringify}})
         @hash_row_container.append (hashrow)
-        hashrow.clicked_signal.connect(->copy_btn_cb(String))
+        hashrow.clicked_signal.connect do |hash_type|
+          copy_btn_cb(hash_type)
+        end
         @hash_rows[:{{hash}}] = hashrow
       {% end %}
     end
@@ -265,8 +267,12 @@ module Collision
         handle_input_change(@verifyTextView.buffer.text)
       end
 
-      @welcomeBtn.clicked_signal.connect(->on_open_btn_clicked)
-      @openFileBtn.clicked_signal.connect(->on_open_btn_clicked)
+      @welcomeBtn.clicked_signal.connect do
+        on_open_btn_clicked()
+      end
+      @openFileBtn.clicked_signal.connect do
+        on_open_btn_clicked()
+      end
 
       @mainStack.add_controller(Collision::DragNDrop.new(->on_drop(Gio::File)).controller)
       @compareBtn.add_controller(Collision::DragNDrop.new(->comparefile=(Gio::File)).controller)

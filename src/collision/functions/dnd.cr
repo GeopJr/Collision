@@ -43,9 +43,15 @@ module Collision
     end
 
     private def connect_dnd_signals
-      @controller.drop_signal.connect(->dnd_drop(GObject::Value, Float64, Float64))
-      @controller.enter_signal.connect(->dnd_enter(Float64, Float64))
-      @controller.leave_signal.connect(->dnd_leave)
+      @controller.drop_signal.connect do |value, x, y|
+        dnd_drop(value, x, y)
+      end
+      @controller.enter_signal.connect do |x, y|
+        dnd_enter(x, y)
+      end
+      @controller.leave_signal.connect do
+        dnd_leave()
+      end
     end
   end
 end
