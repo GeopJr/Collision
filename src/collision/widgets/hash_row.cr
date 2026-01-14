@@ -16,7 +16,9 @@ module Collision::Widgets
       super()
 
       @copy_btn = Gtk::Button.cast(template_child("copy_btn"))
-      @copy_btn.clicked_signal.connect(->copy_btn_clicked_cb)
+      @copy_btn.clicked_signal.connect do
+        copy_btn_clicked_cb
+      end
     end
 
     def initialize(hash_name : String, @hash_type : String)

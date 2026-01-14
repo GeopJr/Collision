@@ -4,6 +4,30 @@ require "gettext"
 require "log"
 
 module Collision
+  @@activated = false
+
+  def self.activated
+    @@activated
+  end
+
+  def self.activated=(activated : Bool)
+    @@activated = activated
+  end
+
+  @@atomic : Atomic(Int32) = Atomic.new(0)
+
+  def self.atomic
+    @@atomic.get
+  end
+
+  def self.atomic_increase
+    @@atomic.add(1)
+  end
+
+  def self.atomic_decrease
+    @@atomic.sub(1)
+  end
+
   # Enable debug logs if debug build or --debug is passed.
   # Also save a copy in memory for the About window troubleshooting
   # section.
@@ -88,17 +112,9 @@ def activate_with_file(app : Adw::Application, file : Gio::File? = nil)
   {% end %}
 
   window.present
-
-  # Setup actions
-  Collision::Action::HashInfo.new(app)
-  Collision::Action::About.new(app)
-  Collision::Action::NewWindow.new(app)
-  Collision::Action::Quit.new(app)
-  Collision::Action::OpenFile.new(app).cb = ->window.on_open_btn_clicked
-  app.set_accels_for_action("window.close", {"<Ctrl>W"})
-
   Collision::LOGGER.debug { "Window activated" }
   Collision::LOGGER.debug { "Settings: #{window_settings}" }
+  # Collision.activated = true
 
   unless file.nil?
     Collision::LOGGER.debug { "Activating with file" }
@@ -130,18 +146,34 @@ end
 def open_files(app : Adw::Application, files : Enumerable(Gio::File))
   files.each do |file|
     next unless !(file_path = file.path).nil? && Collision::FileUtils.file?(file_path)
-    activate_with_file(app, file)
+    if Collision.activated
+      GLib.idle_add do
+        activate_with_file(app, file)
+        false
+      end
+    else
+      activate_with_file(app, file)
+    end
   end
 end
 
-app = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
-
-app.activate_signal.connect(->activate(Adw::Application))
-app.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), String))
+def startup(app : Adw::Application)
+  # Setup actions
+  Collision::Action::HashInfo.new(app)
+  Collision::Action::About.new(app)
+  Collision::Action::NewWindow.new(app)
+  Collision::Action::Quit.new(app)
+  app.set_accels_for_action("win.open-file", {"<Ctrl>O"})
+  app.set_accels_for_action("window.close", {"<Ctrl>W"})
+end
 
 # ARGV but without flags, passed to Application.
-clean_argv = [PROGRAM_NAME].concat(ARGV.reject { |x| x.starts_with?('-') })
 gtk = Fiber::ExecutionContext::Isolated.new("Gtk") do
+  app = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::HandlesOpen)
+  clean_argv = [PROGRAM_NAME].concat(ARGV.reject { |x| x.starts_with?('-') })
+  app.startup_signal.connect(->startup(Adw::Application))
+  app.activate_signal.connect(->activate(Adw::Application))
+  app.open_signal.connect(->open_with(Adw::Application, Enumerable(Gio::File), String))
   app.run(clean_argv)
 end
 gtk.wait

@@ -20,10 +20,14 @@ module Collision
       "switcher_bar",
       "hash_row_container",
       "progressbar",
+      "mainDnd",
+      "compareDnd",
     }
   )]
   class Window < Adw::ApplicationWindow
     include Gtk::WidgetTemplate
+
+    HOST_PATH_ATTR = "xattr::document-portal.host-path"
 
     @hash_rows = Hash(Symbol, Widgets::HashRow).new
     @headerbarStack : Gtk::Stack
@@ -37,22 +41,34 @@ module Collision
     @fileInfo : Adw::StatusPage
     @switcher_bar : Adw::ViewSwitcherBar
     @progressbar : Gtk::ProgressBar
+    @mainDnd : Gtk::DropTarget
+    @compareDnd : Gtk::DropTarget
 
     @verifyOverlayLabel : Gtk::Label
     @verifyTextView : Gtk::TextView
     @verifyFeedback : Gtk::Image
 
     @hash_results = Hash(Symbol, String).new
+    @file_path_queued : Path? = nil
+
+    def continue_queue
+      return if @file_path_queued.nil?
+      self.file = @file_path_queued.not_nil!
+    end
 
     def file=(filepath : Path)
       Collision::LOGGER.debug { "File set: \"#{filepath}\"" }
 
-      @fileInfo.title = filepath.basename.to_s
-      @fileInfo.description = Collision::FileUtils.real_path(filepath)
+      if Collision.atomic > 0
+        @file_path_queued = filepath
+        return
+      end
 
+      @file_path_queued = nil
+      Collision.atomic_increase
+      @fileInfo.title = filepath.basename.to_s
       Collision::LOGGER.debug { "Begin generating hashes" }
       Collision::Checksum.new.generate(filepath.to_s, @progressbar) do |res|
-        sleep 500.milliseconds
         GLib.idle_add do
           res.each do |hash_type, hash_value|
             @hash_results[hash_type] = hash_value
@@ -63,6 +79,10 @@ module Collision
           @headerbarStack.visible_child_name = "switcher"
           @openFileBtn.visible = true
           @switcher_bar.visible = true
+          Collision.atomic_decrease
+          self.application.not_nil!.windows.each do |window|
+            Window.cast(window).continue_queue
+          end
 
           false
         end
@@ -73,8 +93,23 @@ module Collision
     # Should be used instead of Collision#file=(filepath : Path)
     # unless path is a File and exists.
     def file=(file : Gio::File)
-      return unless Collision::FileUtils.file?(file.path.not_nil!)
-      self.file = file.path.not_nil!
+      filepath = file.path.not_nil!
+      return unless Collision::FileUtils.file?(filepath)
+      self.file = filepath
+
+      {% if !env("FLATPAK_ID").nil? || file_exists?("/.flatpak-info") %}
+        begin
+          file.query_info_async(HOST_PATH_ATTR, Gio::FileQueryInfoFlags::None, 0, nil) do |obj, result|
+            info = obj.as(Gio::File).query_info_finish(result)
+            real_path = info.attribute_string(HOST_PATH_ATTR)
+            @fileInfo.description = real_path.nil? ? Collision::FileUtils.real_path(filepath) : Path[real_path].parent.to_s
+          end
+        rescue
+          @fileInfo.description = Collision::FileUtils.real_path(filepath)
+        end
+      {% else %}
+        @fileInfo.description = Collision::FileUtils.real_path(filepath)
+      {% end %}
     end
 
     def on_open_btn_clicked
@@ -210,13 +245,21 @@ module Collision
       {% for hash, digest in Collision::HASH_FUNCTIONS %}
         hashrow = Collision::Widgets::HashRow.new({{digest}}, {{hash.stringify}})
         @hash_row_container.append (hashrow)
-        hashrow.clicked_signal.connect(->copy_btn_cb(String))
+        hashrow.clicked_signal.connect do |hash_type|
+          copy_btn_cb(hash_type)
+        end
         @hash_rows[:{{hash}}] = hashrow
       {% end %}
     end
 
     def initialize
       super()
+
+      file_action = Gio::SimpleAction.new("open-file", nil)
+      file_action.activate_signal.connect do
+        on_open_btn_clicked
+      end
+      add_action(file_action)
 
       @hash_row_container = Gtk::ListBox.cast(template_child("hash_row_container"))
       setup_hashrows
@@ -228,6 +271,8 @@ module Collision
       @mainStack = Gtk::Stack.cast(template_child("mainStack"))
       @headerbarStack = Gtk::Stack.cast(template_child("headerbarStack"))
       @switcher_bar = Adw::ViewSwitcherBar.cast(template_child("switcher_bar"))
+      @mainDnd = Gtk::DropTarget.cast(template_child("mainDnd"))
+      @compareDnd = Gtk::DropTarget.cast(template_child("compareDnd"))
 
       @welcomeBtn = Gtk::Button.cast(template_child("welcomeBtn"))
       @fileInfo = Adw::StatusPage.cast(template_child("fileInfo"))
@@ -245,11 +290,54 @@ module Collision
         handle_input_change(@verifyTextView.buffer.text)
       end
 
-      @welcomeBtn.clicked_signal.connect(->on_open_btn_clicked)
-      @openFileBtn.clicked_signal.connect(->on_open_btn_clicked)
+      @welcomeBtn.clicked_signal.connect do
+        on_open_btn_clicked()
+      end
+      @openFileBtn.clicked_signal.connect do
+        on_open_btn_clicked()
+      end
 
-      @mainStack.add_controller(Collision::DragNDrop.new(->on_drop(Gio::File)).controller)
-      @compareBtn.add_controller(Collision::DragNDrop.new(->comparefile=(Gio::File)).controller)
+      @mainDnd.drop_signal.connect do |value|
+        if LibGObject.g_type_check_value_holds(value, Gdk::FileList.g_type)
+          files = Gdk::FileList.new(LibGObject.g_value_get_boxed(value), GICrystal::Transfer::None).files
+          file = nil
+
+          files.each do |x|
+            break file = x if x.uri.downcase.starts_with?("file://")
+          end
+
+          if file.nil?
+            Collision::LOGGER.error { "No files starting with 'file://' given" }
+            next false
+          end
+
+          on_drop(file)
+          next true
+        end
+
+        false
+      end
+
+      @compareDnd.drop_signal.connect do |value|
+        if LibGObject.g_type_check_value_holds(value, Gdk::FileList.g_type)
+          files = Gdk::FileList.new(LibGObject.g_value_get_boxed(value), GICrystal::Transfer::None).files
+          file = nil
+
+          files.each do |x|
+            break file = x if x.uri.downcase.starts_with?("file://")
+          end
+
+          if file.nil?
+            Collision::LOGGER.error { "No files starting with 'file://' given" }
+            next false
+          end
+
+          self.comparefile = file
+          next true
+        end
+
+        false
+      end
 
       @compareBtn.clicked_signal.connect do
         Gtk::FileDialog.new(

@@ -96,6 +96,12 @@
 				<property name="content">
 					<object class="GtkStack" id="mainStack">
 						<child>
+							<object class="GtkDropTarget" id="mainDnd">
+								<property name="actions">copy</property>
+								<property name="formats">GdkFileList</property>
+							</object>
+						</child>
+						<child>
 							<object class="GtkStackPage">
 								<property name="name">welcomer</property>
 								<property name="child">
@@ -293,6 +299,12 @@
 																						<property name="tooltip-text" translatable="yes">Select Another File to Check Against</property>
 																						<property name="height-request">125</property>
 																						<property name="use-underline">1</property>
+																						<child>
+																							<object class="GtkDropTarget" id="compareDnd">
+																								<property name="actions">copy</property>
+																								<property name="formats">GdkFileList</property>
+																							</object>
+																						</child>
 																						<child>
 																							<object class="GtkBox">
 																								<property name="orientation">vertical</property>
