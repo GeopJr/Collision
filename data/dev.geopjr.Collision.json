@@ -20,26 +20,6 @@
   ],
   "modules": [
     {
-      "name": "livevent",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libevent/libevent.git",
-          "tag": "release-2.1.12-stable"
-        }
-      ]
-    },
-    {
-      "name": "libyaml",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz",
-          "sha256": "c642ae9b75fee120b2d96c712538bd2cf283228d2337df2cf2988e3c02678ef4"
-        }
-      ]
-    },
-    {
       "name": "collision",
       "buildsystem": "simple",
       "build-options": {
@@ -83,8 +63,8 @@
         {
           "type": "archive",
           "dest": "crystal/",
-          "url": "https://github.com/crystal-lang/crystal/releases/download/1.18.0/crystal-1.18.0-1-linux-x86_64.tar.gz",
-          "sha256": "799863dc1ac04d09e48747709c8dd6b5de53aa581814f8be784d36bef0bed97a",
+          "url": "https://github.com/crystal-lang/crystal/releases/download/1.18.2/crystal-1.18.2-1-linux-x86_64.tar.gz",
+          "sha256": "de73134563db840791bc85bacd4e7f1360dc9c04af6e32a9b104300c561716b6",
           "only_arches": [
             "x86_64"
           ]
@@ -92,8 +72,8 @@
         {
           "type": "archive",
           "dest": "crystal/",
-          "url": "https://github.com/geopjr-forks/crystal-aarch64/releases/download/v1.17.1/crystal-1.17.1-1-linux-aarch64.tar.xz",
-          "sha256": "ada1d1f8c852a8b1886ad85f190f0ac8abc1c38c8262d5736446ecfc3acbbd3b",
+          "url": "https://github.com/geopjr-forks/crystal-aarch64/releases/download/v1.18.2/crystal-1.18.2-1-linux-aarch64.tar.xz",
+          "sha256": "1d7f787247491a092f3a6812243af4c6730c00722400c314782a801d32eb9a49",
           "only_arches": [
             "aarch64"
           ]

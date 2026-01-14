@@ -25,6 +25,8 @@ module Collision
   class Window < Adw::ApplicationWindow
     include Gtk::WidgetTemplate
 
+    HOST_PATH_ATTR = "xattr::document-portal.host-path"
+
     @hash_rows = Hash(Symbol, Widgets::HashRow).new
     @headerbarStack : Gtk::Stack
     @welcomeBtn : Gtk::Button
@@ -48,11 +50,8 @@ module Collision
       Collision::LOGGER.debug { "File set: \"#{filepath}\"" }
 
       @fileInfo.title = filepath.basename.to_s
-      @fileInfo.description = Collision::FileUtils.real_path(filepath)
-
       Collision::LOGGER.debug { "Begin generating hashes" }
       Collision::Checksum.new.generate(filepath.to_s, @progressbar) do |res|
-        sleep 500.milliseconds
         GLib.idle_add do
           res.each do |hash_type, hash_value|
             @hash_results[hash_type] = hash_value
@@ -73,8 +72,23 @@ module Collision
     # Should be used instead of Collision#file=(filepath : Path)
     # unless path is a File and exists.
     def file=(file : Gio::File)
-      return unless Collision::FileUtils.file?(file.path.not_nil!)
-      self.file = file.path.not_nil!
+      filepath = file.path.not_nil!
+      return unless Collision::FileUtils.file?(filepath)
+      self.file = filepath
+
+      {% if !env("FLATPAK_ID").nil? || file_exists?("/.flatpak-info") %}
+        begin
+          file.query_info_async(HOST_PATH_ATTR, Gio::FileQueryInfoFlags::None, 0, nil) do |obj, result|
+            info = obj.as(Gio::File).query_info_finish(result)
+            real_path = info.attribute_string(HOST_PATH_ATTR)
+            @fileInfo.description = real_path.nil? ? Collision::FileUtils.real_path(filepath) : Path[real_path].parent.to_s
+          end
+        rescue
+          @fileInfo.description = Collision::FileUtils.real_path(filepath)
+        end
+      {% else %}
+        @fileInfo.description = Collision::FileUtils.real_path(filepath)
+      {% end %}
     end
 
     def on_open_btn_clicked
@@ -217,6 +231,12 @@ module Collision
 
     def initialize
       super()
+
+      action = Gio::SimpleAction.new("open-file", nil)
+      action.activate_signal.connect do
+        on_open_btn_clicked
+      end
+      add_action(action)
 
       @hash_row_container = Gtk::ListBox.cast(template_child("hash_row_container"))
       setup_hashrows
