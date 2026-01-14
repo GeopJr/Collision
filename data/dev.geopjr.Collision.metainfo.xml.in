@@ -48,6 +48,19 @@
     <color type="primary" scheme_preference="dark">#26a269</color>
   </branding>
   <releases>
+    <release version="3.12.0" date="2026-01-14">
+      <description translate="no">
+        <ul>
+          <li>Visual refinements to match the state of the art of GNOME apps</li>
+          <li>Added the ability to read the real file path from inside the sandbox</li>
+          <li>Updated GNOME Files extension</li>
+          <li>Fixed segfaults under heavy parallel use by using a queue</li>
+          <li>Fixed non-thread-safe methods used in multi-threaded contexts</li>
+          <li>Updated dependencies</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.11.0" date="2025-08-11">
       <description translate="no">
         <ul>

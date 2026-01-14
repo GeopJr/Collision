@@ -25,6 +25,7 @@ class Collision::Action::About < Collision::Action
     dialog.add_other_app("dev.geopjr.Archives", Gettext.gettext("Archives"), Gettext.gettext("Create and view web archives"))
     dialog.add_other_app("dev.geopjr.Calligraphy", Gettext.gettext("Calligraphy"), Gettext.gettext("Turn text into ASCII banners"))
     dialog.add_other_app("dev.geopjr.Tuba", Gettext.gettext("Tuba"), Gettext.gettext("Browse the Fediverse"))
+    dialog.add_other_app("dev.geopjr.Turntable", Gettext.gettext("Turntable"), Gettext.gettext("Scrobble your music"))
 
     dialog.present(@app.active_window)
   end

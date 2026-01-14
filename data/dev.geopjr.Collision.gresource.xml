@@ -16,5 +16,6 @@
     <file alias="dev.geopjr.Archives.svg" preprocess="xml-stripblanks">icons/dev.geopjr.Archives.svg</file>
     <file alias="dev.geopjr.Calligraphy.svg" preprocess="xml-stripblanks">icons/dev.geopjr.Calligraphy.svg</file>
     <file alias="dev.geopjr.Tuba.svg" preprocess="xml-stripblanks">icons/dev.geopjr.Tuba.svg</file>
+    <file alias="dev.geopjr.Turntable.svg" preprocess="xml-stripblanks">icons/dev.geopjr.Turntable.svg</file>
   </gresource>
 </gresources>
