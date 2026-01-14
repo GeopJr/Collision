@@ -49,10 +49,23 @@ module Collision
     @verifyFeedback : Gtk::Image
 
     @hash_results = Hash(Symbol, String).new
+    @file_path_queued : Path? = nil
+
+    def continue_queue
+      return if @file_path_queued.nil?
+      self.file = @file_path_queued.not_nil!
+    end
 
     def file=(filepath : Path)
       Collision::LOGGER.debug { "File set: \"#{filepath}\"" }
 
+      if Collision.atomic > 0
+        @file_path_queued = filepath
+        return
+      end
+
+      @file_path_queued = nil
+      Collision.atomic_increase
       @fileInfo.title = filepath.basename.to_s
       Collision::LOGGER.debug { "Begin generating hashes" }
       Collision::Checksum.new.generate(filepath.to_s, @progressbar) do |res|
@@ -66,6 +79,10 @@ module Collision
           @headerbarStack.visible_child_name = "switcher"
           @openFileBtn.visible = true
           @switcher_bar.visible = true
+          Collision.atomic_decrease
+          self.application.not_nil!.windows.each do |window|
+            Window.cast(window).continue_queue
+          end
 
           false
         end
@@ -238,11 +255,11 @@ module Collision
     def initialize
       super()
 
-      action = Gio::SimpleAction.new("open-file", nil)
-      action.activate_signal.connect do
+      file_action = Gio::SimpleAction.new("open-file", nil)
+      file_action.activate_signal.connect do
         on_open_btn_clicked
       end
-      add_action(action)
+      add_action(file_action)
 
       @hash_row_container = Gtk::ListBox.cast(template_child("hash_row_container"))
       setup_hashrows

@@ -14,6 +14,20 @@ module Collision
     @@activated = activated
   end
 
+  @@atomic : Atomic(Int32) = Atomic.new(0)
+
+  def self.atomic
+    @@atomic.get
+  end
+
+  def self.atomic_increase
+    @@atomic.add(1)
+  end
+
+  def self.atomic_decrease
+    @@atomic.sub(1)
+  end
+
   # Enable debug logs if debug build or --debug is passed.
   # Also save a copy in memory for the About window troubleshooting
   # section.
