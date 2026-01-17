@@ -8,7 +8,7 @@ module Collision
       "welcomeBtn",
       "mainStack",
       "fileInfo",
-      "headerbarStack",
+      "headerbarViewSwitcher",
       "openFileBtn",
       "compareBtn",
       "verifyOverlayLabel",
@@ -30,7 +30,7 @@ module Collision
     HOST_PATH_ATTR = "xattr::document-portal.host-path"
 
     @hash_rows = Hash(Symbol, Widgets::HashRow).new
-    @headerbarStack : Gtk::Stack
+    @headerbarViewSwitcher : Adw::ViewSwitcher
     @welcomeBtn : Gtk::Button
     @compareBtn : Gtk::Button
     @compareBtnImage : Gtk::Image
@@ -76,7 +76,7 @@ module Collision
           end
 
           @mainStack.visible_child_name = "results"
-          @headerbarStack.visible_child_name = "switcher"
+          @headerbarViewSwitcher.visible = true
           @openFileBtn.visible = true
           @switcher_bar.visible = true
           Collision.atomic_decrease
@@ -140,7 +140,7 @@ module Collision
     def loading
       @progressbar.fraction = 0.0
       @mainStack.visible_child_name = "spinner"
-      @headerbarStack.visible_child_name = "empty"
+      @headerbarViewSwitcher.visible = false
       @openFileBtn.visible = false
       @switcher_bar.visible = false
       reset_feedback
@@ -269,7 +269,7 @@ module Collision
       @verifyFeedback = Gtk::Image.cast(template_child("verifyFeedback"))
 
       @mainStack = Gtk::Stack.cast(template_child("mainStack"))
-      @headerbarStack = Gtk::Stack.cast(template_child("headerbarStack"))
+      @headerbarViewSwitcher = Adw::ViewSwitcher.cast(template_child("headerbarViewSwitcher"))
       @switcher_bar = Adw::ViewSwitcherBar.cast(template_child("switcher_bar"))
       @mainDnd = Gtk::DropTarget.cast(template_child("mainDnd"))
       @compareDnd = Gtk::DropTarget.cast(template_child("compareDnd"))
