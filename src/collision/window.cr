@@ -22,6 +22,7 @@ module Collision
       "progressbar",
       "mainDnd",
       "compareDnd",
+      "dropOverlayRevealer",
     }
   )]
   class Window < Adw::ApplicationWindow
@@ -43,6 +44,7 @@ module Collision
     @progressbar : Gtk::ProgressBar
     @mainDnd : Gtk::DropTarget
     @compareDnd : Gtk::DropTarget
+    @dropOverlayRevealer : Gtk::Revealer
 
     @verifyOverlayLabel : Gtk::Label
     @verifyTextView : Gtk::TextView
@@ -274,6 +276,7 @@ module Collision
       @switcher_bar = Adw::ViewSwitcherBar.cast(template_child("switcher_bar"))
       @mainDnd = Gtk::DropTarget.cast(template_child("mainDnd"))
       @compareDnd = Gtk::DropTarget.cast(template_child("compareDnd"))
+      @dropOverlayRevealer = Gtk::Revealer.cast(template_child("dropOverlayRevealer"))
 
       @welcomeBtn = Gtk::Button.cast(template_child("welcomeBtn"))
       @fileInfo = Adw::StatusPage.cast(template_child("fileInfo"))
@@ -298,6 +301,15 @@ module Collision
         on_open_btn_clicked()
       end
 
+      @mainDnd.enter_signal.connect do
+        @dropOverlayRevealer.reveal_child = true
+        Gdk::DragAction::Copy
+      end
+
+      @mainDnd.leave_signal.connect do
+        @dropOverlayRevealer.reveal_child = false
+      end
+
       @mainDnd.drop_signal.connect do |value|
         if LibGObject.g_type_check_value_holds(value, Gdk::FileList.g_type)
           files = Gdk::FileList.new(LibGObject.g_value_get_boxed(value), GICrystal::Transfer::None).files
@@ -317,6 +329,15 @@ module Collision
         end
 
         false
+      end
+
+      @compareDnd.enter_signal.connect do
+        @dropOverlayRevealer.reveal_child = false
+        Gdk::DragAction::Copy
+      end
+
+      @compareDnd.leave_signal.connect do
+        @dropOverlayRevealer.reveal_child = true
       end
 
       @compareDnd.drop_signal.connect do |value|
