@@ -138,6 +138,7 @@ module Collision
     end
 
     def loading
+      @progressbar.text = Gettext.gettext("Pending")
       @progressbar.fraction = 0.0
       @mainStack.visible_child_name = "spinner"
       @headerbarStack.visible_child_name = "empty"

@@ -141,6 +141,8 @@
 												<property name="maximum-size">400</property>
 												<child>
 													<object class="GtkProgressBar" id="progressbar">
+														<!-- translators: Text on top of the progressbar when waiting for a different window to finish first -->
+														<property name="text" translatable="yes">Pending</property>
 														<property name="show-text">1</property>
 														<property name="valign">center</property>
 														<property name="hexpand">1</property>
