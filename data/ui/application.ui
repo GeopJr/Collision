@@ -59,28 +59,10 @@
 							</object>
 						</child>
 						<property name="title-widget">
-							<object class="GtkStack" id="headerbarStack">
-								<child>
-									<object class="GtkStackPage">
-										<property name="name">empty</property>
-										<property name="child">
-											<object class="AdwWindowTitle">
-												<property name="title" translatable="yes">Collision</property>
-											</object>
-										</property>
-									</object>
-								</child>
-								<child>
-									<object class="GtkStackPage">
-										<property name="name">switcher</property>
-										<property name="child">
-											<object class="AdwViewSwitcher">
-												<property name="policy">wide</property>
-												<property name="stack">resultsStack</property>
-											</object>
-										</property>
-									</object>
-								</child>
+							<object class="AdwViewSwitcher" id="headerbarViewSwitcher">
+								<property name="policy">wide</property>
+								<property name="stack">resultsStack</property>
+								<property name="visible">0</property>
 							</object>
 						</property>
 						<child type="end">
