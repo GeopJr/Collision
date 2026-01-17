@@ -248,11 +248,10 @@
 																								<property name="height-request">125</property>
 																								<property name="child">
 																									<object class="GtkTextView" id="verifyTextView">
-																										<property name="pixels-above-lines">11</property>
-																										<property name="pixels-below-lines">11</property>
+																										<property name="top-margin">11</property>
+																										<property name="bottom-margin">11</property>
 																										<property name="left-margin">5</property>
 																										<property name="right-margin">5</property>
-																										<property name="cursor-visible">0</property>
 																										<property name="height-request">125</property>
 																										<property name="wrap-mode">char</property>
 																										<property name="accepts-tab">0</property>
@@ -260,12 +259,11 @@
 																										<property name="input-purpose">free-form</property>
 																										<property name="input-hints">no-spellcheck | no-emoji</property>
 																										<property name="tooltip-text" translatable="yes">Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash</property>
+																										<property name="css-classes"></property>
 																										<style>
 																											<class name="card-like" />
 																											<class name="monospace" />
 																										</style>
-																										<property name="css-classes">card-like
-																											monospace</property>
 																									</object>
 																								</property>
 																							</object>
