@@ -44,8 +44,11 @@ module Collision
 
     def generate(filename : String, progressbar : Gtk::ProgressBar? = nil, &block : Hash(Symbol, String) ->)
       hash_amount = Collision::HASH_FUNCTIONS.size
-      progressbar.fraction = 0.0
-      progressbar.text = sprintf(Gettext.gettext("%d of %d hashes calculated"), {0, hash_amount})
+
+      unless progressbar.nil?
+        progressbar.fraction = 0.0
+        progressbar.text = sprintf(Gettext.gettext("%d of %d hashes calculated"), {0, hash_amount})
+      end
 
       atomic = Atomic.new(0)
       step = 1/hash_amount
