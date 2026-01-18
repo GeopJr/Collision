@@ -53,6 +53,8 @@ module Collision
     @hash_results = Hash(Symbol, String).new
     @file_path_queued : Path? = nil
 
+    property working : Bool = false
+
     def continue_queue
       return if @file_path_queued.nil?
       self.file = @file_path_queued.not_nil!
@@ -69,26 +71,45 @@ module Collision
       @file_path_queued = nil
       Collision.atomic_increase
       @fileInfo.title = filepath.basename.to_s
-      Collision::LOGGER.debug { "Begin generating hashes" }
-      Collision::Checksum.new.generate(filepath.to_s, @progressbar) do |res|
-        GLib.idle_add do
-          res.each do |hash_type, hash_value|
-            @hash_results[hash_type] = hash_value
-            @hash_rows[hash_type].subtitle = hash_value.size < 8 ? hash_value : Collision.split_by_4(hash_value)
+
+      begin
+        self.working = true
+        Collision::LOGGER.debug { "Begin generating hashes" }
+        Collision::Checksum.new.generate(filepath.to_s, @progressbar) do |res|
+          if !self.visible
+            flow_queue
+            next
           end
 
-          @mainStack.visible_child_name = "results"
-          @headerbarViewSwitcher.visible = true
-          @openFileBtn.visible = true
-          @switcher_bar.visible = true
-          Collision.atomic_decrease
-          self.application.not_nil!.windows.each do |window|
-            Window.cast(window).continue_queue
-          end
+          GLib.idle_add do
+            res.each do |hash_type, hash_value|
+              @hash_results[hash_type] = hash_value
+              @hash_rows[hash_type].subtitle = hash_value.size < 8 ? hash_value : Collision.split_by_4(hash_value)
+            end
 
-          false
+            @mainStack.visible_child_name = "results"
+            @headerbarViewSwitcher.visible = true
+            @openFileBtn.visible = true
+            @switcher_bar.visible = true
+            flow_queue
+            false
+          end
         end
+      rescue ex
+        flow_queue
+        raise ex
       end
+    end
+
+    # Force inline queue recovery
+    macro flow_queue
+      self.working = false
+      Collision.atomic_decrease
+      self.application.not_nil!.windows.each do |window|
+        Window.cast(window).continue_queue
+      end
+
+      self.destroy unless self.visible
     end
 
     # For Gio::File.
@@ -302,7 +323,7 @@ module Collision
       end
 
       @mainDnd.enter_signal.connect do
-        @dropOverlayRevealer.reveal_child = true
+        @dropOverlayRevealer.reveal_child = true unless @mainStack.visible_child_name == "spinner"
         Gdk::DragAction::Copy
       end
 
@@ -311,6 +332,8 @@ module Collision
       end
 
       @mainDnd.drop_signal.connect do |value|
+        next false if @mainStack.visible_child_name == "spinner"
+
         if LibGObject.g_type_check_value_holds(value, Gdk::FileList.g_type)
           files = Gdk::FileList.new(LibGObject.g_value_get_boxed(value), GICrystal::Transfer::None).files
           file = nil
@@ -372,6 +395,12 @@ module Collision
         rescue ex
           Collision::LOGGER.debug { ex }
         end
+      end
+
+      self.close_request_signal.connect do
+        self.hide_on_close = true if self.working && self.application.not_nil!.windows.size > 1
+
+        false
       end
     end
   end
