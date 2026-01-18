@@ -79,6 +79,7 @@ module Collision
           t_res = channel.receive
           res[t_res[0]] = t_res[1]
         end
+        channel.close
         block.call(res)
       end
     end
