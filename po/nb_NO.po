@@ -35,9 +35,7 @@ msgstr "Sjekk avtrykkene til filer"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
-"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;avtrykk;verifisering;krypter"
-"ing;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;avtrykk;verifisering;kryptering;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -60,8 +58,8 @@ msgid ""
 msgstr ""
 "Collision har som mål å være løsningen på dette problemet. Appen er utformet "
 "for at hvem som helst, uansett alder eller erfaring, skal kunne generere, "
-"sammenligne og verifisere forskjellige filavtrykk, som MD5, SHA-256, SHA-"
-"512, SHA-1, Blake3, CRC32 eller Adler32."
+"sammenligne og verifisere forskjellige filavtrykk, som MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 eller Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -196,3 +194,13 @@ msgstr "De samsvarer"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "De samsvarer ikke"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""

@@ -58,8 +58,8 @@ msgid ""
 msgstr ""
 "Този инструмент има за цел да реши този проблем. Сблъсък идва с прост и "
 "изчистен потребителски интерфейс, позволяващ на всеки, от всяка възрастова "
-"група и опит, да генерира, сравнява и потвръждава хешове MD5, SHA-256, SHA-"
-"512, SHA-1, Blake3, CRC32 и Adler32."
+"група и опит, да генерира, сравнява и потвръждава хешове MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 и Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -194,3 +194,13 @@ msgstr "Съвпадат"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "Не съвпадат"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""

@@ -61,8 +61,8 @@ msgid ""
 msgstr ""
 "Acest instrument își propune să rezolve acest lucru. Collision vine cu o "
 "interfață simplă și curată, permițând oricui, de la orice vârstă și grup de "
-"experiență, să genereze, să compare și să verifice hașuri MD5, SHA-256, SHA-"
-"512, SHA-1, Blake3, CRC32 și Adler32."
+"experiență, să genereze, să compare și să verifice hașuri MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 și Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -199,6 +199,16 @@ msgstr "Se potrivesc"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "Nu se potrivesc"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

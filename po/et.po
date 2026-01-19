@@ -38,8 +38,8 @@ msgstr "Kontrolli failide räsiväärtusi"
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 msgstr ""
-"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;räsi;kontrollsumma;räsiväärtus;räsid;räsimine;"
-" kollisioon;collision;"
+"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;räsi;kontrollsumma;räsiväärtus;räsid;räsimine; "
+"kollisioon;collision;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -200,6 +200,16 @@ msgstr "Nad klapivad omavahel"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "Nad ei klapi omavahel"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
