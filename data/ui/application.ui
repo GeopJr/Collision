@@ -64,6 +64,7 @@
 								</child>
 								<child type="top">
 									<object class="AdwHeaderBar" id="header_bar">
+										<property name="show-title">0</property>
 										<child type="start">
 											<object class="GtkButton" id="openFileBtn">
 												<property name="visible">False</property>
@@ -81,10 +82,9 @@
 											</object>
 										</child>
 										<property name="title-widget">
-											<object class="AdwViewSwitcher" id="headerbarViewSwitcher">
+											<object class="AdwViewSwitcher">
 												<property name="policy">wide</property>
 												<property name="stack">resultsStack</property>
-												<property name="visible">0</property>
 											</object>
 										</property>
 										<child type="end">

@@ -8,7 +8,7 @@ module Collision
       "welcomeBtn",
       "mainStack",
       "fileInfo",
-      "headerbarViewSwitcher",
+      "header_bar",
       "openFileBtn",
       "compareBtn",
       "verifyOverlayLabel",
@@ -31,7 +31,7 @@ module Collision
     HOST_PATH_ATTR = "xattr::document-portal.host-path"
 
     @hash_rows = Hash(Symbol, Widgets::HashRow).new
-    @headerbarViewSwitcher : Adw::ViewSwitcher
+    @header_bar : Adw::HeaderBar
     @welcomeBtn : Gtk::Button
     @compareBtn : Gtk::Button
     @compareBtnImage : Gtk::Image
@@ -88,7 +88,7 @@ module Collision
             end
 
             @mainStack.visible_child_name = "results"
-            @headerbarViewSwitcher.visible = true
+            @header_bar.show_title = true
             @openFileBtn.visible = true
             @switcher_bar.visible = true
             flow_queue
@@ -164,7 +164,7 @@ module Collision
       @progressbar.text = Gettext.gettext("Pending")
       @progressbar.fraction = 0.0
       @mainStack.visible_child_name = "spinner"
-      @headerbarViewSwitcher.visible = false
+      @header_bar.show_title = false
       @openFileBtn.visible = false
       @switcher_bar.visible = false
       reset_feedback
@@ -227,7 +227,8 @@ module Collision
 
       @compareBtnLabel.label = file_path.basename.to_s
       @compareBtnLabel.tooltip_text = file_path.basename.to_s
-      (Fiber::ExecutionContext::Concurrent.new("compare-tool")).spawn do
+
+      ({{ Fiber::ExecutionContext.has_constant?(:Concurrent) ? Fiber::ExecutionContext::Concurrent : Fiber::ExecutionContext::SingleThreaded }}.new("compare-tool")).spawn do
         compareFileSHA256 = Collision::Checksum.new.calculate(:sha256, file.path.to_s)
         result = @hash_results[:sha256] == compareFileSHA256
         result = Collision::FileUtils.compare_content(file_path, @hash_results.values) if !result && File.size(file_path) < MAX_COMPARE_READ_SIZE
@@ -293,7 +294,7 @@ module Collision
       @verifyFeedback = Gtk::Image.cast(template_child("verifyFeedback"))
 
       @mainStack = Gtk::Stack.cast(template_child("mainStack"))
-      @headerbarViewSwitcher = Adw::ViewSwitcher.cast(template_child("headerbarViewSwitcher"))
+      @header_bar = Adw::HeaderBar.cast(template_child("header_bar"))
       @switcher_bar = Adw::ViewSwitcherBar.cast(template_child("switcher_bar"))
       @mainDnd = Gtk::DropTarget.cast(template_child("mainDnd"))
       @compareDnd = Gtk::DropTarget.cast(template_child("compareDnd"))

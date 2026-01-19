@@ -48,6 +48,17 @@
     <color type="primary" scheme_preference="dark">#26a269</color>
   </branding>
   <releases>
+    <release version="3.13.0" date="2026-01-19">
+      <description translate="no">
+        <ul>
+          <li>Added a beautiful drop overlay when drag and dropping files</li>
+          <li>Fixed issues with the checksum text input</li>
+          <li>Title will be hidden now when unused</li>
+          <li>Files pending to be hashed will now reflect that in the progress bar</li>
+          <li>Collision will now gracefully handle closing windows that have pending operations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.12.1" date="2026-01-14">
       <description translate="no">
         <ul>

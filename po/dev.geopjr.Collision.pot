@@ -184,3 +184,13 @@ msgstr ""
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr ""
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
