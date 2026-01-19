@@ -227,7 +227,8 @@ module Collision
 
       @compareBtnLabel.label = file_path.basename.to_s
       @compareBtnLabel.tooltip_text = file_path.basename.to_s
-      (Fiber::ExecutionContext::Concurrent.new("compare-tool")).spawn do
+
+      ({{ Fiber::ExecutionContext.has_constant?(:Concurrent) ? Fiber::ExecutionContext::Concurrent : Fiber::ExecutionContext::SingleThreaded }}.new("compare-tool")).spawn do
         compareFileSHA256 = Collision::Checksum.new.calculate(:sha256, file.path.to_s)
         result = @hash_results[:sha256] == compareFileSHA256
         result = Collision::FileUtils.compare_content(file_path, @hash_results.values) if !result && File.size(file_path) < MAX_COMPARE_READ_SIZE

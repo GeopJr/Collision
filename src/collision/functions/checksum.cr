@@ -22,8 +22,17 @@ module Collision
   end
 
   class Checksum
-    @mt_context : Fiber::ExecutionContext::Parallel = Fiber::ExecutionContext::Parallel.new("worker-threads", 8)
-    @s_context = Fiber::ExecutionContext::Concurrent.new("channel-receiver")
+    {% if Fiber::ExecutionContext.has_constant?(:Parallel) %}
+      @mt_context : Fiber::ExecutionContext::Parallel = Fiber::ExecutionContext::Parallel.new("worker-threads", 8)
+    {% else %}
+      @mt_context : Fiber::ExecutionContext::MultiThreaded = Fiber::ExecutionContext::MultiThreaded.new("worker-threads", 8)
+    {% end %}
+
+    {% if Fiber::ExecutionContext.has_constant?(:Concurrent) %}
+      @s_context = Fiber::ExecutionContext::Concurrent.new("channel-receiver")
+    {% else %}
+      @s_context = Fiber::ExecutionContext::SingleThreaded.new("channel-receiver")
+    {% end %}
 
     def calculate(type : Symbol, filename : String) : String
       hash =
