@@ -46,10 +46,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"받았거나 다운로드한 파일이 내가 기대했던 파일인지 확인하는 과정은 대부분 "
-"무시되거나 하는 데에 시간이 많이 걸립니다. 그와 동시에 악성 웹페이지들 및 "
-"기타 원인 제공자들이 크게 늘어남으로 인해 우리는 너무 쉽게 변조된 파일을 "
-"얻을 수 있게 되었습니다."
+"받았거나 다운로드한 파일이 내가 기대했던 파일인지 확인하는 과정은 대부분 무시"
+"되거나 하는 데에 시간이 많이 걸립니다. 그와 동시에 악성 웹페이지들 및 기타 원"
+"인 제공자들이 크게 늘어남으로 인해 우리는 너무 쉽게 변조된 파일을 얻을 수 있"
+"게 되었습니다."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -193,3 +193,13 @@ msgstr "일치함"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "일치하지 않음"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""

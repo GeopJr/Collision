@@ -59,10 +59,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"このツールはこうした問題を解決することを目的としています。Collision "
-"はシンプル・クリーンな UI で、誰でも簡単に "
-"MD5、SHA-256、SHA-512、SHA-1、Blake3、CRC32、Adler32 "
-"ハッシュを生成、比較、検証することができます。"
+"このツールはこうした問題を解決することを目的としています。Collision はシンプ"
+"ル・クリーンな UI で、誰でも簡単に MD5、SHA-256、SHA-512、SHA-1、Blake3、"
+"CRC32、Adler32 ハッシュを生成、比較、検証することができます。"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -199,6 +198,16 @@ msgstr "一致します"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "一致しません"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

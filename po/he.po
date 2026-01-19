@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : "
-"((n > 10 && n % 10 == 0) ? 2 : 3));\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 5.15-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
@@ -123,8 +123,7 @@ msgstr "גיבוב מסוג MD5,‏ SHA-1,‏ SHA-256,‏ SHA-512,‏ Blake3,‏
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
-"נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
+msgstr "נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -195,3 +194,13 @@ msgstr "הם תואמים"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "הם לא תואמים"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
