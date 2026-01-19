@@ -6,11 +6,7 @@ describe Collision::Checksum do
     path = Path["./spec/test.txt"].expand(home: true)
     hashes = Hash(Symbol, String).new
     channel = Channel(Hash(String, String)).new
-    {% if Fiber::ExecutionContext.has_constant?(:Parallel) %}
-      mt_context = Fiber::ExecutionContext::Parallel.new("worker-threads", 8)
-    {% else %}
-      mt_context = Fiber::ExecutionContext::MultiThreaded.new("worker-threads", 8)
-    {% end %}
+    mt_context = {{ Fiber::ExecutionContext.has_constant?(:Parallel) ? Fiber::ExecutionContext::Parallel : Fiber::ExecutionContext::MultiThreaded }}.new("worker-threads", 8)
 
     Collision::CLIPBOARD_HASH.keys.each do |x|
       hashes[x] = ""
