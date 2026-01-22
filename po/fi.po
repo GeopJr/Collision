@@ -1,13 +1,13 @@
 # Finnish translation for dev.geopjr.Collision.
 # Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022, 2023, 2024.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022, 2023, 2024, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-04-13 17:01+0000\n"
+"PO-Revision-Date: 2026-01-22 18:42+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/collision/"
 "collision/fi/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -199,12 +199,12 @@ msgstr "Ne eivät vastaa toisiaan"
 #. Text on top of the progressbar when waiting for a different window to finish first
 #: src/window.cr:164 data/ui/application.ui:152
 msgid "Pending"
-msgstr ""
+msgstr "Odottaa"
 
 #. translators: overlay shown when dragging files above it
 #: data/ui/application.ui:48
 msgid "Drop to hash"
-msgstr ""
+msgstr "Pudota laskeaksesi tiivisteen"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;tiiviste;tarkistussumma;"
