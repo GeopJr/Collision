@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# "Omer I.S." <omeritzicschwartz@gmail.com>, 2025.
+# "Omer I.S." <omeritzicschwartz@gmail.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-11-21 11:51+0000\n"
+"PO-Revision-Date: 2026-01-25 07:01+0000\n"
 "Last-Translator: \"Omer I.S.\" <omeritzicschwartz@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/collision/"
 "collision/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -198,9 +198,9 @@ msgstr "הם לא תואמים"
 #. Text on top of the progressbar when waiting for a different window to finish first
 #: src/window.cr:164 data/ui/application.ui:152
 msgid "Pending"
-msgstr ""
+msgstr "בהמתנה"
 
 #. translators: overlay shown when dragging files above it
 #: data/ui/application.ui:48
 msgid "Drop to hash"
-msgstr ""
+msgstr "גרירה להצגת הגיבוב"
