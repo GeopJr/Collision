@@ -1,23 +1,23 @@
 # Simplified Chinese translations for dev.geopjr.Collision package.
 # Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
-# lumingzh <lumingzh@qq.com>, 2022, 2023, 2024.
+# lumingzh <lumingzh@qq.com>, 2022, 2023, 2024, 2026.
 # Himmel <anonymous.colt330@aleeas.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-08-02 12:09+0000\n"
+"PO-Revision-Date: 2026-02-05 00:01+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"collision/collision/zh_Hans/>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/collision/collision/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -197,12 +197,12 @@ msgstr "不匹配"
 #. Text on top of the progressbar when waiting for a different window to finish first
 #: src/window.cr:164 data/ui/application.ui:152
 msgid "Pending"
-msgstr ""
+msgstr "待处理"
 
 #. translators: overlay shown when dragging files above it
 #: data/ui/application.ui:48
 msgid "Drop to hash"
-msgstr ""
+msgstr "释放以计算哈希"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;哈希;校验;"
