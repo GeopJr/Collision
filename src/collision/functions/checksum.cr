@@ -52,7 +52,8 @@ module Collision
     end
 
     def generate(filename : String, progressbar : Gtk::ProgressBar? = nil, &block : Hash(Symbol, String) ->)
-      hash_amount = Collision::HASH_FUNCTIONS.size
+      dhf = Collision::Settings.safe_disabled_hash_functions
+      hash_amount = Collision::HASH_FUNCTIONS.size - dhf.size
 
       unless progressbar.nil?
         progressbar.fraction = 0.0
@@ -63,11 +64,13 @@ module Collision
       step = 1/hash_amount
       res = Hash(Symbol, String).new
       channel = Channel(Tuple(Symbol, String)).new(hash_amount)
-      Collision::HASH_FUNCTIONS.each_with_index do |hash_key, hash_value, i|
+      Collision::HASH_FUNCTIONS.each do |hash_key, hash_value|
+        next if dhf.includes?(hash_key)
+
         @mt_context.spawn do
           LOGGER.debug { "Spawned fiber #{hash_value}" }
           calculated_hash = calculate(hash_key, filename)
-          LOGGER.debug { "Finished fiber #{i + 1}/#{hash_amount}" }
+          LOGGER.debug { "Finished fiber #{hash_value}" }
 
           atomic.add(1)
           GLib.idle_add do

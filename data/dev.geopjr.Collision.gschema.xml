@@ -13,5 +13,9 @@
 			<default>false</default>
 			<summary>Default window maximized state</summary>
 		</key>
+		<key name="disabled-hash-functions" type="as">
+			<default>[]</default>
+			<summary>A list of hash functions that won't be calculated</summary>
+		</key>
 	</schema>
 </schemalist>

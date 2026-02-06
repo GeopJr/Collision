@@ -7,7 +7,7 @@
         <child>
           <object class="AdwShortcutsItem">
             <property name="title" translatable="yes">Open a File</property>
-            <property name="action-name">app.open-file</property>
+            <property name="action-name">win.open-file</property>
           </object>
         </child>
         <child>
