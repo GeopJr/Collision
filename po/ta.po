@@ -71,14 +71,18 @@ msgid "_Compare Hash Functions"
 msgstr "_ஹாஷ் செயல்பாடுகளை ஒப்பிடுக"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
 msgstr ""
 
-#: data/ui/application.ui:14
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "_விசைப்பலகை குறுக்குவழிகள்"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "_கொலிஸனைப் பற்றி"
 

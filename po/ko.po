@@ -70,14 +70,18 @@ msgid "_Compare Hash Functions"
 msgstr "_해시 함수 비교"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
 msgstr ""
 
-#: data/ui/application.ui:14
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "_키보드 단축키"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "_Collision에 대하여"
 

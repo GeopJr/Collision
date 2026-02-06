@@ -71,14 +71,18 @@ msgid "_Compare Hash Functions"
 msgstr "हैश प्रकार्यों की तुलना करें (_C)"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
 msgstr ""
 
-#: data/ui/application.ui:14
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "कीबोर्ड शॉर्टकट (_K)"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "Collision के बारे में (_A)"
 
