@@ -52,6 +52,7 @@ module Collision
 
     @hash_results = Hash(Symbol, String).new
     @file_path_queued : Path? = nil
+    @markdown_action : Gio::SimpleAction
 
     property working : Bool = false
 
@@ -82,12 +83,14 @@ module Collision
           end
 
           GLib.idle_add do
+            @hash_results.clear
             res.each do |hash_type, hash_value|
               @hash_results[hash_type] = hash_value
               @hash_rows[hash_type].subtitle = hash_value.size < 8 ? hash_value : Collision.split_by_4(hash_value)
             end
 
             @mainStack.visible_child_name = "results"
+            @markdown_action.enabled = true
             @header_bar.show_title = true
             @openFileBtn.visible = true
             @switcher_bar.visible = true
@@ -161,6 +164,40 @@ module Collision
       end
     end
 
+    def on_markdown
+      table = String.build do |str|
+        max_k = @hash_results.keys.map { |h| Collision::HASH_FUNCTIONS[h] }.max_by?(&.size).try(&.size) || 3
+        max_v = @hash_results.values.max_by?(&.size).try { |m| m.size + 2 } || 3 # codeblock
+
+        str << '|'
+        "CRF".center(str, max_k, ' ')
+        str << '|'
+        "Value".center(str, max_v, ' ')
+        str << '|'
+        str << '\n'
+
+        str << '|'
+        str << "-" * max_k
+        str << '|'
+        str << "-" * max_v
+        str << '|'
+        str << '\n'
+
+        Collision::HASH_FUNCTIONS.each do |k, v|
+          next unless @hash_results.keys.includes?(k)
+
+          str << '|'
+          v.ljust(str, max_k, ' ')
+          str << '|'
+          "`#{@hash_results[k]}`".ljust(str, max_v, ' ')
+          str << '|'
+          str << '\n'
+        end
+      end
+
+      self.clipboard.set(table.strip)
+    end
+
     def on_drop(file : Gio::File)
       loading
       self.file = file
@@ -170,6 +207,7 @@ module Collision
       @progressbar.text = Gettext.gettext("Pending")
       @progressbar.fraction = 0.0
       @mainStack.visible_child_name = "spinner"
+      @markdown_action.enabled = false
       @header_bar.show_title = false
       @openFileBtn.visible = false
       @switcher_bar.visible = false
@@ -187,7 +225,7 @@ module Collision
     end
 
     def handle_input_change(text : String)
-      result = @hash_results.values.includes?(text.downcase.gsub(' ', ""))
+      result = @hash_results.values.includes?(text.downcase.delete(' '))
       if text.size == 0
         @verifyOverlayLabel.visible = true
         @verifyFeedback.visible = false
@@ -299,6 +337,13 @@ module Collision
         on_open_btn_clicked
       end
       add_action(file_action)
+
+      @markdown_action = Gio::SimpleAction.new("markdown", nil)
+      @markdown_action.enabled = false
+      @markdown_action.activate_signal.connect do
+        on_markdown
+      end
+      add_action(@markdown_action)
 
       toggle_hf_action = Gio::SimpleAction.new("toggle-hashes", nil)
       toggle_hf_action.activate_signal.connect do

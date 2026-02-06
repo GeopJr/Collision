@@ -11,6 +11,11 @@
 			<attribute name="action">app.hashinfo</attribute>
 		</item>
 		<item>
+			<attribute name="label" translatable="yes">Copy as _Markdown Table</attribute>
+			<attribute name="action">win.markdown</attribute>
+			<attribute name="hidden-when">action-disabled</attribute>
+		</item>
+		<item>
 			<attribute name="label" translatable="yes">_Toggle Hash Functions</attribute>
 			<attribute name="action">win.toggle-hashes</attribute>
 		</item>
