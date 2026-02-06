@@ -94,6 +94,7 @@ module Collision
             @header_bar.show_title = true
             @openFileBtn.visible = true
             @switcher_bar.visible = true
+            update_hashrow_visibility
             flow_queue
             false
           end
@@ -136,6 +137,11 @@ module Collision
       {% else %}
         @fileInfo.description = Collision::FileUtils.real_path(filepath)
       {% end %}
+    end
+
+    def on_toggle_hf_clicked
+      dialog = Widgets::ToggleHFDialog.new
+      dialog.present(self)
     end
 
     def on_open_btn_clicked
@@ -267,8 +273,8 @@ module Collision
       @compareBtnLabel.tooltip_text = file_path.basename.to_s
 
       ({{ Fiber::ExecutionContext.has_constant?(:Concurrent) ? Fiber::ExecutionContext::Concurrent : Fiber::ExecutionContext::SingleThreaded }}.new("compare-tool")).spawn do
-        compareFileSHA256 = Collision::Checksum.new.calculate(:sha256, file.path.to_s)
-        result = @hash_results[:sha256] == compareFileSHA256
+        compareFileVER = Collision::Checksum.new.calculate(Collision::VERIFICATION_HASH_FUNCTION, file.path.to_s)
+        result = @hash_results[Collision::VERIFICATION_HASH_FUNCTION] == compareFileVER
         result = Collision::FileUtils.compare_content(file_path, @hash_results.values) if !result && File.size(file_path) < MAX_COMPARE_READ_SIZE
         classes = Collision::Feedback.class(result)
         title = Collision::Feedback.title(result)
@@ -315,6 +321,14 @@ module Collision
       {% end %}
     end
 
+    def update_hashrow_visibility
+      disabled_hf = Collision::Settings.safe_disabled_hash_functions
+
+      @hash_rows.each do |k, v|
+        v.visible = !disabled_hf.includes?(k)
+      end
+    end
+
     def initialize
       super()
 
@@ -330,6 +344,12 @@ module Collision
         on_markdown
       end
       add_action(@markdown_action)
+
+      toggle_hf_action = Gio::SimpleAction.new("toggle-hashes", nil)
+      toggle_hf_action.activate_signal.connect do
+        on_toggle_hf_clicked
+      end
+      add_action(toggle_hf_action)
 
       @hash_row_container = Gtk::ListBox.cast(template_child("hash_row_container"))
       setup_hashrows

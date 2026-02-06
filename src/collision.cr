@@ -76,6 +76,10 @@ module Collision
     LOGGER.debug { ex }
   end
 
+  # The hash function used for the verification tool
+  # It cannot be disabled and should be one without collisions
+  VERIFICATION_HASH_FUNCTION = :sha256
+
   HASH_FUNCTIONS = {
     md5:     "MD5",
     sha1:    "SHA1",
