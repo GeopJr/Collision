@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# "Omer I.S." <omeritzicschwartz@gmail.com>, 2025.
+# "Omer I.S." <omeritzicschwartz@gmail.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-11-21 11:51+0000\n"
+"PO-Revision-Date: 2026-01-25 07:01+0000\n"
 "Last-Translator: \"Omer I.S.\" <omeritzicschwartz@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/collision/"
 "collision/he/>\n"
@@ -15,9 +15,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : "
-"((n > 10 && n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.15-dev\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -70,10 +70,18 @@ msgid "_Compare Hash Functions"
 msgstr "ה_שוואה בין תכונות גיבוב (אנגלית)"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "קיצורי _מקשים"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "על _אודות „סתירות”"
 
@@ -123,8 +131,7 @@ msgstr "גיבוב מסוג MD5,‏ SHA-1,‏ SHA-256,‏ SHA-512,‏ Blake3,‏
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
-"נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
+msgstr "נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -195,3 +202,28 @@ msgstr "הם תואמים"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "הם לא תואמים"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr "בהמתנה"
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr "גרירה להצגת הגיבוב"
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
+msgstr ""

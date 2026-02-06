@@ -1,29 +1,22 @@
-# German translations for dev.geopjr.Collision package.
-# Copyright (C) 2021 THE dev.geopjr.Collision'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the dev.geopjr.Collision package.
-#
-# Philipp Kiemle <philipp.kiemle@gmail.com>, 2021, 2024.
-# Panagiotis Vasilopoulos <hello@alwayslivid.com>, 2021.
-# Milo Ivir <mail@milotype.de>, 2021.
-# sal0max <msal.coding@gmail.com>, 2022.
-# gregorni <gregorniehl@web.de>, 2023.
-# Vri 🌈 <weblate@vrifox.cc>, 2023.
-# Alexander Bogoslawski <alexandere.bogoslawski@gmail.com>, 2024.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: dev.geopjr.Collision\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-04-23 08:09+0000\n"
-"Last-Translator: Alexander Bogoslawski <alexandere.bogoslawski@gmail.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/collision/"
-"collision/de/>\n"
-"Language: de\n"
+"PO-Revision-Date: 2026-01-27 18:01+0000\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <https://hosted.weblate.org/projects/collision/"
+"collision/kk/>\n"
+"Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -33,16 +26,16 @@ msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Prüfsummengenerator"
+msgstr "Хэш генераторы"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "Prüfen Sie die Prüfsummen Ihrer Dateien"
+msgstr "Файлдарыңыздың хэштерін тексеру"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;Prüfsumme;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;хэш;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -52,11 +45,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"Die Überprüfung, ob eine heruntergeladene oder empfangene Datei tatsächlich "
-"die erwartete Datei ist, wird oft übersehen oder ist zu zeitaufwendig. "
-"Gleichzeitig ist es aufgrund der massiven Zunahme bösartiger Webseiten und "
-"anderer Akteure sehr einfach geworden, an böswillig manipulierte Dateien zu "
-"gelangen."
+"Жүктеп алынған немесе алынған файлдың шын мәнінде сіз күткен файл екенін "
+"тексеру жиі ескерілмейді немесе тым көп уақытты алады. Сонымен қатар, зиянды "
+"веб-беттер мен басқа да факторлардың жаппай көбеюіне байланысты өзгертілген "
+"файлды алу өте оңай болды."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -64,18 +56,18 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Diese Anwendung versucht, das Problem zu lösen. Collision hat eine einfache "
-"Benutzeroberfläche, die es jedem ermöglicht, Prüfsummen (MD5, SHA-256, "
-"SHA-512, SHA-1, Blake3, CRC32 und Adler32) zu generieren und zu vergleichen "
-"- egal wie alt oder welcher Kenntnisstand."
+"Бұл сайман осы мәселені шешуге бағытталған. Collision қарапайым және таза "
+"интерфейспен жабдықталған, бұл кез келген адамға, кез келген жастағы және "
+"тәжірибе деңгейіндегі адамдарға MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 "
+"және Adler32 хэштерін жасауға, салыстыруға және тексеруге мүмкіндік береді."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
-msgstr "_Neues Fenster"
+msgstr "_Жаңа терезе"
 
 #: data/ui/application.ui:10
 msgid "_Compare Hash Functions"
-msgstr "Prüfsummen-Funktionen verglei_chen"
+msgstr "Хэш функцияларын _салыстыру"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
@@ -87,146 +79,139 @@ msgstr ""
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
-msgstr "_Tastenkürzel"
+msgstr "Пернетақта _жарлықтары"
 
 #: data/ui/application.ui:27
 msgid "_About Collision"
-msgstr "_Info zu Collision"
+msgstr "Collision _туралы"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr "Eine Datei wählen"
+msgstr "Файлды таңдау"
 
 #: data/ui/application.ui:60
 msgid "_Open"
-msgstr "_Öffnen"
+msgstr "_Ашу"
 
 #: data/ui/application.ui:61
 msgid "Open…"
-msgstr "Öffnen …"
+msgstr "Ашу…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
-msgstr "Menü"
+msgstr "Мәзір"
 
 #: data/ui/application.ui:119
 msgid "_Open a File"
-msgstr "Eine Datei _öffnen"
+msgstr "Файлды _ашу"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr "Prüfsummen werden berechnet"
+msgstr "Хэштерді есептеу"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
-msgstr "Das könnte eine Weile dauern"
+msgstr "Бұл біраз уақыт алуы мүмкін"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr "Prüfsumme"
+msgstr "Хэш"
 
 #: data/ui/application.ui:191
 msgid "Verify"
-msgstr "Verifizieren"
+msgstr "Тексеру"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr "Prüfsumme"
+msgstr "Бақылау сомасы"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
-msgstr "MD5, SHA-1, SHA-256, SHA-512, Blake3, CRC32 oder Adler32-Prüfsumme"
+msgstr "MD5, SHA-1, SHA-256, SHA-512, Blake3, CRC32 немесе Adler32 хэші"
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
-"Fügen Sie eine MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32-Prüfsumme ein"
+msgstr "MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 хэшін кірістіру"
 
 #: data/ui/application.ui:285
 msgid "File"
-msgstr "Datei"
+msgstr "Файл"
 
 #: data/ui/application.ui:300
 msgid "Select Another File to Check Against"
-msgstr "Wählen Sie eine weitere Datei zum Prüfen aus"
+msgstr "Салыстыру үшін басқа файлды таңдау"
 
 #: data/ui/application.ui:342
 msgid "Choose File…"
-msgstr "Datei auswählen …"
+msgstr "Файлды таңдау…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr "Kopieren"
+msgstr "Көшіру"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
-msgstr "Allgemein"
+msgstr "Жалпы"
 
 #: data/ui/shortcuts_window.ui:14
 msgid "Open a File"
-msgstr "Eine Datei öffnen"
+msgstr "Файлды ашу"
 
 #: data/ui/shortcuts_window.ui:20
 msgid "Show Keyboard Shortcuts"
-msgstr "Tastenkürzel anzeigen"
+msgstr "Пернетақта жарлықтарын көрсету"
 
 #: data/ui/shortcuts_window.ui:26
 msgid "New Window"
-msgstr "Neues Fenster"
+msgstr "Жаңа терезе"
 
 #: data/ui/shortcuts_window.ui:32
 msgid "Close Window"
-msgstr "Fenster schließen"
+msgstr "Терезені жабу"
 
 #: data/ui/shortcuts_window.ui:38
 msgid "Quit"
-msgstr "Beenden"
+msgstr "Шығу"
 
 #: nautilus-extension/collision-extension.py:54
 msgid "Check Hashes"
-msgstr "Prüfsummen prüfen"
+msgstr "Хэштерді тексеру"
 
 #. Wikipedia article. If available, set it to the LANGUAGE's version, else leave it as is.
 #: src/collision.cr:72
 msgid ""
 "https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 msgstr ""
-"https://de.wikipedia.org/wiki/"
-"Kryptographische_Hashfunktion#%C3%9Cbersicht_von_Hashfunktionen"
+"https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions"
 
 #. Name <email@domain.com> or Name https://website.example
 #: src/collision/actions/about.cr:22
 msgid "translator-credits"
-msgstr ""
-"Milo Ivir\n"
-"Panagiotis Vasilopoulos\n"
-"Philipp Kiemle\n"
-"Maximilian Salomon\n"
-"gregorni"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
 #. The variables are numbers
 #: src/collision/functions/checksum.cr:79
 #, c-format
 msgid "%d of %d hashes calculated"
-msgstr "%d von %d Prüfsummen berechnet"
+msgstr "%d / %d хэш есептелді"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Match"
-msgstr "Übereinstimmung"
+msgstr "Олар сәйкес келеді"
 
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
-msgstr "Keine Übereinstimmung"
+msgstr "Олар сәйкес келмейді"
 
 #. Text on top of the progressbar when waiting for a different window to finish first
 #: src/window.cr:164 data/ui/application.ui:152
 msgid "Pending"
-msgstr ""
+msgstr "Күтілуде"
 
 #. translators: overlay shown when dragging files above it
 #: data/ui/application.ui:48
 msgid "Drop to hash"
-msgstr ""
+msgstr "Хэштеу үшін осында тастаңыз"
 
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
@@ -242,22 +227,3 @@ msgstr ""
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
 msgstr ""
-
-#~ msgid "md5;sha1;sha256;sha512;hash;"
-#~ msgstr "md5;sha1;sha256;sha512;hash;"
-
-#~ msgid ""
-#~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
-#~ "UI, allowing anyone, from any age and experience group, to generate, "
-#~ "compare and verify MD5, SHA-256, SHA-512 and SHA-1 hashes."
-#~ msgstr ""
-#~ "Dieses Werkzeug zielt darauf ab, dieses Problem zu lösen. Collision hat "
-#~ "eine einfache und aufgeräumte Benutzeroberfläche, die es jedem ermöglicht "
-#~ "(unabhängig von Alter und Erfahrung), MD5, SHA-256, SHA-512 und SHA-1 "
-#~ "Hashes zu generieren, zu vergleichen und zu verifizieren."
-
-#~ msgid "MD5,SHA-1,SHA-256 or SHA-512 Hash"
-#~ msgstr "MD5,SHA-1,SHA-256 oder SHA-512 Hash"
-
-#~ msgid "Insert a MD5/SHA-1/SHA-256/SHA-512 Hash"
-#~ msgstr "Fügen Sie einen MD5/SHA-1/SHA-256/SHA-512 Hash ein"

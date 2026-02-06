@@ -46,11 +46,10 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
-"यह सत्यापित करना कि आपके द्वारा डाउनलोड की गई या प्राप्त की गई फाइल वास्तव "
-"में वही है जिसकी आप अपेक्षा कर रहे थे, अक्सर अनदेखा कर दिया जाता है या ऐसा "
-"करने में बहुत समय लगता है। साथ ही, दुर्भावनापूर्ण वेबपृष्ठों और अन्य तत्वों "
-"की बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी फाइल को प्राप्त करना बहुत आसान हो "
-"गया है जिसके साथ छेड़छाड़ की गई है।"
+"यह सत्यापित करना कि आपके द्वारा डाउनलोड की गई या प्राप्त की गई फाइल वास्तव में वही है "
+"जिसकी आप अपेक्षा कर रहे थे, अक्सर अनदेखा कर दिया जाता है या ऐसा करने में बहुत समय लगता "
+"है। साथ ही, दुर्भावनापूर्ण वेबपृष्ठों और अन्य तत्वों की बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी "
+"फाइल को प्राप्त करना बहुत आसान हो गया है जिसके साथ छेड़छाड़ की गई है।"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -58,10 +57,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"इस टूल का लक्ष्य उसे हल करना है। Collision एक सरल &amp; साफ UI के साथ आता है"
-", जो किसी भी उम्र और अनुभव समूह के किसी भी व्यक्ति को MD5, SHA-256, SHA-512, "
-"SHA-1, Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने"
-" की अनुमति देता है।"
+"इस टूल का लक्ष्य उसे हल करना है। Collision एक सरल &amp; साफ UI के साथ आता है, जो "
+"किसी भी उम्र और अनुभव समूह के किसी भी व्यक्ति को MD5, SHA-256, SHA-512, SHA-1, "
+"Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने की अनुमति देता "
+"है।"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -72,10 +71,18 @@ msgid "_Compare Hash Functions"
 msgstr "हैश प्रकार्यों की तुलना करें (_C)"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "कीबोर्ड शॉर्टकट (_K)"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "Collision के बारे में (_A)"
 
@@ -196,3 +203,28 @@ msgstr "वे मेल खाते हैं"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "वे मेल नहीं खाते"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
+msgstr ""

@@ -5,13 +5,15 @@
 # bonbonboi <hamzah.abusamak@gmail.com>, 2022.
 # Ali Aljishi <ahj696@hotmail.com>, 2023.
 # Ahmed Najmawi <iramosu@protonmail.com>, 2025.
+# Muhammed Al-Basha <mu7basha@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-07-24 05:03+0000\n"
-"Last-Translator: Ahmed Najmawi <iramosu@protonmail.com>\n"
+"PO-Revision-Date: 2026-02-03 23:01+0000\n"
+"Last-Translator: Muhammed Al-Basha "
+"<mu7basha@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/collision/"
 "collision/ar/>\n"
 "Language: ar\n"
@@ -20,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -60,8 +62,8 @@ msgid ""
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
 "تهدف هذه الأداة لإصلاح هذا. يأتي «تصادم» مع واجهة واضحة وبسيطة، مما يتيح لأي "
-"أحد بغض النظر عن عمره أو خبرته توليد ومقارنة تلبيدات MD5، وSHA-256، وSHA-512،"
-" وSHA-1، وBlake3، وCRC32، وAdler32."
+"أحد بغض النظر عن عمره أو خبرته توليد ومقارنة تلبيدات MD5، وSHA-256، "
+"وSHA-512، وSHA-1، وBlake3، وCRC32، وAdler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -72,10 +74,18 @@ msgid "_Compare Hash Functions"
 msgstr "_قارن وظائف التلبيد"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "ا_ختصارات لوح المفاتيح"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "_عَنْ «تصادم»"
 
@@ -199,6 +209,31 @@ msgstr "يتطابقان"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "لا يتطابقان"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr "افلت للتبليد"
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
+msgstr ""
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;هاش;"

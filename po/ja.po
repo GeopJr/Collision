@@ -5,13 +5,14 @@
 # Himmel <anonymous.colt330@aleeas.com>, 2024.
 # Ryo Nakano <ryonakaknock3@gmail.com>, 2024.
 # Himmel <Himmel@users.noreply.hosted.weblate.org>, 2024.
+# Himmel <himmel@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-11-03 16:09+0000\n"
-"Last-Translator: Himmel <Himmel@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-01-25 07:01+0000\n"
+"Last-Translator: Himmel <himmel@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/collision/"
 "collision/ja/>\n"
 "Language: ja\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -59,10 +60,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"このツールはこうした問題を解決することを目的としています。Collision "
-"はシンプル・クリーンな UI で、誰でも簡単に "
-"MD5、SHA-256、SHA-512、SHA-1、Blake3、CRC32、Adler32 "
-"ハッシュを生成、比較、検証することができます。"
+"このツールはこうした問題を解決することを目的としています。Collision はシンプ"
+"ル・クリーンな UI で、誰でも簡単に MD5、SHA-256、SHA-512、SHA-1、Blake3、"
+"CRC32、Adler32 ハッシュを生成、比較、検証することができます。"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -73,10 +73,18 @@ msgid "_Compare Hash Functions"
 msgstr "ハッシュ関数の比較(_C)"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "キーボードショートカット(_K)"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "Collision について(_A)"
 
@@ -199,6 +207,31 @@ msgstr "一致します"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "一致しません"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr "保留中"
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr "ハッシュにする"
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
+msgstr ""
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

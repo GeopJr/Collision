@@ -44,7 +44,8 @@ msgid ""
 "time, it has become very easy to get your hands on a file that has been "
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
-msgstr "驗證你下載或接收的文件是否確實是您所期望的文件經常被忽視或太耗時。同時，由於"
+msgstr ""
+"驗證你下載或接收的文件是否確實是您所期望的文件經常被忽視或太耗時。同時，由於"
 "惡意網頁和其他行為者的大量增加，取得被篡改的文件也變得非常容易。"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
@@ -53,9 +54,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"這款工具旨在解決這一問題。 Collision "
-"的使用者介面簡潔明了，讓任何年齡和經驗的人可以產生、比較和驗證 "
-"MD5、SHA-256、SHA-512、SHA-1、Blake3、CRC32 和 Adler32 雜湊值。"
+"這款工具旨在解決這一問題。 Collision 的使用者介面簡潔明了，讓任何年齡和經驗的"
+"人可以產生、比較和驗證 MD5、SHA-256、SHA-512、SHA-1、Blake3、CRC32 和 "
+"Adler32 雜湊值。"
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -66,10 +67,18 @@ msgid "_Compare Hash Functions"
 msgstr "_比較雜湊功能"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "_鍵盤快捷鍵"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "_關於Collision"
 
@@ -190,3 +199,28 @@ msgstr "匹配"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "不匹配"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
+msgstr ""

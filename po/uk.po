@@ -41,9 +41,7 @@ msgstr "Перевіряйте хеш-суми ваших файлів"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
-"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;"
-"порівняти;перевірити;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;порівняти;перевірити;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -78,10 +76,18 @@ msgid "_Compare Hash Functions"
 msgstr "_Функції порівняння хешів"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "_Клавіатурні скорочення"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "_Про Колізію"
 
@@ -204,10 +210,33 @@ msgstr "збігаються"
 msgid "They Don't Match"
 msgstr "не збігаються"
 
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
+msgstr ""
+
 #~ msgid "md5;sha1;sha256;sha512;hash;"
-#~ msgstr ""
-#~ "md5;sha1;sha256;sha512;hash;мд5;хеш;сума;сша1;сша256;сша512;порівняти;"
-#~ "зрівняти;перевірити;"
+#~ msgstr "md5;sha1;sha256;sha512;hash;мд5;хеш;сума;сша1;сша256;сша512;порівняти;зрівняти;перевірити;"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

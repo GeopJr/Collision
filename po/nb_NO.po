@@ -35,9 +35,7 @@ msgstr "Sjekk avtrykkene til filer"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
-"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;avtrykk;verifisering;krypter"
-"ing;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;avtrykk;verifisering;kryptering;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -60,8 +58,8 @@ msgid ""
 msgstr ""
 "Collision har som mål å være løsningen på dette problemet. Appen er utformet "
 "for at hvem som helst, uansett alder eller erfaring, skal kunne generere, "
-"sammenligne og verifisere forskjellige filavtrykk, som MD5, SHA-256, SHA-"
-"512, SHA-1, Blake3, CRC32 eller Adler32."
+"sammenligne og verifisere forskjellige filavtrykk, som MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 eller Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -72,10 +70,18 @@ msgid "_Compare Hash Functions"
 msgstr "_Sammenlign funksjoner"
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
 msgstr "_Tastatursnarveier"
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:27
 msgid "_About Collision"
 msgstr "_Om Collision"
 
@@ -196,3 +202,28 @@ msgstr "De samsvarer"
 #: src/collision/functions/feedback.cr:204
 msgid "They Don't Match"
 msgstr "De samsvarer ikke"
+
+#. Text on top of the progressbar when waiting for a different window to finish first
+#: src/window.cr:164 data/ui/application.ui:152
+msgid "Pending"
+msgstr ""
+
+#. translators: overlay shown when dragging files above it
+#: data/ui/application.ui:48
+msgid "Drop to hash"
+msgstr ""
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
+msgstr ""
