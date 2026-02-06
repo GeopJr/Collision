@@ -61,10 +61,14 @@ msgid "_Compare Hash Functions"
 msgstr ""
 
 #: data/ui/application.ui:14
+msgid "Copy as _Markdown Table"
+msgstr ""
+
+#: data/ui/application.ui:19
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/application.ui:18
+#: data/ui/application.ui:23
 msgid "_About Collision"
 msgstr ""
 
