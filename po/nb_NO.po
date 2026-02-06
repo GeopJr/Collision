@@ -70,6 +70,10 @@ msgid "_Compare Hash Functions"
 msgstr "_Sammenlign funksjoner"
 
 #: data/ui/application.ui:14
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
 msgstr "_Tastatursnarveier"
 
@@ -203,4 +207,19 @@ msgstr ""
 #. translators: overlay shown when dragging files above it
 #: data/ui/application.ui:48
 msgid "Drop to hash"
+msgstr ""
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
 msgstr ""

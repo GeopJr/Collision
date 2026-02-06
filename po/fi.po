@@ -71,6 +71,10 @@ msgid "_Compare Hash Functions"
 msgstr "_Vertaa tiivistefunktioita"
 
 #: data/ui/application.ui:14
+msgid "_Toggle Hash Functions"
+msgstr ""
+
+#: data/ui/application.ui:14
 msgid "_Keyboard Shortcuts"
 msgstr "_Pikanäppäimet"
 
@@ -205,6 +209,21 @@ msgstr "Odottaa"
 #: data/ui/application.ui:48
 msgid "Drop to hash"
 msgstr "Pudota laskeaksesi tiivisteen"
+
+#. translators: description in settings page
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:11
+msgid "Select which hash functions should be calculated."
+msgstr ""
+
+#. translators: switch row description when the row is disabled
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:22
+msgid "This hash function is used for file verification and cannot be disabled"
+msgstr ""
+
+#. translators: toast shown when saving disabled toggled functions while it calculates hashes
+#: src/collision/widgets/toggle_hash_functions_dialog.cr:48
+msgid "Wait for all ongoing operations to finish"
+msgstr ""
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;tiiviste;tarkistussumma;"
