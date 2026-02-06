@@ -258,7 +258,7 @@ module Collision
     # IF the file is smaller than the size below.
     # We want to avoid loading a huge file in
     # memory but also avoid false-positives.
-    MAX_COMPARE_READ_SIZE = 10000 # in bytes
+    MAX_COMPARE_READ_SIZE = 1000 # in bytes
 
     def comparefile=(file : Gio::File)
       Collision::LOGGER.debug { "Begin comparing tool" }

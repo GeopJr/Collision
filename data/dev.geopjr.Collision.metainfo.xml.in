@@ -48,6 +48,15 @@
     <color type="primary" scheme_preference="dark">#26a269</color>
   </branding>
   <releases>
+    <release version="3.14.0" date="2026-02-07">
+      <description translate="no">
+        <ul>
+          <li>Added the ability to export the results as a markdown table</li>
+          <li>Added the ability to disable hash functions</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.13.0" date="2026-01-19">
       <description translate="no">
         <ul>
