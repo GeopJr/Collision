@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-01-20 22:01+0000\n"
+"PO-Revision-Date: 2026-02-08 01:09+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/collision/"
 "collision/et/>\n"
@@ -75,11 +75,11 @@ msgstr "_Võrdle räsifunktsioone"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "Kopeeri _Markdown tabelina"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "Lüli_ta räsifunktsioonid sisse/välja"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -87,7 +87,7 @@ msgstr "_Kiirklahvid"
 
 #: data/ui/application.ui:27
 msgid "_About Collision"
-msgstr "_Collisioni teave"
+msgstr "Rakenduse te_ave: Collision"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
@@ -222,17 +222,19 @@ msgstr "Räsimiseks lohista siia"
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "Vali arvutatavad räsifunktsioonid."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
 msgstr ""
+"Antud räsifunktsiooni kasutatakse faili õigsuse kontrollimiseks ja seda ei "
+"saa välja lülitada"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "Ootan kõikide pooleliolevate toimingute lõppemist"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "
