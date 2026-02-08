@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-02-05 00:01+0000\n"
+"PO-Revision-Date: 2026-02-08 01:09+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/collision/collision/zh_Hans/>\n"
@@ -70,11 +70,11 @@ msgstr "对比哈希函数(_C)"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "复制为 _Markdown 表格"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "切换哈希函数(_T)"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -215,17 +215,17 @@ msgstr "释放以计算哈希"
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "选择应计算哪种哈希函数。"
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
-msgstr ""
+msgstr "此哈希函数是用于文件校验的且无法被禁用"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "请等待进行中的操作完成"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;哈希;校验;"
