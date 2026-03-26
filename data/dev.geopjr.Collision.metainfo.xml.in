@@ -11,10 +11,10 @@
   <summary>Check hashes for your files</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://collision.geopjr.dev/</url>
-  <url type="bugtracker">https://github.com/GeopJr/Collision/issues</url>
-  <url type="translate">https://hosted.weblate.org/engage/collision/</url>
+  <url type="bugtracker">https://codeberg.org/GeopJr/Collision/issues</url>
+  <url type="translate">https://translate.codeberg.org/engage/collision/</url>
   <url type="donation">https://geopjr.dev/donate</url>
-  <url type="vcs-browser">https://github.com/GeopJr/Collision/</url>
+  <url type="vcs-browser">https://codeberg.org/GeopJr/Collision/</url>
   <url type="contribute">https://welcome.gnome.org/app/Collision/</url>
   <description>
     <p>
@@ -31,16 +31,16 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-1.png</image>
+      <image type="source">https://codeberg.org/GeopJr/Collision/media/commit/8eaee0db9333e479856818e27ef41a796c1e5581/data/screenshots/screenshot-1.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-2.png</image>
+      <image type="source">https://codeberg.org/GeopJr/Collision/media/commit/8eaee0db9333e479856818e27ef41a796c1e5581/data/screenshots/screenshot-2.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-3.png</image>
+      <image type="source">https://codeberg.org/GeopJr/Collision/media/commit/8eaee0db9333e479856818e27ef41a796c1e5581/data/screenshots/screenshot-3.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://media.githubusercontent.com/media/GeopJr/Collision/main/data/screenshots/screenshot-4.png</image>
+      <image type="source">https://codeberg.org/GeopJr/Collision/media/commit/8eaee0db9333e479856818e27ef41a796c1e5581/data/screenshots/screenshot-4.png</image>
     </screenshot>
   </screenshots>
   <branding>

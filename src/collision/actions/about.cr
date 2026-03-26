@@ -13,7 +13,7 @@ class Collision::Action::About < Collision::Action
       version: VERSION,
       copyright: "© 2021 Evangelos Paterakis",
       website: "https://collision.geopjr.dev",
-      issue_url: "https://github.com/GeopJr/Collision/issues",
+      issue_url: "https://codeberg.org/Collision/issues",
       developer_name: "Evangelos \"GeopJr\" Paterakis",
       artists: {"Tobias Bernard"},
       designers: {"Tobias Bernard"},

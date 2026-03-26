@@ -1,0 +1,13 @@
+when:
+  - event: pull_request
+  - event: push
+    branch: main
+
+steps:
+  build:
+    image: alpine:edge
+    commands:
+      - apk add --no-cache crystal shards libadwaita-dev blake3-dev make gobject-introspection-dev yaml-dev openssl-dev
+      - crystal tool format
+      - BLAKE3_CR_DO_NOT_BUILD=1 make bindings
+      - make test

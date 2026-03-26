@@ -1,6 +1,6 @@
 # Generates a list of licenses of all shards and the app itself
 # Inspired by: https://github.com/elorest/compiled_license
-# Adapted from sabo-tabby https://github.com/GeopJr/sabo-tabby/blob/main/src/licenses.cr
+# Adapted from sabo-tabby https://codeberg.org/GeopJr/sabo-tabby/blob/main/src/licenses.cr
 
 APP_NAME      = {{read_file("#{__DIR__}/../../shard.yml").split("name: ")[1].split("\n")[0]}}
 LICENSE_FILES = {"LICENSE", "LICENSE.md", "LICENSE.txt", "UNLICENSE"}

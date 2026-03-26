@@ -7,8 +7,8 @@
 >
   <name xml:lang="en">Collision</name>
   <shortdesc xml:lang="en">Check hashes for your files</shortdesc>
-  <homepage rdf:resource="https://github.com/GeopJr/Collision" />
-  <bug-database rdf:resource="https://github.com/GeopJr/Collision/issues" />
+  <homepage rdf:resource="https://codeberg.org/GeopJr/Collision" />
+  <bug-database rdf:resource="https://codeberg.org/GeopJr/Collision/issues" />
   <programming-language>Crystal</programming-language>
   <maintainer>
     <foaf:Person>
