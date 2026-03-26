@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Nitin Khalia <weblate.scrambled777@simplelogin.com>, 2024.
-# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024.
+# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-05-08 05:07+0000\n"
-"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
+"PO-Revision-Date: 2026-03-26 21:15+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/collision/"
 "collision/hi/>\n"
 "Language: hi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5.4-rc\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -47,8 +47,8 @@ msgid ""
 "actors."
 msgstr ""
 "यह सत्यापित करना कि आपके द्वारा डाउनलोड की गई या प्राप्त की गई फाइल वास्तव में वही है "
-"जिसकी आप अपेक्षा कर रहे थे, अक्सर अनदेखा कर दिया जाता है या ऐसा करने में बहुत समय लगता "
-"है। साथ ही, दुर्भावनापूर्ण वेबपृष्ठों और अन्य तत्वों की बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी "
+"जिसकी आप अपेक्षा कर रहे थे, अक्सर अनदेखा कर दिया जाता है या ऐसा करने में बहुत समय लगता है"
+"। साथ ही, दुर्भावनापूर्ण वेबपृष्ठों और अन्य तत्वों की बड़े पैमाने पर वृद्धि के कारण, किसी ऐसी "
 "फाइल को प्राप्त करना बहुत आसान हो गया है जिसके साथ छेड़छाड़ की गई है।"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
@@ -59,8 +59,8 @@ msgid ""
 msgstr ""
 "इस टूल का लक्ष्य उसे हल करना है। Collision एक सरल &amp; साफ UI के साथ आता है, जो "
 "किसी भी उम्र और अनुभव समूह के किसी भी व्यक्ति को MD5, SHA-256, SHA-512, SHA-1, "
-"Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने की अनुमति देता "
-"है।"
+"Blake3, CRC32 और Adler32 हैश उत्पन्न करने, तुलना करने और सत्यापित करने की अनुमति देता है"
+"।"
 
 #: data/ui/application.ui:6
 msgid "_New Window"

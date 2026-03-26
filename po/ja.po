@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Kaz Sibuya <sibuyakazokuu@gmail.com>, 2022.
 # Himmel <anonymous.colt330@aleeas.com>, 2024.
-# Ryo Nakano <ryonakaknock3@gmail.com>, 2024.
+# Ryo Nakano <ryonakaknock3@gmail.com>, 2024, 2026.
 # Himmel <Himmel@users.noreply.hosted.weblate.org>, 2024.
 # Himmel <himmel@users.noreply.hosted.weblate.org>, 2026.
+# Deleted User <noreply+36432@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-01-25 07:01+0000\n"
-"Last-Translator: Himmel <himmel@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-03-26 21:13+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/collision/"
 "collision/ja/>\n"
 "Language: ja\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -51,8 +52,8 @@ msgid ""
 msgstr ""
 "あなたがダウンロードした、または受信したファイルが本当に意図したものであるか"
 "を検証するには、しばしば見逃してしまったり、時間がかかりすぎたりすることがあ"
-"ります。一方、悪意のあるウェブページや他の攻撃者の急増により、改竄されたファ"
-"イルを入手することは珍しくありません。"
+"ります。一方、悪意のあるウェブページや他の攻撃者の急増により、改竄された"
+"ファイルを入手することは珍しくありません。"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -60,9 +61,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"このツールはこうした問題を解決することを目的としています。Collision はシンプ"
-"ル・クリーンな UI で、誰でも簡単に MD5、SHA-256、SHA-512、SHA-1、Blake3、"
-"CRC32、Adler32 ハッシュを生成、比較、検証することができます。"
+"このツールはこうした問題を解決することを目的としています。Collision は"
+"シンプル・クリーンな UI で、誰でも簡単に MD5、SHA-256、SHA-512、SHA-1、Blake3"
+"、CRC32、Adler32 ハッシュを生成、比較、検証することができます。"
 
 #: data/ui/application.ui:6
 msgid "_New Window"

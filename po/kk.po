@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-01-27 18:01+0000\n"
+"PO-Revision-Date: 2026-03-26 21:14+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <https://hosted.weblate.org/projects/collision/"
 "collision/kk/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -71,11 +71,11 @@ msgstr "Хэш функцияларын _салыстыру"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "Markdown _кестесі ретінде көшіріп алу"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "Хэш фунцкцияларын ауыс_тырып, қосу"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -216,14 +216,15 @@ msgstr "Хэштеу үшін осында тастаңыз"
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "Қай хэш функция есептелетінін таңдаңыз."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
 msgstr ""
+"Бұл хэш функциясы файлды растау үшін қолданылған және оны сөндіру мүмкін емес"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "Барлық орындалып тұрған әрекеттердің аяқталуын күту"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-01-25 07:01+0000\n"
+"PO-Revision-Date: 2026-03-26 21:13+0000\n"
 "Last-Translator: \"Omer I.S.\" <omeritzicschwartz@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/collision/"
 "collision/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -71,11 +71,11 @@ msgstr "ה_שוואה בין תכונות גיבוב (אנגלית)"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "העתקה בתור _טבלת Markdown"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "הפעלת_/כיבוי פונקציות גיבוב"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -131,7 +131,8 @@ msgstr "גיבוב מסוג MD5,‏ SHA-1,‏ SHA-256,‏ SHA-512,‏ Blake3,‏
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr "נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
+msgstr ""
+"נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"
@@ -216,14 +217,14 @@ msgstr "גרירה להצגת הגיבוב"
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "בחירה האם יש לחשב את פונקציות הגיבוב."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
-msgstr ""
+msgstr "פונקציית גיבוב זו משמשת לאימות הקובץ ולא ניתן להשבית אותה"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "נא להמתין עד לסיום כל הפעולות שמתבצעות"

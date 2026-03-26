@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Sergio Varela <sergitroll9@gmail.com>, 2022, 2023.
-# Ibai Oihanguren Sala <ibaios@disroot.org>, 2025.
+# Sergio Varela <sergitroll9@gmail.com>, 2022, 2023, 2026.
+# Ibai Oihanguren Sala <ibaios@disroot.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-06-18 12:03+0000\n"
-"Last-Translator: Ibai Oihanguren Sala <ibaios@disroot.org>\n"
+"PO-Revision-Date: 2026-03-26 21:13+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/collision/"
 "collision/eu/>\n"
 "Language: eu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12.1\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -72,11 +72,11 @@ msgstr "_Hash funtzioen alderaketa"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "Kopiatu _Markdown taula gisa"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "Erakutsi / ezkutatu _hash funtzioak"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -124,7 +124,7 @@ msgstr "Egiaztatu"
 
 #: data/ui/application.ui:204
 msgid "Checksum"
-msgstr "Egiaztapenaren batura (Checksum)"
+msgstr "Egiaztapen-batura (Checksum)"
 
 #: data/ui/application.ui:234
 msgid "MD5,SHA-1,SHA-256,SHA-512,Blake3,CRC32 or Adler32 Hash"
@@ -209,27 +209,29 @@ msgstr "Ez datoz bat"
 #. Text on top of the progressbar when waiting for a different window to finish first
 #: src/window.cr:164 data/ui/application.ui:152
 msgid "Pending"
-msgstr ""
+msgstr "Lanean"
 
 #. translators: overlay shown when dragging files above it
 #: data/ui/application.ui:48
 msgid "Drop to hash"
-msgstr ""
+msgstr "Jaregin hasha kalkulatzeko"
 
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "Hautatu zein hash funtzio kalkulatu behar diren."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
 msgstr ""
+"Hash funtzio hau fitxategien egiaztapenerako erabiltzen da eta ezin da "
+"ezgaitu"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "Itxaron eragiketa aktibo guztiak amaitu arte"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

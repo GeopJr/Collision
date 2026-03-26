@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Brage Fuglseth <brage.fuglseth@gmail.com>, 2024.
+# Brage Fuglseth <brage.fuglseth@gmail.com>, 2024, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-09-24 12:19+0000\n"
-"Last-Translator: Brage Fuglseth <brage.fuglseth@gmail.com>\n"
+"PO-Revision-Date: 2026-03-26 21:15+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
 "collision/collision/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -35,7 +35,8 @@ msgstr "Sjekk avtrykkene til filer"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;avtrykk;verifisering;kryptering;"
+msgstr ""
+"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;avtrykk;verifisering;kryptering;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -58,8 +59,8 @@ msgid ""
 msgstr ""
 "Collision har som mål å være løsningen på dette problemet. Appen er utformet "
 "for at hvem som helst, uansett alder eller erfaring, skal kunne generere, "
-"sammenligne og verifisere forskjellige filavtrykk, som MD5, SHA-256, "
-"SHA-512, SHA-1, Blake3, CRC32 eller Adler32."
+"sammenligne og verifisere forskjellige filavtrykk, som MD5, SHA-256, SHA-"
+"512, SHA-1, Blake3, CRC32 eller Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"

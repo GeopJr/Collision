@@ -2,14 +2,15 @@
 # Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # musiclover382 <mattiagiovanni.borda@icloud.com>, 2022.
-# albanobattistella <albano_battistella@hotmail.com>, 2022, 2023, 2024.
+# albanobattistella <albano_battistella@hotmail.com>, 2022, 2023, 2024, 2026.
+# Mattia Borda <mattiagiovanni.borda@icloud.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-04-01 01:00+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
+"PO-Revision-Date: 2026-03-26 21:15+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/collision/"
 "collision/it/>\n"
 "Language: it\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -59,8 +60,8 @@ msgid ""
 msgstr ""
 "Questo strumento mira a risolverlo. Collision arriva con un semplice &amp; "
 "interfaccia utente pulita, che consente a chiunque, di qualsiasi età ed "
-"esperienza, di generare, confrontare e verificare gli hash MD5, SHA-256, "
-"SHA-512, SHA-1, Blake3, CRC32 e Adler32."
+"esperienza, di generare, confrontare e verificare gli hash MD5, SHA-256, SHA-"
+"512, SHA-1, Blake3, CRC32 e Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"

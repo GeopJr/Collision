@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-01-22 18:42+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2026-03-26 21:15+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/collision/"
 "collision/fi/>\n"
 "Language: fi\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -35,7 +35,8 @@ msgstr "Tarkista tiedostojesi tiivisteet"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;tiiviste;tarkistussumma;"
+msgstr ""
+"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;tiiviste;tarkistussumma;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -59,8 +60,8 @@ msgid ""
 msgstr ""
 "Tämän työnkalun on tarkoitus vastata haasteeseen. Collision tarjoaa "
 "yksinkertaisen ja selkeän käyttöliittymän, joka mahdollistaa kenen tahansa "
-"ikään tai kokemukseen katsomatta, vertailla ja vahvistaa MD5-, SHA-256-, "
-"SHA-512-, SHA-1-, Blake3-, CRC32- ja Adler32-tiivisteitä."
+"ikään tai kokemukseen katsomatta, vertailla ja vahvistaa MD5-, SHA-256-, SHA-"
+"512-, SHA-1-, Blake3-, CRC32- ja Adler32-tiivisteitä."
 
 #: data/ui/application.ui:6
 msgid "_New Window"

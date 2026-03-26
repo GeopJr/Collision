@@ -2,18 +2,19 @@
 # Copyright (C) 2021 THE dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # BigmenPixel <73637218+BigmenPixel0@users.noreply.github.com>, 2021.
-# Sergey Shavin <Seriy-sh@yandex.ru>, 2022.
+# Sergey Shavin <Seriy-sh@yandex.ru>, 2022, 2026.
 # Vik <xasertop@gmail.com>, 2022.
-# Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022.
-# Vin <k3kelm4vw@mozmail.com>, 2023.
+# Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022, 2026.
+# Vin <k3kelm4vw@mozmail.com>, 2023, 2026.
 # Himmel <anonymous.colt330@aleeas.com>, 2024.
+# Himmel <himmel@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-04-02 02:01+0000\n"
-"Last-Translator: Himmel <anonymous.colt330@aleeas.com>\n"
+"PO-Revision-Date: 2026-03-26 21:15+0000\n"
+"Last-Translator: Sergey Shavin <Seriy-sh@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/collision/"
 "collision/ru/>\n"
 "Language: ru\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -64,8 +65,8 @@ msgid ""
 msgstr ""
 "Этот инструмент призван решить эту проблему. Collision поставляется с "
 "простым и чистым пользовательским интерфейсом, позволяющим любому человеку, "
-"любого возраста и опыта, генерировать, сравнивать и проверять хэши MD5, "
-"SHA-256, SHA-512, SHA-1, Blake3, CRC32 и Adler32."
+"любого возраста и опыта, генерировать, сравнивать и проверять хэши MD5, SHA-"
+"256, SHA-512, SHA-1, Blake3, CRC32 и Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"

@@ -1,15 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Gabriel Cozma <me@gabs.eu.org>, 2023.
+# Gabriel Cozma <me@gabs.eu.org>, 2023, 2026.
 # NicolaeFericitu <cni@disroot.org>, 2025.
+# Nicolae Fericitu <cni@disroot.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-03-03 10:49+0000\n"
-"Last-Translator: NicolaeFericitu <cni@disroot.org>\n"
+"PO-Revision-Date: 2026-03-26 21:14+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/collision/"
 "collision/ro/>\n"
 "Language: ro\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -61,8 +62,8 @@ msgid ""
 msgstr ""
 "Acest instrument își propune să rezolve acest lucru. Collision vine cu o "
 "interfață simplă și curată, permițând oricui, de la orice vârstă și grup de "
-"experiență, să genereze, să compare și să verifice hașuri MD5, SHA-256, "
-"SHA-512, SHA-1, Blake3, CRC32 și Adler32."
+"experiență, să genereze, să compare și să verifice hașuri MD5, SHA-256, SHA-"
+"512, SHA-1, Blake3, CRC32 și Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
