@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # vikdevelop <super-vik1@protonmail.com>, 2022, 2023, 2024.
 # vikdevelop <vikdevelop@proton.me>, 2026.
+# Pavel Borecki <pavel.borecki@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-01-28 23:25+0000\n"
-"Last-Translator: vikdevelop <vikdevelop@proton.me>\n"
+"PO-Revision-Date: 2026-03-26 21:15+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/collision/"
 "collision/cs/>\n"
 "Language: cs\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -27,16 +28,16 @@ msgstr "Kolize"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Generátor Kontrolních součtů"
+msgstr "Generátor kontrolních součtů"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "Zkontrolujte kontrolní součty vašich souborů"
+msgstr "Zkontrolujte kontrolní součty svých souborů"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;kontrolní součet;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -47,9 +48,9 @@ msgid ""
 "actors."
 msgstr ""
 "Ověření, že stažený nebo přijatý soubor je skutečně ten, který jste "
-"očekávali, je často opomíjeno nebo je příliš časově náročné. Zároveň se díky "
-"masovému nárůstu škodlivých webových stránek a dalších aktérů stalo velmi "
-"snadné dostat do rukou soubor, který byl zfalšován."
+"očekávali, je často opomíjeno nebo je příliš časově náročné. Zároveň se "
+"vinou masovému nárůstu škodlivých webových stránek a dalších aktérů stalo "
+"velmi snadné dostat do rukou soubor, který byl zfalšován."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -57,10 +58,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Tento nástroj se to snaží vyřešit. Kolize přichází s jednoduchým a čistým "
-"uživatelským rozhraním, poskytující každému, jakéhokoliv věku a skupiny, "
-"generovat, porovnávat a ověřovat kontrolní součty MD5, SHA-256, SHA-512, "
-"SHA-1, Blake3, CRC32 a Adler32."
+"Tento nástroj se to snaží vyřešit. Kolize přichází s jednoduchým a "
+"přehledným uživatelským rozhraním, umožňujícím každému (nehledě na věk či "
+"oblast odbornosti) nechat si vytvářet, porovnávat a ověřovat kontrolní "
+"součty MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 a Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -72,11 +73,11 @@ msgstr "_Porovnat funkce kontrolního součtu"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "Zkopírovat jako _Markdown tabulku"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "_Přepnout funkce kontrolního součtu"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -84,7 +85,7 @@ msgstr "_Klávesové zkratky"
 
 #: data/ui/application.ui:27
 msgid "_About Collision"
-msgstr "_O programu"
+msgstr "O _aplikaci"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
@@ -96,7 +97,7 @@ msgstr "_Otevřít"
 
 #: data/ui/application.ui:61
 msgid "Open…"
-msgstr "Otevřete…"
+msgstr "Otevřít…"
 
 #: data/ui/application.ui:98
 msgid "Menu"
@@ -148,7 +149,7 @@ msgstr "Vyberte soubor…"
 
 #: data/ui/hash_row.ui:9
 msgid "Copy"
-msgstr "Kopírovat"
+msgstr "Zkopírovat"
 
 #: data/ui/shortcuts_window.ui:11
 msgid "General"
@@ -216,17 +217,19 @@ msgstr "Přejít ke kontrolnímu součtu"
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "Vybrat které funkce kontrolního součtu budou vypočítávány."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
 msgstr ""
+"Tahle funkce kontrolního součtu je používána pro ověření souboru a nelze ji "
+"vypnout"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "Čekat na dokončení všech operací"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

@@ -5,17 +5,18 @@
 # Philipp Kiemle <philipp.kiemle@gmail.com>, 2021, 2024.
 # Panagiotis Vasilopoulos <hello@alwayslivid.com>, 2021.
 # Milo Ivir <mail@milotype.de>, 2021.
-# sal0max <msal.coding@gmail.com>, 2022.
+# sal0max <msal.coding@gmail.com>, 2022, 2026.
 # gregorni <gregorniehl@web.de>, 2023.
-# Vri 🌈 <weblate@vrifox.cc>, 2023.
-# Alexander Bogoslawski <alexandere.bogoslawski@gmail.com>, 2024.
+# Vri 🌈 <weblate@vrifox.cc>, 2023, 2026.
+# Alexander Bogoslawski <alexandere.bogoslawski@gmail.com>, 2024, 2026.
+# Ettore Atalan <atalanttore@googlemail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-04-23 08:09+0000\n"
-"Last-Translator: Alexander Bogoslawski <alexandere.bogoslawski@gmail.com>\n"
+"PO-Revision-Date: 2026-03-26 21:14+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/collision/"
 "collision/de/>\n"
 "Language: de\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -65,9 +66,9 @@ msgid ""
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
 "Diese Anwendung versucht, das Problem zu lösen. Collision hat eine einfache "
-"Benutzeroberfläche, die es jedem ermöglicht, Prüfsummen (MD5, SHA-256, "
-"SHA-512, SHA-1, Blake3, CRC32 und Adler32) zu generieren und zu vergleichen "
-"- egal wie alt oder welcher Kenntnisstand."
+"Benutzeroberfläche, die es jedem ermöglicht, Prüfsummen (MD5, SHA-256, SHA-"
+"512, SHA-1, Blake3, CRC32 und Adler32) zu generieren und zu vergleichen - "
+"egal wie alt oder welcher Kenntnisstand."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -79,11 +80,11 @@ msgstr "Prüfsummen-Funktionen verglei_chen"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "Als _Markdown-Tabelle kopieren"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "_Hash-Funktionen umschalten"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -221,7 +222,7 @@ msgstr "Keine Übereinstimmung"
 #. Text on top of the progressbar when waiting for a different window to finish first
 #: src/window.cr:164 data/ui/application.ui:152
 msgid "Pending"
-msgstr ""
+msgstr "Ausstehend"
 
 #. translators: overlay shown when dragging files above it
 #: data/ui/application.ui:48

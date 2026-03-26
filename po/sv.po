@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Gustav Hagland <gustav.hagland@gmail.com>, 2022.
-# Luna Jernberg <droidbittin@gmail.com>, 2023.
+# Gustav Hagland <gustav.hagland@gmail.com>, 2022, 2026.
+# Luna Jernberg <droidbittin@gmail.com>, 2023, 2026.
 # bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023, 2024, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-01-26 04:24+0000\n"
-"Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
+"PO-Revision-Date: 2026-03-26 21:14+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/collision/"
 "collision/sv/>\n"
 "Language: sv\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -60,8 +60,8 @@ msgid ""
 msgstr ""
 "Detta verktyg syftar till att lösa det. Kollision kommer med ett enkelt "
 "&amp; rent användargränssnitt, så att alla, från alla åldrar och "
-"erfarenhetsgrupper, kan generera, jämföra och verifiera MD5, SHA-256, "
-"SHA-512, SHA-1, Blake3, CRC32 och Adler32 hashar."
+"erfarenhetsgrupper, kan generera, jämföra och verifiera MD5, SHA-256, SHA-"
+"512, SHA-1, Blake3, CRC32 och Adler32 hashar."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -73,11 +73,11 @@ msgstr "_Jämför Hashfunktioner"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "Kopiera som _Markdown tabell"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "_Växla hashfunktioner"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -218,17 +218,17 @@ msgstr "Släpp till hash"
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "Välj vilka hashfunktioner som ska beräknas."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
-msgstr ""
+msgstr "Denna hashfunktion används för filverifiering och kan inte inaktiveras"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "Vänta tills alla pågående operationer är klara"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;"

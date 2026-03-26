@@ -2,15 +2,16 @@
 # Copyright (C) 2022 dev.geopjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Irénée Thirion <irenee.thirion@outlook.fr>, 2022.
-# rene-coty <irenee.thirion@e.email>, 2022.
-# Zohir Tamda <120991635+tamdaz@users.noreply.github.com>, 2025.
+# rene-coty <irenee.thirion@e.email>, 2022, 2026.
+# Zohir Tamda <120991635+tamdaz@users.noreply.github.com>, 2025, 2026.
+# Nvram <25437947+marin-m@users.noreply.github.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2025-06-14 20:02+0000\n"
-"Last-Translator: Zohir Tamda <120991635+tamdaz@users.noreply.github.com>\n"
+"PO-Revision-Date: 2026-03-26 21:14+0000\n"
+"Last-Translator: Nvram <25437947+marin-m@users.noreply.github.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/collision/"
 "collision/fr/>\n"
 "Language: fr\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -28,16 +29,16 @@ msgstr "Collision"
 
 #: data/dev.geopjr.Collision.desktop.in:7
 msgid "Hash Generator"
-msgstr "Générateur de hachages"
+msgstr "Générateur de hachage"
 
 #: data/dev.geopjr.Collision.desktop.in:8
 #: data/dev.geopjr.Collision.metainfo.xml.in:7 data/ui/application.ui:115
 msgid "Check hashes for your files"
-msgstr "Vérifiez les hachages de vos fichiers"
+msgstr "Vérifiez le hachage de vos fichiers"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5; sha1; sha256; sha512; blake3; crc32; adler32; hash;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -49,9 +50,9 @@ msgid ""
 msgstr ""
 "Vérifier qu'un fichier que vous avez téléchargé ou reçu est bien celui que "
 "vous attendiez est souvent une tâche négligée ou trop longue à faire. Dans "
-"le même temps, il est devenu très facile, à cause de l'augmentation de pages "
-"web malveillantes ou d'autres acteurs de ce type, de mettre la main par "
-"mégarde sur un fichier altéré ou corrompu."
+"le même temps, il est devenu très facile, du fait de l'augmentation du "
+"nombre de pages web malveillantes et des acteurs de menace, de mettre la "
+"main par mégarde sur un fichier altéré ou corrompu."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -59,10 +60,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"Cet outil vise à résoudre ce problème. Collision vient avec une simple "
-"interface utilisateur, permettant à toute personne, quel que soit son âge ou "
-"son niveau d'expérience, de générer, comparer et vérifier les hachages MD5, "
-"SHA-256, SHA-512, SHA-1, Blake3, CRC32 et Adler32."
+"Cet outil vise à résoudre ce problème. Collision vient est livré une "
+"interface utilisateur simple et propre, permettant à toute personne, quel "
+"que soit son âge ou son niveau d'expérience, de générer, comparer et "
+"vérifier un hachage MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 ou Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -74,11 +75,11 @@ msgstr "_Comparer les fonctions de hachage"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "Copier en tant que tableau _Markdown"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "_Sélectionner les fonctions de hachage"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -110,7 +111,7 @@ msgstr "_Ouvrir un fichier"
 
 #: data/ui/application.ui:139
 msgid "Calculating Hashes"
-msgstr "Calcul des hachages"
+msgstr "Calcul de hachage"
 
 #: data/ui/application.ui:140
 msgid "This might take a while"
@@ -213,27 +214,29 @@ msgstr "Ceux-ci ne correspondent pas"
 #. Text on top of the progressbar when waiting for a different window to finish first
 #: src/window.cr:164 data/ui/application.ui:152
 msgid "Pending"
-msgstr ""
+msgstr "En attente"
 
 #. translators: overlay shown when dragging files above it
 #: data/ui/application.ui:48
 msgid "Drop to hash"
-msgstr ""
+msgstr "Déposer ici pour calculer un hash"
 
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "Sélectionner les fonctions de hachage à utiliser."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
 msgstr ""
+"Cette fonction de hachage est utilisée pour la vérification des fichiers et "
+"ne peut pas être désactivée"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "En attente de la fin des opérations en cours"
 
 #~ msgid ""
 #~ "This tool aims to solve that. Collision comes with a simple &amp; clean "

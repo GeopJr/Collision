@@ -1,19 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022.
+# Andrew Nitrogenesis <nitrogenesis.developer@gmail.com>, 2022, 2026.
 # Dan <denqwerta@gmail.com>, 2023.
-# CakesTwix <cakestwix1@gmail.com>, 2023.
+# CakesTwix <cakestwix1@gmail.com>, 2023, 2026.
 # volkov <d2oo1dle2x@gmail.com>, 2023, 2024.
-# Сергій <sergiy.goncharuk.1@gmail.com>, 2024.
+# Сергій <sergiy.goncharuk.1@gmail.com>, 2024, 2026.
 # Himmel <anonymous.colt330@aleeas.com>, 2024.
+# Himmel <himmel@users.noreply.hosted.weblate.org>, 2026.
+# Deleted User <volkov@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-04-02 02:01+0000\n"
-"Last-Translator: Himmel <anonymous.colt330@aleeas.com>\n"
+"PO-Revision-Date: 2026-03-26 21:14+0000\n"
+"Last-Translator: CakesTwix <cakestwix1@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/collision/"
 "collision/uk/>\n"
 "Language: uk\n"
@@ -22,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -41,7 +43,8 @@ msgstr "Перевіряйте хеш-суми ваших файлів"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;порівняти;перевірити;"
+msgstr ""
+"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;порівняти;перевірити;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""

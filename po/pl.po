@@ -4,14 +4,15 @@
 # Nikki <nikkehtine@int.pl>, 2021.
 # gnu-ewm <gnu.ewm@protonmail.com>, 2023.
 # polswert1 <igorpopowicz12@gmail.com>, 2024.
-# polswert1 <polswert1@users.noreply.hosted.weblate.org>, 2024.
+# polswert1 <polswert1@users.noreply.hosted.weblate.org>, 2024, 2026.
+# Eryk Michalak <gnu.ewm@protonmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2024-04-13 17:06+0000\n"
-"Last-Translator: polswert1 <polswert1@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-03-26 21:13+0000\n"
+"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/collision/"
 "collision/pl/>\n"
 "Language: pl\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
