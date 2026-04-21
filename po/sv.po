@@ -60,8 +60,8 @@ msgid ""
 msgstr ""
 "Detta verktyg syftar till att lösa det. Kollision kommer med ett enkelt "
 "&amp; rent användargränssnitt, så att alla, från alla åldrar och "
-"erfarenhetsgrupper, kan generera, jämföra och verifiera MD5, SHA-256, SHA-"
-"512, SHA-1, Blake3, CRC32 och Adler32 hashar."
+"erfarenhetsgrupper, kan generera, jämföra och verifiera MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 och Adler32 hashar."
 
 #: data/ui/application.ui:6
 msgid "_New Window"

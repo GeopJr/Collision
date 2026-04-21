@@ -2,21 +2,22 @@
 # Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dev.geopjr.Collision package.
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022, 2023, 2024, 2026.
+# artnay <artnay@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-03-26 21:15+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Finnish <https://hosted.weblate.org/projects/collision/"
+"PO-Revision-Date: 2026-03-28 04:57+0000\n"
+"Last-Translator: artnay <artnay@noreply.codeberg.org>\n"
+"Language-Team: Finnish <https://translate.codeberg.org/projects/collision/"
 "collision/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -35,8 +36,7 @@ msgstr "Tarkista tiedostojesi tiivisteet"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
-"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;tiiviste;tarkistussumma;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;tiiviste;tarkistussumma;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -60,8 +60,8 @@ msgid ""
 msgstr ""
 "Tämän työnkalun on tarkoitus vastata haasteeseen. Collision tarjoaa "
 "yksinkertaisen ja selkeän käyttöliittymän, joka mahdollistaa kenen tahansa "
-"ikään tai kokemukseen katsomatta, vertailla ja vahvistaa MD5-, SHA-256-, SHA-"
-"512-, SHA-1-, Blake3-, CRC32- ja Adler32-tiivisteitä."
+"ikään tai kokemukseen katsomatta, vertailla ja vahvistaa MD5-, SHA-256-, "
+"SHA-512-, SHA-1-, Blake3-, CRC32- ja Adler32-tiivisteitä."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -73,11 +73,11 @@ msgstr "_Vertaa tiivistefunktioita"
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "Kopioi _Markdown-tauluna"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "_Näytä/piilota tiivistefunktiot"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -218,17 +218,19 @@ msgstr "Pudota laskeaksesi tiivisteen"
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "Valitse mikä tiivistefunktio lasketaan."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
 msgstr ""
+"Tätä tiivistefunktiota käytetään tiedostojen vahvistamiseen, eikä sitä voi "
+"poistaa käytöstä"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "Odota kunnes kaikki käynnissä olevat toimenpiteet valmistuvat"
 
 #~ msgid "md5;sha1;sha256;sha512;hash;"
 #~ msgstr "md5;sha1;sha256;sha512;hash;tiiviste;tarkistussumma;"

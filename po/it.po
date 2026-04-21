@@ -60,8 +60,8 @@ msgid ""
 msgstr ""
 "Questo strumento mira a risolverlo. Collision arriva con un semplice &amp; "
 "interfaccia utente pulita, che consente a chiunque, di qualsiasi età ed "
-"esperienza, di generare, confrontare e verificare gli hash MD5, SHA-256, SHA-"
-"512, SHA-1, Blake3, CRC32 e Adler32."
+"esperienza, di generare, confrontare e verificare gli hash MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 e Adler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"

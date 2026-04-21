@@ -66,9 +66,9 @@ msgid ""
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
 "Diese Anwendung versucht, das Problem zu lösen. Collision hat eine einfache "
-"Benutzeroberfläche, die es jedem ermöglicht, Prüfsummen (MD5, SHA-256, SHA-"
-"512, SHA-1, Blake3, CRC32 und Adler32) zu generieren und zu vergleichen - "
-"egal wie alt oder welcher Kenntnisstand."
+"Benutzeroberfläche, die es jedem ermöglicht, Prüfsummen (MD5, SHA-256, "
+"SHA-512, SHA-1, Blake3, CRC32 und Adler32) zu generieren und zu vergleichen "
+"- egal wie alt oder welcher Kenntnisstand."
 
 #: data/ui/application.ui:6
 msgid "_New Window"

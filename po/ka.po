@@ -2,21 +2,22 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2026.
+# EkaterinePapava <ekaterinepapava@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-03-26 21:14+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Georgian <https://hosted.weblate.org/projects/collision/"
+"PO-Revision-Date: 2026-03-28 04:57+0000\n"
+"Last-Translator: EkaterinePapava <ekaterinepapava@noreply.codeberg.org>\n"
+"Language-Team: Georgian <https://translate.codeberg.org/projects/collision/"
 "collision/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -35,7 +36,7 @@ msgstr "ჰეშების შემოწმება თქვენი ფ
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;ჰეში;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""
@@ -45,6 +46,11 @@ msgid ""
 "tampered with, due to the mass increase of malicious webpages and other "
 "actors."
 msgstr ""
+"გადამოწმება, რომ ფაილი, რომელიც თქვენ გადმოწერეთ, ან მიიღეთ, ის ფაილია, "
+"რომელსაც ელოდით, ხშირად ყურადღებამიუქცეველი რჩება, ან ითვლება, რომ "
+"მეტისმეტად დრო სჭირდება. ამავე დროს, ძალიან იოლია, ხელში მოგხვდეთ ფაილი, "
+"რომელიც შეცვალეს, რადგან მავნე საიტებისა და მისთანების რიცხვი ძალიან "
+"გაიზარდა."
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:22
 msgid ""
@@ -52,6 +58,10 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
+"ეს პროგრამა ამტკიცებს, რომ ამ პრობლემას გადაწყვეტს. Collision-ს მოგყვება "
+"მარტივი &amp; სუფთა ინტერფეისი, რომელიც ყველას, ასაკისა თუ გამოცდილების "
+"მიუხედავად, საშუალებას აძლევს, დააგენერიროს და გადაამოწმოს MD5, SHA-256, SHA-"
+"512, SHA-1, Blake3, CRC32 და Adler32 ჰეშები."
 
 #: data/ui/application.ui:6
 msgid "_New Window"
@@ -63,11 +73,11 @@ msgstr "ჰეშის ფუნქ_ციების შედარება
 
 #: data/ui/application.ui:14
 msgid "Copy as _Markdown Table"
-msgstr ""
+msgstr "კოპირება _Markdown-ის ცხრილის სახით"
 
 #: data/ui/application.ui:19
 msgid "_Toggle Hash Functions"
-msgstr ""
+msgstr "ჰეშის _ფუნქციების გადართვა"
 
 #: data/ui/application.ui:23
 msgid "_Keyboard Shortcuts"
@@ -208,14 +218,15 @@ msgstr "დააგდეთ დასაჰეშად"
 #. translators: description in settings page
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:11
 msgid "Select which hash functions should be calculated."
-msgstr ""
+msgstr "აირჩიეთ, რომელი ჰეშის ფუნქციები გამოითვლება."
 
 #. translators: switch row description when the row is disabled
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:22
 msgid "This hash function is used for file verification and cannot be disabled"
 msgstr ""
+"ეს ჰეშის ფუნქცია გამოიყენება ფაილის გადასამოწმებლად და მას ვერ გამორთავთ"
 
 #. translators: toast shown when saving disabled toggled functions while it calculates hashes
 #: src/collision/widgets/toggle_hash_functions_dialog.cr:48
 msgid "Wait for all ongoing operations to finish"
-msgstr ""
+msgstr "დაელოდეთ მიმდინარე ოპერაციის დასრულებას"

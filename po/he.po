@@ -131,8 +131,7 @@ msgstr "גיבוב מסוג MD5,‏ SHA-1,‏ SHA-256,‏ SHA-512,‏ Blake3,‏
 
 #: data/ui/application.ui:263
 msgid "Insert a MD5/SHA-1/SHA-256/SHA-512/Blake3/CRC32/Adler32 Hash"
-msgstr ""
-"נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
+msgstr "נא להכניס גיבוב מסוג MD5/‏SHA-1/‏SHA-256/‏SHA-512/‏Blake3/‏CRC32/‏Adler32"
 
 #: data/ui/application.ui:285
 msgid "File"

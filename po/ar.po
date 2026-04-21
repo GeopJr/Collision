@@ -62,9 +62,9 @@ msgid ""
 "allowing anyone, from any age and experience group, to generate, compare and "
 "verify MD5, SHA-256, SHA-512, SHA-1, Blake3, CRC32 and Adler32 hashes."
 msgstr ""
-"تهدف هذه الأداة لإصلاح هذا. يأتي «تصادم» مع واجهة واضحة وبسيطة، مما يتيح لأي أحد "
-"بغض النظر عن عمره أو خبرته توليد ومقارنة تلبيدات MD5، وSHA-256، وSHA-512، "
-"وSHA-1، وBlake3، وCRC32، وAdler32."
+"تهدف هذه الأداة لإصلاح هذا. يأتي «تصادم» مع واجهة واضحة وبسيطة، مما يتيح لأي "
+"أحد بغض النظر عن عمره أو خبرته توليد ومقارنة تلبيدات MD5، وSHA-256، "
+"وSHA-512، وSHA-1، وBlake3، وCRC32، وAdler32."
 
 #: data/ui/application.ui:6
 msgid "_New Window"

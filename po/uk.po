@@ -43,8 +43,7 @@ msgstr "Перевіряйте хеш-суми ваших файлів"
 
 #: data/dev.geopjr.Collision.desktop.in:12
 msgid "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;"
-msgstr ""
-"md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;порівняти;перевірити;"
+msgstr "md5;sha1;sha256;sha512;blake3;crc32;adler32;hash;collision;колізія;хеш;сума;порівняти;перевірити;"
 
 #: data/dev.geopjr.Collision.metainfo.xml.in:16
 msgid ""

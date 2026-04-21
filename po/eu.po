@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Sergio Varela <sergitroll9@gmail.com>, 2022, 2023, 2026.
 # Ibai Oihanguren Sala <ibaios@disroot.org>, 2025, 2026.
+# ibaios <ibaios@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: dev.geopjr.Collision\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-26 04:15+0200\n"
-"PO-Revision-Date: 2026-03-26 21:13+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Basque <https://hosted.weblate.org/projects/collision/"
+"PO-Revision-Date: 2026-04-03 15:57+0000\n"
+"Last-Translator: ibaios <ibaios@noreply.codeberg.org>\n"
+"Language-Team: Basque <https://translate.codeberg.org/projects/collision/"
 "collision/eu/>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: data/dev.geopjr.Collision.desktop.in:6
 #: data/dev.geopjr.Collision.metainfo.xml.in:4 data/ui/application.ui:34
@@ -88,7 +89,7 @@ msgstr "Collisioni _buruz"
 
 #: data/ui/application.ui:23 data/ui/application.ui:28
 msgid "Choose a File"
-msgstr "Aukeratu fitxategia"
+msgstr "Hautatu fitxategia"
 
 #: data/ui/application.ui:60
 msgid "_Open"
@@ -116,7 +117,7 @@ msgstr "Honek denbora beharko du"
 
 #: data/ui/application.ui:175
 msgid "Hash"
-msgstr "Hash"
+msgstr "Hasha"
 
 #: data/ui/application.ui:191
 msgid "Verify"
