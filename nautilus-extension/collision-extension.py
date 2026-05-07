@@ -23,10 +23,10 @@ from gi.repository import Nautilus, GObject, Gtk, Gdk
 def get_collision():
     try:
         check_call("flatpak list --columns=application | grep \"dev.geopjr.Collision\" &> /dev/null", shell=True)
-        return "flatpak run --file-forwarding dev.geopjr.Collision"
+        return ["flatpak", "run", "--file-forwarding", "dev.geopjr.Collision"]
     except CalledProcessError:
         if which("collision") is not None:
-            return "collision"
+            return ["collision"]
         else:
             return False
 
@@ -39,13 +39,16 @@ class NautilusCollision(Nautilus.MenuProvider, GObject.GObject):
     
     # Executed method when the right-click entry is clicked
     def openWithCollision(self, menu, files):
-        args = [self.collision]
+        args = self.collision.copy()
+        flatpak = args[0] != "collision"
+
         for file in files:
-            file_path = repr(unquote(urlparse(file.get_uri()).path))
-            if self.collision != "collision":
-                file_path = "@@ " + file_path + " @@"
-            args.append(file_path)
-        Popen(" ".join(args), shell=True)  # Collision need to be in your PATH
+            file_path = unquote(urlparse(file.get_uri()).path)
+            if flatpak:
+                args.extend(["@@", file_path, "@@"])
+            else:
+                args.append(file_path)
+        Popen(args, shell=False)  # Collision need to be in your PATH
     
     def get_background_items(self, files):
         return
