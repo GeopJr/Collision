@@ -24,9 +24,9 @@ gresource:
 mo:
 	mkdir -p $(PO_LOCATION)/mo
 	for lang in `cat "$(PO_LOCATION)/LINGUAS"`; do \
-		if [[ "$$lang" == 'en' || "$$lang" == '' ]]; then continue; fi; \
-		mkdir -p "$(PREFIX)$(LOCALE_LOCATION)/$$lang/LC_MESSAGES"; \
-		msgfmt "$(PO_LOCATION)/$$lang.po" -o "$(PO_LOCATION)/mo/$$lang.mo"; \
+	    if [ "$$lang" = "en" ] || [ -z "$$lang" ]; then continue; fi; \
+	    mkdir -p "$(PREFIX)$(LOCALE_LOCATION)/$$lang/LC_MESSAGES"; \
+	    msgfmt "$(PO_LOCATION)/$$lang.po" -o "$(PO_LOCATION)/mo/$$lang.mo"; \
 		install -D -m 0644 "$(PO_LOCATION)/mo/$$lang.mo" "$(PREFIX)$(LOCALE_LOCATION)/$$lang/LC_MESSAGES/dev.geopjr.Collision.mo"; \
 	done
 
@@ -41,7 +41,7 @@ install_nautilus_extension:
 	cp nautilus-extension/collision-extension.py ~/.local/share/nautilus-python/extensions/
 	nautilus -q || true
 
-install: mo
+install: mo metainfo desktop
 	install -D -m 0755 bin/collision $(PREFIX)/bin/collision
 	install -D -m 0644 data/dev.geopjr.Collision.gschema.xml $(PREFIX)/share/glib-2.0/schemas/dev.geopjr.Collision.gschema.xml
 	install -D -m 0644 data/dev.geopjr.Collision.desktop $(PREFIX)/share/applications/dev.geopjr.Collision.desktop
