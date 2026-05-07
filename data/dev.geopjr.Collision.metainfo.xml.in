@@ -48,6 +48,15 @@
     <color type="primary" scheme_preference="dark">#26a269</color>
   </branding>
   <releases>
+    <release version="3.14.1" date="2026-05-07">
+      <description translate="no">
+        <ul>
+          <li>Collision has moved to Codeberg!</li>
+          <li>Fixed a critical security issue with the Nautilus extension, if you use it, please update it as soon as possible!</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.14.0" date="2026-02-07">
       <description translate="no">
         <ul>
